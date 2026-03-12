@@ -3,4 +3,12 @@ title: Introduction
 draft: false
 tags:
 ---
-petite intro
+>  Voici quelques RETEX de ma part : 
+
+# Osintopia
+# Osint4fun
+# TryHackMe
+[[OhSINT]]
+[[Sakura Room]]
+[[KaffeeSec - SoMeSINT]]
+

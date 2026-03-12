@@ -22,7 +22,7 @@ En inspectant l'image on tombe sur : ==SakuraSnowAngelAiko==
 
 ## Retex
 En cherchant vite fait son username sur google on tombe sur un compte [github](https://github.com/sakurasnowangelaiko) et un compte [twiter](https://x.com/sakuraloveraiko).
-Sur son github il y a une clé pgp publique, par nature une clé pgp publique peut contenir l'adresse mail de sa créatrice. D'après le site keys.opengpg.org, la clé appartient à l'adresse mail : ==sakurasnowangel83@protonmail.c== om 
+Sur son github il y a une clé pgp publique, par nature une clé pgp publique peut contenir l'adresse mail de sa créatrice. D'après le site keys.opengpg.org, la clé appartient à l'adresse mail : sakurasnowangel83@protonmail.com 
 Sur son compte twitter elle se présente comme AikoAbe3 on peut en déduire son nom et prénom ==Aiko Abe==. 
 
 # Task [4/6]
