@@ -1,5 +1,9 @@
-#TryHackMe #Chall #Osint 
-
+---
+tags:
+  - Chall
+  - Osint
+  - TryHackMe
+---
 # Task [2/7]
 ## Background
 >_You are Aleks Juulut, a private eye based out of Greenland. You don't usually work digitally, but have recently discovered OSINT techniques to make that aspect of your job much easier. You were recently hired by a mysterious person under the moniker "H" to investigate a suspected cheater, named Thomas Straussman._

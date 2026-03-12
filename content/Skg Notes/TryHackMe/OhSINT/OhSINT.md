@@ -1,7 +1,10 @@
 ---
-
+tags:
+  - Chall
+  - TryHackMe
+  - Osint
 ---
-#Osint, #TryHackMe, #Chall
+
 # Enoncé
 >What information can you possible get with just one image file?
 >**Note:** This challenge was updated on 2024-02-01. If you are following any older walkthroughs, expect a small change. Additionally, the file is also available on the AttackBox, under the `/Rooms/OhSINT` directory.![[WindowsXP_1551719014755.jpg]]
@@ -35,6 +38,3 @@ D'après son [wordpress](https://oliverwoodflint.wordpress.com/) il était à ==
 >What is the person's password?
 
 Toujours d'après le wordpress, en révélant le texte caché on trouve : ==pennYDr0pper.!==
-
-
-
