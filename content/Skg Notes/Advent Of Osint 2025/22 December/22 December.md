@@ -5,23 +5,27 @@ tags:
   - Osint4fun
   - AdventOfOsint
 ---
-# Énoncé
->Let’s stay in the Scandinavian countries and take an interest in a story that almost turned into a tragedy.
+## Énoncé
+>Restons dans les pays scandinaves et intéressons-nous à une histoire qui faillit tourner au drame.
 >
->On 24 December 1925, Joonas and Hypatia Herhiläinen decided to make use of a « Santa Uber » service, but nothing really went as planned.
+>Le ==24 décembre 1925==, ==Joonas== et ==Hypatia Herhiläinen== décidèrent de faire appel à un service de « Uber Père Noël », mais rien ne se déroula vraiment comme prévu.
 >
->Who is the person telling this story?
+>Qui est la personne qui raconte cette histoire ?
+>>*Format de réponse :* Albert
 
+## RETEX
 On va donc chercher : `24 December 1925 Joonas Hypatia Herhiläinen`
-On trouve rien donc on va chercher les personnages
-leur nom de famille veut dire Frelon européen en Finlandais
+On ne trouve rien d'intéressant donc on va changer d'approche et chercher des informations sur les personnages.
 
-Vu qu'on trouve pas grand chose non plus, on va chercher dans les archives de livre Finlandais.
+Leur nom de famille veut dire Frelon européen en ==Finlandais==
+
+On va chercher dans les archives de livre Finlandais.
 Je trouve vite les deux sites suivant :
 - https://nordique.zonelivre.fr/category/livres/livres-finlandais/
 - https://digi.kansalliskirjasto.fi/etusivu?set_language=en
 
-Le premier je trouve pas grand chose mais pour le deuxième j'ai des trucs satisfaisant en cherchant `Joonas Hypatia Herhiläinen`.
-Plus précisément l'histoire suivante : ![[22 Decembre.png]]
+Le premier lien ne me donne pas grand chose mais pour le deuxième j'ai des trucs satisfaisant en cherchant `Joonas Hypatia Herhiläinen`.
+Plus précisément l'histoire suivante : ![[22 Decembre.png|500]]
 
-Et la personne qui raconte l'histoire est ==Tiitus==
+Et la personne qui raconte l'histoire est **==Tiitus==**
+![[22D_Tiitus.png|500]]

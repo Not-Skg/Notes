@@ -5,17 +5,38 @@ tags:
   - Osint4fun
   - AdventOfOsint
 ---
-> Who was driving this car in this picture?
+## Énoncé [1/3]
+> Nous allons nous intéresser à cette photo.
 > ![[1 December.jpg]]
+> Qui pilotait cette voiture sur cette image ?
+> > *Format de réponse :* Charles Leclerc
 
-It was ==**Fernando Alonso**==.
+## Retex [1/3]
+En recherchant l'image sur Google Lens on trouve rapidement le pilote.
+![[1D_Lens.png|500]]
+Et [Wikipedia](https://fr.wikipedia.org/wiki/Minardi_PS01#/media/Fichier:Mobil_Fernando_Alonso_tahun_2001.jpg) nous confirme que c'est bien **==Fernando Alonso==**.
 
-> That year, on which circuit did Alonso achieve his best result?
+---
+## Énoncé [2/3]
+> Cette année-là, sur quel circuit Alonso réalisa-t-il son meilleur classement ?
+> > *Format de réponse :* Silverstone
 
-He finished 10th on the ==**Hockenheim**== circuit
+## Retex [2/3]
+Toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Minardi_PS01) cette F1 à été piloté lors de la saison 2001.
+Et en regardant les [statistiques](https://racingnews365.com/drivers/fernando-alonso/results/2001) de ce pilote lors de cette saison.
+![[1D_Stats.png|500]]
+On apprends qu'il a finit 10ème lors du GP Allemand.
 
-> A few years later, on this same circuit, he took his revenge by winning the race.
-> What was his average speed (in km/h) during that race?
+Et ce GP [se déroulait](https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%27Allemagne_2001) sur le circuit de **==Hockenheim==**.
 
-In 2005 he won the race with an average speed of ==**212.629** km/h==.
+---
+## Énoncé [3/3]
+> Quelques années plus tard, sur ce même circuit, il prit sa revanche en remportant la course.
+> Quelle était sa vitesse moyenne (en km/h) lors de cette course ?
+> > *Format de réponse :* 198,123 km/h
+## Retex [3/3]
+Toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Hockenheimring), Alonso prend sa revanche en 2005 dans une Renault.
+![[1D_2005.png|500]]
+Et sa [vitesse moyenne](https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%27Allemagne_2005) était de **==212.629 km/h==**.
+![[1D_Speed.png|500]]
 

@@ -5,21 +5,17 @@ tags:
   - Osint4fun
   - AdventOfOsint
 ---
-# Énoncé
->This song is closely linked to a statue.
+## Énoncé
+>Cette chanson est étroitement liée à une statue.
 > ![[9 Decembre.mp3]]
->Before this statue was moved, what could it read, engraved on the pediment facing it?
+>Avant que cette ==statue== ne soit ==déplacée==, que pouvait-elle lire, gravé sur le ==fronton== en face d'elle ?
+>>*Format de réponse :* ALWAYS THERE
 
-# RETEX
+## RETEX
+Il aurait été utile de faire un shazam pour retrouver la musique puis son transcript mais j'ai pu comprendre que la chanson parlait de ==Dublin’s Molly Malone==.
 
-La chanson parle de Dublin’s Molly Malone donc on parle de 
-sa statue à Dublin.
+Et en recherchant ces termes on [apprend](https://fr.wikipedia.org/wiki/Molly_Malone) que "Molly Malone" c'est le nom de la musique mais aussi d'une statue sur St Andrew's Street (Dublin) qui était auparavant en bas de ==Grafton Street==.
 
-Sur Google map on peut retrouver une vue 360° 
-In Dublin's fair city, where the girls are so pretty, high firsts at my eyes on sweet ==Molly Malone==, as she wheels her wheelbarrow through the streets broad and narrow, crying cockles and muscles alive alive all.
-
-En cherchant l'emplacement de Molly Malone :
-![[9 Decembre.2.png]]
-![[9 Decembre.3.png]]
-
-Le flag est donc `IRISH PERMANENT`
+Donc en y allant sur Google maps, on peut la retrouver ainsi que le fronton en face d'elle.
+![[9D_Molly.png|500]]
+Et sur sur fronton on peut lire **==IRISH PERMANENT==**

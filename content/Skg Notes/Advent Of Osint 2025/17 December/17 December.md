@@ -5,29 +5,37 @@ tags:
   - Osint4fun
   - AdventOfOsint
 ---
-# Énoncé
->Another homonym!
+## Énoncé
+>Encore un homonyme !
 >![[17 Decembre.png]]
->Together they give the solution.
+>Ensemble ils donnent la solution.
+>>*Format de réponse :* $:Parker Son and Me;%
 
 ## Retex
-Je ne trouve pas via lens ou bing mais je trouve un truc via [yandex](https://yandex.com/images/search?cbir_id=1819957%2Facoz2A6UUs2qMbuPrJY0mQ7767&tmpl_version=releases-frontend-images-v1.1692.0__49779ad205a50d5dc2d138a0e6bda6ea106e3068&rpt=imageview&lr=109147&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F1819957%2Facoz2A6UUs2qMbuPrJY0mQ7767%2Forig&cbir_page=similar) 
+Dans un premier temps, trouvons le nom de la personne sur la photo.
+Pour une fois je ne trouve rien via Google Lens, et Bing non plus. Je passe donc a Yandex et grace à ce dernier je trouve la photo complète. 
 ![[17 Decembre.2.png]]
-Maintenant qu'on a la photo complète on peut pivoter dessus pour trouver le noms des gens dessus.
+Avec la photo, il y a le mot clé ==Dante== qui y est associé.
 Toujours sur yandex on trouve un nom : ==Kazuhisa Hashimoto==, vu que sur la photo ils ont l'air d'être un groupe de music on peut chercher :`Kazuhisa Hashimoto music band`
-D'après le site [metal-archive](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055) il faisait parti du groupe ==Dante== et était le chanteur, toujours sur ce site en regardant la lineup du groupe on trouve : 
+D'après le site [metal-archive](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055) il faisait parti du groupe ==Dante== et était le chanteur. Je comprend donc le mot clé associé avec. Toujours sur ce site en regardant la lineup du groupe on trouve : 
 
 | [Shougo Hata](https://www.metal-archives.com/artists/Shougo_Hata/185058)               | Drums   |
 | -------------------------------------------------------------------------------------- | ------- |
 | [Tomofumi Kaneko](https://www.metal-archives.com/artists/Tomofumi_Kaneko/185056)       | Guitars |
 | [Kazuhisa Hashimoto](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055) | Vocals  |
 | [Yoshihiro "Tetsu" Matsumoto](https://www.metal-archives.com/artists/Tetsu%21/185059)  | Bass    |
-Le chanteur est aussi l'homonyme du [créateur du konami Code](https://en.wikipedia.org/wiki/Kazuhisa_Hashimoto)
+Maintenant qu'on a les noms, il faut trouver qui est l'homonyme de qui.
+Après une rapide recherche on apprend que le chanteur est l'homonyme du [créateur du konami Code](https://en.wikipedia.org/wiki/Kazuhisa_Hashimoto) (il n'y avait donc pas besoin de chercher très loin...).
 
-Vu que j'ai pas plus d'info j'utilise l'indice : ==rappel toi du slogan de Nike== : **Just Do It** 
-Donc si on fait juste le konami code ça donne : `up, up, down, down, left, right, left, right, B, A`
+Vu que j'ai pas plus d'info j'utilise l'indice : ==rappel toi du slogan de Nike==.
+Pour rappel ce dernier est **Just Do It**.
+J'imagine qu'il faut donc faire le konami code sur l'interface du chall.
+Et si besoin, ce code est le suivant :
+![[17D_Konami.png|500]]
 
-C'était pas le flag...
-Mais quand on le fait sur le clavier sur le site de Osint4fun (qui font le chall) on a le message suivant qui apparait : `*-ALBUM 1991:!`
-On doit donc trouver l'album de Dante de 1991 et toujours d'après le site de métal : ==*-[In the Lost Paradise](https://www.metal-archives.com/albums/Dante/In_the_Lost_Paradise/239747 "In the Lost Paradise"):!`==
+Quand on le fait sur l'interface du chall, un popup apparaît :
+![[17D_Code.png|500]]
+
+J'imagine qu'on doit donc utiliser le flag : `*-ALBUM 1991:!` avec le nom de l'album en question à la place de `ALBUM 1991`
+Toujours d'après le site de [Metal](https://www.metal-archives.com/albums/Dante/In_the_Lost_Paradise/239747 "In the Lost Paradise"), cet album est nommé :  **==In the Lost Paradise==**
 

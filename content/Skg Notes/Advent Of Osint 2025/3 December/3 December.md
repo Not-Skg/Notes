@@ -5,13 +5,19 @@ tags:
   - Osint4fun
   - AdventOfOsint
 ---
-# Énoncé
+## Énoncé
 > Un peu plus loin dans cette rue se trouvait, un jour de novembre 2022, un personnage pour le moins atypique.
 > De qui s’agissait-il ?
->![[3 Decembre.jpg]]
+>![[3 Decembre.jpg|500]]
+>>*Format de réponse :* Dracula
 
-# Retex
-
-On peut voir The Leather Bottle inscrit sur le batiment à gauche et via une recherche inversé on peut trouver le lieu : `The Leather Bottle Inn, Cobham, Kent`
-Puis on va sur Maps et on reprend la même position et après on change la date à Novembre 2022.
-On y trouve le `Grinch`
+## Retex
+On peut voir ==The Leather Bottle== inscrit sur le batîment à gauche.
+![[3D_TLB.png|250]]
+Sur le photo de l'énoncé, on peut aussi voir "The St" écrit sur la route, donc en cherchant "The Leather Bottle The St" sur google maps, on trouve deux possibilité.
+![[3D_maps.png|500]]
+Et la première est la bonne :
+![[3D_maps2.png|500]]
+En changeant la date à Novembre 2022 et en avançant dans la rue on trouve ce personnage.
+![[3D_Grinch.png|500]]
+Le **==Grinch==**
