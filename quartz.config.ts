@@ -66,9 +66,12 @@ const config: QuartzConfig = {
                 },
                 keepBackground: false,
             }),
+            Plugin.CreatedModifiedDate({
+                priority: ["frontmatter", "git", "filesystem"],  // ← filesystem fallback
+            }),
             Plugin.HardLineBreaks(),
             Plugin.ObsidianFlavoredMarkdown({
-                enableInHtmlEmbed: false,
+                enableInHtmlEmbed: true,
                 enableHighlight: true,
             }),
             Plugin.GitHubFlavoredMarkdown(),
