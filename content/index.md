@@ -1,7 +1,7 @@
 ---
 title: SKG Notes
 ---
-
+![[Ban.jpeg]]
 > Ici je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
 > Le thème principal ça sera l'OSINT, mais aussi potentiellement un peu de SOC ou de WEB.
 > *==J'ai pleins d'autres Retex a partager mais je ne les ai pas mit au propre donc je vais les uploads au fur et a mesure. Je vais essayé d'en partager un par jour.==*
@@ -31,7 +31,7 @@ Généralement je me focus sur les plateformes comme : **Osintopia**, **Osint4f
 - Integrity ==[To Do]==
 ## TryHackMe
 - OhSINT ==[To Do]==
-- Sakura Room ==[To Do]==
+- [[Sakura Room]]
 - KaffeeSec - SoMeSINT ==[To Do]==
 
 ---

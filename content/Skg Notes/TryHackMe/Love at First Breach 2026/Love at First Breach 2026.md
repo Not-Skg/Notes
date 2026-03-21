@@ -7,41 +7,41 @@ tags:
 ---
 ---
 [[Corp Website]]
-> #RSA
+> RSA
 
 ---
 [[Cupid's Matchmaker]]
-> #XSS 
+> XSS 
 
 ---
 [[CupidBot]]
-> #AI
+> AI
 
 ---
 [[Hidden Deep Into my Heart]]
-> #robots
+> robots.txt
 
 ---
 [[Love Letter Locker]]
-> #IDOR 
+> IDOR 
 
 ---
 [[Signed Messages]]
-> #RSA 
+> RSA 
 
 ---
 [[Speed Chatting]]
-> #reverse_shell
+> reverse shell
 
 ---
 [[TryHeartMe]]
-> #Token_jwt 
+> Token_jwt 
 
 ---
 [[Valenfind]]
-> #LFI 
+> LFI 
 
 ---
 [[When Hearts Collide]]
-> #md5_collision 
+> md5 collision 
 
