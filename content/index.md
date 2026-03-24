@@ -8,11 +8,15 @@ title: SKG Notes
 
 Généralement je me focus sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe** mais de temps en temps je ferais d'autres choses.
 
----
-# ▸ Enquêtes
-> Voici un exemple d'enquête (et de rapport) que je suis capable de réaliser.
-
-==[To Do]==
+>[!info] Prochainement
+> - [ ] RETEX Bellatrix Orion26
+> - [ ] RETEX OhSINT
+> - [ ] RETEX KaffeeSec - SoMeSINT
+> - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
+> - [ ]  Learning Path SOC Level 1
+> - [ ] RETEX Integrity
+> - [ ] Tous mes challs Osintopia d'avant la refonte du site
+> - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)
 
 ---
 # ▸ CTF
@@ -40,5 +44,11 @@ Généralement je me focus sur les plateformes comme : **Osintopia**, **Osint4f
 - SOC Level 1 ==[To Do]==
 
 ---
-# ▸ Coups de coeur
+# ▸ Enquêtes
+> Voici un exemple d'enquête (et de rapport) que je suis capable de réaliser.
+
 ==[To Do]==
+
+---
+# ▸ Coups de coeur
+==[To Do]=
