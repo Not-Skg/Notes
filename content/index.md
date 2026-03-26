@@ -21,7 +21,7 @@ Généralement je me focus sur les plateformes comme : **Osintopia**, **Osint4f
 ---
 # ▸ CTF
 ==[To Do]==
-- [[Phase 1 - Analysis|Bellatrix]]
+- [[Phases|Bellatrix]]
 - [[Love at First Breach 2026]]
 - 404 CTF 2025
 
