@@ -1,3 +1,8 @@
+---
+tags:
+  - Osint
+  - CTF
+---
 ![[Bellatrix_Illustration.png]]
 J'ai plus apprécié cette phase que la P1, avec des environnements simulés variés et fun (bravo aux orgas !).
 
