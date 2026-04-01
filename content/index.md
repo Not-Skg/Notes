@@ -51,5 +51,8 @@ Généralement je me focus sur les plateformes comme : **Osintopia**, **Osint4f
 
 ---
 # ▸ Coups de coeur
- [[Phases|Bellatrix]]
-	Un CTF organisé par le ComCyber. J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
+
+>[!example] [[Phases|Bellatrix]]
+>Un CTF organisé par le ComCyber. 
+>J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
+
