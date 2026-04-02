@@ -3,6 +3,8 @@ tags:
   - Osint
   - CTF
   - Bellatrix
+  - Disarm
+  - Scrapp
 ---
 ![[Bellatrix_Illustration.png]]
 
@@ -18,7 +20,7 @@ tags:
 >Vous venez de recevoir une information par un canal sécurisé, une simple capture d'écran, lacunaire et réalisée rapidement, apparemment le post aurait ensuite été supprimé. Cette publication qui a circulé sur les réseaux, désinforme sur des sujets concernant l'armée Française. 
 >**Votre objectif:** ==retrouver le blog mentionné dans cette publication==. 
 >Il faut commencer à dérouler la pelotte avec peu d'indices mais votre contact a insisté sur l'importance de la mission. "Opération Bellatrix" a-t-il mentionné.
->![[P1_alerte.png]]
+>![[P1_alerte.png|500]]
 >**Actions requises:**
 >>- Analyser la capture d'écran de la publication initiale
 >>- Accéder au blog et noter son addresse
@@ -29,11 +31,11 @@ Pour ce premier challenge, il n'y a pas vraiment de défi. La capture d'écran p
 Il présente aussi un domaine en affirmant qu'on pourrait y retrouver plus d'information.
 
 Il suffit donc de chercher `global-news-maq` sur un moteur de recherche.
-![[P1_alerte_gnmi.png]]
+![[P1_alerte_gnmi.png|500]]
 On trouve rapidement le blog en question, qui se trouve être un wordpress.
 Son adresse complète est donc la suivant : ==global-news-maq.info==.
 
-![[P1_gnm.png]]
+![[P1_gnm.png|500]]
 Le blog se présente comme une source d'informations sérieuses et vérifiées en provenance d'Aquilon. En regardant les extrait des articles disposé en première page, un détail nous choque : tous les articles ont un point de vue anti-France ou produit Français.
 
 ---
@@ -54,7 +56,7 @@ Le blog se présente comme une source d'informations sérieuses et vérifiées e
 ### RETEX
 Cette fois-ci, nous devons découvrir l'origine d'une vidéo.
 Pour trouver cette vidéo nous pouvons faire une recherche du mot clé "vidéo" sur le blog.
-![[P1_vid.png]]
+![[P1_vid.png|500]]
 Seul deux résultats apparaissent.
 Le premier ne comporte pas de vidéo malgré le titre de l'article>.
 Le [deuxième](https://global-news-maq.info/massacre-golfe-gascogne-crime-guerre/) par contre en contient une.
@@ -62,14 +64,14 @@ Le [deuxième](https://global-news-maq.info/massacre-golfe-gascogne-crime-guerre
 Cette vidéo montre 2 avions de chasse se percutant, une pilote s'échouer en mer puis se faire sortir de l'eau par deux marin sur ce qui ressemble à un bateau de pêche.
 L'article qui présente cet extrait comme la suite d'un "acte de barbarie inqualifiable" dans lequel l'armée française aurait mitraillé trois chalutiers Aquiloniens via leur Rafales, sans sommation ni avertissement.
 Les mots utilisés sont dur, menaçant et fortement exposés (gras + majuscule)
-![[P1_vid_art.png]]
+![[P1_vid_art.png|500]]
 En inspectant la page, plus précisément le code source qui implémente la vidéo, on apprends que la vidéo est hébergé sur un autre site.
-![[P1_vid_art_2.png]]
+![[P1_vid_art_2.png|500]]
 Et cet autre autre site (==passion-video.tech==) se présente comme un forum de vidéo généraliste avec des catégories Tech, Nature, Voyages et "Militaire", ce qui explique la présence de cette vidéo sur ce site.
 En cherchant "vidéo.mp4", qui est le nom du fichier vidéo hébergé sur ce site et réutilise sur le site "d'information", on trouve une publication, qui met en avant cette vidéo avec le titre "Drôle de pêche - Récupération d'une pilote de Rafale".
-![[P1_vid_pass.png]]
+![[P1_vid_pass.png|500]]
 Pour l'instant rien de choquant. Mais sous ce post, un commentaire nous attire l'oeil.
-![[P1_vid_pass_comm.png]]
+![[P1_vid_pass_comm.png|500]]
 Il indique que la vidéo semble avoir été repris vers un autre site. 
 Ce qui signifie qu'un autre site s'en sert aussi, probablement dans un article.
 
@@ -93,10 +95,10 @@ Ce qui signifie qu'un autre site s'en sert aussi, probablement dans un article.
 ### RETEX
 
 D'après le commentaire trouvé dans le dernier challenge, la vidéo a aussi été repris sur le site : ==le-mercurien-victorieux.info==
-![[P1_cause_mercurien.png]]
+![[P1_cause_mercurien.png|500]]
 Ce site se définit comme un média d'information "mercurien".
 La vidéo est elle aussi utilisé dans un article décrivant un crime de guerre dans le Golfe de Gascogne, il y décrit la même chose que l'autre article, avec des éléments de langage choquant, et mot en gras, et toujours cette même façon de dénigrer l'armée Française.
-![[P1_cause_mercurien_art.png]]
+![[P1_cause_mercurien_art.png|500]]
 
 ---
 ## Rétablir la véracité des faits (intrigue principale)
@@ -119,12 +121,12 @@ La vidéo est elle aussi utilisé dans un article décrivant un crime de guerre 
 
 ### RETEX
 En lisant les commentaires sous cette publication, on trouve un certain ==SoldatFr== qui explique que cet article est "un tissu de mensonge", et que l'information a été debunké sur le site "debunk-officiel-fr.site".
-![[P1_veracite.png]]
+![[P1_veracite.png|500]]
 Il explique aussi que la pilote en question est "lynx", la pilote que l'on cherche.
 Ça impliquerai donc, si tant est que cette information est vrai, que 2 médias d'informations promouvoient de la désinformation, et incite les gens a hair l'armée Française.
 Ce site de debunk, est un site gouvernementale, le Ministères Français l'utilise pour debunker des campagnes de désinformations.
 Les informations données par le commentaire sont confirmées dans un communiqué officiel du Ministère des armées.
-![[P1_veracite_ministere.png]]
+![[P1_veracite_ministere.png|500]]
 
 ---
 ## Identifier le primo-diffuseur (intrigue principale)
@@ -146,14 +148,14 @@ Les informations données par le commentaire sont confirmées dans un communiqu�
 
 ### RETEX
 Généralement, les primo-diffuseurs d'information narguent les média d'information en expliquant qu'il avait toujours les informations avant eux. Je vais donc chercher dans les commentaires des différents articles de ces sites de "désinformation".
-![[P1_primo1.png]]
-![[P1_primo2.png]]
-![[P1_primo3.png]]
-![[P1_primo4.png]]
+![[P1_primo1.png|500]]
+![[P1_primo2.png|500]]
+![[P1_primo3.png|500]]
+![[P1_primo4.png|500]]
 Ici, celui qui correspond parfaitement à ces critères, c'est un certain ==Marc Veylanne==.
 Il nous donne même un lien vers son [blog personnel](https://verite-veylanne.blog/) et un autre vers son [Amstramgram](https://amstramgram.net/profile.php?username=veylanne), réseau social très en vogue chez les jeunes.
 
-![[P1_primo_Ams.png]]
+![[P1_primo_Ams.png|500]]
 En inspectant son profil sur Amstramgram, on apprend qu'il avait bien communiqué sur ce "faux" évènement avant la sortie des articles sur les média d'informations rencontrés plus tôt.
 Et après une recherche avancé sur le réseau social, on comprends qu'il est le premier de la plateforme a en avoir parlé, un peu comme un lanceur d'alerte.
 
@@ -178,7 +180,7 @@ Le premier site de désinformation rencontré est le global-news-maq. Commençon
 Son logo est le suivant : 
 ![[P1_logo1.png]]
 En faisant une recherche inversé avec un outil classique comme Google Lens, on trouve ce logo : 
-![[P1_logo2.png]]
+![[P1_logo2.png|300]]
 Qui s'avère être le logo du media canadien ==globalnews.ca==.
 C'est le même logo, les couleurs ont juste été inversé. D'ailleurs, l'outil utilisé pour inversé les couleurs n'est pas très propre puisque l'on peut encore voir les traces de rouge sur le bas du chevron du logo du site de désinformation. Le mot "maq" a aussi été ajouté
 
@@ -201,11 +203,11 @@ C'est le même logo, les couleurs ont juste été inversé. D'ailleurs, l'outil 
 ### RETEX
 Pour décrédibiliser l'armée française, ce média a fait appel a un expert. Cet expert "révèle des défaillances majeures" sur le Griffon, véhicule tactique blindé de l'armée française.
 Tout cela se passe dans un [article exclusif](https://global-news-maq.info/expertise-accablante-sur-le-griffon-nouveau-blinde-de-larmee-francaise/).
-![[P1_expert.png]]
+![[P1_expert.png|500]]
 Un rapport d'expertise de 2 pages y est même affiché.
 ![[P1_doc.pdf]]
 L'expert en question serait "Dr. Pierre Martin", ingénieur en armement diplômé de l'école de l'armement du cap d'Adge et consultant DPLG.
-![[P1_expert_caduq.png]]
+![[P1_expert_caduq.png|500]]
 Le problème avec cette présentation c'est que ==consultant DPLG== c'est pour les architectes donc rien a voir avec l'armement. L'expert n'en est donc pas un d'office, et le rapport d'expertise est caduc.
 
 ---
@@ -230,15 +232,15 @@ Le problème avec cette présentation c'est que ==consultant DPLG== c'est pour l
 ### RETEX
 On doit donc analyser un article du média de désinformation global-news-maq datant de 17h00.
 Pour m'assurer que c'est le bon article je vais regarder tous les articles de la journée jusqu'à trouver celui qui possède un timestamp de publication indiquant 17h00. Je suis obligé de procéder de la sorte parce que les articles ne donne pas ouvertement l'heure de publication.
-![[P1_disarm.png]]
+![[P1_disarm.png|500]]
 Celui qui nous intéresse est donc [celui-ci](https://global-news-maq.info/mobilisation-generale-contre-france/).
-![[P1_disarm_art.png]]
+![[P1_disarm_art.png|500]]
 On peut y lire des mots durs, un vocabulaire qui attise la haine et la violence. Mais aussi et surtout un appel a la manifestation.
 Ce qui colle parfaitement avec technique ==T0126== de le framework Disarm, qui aide a analyser des attaques informationnelles. Et donc la tactique TA10 (mais malgré l'énoncé, le flag est composé du code de la Technique)
-![[P1_disarm_T0126.png]]
+![[P1_disarm_T0126.png|500]]
 D'ailleurs on pourrait décrire le but de cette campagne via la technique T0138.001 et la technique T0138.002
-![[P1_disarm_tech1.png]]
-![[P1_disarm_tech2.png]]
+![[P1_disarm_tech1.png|500]]
+![[P1_disarm_tech2.png|500]]
 
 ---
 ## Une metadata vaut mille images (optionnel)
@@ -261,11 +263,11 @@ D'ailleurs on pourrait décrire le but de cette campagne via la technique T0138.
 ### RETEX
 On va donc analyser les images qui nous paraissent suspectes, pour voir si on peut en extraire des informations intéressantes.
 La première image qui m'est venue a l'esprit est celle-ci :
-![[P1_meta.png]]
+![[P1_meta.png|500]]
 Elle est tirée d'un [article](https://global-news-maq.info/video-choc-pilote-rafale-recuperation-mer/) sur global-news-maq qui parlais du sauvetage de Lynx.
 Cette image parait suspicieuse parce qu'elle ne colle pas avec la direction artistique des autres images d'articles. Et puis, ce canard jaune a l'air beaucoup trop hors contexte à mon goût.
 
-![[P1_meta_data.png]]
+![[P1_meta_data.png|500]]
 En analysant les méta-données, on trouve des détails intéressant :
 - `Software : ComfyUI 0.2.2` → ComfyUI est un front-end / workflow manager pour modèles de diffusion (Stable Diffusion, SDXL, etc.).
 - `User Comment : Steps: 35, Sampler: DPM++ 2M Karras, CFG scale: 7.5, Seed: 1847392056, Size: 1024x1024, Model: juggernautXL_v9, Clip skip: 2`
@@ -312,8 +314,8 @@ for rank, (tag, count) in enumerate(counts.items(), 1):
 print("=" * 40)
 ```
 
-En l'executant sur le fichier en question, on a ces résultats
-![[P1_mesure.png]]
+En l'executant sur le fichier en question, on a ces résultats :
+![[P1_mesure.png|500]]
 On peut donc voir les 5 hashtags les plus utilisés ainsi que leur nombre d'utilisation respective.
 
 ---
@@ -387,8 +389,10 @@ else:
 ```
 
 Il marche au cas par cas, j'ai décidé de le faire fonctionner pour le hashtag "JusticePourLesVictimes"
-![[P1_analyser.png]]
+![[P1_analyser.png|500]]
 En exécutant le script, on voit que son pic d'utilisation se trouvé a 12h00.
 Le délai est de 192.8 minutes, on peut donc arrondir a 193.
 
 ---
+
+Les autres phases du CTF  · | ·  [[Phase 2 - Technical]]  · | ·  [[Phase 3 - Osint]] 

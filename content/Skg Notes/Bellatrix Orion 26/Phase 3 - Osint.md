@@ -18,3 +18,7 @@ Après mes journées de taff je n'étais pas toujours concentré le soir pour ce
 
 Par contre, j'ai beau me plaindre, ce CTF était quand même vraiment sympa, avoir recréé autant de sites et de vies n'a pas dû être simple pour les organisateurs mais ça laisse quand même une très bonne expérience.  
 J'espère pouvoir trouver plus de CTF de ce style, avec autant de réalisme. 👏
+
+---
+
+[[Phase 1 - Analysis]] · | · [[Phase 2 - Technical]] · | · Les autres phases du CTF 
