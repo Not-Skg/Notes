@@ -88,7 +88,7 @@ Et ça a payé, on a donc le nom de la personne qui a réalisé ce site : ==Hele
 ### Mission
 >Vous êtes à présent sur le site du prestataire technique du site de vente. En explorant son portefeuille de réalisation, vous pourrez trouver une galaxie de sites qui méritent une exploration approfondie. Votre objectif est d'identifier des sites suspects ou liés à des opérations de désinformation. On souhaite en particulier ==comprendre si derrière l'opération de désinformation on trouve un ou des commanditaires==.
 >
-**Actions requises:**
+>**Actions requises:**
 >>- Explorer le portefeuille du prestataire technique
 >>- Analyser les sites listés pour identifier des motifs suspects
 >>- Trouver un site qui implique directement Mercure
@@ -298,5 +298,4 @@ Si j'avais su qu'il fallait casser un mot de passe, j'aurais lancé un script de
 
 ---
 
-[[Phase 1 - Analysis]] · | · Les autres phases du CTF · | · [[Phase 3 - Osint]] 
-•
+[[Phase 1 - Analysis]] · | · Les autres phases du CTF · | · [[Phase 3 - Osint]] •
