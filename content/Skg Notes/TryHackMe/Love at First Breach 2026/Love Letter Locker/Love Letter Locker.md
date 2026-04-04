@@ -16,7 +16,7 @@ tags:
 Cette fois-ci on doit analyser un site qui archive en secret des lettres, j'imagine qu'il faudra donc en trouvé une sensible.
 
 Sur le site on peut se créer un compte. Et quand on le créé, on a accès a une interface qui nous dit même le nombre de lettres qui ont été archivées et apparement il y en a 2.
-![[lettre_cachés.png|500]]
+![[lettre_caches.png|500]]
 Et vu qu'on ne peut rien faire d'autre, on va en créé une.
 ![[Faille.png|500]]
 Quand on l'ouvre on voit un indice (le petit `3`) dans l'url, c'est donc la faille.

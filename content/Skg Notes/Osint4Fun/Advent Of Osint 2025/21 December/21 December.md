@@ -28,7 +28,7 @@ Pour ce faire on inspecte la page et on cherche `/channel/` on a donc UClC8Pklsj
 Grace à ça on peut construire le lien : hxxps://www[.]youtube[.]com/channel/ID
 
 Ça ne donne toujours rien mais du coup on peut retester via la autre chaine youtube gavlegoatlive. Cette fois ci on trouve quelque chose en [2019](https://web.archive.org/web/20190801000000*/https://www.youtube.com/channel/UC_521_9yuT-EQqfF7cip2Ig).
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/21 December/21D_jackpot.png|500]]
+![[21D_jackpot.png|500]]
 
 On retombe donc sur cette [vidéo](https://www.youtube.com/watch?v=7hUjdVKkHro&spf=navigate&themeRefresh=1) et elle sonne minuit à 11:35:55 et on peut trouver via shazam le nom de la musique qui est donc :  la musique est donc : **==Up on the Housetop==**
 

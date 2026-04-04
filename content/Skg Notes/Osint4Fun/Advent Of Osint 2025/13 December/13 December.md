@@ -18,10 +18,10 @@ Et d'après [Wikipedia](https://fr.wikipedia.org/wiki/James_Chambers) il y a un 
 
 En cherchant : `inurl:"lemonde.fr/blog/" 2013 AND "concert" Jimmy Cliff`
 On tombe sur ==Mundo Latino - Reggae Night==, et dedans il y est mention de Rio Loco à [Toulouse](https://www.lemonde.fr/blog/mundolatino/2013/06/).
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/13 December/13D_RL.png|500]]
+![[13D_RL.png|500]]
 Et le lieu précisé est ==la prairie des Filtres==.
 On peut donc trouver les coordonnées via Google maps.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/13 December/13D_GGM.png|500]]
+![[13D_GGM.png|500]]
 
 ---
 ## Énoncé [2/2]
@@ -31,8 +31,8 @@ On peut donc trouver les coordonnées via Google maps.
 
 ## RETEX [2/2]
 En cherchant `Mundo Latino toulouse 2013 programm` on tombe sur cette [vidéo](https://www.youtube.com/watch?v=OzsPNSKc7YM).
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/13 December/13D_V.png|500]]
+![[13D_V.png|500]]
 Et à 0:36 une photographie de Jimmy Cliff le présente. 
 ![[13 Decembre.2.png|500]]
 En utilisant Google Lens sur l'image on tombe sur ce [site](https://www.udiscovermusic.com/news/jimmy-cliff-love-supreme-2019/) qui nous indique que le photographe est **==Tom Sheehan==**.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/13 December/13D_Tom.png|500]]
+![[13D_Tom.png|500]]

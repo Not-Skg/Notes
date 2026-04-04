@@ -25,7 +25,7 @@ De plus il est notion de "lieux mythiques pour un périple",  et ce lieu est lit
 En filtrant les avis par : 4/5 - 5/5, à la date juin-novembre et avec toutes les langues on tombe sur l'avis d'un certain ==ebalix== le seul à avoir poster ce type d'avis avec deux photos à cette date.
 ![[2D_eballix.png|500]]
 En cherchant le Baddad Cafe sur Google Maps, on trouve cette [photo](https://www.google.fr/maps/place/Bagdad+Cafe/@34.8193862,-116.6433681,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhBRwHHDkc_ePYbj2qd24mqX!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAweozplv650JwQuaQUck8O5RM4tuoBOdNXdrIOkKXFrPmHd3qv7vmDCyYT2EjVrkr9EzkCz5rfel8b3gVKeXmjoOZS9P4Tem4rffSkr9cExa9QLI4CAX_JSJT93FGqdrHqCpX4if8Z_SSGzTK%3Dw203-h152-k-no!7i4000!8i3000!4m9!3m8!1s0x80c4f0d20ac20fbd:0xbb635b01333e4225!8m2!3d34.819657!4d-116.6433046!10e5!14m1!1BCgIgAQ!16s%2Fg%2F1ttyx02r?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D#).
-![[2 December/2D_BC.png|500]]
+![[2D_BC.png|500]]
 Ce qui prouve qu'on est bien au bon endroit puisque c'est a peu près à la bonne période et on retrouve exactement les mêmes dispositions des détails.
 
 En continuant un peu sur les avis Google Maps, on trouve celui-ci qui comporte notamment une photo du lustre sous le porche d'entrée avec un ==chapeau== d'accroché dessus.
