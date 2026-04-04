@@ -25,7 +25,7 @@ On a le même panneau, mur, boite de mouchoir et petit drapeau sur le bureau. C'
 Toujours via l'article, il y a ces trois personnes de présent:
 - [Hani **==Sewilam==**](https://en.wikipedia.org/wiki/Hani_Sewilam)
 - [Vinay **==Nangia==**](https://icarda.org/about-us/our-team/vinay-nangia)
-- [Walid **==Hakiki==**]()
+- Walid **==Hakiki==**
 ## Énoncé [2/2]
 >La guerre en ==Syrie a contraint l'ICARDA à prendre une mesure inédite== : alors que des pays comme le Burundi, le Cameroun ou le Mali n'étaient concernés que par un unique « échantillon », un autre pays en totalisait dix.
 >

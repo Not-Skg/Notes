@@ -22,10 +22,9 @@ Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osi
 
 ---
 # ▸ CTF
-==[To Do]==
 - [[Phases|Bellatrix]] - [ 82ème / 1006 ]
 - [[Love at First Breach 2026]]
-- 404 CTF 2025
+- 404 CTF 2025 ==[To Do]==
 
 ---
 # ▸ CHALL
@@ -33,7 +32,7 @@ Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osi
 ## Osintopia
 ==[To Do]==
 ## Osint4Fun
-- [[Advent Of Osint 2025]]
+-  [[Advent Of Osint 2025]]
 - Integrity ==[To Do]==
 ## TryHackMe
 - OhSINT ==[To Do]==
@@ -41,7 +40,6 @@ Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osi
 - KaffeeSec - SoMeSINT ==[To Do]==
 
 ---
-
 # ▸ Learning Path
 - SOC Level 1 ==[To Do]==
 
