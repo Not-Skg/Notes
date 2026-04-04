@@ -1,5 +1,5 @@
 ---
-title: SKG Notes
+title: Homepage
 ---
 ![[Ban.jpeg]]
 > Ici je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
@@ -11,7 +11,7 @@ title: SKG Notes
 Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe** mais de temps en temps je ferais d'autres choses.
 
 >[!info] Prochainement
-> - [ ] RETEX Bellatrix Orion26
+> - [x] RETEX Bellatrix Orion26
 > - [ ] RETEX OhSINT
 > - [ ] RETEX KaffeeSec - SoMeSINT
 > - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
@@ -24,30 +24,30 @@ Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osi
 # ▸ CTF
 - [[Phases|Bellatrix]] - [ 82ème / 1006 ]
 - [[Love at First Breach 2026]]
-- 404 CTF 2025 ==[To Do]==
+- 404 CTF 2025 ==[Bientôt]==
 
 ---
 # ▸ CHALL
 >  Voici quelques RETEX de ma part : 
 ## Osintopia
-==[To Do]==
+==[Bientôt]==
 ## Osint4Fun
 -  [[Advent Of Osint 2025]]
-- Integrity ==[To Do]==
+- Integrity ==[Bientôt]==
 ## TryHackMe
-- OhSINT ==[To Do]==
+- OhSINT ==[Bientôt]==
 - [[Sakura Room]]
-- KaffeeSec - SoMeSINT ==[To Do]==
+- KaffeeSec - SoMeSINT ==[Bientôt]==
 
 ---
 # ▸ Learning Path
-- SOC Level 1 ==[To Do]==
+- SOC Level 1 ==[Bientôt]===
 
 ---
 # ▸ Enquêtes
 > Voici un exemple d'enquête (et de rapport) que je suis capable de réaliser.
 
-==[To Do]==
+==[Bientôt]==
 
 ---
 # ▸ Coups de coeur
@@ -56,3 +56,6 @@ Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osi
 >Un CTF organisé par le ComCyber. 
 >J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
 
+---
+
+[[index|HomePage]] · | ·  Les pages sympas · | · [[Toolbox]]
