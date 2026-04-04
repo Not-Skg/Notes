@@ -23,9 +23,9 @@ Personnellement, je préfère lire le transcript. Et ça, parce qu'il est possib
 On trouve le [transcript](http://www.rsteviemoore.com/tp/beatlesxmas.html) via la recherche : `First Christmas flexi-disc Beatles 1963 transcript`
 
 L'énoncé fait mention du moment à 4:05. Et on apprend via le transcript que le flexi-disc en fait 5min.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/7 December/7D_flex.png|500]]
+![[7D_flex.png|500]]
 Il faut donc lire la fin de cette partie du transcript.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/7 December/7D_thx.png|500]]
+![[7D_thx.png|500]]
 On retrouve donc des remerciements pour :  Ann **==Collingham==**, Bettina **==Rose==** et  Freda **==Kelly==**
 
 ## Énoncé [2/3]
@@ -37,7 +37,7 @@ On retrouve donc des remerciements pour :  Ann **==Collingham==**, Bettina **==R
 >>*Format de réponse :* Paris France
 ## RETEX [2/3]
 On peut retrouver très facilement la bande annonce en question. Et en la regardant attentivement, on peut voir l'enveloppe au timestamp : 0:43 
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/7 December/7D_env.png|500]]
+![[7D_env.png|500]]
 On peut voir dessus le tampon : **==Galati==** 2 Tranzit.
 Et après une rapide recherche, c'est une ville de **==Roumanie==**
 ## Énoncé [3/3]
@@ -49,6 +49,6 @@ Et après une rapide recherche, c'est une ville de **==Roumanie==**
 ## RETEX [3/3]
 En cherchant `beatles records 1965 permanent museum` on tombe sur le site du [musée nationnal de Liverpool](https://www.liverpoolmuseums.org.uk/artifact/beatles-third-christmas-record-1965).
 
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/7 December/7D_Museum.png|500]]
+![[7D_Museum.png|500]]
 
 Et il nous apprends que son numéro d'inventaire est le suivant : **==MLL.2005.41.28==**.

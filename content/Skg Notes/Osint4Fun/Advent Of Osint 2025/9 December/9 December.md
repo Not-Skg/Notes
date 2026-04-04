@@ -17,5 +17,5 @@ Il aurait été utile de faire un shazam pour retrouver la musique puis son tran
 Et en recherchant ces termes on [apprend](https://fr.wikipedia.org/wiki/Molly_Malone) que "Molly Malone" c'est le nom de la musique mais aussi d'une statue sur St Andrew's Street (Dublin) qui était auparavant en bas de ==Grafton Street==.
 
 Donc en y allant sur Google maps, on peut la retrouver ainsi que le fronton en face d'elle.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/9 December/9D_Molly.png|500]]
+![[9D_Molly.png|500]]
 Et sur sur fronton on peut lire **==IRISH PERMANENT==**

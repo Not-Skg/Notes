@@ -13,10 +13,10 @@ tags:
 
 ## RETEX
 Via une recherche inversé (Google Lens).
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/8 December/8D_Lafayette.png|500]]
+![[8D_Lafayette.png|500]]
 On apprends que ce "Grand magasin" c'est les ==Galeries Lafayette==
 Et en cherchant `tournage illégale galeries lafayette`.
 ![[8D_illegale.png|500]]
 On tombe rapidement sur un article qui nous parle du film :  ==Le Père Noël est une ordure==.
-![[content/Skg Notes/Osint4Fun/Advent Of Osint 2025/8 December/8D_ordure.png|500]]
+![[8D_ordure.png|500]]
 Et via une autre recherche rapide on apprend que cela s'était passé en **==décembre 1981==** ce qui concorde avec le " XXème siècle" de l'énoncé.
