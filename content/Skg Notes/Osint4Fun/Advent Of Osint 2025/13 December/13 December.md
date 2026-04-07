@@ -13,8 +13,8 @@ tags:
 >>*Précision attendue :* 50m
 
 ## RETEX [1/2]
-En faisant une recherche inversé sur l'image de l'énoncé on se rencontre qu'il s'appelle tous ==James Chambers==, on est donc en train de chercher quelqu'un lié à ce concert qui est un de leur homonyme.
-Et d'après [Wikipedia](https://fr.wikipedia.org/wiki/James_Chambers) il y a un chanteur de reggae qui est né avec ce nom mais prend pour nom de scène ==Jimmy Cliff==.
+En faisant une recherche inversée sur l'image de l'énoncé, on se rencontre qu'il s'appelle tous ==James Chambers==, on est donc en train de chercher quelqu'un lié à ce concert qui est un de leurs homonymes.
+Et d'après [Wikipedia](https://fr.wikipedia.org/wiki/James_Chambers), il y a un chanteur de reggae qui est né avec ce nom, mais prend pour nom de scène ==Jimmy Cliff==.
 
 En cherchant : `inurl:"lemonde.fr/blog/" 2013 AND "concert" Jimmy Cliff`
 On tombe sur ==Mundo Latino - Reggae Night==, et dedans il y est mention de Rio Loco à [Toulouse](https://www.lemonde.fr/blog/mundolatino/2013/06/).
@@ -34,5 +34,5 @@ En cherchant `Mundo Latino toulouse 2013 programm` on tombe sur cette [vidéo](h
 ![[13D_V.png|500]]
 Et à 0:36 une photographie de Jimmy Cliff le présente. 
 ![[13 Decembre.2.png|500]]
-En utilisant Google Lens sur l'image on tombe sur ce [site](https://www.udiscovermusic.com/news/jimmy-cliff-love-supreme-2019/) qui nous indique que le photographe est **==Tom Sheehan==**.
+En utilisant Google Lens sur l'image, on tombe sur ce [site](https://www.udiscovermusic.com/news/jimmy-cliff-love-supreme-2019/) qui nous indique que le photographe est **==Tom Sheehan==**.
 ![[13D_Tom.png|500]]

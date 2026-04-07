@@ -2,20 +2,20 @@
 title: Homepage
 ---
 ![[Ban.jpeg]]
-> Ici je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
+> Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
 > Le thème principal ça sera l'OSINT, mais aussi potentiellement un peu de SOC ou de WEB.
-> *==J'ai pleins d'autres Retex a partager mais je ne les ai pas mit au propre donc je vais les uploads au fur et a mesure. Je vais essayé d'en partager un par jour.==*
+> *==J'ai pleins d'autres Retex a partager, mais je ne les ai pas mit au propre donc je vais les uploads au fur et a mesure. Je vais essayé d'en partager un par jour.==*
 >>Il me reste encore tous ces challs en stock :
 >>![[Graph_Challl_tt.png|300]]
 
-Généralement je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe** mais de temps en temps je ferais d'autres choses.
+Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe**, mais de temps en temps je ferais d'autres choses.
 
 >[!info] Prochainement
 > - [x] RETEX Bellatrix Orion26
 > - [ ] RETEX OhSINT
 > - [ ] RETEX KaffeeSec - SoMeSINT
 > - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
-> - [ ]  Learning Path SOC Level 1
+> - [ ] Learning Path SOC Level 1
 > - [ ] RETEX Integrity
 > - [ ] Tous mes challs Osintopia d'avant la refonte du site
 > - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)

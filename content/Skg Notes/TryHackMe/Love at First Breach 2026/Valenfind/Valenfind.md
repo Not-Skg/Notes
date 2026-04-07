@@ -15,16 +15,16 @@ Pour ce challenge, il va falloir analyser un site de rencontre.
 On a la possibilité de se créer un compte, et de visiter les profils des autres.
 On peut même changer le theme de leur profil.
 ![[V_go.png|500]]
-J'ai lancé un gobuster en fond pour voir si une page spécifique existait mais je n'ai rien trouvé d'intéressant.
+J'ai lancé un gobuster en fond pour voir si une page spécifique existait, mais je n'ai rien trouvé d'intéressant.
 ![[V_L.png|500]]
-Lorsque l'on change de theme sur un profil, on voit (via Burp) qu'un GET est réalisé en envoyant une valeur pour layout. Cette valeur correspond à un nom de fichier html. Cela veut donc dire que l'on peut potentiellement choisir le fichier que l'on veut à la place du fichier de theme.
+Lorsque l'on change de thème sur un profil, on voit (via Burp) qu'un GET est réalisé en envoyant une valeur pour layout. Cette valeur correspond à un nom de fichier html. Cela veut donc dire que l'on peut potentiellement choisir le fichier que l'on veut à la place du fichier de thème.
 
 ![[V_passwd.png|500]]
 Ça a marché, j'ai même pu afficher le contenu du fichier /etc/passwd.
 
 Si j'arrive a afficher ça je peux donc afficher le code de l'app.
 ![[V_API.png|500]]
-Bingo, j'arrive même a récupérer la clé API Admin`CUPID_MASTER_KEY_2024_XOXO`.
+Bingo, j'arrive même à récupérer la clé API Admin`CUPID_MASTER_KEY_2024_XOXO`.
 
 Et il y a aussi une route admin d'export de la db `/api/admin/export_db`. Et cette route nous demande d'utiliser le `X-Valentine-Token`, probablement la clé API du dessus.
 ![[V_export.png|500]]

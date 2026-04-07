@@ -19,7 +19,7 @@ Cette fois-ci c'est un site de note qui signe et chiffre chaque action par le sy
 ![[Home_page.png|500]]
 Mais d'après l'énoncé le système de confiance n'est pas top.
 ![[Admin.png|500]]
-Déjà on peut voir que même sans se créer de compte on peut se connecter au compte admin sans mdp.
+Déjà, on peut voir que même sans se créer de compte, on peut se connecter au compte admin sans mdp.
 Et le message envoyé plus tôt par ce compte est :
 ```
 Welcome to LoveNote
@@ -28,20 +28,20 @@ Welcome to LoveNote! Send encrypted love messages this Valentine's Day. Your com
 ```
 On y comprend donc que ce chall sera consacré au RSA et donc le jeu de public key / private key.
 ![[gobuster.png|500]]
-Après un rapide `gobuster` on peut voir qu'il y a pleins de pages existantes mais plus particulièrement une page "debug".
+Après un rapide `gobuster` on peut voir qu'il y a pleins de pages existantes, mais plus particulièrement une page "debug".
 
 ![[debug_page.png|500]]
 On peut y accéder même sans se connecter à un compte donc elle est accessible de l'extérieur.
-On y apprends aussi qu'au lieu d'utiliser de la vraie randomisation, les clés sont générées à partir d'un **seed prévisible basé sur un username**.
+On y apprend aussi qu'au lieu d'utiliser de la vraie randomisation, les clés sont générées à partir d'un **seed prévisible basé sur un username**.
 
 La seed est toujours de la forme : 
 ```python
 seed = "{username}_lovenote_2026_valentine"
 ```
 
-Donc si on a la seed, on peut recréer la clé privé d'un compte, `admin` à tout hasard.
+Donc si on a la seed, on peut recréer la clé privée d'un compte, `admin` à tout hasard.
 
-Le site nous permet de vérifier si un message à bien été fait par une personne a partir :
+Le site nous permet de vérifier si un message a bien été fait par une personne à partir :
 - username
 - message
 - Digital Signature (Hex)
@@ -116,7 +116,7 @@ except Exception as e:
 print(f"[!] Error: {e}")
 ```
 
-Afin de vérifier que le script fonctionne bien on peut déjà comparer ce qu'il donne avec ce que nous donne le site lors de la création d'un compte : 
+Afin de vérifier que le script fonctionne bien, on peut déjà comparer ce qu'il donne avec ce que nous donne le site lors de la création d'un compte : 
 ![[create_account.png|500]]
 ![[keys.png|500]]
 

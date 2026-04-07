@@ -14,11 +14,11 @@ tags:
 >>*Format de réponse :* Hadlow Johnson Rowell
 
 ## RETEX [1/3]
-Il y a plusieurs approche possible : 
+Il y a plusieurs approches possible : 
 - Écouter leur flexi-disc,
 - Lire le transcript.
 
-Personnellement, je préfère lire le transcript. Et ça, parce qu'il est possible que les nom que l'on cherche soit difficile a orthographier.
+Personnellement, je préfère lire le transcript. Et ça, parce qu'il est possible que les noms que l'on cherche soit difficile à orthographier.
 
 On trouve le [transcript](http://www.rsteviemoore.com/tp/beatlesxmas.html) via la recherche : `First Christmas flexi-disc Beatles 1963 transcript`
 
@@ -26,17 +26,17 @@ L'énoncé fait mention du moment à 4:05. Et on apprend via le transcript que l
 ![[7D_flex.png|500]]
 Il faut donc lire la fin de cette partie du transcript.
 ![[7D_thx.png|500]]
-On retrouve donc des remerciements pour :  Ann **==Collingham==**, Bettina **==Rose==** et  Freda **==Kelly==**
+On retrouve donc des remerciements pour : Ann **==Collingham==**, Bettina **==Rose==** et Freda **==Kelly==**
 
 ## Énoncé [2/3]
 >Lorsque Freda Kelly est mentionnée, on entend le groupe s'exclamer « ==Good ol' Freda!== ». Plusieurs années plus tard, cette expression sera choisie comme titre pour un documentaire sur la vie de Freda.
 >
->Dans la ==bande-annonce== de ce documentaire, Freda raconte qu'elle avait naïvement fournit son adresse personnelle pour le fan club, et c'est illustré rapidement  par une ==enveloppe==.
+>Dans la ==bande-annonce== de ce documentaire, Freda raconte qu'elle avait naïvement fourni son adresse personnelle pour le fan club, et c'est illustré rapidement par une ==enveloppe==.
 >
 >De quelle ville et de quel pays vient le courrier ?
 >>*Format de réponse :* Paris France
 ## RETEX [2/3]
-On peut retrouver très facilement la bande annonce en question. Et en la regardant attentivement, on peut voir l'enveloppe au timestamp : 0:43 
+On peut retrouver très facilement la bande-annonce en question. Et en la regardant attentivement, on peut voir l'enveloppe au timestamp : 0:43 
 ![[7D_env.png|500]]
 On peut voir dessus le tampon : **==Galati==** 2 Tranzit.
 Et après une rapide recherche, c'est une ville de **==Roumanie==**
@@ -51,4 +51,4 @@ En cherchant `beatles records 1965 permanent museum` on tombe sur le site du [mu
 
 ![[7D_Museum.png|500]]
 
-Et il nous apprends que son numéro d'inventaire est le suivant : **==MLL.2005.41.28==**.
+Et il nous apprend que son numéro d'inventaire est le suivant : **==MLL.2005.41.28==**.

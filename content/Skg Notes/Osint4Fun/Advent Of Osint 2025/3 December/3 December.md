@@ -12,12 +12,12 @@ tags:
 >>*Format de réponse :* Dracula
 
 ## Retex
-On peut voir ==The Leather Bottle== inscrit sur le batîment à gauche.
+On peut voir ==The Leather Bottle== inscrit sur le bâtiment à gauche.
 ![[3D_TLB.png|250]]
-Sur le photo de l'énoncé, on peut aussi voir "The St" écrit sur la route, donc en cherchant "The Leather Bottle The St" sur google maps, on trouve deux possibilité.
+Sur le photo de l'énoncé, on peut aussi voir "The St" écrit sur la route, donc en cherchant "The Leather Bottle The St" sur Google Maps, on trouve deux possibilité.
 ![[3D_maps.png|500]]
 Et la première est la bonne :
 ![[3D_maps2.png|500]]
-En changeant la date à Novembre 2022 et en avançant dans la rue on trouve ce personnage.
+En changeant la date à novembre 2022 et en avançant dans la rue, on trouve ce personnage.
 ![[3D_Grinch.png|500]]
 Le **==Grinch==**

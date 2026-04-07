@@ -15,7 +15,7 @@ tags:
 >> *Format de réponse :* Dumbi 1996
 
 ## Retex
-En cherchant sur Google maps je trouve une île nommé ==Amsterdamøya==.
+En cherchant sur Google Maps, je trouve une île nommée ==Amsterdamøya==.
 ![[4D_Island.png|500]]
-Et en cherchant sur [Wikipedia](https://fr.wikipedia.org/wiki/Amsterdam%C3%B8ya), on apprend qu'une station semi-permanente à été construit en 1619 sur cette île, et elle était nommé : [Smeerenburg](https://fr.wikipedia.org/wiki/Smeerenburg).
+Et en cherchant sur [Wikipedia](https://fr.wikipedia.org/wiki/Amsterdam%C3%B8ya), on apprend qu'une station semi-permanente a été construit en 1619 sur cette île, et elle était nommée : [Smeerenburg](https://fr.wikipedia.org/wiki/Smeerenburg).
 Et toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Smeerenburg) le film d'animation **==Klaus==** est sorti en **==2019==** et se déroule dans la ville de "Smeerensburg"

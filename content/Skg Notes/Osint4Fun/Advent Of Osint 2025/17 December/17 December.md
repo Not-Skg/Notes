@@ -13,11 +13,11 @@ tags:
 
 ## Retex
 Dans un premier temps, trouvons le nom de la personne sur la photo.
-Pour une fois je ne trouve rien via Google Lens, et Bing non plus. Je passe donc a Yandex et grace à ce dernier je trouve la photo complète. 
+Pour une fois, je ne trouve rien via Google Lens, et Bing non plus. Je passe donc à Yandex et grâce à ce dernier, je trouve la photo complète. 
 ![[17 Decembre.2.png]]
 Avec la photo, il y a le mot clé ==Dante== qui y est associé.
-Toujours sur yandex on trouve un nom : ==Kazuhisa Hashimoto==, vu que sur la photo ils ont l'air d'être un groupe de music on peut chercher :`Kazuhisa Hashimoto music band`
-D'après le site [metal-archive](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055) il faisait parti du groupe ==Dante== et était le chanteur. Je comprend donc le mot clé associé avec. Toujours sur ce site en regardant la lineup du groupe on trouve : 
+Toujours sur Yandex, on trouve un nom : ==Kazuhisa Hashimoto==, vu que sur la photo, ils ont l'air d'être un groupe de musique, on peut donc chercher :`Kazuhisa Hashimoto music band`
+D'après le site [metal-archive](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055), il faisait partie du groupe ==Dante== et était le chanteur. Je comprends donc le mot clé associé avec. Toujours sur ce site en regardant la lineup du groupe, on trouve : 
 
 | [Shougo Hata](https://www.metal-archives.com/artists/Shougo_Hata/185058)               | Drums   |
 | -------------------------------------------------------------------------------------- | ------- |
@@ -25,9 +25,9 @@ D'après le site [metal-archive](https://www.metal-archives.com/artists/Kazuhisa
 | [Kazuhisa Hashimoto](https://www.metal-archives.com/artists/Kazuhisa_Hashimoto/185055) | Vocals  |
 | [Yoshihiro "Tetsu" Matsumoto](https://www.metal-archives.com/artists/Tetsu%21/185059)  | Bass    |
 Maintenant qu'on a les noms, il faut trouver qui est l'homonyme de qui.
-Après une rapide recherche on apprend que le chanteur est l'homonyme du [créateur du konami Code](https://en.wikipedia.org/wiki/Kazuhisa_Hashimoto) (il n'y avait donc pas besoin de chercher très loin...).
+Après une rapide recherche, on apprend que le chanteur est l'homonyme du [créateur du konami Code](https://en.wikipedia.org/wiki/Kazuhisa_Hashimoto) (il n'y avait donc pas besoin de chercher très loin...).
 
-Vu que j'ai pas plus d'info j'utilise l'indice : ==rappel toi du slogan de Nike==.
+Vu que je n'ai pas plus d'info j'utilise l'indice : ==rappel toi du slogan de Nike==.
 Pour rappel ce dernier est **Just Do It**.
 J'imagine qu'il faut donc faire le konami code sur l'interface du chall.
 Et si besoin, ce code est le suivant :

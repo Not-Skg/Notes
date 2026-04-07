@@ -12,7 +12,7 @@ tags:
 >>*Format de réponse :* Air France Antonov 400-265
 
 ## RETEX 
-Via l'utilisation de Google Lens, on arrive a trouver un [article](https://svenblogt.boardingarea.com/flying-home-for-christmas-mit-airberlin/) avec une image similaire qui en parle.
+Via l'utilisation de Google Lens, on arrive à trouver un [article](https://svenblogt.boardingarea.com/flying-home-for-christmas-mit-airberlin/) avec une image similaire qui en parle.
 ![[14D_Boeing.png|500]]
 Il y a même une seconde photo, de l'extérieur de l'avion. 
 Et il y est mention de la compagnie **==Air Berlin==**, et d'un **==Boeing 737-800==**.

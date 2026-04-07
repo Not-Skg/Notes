@@ -20,11 +20,11 @@ On ne trouve rien d'intéressant donc on va changer d'approche et chercher des i
 Leur nom de famille veut dire Frelon européen en ==Finlandais==
 
 On va chercher dans les archives de livre Finlandais.
-Je trouve vite les deux sites suivant :
+Je trouve vite les deux sites suivants :
 - https://nordique.zonelivre.fr/category/livres/livres-finlandais/
 - https://digi.kansalliskirjasto.fi/etusivu?set_language=en
 
-Le premier lien ne me donne pas grand chose mais pour le deuxième j'ai des trucs satisfaisant en cherchant `Joonas Hypatia Herhiläinen`.
+Le premier lien ne me donne pas grand-chose mais pour le deuxième, j'ai des trucs satisfaisant en cherchant `Joonas Hypatia Herhiläinen`.
 Plus précisément l'histoire suivante : ![[22 Decembre.png|500]]
 
 Et la personne qui raconte l'histoire est **==Tiitus==**

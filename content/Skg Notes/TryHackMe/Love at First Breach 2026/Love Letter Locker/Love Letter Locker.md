@@ -13,19 +13,19 @@ tags:
 >
 >>*You can access the web app here:* `http://MACHINE_IP:5000`
 ## Retex
-Cette fois-ci on doit analyser un site qui archive en secret des lettres, j'imagine qu'il faudra donc en trouvé une sensible.
+Cette fois-ci, on doit analyser un site qui archive en secret des lettres, j'imagine qu'il faudra donc en trouvé une sensible.
 
-Sur le site on peut se créer un compte. Et quand on le créé, on a accès a une interface qui nous dit même le nombre de lettres qui ont été archivées et apparement il y en a 2.
+Sur le site, on peut se créer un compte. Et quand on le créer, on a accès à une interface qui nous dit même le nombre de lettres qui ont été archivées et apparemment, il en a deux.
 ![[lettre_caches.png|500]]
 Et vu qu'on ne peut rien faire d'autre, on va en créé une.
 ![[Faille.png|500]]
-Quand on l'ouvre on voit un indice (le petit `3`) dans l'url, c'est donc la faille.
+Quand on l'ouvre, on voit un indice (le petit `3`) dans l'URL, c'est donc la faille.
 
 > Pourquoi c'est une faille ? 
 
-Parce que ça veut dire qu'on peut potentiellement construire nous même l'url pour accéder à d'autres lettres.
+Parce que ça veut dire qu'on peut potentiellement construire nous-mêmes l'URL pour accéder à d'autres lettres.
 
-En remplaçant le `3` par un `1` dans l'url, on trouve donc la première lettre.
+En remplaçant le `3` par un `1` dans l'URL, on trouve donc la première lettre.
 ![[FLAG.png|500]]
 Le pire (ou le mieux), c'est qu'on a même pas besoin de droits spécifiques pour y accéder.
 

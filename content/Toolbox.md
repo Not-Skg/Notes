@@ -4,15 +4,15 @@ title: Toolbox
 ![[Ban_tools.jpg]]
 >[!info] 
 >Ici, je vais partager des outils que j'aime utiliser et que je trouve intéressant. 
-> Ça peut être des outils existants et déjà "mainstream" dans l'osint, comme quelques script que j'aurai dev sur mon temps perso et que j'aime utiliser pour gagner du temps dans mes challs.
+> Ça peut être des outils existants et déjà "mainstream" dans l'osint, comme quelques scripts que j'aurai dev sur mon temps perso et que j'aime utiliser pour gagner du temps dans mes challs.
 
 # OverPassTurbo
-> Où comment géolocaliser comme un pro !
+> Ou comment géolocaliser comme un pro !
 
 ==[Bientôt]==
 
 # BeautifulSoup & Scrapy
-> Où comment faire du webscrapping basique.
+> Ou comment faire du webscrapping basique.
 
 ==[Bientôt]==
 # Extension navigateur utiles
@@ -24,7 +24,7 @@ title: Toolbox
 3. nuclei : scan de vulns
 4. sherlock
 # Google Dorks
-> Où comment "vraiment" faire une recherche google.
+> Ou comment "vraiment" faire une recherche google.
 
 # Sites utiles
 1. Wayback machine

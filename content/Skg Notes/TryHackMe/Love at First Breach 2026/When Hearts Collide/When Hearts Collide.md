@@ -15,9 +15,9 @@ tags:
 >
 >>*You can access the web app here:* `http://MACHINE_IP`
 ## Retex
-Cette fois-ci on doit analyser un site qui est censé trouvé notre âme soeur en comparant les hash md5 des images qu'on upload.
+Cette fois-ci, on doit analyser un site qui est sensé trouvé notre âme sœur en comparant les hash md5 des images qu'on upload.
 ![[WHC_HP.png|500]]
-On a donc la possibilité d'upload une image, et dans le titre on nous parle aussi de "Collision", or une collision md5 c'est lorsque deux images différentes on le même hash.
+On a donc la possibilité d'upload une image, et dans le titre, on nous parle aussi de "Collision", or une collision md5 c'est lorsque deux images différentes ont le même hash.
 On va donc essayer d'en reproduire une via l'outil `fastcoll`.
 ![[collide.png|500]]
 Pour la collision, on va utiliser l'image de l'exemple du site (le chien).
@@ -27,4 +27,4 @@ Le but, c'est de créer deux images `dog1.jpg` et `dog2.jpg` qui auront le même
 On upload le premier `dog1.jpg`.
 
 ![[upload2.png|500]]
-Puis la deuxième et maintenant on reçois le flag :  **==THM{hash_puppies_4_all}==**
+Puis la deuxième et maintenant, on reçoit le flag :  **==THM{hash_puppies_4_all}==**

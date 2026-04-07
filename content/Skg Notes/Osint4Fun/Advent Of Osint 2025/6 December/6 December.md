@@ -12,10 +12,10 @@ tags:
 >>Format de réponse : Narendra Modi
 
 ## RETEX
-D'après un extracteur de date spécialisé pour Linkedin, le post à été créé le Dimanche 17 Avril 2022.
+D'après un extracteur de date spécialisé pour Linkedin, le post a été créé le dimanche 17 avril 2022.
 
-En faisant une recherche avancé sur la première image de la vidéo, on trouve un article d'India Time qui republie un poste X avec cette vidéo. 
+En faisant une recherche avancée sur la première image de la vidéo, on trouve un article d'India Time qui republie un poste X avec cette vidéo. 
 ![[6D_IT.png|500]]
-On peut partir du principe que si une chaine d'information republie ça alors elle republie le post qui l'a rendu virale.
+On peut partir du principe que si une chaine d'information republie ça alors, elle republie le post qui l'a rendu virale.
 ![[6D_X.png|500]]
-Et ce poste X à été publié par un certain **==Anand Mahindra==**
+Et ce poste X a été publié par un certain **==Anand Mahindra==**

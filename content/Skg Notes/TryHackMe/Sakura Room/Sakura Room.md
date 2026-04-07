@@ -15,9 +15,9 @@ tags:
 ### Retex
 Il faut donc commencer ce challenge en analysant la photo nommé : `sakurapwnedletter.svg`
 ![[sakurapwnedletter.png|300]]
-Cette image a l'air d'une image classique que laisserai un attaquant.
-Le binaire derrière veut surement dire quelque chose mais ça doit être une phrase sans importance du style "une image c'est beau mais ce qu'elle renferme encore plus".
-En inspectant la page tout bêtement on a accès a plein d'information mais la plus importante c'est que le `.svg` a été créé via l'outil `Inkscape` et a été exporté a partir du chemin : `/home/SakuraSnowAngelAiko/Desktop/pwnedletter.png`. Son nom d'origine était donc `pwnedletter.png` mais surtout elle était présent sur le bureau de l'utilisateur **==SakuraSnowAngelAiko==**
+Cette image a l'air d'une image classique que laisserait un attaquant.
+Le binaire derrière veut surement dire quelque chose, mais ça doit être une phrase sans importance du style "une image, c'est beau, mais ce qu'elle renferme encore plus".
+En inspectant la page tout bêtement, on a accès à plein d'information, mais la plus importante, c'est que le `.svg` a été créé via l'outil `Inkscape` et a été exporté à partir du chemin : `/home/SakuraSnowAngelAiko/Desktop/pwnedletter.png`. Son nom d'origine était donc `pwnedletter.png` mais surtout, elle était présente sur le bureau de l'utilisateur **==SakuraSnowAngelAiko==**
 
 ---
 ## 2. RECONNAISSANCE
@@ -30,22 +30,22 @@ En inspectant la page tout bêtement on a accès a plein d'information mais la p
 >A quick search on a reputable search engine can help find matching usernames on other platforms, and there are also a large number of specialty tools that exist for that very same purpose. Keep in mind, that sometimes a platform will not show up in either the search engine results or in the specialized username searches due to false negatives. In some cases you need to manually check the site yourself to be 100% positive if the account exists or not. In order to answer the following questions, use the attacker's username found in Task 2 to expand the OSINT investigation onto other platforms in order to gather additional identifying information on the attacker. Be wary of any false positives!
 ### Retex
 
-On va donc devoir rechercher les comptes avec le même username qu'a la question précédente.
+On va donc devoir rechercher les comptes avec le même username qu'à la question précédente.
 Via l'outil `sherlock` on en trouve une petite trentaine.
 ![[SR_sherlock.png|500]]
-On y reconnais un profil plutôt lié a l'informatique et au code. Le site qui nous intéresse donc le plus dans ce résultat c'est ==Github==.
+On y reconnait un profil plutôt lié à l'informatique et au code. Le site qui nous intéresse donc le plus dans ce résultat, c'est ==Github==.
 ![[SR_github.png|500]]
 Son [compte](https://github.com/SakuraSnowAngelAiko) n'est plus du tout actif, mais un nom se dégage de ce compte : ==Aiko==.
 Sur son compte, un repos attire mon regard : ==PGP==. Il contient une clé publique et d'après le site keys.openpgp.org, elle appartient bien a notre attaquant.
 ![[SR_Public.png|500]]
 Et en prime, on a son adresse mail : **==sakurasnowangel83[@]protonmail[.]com==**
 Essayons de trouver son nom/prénom via ses autres comptes.
-Les résultats de sherlock ne nous donne pas grand chose d'intéressant de ce coté, essayons donc de chercher directement sur google.
+Les résultats de sherlock ne nous donne pas grand-chose d'intéressant de ce côté, essayons donc de chercher directement sur Google.
 ![[SR_GG.png|500]]
 On retrouve très facilement son [twitter](https://x.com/SakuraLoverAiko).
 ![[SR_2acc.png|500]]
 Et dessus, il a posté un message en donnant son compte secondaire nommé ==AikoAbe3==. On peut en déduire son nom et prénom **==Aiko Abe==**.
-Et ce qui appuie notre hypothèse c'est que c'est vraiment un nom et prénom commun au japon.
+Et ce qui appuie notre hypothèse, c'est que c'est vraiment un nom et prénom commun au Japon.
 ![[SR_prénom.png|500]]
 ![[SR_Nom.png|500]]
 
@@ -59,7 +59,7 @@ Et ce qui appuie notre hypothèse c'est que c'est vraiment un nom et prénom com
 
 ### Retex
 On va donc devoir retourner sur son compte Github et chercher ses dernières modifications.
-On va donc dans l'onglet "Repositories" et on les tries par "Last updated". Le tout premier qui remonte est "IO" mais il n'est pas vraiment intéressant parce que c'est juste un simple test de sa part.
+On va donc dans l'onglet "Repositories" et on les trie par "Last updated". Le tout premier qui remonte est "IO" mais il n'est pas vraiment intéressant parce que c'est juste un simple test de sa part.
 Par contre, le deuxième est nommé ==ETH== et c'est aussi le nom d'une crypto.
 ![[SR_eth.png|500]]
 `stratum://0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef.Aiko:pswd@eu1.ethermine.org:4444`
@@ -83,15 +83,15 @@ Il a donc reçu un paiement d'**==Ethermine==** et a pour habitude de les échan
 >Although many users share their username across different platforms, it isn't uncommon for users to also have alternative accounts that they keep entirely separate, such as for investigations, trolling, or just as a way to separate their personal and public lives. These alternative accounts might contain information not seen in their other accounts, and should also be investigated thoroughly. In order to answer the following questions, you will need to view the screenshot of the message sent by the attacker to the OSINT Dojo on Twitter and use it to locate additional information on the attacker's Twitter account. You will then need to follow the leads from the Twitter account to the ==Dark Web== and other platforms in order to discover additional information.
 ### Retex
 On va donc retourner sur le compte twitter **==SakuraLoverAiko==**
-En regardant un peu ses posts on trouve quelques posts sympa comme celui-ci ou le hacker insiste sur les mots ==Deep== et ==Paste==.
+En regardant un peu ses posts, on trouve quelques posts sympa comme celui-ci ou le hacker insiste sur les mots ==Deep== et ==Paste==.
 ![[SR_DP.png|500]]
-Et celui-ci, ou il a l'air de donné un adresse `b2b37b3c106eb3f86e2340a3050968e2`.
+Et celui-ci, où il a l'air de donnée une adresse `b2b37b3c106eb3f86e2340a3050968e2`.
 ![[SR_Wifi.png|500]]
-Il voulais donc qu'on cherche un site sur le darkweb nommé ==DeepPaste==.
-*(Ce site n'existe plus mais c'est un équivalent de pastbin)*
+Il voulait donc qu'on cherche un site sur le darkweb nommé ==DeepPaste==.
+*(Ce site n'existe plus, mais c'est un équivalent de pastbin)*
 ![[SR_DPV3.png|500]]
 En recherchant l'adresse qu'il avait donné, on trouve des noms de wifi, des ssiDs et des MDP.
-Ce qui nous intéresse c'est donc le SSID du wifi de sa maison ==DK1F-G==, on va donc faire une recherche via ce dernier sur wigle.net.
+Ce qui nous intéress, c'est donc le SSID du wifi de sa maison ==DK1F-G==, on va donc faire une recherche via ce dernier sur wigle.net.
 ![[SR_BSSID.png|150]]
 On retrouve donc le BSSID suivant : **==84:AF:EC:34:FC:F8==**.
 
@@ -105,21 +105,21 @@ On retrouve donc le BSSID suivant : **==84:AF:EC:34:FC:F8==**.
 On va donc essayer de retrouver sa localisation.
 Son premier tweet est une photo qui va nous aider puisqu'elle dit qu'elle part de là pour aller à la maison.
 ![[SR_blossom.png|500]]
-Sur cette photo en fond on peut y voir le ==washington monument==.
+Sur cette photo en fond, on peut y voir le ==washington monument==.
 ![[SR_map.png|500]]
-On peut donc en conclure qu'elle était pas très loin de l'aéroport Donald Reagan (**==DCA==**).
+On peut donc en conclure qu'elle n'était pas très loin de l'aéroport Donald Reagan (**==DCA==**).
 
 Ensuite, on peut prendre son post qui parle de sa dernière escale : 
 ![[SR_JAL.png|500]]
-On y voit d'inscrit "First Class Lounge Sakura Lounge", en cherchant sur google on apprends que c'est au japon au Tokyo International Airport avec l'abréviation : **==HND==**
+On y voit d'inscrit "First Class Lounge Sakura Lounge", en cherchant sur Google on apprend que c'est au Japon au Tokyo International Airport avec l'abréviation : **==HND==**
 
-Maintenant on peut s'attaqué au dernier post :
+Maintenant, on peut s'attaquer au dernier post :
 ![[SR_mappy.png|500]]
-Via ce qu'on a trouvé précédemment, on peut croire que l'attaquant vient du Japon, et cette photo le confirme puis qu'on le retrouve au japon sur google map :
+Via ce qu'on a trouvé précédemment, on peut croire que l'attaquant vient du Japon, et cette photo le confirme puisqu'on le retrouve au Japon sur Google map :
 ![[SR_lac.png|500]]
-Le lac qu'on voit sur la carte est le **==Lake Inawashiro==**  et sur le DeepPaste, la ville noté était **==Hirosaki==**.
+Le lac qu'on voit sur la carte est le **==Lake Inawashiro==**  et sur le DeepPaste, la ville notée était **==Hirosaki==**.
 
-L'attaquant est donc un japonais qui visitais l'Amérique.
+L'attaquant est donc un japonais qui visitait l'Amérique.
 
 ---
 ## Synthèse 

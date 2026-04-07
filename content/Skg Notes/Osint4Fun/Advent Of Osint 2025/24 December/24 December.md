@@ -12,7 +12,7 @@ tags:
 >>*Format de réponse :* Farsi Haddad Mansour
 
 ## RETEX [1/2]
-Après un rapide GoogleLENS, on apprend que c'est le drapeau égyptien.
+Après un rapide Google LENS, on apprend que c'est le drapeau égyptien.
 
 Sur le panneau derrière : 
 - ICARDA : International center for agricultural research in the dry areas
@@ -22,7 +22,7 @@ On cherche donc une cérémonie de signature d'un papier sur l'agriculture en É
 Via la recherche suivante : `ICARDA EGYPT signatories` on trouve l'[article](https://icarda.org/media/news/icarda-and-egypt-unite-new-agreement-boost-research-sustainable-water-management)
 ![[24 Decembre.2.png|500]]
 On a le même panneau, mur, boite de mouchoir et petit drapeau sur le bureau. C'est donc bien le bon moment/endroit.
-Toujours via l'article, il y a ces trois personnes de présent:
+Toujours via l'article, il y a ces trois personnes de présent :
 - [Hani **==Sewilam==**](https://en.wikipedia.org/wiki/Hani_Sewilam)
 - [Vinay **==Nangia==**](https://icarda.org/about-us/our-team/vinay-nangia)
 - Walid **==Hakiki==**
@@ -42,7 +42,7 @@ Indice
 
 En téléchargeant le fichier demandé on trouve le Guatemala
 ![[24 Decembre.3.png|500]]
-Maintenant il faudrais trouver le nom de la personne dans sa langue d'origine.
-En cherchant [plus d'info sur un des dépôts](https://grs.icarda.org/accessions/?IG=4410) on a le nom : S.M. Bukasov
-du cyrillic : **==Сергей Михайлович Букасов==**
+Maintenant il faudrait trouver le nom de la personne dans sa langue d'origine.
+En cherchant [plus d'info sur un des dépôts](https://grs.icarda.org/accessions/?IG=4410), on a le nom : S.M. Bukasov
+du cyrillique : **==Сергей Михайлович Букасов==**
 Et d'après le fichier de tout à l'heure, il y a **==7496==** samples provenant de Syrie.
