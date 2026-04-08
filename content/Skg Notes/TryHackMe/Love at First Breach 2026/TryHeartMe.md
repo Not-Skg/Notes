@@ -12,7 +12,7 @@ tags:
 Cette fois-ci, on va devoir analyser une boutique en ligne.
 ![[Shop.png|500]]
 On peut commencer par check les pages associés à cette boutique via l'outil `gobuster`.
-![[Gobuster.png|500]]
+![[content/Skg Notes/TryHackMe/Love at First Breach 2026/TryHeartMe/Gobuster.png|500]]
 Il ne donne pas grand-chose d'intéressant, que des pages classique (login, register, admin, etc)
 
 Vu qu'on a la possibilité de se créer un compte, on va essayer et regarder à quoi ressemble la requête qui s'envoie en parallèle.

@@ -150,8 +150,7 @@ Les informations données par le commentaire sont confirmées dans un communiqu�
 Généralement, les primo-diffuseurs d'information narguent les média d'information en expliquant qu'il avait toujours les informations avant eux. Je vais donc chercher dans les commentaires des différents articles de ces sites de "désinformation".
 ![[P1_primo1.png|500]]
 ![[P1_primo2.png|500]]
-![[P1_primo3.png|500]]
-![[P1_primo4.png|500]]
+![[]]
 Ici, celui qui correspond parfaitement à ces critères, c'est un certain ==Marc Veylanne==.
 Il nous donne même un lien vers son [blog personnel](https://verite-veylanne.blog/) et un autre vers son [Amstramgram](https://amstramgram.net/profile.php?username=veylanne), réseau social très en vogue chez les jeunes.
 

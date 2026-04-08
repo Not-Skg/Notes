@@ -14,6 +14,10 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 > - [x] RETEX Bellatrix Orion26
 > - [ ] RETEX OhSINT
 > - [ ] RETEX KaffeeSec - SoMeSINT
+> - [ ] Digital Footprint
+> - [ ] Searchlight - Imint
+> - [x] Have a Break
+> - [ ] Friday Overtime
 > - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
 > - [ ] Learning Path SOC Level 1
 > - [ ] RETEX Integrity
@@ -22,7 +26,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 
 ---
 # ▸ CTF
-- [[Phases|Bellatrix]] - [ 82ème / 1006 ]
+- [[Bellatrix Orion 26|Bellatrix]] - [ 82ème / 1006 ]
 - [[Love at First Breach 2026]]
 - 404 CTF 2025 ==[Bientôt]==
 
@@ -35,6 +39,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 -  [[Advent Of Osint 2025]]
 - Integrity ==[Bientôt]==
 ## TryHackMe
+- [[Have a Break]]
 - OhSINT ==[Bientôt]==
 - [[Sakura Room]]
 - KaffeeSec - SoMeSINT ==[Bientôt]==
@@ -52,7 +57,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 ---
 # ▸ Coups de coeur
 
->[!example] [[Phases|Bellatrix]]
+>[!example] [[Bellatrix Orion 26|Bellatrix]]
 >Un CTF organisé par le ComCyber. 
 >J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
 
