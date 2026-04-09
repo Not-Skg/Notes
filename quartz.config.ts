@@ -10,6 +10,11 @@ const config: QuartzConfig = {
     configuration: {
         pageTitle: "SKG Notes",
         pageTitleSuffix: "",
+        pageIndex: true,  // Active index pages
+        folderIndex: true, // Dossiers → index.md
+        links: {
+            relative: true
+        },
         enableSPA: true,
         enablePopovers: true,
         analytics: {
