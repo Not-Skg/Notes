@@ -1,3 +1,9 @@
+---
+tags:
+  - Osint
+  - CTF
+  - Bellatrix
+---
 ![[Bellatrix_Illustration.png]]
 
 Le CTF Bellatrix s'est déroulé sur **trois jours consécutifs**, avec des challenges qui se débloquaient progressivement chaque journée. Une fois passé à la phase suivante, les flags des phases précédentes n'étaient plus accessibles — il fallait suivre le rythme ! J'ai **seulement pu y jouer le soir après le boulot**, mais je me suis **quand même super bien amusé** et j'ai réussi à bien avancer malgré le timing serré.

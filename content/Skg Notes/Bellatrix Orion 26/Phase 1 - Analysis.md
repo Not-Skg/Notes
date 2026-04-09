@@ -1,10 +1,10 @@
 ---
 tags:
   - Osint
-  - CTF
   - Bellatrix
   - Disarm
   - Scrapp
+  - Chall
 ---
 ![[Bellatrix_Illustration.png]]
 

@@ -1,7 +1,8 @@
 ---
 tags:
   - Osint
-  - CTF
+  - Chall
+  - Bellatrix
 ---
 ![[Bellatrix_Illustration.png]]
 >[!info] Notes

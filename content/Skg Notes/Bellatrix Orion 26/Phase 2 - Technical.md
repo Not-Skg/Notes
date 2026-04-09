@@ -1,9 +1,9 @@
 ---
 tags:
   - Osint
-  - CTF
   - Bellatrix
   - wpscan
+  - Chall
 ---
 ![[Bellatrix_Illustration.png]]
 >[!info] Notes

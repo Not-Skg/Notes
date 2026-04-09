@@ -1,5 +1,6 @@
 ---
-title: Toolbox
+tags:
+  - Tool
 ---
 ![[Ban_tools.jpg]]
 >[!info] 
@@ -9,7 +10,7 @@ title: Toolbox
 # OverPassTurbo
 > Ou comment géolocaliser comme un pro !
 
-==[Bientôt]==
+[[Overpass-turbo]]
 
 # BeautifulSoup & Scrapy
 > Ou comment faire du webscrapping basique.
@@ -24,11 +25,11 @@ title: Toolbox
 3. nuclei : scan de vulns
 4. sherlock
 # Google Dorks
-> Ou comment "vraiment" faire une recherche google.
+> Ou comment "vraiment" faire une recherche Google.
 
 # Sites utiles
 1. Wayback machine
 
 ---
 
-[[index|HomePage]] · | ·  Les pages sympas · | · [[Toolbox]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]

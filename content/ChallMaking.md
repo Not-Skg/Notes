@@ -12,4 +12,4 @@ title: ChallMaking
 
 ---
 
-[[index|HomePage]] · | ·  Les pages sympas · | · [[Toolbox]]
+[[index|HomePage]] · | ·  Les pages sympas · | · [[Toolbox/]]

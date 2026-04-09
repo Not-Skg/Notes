@@ -26,7 +26,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 
 ---
 # ▸ CTF
-- [[Bellatrix Orion 26|Bellatrix]] - [ 82ème / 1006 ]
+- [[Bellatrix Orion 26]] - [ 82ème / 1006 ]
 - [[Love at First Breach 2026]]
 - 404 CTF 2025 ==[Bientôt]==
 
@@ -46,7 +46,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 
 ---
 # ▸ Learning Path
-- SOC Level 1 ==[Bientôt]===
+- SOC Level 1 ==[Bientôt]==
 
 ---
 # ▸ Enquêtes
@@ -57,10 +57,10 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 ---
 # ▸ Coups de coeur
 
->[!example] [[Bellatrix Orion 26|Bellatrix]]
+>[!example] [[Bellatrix Orion 26/]]
 >Un CTF organisé par le ComCyber. 
 >J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
 
 ---
 
-[[index|HomePage]] · | ·  Les pages sympas · | · [[Toolbox]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]
