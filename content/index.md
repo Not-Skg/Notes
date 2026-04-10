@@ -12,7 +12,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 
 >[!info] Prochainement
 > - [x] RETEX Bellatrix Orion26
-> - [ ] RETEX OhSINT
+> - [x] RETEX OhSINT
 > - [ ] RETEX KaffeeSec - SoMeSINT
 > - [ ] Digital Footprint
 > - [ ] Searchlight - Imint
@@ -40,7 +40,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - Integrity ==[Bientôt]==
 ## TryHackMe
 - [[Have a Break]]
-- OhSINT ==[Bientôt]==
+- [[OhSINT]]
 - [[Sakura Room]]
 - KaffeeSec - SoMeSINT ==[Bientôt]==
 

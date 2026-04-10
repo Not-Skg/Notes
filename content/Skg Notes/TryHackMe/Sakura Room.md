@@ -3,6 +3,7 @@ tags:
   - Osint
   - Chall
   - TryHackMe
+  - Sherlock
 ---
 ## 1. TIP-OFF
 ### Background
