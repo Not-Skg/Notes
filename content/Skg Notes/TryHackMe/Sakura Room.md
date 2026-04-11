@@ -4,6 +4,7 @@ tags:
   - Chall
   - TryHackMe
   - Sherlock
+  - crypto
 ---
 ## 1. TIP-OFF
 ### Background

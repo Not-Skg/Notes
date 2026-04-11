@@ -7,7 +7,7 @@ tags:
 ---
 ## Énoncé
 >What information can you possible get with just one image file?
->![[WindowsXP_1551719014755.jpg]]
+>![[WindowsXP_1551719014755.jpg|500]]
 >>**Note:** This challenge was updated on 2024-02-01. If you are following any older walkthroughs, expect a small change. Additionally, the file is also available on the AttackBox, under the `/Rooms/OhSINT` directory.
 
 ## RETEX

@@ -23,12 +23,15 @@ tags:
 1. gobuster : énumération de page web
 2. wpscan : scan de wordpress
 3. nuclei : scan de vulns
-4. sherlock
+4. sherlock / enola
 # Google Dorks
 > Ou comment "vraiment" faire une recherche Google.
 
 # Sites utiles
 1. Wayback machine
+2. Wigle.net
+3. Cyberchef
+4. Aperisolv
 
 ---
 

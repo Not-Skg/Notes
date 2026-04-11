@@ -14,7 +14,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 > - [x] RETEX Bellatrix Orion26
 > - [x] RETEX OhSINT
 > - [ ] RETEX KaffeeSec - SoMeSINT
-> - [ ] Digital Footprint
+> - [x] Digital Footprint
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
 > - [ ] Friday Overtime
@@ -42,6 +42,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - [[Have a Break]]
 - [[OhSINT]]
 - [[Sakura Room]]
+- [[Digital Footprint]]
 - KaffeeSec - SoMeSINT ==[Bientôt]==
 
 ---
