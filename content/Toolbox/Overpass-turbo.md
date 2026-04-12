@@ -19,7 +19,7 @@ sortie;
 ## Emprise
 >Zone géographique dans laquelle la requête va être émise.
 
-- `({{bbox}})` : zone de la carte visible dans la partie droite de la fenêtre. (par défault)
+- `({{bbox}})` : zone de la carte visible dans la partie droite de la fenêtre. (par défaut)
 - `{{geocodeArea:name}}` : pour les noms de lieux (ville, région, pays, ...)
 
 Exemple : 
@@ -31,7 +31,7 @@ way["highway"](area.searchArea);
 Pour plus d'info : [wiki](https://wiki.openstreetmap.org/wiki/FR:Overpass_turbo/Requ%C3%AAtes_Overpass_Turbo_%C3%A9tendues)
 
 ## Type
->Par défault `nwr` pour intérroger les trois.
+>Par défaut `nwr` pour interroger les trois.
 
 | Type | désignation                                                               | Exemples         |
 | ---- | ------------------------------------------------------------------------- | ---------------- |
@@ -41,13 +41,13 @@ Pour plus d'info : [wiki](https://wiki.openstreetmap.org/wiki/FR:Overpass_turbo/
 ## Tag
 >Ressources : [TagInf](https://taginfo.openstreetmap.org/keys), [wiki d'OSM](https://wiki.openstreetmap.org/) 
 
-A chaque type est associé un ou plusieurs ==tags==, sous la forme : `["clé"="valeur"]`
+À chaque type est associé un ou plusieurs ==tags==, sous la forme : `["clé"="valeur"]`
 Ça permet de préciser la requête, par exemple : [oneway=yes]
-Pour chercher un tag quel que soit sa valeur : `["key"]`
-Et pour une correspondance partiel : `["key"~"regex"];`
+Pour chercher un tag quelle que soit sa valeur : `["key"]`
+Et pour une correspondance partielle : `["key"~"regex"];`
 
 ### Ajout de critère
-> Plusieurs tag consécutif
+> Plusieurs tags consécutif
 
 ex : `way["highway"]["maxspeed"="30"]({{bbox}});`
 
@@ -66,7 +66,7 @@ Généralement seulement `out;` mais on peut préciser la nature de la sortie :
 
 ### Extraire plusieurs types d'objets
 
-Il suffit de faire plusieurs requête avant la sortie et de les gardés dans des `();`
+Il suffit de faire plusieurs requêtes avant la sortie et de les garder dans des `();`
 ```json
 (
 node["key1"="val1"](area.searchArea);
@@ -102,7 +102,7 @@ node[amenity~"(bar|cafe|pub)"](area.searchArea);
 # Recherche Composées
 
 ## Nommer les recherches
-> On peut donner un nom à une requête afin de la lié à d'autres.
+> On peut donner un nom à une requête afin de la lier à d'autres.
 
 (requête)->.nom;
 
@@ -114,9 +114,9 @@ ex :
 
 node(around.objet:distance) ["lieu_voulu"];
 
-ex:
+ex :
 `node(around.bcp:50) ["amenity"="restaurant"];`
--> les restaurant qui sont à moins de 50m d'un bcp
+-> les restaurants qui sont à moins de 50m d'un bcp
 > **TIPS :** amenity est une base de donnée plutôt sympa
 
 ## Conditions
@@ -133,7 +133,7 @@ node["height"="10"];               // hauteur exacte
 **Syntaxe**
 `(type["clé"](if: condition)(zone););`
 
-Ex:
+Ex :
 `way["highway"](if: t["maxspeed"] == "50")({{bbox}});`
 
 #### Fonctions et opérateurs utilisables dans `if`
