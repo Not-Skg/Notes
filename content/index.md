@@ -44,6 +44,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - [[OhSINT]]
 - [[Sakura Room]]
 - [[Digital Footprint]]
+- [[Friday Overtime]]
 - KaffeeSec - SoMeSINT ==[Bientôt]==
 
 ---
