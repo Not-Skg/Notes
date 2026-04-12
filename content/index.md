@@ -18,7 +18,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
 > - [ ] Missing Person
-> - [ ] Friday Overtime
+> - [x] Friday Overtime
 > - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
 > - [ ] Learning Path SOC Level 1
 > - [ ] RETEX Integrity
