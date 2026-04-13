@@ -13,13 +13,12 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 >[!info] Prochainement
 > - [x] RETEX Bellatrix Orion26
 > - [x] RETEX OhSINT
-> - [ ] RETEX KaffeeSec - SoMeSINT
 > - [x] Digital Footprint
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
-> - [ ] Missing Person
+> - [x] Missing Person
 > - [x] Friday Overtime
-> - [ ] RETEX 404 CTF 2025 (oui faut que je m'y replonge)
+> - [ ] Présentation De Osint4Fun
 > - [ ] Learning Path SOC Level 1
 > - [ ] RETEX Integrity
 > - [ ] Tous mes challs Osintopia d'avant la refonte du site
@@ -29,7 +28,6 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 # ▸ CTF
 - [[Bellatrix Orion 26]] - [ 82ème / 1006 ]
 - [[Love at First Breach 2026]]
-- 404 CTF 2025 ==[Bientôt]==
 
 ---
 # ▸ CHALL
@@ -39,13 +37,14 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 ## Osint4Fun
 -  [[Advent Of Osint 2025]]
 - Integrity ==[Bientôt]==
+- Présentation De Osint4Fun ==[Bientôt]==
 ## TryHackMe
 - [[Have a Break]]
 - [[OhSINT]]
 - [[Sakura Room]]
 - [[Digital Footprint]]
 - [[Friday Overtime]]
-- KaffeeSec - SoMeSINT ==[Bientôt]==
+- [[Missing Person]]
 
 ---
 # ▸ Learning Path
