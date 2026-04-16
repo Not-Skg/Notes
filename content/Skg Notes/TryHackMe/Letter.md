@@ -57,7 +57,7 @@ C'est donc potentiellement dans un contexte sportif, compétitif ou héroïque, 
 
 Par "ce jour-là", j'imagine qu'elle parle de quelque chose relaté sur le journal. On va donc essayer de retrouver son archive pour la lire un peu.
 
-Le journal est "L'Ouest-Eclair", c'est un journal quotidien donc probablement beaucoup d'archive à son actif. Pour trouver celle que l'on veut, on va utiliser les titres, parce que le numéro et la date sont illisibles.
+Le journal est "L'Ouest-Eclair", c'est un journal quotidien donc probablement beaucoup d'archives à son actif. Pour trouver celle que l'on veut, on va utiliser les titres, parce que le numéro et la date sont illisibles.
 - "L'oeuvre urgente" : ça ne nous dit pas grand-chose ;
 - "Une c...phe sur le...s du Finistère, deux ...vetage" : j'imagine une catastrophe dans la région avec des sauvetages, ça pourrais être le moment ou grand papi a brillé ;
 - "Amund... a-t-il atteint le pôle Nord" : une expédition ça pourrait nous donner une fenêtre temporelle.
@@ -68,7 +68,7 @@ On peut donc commencer nos recherches :
 Je trouve deux incidents assez vieux dans le Finistère avec une notion de sauvetage.
 Mais le plus vieux paraît plus logique au niveau temporalité (on parle d'un grand papi qui avait moins de 18 ans) mais aussi au niveau géographique (même département que la lettre).
 
-Pour retrouver notre archive du journal, on va utiliser le site [Gallica](https://gallica.bnf.fr/) très bonne référence en termes d’archive de journaux.
+Pour retrouver notre archive du journal, on va utiliser le site [Gallica](https://gallica.bnf.fr/) très bonne référence en termes d’archives de journaux.
 Étant donné que les journaux doivent être imprimés et que l'information a dû prendre un peu de temps pour arriver dans les journaux, ça a dû être publié au moins le lendemain de la catastrophe, soit le 24 mai 1925.
 ![[THM_Letter_gallica.png|500]]
 [Bingo !](https://gallica.bnf.fr/ark:/12148/bpt6k648015m.item)
@@ -76,7 +76,7 @@ Pour retrouver notre archive du journal, on va utiliser le site [Gallica](https:
 Voici le contenu : 
 ![[Gallica_archive.pdf]]
 
-On y apprend qu'il y a eu deux bateaux de pêche en perdition, qu'une équipe de sauvetage est allée à leur secours. Mais les bateaux de secours se sont retourné a cause des intempéries, ils ont réussi à regagner la côte en sauvant quatre hommes, mais il en restait beaucoup en mer. M Le Gall, président de la coopérative des pêcheurs de Kérity, a donc pris des risques inconsidérés et suite à des efforts surhumains, il a réussi à sauver six hommes vivants et trois corps.
+On y apprend qu'il y a eu deux bateaux de pêche en perdition, qu'une équipe de sauvetage est allée à leur secours. Mais les bateaux de secours se sont retourné à cause des intempéries, ils ont réussi à regagner la côte en sauvant quatre hommes, mais il en restait beaucoup en mer. M Le Gall, président de la coopérative des pêcheurs de Kérity, a donc pris des risques inconsidérés et suite à des efforts surhumains, il a réussi à sauver six hommes vivants et trois corps.
 
 J'imagine que grand papi n'était pas M Le Gall car trop jeune pour être président de quoi que ce soit. Mais il pourrait bien faire partie de l'équipage des sauveteurs qui ont récupéré quatre personnes. Je vais donc continuer à creuser cette piste en cherchant "catastrophe 23 mai 1925 penmarch"
 Je tombe sur un [site](https://kbcpenmarch.franceserv.com/la-catastrophe-du-23-mai-1925-selon-les-annales-du-sauvetage.html) qui en parle et donne plus de détails, qui donne l'équipage complet, mais aussi les récompenses et les âges.
@@ -86,7 +86,7 @@ De plus, son nom de famille a bien la même initiale que "Edouard G.", ce qui ve
 
 ---
 ## Synthèse
-L'objectif était d'identifier le nom complet et l'âge de l'arrière-grand-père au moment des faits mentionnés dans la lettre envoyé par Édouard G. Lettre lié" à une coupure de journal _L'Ouest-Éclair_.
+L'objectif était d'identifier le nom complet et l'âge de l'arrière-grand-père au moment des faits mentionnés dans la lettre envoyée par Édouard G. Lettre liée à une coupure de journal _L'Ouest-Éclair_.
 
 La lettre révèle un "arrière-grand-père" qui s'est distingué "sur l'eau" avant 18 ans, comme benjamin courageux d'une équipe. Le journal endommagé pointe vers une catastrophe dans le Finistère.
 
@@ -96,4 +96,4 @@ La lettre révèle un "arrière-grand-père" qui s'est distingué "sur l'eau" av
 - **Archive Gallica _L'Ouest-Éclair_ du 24/05/1925 :** naufrage de deux bateaux de pêche le 23/05/1925 ; tempête renverse les canots ; sauvetage de 4 hommes par un premier équipage, puis efforts héroïques de M. Le Gall pour 6 vivants + 3 corps.
 - **Recoupement avec _Annales du sauvetage_ et sites locaux :** parmi l'équipage d'une challoupe seul **Yves-Marie Gourlaouen** a 15 ans (- 18 ans); initiale "G." et présence familiale (François et Guillaume-Marie Gourlaouen) confirment le lien avec Édouard G.
 
-L'exploit s'inscrit dans cette catastrophe maritime tragique de Penmarc'h, où le jeune Gourlaouen a brillé par son courage.
+L'exploit s'inscrit dans cette catastrophe maritime tragique de Penmarch, où le jeune Gourlaouen a brillé par son courage.
