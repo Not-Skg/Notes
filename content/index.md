@@ -8,12 +8,13 @@ title: Homepage
 >>Il me reste encore tous ces challs en stock :
 >>![[Graph_Challl_tt.png|300]]
 
-Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe**, mais de temps en temps je ferais d'autres choses.
+Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe**, mais de temps en temps, je ferais d'autres choses.
 
 >[!info] Prochainement
 > - [x] RETEX Bellatrix Orion26
 > - [x] RETEX OhSINT
 > - [x] Digital Footprint
+> - [ ] Letter
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
 > - [x] Missing Person
@@ -40,6 +41,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - Présentation De Osint4Fun ==[Bientôt]==
 ## TryHackMe
 - [[Have a Break]]
+- [[Letter]]
 - [[OhSINT]]
 - [[Sakura Room]]
 - [[Digital Footprint]]
