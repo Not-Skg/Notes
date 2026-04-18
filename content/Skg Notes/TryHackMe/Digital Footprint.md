@@ -35,7 +35,7 @@ On pourrait rechercher l'emplacement exact de la maison en partant des mots clé
 >
 >>Your job as an OSINT investigator is to verify their founding date using only public information.
 ### RETEX
-On veut vérifier la date de création de : warc-acme.com/jef/.
+On veut vérifier la date de création de : [warc-acme.com/jef/](warc-acme.com/jef/.
 Pour ce faire, on peut utiliser la [WaybackMachine](https://archive.org/details/warc-acme.com-jef)
 ![[THM_DF_jef_wbm.png|500]]
 On a donc la date de première publication : **==2016 02 10 à 22:46:02==**

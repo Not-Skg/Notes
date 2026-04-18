@@ -1,12 +1,86 @@
 {
-  "2026-04-18": {
-    "count": 5,
+  "2026-04-09": {
+    "count": 1,
     "activités": [
-      "Resolve — A · CTF · Site",
-      "Resolve — B · CTF · Site",
-      "Retex — A · CTF · Site",
-      "Created — Heatmap · Site",
-      "Created — Chall C · CTF · Site"
+      "Created — Overpass-Turbo · Toolbox · Site"
+    ]
+  },
+  "2026-03-26": {
+    "count": 8,
+    "activités": [
+      "Created — Phase 3 Bellatrix · Comcyber",
+      "Resolve — En chemin pour une partie de pêche · Bellatrix · Comcyber",
+      "Resolve — Remonter la piste · Comcyber",
+      "Resolve — On se rapproche · Bellatrix · Comcyber",
+      "Resolve — Les archives au secours · Bellatrix · Comcyber",
+      "Resolve — Le plein trop cher · Bellatrix · Comcyber",
+      "Resolve — Temps incertains · Bellatrix · Comcyber",
+      "Resolve — Localisation de \"Lynx\" · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-03-16": {
+    "count": 6,
+    "activités": [
+      "Retex — 13 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 14 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 15 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 16 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 17 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 18 Decembre · Advent of Osint · Osint4Fun"
+    ]
+  },
+  "2026-03-17": {
+    "count": 6,
+    "activités": [
+      "Retex — 19 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 20 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 21 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 22 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 23 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 24 Decembre · Advent of Osint · Osint4Fun"
+    ]
+  },
+  "2026-04-08": {
+    "count": 2,
+    "activités": [
+      "Resolve — Have a Breakx",
+      "Retex — Have a Break · Have a Break · TryHackMe"
+    ]
+  },
+  "2026-04-18": {
+    "count": 1,
+    "activités": [
+      "Created — Data Heatmap · Site"
+    ]
+  },
+  "2026-02-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Corp Website · Love at First Breach · TryHeartMe",
+      "Resolve — Signed Messages · Love at First Breach · TryHeartMe"
+    ]
+  },
+  "2026-03-18": {
+    "count": 4,
+    "activités": [
+      "Retex — Speed Chatting · Love at First Breach · TryHackMe",
+      "Retex — TryHeartMe · Love at First Breach · TryHackMe",
+      "Retex — Valenfind · Love at First Breach · TryHackMe",
+      "Retex — When Heats Collide · Love at First Breach · TryHackMe"
+    ]
+  },
+  "2026-04-13": {
+    "count": 1,
+    "activités": [
+      "Retex — Missing Person · Missing Person · TryHackMe"
+    ]
+  },
+  "2026-04-07": {
+    "count": 3,
+    "activités": [
+      "Retex (retouche) — 24 jours · Advent of Osint · Osint4fun",
+      "Retex (retouche) — Tous les challs · Love at First Breach · TryHackMe",
+      "Retex (retouche) — Sakura Room · Sakura Room · TryHackMe"
     ]
   },
   "2026-04-17": {
@@ -19,6 +93,181 @@
       "Resolve — 1983 · Hates · Osint4fun",
       "Resolve — Somaliland · Hates · Osint4fun",
       "Resolve — Début du siècle · Hates · Osint4fun"
+    ]
+  },
+  "2026-02-13": {
+    "count": 3,
+    "activités": [
+      "Resolve — Hidden Deep Into My Heart · Love at First Breach · TryHeartMe",
+      "Resolve — CupidBot · Love at First Breach · TryHeartMe",
+      "Resolve — Valenfind · Love at First Breach · TryHeartMe"
+    ]
+  },
+  "2026-04-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Letter · Letter · TryHackMe",
+      "Retex — Letter · Letter · TryHackMe"
+    ]
+  },
+  "2026-04-02": {
+    "count": 11,
+    "activités": [
+      "Retex — Surveillance du réseau social · Bellatrix · Comcyber",
+      "Retex — La piste de l'organisation · Comcyber",
+      "Retex — Fouiller le site · Bellatrix · Comcyber",
+      "Retex — Nos réalisations... · Bellatrix · Comcyber",
+      "Retex — Découverte de preuves cachées · Bellatrix · Comcyber",
+      "Retex — La piste du financement · Bellatrix · Comcyber",
+      "Retex — Analyse WHOIS des domaines suspects · Bellatrix · Comcyber",
+      "Retex — Les Wordpress d'Hélène Volquoffe · Bellatrix · Comcyber",
+      "Retex — La temporalité de l'attaque · Bellatrix · Comcyber",
+      "Retex — Réutilisation de code sur les domaines · Bellatrix · Comcyber",
+      "Retex — Déclenchement immédiat · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-03-19": {
+    "count": 3,
+    "activités": [
+      "Retex — Hidden Deep into my Heart · Love at First Breach · TryHackMe",
+      "Retex — Love Letter Locker · Love at First Breach · TryHackMe",
+      "Retex — Signed Messages · Love at First Breach · TryHackMe"
+    ]
+  },
+  "2026-04-12": {
+    "count": 1,
+    "activités": [
+      "Retex — Friday Overtime · Friday Overtime · TryHackMe"
+    ]
+  },
+  "2026-04-01": {
+    "count": 11,
+    "activités": [
+      "Retex — Un message d'alerte · Bellatrix · Comcyber",
+      "Retex — La vidéo du sauvetage · Bellatrix · Comcyber",
+      "Retex — Trop Beau pour être vrai · Bellatrix · Comcyber",
+      "Retex — Dé-cridibiliser l'information · Bellatrix · Comcyber",
+      "Retex — Au service d'une cause · Bellatrix · Comcyber",
+      "Retex — Rétablir la véracité des faits · Bellatrix · Comcyber",
+      "Retex — Une metadata vaut mille images · Bellatrix · Comcyber",
+      "Retex — Mesurer l'attaque · Bellatrix · Comcyber",
+      "Retex — Identifier le primo-diffuseur · Bellatrix · Comcyber",
+      "Retex — Cyber-physique ! · Bellatrix · Comcyber",
+      "Retex — Analyser l'attaque · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-02-14": {
+    "count": 3,
+    "activités": [
+      "Resolve — TryHeartMe · Love at First Breach · TryHeartMe",
+      "Resolve — SpeedChatting · Love at First Breach · TryHeartMe",
+      "Resolve — Love Letter Locker · Love at First Breach · TryHeartMe"
+    ]
+  },
+  "2026-04-11": {
+    "count": 1,
+    "activités": [
+      "Retex — Digital Footprint · Digital Footprint · TryHackMe"
+    ]
+  },
+  "2026-02-15": {
+    "count": 2,
+    "activités": [
+      "Resolve — Cupid's Matchmaker · Love at First Breach · TryHeartMe",
+      "Resolve — When Hearts Collide · Love at First Breach · TryHeartMe"
+    ]
+  },
+  "2026-04-10": {
+    "count": 1,
+    "activités": [
+      "Retex — OhSINT · OhSINT · TryHackMe"
+    ]
+  },
+  "2026-04-04": {
+    "count": 7,
+    "activités": [
+      "Retex — En chemin pour une partie de pêche · Bellatrix · Comcyber",
+      "Retex — Remonter la piste · Bellatrix · Comcyber",
+      "Retex — On se rapproche · Bellatrix · Comcyber",
+      "Retex — Les archives au secours · Bellatrix · Comcyber",
+      "Retex — Le plein trop cher · Bellatrix · Comcyber",
+      "Retex — Temps incertains · Bellatrix · Comcyber",
+      "Retex — Localisation de \"Lynx\" · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-03-14": {
+    "count": 6,
+    "activités": [
+      "Retex — 1 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 2 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 3 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 4 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 5 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 6 Decembre · Advent of Osint · Osint4Fun"
+    ]
+  },
+  "2026-03-20": {
+    "count": 3,
+    "activités": [
+      "Retex — Corp Website · Love at First Breach · TryHackMe",
+      "Retex — Cupid's Matchmaker · Love at First Breach · TryHackMe",
+      "Retex — CupidBot · Love at First Breach · TryHackMe"
+    ]
+  },
+  "2026-03-24": {
+    "count": 12,
+    "activités": [
+      "Created — Phase 1 Bellatrix · Comcyber",
+      "Resolve — Un message d'alerte · Bellatrix · Comcyber",
+      "Resolve — La vidéo du sauvetage · Bellatrix · Comcyber",
+      "Resolve — Trop Beau pour être vrai · Bellatrix · Comcyber",
+      "Resolve — Dé-cridibiliser l'information · Bellatrix · Comcyber",
+      "Resolve — Au service d'une cause · Bellatrix · Comcyber",
+      "Resolve — Rétablir la véracité des faits · Bellatrix · Comcyber",
+      "Resolve — Une metadata vaut mille images · Bellatrix · Comcyber",
+      "Resolve — Mesurer l'attaque · Bellatrix · Comcyber",
+      "Resolve — Identifier le primo-diffuseur · Bellatrix · Comcyber",
+      "Resolve — Cyber-physique ! · Bellatrix · Comcyber",
+      "Resolve — Analyser l'attaque · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-03-25": {
+    "count": 11,
+    "activités": [
+      "Created — Phase 2 Bellatrix · Comcyber",
+      "Resolve — Surveillance du réseau social · Bellatrix · Comcyber",
+      "Resolve — La piste de l'organisation · Comcyber",
+      "Resolve — Fouiller le site · Bellatrix · Comcyber",
+      "Resolve — Nos réalisations... · Bellatrix · Comcyber",
+      "Resolve — Découverte de preuves cachées · Bellatrix · Comcyber",
+      "Resolve — La piste du financement · Bellatrix · Comcyber",
+      "Resolve — Analyse WHOIS des domaines suspects · Bellatrix · Comcyber",
+      "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix · Comcyber",
+      "Resolve — La temporalité de l'attaque · Bellatrix · Comcyber",
+      "Resolve — Réutilisation de code sur les domaines · Bellatrix · Comcyber"
+    ]
+  },
+  "2026-03-11": {
+    "count": 1,
+    "activités": [
+      "Created — Skg Notes · Site"
+    ]
+  },
+  "2026-03-15": {
+    "count": 6,
+    "activités": [
+      "Retex — 7 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 8 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 9 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 10 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 11 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 12 Decembre · Advent of Osint · Osint4Fun"
+    ]
+  },
+  "2026-03-21": {
+    "count": 1,
+    "activités": [
+      "Retex — Sakura Room · Sakura Room · TryHackMe"
     ]
   }
 }
