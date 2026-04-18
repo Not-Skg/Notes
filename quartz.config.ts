@@ -21,7 +21,7 @@ const config: QuartzConfig = {
             provider: "plausible",
         },
         locale: "en-US",
-        baseUrl: "not-skg.github.io/notes",
+        baseUrl: "not-skg.github.io/Notes",
         ignorePatterns: ["**/data.json", "journal", "private", "templates", ".obsidian"],
         defaultDateType: "modified",
         theme: {

@@ -97,7 +97,7 @@ export default (() => {
             return resource
           }
         })}
-        <script src="./static/heatmap.js" defer></script>
+        <script src="/Notes/static/heatmap.js" defer></script>
       </head>
     )
   }
