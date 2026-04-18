@@ -31,6 +31,8 @@ jobs:
         run: npm ci
       #- name: Fetch Quartz Theme
       #  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
+      - name: Générer activity.json
+        run: python generate_activity.py
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
