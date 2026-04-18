@@ -1,0 +1,50 @@
+name: Build & Deploy  # Nom affiché dans l'onglet "Actions" de ton repo GitHub
+
+# ─── Déclencheur ──────────────────────────────────────────────────────────────
+# Ce workflow se lance uniquement quand tu pushes sur la branche main.
+# Un push sur une autre branche ne déclenchera rien.
+on:
+  push:
+    branches: [main]
+
+# ─── Le job principal ─────────────────────────────────────────────────────────
+jobs:
+  build:
+    runs-on: ubuntu-latest  # GitHub fournit une machine virtuelle Linux fraîche
+
+    steps:
+
+      # Étape 1 : Récupérer ton code
+      # Sans ça, la machine virtuelle est vide — elle ne connaît pas ton repo.
+      - uses: actions/checkout@v4
+
+      # Étape 2 : Lancer ton script Python
+      # C'est lui qui lit tes notes journal/ et génère quartz/static/activity.json
+      # Python est déjà installé par défaut sur ubuntu-latest, pas besoin de l'installer.
+      - name: Générer activity.json
+        run: python generate_activity.py
+
+      # Étape 3 : Installer Node.js
+      # Quartz est un outil Node — il faut Node pour pouvoir le lancer.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Étape 4 : Builder le site
+      # npm ci installe les dépendances listées dans package.json (comme un pip install)
+      # npx quartz build transforme tes fichiers .md en HTML dans le dossier /public
+      - name: Build Quartz
+        run: |
+          npm ci
+          npx quartz build
+
+      # Étape 5 : Déployer sur GitHub Pages
+      # Cette action prend le contenu du dossier /public et le pousse
+      # sur la branche gh-pages de ton repo — c'est ce que GitHub Pages sert ensuite.
+      # GITHUB_TOKEN est un secret automatique, tu n'as rien à configurer.
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
