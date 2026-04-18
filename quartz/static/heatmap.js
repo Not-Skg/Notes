@@ -2,7 +2,8 @@ const init = async () => {
     const root = document.getElementById("heatmap-root");
     if (!root) return;
 
-    const res = await fetch("/Notes/static/activity.json");
+    const base = document.querySelector('meta[name="base-url"]')?.content || "/Notes";
+    const res = await fetch(`${base}/static/activity.json`);
     if (!res.ok) {
         console.error("Impossible de charger activity.json :", res.status);
         return;
