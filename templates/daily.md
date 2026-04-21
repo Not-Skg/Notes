@@ -11,4 +11,4 @@ date: "{{date:YYYY-MM-DD}}"
 
 ## Notes
 
-Journée productive malgré la fatigue du matin.
+RAS

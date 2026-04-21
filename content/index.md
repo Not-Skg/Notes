@@ -14,7 +14,8 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 > - [x] RETEX Bellatrix Orion26
 > - [x] RETEX OhSINT
 > - [x] Digital Footprint
-> - [ ] Letter
+> - [x] Letter
+> - [x] Masquerade
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
 > - [x] Missing Person
@@ -48,6 +49,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - [[Digital Footprint]]
 - [[Friday Overtime]]
 - [[Missing Person]]
+- [[Masquerade]]
 
 ---
 # ▸ Learning Path
@@ -65,6 +67,10 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 >[!example] [[Bellatrix Orion 26/]]
 >Un CTF organisé par le ComCyber. 
 >J’ai particulièrement apprécié son réalisme et son approche méthodologique, avec notamment l’utilisation de DISARM et l’analyse d’une campagne de désinformation à travers des médias simulés et des extraits de réseaux sociaux collectés par scraping.
+
+>[!example] [[Masquerade]]
+>Un challenge DFIR sur TryHackMe. 
+>Je n'en fais pas souvent, mais celui-là était particulièrement sympa, même si la dernière partie (analyse d'un PE) était particulièrement fastidieuse.
 
 ---
 
