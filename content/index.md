@@ -16,6 +16,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 > - [x] Digital Footprint
 > - [x] Letter
 > - [x] Masquerade
+> - [x] Grep
 > - [ ] Searchlight - Imint
 > - [x] Have a Break
 > - [x] Missing Person
@@ -50,6 +51,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - [[Friday Overtime]]
 - [[Missing Person]]
 - [[Masquerade]]
+- [[Grep]]
 
 ---
 # ▸ Learning Path
