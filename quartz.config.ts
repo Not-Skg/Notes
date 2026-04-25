@@ -22,7 +22,7 @@ const config: QuartzConfig = {
         },
         locale: "en-US",
         baseUrl: "not-skg.github.io/Notes",
-        ignorePatterns: ["**/data.json", "journal", "private", "templates", ".obsidian"],
+        ignorePatterns: ["**/data.json", "journal", "private", "templates", ".obsidian", "Readme"],
         defaultDateType: "modified",
         theme: {
             fontOrigin: "googleFonts",
