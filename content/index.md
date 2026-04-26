@@ -11,22 +11,12 @@ title: Homepage
 Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe**, mais de temps en temps, je ferais d'autres choses.
 
 >[!info] Prochainement
-> - [x] RETEX Bellatrix Orion26
-> - [x] RETEX OhSINT
-> - [x] Digital Footprint
-> - [x] Letter
-> - [x] Masquerade
-> - [x] Grep
 > - [ ] Searchlight - Imint
-> - [x] Have a Break
-> - [x] Missing Person
-> - [x] Friday Overtime
 > - [ ] Présentation De Osint4Fun
-> - [ ] Learning Path SOC Level 1
+> - [ ] Simulation de SOC dans Learning Path SOC Level 1
 > - [ ] RETEX Integrity
 > - [ ] Tous mes challs Osintopia d'avant la refonte du site
 > - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)
-> - [x] Journal d'activité
 
 ---
 # ▸ CTF
@@ -54,8 +44,8 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 - [[Grep]]
 
 ---
-# ▸ Learning Path
-- SOC Level 1 ==[Bientôt]==
+# ▸ SOC Simulator
+- [[Introduction to phishing]]
 
 ---
 # ▸ Enquêtes

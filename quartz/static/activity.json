@@ -270,6 +270,12 @@
       "Retex — Signed Messages · Love at First Breach · TryHackMe"
     ]
   },
+  "2026-04-26": {
+    "count": 1,
+    "activités": [
+      "Resolve — DAST · DevSecOps · TryHackMe"
+    ]
+  },
   "2026-04-12": {
     "count": 1,
     "activités": [
@@ -318,9 +324,11 @@
     ]
   },
   "2026-04-25": {
-    "count": 1,
+    "count": 3,
     "activités": [
-      "Resolve — SAST · DevSecOps · TryHackMe"
+      "Resolve — SAST · DevSecOps · TryHackMe",
+      "Resolve — Introduction to phishing · SOC Simulator · TryHackMe",
+      "Retex — Introduction to phishing · SOC Simulator · TryHackMe"
     ]
   },
   "2026-04-11": {
