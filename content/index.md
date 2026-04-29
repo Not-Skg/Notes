@@ -46,6 +46,7 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 ---
 # ▸ SOC Simulator
 - [[Introduction to phishing]]
+- [[Phishing Unfolding]]
 
 ---
 # ▸ Enquêtes

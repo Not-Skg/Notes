@@ -2,6 +2,7 @@
 tags:
   - SOC_Simulator
   - TryHackMe
+  - Phishing
 ---
 ## Contexte
 ![[THM_intro-phishing.png]]
@@ -32,7 +33,7 @@ Recommended actions:
 
 Je pourrais rajouter une partie : `Mitre technique` mais étant donné que ce challenge se concentre sur le phishing, ça ne serait pas très pertinent.
 
-Aussi, il faut savoir que le challenge se termine lorsque tous les vrai positifs ont été trouvé. Ça veut donc dire que même s'il reste des tickets dans la file, le challenge est finit lorsque je trouve le dernier Vrai Positif.
+Aussi, il faut savoir que le challenge se termine lorsque tous les vrai positifs ont été trouvés. Ça veut donc dire que même s'il reste des tickets dans la file, le challenge est fini lorsque je trouve le dernier Vrai Positif.
 
 Voici des données qui sont à notre disposition dans ce challenge.
 ### Alert Triage Playbook
@@ -288,3 +289,5 @@ Par contre, j'ai perdu beaucoup de point sur les détails de renvoi de ticket, e
 - Je n'ai pas été très explicite sur les impacts en termes de perte de données ou de compromission.
 - Je n'ai pas non plus précisé complètement pourquoi je faisais escalader les tickets vers la L2.
 - Je devrais mentionner lorsqu'il n'y a pas d'impact visible de mon côté plutôt que de ne pas en parler.
+
+Pour une simulation de SOC un peu plus complexe et difficile, [[Phishing Unfolding]] est un très bon exercice.

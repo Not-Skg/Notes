@@ -4,6 +4,7 @@ tags:
   - Chall
   - TryHackMe
   - WBM
+  - Sherlock
 ---
 ## 1. The Leaked Photo
 ### Énoncé
