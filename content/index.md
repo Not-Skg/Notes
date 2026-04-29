@@ -65,6 +65,12 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 >Un challenge DFIR sur TryHackMe. 
 >Je n'en fais pas souvent, mais celui-là était particulièrement sympa, même si la dernière partie (analyse d'un PE) était particulièrement fastidieuse.
 
+>[!example] [[Phishing Unfolding]]
+>Une simulation de SOC sur TryHackMe. 
+>Je trouve la simulation réussie, c'est vraiment un très bon exercice, avec des alertes qui arrivent en temps réel.
+>On a réellement l'impression de se noyer dans les alertes si on ne prend pas bien le temps de les clôturer au fur et à mesure. Mais lorsque l'on analyse bien la situation, on se rend compte qu'il y en a beaucoup qui sont liées.
+>C'est juste vraiment dommage que ça soit une IA qui nous note...
+
 ---
 
 [[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]

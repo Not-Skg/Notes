@@ -196,3 +196,8 @@ J'ai réussi à trouver tous les vrais positifs.
 ![[Phishing Unfolding.png]]
 Par contre, j'ai perdu quelques points parce que j'ai fait un gros rapport copié collé pour tous les cas lié au 1025 a quelques détails prés. Mais je n'y ai pas ajouté les PID et PPID, de plus je n'ai pas fait mention des termes intégrité et confidentialité.
 Je n'ai pas beaucoup explicité non plus certains IOC comme `robocopy.exe`.
+Je devrais aussi rajouter les Identifiants MITRE ATT&CK, puisque au final, il y a eu pas mal de chose différente dans l'attaque principale.
+Je garderais ça en tête pour les prochaines simulations.
+
+Autrement, je trouve la simulation réussie, c'est vraiment un très bon exercice, avec des alertes qui arrivent en temps réel.
+On a réellement l'impression de se noyer dans les alertes (trentaines dont 17 vrais positifs), si on ne prend pas bien le temps de les clôturer au fur et à mesure. Mais lorsque l'on analyse bien la situation, on se rend compte qu'il y en a beaucoup qui sont liées.
