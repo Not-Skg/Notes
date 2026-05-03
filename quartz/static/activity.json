@@ -4,13 +4,23 @@
     "activités": [
       "Resolve — I am Cole · Integrity · Osint4Fun",
       "Resolve — Grain de sable · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-09": {
     "count": 1,
     "activités": [
       "Created — Overpass-Turbo · Toolbox · Site"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-04-19": {
     "count": 3,
@@ -18,7 +28,12 @@
       "Resolve — CyberHarcèlement · Hates · Osint4Fun",
       "Resolve — Rue de la Reine Jeanne · Hates · Osint4Fun",
       "Resolve — BUSINESS · Hates · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-26": {
     "count": 8,
@@ -31,20 +46,35 @@
       "Resolve — Le plein trop cher · Bellatrix · Comcyber",
       "Resolve — Temps incertains · Bellatrix · Comcyber",
       "Resolve — Localisation de \"Lynx\" · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-02-28": {
     "count": 2,
     "activités": [
       "Resolve — Lire en paix · Integrity · Osint4Fun",
       "Resolve — Pouet · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-29": {
     "count": 1,
     "activités": [
       "Retex — Phishing Unfolding · SOC Simulator · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-03-16": {
     "count": 6,
@@ -55,19 +85,34 @@
       "Retex — 16 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 17 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 18 Decembre · Advent of Osint · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
   },
   "2026-03-22": {
     "count": 1,
     "activités": [
       "Created — Graffiti · GCC CTF · GCC"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-04-28": {
     "count": 1,
     "activités": [
       "Resolve — Phishing Unfolding · SOC Simulator · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-17": {
     "count": 6,
@@ -78,7 +123,12 @@
       "Retex — 22 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 23 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 24 Decembre · Advent of Osint · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
   },
   "2026-03-23": {
     "count": 3,
@@ -86,7 +136,12 @@
       "Created — Mobility Part 1 · GCC CTF · GCC",
       "Created — Mobility Part 2 · GCC CTF · GCC",
       "Created — Mobility Part 3 · GCC CTF · GCC"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 3
+    }
   },
   "2026-03-03": {
     "count": 3,
@@ -94,20 +149,35 @@
       "Resolve — Sororité · Integrity · Osint4Fun",
       "Resolve — Confraternité · Integrity · Osint4Fun",
       "Resolve — Le monument 1/3 · Osintopia · Osintopia"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-08": {
     "count": 2,
     "activités": [
       "Resolve — Have a Break · TryHackMe",
       "Retex — Have a Break · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-18": {
     "count": 1,
     "activités": [
       "Created — Data Heatmap · Site"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-03-27": {
     "count": 21,
@@ -133,7 +203,12 @@
       "Resolve — Trajectoire personnelle · Pratiques Illicites Dans L’Adoption Internationale · Osint4Fun",
       "Resolve — La fin d'une quête ? · Pratiques Illicites Dans L’Adoption Internationale · Osint4Fun",
       "Resolve — ... mais beaucoup d'impasses · Pratiques Illicites Dans L’Adoption Internationale · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 21,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-03": {
     "count": 6,
@@ -144,14 +219,24 @@
       "Resolve — Étape 28 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 29 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 30 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-02-16": {
     "count": 2,
     "activités": [
       "Resolve — Corp Website · Love at First Breach · TryHeartMe",
       "Resolve — Signed Messages · Love at First Breach · TryHeartMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-18": {
     "count": 4,
@@ -160,13 +245,23 @@
       "Retex — TryHeartMe · Love at First Breach · TryHackMe",
       "Retex — Valenfind · Love at First Breach · TryHackMe",
       "Retex — When Heats Collide · Love at First Breach · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
   },
   "2026-04-13": {
     "count": 1,
     "activités": [
       "Retex — Missing Person · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-07": {
     "count": 3,
@@ -174,7 +269,12 @@
       "Retex (retouche) — 24 jours · Advent of Osint · Osint4fun",
       "Retex (retouche) — Tous les challs · Love at First Breach · TryHackMe",
       "Retex (retouche) — Sakura Room · Sakura Room · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
   },
   "2026-02-26": {
     "count": 3,
@@ -182,7 +282,12 @@
       "Resolve — Réduction · Integrity · Osint4Fun",
       "Resolve — Netteté · Integrity · Osint4Fun",
       "Resolve — Antériorité · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-28": {
     "count": 6,
@@ -193,7 +298,12 @@
       "Resolve — Étape 4 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 5 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 6 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-17": {
     "count": 7,
@@ -205,7 +315,12 @@
       "Resolve — 1983 · Hates · Osint4fun",
       "Resolve — Somaliland · Hates · Osint4fun",
       "Resolve — Début du siècle · Hates · Osint4fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-04-06": {
     "count": 6,
@@ -216,7 +331,12 @@
       "Resolve — Étape 40 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 41 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 42 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-02-13": {
     "count": 3,
@@ -224,14 +344,24 @@
       "Resolve — Hidden Deep Into My Heart · Love at First Breach · TryHeartMe",
       "Resolve — CupidBot · Love at First Breach · TryHeartMe",
       "Resolve — Valenfind · Love at First Breach · TryHeartMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-02-27": {
     "count": 2,
     "activités": [
       "Resolve — Cigognes · Integrity · Osint4Fun",
       "Resolve — Viser la lune · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-29": {
     "count": 6,
@@ -242,21 +372,36 @@
       "Resolve — Étape 10 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 11 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 12 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-16": {
     "count": 2,
     "activités": [
       "Resolve — Letter · TryHackMe",
       "Retex — Letter · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-22": {
     "count": 2,
     "activités": [
       "Resolve — Grep · TryHackMe",
       "Retex — Grep · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-02": {
     "count": 11,
@@ -272,7 +417,12 @@
       "Retex — La temporalité de l'attaque · Bellatrix · Comcyber",
       "Retex — Réutilisation de code sur les domaines · Bellatrix · Comcyber",
       "Retex — Déclenchement immédiat · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 11,
+      "autre": 0
+    }
   },
   "2026-03-19": {
     "count": 3,
@@ -280,7 +430,12 @@
       "Retex — Hidden Deep into my Heart · Love at First Breach · TryHackMe",
       "Retex — Love Letter Locker · Love at First Breach · TryHackMe",
       "Retex — Signed Messages · Love at First Breach · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
   },
   "2026-04-26": {
     "count": 3,
@@ -288,13 +443,23 @@
       "Resolve — DAST · DevSecOps · TryHackMe",
       "Resolve — Introduction to phishing · SOC Simulator · TryHackMe",
       "Retex — Introduction to phishing · SOC Simulator · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-12": {
     "count": 1,
     "activités": [
       "Retex — Friday Overtime · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-05": {
     "count": 6,
@@ -305,13 +470,23 @@
       "Resolve — Étape 34 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 35 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 36 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-21": {
     "count": 1,
     "activités": [
       "Retex — Masquerade · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-01": {
     "count": 11,
@@ -327,7 +502,12 @@
       "Retex — Identifier le primo-diffuseur · Bellatrix · Comcyber",
       "Retex — Cyber-physique ! · Bellatrix · Comcyber",
       "Retex — Analyser l'attaque · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 11,
+      "autre": 0
+    }
   },
   "2026-02-14": {
     "count": 3,
@@ -335,39 +515,69 @@
       "Resolve — TryHeartMe · Love at First Breach · TryHeartMe",
       "Resolve — SpeedChatting · Love at First Breach · TryHeartMe",
       "Resolve — Love Letter Locker · Love at First Breach · TryHeartMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-25": {
     "count": 1,
     "activités": [
       "Resolve — SAST · DevSecOps · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-11": {
     "count": 1,
     "activités": [
       "Retex — Digital Footprint · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-02-15": {
     "count": 2,
     "activités": [
       "Resolve — Cupid's Matchmaker · Love at First Breach · TryHeartMe",
       "Resolve — When Hearts Collide · Love at First Breach · TryHeartMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-24": {
     "count": 2,
     "activités": [
       "Resolve — La ville oubliée 2 · OSINTOPIA",
       "Resolve — Dependency Management · DevSecOps · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-10": {
     "count": 1,
     "activités": [
       "Retex — OhSINT · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
   },
   "2026-04-04": {
     "count": 7,
@@ -379,21 +589,36 @@
       "Retex — Le plein trop cher · Bellatrix · Comcyber",
       "Retex — Temps incertains · Bellatrix · Comcyber",
       "Retex — Localisation de \"Lynx\" · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 7,
+      "autre": 0
+    }
   },
   "2026-02-25": {
     "count": 2,
     "activités": [
       "Resolve — Précision · Integrity · Osint4Fun",
       "Resolve — Restriction · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-04-20": {
     "count": 2,
     "activités": [
       "Resolve — Bamboulas · Hates · Osint4Fun",
       "Resolve — Masquerade · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-30": {
     "count": 6,
@@ -404,13 +629,23 @@
       "Resolve — Étape 16 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 17 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 18 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-04": {
     "count": 1,
     "activités": [
       "Resolve — L'alter Ego · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-05-01": {
     "count": 3,
@@ -418,7 +653,12 @@
       "Resolve — Le village · Château · Osint-FR",
       "Resolve — Mobilier · Château · Osint-FR",
       "Resolve — Numéro 13 · Château · Osint-FR"
-    ]
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-14": {
     "count": 6,
@@ -429,7 +669,12 @@
       "Retex — 4 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 5 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 6 Decembre · Advent of Osint · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
   },
   "2026-03-20": {
     "count": 3,
@@ -437,7 +682,12 @@
       "Retex — Corp Website · Love at First Breach · TryHackMe",
       "Retex — Cupid's Matchmaker · Love at First Breach · TryHackMe",
       "Retex — CupidBot · Love at First Breach · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
   },
   "2026-03-24": {
     "count": 12,
@@ -454,14 +704,24 @@
       "Resolve — Identifier le primo-diffuseur · Bellatrix · Comcyber",
       "Resolve — Cyber-physique ! · Bellatrix · Comcyber",
       "Resolve — Analyser l'attaque · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-03-01": {
     "count": 2,
     "activités": [
       "Resolve — Un rêve au début du brouillard · Integrity · Osint4Fun",
       "Resolve — Dématérialisation · Integrity · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-25": {
     "count": 11,
@@ -477,13 +737,23 @@
       "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix · Comcyber",
       "Resolve — La temporalité de l'attaque · Bellatrix · Comcyber",
       "Resolve — Réutilisation de code sur les domaines · Bellatrix · Comcyber"
-    ]
+    ],
+    "stats": {
+      "resolve": 10,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-03-11": {
     "count": 1,
     "activités": [
       "Created — Skg Notes · Site"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
   },
   "2026-03-31": {
     "count": 6,
@@ -494,7 +764,12 @@
       "Resolve — Étape 22 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 23 · GNOSINT : Le Défi · Osint4Fun",
       "Resolve — Étape 24 · GNOSINT : Le Défi · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
   },
   "2026-03-15": {
     "count": 6,
@@ -505,12 +780,27 @@
       "Retex — 10 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 11 Decembre · Advent of Osint · Osint4Fun",
       "Retex — 12 Decembre · Advent of Osint · Osint4Fun"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
   },
   "2026-03-21": {
     "count": 1,
     "activités": [
       "Retex — Sakura Room · TryHackMe"
-    ]
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "__totaux__": {
+    "resolve": 141,
+    "retex": 77,
+    "autre": 11
   }
 }

@@ -10,7 +10,7 @@ description: Vue d'ensemble de mes activités au fil du temps
 
 ## Heatmap
 <div id="heatmap-root"></div>
-
+•
 ## Mon profil sur les plateformes intéressantes
 
 | Plateforme | ID/Username                                                       | Aperçu                    |
@@ -22,4 +22,4 @@ J'ajouterai mon profil Osintopia lorsqu'il y aura le retour de la plupart des ch
 
 ---
 
-[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]•
