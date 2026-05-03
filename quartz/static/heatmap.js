@@ -246,11 +246,11 @@ const init = async () => {
       }
       .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
 
-      /* Donut Chart */
+      /* Donut Chart et barres */
       .hm-donut-and-bars {
         display: flex;
-        gap: 2rem;
         align-items: flex-start;
+        gap: 2rem;
       }
       .hm-donut-chart {
         display: flex;
@@ -285,26 +285,27 @@ const init = async () => {
         border-radius: 2px;
       }
 
-      /* Barres verticales */
+      /* Barres verticales compactes */
       .hm-bars-container {
         display: flex;
-        flex-direction: column;
         gap: 1.5rem;
-        min-width: 180px;
+        align-items: flex-start;
       }
       .hm-bar-chart {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.3rem;
+        width: 40px;
       }
       .hm-bar-title {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: var(--hm-muted);
         font-weight: 500;
+        text-align: center;
       }
       .hm-bar {
         width: 100%;
-        height: 120px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -319,19 +320,20 @@ const init = async () => {
       .hm-bar-legend {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        font-size: 0.8rem;
+        gap: 0.3rem;
+        font-size: 0.7rem;
+        justify-content: center;
       }
       .hm-bar-legend-item {
         display: flex;
         align-items: center;
-        gap: 0.3rem;
+        gap: 0.2rem;
         color: var(--hm-text);
       }
       .hm-bar-legend-color {
         display: inline-block;
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         border-radius: 2px;
       }
     </style>
@@ -387,11 +389,11 @@ const init = async () => {
                 </div>
             </div>
 
-            <!-- Barres verticales pour RETEX et Resolve -->
+            <!-- Barres verticales compactes -->
             <div class="hm-bars-container">
                 <!-- Barre pour RETEX -->
                 <div class="hm-bar-chart">
-                    <span class="hm-bar-title">Top plateformes RETEX</span>
+                    <span class="hm-bar-title">RETEX</span>
                     <div class="hm-bar">
                         ${topRetexPlatforms.map(([platform, count], i) => `
                             <div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
@@ -401,7 +403,7 @@ const init = async () => {
                         ${topRetexPlatforms.map(([platform, count], i) => `
                             <div class="hm-bar-legend-item">
                                 <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
-                                <span>${platform}: ${count}</span>
+                                <span>${count}</span>
                             </div>
                         `).join("")}
                     </div>
@@ -409,7 +411,7 @@ const init = async () => {
 
                 <!-- Barre pour Resolve -->
                 <div class="hm-bar-chart">
-                    <span class="hm-bar-title">Top plateformes Resolve</span>
+                    <span class="hm-bar-title">Resolve</span>
                     <div class="hm-bar">
                         ${topResolvePlatforms.map(([platform, count], i) => `
                             <div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
@@ -419,7 +421,7 @@ const init = async () => {
                         ${topResolvePlatforms.map(([platform, count], i) => `
                             <div class="hm-bar-legend-item">
                                 <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
-                                <span>${platform}: ${count}</span>
+                                <span>${count}</span>
                             </div>
                         `).join("")}
                     </div>
