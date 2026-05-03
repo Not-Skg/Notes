@@ -30,22 +30,30 @@ const init = async () => {
         });
     });
 
-    const getTopPlatforms = (counts) => {
-        return Object.entries(counts)
-            .sort((a, b) => b[1] - a[1]);
+    // --- Fonctions pour obtenir les plateformes ---
+    const getAllPlatforms = (counts) => {
+        return Object.entries(counts).sort((a, b) => b[1] - a[1]); // Toutes les plateformes
     };
 
-    const topRetexPlatforms = getTopPlatforms(platformCounts.retex);
-    const topResolvePlatforms = getTopPlatforms(platformCounts.resolve);
-    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1"];
+    const getTop3Platforms = (counts) => {
+        return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3); // Top 3 pour les légendes
+    };
+
+    const allRetexPlatforms = getAllPlatforms(platformCounts.retex); // Toutes pour les barres
+    const allResolvePlatforms = getAllPlatforms(platformCounts.resolve); // Toutes pour les barres
+
+    const topRetexPlatformsForLegend = getTop3Platforms(platformCounts.retex); // Top 3 pour la légende RETEX
+    const topResolvePlatformsForLegend = getTop3Platforms(platformCounts.resolve); // Top 3 pour la légende Resolve
+
+    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3"];
 
     // --- Calcul des max pour les barres ---
-    const maxRetexCount = Math.max(...topRetexPlatforms.map(p => p[1]), 1);
-    const maxResolveCount = Math.max(...topResolvePlatforms.map(p => p[1]), 1);
+    const maxRetexCount = Math.max(...allRetexPlatforms.map(p => p[1]), 1);
+    const maxResolveCount = Math.max(...allResolvePlatforms.map(p => p[1]), 1);
 
     // --- Associer une couleur unique à chaque plateforme ---
     const platformToColor = new Map();
-    const allPlatforms = [...new Set([...topRetexPlatforms.map(p => p[0]), ...topResolvePlatforms.map(p => p[0])])];
+    const allPlatforms = [...new Set([...allRetexPlatforms.map(p => p[0]), ...allResolvePlatforms.map(p => p[0])])];
     allPlatforms.forEach((platform, i) => {
         platformToColor.set(platform, platformColors[i % platformColors.length]);
     });
@@ -134,12 +142,10 @@ const init = async () => {
 
     const monthHeader = MOIS.map((label, idx) => {
         if (!(idx in monthBounds)) return "";
-
         const { min, max } = monthBounds[idx];
         const startX = LABEL_W + colToPx(min);
         const endX = LABEL_W + colToPx(max) + CELL;
         const centerX = (startX + endX) / 2;
-
         return `<div style="position:absolute;left:${centerX}px;transform:translateX(-50%);font-size:10px;color:var(--hm-muted);white-space:nowrap;pointer-events:none">${label}</div>`;
     }).join("");
 
@@ -148,7 +154,6 @@ const init = async () => {
         const count = d?.count || 0;
         const cx = LABEL_W + colToPx(col);
         const cy = row * step;
-
         return `<div class="hm-day"
             style="position:absolute;left:${cx}px;top:${cy}px;background:${color(count)}"
             data-date="${date}"
@@ -169,20 +174,15 @@ const init = async () => {
             "Retex": "#fd8235",
             "Created": "#9FE1CB",
         };
-
         const dashIdx = text.indexOf(" — ");
         if (dashIdx === -1) return `<li>${text}</li>`;
-
         const keyword = text.slice(0, dashIdx);
         const rest = text.slice(dashIdx + 3);
         const color = keywords[keyword];
-
         if (!color) return `<li>${text}</li>`;
-
         const parts = rest.split(" · ");
         const name = parts[0];
         const context = parts.slice(1).join(" · ");
-
         return `<li>
             <span style="color:${color};font-weight:500">${keyword}</span>
             <span style="color:${color};font-weight:300"> — </span>
@@ -299,8 +299,9 @@ const init = async () => {
       }
       .hm-bar-chart {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: 0.3rem;
         width: 120px;
       }
       .hm-bar-title {
@@ -309,7 +310,11 @@ const init = async () => {
         font-weight: 500;
         width: 100%;
         text-align: center;
-        margin-bottom: 0.3rem;
+      }
+      .hm-bar-and-legend {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
       }
       .hm-bar {
         width: 20px;
@@ -401,52 +406,48 @@ const init = async () => {
             <div class="hm-bars-container">
                 <!-- Barre pour RETEX -->
                 <div class="hm-bar-chart">
-                    <div style="width: 100%; text-align: center;">
-                        <span class="hm-bar-title">RETEX</span>
-                        <div style="display: flex; align-items: flex-start; gap: 0.5rem;">
-                            <div class="hm-bar">
-                                ${topRetexPlatforms.map(([platform, count]) => {
+                    <span class="hm-bar-title">RETEX</span>
+                    <div class="hm-bar-and-legend">
+                        <div class="hm-bar">
+                            ${allRetexPlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `<div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
     }).join("")}
-                            </div>
-                            <div class="hm-bar-legend">
-                                ${topRetexPlatforms.map(([platform, count]) => {
+                        </div>
+                        <div class="hm-bar-legend">
+                            ${topRetexPlatformsForLegend.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `
-                                        <div class="hm-bar-legend-item">
-                                            <span class="hm-bar-legend-color" style="background: ${color};"></span>
-                                            <span>${platform}: ${count}</span>
-                                        </div>
-                                    `;
+                                    <div class="hm-bar-legend-item">
+                                        <span class="hm-bar-legend-color" style="background: ${color};"></span>
+                                        <span>${platform}: ${count}</span>
+                                    </div>
+                                `;
     }).join("")}
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Barre pour Resolve -->
                 <div class="hm-bar-chart">
-                    <div style="width: 100%; text-align: center;">
-                        <span class="hm-bar-title">Resolve</span>
-                        <div style="display: flex; align-items: flex-start; gap: 0.5rem;">
-                            <div class="hm-bar">
-                                ${topResolvePlatforms.map(([platform, count]) => {
+                    <span class="hm-bar-title">Resolve</span>
+                    <div class="hm-bar-and-legend">
+                        <div class="hm-bar">
+                            ${allResolvePlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `<div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
     }).join("")}
-                            </div>
-                            <div class="hm-bar-legend">
-                                ${topResolvePlatforms.map(([platform, count]) => {
+                        </div>
+                        <div class="hm-bar-legend">
+                            ${topResolvePlatformsForLegend.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `
-                                        <div class="hm-bar-legend-item">
-                                            <span class="hm-bar-legend-color" style="background: ${color};"></span>
-                                            <span>${platform}: ${count}</span>
-                                        </div>
-                                    `;
+                                    <div class="hm-bar-legend-item">
+                                        <span class="hm-bar-legend-color" style="background: ${color};"></span>
+                                        <span>${platform}: ${count}</span>
+                                    </div>
+                                `;
     }).join("")}
-                            </div>
                         </div>
                     </div>
                 </div>
