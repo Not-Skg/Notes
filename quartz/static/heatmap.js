@@ -262,6 +262,7 @@ const init = async () => {
         display: flex;
         align-items: center;
         gap: 1.5rem;
+        margin-top: 1.5rem;
       }
       .hm-donut-svg {
         width: 100px;
@@ -335,7 +336,7 @@ const init = async () => {
         flex-direction: column;
         gap: 0.3rem;
         font-size: 0.8rem;
-        min-width: 80px;
+        min-width: 100px;
       }
       .hm-bar-legend-item {
         display: flex;
