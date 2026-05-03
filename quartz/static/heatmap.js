@@ -10,7 +10,6 @@ const init = async () => {
     }
     const data = await res.json();
 
-    // --- Extraction des plateformes ---
     const extractPlatform = (text) => {
         const lastDotIndex = text.lastIndexOf(" · ");
         return lastDotIndex === -1 ? "Inconnu" : text.slice(lastDotIndex + 3).trim();
@@ -36,17 +35,37 @@ const init = async () => {
             .slice(0, 3);
     };
 
+    const sortPlatforms = (counts) => {
+        return Object.entries(counts)
+            .sort((a, b) => b[1] - a[1]);
+    };
+
     const topRetexPlatforms = getTopPlatforms(platformCounts.retex);
     const topResolvePlatforms = getTopPlatforms(platformCounts.resolve);
-    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1"];
+    const allRetexPlatforms = sortPlatforms(platformCounts.retex);
+    const allResolvePlatforms = sortPlatforms(platformCounts.resolve);
 
-    // --- Calcul des max pour les barres ---
-    const maxRetexCount = Math.max(...topRetexPlatforms.map(p => p[1]), 1);
-    const maxResolveCount = Math.max(...topResolvePlatforms.map(p => p[1]), 1);
+    const platformColors = [
+        "#ff6b6b",
+        "#4ecdc4",
+        "#45b7d1",
+        "#f7b267",
+        "#7bd389",
+        "#a29bfe",
+        "#ff9ff3",
+        "#ffe66d",
+        "#48dbfb",
+        "#ff8b94"
+    ];
 
-    // --- Associer une couleur unique à chaque plateforme ---
+    const maxRetexCount = Math.max(...allRetexPlatforms.map(p => p[1]), 1);
+    const maxResolveCount = Math.max(...allResolvePlatforms.map(p => p[1]), 1);
+
     const platformToColor = new Map();
-    const allPlatforms = [...new Set([...topRetexPlatforms.map(p => p[0]), ...topResolvePlatforms.map(p => p[0])])];
+    const allPlatforms = [...new Set([
+        ...allRetexPlatforms.map(p => p[0]),
+        ...allResolvePlatforms.map(p => p[0])
+    ])];
     allPlatforms.forEach((platform, i) => {
         platformToColor.set(platform, platformColors[i % platformColors.length]);
     });
@@ -104,7 +123,7 @@ const init = async () => {
         const baseCol = Math.floor(pos / 7);
         const row = pos % 7;
 
-        const [y, m, d] = date.split("-").map(Number);
+        const [, m, d] = date.split("-").map(Number);
         const month = m - 1;
 
         if (prevMonth !== null && month !== prevMonth && d === 1) {
@@ -252,8 +271,6 @@ const init = async () => {
         margin-top: 1rem; margin-bottom: 1.5rem;
       }
       .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
-
-      /* Donut Chart et barres */
       .hm-donut-and-bars {
         display: flex;
         align-items: flex-start;
@@ -291,8 +308,6 @@ const init = async () => {
         height: 12px;
         border-radius: 2px;
       }
-
-      /* Barres verticales compactes */
       .hm-bars-container {
         display: flex;
         gap: 2rem;
@@ -400,46 +415,43 @@ const init = async () => {
                 </div>
             </div>
 
-            <!-- Barres verticales avec légendes centrées -->
             <div class="hm-bars-container">
-                <!-- Barre pour RETEX -->
                 <div class="hm-bar-chart">
                     <span class="hm-bar-title">RETEX</span>
                     <div class="hm-bar">
-                        ${topRetexPlatforms.map(([platform, count]) => {
+                        ${allRetexPlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `<div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
     }).join("")}
                     </div>
                     <div class="hm-bar-legend">
-                        ${topRetexPlatforms.map(([platform, count]) => {
+                        ${topRetexPlatforms.map(([platform, count], idx) => {
         const color = platformToColor.get(platform);
         return `
                                 <div class="hm-bar-legend-item">
                                     <span class="hm-bar-legend-color" style="background: ${color};"></span>
-                                    <span>${platform}: ${count}</span>
+                                    <span>#${idx + 1} ${platform}: ${count}</span>
                                 </div>
                             `;
     }).join("")}
                     </div>
                 </div>
 
-                <!-- Barre pour Resolve -->
                 <div class="hm-bar-chart">
                     <span class="hm-bar-title">Resolve</span>
                     <div class="hm-bar">
-                        ${topResolvePlatforms.map(([platform, count]) => {
+                        ${allResolvePlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
         return `<div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
     }).join("")}
                     </div>
                     <div class="hm-bar-legend">
-                        ${topResolvePlatforms.map(([platform, count]) => {
+                        ${topResolvePlatforms.map(([platform, count], idx) => {
         const color = platformToColor.get(platform);
         return `
                                 <div class="hm-bar-legend-item">
                                     <span class="hm-bar-legend-color" style="background: ${color};"></span>
-                                    <span>${platform}: ${count}</span>
+                                    <span>#${idx + 1} ${platform}: ${count}</span>
                                 </div>
                             `;
     }).join("")}
