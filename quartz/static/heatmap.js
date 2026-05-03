@@ -40,7 +40,7 @@ const init = async () => {
     };
 
     const MOIS = ["Jan", "Fév", "Mar", "Avr", "Mai", "Jun", "Jul", "Aoû", "Sep", "Oct", "Nov", "Déc"];
-    const JOURS = ["L", "Ma", "Me", "J", "V", "S", "D"];
+    const JOURS = ["L", "M", "Me", "J", "V", "S", "D"];
     const JOURS_A_AFFICHER = new Set([1, 3, 5]);
 
     const CELL = 13;
@@ -62,7 +62,8 @@ const init = async () => {
         const pos = i + firstDow;
         const baseCol = Math.floor(pos / 7);
         const row = pos % 7;
-        const [, m, d] = date.split("-").map(Number);
+
+        const [y, m, d] = date.split("-").map(Number);
         const month = m - 1;
 
         if (prevMonth !== null && month !== prevMonth && d === 1) {
@@ -71,6 +72,7 @@ const init = async () => {
 
         const col = baseCol + monthOffset;
         prevMonth = month;
+
         return { date, col, row, month };
     });
 
@@ -92,8 +94,12 @@ const init = async () => {
 
     const monthHeader = MOIS.map((label, idx) => {
         if (!(idx in monthBounds)) return "";
+
         const { min, max } = monthBounds[idx];
-        const centerX = LABEL_W + colToPx((min + max) / 2) + (CELL / 2);
+        const startX = LABEL_W + colToPx(min);
+        const endX = LABEL_W + colToPx(max) + CELL;
+        const centerX = (startX + endX) / 2;
+
         return `<div style="position:absolute;left:${centerX}px;transform:translateX(-50%);font-size:10px;color:var(--hm-muted);white-space:nowrap;pointer-events:none">${label}</div>`;
     }).join("");
 
@@ -117,6 +123,34 @@ const init = async () => {
         return `<div style="position:absolute;top:${y}px;left:0;width:${LABEL_W - 4}px;font-size:10px;color:var(--hm-muted);text-align:right">${label}</div>`;
     }).join("");
 
+    const colorize = (text) => {
+        const keywords = {
+            "Resolve": "#c49a6c",
+            "Retex": "#fd8235",
+            "Created": "#9FE1CB",
+        };
+
+        const dashIdx = text.indexOf(" — ");
+        if (dashIdx === -1) return `>${text}</li>`;
+
+        const keyword = text.slice(0, dashIdx);
+        const rest = text.slice(dashIdx + 3);
+        const color = keywords[keyword];
+
+        if (!color) return `>${text}</li>`;
+
+        const parts = rest.split(" · ");
+        const name = parts[0];
+        const context = parts.slice(1).join(" · ");
+
+        return `>
+            <span style="color:${color};font-weight:500">${keyword}</span>
+            <span style="color:${color};font-weight:300"> — </span>
+            <span style="font-weight:500">${name}</span>
+            ${context ? `<span style="color:var(--hm-muted);font-size:.9em"> · ${context}</span>` : ""}
+        </li>`;
+    };
+
     const totals = data.__totaux__ || { resolve: 0, retex: 0, autre: 0 };
 
     root.innerHTML = `
@@ -125,127 +159,70 @@ const init = async () => {
         #heatmap-root {
           --hm-empty: #b3b3b5;
           --hm-border: #b8b8b8;
-          --hm-text: #2b2b2b;
+          --hm-text: #a0522d;
           --hm-muted: #4e4e4e;
           --hm-active: #a0522d;
-          --hm-card: #ffffff;
         }
       }
-
       @media (prefers-color-scheme: dark) {
         #heatmap-root {
           --hm-empty: #5c5b5b;
           --hm-border: #646464;
           --hm-text: #ebebec;
-          --hm-muted: #8a8a8a;
+          --hm-muted: #5c5b5b;
           --hm-active: #c4845a;
-          --hm-card: rgba(255,255,255,0.02);
         }
       }
-
-      #heatmap-root {
-        font-family: inherit;
-      }
-
+      #heatmap-root { font-family: inherit; }
       .hm-day {
-        width: ${CELL}px;
-        height: ${CELL}px;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: transform .1s;
+        width: ${CELL}px; height: ${CELL}px; border-radius: 3px;
+        cursor: pointer; transition: transform .1s;
         outline: 2px solid transparent;
       }
-
-      .hm-day:hover {
-        transform: scale(1.4);
+      .hm-day:hover { transform: scale(1.4); }
+      .hm-day.active { outline-color: var(--hm-active); outline-offset: 1px; }
+      .hm-detail {
+        padding: 1rem 1.2rem;
+        border: 1px solid var(--hm-border);
+        border-radius: 8px;
+        min-height: 64px;
+        color: var(--hm-text);
+        margin-top: 1.5rem;
       }
-
-      .hm-day.active {
-        outline-color: var(--hm-active);
-        outline-offset: 1px;
-      }
-
-      .hm-detail,
       .hm-summary {
         padding: 1rem 1.2rem;
         border: 1px solid var(--hm-border);
         border-radius: 8px;
-        color: var(--hm-text);
-        background: var(--hm-card);
-      }
-
-      .hm-detail {
         min-height: 64px;
-        margin-top: 1.5rem;
-      }
-
-      .hm-summary {
-        margin-top: 1rem;
-      }
-
-      .hm-detail em {
-        color: var(--hm-muted);
-      }
-
-      .hm-detail ul {
-        margin: .6rem 0 0;
-        padding-left: 1.2rem;
-      }
-
-      .hm-detail li {
-        margin: .3rem 0;
-      }
-
-      .hm-date {
-        color: var(--hm-muted);
-        font-weight: 500;
-        font-size: 1rem;
-      }
-
-      .hm-count {
-        color: var(--hm-muted);
-        font-size: .85rem;
-        margin-left: .5rem;
-      }
-
-      .hm-legend {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        font-size: .8rem;
-        color: var(--hm-muted);
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .hm-legend-box {
-        width: ${CELL}px;
-        height: ${CELL}px;
-        border-radius: 3px;
-      }
-
-      .hm-summary-title {
-        font-size: .9rem;
-        color: var(--hm-muted);
-        margin-bottom: .8rem;
-      }
-
-      .hm-stats {
-        display: flex;
-        flex-wrap: wrap;
-        gap: .75rem;
-      }
-
-      .hm-stat {
-        padding: .45rem .7rem;
-        border-radius: 6px;
-        border: 1px solid var(--hm-border);
-        background: rgba(128,128,128,0.08);
-        font-size: .9rem;
-      }
-
-      .hm-stat strong {
         color: var(--hm-text);
+        margin-top: 1rem;
+      }
+      .hm-detail em { color: var(--hm-muted); }
+      .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
+      .hm-detail li { margin: .3rem 0; }
+      .hm-date { color: var(--hm-muted);  font-weight: 500; font-size: 1rem; }
+      .hm-count { color: var(--hm-muted); font-size: .85rem; margin-left: .5rem; }
+      .hm-legend {
+        display: flex; align-items: center; gap: 4px;
+        font-size: .8rem; color: var(--hm-muted);
+        margin-top: 1rem; margin-bottom: 1.5rem;
+      }
+      .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
+      .hm-summary-title {
+        color: var(--hm-muted);
+        font-size: .9rem;
+        margin-bottom: .7rem;
+      }
+      .hm-summary-stats {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .hm-summary-stat {
+        color: var(--hm-text);
+      }
+      .hm-summary-stat strong {
+        color: var(--hm-muted);
         margin-right: .35rem;
       }
     </style>
@@ -271,15 +248,15 @@ const init = async () => {
     </div>
 
     <div class="hm-detail" id="hm-detail">
-      <em>Clique sur un jour</em>
+      <em>Clique sur un jour pour voir les activités</em>
     </div>
 
-    <div class="hm-summary">
-      <div class="hm-summary-title">Répartition globale</div>
-      <div class="hm-stats">
-        <div class="hm-stat"><strong>${totals.resolve}</strong>Resolve</div>
-        <div class="hm-stat"><strong>${totals.retex}</strong>RETEX</div>
-        <div class="hm-stat"><strong>${totals.autre}</strong>Autre</div>
+    <div class="hm-summary" id="hm-summary">
+      <div class="hm-summary-title">Compteurs globaux</div>
+      <div class="hm-summary-stats">
+        <div class="hm-summary-stat"><strong>${totals.resolve}</strong>Resolve</div>
+        <div class="hm-summary-stat"><strong>${totals.retex}</strong>RETEX</div>
+        <div class="hm-summary-stat"><strong>${totals.autre}</strong>Autre</div>
       </div>
     </div>
     `;
@@ -289,18 +266,21 @@ const init = async () => {
             document.querySelectorAll(".hm-day.active").forEach(a => a.classList.remove("active"));
             el.classList.add("active");
 
-            const d = data[el.dataset.date];
-            const s = d?.stats || { resolve: 0, retex: 0, autre: 0 };
-            const count = d?.count || 0;
+            const date = el.dataset.date;
+            const count = parseInt(el.dataset.count, 10);
+            const detail = document.getElementById("hm-detail");
+            const d = data[date];
 
-            document.getElementById("hm-detail").innerHTML = `
-                <span class="hm-date">${el.dataset.date}</span>
+            if (!count || !d) {
+                detail.innerHTML = `<span class="hm-date">${date}</span> — <em>Aucune activité enregistrée.</em>`;
+                return;
+            }
+
+            const items = d.activités.map(colorize).join("");
+            detail.innerHTML = `
+                <span class="hm-date">${date}</span>
                 <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
-                <ul>
-                    <li>Resolve : ${s.resolve}</li>
-                    <li>RETEX : ${s.retex}</li>
-                    <li>Autre : ${s.autre}</li>
-                </ul>
+                <ul>${items}</ul>
             `;
         });
     });
