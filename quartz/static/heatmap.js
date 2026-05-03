@@ -300,16 +300,17 @@ const init = async () => {
       }
       .hm-bar-chart {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 1rem;
-        width: 120px;
+        gap: 0.5rem;
+        width: 80px;
       }
       .hm-bar-title {
         font-size: 0.9rem;
         color: var(--hm-muted);
         font-weight: 500;
-        text-align: center;
         width: 100%;
+        text-align: center;
       }
       .hm-bar {
         width: 20px;
@@ -330,11 +331,13 @@ const init = async () => {
         flex-direction: column;
         gap: 0.3rem;
         font-size: 0.8rem;
-        text-align: left;
+        width: 100%;
+        text-align: center;
       }
       .hm-bar-legend-item {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 0.5rem;
         color: var(--hm-text);
       }
@@ -401,6 +404,7 @@ const init = async () => {
             <div class="hm-bars-container">
                 <!-- Barre pour RETEX -->
                 <div class="hm-bar-chart">
+                    <span class="hm-bar-title">RETEX</span>
                     <div class="hm-bar">
                         ${topRetexPlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
@@ -422,6 +426,7 @@ const init = async () => {
 
                 <!-- Barre pour Resolve -->
                 <div class="hm-bar-chart">
+                    <span class="hm-bar-title">Resolve</span>
                     <div class="hm-bar">
                         ${topResolvePlatforms.map(([platform, count]) => {
         const color = platformToColor.get(platform);
