@@ -32,18 +32,18 @@ const init = async () => {
 
     // --- Fonctions pour obtenir les plateformes ---
     const getAllPlatforms = (counts) => {
-        return Object.entries(counts).sort((a, b) => b[1] - a[1]); // Toutes les plateformes
+        return Object.entries(counts).sort((a, b) => b[1] - a[1]);
     };
 
     const getTop3Platforms = (counts) => {
-        return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3); // Top 3 pour les légendes
+        return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
     };
 
-    const allRetexPlatforms = getAllPlatforms(platformCounts.retex); // Toutes pour les barres
-    const allResolvePlatforms = getAllPlatforms(platformCounts.resolve); // Toutes pour les barres
+    const allRetexPlatforms = getAllPlatforms(platformCounts.retex);
+    const allResolvePlatforms = getAllPlatforms(platformCounts.resolve);
 
-    const topRetexPlatformsForLegend = getTop3Platforms(platformCounts.retex); // Top 3 pour la légende RETEX
-    const topResolvePlatformsForLegend = getTop3Platforms(platformCounts.resolve); // Top 3 pour la légende Resolve
+    const topRetexPlatformsForLegend = getTop3Platforms(platformCounts.retex);
+    const topResolvePlatformsForLegend = getTop3Platforms(platformCounts.resolve);
 
     const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3"];
 
@@ -239,6 +239,7 @@ const init = async () => {
         border-radius: 8px;
         color: var(--hm-text);
         margin-top: 1rem;
+        width: 100%;
       }
       .hm-detail em { color: var(--hm-muted); }
       .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
@@ -252,11 +253,13 @@ const init = async () => {
       }
       .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
 
-      /* Donut Chart et barres */
+      /* Conteneur des graphiques */
       .hm-donut-and-bars {
         display: flex;
+        justify-content: center; /* Centre horizontalement */
         align-items: flex-start;
         gap: 2rem;
+        width: 100%;
       }
       .hm-donut-chart {
         display: flex;
@@ -330,6 +333,7 @@ const init = async () => {
       .hm-bar-segment {
         width: 100%;
         transition: height 0.3s ease;
+        white-space: nowrap; /* Empêche le retour à la ligne dans les tooltips */
       }
       .hm-bar-legend {
         display: flex;
@@ -343,6 +347,7 @@ const init = async () => {
         align-items: center;
         gap: 0.5rem;
         color: var(--hm-text);
+        white-space: nowrap; /* Empêche le retour à la ligne dans les légendes */
       }
       .hm-bar-legend-color {
         display: inline-block;
