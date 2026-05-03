@@ -251,13 +251,13 @@ const init = async () => {
       <em>Clique sur un jour pour voir les activités</em>
     </div>
 
-    <div class="hm-summary" id="hm-summary">
-      <div class="hm-summary-title">Compteurs globaux</div>
-      <div class="hm-summary-stats">
-        <div class="hm-summary-stat"><strong>${totals.resolve}</strong>Resolve</div>
-        <div class="hm-summary-stat"><strong>${totals.retex}</strong>RETEX</div>
-        <div class="hm-summary-stat"><strong>${totals.autre}</strong>Autre</div>
-      </div>
+    <div class="hm-detail" id="hm-summary">
+        <span class="hm-date">Compteurs globaux</span>
+        <ul>
+            <li>Resolve : ${totals.resolve}</li>
+            <li>RETEX : ${totals.retex}</li>
+            <li>Autre : ${totals.autre}</li>
+        </ul>
     </div>
     `;
 
@@ -282,6 +282,7 @@ const init = async () => {
                 <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
                 <ul>${items}</ul>
             `;
+
         });
     });
 };
