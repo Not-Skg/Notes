@@ -44,6 +44,20 @@ const init = async () => {
     const maxRetexCount = Math.max(...topRetexPlatforms.map(p => p[1]), 1);
     const maxResolveCount = Math.max(...topResolvePlatforms.map(p => p[1]), 1);
 
+    // --- Légende commune sans doublons ---
+    const allPlatforms = new Map();
+    topRetexPlatforms.forEach(([platform, count]) => {
+        allPlatforms.set(platform, { count: count, type: "retex" });
+    });
+    topResolvePlatforms.forEach(([platform, count]) => {
+        if (allPlatforms.has(platform)) {
+            allPlatforms.get(platform).count += count;
+            allPlatforms.get(platform).type = "both";
+        } else {
+            allPlatforms.set(platform, { count: count, type: "resolve" });
+        }
+    });
+
     const formatLocalDate = (d) => {
         const y = d.getFullYear();
         const m = String(d.getMonth() + 1).padStart(2, "0");
@@ -191,6 +205,16 @@ const init = async () => {
     const retexPercent = totalActivities > 0 ? (totals.retex / totalActivities) * 100 : 0;
     const autrePercent = totalActivities > 0 ? (totals.autre / totalActivities) * 100 : 0;
 
+    // --- Associer une couleur à chaque plateforme (pour éviter les doublons) ---
+    const platformToColor = new Map();
+    let colorIndex = 0;
+    Array.from(allPlatforms.keys()).forEach(platform => {
+        if (!platformToColor.has(platform)) {
+            platformToColor.set(platform, platformColors[colorIndex % platformColors.length]);
+            colorIndex++;
+        }
+    });
+
     root.innerHTML = `
     <style>
       @media (prefers-color-scheme: light) {
@@ -286,16 +310,21 @@ const init = async () => {
       }
 
       /* Barres verticales compactes */
+      .hm-bars-and-legend {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
       .hm-bars-container {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
         align-items: flex-start;
       }
       .hm-bar-chart {
         display: flex;
         flex-direction: column;
         gap: 0.3rem;
-        width: 40px;
+        width: 20px;
       }
       .hm-bar-title {
         font-size: 0.7rem;
@@ -317,23 +346,25 @@ const init = async () => {
         width: 100%;
         transition: height 0.3s ease;
       }
-      .hm-bar-legend {
+
+      /* Légende commune */
+      .hm-common-legend {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 0.3rem;
-        font-size: 0.7rem;
-        justify-content: center;
+        font-size: 0.8rem;
+        min-width: 120px;
       }
-      .hm-bar-legend-item {
+      .hm-common-legend-item {
         display: flex;
         align-items: center;
-        gap: 0.2rem;
+        gap: 0.5rem;
         color: var(--hm-text);
       }
-      .hm-bar-legend-color {
+      .hm-common-legend-color {
         display: inline-block;
-        width: 8px;
-        height: 8px;
+        width: 12px;
+        height: 12px;
         border-radius: 2px;
       }
     </style>
@@ -389,42 +420,44 @@ const init = async () => {
                 </div>
             </div>
 
-            <!-- Barres verticales compactes -->
-            <div class="hm-bars-container">
-                <!-- Barre pour RETEX -->
-                <div class="hm-bar-chart">
-                    <span class="hm-bar-title">RETEX</span>
-                    <div class="hm-bar">
-                        ${topRetexPlatforms.map(([platform, count], i) => `
-                            <div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
-                        `).join("")}
+            <!-- Barres et légende commune -->
+            <div class="hm-bars-and-legend">
+                <div class="hm-bars-container">
+                    <!-- Barre pour RETEX -->
+                    <div class="hm-bar-chart">
+                        <span class="hm-bar-title">RETEX</span>
+                        <div class="hm-bar">
+                            ${topRetexPlatforms.map(([platform, count]) => {
+        const color = platformToColor.get(platform);
+        return `<div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
+    }).join("")}
+                        </div>
                     </div>
-                    <div class="hm-bar-legend">
-                        ${topRetexPlatforms.map(([platform, count], i) => `
-                            <div class="hm-bar-legend-item">
-                                <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
-                                <span>${count}</span>
-                            </div>
-                        `).join("")}
+
+                    <!-- Barre pour Resolve -->
+                    <div class="hm-bar-chart">
+                        <span class="hm-bar-title">Resolve</span>
+                        <div class="hm-bar">
+                            ${topResolvePlatforms.map(([platform, count]) => {
+        const color = platformToColor.get(platform);
+        return `<div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${color};" title="${platform}: ${count}"></div>`;
+    }).join("")}
+                        </div>
                     </div>
                 </div>
 
-                <!-- Barre pour Resolve -->
-                <div class="hm-bar-chart">
-                    <span class="hm-bar-title">Resolve</span>
-                    <div class="hm-bar">
-                        ${topResolvePlatforms.map(([platform, count], i) => `
-                            <div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
-                        `).join("")}
-                    </div>
-                    <div class="hm-bar-legend">
-                        ${topResolvePlatforms.map(([platform, count], i) => `
-                            <div class="hm-bar-legend-item">
-                                <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
-                                <span>${count}</span>
+                <!-- Légende commune -->
+                <div class="hm-common-legend">
+                    ${Array.from(allPlatforms.entries()).map(([platform, { count, type }]) => {
+        const color = platformToColor.get(platform);
+        const icon = type === "both" ? "↕" : type === "retex" ? "📝" : "🔍";
+        return `
+                            <div class="hm-common-legend-item">
+                                <span class="hm-common-legend-color" style="background: ${color};"></span>
+                                <span>${icon} ${platform}: ${count}</span>
                             </div>
-                        `).join("")}
-                    </div>
+                        `;
+    }).join("")}
                 </div>
             </div>
         </div>
