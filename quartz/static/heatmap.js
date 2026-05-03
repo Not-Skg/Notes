@@ -273,7 +273,7 @@ const init = async () => {
       .hm-donut-total {
         font-size: 1.1rem;
         font-weight: bold;
-        fill: var(--hm-text);
+        color: var(--hm-text);
       }
       .hm-donut-legend {
         display: flex;
@@ -285,7 +285,7 @@ const init = async () => {
         align-items: center;
         gap: 0.5rem;
         font-size: 0.9rem;
-        color: var(--hm-muted);
+        color: var(--hm-text);
       }
       .hm-donut-legend-color {
         display: inline-block;
