@@ -65,6 +65,17 @@
       "autre": 0
     }
   },
+  "2026-05-03": {
+    "count": 1,
+    "activités": [
+      "Created — Donut Chart · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-04-29": {
     "count": 1,
     "activités": [
@@ -96,6 +107,17 @@
     "count": 1,
     "activités": [
       "Created — Graffiti · GCC CTF · GCC"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-05-02": {
+    "count": 1,
+    "activités": [
+      "Created — Compteurs Globaux · Site"
     ],
     "stats": {
       "resolve": 0,
@@ -801,6 +823,6 @@
   "__totaux__": {
     "resolve": 141,
     "retex": 77,
-    "autre": 11
+    "autre": 13
   }
 }

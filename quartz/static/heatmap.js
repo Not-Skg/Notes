@@ -276,13 +276,16 @@ const init = async () => {
         <span class="hm-date">Compteurs globaux</span>
         <div class="hm-donut-chart">
             <svg viewBox="0 0 100 100" class="hm-donut-svg">
-              <!-- Fond gris en premier -->
-              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-              <!-- Puis les cercles colorés par-dessus -->
-              <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="10" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-              <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="10" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
-              <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="10" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
-               <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
+                <!-- Fond gris (épaisseur 10) -->
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+
+                       <!-- Segments colorés (épaisseur 8, pour laisser 1px de fond visible entre chaque) -->
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="8" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="8" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="8" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
+
+                       <!-- Texte au centre -->
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
             </svg>
             <div class="hm-donut-legend">
                 <div class="hm-donut-legend-item">
