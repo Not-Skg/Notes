@@ -279,6 +279,7 @@ const init = async () => {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        color: var(--hm-text);
       }
       .hm-donut-legend-item {
         display: flex;
@@ -309,7 +310,7 @@ const init = async () => {
       }
       .hm-bar-title {
         font-size: 0.9rem;
-        color: var(--hm-muted);
+        color: var(--hm-text);
         font-weight: 500;
         width: 100%;
         text-align: center;
@@ -345,7 +346,7 @@ const init = async () => {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: var(--hm-muted);
+        color: var(--hm-text);
         white-space: nowrap; /* Empêche le retour à la ligne dans les légendes */
       }
       .hm-bar-legend-color {
