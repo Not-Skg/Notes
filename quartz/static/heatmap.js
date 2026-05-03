@@ -131,19 +131,19 @@ const init = async () => {
         };
 
         const dashIdx = text.indexOf(" — ");
-        if (dashIdx === -1) return `>${text}</li>`;
+        if (dashIdx === -1) return `<li>${text}</li>`;
 
         const keyword = text.slice(0, dashIdx);
         const rest = text.slice(dashIdx + 3);
         const color = keywords[keyword];
 
-        if (!color) return `>${text}</li>`;
+        if (!color) return `<li>${text}</li>`;
 
         const parts = rest.split(" · ");
         const name = parts[0];
         const context = parts.slice(1).join(" · ");
 
-        return `>
+        return `<li>
             <span style="color:${color};font-weight:500">${keyword}</span>
             <span style="color:${color};font-weight:300"> — </span>
             <span style="font-weight:500">${name}</span>
