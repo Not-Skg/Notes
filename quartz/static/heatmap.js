@@ -239,7 +239,6 @@ const init = async () => {
         border-radius: 8px;
         color: var(--hm-text);
         margin-top: 1rem;
-        width: 100%;
       }
       .hm-detail em { color: var(--hm-muted); }
       .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
