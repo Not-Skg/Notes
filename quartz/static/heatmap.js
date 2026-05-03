@@ -10,6 +10,40 @@ const init = async () => {
     }
     const data = await res.json();
 
+    // --- Extraction des plateformes ---
+    const extractPlatform = (text) => {
+        const lastDotIndex = text.lastIndexOf(" · ");
+        return lastDotIndex === -1 ? "Inconnu" : text.slice(lastDotIndex + 3).trim();
+    };
+
+    const platformCounts = { retex: {}, resolve: {} };
+    Object.keys(data).forEach(date => {
+        const dayData = data[date];
+        if (!dayData?.activités) return;
+        dayData.activités.forEach(activity => {
+            const platform = extractPlatform(activity);
+            if (activity.startsWith("Retex")) {
+                platformCounts.retex[platform] = (platformCounts.retex[platform] || 0) + 1;
+            } else if (activity.startsWith("Resolve")) {
+                platformCounts.resolve[platform] = (platformCounts.resolve[platform] || 0) + 1;
+            }
+        });
+    });
+
+    const getTopPlatforms = (counts) => {
+        return Object.entries(counts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 3);
+    };
+
+    const topRetexPlatforms = getTopPlatforms(platformCounts.retex);
+    const topResolvePlatforms = getTopPlatforms(platformCounts.resolve);
+    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1"];
+
+    // --- Calcul des max pour les barres ---
+    const maxRetexCount = Math.max(...topRetexPlatforms.map(p => p[1]), 1);
+    const maxResolveCount = Math.max(...topResolvePlatforms.map(p => p[1]), 1);
+
     const formatLocalDate = (d) => {
         const y = d.getFullYear();
         const m = String(d.getMonth() + 1).padStart(2, "0");
@@ -213,11 +247,15 @@ const init = async () => {
       .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
 
       /* Donut Chart */
+      .hm-donut-and-bars {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
       .hm-donut-chart {
         display: flex;
         align-items: center;
         gap: 1.5rem;
-        margin-top: 0.5rem;
       }
       .hm-donut-svg {
         width: 100px;
@@ -244,6 +282,56 @@ const init = async () => {
         display: inline-block;
         width: 12px;
         height: 12px;
+        border-radius: 2px;
+      }
+
+      /* Barres verticales */
+      .hm-bars-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        min-width: 180px;
+      }
+      .hm-bar-chart {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .hm-bar-title {
+        font-size: 0.9rem;
+        color: var(--hm-muted);
+        font-weight: 500;
+      }
+      .hm-bar {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-left: 1px solid var(--hm-border);
+        border-bottom: 1px solid var(--hm-border);
+        position: relative;
+      }
+      .hm-bar-segment {
+        width: 100%;
+        transition: height 0.3s ease;
+      }
+      .hm-bar-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+      }
+      .hm-bar-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        color: var(--hm-text);
+      }
+      .hm-bar-legend-color {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
         border-radius: 2px;
       }
     </style>
@@ -274,31 +362,67 @@ const init = async () => {
 
     <div class="hm-summary">
         <span class="hm-date">Compteurs globaux</span>
-        <div class="hm-donut-chart">
-            <svg viewBox="0 0 100 100" class="hm-donut-svg">
-                <!-- Fond gris (épaisseur 10) -->
-                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-
-                       <!-- Segments colorés (épaisseur 8, pour laisser 1px de fond visible entre chaque) -->
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="8" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="8" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="8" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
-
-                       <!-- Texte au centre -->
-                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
-            </svg>
-            <div class="hm-donut-legend">
-                <div class="hm-donut-legend-item">
-                    <span class="hm-donut-legend-color" style="background: #c49a6c;"></span>
-                    <span>Resolve: ${totals.resolve}</span>
+        <div class="hm-donut-and-bars">
+            <div class="hm-donut-chart">
+                <svg viewBox="0 0 100 100" class="hm-donut-svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="8" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="8" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="8" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
+                    <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
+                </svg>
+                <div class="hm-donut-legend">
+                    <div class="hm-donut-legend-item">
+                        <span class="hm-donut-legend-color" style="background: #c49a6c;"></span>
+                        <span>Resolve: ${totals.resolve}</span>
+                    </div>
+                    <div class="hm-donut-legend-item">
+                        <span class="hm-donut-legend-color" style="background: #fd8235;"></span>
+                        <span>RETEX: ${totals.retex}</span>
+                    </div>
+                    <div class="hm-donut-legend-item">
+                        <span class="hm-donut-legend-color" style="background: #9FE1CB;"></span>
+                        <span>Autre: ${totals.autre}</span>
+                    </div>
                 </div>
-                <div class="hm-donut-legend-item">
-                    <span class="hm-donut-legend-color" style="background: #fd8235;"></span>
-                    <span>RETEX: ${totals.retex}</span>
+            </div>
+
+            <!-- Barres verticales pour RETEX et Resolve -->
+            <div class="hm-bars-container">
+                <!-- Barre pour RETEX -->
+                <div class="hm-bar-chart">
+                    <span class="hm-bar-title">Top plateformes RETEX</span>
+                    <div class="hm-bar">
+                        ${topRetexPlatforms.map(([platform, count], i) => `
+                            <div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
+                        `).join("")}
+                    </div>
+                    <div class="hm-bar-legend">
+                        ${topRetexPlatforms.map(([platform, count], i) => `
+                            <div class="hm-bar-legend-item">
+                                <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
+                                <span>${platform}: ${count}</span>
+                            </div>
+                        `).join("")}
+                    </div>
                 </div>
-                <div class="hm-donut-legend-item">
-                    <span class="hm-donut-legend-color" style="background: #9FE1CB;"></span>
-                    <span>Autre: ${totals.autre}</span>
+
+                <!-- Barre pour Resolve -->
+                <div class="hm-bar-chart">
+                    <span class="hm-bar-title">Top plateformes Resolve</span>
+                    <div class="hm-bar">
+                        ${topResolvePlatforms.map(([platform, count], i) => `
+                            <div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${platformColors[i]};" title="${platform}: ${count}"></div>
+                        `).join("")}
+                    </div>
+                    <div class="hm-bar-legend">
+                        ${topResolvePlatforms.map(([platform, count], i) => `
+                            <div class="hm-bar-legend-item">
+                                <span class="hm-bar-legend-color" style="background: ${platformColors[i]};"></span>
+                                <span>${platform}: ${count}</span>
+                            </div>
+                        `).join("")}
+                    </div>
                 </div>
             </div>
         </div>
