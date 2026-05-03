@@ -41,7 +41,7 @@ const init = async () => {
 
     const MOIS = ["Jan", "Fév", "Mar", "Avr", "Mai", "Jun", "Jul", "Aoû", "Sep", "Oct", "Nov", "Déc"];
     const JOURS = ["L", "Ma", "Me", "J", "V", "S", "D"];
-    const JOURS_A_AFFICHER = new Set([1, 3, 5]); // Mardi, Jeudi, Samedi
+    const JOURS_A_AFFICHER = new Set([1, 3, 5]);
 
     const CELL = 13;
     const GAP = 3;
@@ -62,7 +62,7 @@ const init = async () => {
         const pos = i + firstDow;
         const baseCol = Math.floor(pos / 7);
         const row = pos % 7;
-        const [y, m, d] = date.split("-").map(Number);
+        const [, m, d] = date.split("-").map(Number);
         const month = m - 1;
 
         if (prevMonth !== null && month !== prevMonth && d === 1) {
@@ -121,38 +121,185 @@ const init = async () => {
 
     root.innerHTML = `
     <style>
-      #heatmap-root { font-family: inherit; }
-      .hm-day { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; cursor: pointer; transition: transform .1s; outline: 2px solid transparent; }
-      .hm-day:hover { transform: scale(1.4); }
-      .hm-day.active { outline-color: var(--hm-active); outline-offset: 1px; }
-      .hm-detail { padding: 1rem 1.2rem; border: 1px solid var(--hm-border); border-radius: 8px; min-height: 64px; color: var(--hm-text); margin-top: 1.5rem; }
-      .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
-      .hm-date { font-weight: 500; }
-      .hm-stats { display: flex; gap: .75rem; margin-top: 1rem; font-size: .85rem; color: var(--hm-muted); }
-      .hm-stat { padding: .2rem .5rem; border-radius: 4px; background: rgba(128,128,128,0.1); }
+      @media (prefers-color-scheme: light) {
+        #heatmap-root {
+          --hm-empty: #b3b3b5;
+          --hm-border: #b8b8b8;
+          --hm-text: #2b2b2b;
+          --hm-muted: #4e4e4e;
+          --hm-active: #a0522d;
+          --hm-card: #ffffff;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        #heatmap-root {
+          --hm-empty: #5c5b5b;
+          --hm-border: #646464;
+          --hm-text: #ebebec;
+          --hm-muted: #8a8a8a;
+          --hm-active: #c4845a;
+          --hm-card: rgba(255,255,255,0.02);
+        }
+      }
+
+      #heatmap-root {
+        font-family: inherit;
+      }
+
+      .hm-day {
+        width: ${CELL}px;
+        height: ${CELL}px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: transform .1s;
+        outline: 2px solid transparent;
+      }
+
+      .hm-day:hover {
+        transform: scale(1.4);
+      }
+
+      .hm-day.active {
+        outline-color: var(--hm-active);
+        outline-offset: 1px;
+      }
+
+      .hm-detail,
+      .hm-summary {
+        padding: 1rem 1.2rem;
+        border: 1px solid var(--hm-border);
+        border-radius: 8px;
+        color: var(--hm-text);
+        background: var(--hm-card);
+      }
+
+      .hm-detail {
+        min-height: 64px;
+        margin-top: 1.5rem;
+      }
+
+      .hm-summary {
+        margin-top: 1rem;
+      }
+
+      .hm-detail em {
+        color: var(--hm-muted);
+      }
+
+      .hm-detail ul {
+        margin: .6rem 0 0;
+        padding-left: 1.2rem;
+      }
+
+      .hm-detail li {
+        margin: .3rem 0;
+      }
+
+      .hm-date {
+        color: var(--hm-muted);
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      .hm-count {
+        color: var(--hm-muted);
+        font-size: .85rem;
+        margin-left: .5rem;
+      }
+
+      .hm-legend {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: .8rem;
+        color: var(--hm-muted);
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hm-legend-box {
+        width: ${CELL}px;
+        height: ${CELL}px;
+        border-radius: 3px;
+      }
+
+      .hm-summary-title {
+        font-size: .9rem;
+        color: var(--hm-muted);
+        margin-bottom: .8rem;
+      }
+
+      .hm-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+      }
+
+      .hm-stat {
+        padding: .45rem .7rem;
+        border-radius: 6px;
+        border: 1px solid var(--hm-border);
+        background: rgba(128,128,128,0.08);
+        font-size: .9rem;
+      }
+
+      .hm-stat strong {
+        color: var(--hm-text);
+        margin-right: .35rem;
+      }
     </style>
-    <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">${monthHeader}</div>
-    <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>
-    <div class="hm-stats">
-        <span><strong>${totals.resolve}</strong> Resolve</span>
-        <span><strong>${totals.retex}</strong> RETEX</span>
-        <span><strong>${totals.autre}</strong> Autre</span>
+
+    <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">
+      ${monthHeader}
     </div>
-    <div class="hm-detail" id="hm-detail"><em>Clique sur un jour</em></div>
+
+    <div style="position:relative;width:${totalWidth}px;height:${gridH}px">
+      ${dayLabels}
+      ${cells}
+    </div>
+
+    <div class="hm-legend">
+      -
+      <div class="hm-legend-box" style="background:var(--hm-empty)"></div>
+      <div class="hm-legend-box" style="background:#fdca98"></div>
+      <div class="hm-legend-box" style="background:#fda460"></div>
+      <div class="hm-legend-box" style="background:#fd8235"></div>
+      <div class="hm-legend-box" style="background:#e24b0f"></div>
+      <div class="hm-legend-box" style="background:#9c2f07"></div>
+      +
+    </div>
+
+    <div class="hm-detail" id="hm-detail">
+      <em>Clique sur un jour</em>
+    </div>
+
+    <div class="hm-summary">
+      <div class="hm-summary-title">Répartition globale</div>
+      <div class="hm-stats">
+        <div class="hm-stat"><strong>${totals.resolve}</strong>Resolve</div>
+        <div class="hm-stat"><strong>${totals.retex}</strong>RETEX</div>
+        <div class="hm-stat"><strong>${totals.autre}</strong>Autre</div>
+      </div>
+    </div>
     `;
 
     document.querySelectorAll(".hm-day").forEach(el => {
         el.addEventListener("click", () => {
             document.querySelectorAll(".hm-day.active").forEach(a => a.classList.remove("active"));
             el.classList.add("active");
+
             const d = data[el.dataset.date];
             const s = d?.stats || { resolve: 0, retex: 0, autre: 0 };
+            const count = d?.count || 0;
+
             document.getElementById("hm-detail").innerHTML = `
                 <span class="hm-date">${el.dataset.date}</span>
+                <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
                 <ul>
-                    >Resolve: ${s.resolve}</li>
-                    >RETEX: ${s.retex}</li>
-                    >Autre: ${s.autre}</li>
+                    <li>Resolve : ${s.resolve}</li>
+                    <li>RETEX : ${s.retex}</li>
+                    <li>Autre : ${s.autre}</li>
                 </ul>
             `;
         });
@@ -160,3 +307,4 @@ const init = async () => {
 };
 
 document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("nav", init);
