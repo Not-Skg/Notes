@@ -38,14 +38,14 @@
   "2026-03-26": {
     "count": 8,
     "activités": [
-      "Created — Phase 3 Bellatrix · Comcyber",
-      "Resolve — En chemin pour une partie de pêche · Bellatrix · Comcyber",
-      "Resolve — Remonter la piste · Comcyber",
-      "Resolve — On se rapproche · Bellatrix · Comcyber",
-      "Resolve — Les archives au secours · Bellatrix · Comcyber",
-      "Resolve — Le plein trop cher · Bellatrix · Comcyber",
-      "Resolve — Temps incertains · Bellatrix · Comcyber",
-      "Resolve — Localisation de \"Lynx\" · Bellatrix · Comcyber"
+      "Created — Phase 3 Bellatrix",
+      "Resolve — En chemin pour une partie de pêche · Bellatrix",
+      "Resolve — Remonter la piste",
+      "Resolve — On se rapproche · Bellatrix",
+      "Resolve — Les archives au secours · Bellatrix",
+      "Resolve — Le plein trop cher · Bellatrix",
+      "Resolve — Temps incertains · Bellatrix",
+      "Resolve — Localisation de \"Lynx\" · Bellatrix"
     ],
     "stats": {
       "resolve": 7,
@@ -66,14 +66,15 @@
     }
   },
   "2026-05-03": {
-    "count": 1,
+    "count": 2,
     "activités": [
-      "Created — Donut Chart · Site"
+      "Created — Donut Chart · Site",
+      "Created — Bar Charts · Site"
     ],
     "stats": {
       "resolve": 0,
       "retex": 0,
-      "autre": 1
+      "autre": 2
     }
   },
   "2026-04-29": {
@@ -714,18 +715,18 @@
   "2026-03-24": {
     "count": 12,
     "activités": [
-      "Created — Phase 1 Bellatrix · Comcyber",
-      "Resolve — Un message d'alerte · Bellatrix · Comcyber",
-      "Resolve — La vidéo du sauvetage · Bellatrix · Comcyber",
-      "Resolve — Trop Beau pour être vrai · Bellatrix · Comcyber",
-      "Resolve — Dé-cridibiliser l'information · Bellatrix · Comcyber",
-      "Resolve — Au service d'une cause · Bellatrix · Comcyber",
-      "Resolve — Rétablir la véracité des faits · Bellatrix · Comcyber",
-      "Resolve — Une metadata vaut mille images · Bellatrix · Comcyber",
-      "Resolve — Mesurer l'attaque · Bellatrix · Comcyber",
-      "Resolve — Identifier le primo-diffuseur · Bellatrix · Comcyber",
-      "Resolve — Cyber-physique ! · Bellatrix · Comcyber",
-      "Resolve — Analyser l'attaque · Bellatrix · Comcyber"
+      "Created — Phase 1 Bellatrix",
+      "Resolve — Un message d'alerte · Bellatrix",
+      "Resolve — La vidéo du sauvetage · Bellatrix",
+      "Resolve — Trop Beau pour être vrai · Bellatrix",
+      "Resolve — Dé-cridibiliser l'information · Bellatrix",
+      "Resolve — Au service d'une cause · Bellatrix",
+      "Resolve — Rétablir la véracité des faits · Bellatrix",
+      "Resolve — Une metadata vaut mille images · Bellatrix",
+      "Resolve — Mesurer l'attaque · Bellatrix",
+      "Resolve — Identifier le primo-diffuseur · Bellatrix",
+      "Resolve — Cyber-physique ! · Bellatrix",
+      "Resolve — Analyser l'attaque · Bellatrix"
     ],
     "stats": {
       "resolve": 11,
@@ -748,17 +749,17 @@
   "2026-03-25": {
     "count": 11,
     "activités": [
-      "Created — Phase 2 Bellatrix · Comcyber",
-      "Resolve — Surveillance du réseau social · Bellatrix · Comcyber",
-      "Resolve — La piste de l'organisation · Comcyber",
-      "Resolve — Fouiller le site · Bellatrix · Comcyber",
-      "Resolve — Nos réalisations... · Bellatrix · Comcyber",
-      "Resolve — Découverte de preuves cachées · Bellatrix · Comcyber",
-      "Resolve — La piste du financement · Bellatrix · Comcyber",
-      "Resolve — Analyse WHOIS des domaines suspects · Bellatrix · Comcyber",
-      "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix · Comcyber",
-      "Resolve — La temporalité de l'attaque · Bellatrix · Comcyber",
-      "Resolve — Réutilisation de code sur les domaines · Bellatrix · Comcyber"
+      "Created — Phase 2 Bellatrix",
+      "Resolve — Surveillance du réseau social · Bellatrix",
+      "Resolve — La piste de l'organisation",
+      "Resolve — Fouiller le site · Bellatrix",
+      "Resolve — Nos réalisations... · Bellatrix",
+      "Resolve — Découverte de preuves cachées · Bellatrix",
+      "Resolve — La piste du financement · Bellatrix",
+      "Resolve — Analyse WHOIS des domaines suspects · Bellatrix",
+      "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix",
+      "Resolve — La temporalité de l'attaque · Bellatrix",
+      "Resolve — Réutilisation de code sur les domaines · Bellatrix"
     ],
     "stats": {
       "resolve": 10,
@@ -823,6 +824,6 @@
   "__totaux__": {
     "resolve": 141,
     "retex": 77,
-    "autre": 13
+    "autre": 14
   }
 }
