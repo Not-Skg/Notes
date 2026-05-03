@@ -258,7 +258,7 @@ const init = async () => {
         display: flex;
         justify-content: center; /* Centre horizontalement */
         align-items: flex-start;
-        gap: 2rem;
+        gap: 3rem;
         width: 100%;
       }
       .hm-donut-chart {
@@ -286,7 +286,7 @@ const init = async () => {
         align-items: center;
         gap: 0.5rem;
         font-size: 0.9rem;
-        color: var(--hm-text);
+        color: var(--hm-muted);
       }
       .hm-donut-legend-color {
         display: inline-block;
@@ -298,7 +298,7 @@ const init = async () => {
       /* Barres verticales avec légendes à droite */
       .hm-bars-container {
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
         align-items: flex-start;
       }
       .hm-bar-chart {
@@ -346,7 +346,7 @@ const init = async () => {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: var(--hm-text);
+        color: var(--hm-muted);
         white-space: nowrap; /* Empêche le retour à la ligne dans les légendes */
       }
       .hm-bar-legend-color {
