@@ -152,6 +152,10 @@ const init = async () => {
     };
 
     const totals = data.__totaux__ || { resolve: 0, retex: 0, autre: 0 };
+    const totalActivities = totals.resolve + totals.retex + totals.autre;
+    const resolvePercent = totalActivities > 0 ? (totals.resolve / totalActivities) * 100 : 0;
+    const retexPercent = totalActivities > 0 ? (totals.retex / totalActivities) * 100 : 0;
+    const autrePercent = totalActivities > 0 ? (totals.autre / totalActivities) * 100 : 0;
 
     root.innerHTML = `
     <style>
@@ -193,14 +197,13 @@ const init = async () => {
         padding: 1rem 1.2rem;
         border: 1px solid var(--hm-border);
         border-radius: 8px;
-        min-height: 64px;
         color: var(--hm-text);
         margin-top: 1rem;
       }
       .hm-detail em { color: var(--hm-muted); }
       .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
       .hm-detail li { margin: .3rem 0; }
-      .hm-date { color: var(--hm-muted);  font-weight: 500; font-size: 1rem; }
+      .hm-date { color: var(--hm-muted); font-weight: 500; font-size: 1rem; }
       .hm-count { color: var(--hm-muted); font-size: .85rem; margin-left: .5rem; }
       .hm-legend {
         display: flex; align-items: center; gap: 4px;
@@ -208,22 +211,40 @@ const init = async () => {
         margin-top: 1rem; margin-bottom: 1.5rem;
       }
       .hm-legend-box { width: ${CELL}px; height: ${CELL}px; border-radius: 3px; }
-      .hm-summary-title {
-        color: var(--hm-muted);
-        font-size: .9rem;
-        margin-bottom: .7rem;
-      }
-      .hm-summary-stats {
+
+      /* Donut Chart */
+      .hm-donut-chart {
         display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
       }
-      .hm-summary-stat {
+      .hm-donut-svg {
+        width: 100px;
+        height: 100px;
+      }
+      .hm-donut-total {
+        font-size: 1.1rem;
+        font-weight: bold;
+        fill: var(--hm-text);
+      }
+      .hm-donut-legend {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .hm-donut-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
         color: var(--hm-text);
       }
-      .hm-summary-stat strong {
-        color: var(--hm-muted);
-        margin-right: .35rem;
+      .hm-donut-legend-color {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
       }
     </style>
 
@@ -251,13 +272,31 @@ const init = async () => {
       <em>Clique sur un jour pour voir les activités</em>
     </div>
 
-    <div class="hm-detail" id="hm-summary">
+    <div class="hm-summary">
         <span class="hm-date">Compteurs globaux</span>
-        <ul>
-            <li>Resolve : ${totals.resolve}</li>
-            <li>RETEX : ${totals.retex}</li>
-            <li>Autre : ${totals.autre}</li>
-        </ul>
+        <div class="hm-donut-chart">
+            <svg viewBox="0 0 100 100" class="hm-donut-svg">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="10" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="${(100 - resolvePercent) * 2.83}" transform="rotate(-90 50 50)" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="10" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${(100 - resolvePercent - retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="10" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${(100 - resolvePercent - retexPercent - autrePercent) * 2.83}" transform="rotate(-90 50 50)" />
+                <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
+            </svg>
+            <div class="hm-donut-legend">
+                <div class="hm-donut-legend-item">
+                    <span class="hm-donut-legend-color" style="background: #c49a6c;"></span>
+                    <span>Resolve: ${totals.resolve}</span>
+                </div>
+                <div class="hm-donut-legend-item">
+                    <span class="hm-donut-legend-color" style="background: #fd8235;"></span>
+                    <span>RETEX: ${totals.retex}</span>
+                </div>
+                <div class="hm-donut-legend-item">
+                    <span class="hm-donut-legend-color" style="background: #9FE1CB;"></span>
+                    <span>Autre: ${totals.autre}</span>
+                </div>
+            </div>
+        </div>
     </div>
     `;
 
@@ -282,7 +321,6 @@ const init = async () => {
                 <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
                 <ul>${items}</ul>
             `;
-
         });
     });
 };
