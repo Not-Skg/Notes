@@ -32,8 +32,7 @@ const init = async () => {
 
     const getTopPlatforms = (counts) => {
         return Object.entries(counts)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 3);
+            .sort((a, b) => b[1] - a[1]);
     };
 
     const topRetexPlatforms = getTopPlatforms(platformCounts.retex);
