@@ -258,6 +258,7 @@ const init = async () => {
         align-items: flex-start;
         gap: 3rem;
         width: 100%;
+        flex-wrap: wrap;
       }
       .hm-donut-chart {
         display: flex;
@@ -297,6 +298,7 @@ const init = async () => {
         display: flex;
         gap: 3rem;
         align-items: flex-start;
+        flex-wrap: wrap; 
       }
       .hm-bar-chart {
         display: flex;
