@@ -631,6 +631,17 @@
       "autre": 0
     }
   },
+  "2026-04-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — Ombre & Rigueur · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-20": {
     "count": 2,
     "activités": [
@@ -746,6 +757,21 @@
       "autre": 0
     }
   },
+  "2026-05-04": {
+    "count": 5,
+    "activités": [
+      "Resolve — IDENT · D3z1nT0x · Osint-FR",
+      "Resolve — D3z1nT0x · D3z1nT0x · Osint-FR",
+      "Resolve — Aesalerte · D3z1nT0x · Osint-FR",
+      "Resolve — Plan · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Le moteur · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-25": {
     "count": 11,
     "activités": [
@@ -822,7 +848,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 141,
+    "resolve": 147,
     "retex": 77,
     "autre": 14
   }

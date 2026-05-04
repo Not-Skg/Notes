@@ -17,9 +17,11 @@ description: Vue d'ensemble de mes activités au fil du temps
 | ---------- | ----------------------------------------------------------------- | ------------------------- |
 | TryHackMe  | [Skg](https://tryhackme.com/p/Skg)                                | ![[Profil_THM.png]]       |
 | Osint4Fun  | [SKG](https://www.osint4fun.eu/user/89b4eb44c0c38592/#badges-tab) | ![[Profil_Osint4Fun.png]] |
+| Osint-FR   | skg                                                               | ![[Profil_Osint-FR.png]]  |
+| IsFred     | [Skg](https://isfred.fr/users/349)                                | ![[Profil_IsFred.png]]    |
 
 J'ajouterai mon profil Osintopia lorsqu'il y aura le retour de la plupart des challenges de l'ancienne plateforme. Pour l'instant ce n'est pas vraiment représentatif, mais pour donner un ordre d'idée, avant, j'étais de grade Prozint sur la plateforme.
 
 ---
 
-[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]•
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]

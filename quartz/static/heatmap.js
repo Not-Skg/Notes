@@ -237,7 +237,6 @@ const init = async () => {
         padding: 1rem 1.2rem;
         border: 1px solid var(--hm-border);
         border-radius: 8px;
-        color: var(--hm-text);
         margin-top: 1rem;
       }
       .hm-detail em { color: var(--hm-muted); }
@@ -279,14 +278,12 @@ const init = async () => {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        color: var(--hm-text);
       }
       .hm-donut-legend-item {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         font-size: 0.9rem;
-        color: var(--hm-text);
       }
       .hm-donut-legend-color {
         display: inline-block;
@@ -310,7 +307,6 @@ const init = async () => {
       }
       .hm-bar-title {
         font-size: 0.9rem;
-        color: var(--hm-text);
         font-weight: 500;
         width: 100%;
         text-align: center;
@@ -346,7 +342,6 @@ const init = async () => {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: var(--hm-text);
         white-space: nowrap; /* Empêche le retour à la ligne dans les légendes */
       }
       .hm-bar-legend-color {
