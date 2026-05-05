@@ -723,6 +723,21 @@
       "autre": 0
     }
   },
+  "2026-05-05": {
+    "count": 5,
+    "activités": [
+      "Resolve — ALL_IN · MADAME_IRMA · Osint-FR",
+      "Resolve — Passerelle · MADAME_IRMA · Osint-FR",
+      "Resolve — Divination · MADAME_IRMA · Osint-FR",
+      "Resolve — Read More · MADAME_IRMA · Osint-FR",
+      "Created — Badges · Site"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-03-24": {
     "count": 12,
     "activités": [
@@ -848,8 +863,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 147,
+    "resolve": 151,
     "retex": 77,
-    "autre": 14
+    "autre": 15
   }
 }

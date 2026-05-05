@@ -35,4 +35,4 @@ tags:
 
 ---
 
-[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[heatmap|Journal d'activité]]

@@ -4,19 +4,20 @@ title: Homepage
 ![[Ban.jpeg]]
 > Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
 > Le thème principal, ça sera l'OSINT, mais aussi potentiellement un peu de SOC ou de WEB.
-> *==J'ai pleins d'autres Retex à partager, mais je ne les ai pas mis au propre, donc je vais les uploads au fur et à mesure. Je vais essayer d'en partager un par jour. Vous pouvez voir l'état d'avancement ici :== [[heatmap]].*
+> *==J'ai pleins d'autres Retex à partager, mais je ne les ai pas mis au propre, donc je vais les uploads au fur et à mesure. Vous pouvez voir l'état d'avancement ici :== [[heatmap]].*
 >>Il me reste encore tous ces challs en stock :
 >>![[Graph_Challl_tt.png|300]]
 
-Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4fun** ou **TryHackMe**, mais de temps en temps, je ferais d'autres choses.
+Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4Fun** ou **TryHackMe**.
+J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les challenges d'Osint4Fun.
 
 >[!info] Prochainement
 > - [ ] Searchlight - Imint
 > - [ ] Présentation De Osint4Fun
 > - [ ] Simulation de SOC dans Learning Path SOC Level 1
 > - [ ] RETEX Integrity
-> - [ ] Tous mes challs Osintopia d'avant la refonte du site
 > - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)
+> - [ ] Ajout des Badges dans le "Journal d'activité"
 
 ---
 # ▸ CTF
@@ -73,4 +74,4 @@ Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Os
 
 ---
 
-[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[Toolbox]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[heatmap|Journal d'activité]]
