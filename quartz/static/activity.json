@@ -345,6 +345,21 @@
       "autre": 1
     }
   },
+  "2026-05-08": {
+    "count": 5,
+    "activités": [
+      "Resolve — A · CTF · Site",
+      "Resolve — B · CTF · Site",
+      "Retex — A · CTF · Site",
+      "Created — Heatmap · Site",
+      "Created — Chall C · CTF · Site"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 1,
+      "autre": 2
+    }
+  },
   "2026-04-06": {
     "count": 6,
     "activités": [
@@ -863,8 +878,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 151,
-    "retex": 77,
-    "autre": 15
+    "resolve": 153,
+    "retex": 78,
+    "autre": 17
   }
 }
