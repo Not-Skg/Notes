@@ -286,6 +286,25 @@
       "autre": 0
     }
   },
+  "2026-05-09": {
+    "count": 9,
+    "activités": [
+      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Plastique et crayons · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Résistant dans l'art · L'art de résister · Bleuet de France V5",
+      "Resolve — Une oreille pour se souvenir · L'art de résister · Bleuet de France V5",
+      "Resolve — Des mots pour contrer les maux · L'art de résister · Bleuet de France V5",
+      "Resolve — Un vers pour la liberté · L'art de résister · Bleuet de France V5",
+      "Resolve — L'art et la résistance · L'art de résister · Bleuet de France V5",
+      "Resolve — La princesse · Un devoir de mémoire · Bleuet de France V5",
+      "Resolve — La Charente outragée · Un devoir de mémoire · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 9,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-07": {
     "count": 3,
     "activités": [
@@ -346,18 +365,24 @@
     }
   },
   "2026-05-08": {
-    "count": 5,
+    "count": 11,
     "activités": [
-      "Resolve — A · CTF · Site",
-      "Resolve — B · CTF · Site",
-      "Retex — A · CTF · Site",
-      "Created — Heatmap · Site",
-      "Created — Chall C · CTF · Site"
+      "Resolve — Alias et acide · L'audace de résister · Bleuet de France V5",
+      "Resolve — Plus qu'un numéro · Un devoir de mémoire · Bleuet de France V5",
+      "Resolve — L'équipage · Un devoir de mémoire · Bleuet de France V5",
+      "Resolve — La Charente libérée · Un devoir de mémoire · Bleuet de France V5",
+      "Resolve — Les fusillés du Mont-Valérien · Un devoir de mémoire · Bleuet de France V5",
+      "Resolve — Décryptage en piqué · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — La force du collectif · Nos partenaires · Bleuet de France V5",
+      "Resolve — Le refuge des déchiffreurs · Nos partenaires · Bleuet de France V5",
+      "Resolve — L'ingénieur de l'ombre · Nos partenaires · Bleuet de France V5",
+      "Resolve — MEDEVAC NEEDED · Nos partenaires · Bleuet de France V5",
+      "Resolve — L'éclosion du souvenir · Nos partenaires · Bleuet de France V5"
     ],
     "stats": {
-      "resolve": 2,
-      "retex": 1,
-      "autre": 2
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
     }
   },
   "2026-04-06": {
@@ -878,8 +903,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 153,
-    "retex": 78,
-    "autre": 17
+    "resolve": 171,
+    "retex": 77,
+    "autre": 15
   }
 }
