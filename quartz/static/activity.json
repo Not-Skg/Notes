@@ -875,6 +875,19 @@
       "autre": 0
     }
   },
+  "2026-05-10": {
+    "count": 3,
+    "activités": [
+      "Resolve — Le glacier tenace · L'audace de résister · Bleuet de France V5",
+      "Resolve — Le tract dissident · L'audace de résister · Bleuet de France V5",
+      "Resolve — Plymouth 2 · L'audace de résister · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-15": {
     "count": 6,
     "activités": [
@@ -903,7 +916,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 171,
+    "resolve": 174,
     "retex": 77,
     "autre": 15
   }
