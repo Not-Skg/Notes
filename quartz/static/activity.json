@@ -734,6 +734,22 @@
       "autre": 0
     }
   },
+  "2026-05-11": {
+    "count": 6,
+    "activités": [
+      "Resolve — Lettre d'un soldat · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Motif aléatoire · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Le repère · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Interception de code · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Les ondes du silence · Dans la peau d'un résistant · Bleuet de France V5",
+      "Resolve — Zone Sud · Dans la peau d'un résistant · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-14": {
     "count": 6,
     "activités": [
@@ -916,7 +932,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 174,
+    "resolve": 180,
     "retex": 77,
     "autre": 15
   }
