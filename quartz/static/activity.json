@@ -126,6 +126,20 @@
       "autre": 1
     }
   },
+  "2026-05-12": {
+    "count": 4,
+    "activités": [
+      "Retex — Alias et acide · L'audace de résister · Bleuet de France V5",
+      "Retex — Le glacier tenace · L'audace de résister · Bleuet de France V5",
+      "Retex — Plymouth 2 · L'audace de résister · Bleuet de France V5",
+      "Retex — Le tract dissident · L'audace de résister · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-04-28": {
     "count": 1,
     "activités": [
@@ -933,7 +947,7 @@
   },
   "__totaux__": {
     "resolve": 180,
-    "retex": 77,
+    "retex": 81,
     "autre": 15
   }
 }
