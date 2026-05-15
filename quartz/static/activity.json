@@ -823,6 +823,22 @@
       "autre": 1
     }
   },
+  "2026-05-15": {
+    "count": 6,
+    "activités": [
+      "Retex — Plus qu'un numéro · Un devoir de mémoire · Bleuet de France V5",
+      "Retex — L'équipage · Un devoir de mémoire · Bleuet de France V5",
+      "Retex — La Charente libérée · Un devoir de mémoire · Bleuet de France V5",
+      "Retex — Les fusillés du Mont-Valérien · Un devoir de mémoire · Bleuet de France V5",
+      "Retex — La Charente outragée · Un devoir de mémoire · Bleuet de France V5",
+      "Retex — La princesse · Un devoir de mémoire · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
   "2026-03-24": {
     "count": 12,
     "activités": [
@@ -977,7 +993,7 @@
   },
   "__totaux__": {
     "resolve": 180,
-    "retex": 91,
+    "retex": 97,
     "autre": 15
   }
 }
