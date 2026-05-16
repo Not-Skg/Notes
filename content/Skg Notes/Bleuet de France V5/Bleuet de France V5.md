@@ -15,7 +15,8 @@ Tous les challenges étaient disponibles dès le premier jour, ce qui laissait u
 
 ![[BLEUETV5_CHALLS.png|500]]
 
-Terminer tous les challenges en solo et finir 18ᵉ sur 220 équipes a rendu l'expérience encore plus satisfaisante. C'était ma première participation au Bleuet, et clairement une édition que j'ai pris beaucoup de plaisir à parcourir.
+Terminer tous les challenges en solo et finir 18ᵉ sur 220 équipes et 10ᵉ meilleur joueur a rendu l'expérience encore plus satisfaisante. C'était ma première participation au Bleuet, et clairement une édition que j'ai pris beaucoup de plaisir à parcourir.
+![[BLEUETV5_CJ.png|500]]
 ![[BLEUETV5_Class.png|500]]
 
 ***Les différentes parties du CTF :***

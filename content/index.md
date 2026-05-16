@@ -21,7 +21,7 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 
 ---
 # ▸ CTF
-- [[Bleuet de France V5]] - [18ᵉ/220] - [Solo vs Equipes]
+- [[Bleuet de France V5]] - [10ᵉ/430] - [Solo vs Equipes] - 
 - [[Bellatrix Orion 26]] - [ 82ᵉ / 1006 ] - [Solo]
 - [[Love at First Breach 2026]] - [ Duo]
 

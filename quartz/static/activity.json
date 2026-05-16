@@ -80,11 +80,11 @@
   "2026-05-13": {
     "count": 5,
     "activités": [
-      "Retex — Des mots pour contrer les maux · Nos partenaires · Bleuet de France V5",
-      "Retex — Un vers pour la liberté · L'art de résister · Bleuet de France V5",
-      "Retex — L'art et la résistance · L'art de résister · Bleuet de France V5",
-      "Retex — Résistant dans l'art · L'art de résister · Bleuet de France V5",
-      "Retex — Une oreille pour se souvenir · L'art de résister · Bleuet de France V5"
+      "Retex — Des mots pour contrer les maux · Nos partenaires · BleuetV5",
+      "Retex — Un vers pour la liberté · L'art de résister · BleuetV5",
+      "Retex — L'art et la résistance · L'art de résister · BleuetV5",
+      "Retex — Résistant dans l'art · L'art de résister · BleuetV5",
+      "Retex — Une oreille pour se souvenir · L'art de résister · BleuetV5"
     ],
     "stats": {
       "resolve": 0,
@@ -144,10 +144,10 @@
   "2026-05-12": {
     "count": 4,
     "activités": [
-      "Retex — Alias et acide · L'audace de résister · Bleuet de France V5",
-      "Retex — Le glacier tenace · L'audace de résister · Bleuet de France V5",
-      "Retex — Plymouth 2 · L'audace de résister · Bleuet de France V5",
-      "Retex — Le tract dissident · L'audace de résister · Bleuet de France V5"
+      "Retex — Alias et acide · L'audace de résister · BleuetV5",
+      "Retex — Le glacier tenace · L'audace de résister · BleuetV5",
+      "Retex — Plymouth 2 · L'audace de résister · BleuetV5",
+      "Retex — Le tract dissident · L'audace de résister · BleuetV5"
     ],
     "stats": {
       "resolve": 0,
@@ -221,21 +221,24 @@
     }
   },
   "2026-05-16": {
-    "count": 10,
+    "count": 13,
     "activités": [
       "Created — Bleuet de France V5 · site",
-      "Retex — Alpha ici Bravo · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Décryptage en piqué · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Le repère · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Plastique et crayons · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Lettre d'un soldat · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Motif aléatoire · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Interception de code · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Les ondes du silence · Dans la peau d'un résistant · Bleuet de France V5",
-      "Retex — Zone sud · Dans la peau d'un résistant · Bleuet de France V5"
+      "Retex — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Le repère · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Interception de code · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Zone sud · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Pour Téo · Hates · Osint4Fun",
+      "Resolve — Tout est possible · Hates · Osint4Fun",
+      "Resolve — On est là · Hates · Osint4Fun"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 3,
       "retex": 9,
       "autre": 1
     }
@@ -338,15 +341,15 @@
   "2026-05-09": {
     "count": 9,
     "activités": [
-      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Plastique et crayons · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Résistant dans l'art · L'art de résister · Bleuet de France V5",
-      "Resolve — Une oreille pour se souvenir · L'art de résister · Bleuet de France V5",
-      "Resolve — Des mots pour contrer les maux · L'art de résister · Bleuet de France V5",
-      "Resolve — Un vers pour la liberté · L'art de résister · Bleuet de France V5",
-      "Resolve — L'art et la résistance · L'art de résister · Bleuet de France V5",
-      "Resolve — La princesse · Un devoir de mémoire · Bleuet de France V5",
-      "Resolve — La Charente outragée · Un devoir de mémoire · Bleuet de France V5"
+      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · ",
+      "Resolve — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Résistant dans l'art · L'art de résister · BleuetV5",
+      "Resolve — Une oreille pour se souvenir · L'art de résister · BleuetV5",
+      "Resolve — Des mots pour contrer les maux · L'art de résister · BleuetV5",
+      "Resolve — Un vers pour la liberté · L'art de résister · BleuetV5",
+      "Resolve — L'art et la résistance · L'art de résister · BleuetV5",
+      "Resolve — La princesse · Un devoir de mémoire · BleuetV5",
+      "Resolve — La Charente outragée · Un devoir de mémoire · BleuetV5"
     ],
     "stats": {
       "resolve": 9,
@@ -416,17 +419,17 @@
   "2026-05-08": {
     "count": 11,
     "activités": [
-      "Resolve — Alias et acide · L'audace de résister · Bleuet de France V5",
-      "Resolve — Plus qu'un numéro · Un devoir de mémoire · Bleuet de France V5",
-      "Resolve — L'équipage · Un devoir de mémoire · Bleuet de France V5",
-      "Resolve — La Charente libérée · Un devoir de mémoire · Bleuet de France V5",
-      "Resolve — Les fusillés du Mont-Valérien · Un devoir de mémoire · Bleuet de France V5",
-      "Resolve — Décryptage en piqué · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — La force du collectif · Nos partenaires · Bleuet de France V5",
-      "Resolve — Le refuge des déchiffreurs · Nos partenaires · Bleuet de France V5",
-      "Resolve — L'ingénieur de l'ombre · Nos partenaires · Bleuet de France V5",
-      "Resolve — MEDEVAC NEEDED · Nos partenaires · Bleuet de France V5",
-      "Resolve — L'éclosion du souvenir · Nos partenaires · Bleuet de France V5"
+      "Resolve — Alias et acide · L'audace de résister · BleuetV5",
+      "Resolve — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
+      "Resolve — L'équipage · Un devoir de mémoire · BleuetV5",
+      "Resolve — La Charente libérée · Un devoir de mémoire · BleuetV5",
+      "Resolve — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
+      "Resolve — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — La force du collectif · Nos partenaires · BleuetV5",
+      "Resolve — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
+      "Resolve — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
+      "Resolve — MEDEVAC NEEDED · Nos partenaires · BleuetV5",
+      "Resolve — L'éclosion du souvenir · Nos partenaires · BleuetV5"
     ],
     "stats": {
       "resolve": 11,
@@ -786,12 +789,12 @@
   "2026-05-11": {
     "count": 6,
     "activités": [
-      "Resolve — Lettre d'un soldat · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Motif aléatoire · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Le repère · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Interception de code · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Les ondes du silence · Dans la peau d'un résistant · Bleuet de France V5",
-      "Resolve — Zone Sud · Dans la peau d'un résistant · Bleuet de France V5"
+      "Resolve — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Le repère · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Interception de code · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Zone Sud · Dans la peau d'un résistant · BleuetV5"
     ],
     "stats": {
       "resolve": 6,
@@ -846,12 +849,12 @@
   "2026-05-15": {
     "count": 6,
     "activités": [
-      "Retex — Plus qu'un numéro · Un devoir de mémoire · Bleuet de France V5",
-      "Retex — L'équipage · Un devoir de mémoire · Bleuet de France V5",
-      "Retex — La Charente libérée · Un devoir de mémoire · Bleuet de France V5",
-      "Retex — Les fusillés du Mont-Valérien · Un devoir de mémoire · Bleuet de France V5",
-      "Retex — La Charente outragée · Un devoir de mémoire · Bleuet de France V5",
-      "Retex — La princesse · Un devoir de mémoire · Bleuet de France V5"
+      "Retex — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
+      "Retex — L'équipage · Un devoir de mémoire · BleuetV5",
+      "Retex — La Charente libérée · Un devoir de mémoire · BleuetV5",
+      "Retex — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
+      "Retex — La Charente outragée · Un devoir de mémoire · BleuetV5",
+      "Retex — La princesse · Un devoir de mémoire · BleuetV5"
     ],
     "stats": {
       "resolve": 0,
@@ -911,11 +914,11 @@
   "2026-05-14": {
     "count": 5,
     "activités": [
-      "Retex — La force du collectif · Nos partenaires · Bleuet de France V5",
-      "Retex — Le refuge des déchiffreurs · Nos partenaires · Bleuet de France V5",
-      "Retex — L'ingénieur de l'ombre · Nos partenaires · Bleuet de France V5",
-      "Retex — L'éclosion du souvenir · Nos partenaires · Bleuet de France V5",
-      "Retex — MEDEVAC NEEDED · Nos partenaires · Bleuet de France V5"
+      "Retex — La force du collectif · Nos partenaires · BleuetV5",
+      "Retex — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
+      "Retex — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
+      "Retex — L'éclosion du souvenir · Nos partenaires · BleuetV5",
+      "Retex — MEDEVAC NEEDED · Nos partenaires · BleuetV5"
     ],
     "stats": {
       "resolve": 0,
@@ -974,9 +977,9 @@
   "2026-05-10": {
     "count": 3,
     "activités": [
-      "Resolve — Le glacier tenace · L'audace de résister · Bleuet de France V5",
-      "Resolve — Le tract dissident · L'audace de résister · Bleuet de France V5",
-      "Resolve — Plymouth 2 · L'audace de résister · Bleuet de France V5"
+      "Resolve — Le glacier tenace · L'audace de résister · BleuetV5",
+      "Resolve — Le tract dissident · L'audace de résister · BleuetV5",
+      "Resolve — Plymouth 2 · L'audace de résister · BleuetV5"
     ],
     "stats": {
       "resolve": 3,
@@ -1012,7 +1015,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 180,
+    "resolve": 183,
     "retex": 106,
     "autre": 16
   }
