@@ -220,6 +220,26 @@
       "autre": 0
     }
   },
+  "2026-05-16": {
+    "count": 10,
+    "activités": [
+      "Created — Bleuet de France V5 · site",
+      "Retex — Alpha ici Bravo · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Décryptage en piqué · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Le repère · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Plastique et crayons · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Lettre d'un soldat · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Motif aléatoire · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Interception de code · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Les ondes du silence · Dans la peau d'un résistant · Bleuet de France V5",
+      "Retex — Zone sud · Dans la peau d'un résistant · Bleuet de France V5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 9,
+      "autre": 1
+    }
+  },
   "2026-04-18": {
     "count": 1,
     "activités": [
@@ -993,7 +1013,7 @@
   },
   "__totaux__": {
     "resolve": 180,
-    "retex": 97,
-    "autre": 15
+    "retex": 106,
+    "autre": 16
   }
 }

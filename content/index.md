@@ -4,7 +4,7 @@ title: Homepage
 ![[Ban.jpeg]]
 > Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
 > Le thème principal, ça sera l'OSINT, mais aussi potentiellement un peu de SOC ou de WEB.
-> *==J'ai pleins d'autres Retex à partager, mais je ne les ai pas mis au propre, donc je vais les uploads au fur et à mesure. Vous pouvez voir l'état d'avancement ici :== [[heatmap]].*
+> *==J'ai pleins d'autres Retex à partager, mais je ne les ai pas mis au propre, donc je vais les uploads au fur et à mesure. Vous pouvez voir l'état d'avancement ici :== [[heatmap|Journal d'activité]].*
 >>Il me reste encore tous ces challs en stock :
 >>![[Graph_Challl_tt.png|300]]
 
@@ -21,8 +21,9 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 
 ---
 # ▸ CTF
-- [[Bellatrix Orion 26]] - [ 82ème / 1006 ]
-- [[Love at First Breach 2026]]
+- [[Bleuet de France V5]] - [18ᵉ/220] - [Solo vs Equipes]
+- [[Bellatrix Orion 26]] - [ 82ᵉ / 1006 ] - [Solo]
+- [[Love at First Breach 2026]] - [ Duo]
 
 ---
 # ▸ CHALL
@@ -57,6 +58,10 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 
 ---
 # ▸ Coups de coeur
+>[!example] [[Bleuet de France V5/]]
+>Le CTF Bleuet de France V5 est un coup de coeur parce qu’il m’a vraiment fait découvrir une partie de l’histoire de mon pays que je ne connaissais pas bien.  
+>J’ai énormément appris grâce aux documents, livres, archives et témoignages auxquels j’ai été amené à aller chercher, parfois carrément au beau milieu de rabbit holes très intéressants.  
+>Entre les recherches d’images, de sons, de cartes, de textes et de dossiers d’archives, chaque challenge devenait une petite enquête historique en plus d’une résolution technique, ce qui donne une vraie profondeur à l’expérience.
 
 >[!example] [[Bellatrix Orion 26/]]
 >Un CTF organisé par le ComCyber. 
