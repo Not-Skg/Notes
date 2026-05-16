@@ -13,6 +13,8 @@ Cette cinquième édition, organisée par l'AEGE avec le soutien de partenaires 
 
 Tous les challenges étaient disponibles dès le premier jour, ce qui laissait une vraie liberté dans l'ordre de progression. J'ai beaucoup apprécié cette édition, autant pour son identité que pour la qualité de certaines enquêtes, en particulier `Le tract dissident` et `Plymouth 2` dans la partie [[L'audace de resister]].
 
+![[BLEUETV5_CHALLS.png|500]]
+
 Terminer tous les challenges en solo et finir 18ᵉ sur 220 équipes a rendu l'expérience encore plus satisfaisante. C'était ma première participation au Bleuet, et clairement une édition que j'ai pris beaucoup de plaisir à parcourir.
 ![[BLEUETV5_Class.png|500]]
 
