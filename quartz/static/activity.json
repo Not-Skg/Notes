@@ -22,6 +22,21 @@
       "autre": 1
     }
   },
+  "2026-05-17": {
+    "count": 5,
+    "activités": [
+      "Resolve — Chaud devant · ROSO · 404CTF",
+      "Resolve — Canular savant (1/3) · ROSO · 404CTF",
+      "Resolve — Canular savant (2/3) · ROSO · 404CTF",
+      "Resolve — Doctor Es Langues · ROSO · 404CTF",
+      "Resolve — Metro OSINT Dodo · ROSO · 404CTF"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-19": {
     "count": 3,
     "activités": [
@@ -1015,7 +1030,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 183,
+    "resolve": 188,
     "retex": 106,
     "autre": 16
   }
