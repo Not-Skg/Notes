@@ -432,6 +432,18 @@
       "autre": 1
     }
   },
+  "2026-05-19": {
+    "count": 2,
+    "activités": [
+      "Resolve — Dans les ordres · Ave maria · Osint-FR",
+      "Resolve — Eglise · Ave maria · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-08": {
     "count": 11,
     "activités": [
@@ -1043,7 +1055,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 191,
+    "resolve": 193,
     "retex": 106,
     "autre": 16
   }
