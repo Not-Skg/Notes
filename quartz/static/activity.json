@@ -951,6 +951,17 @@
       "autre": 0
     }
   },
+  "2026-05-20": {
+    "count": 1,
+    "activités": [
+      "Resolve — Réponds moi · De l'ombre à la lumière - 1 · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-14": {
     "count": 5,
     "activités": [
@@ -1055,7 +1066,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 193,
+    "resolve": 194,
     "retex": 106,
     "autre": 16
   }
