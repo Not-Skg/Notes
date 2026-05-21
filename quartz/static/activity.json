@@ -886,6 +886,17 @@
       "autre": 1
     }
   },
+  "2026-05-21": {
+    "count": 1,
+    "activités": [
+      "Resolve — Surnom · De l'ombre à la lumière - 1 · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-15": {
     "count": 6,
     "activités": [
@@ -1066,7 +1077,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 194,
+    "resolve": 195,
     "retex": 106,
     "autre": 16
   }
