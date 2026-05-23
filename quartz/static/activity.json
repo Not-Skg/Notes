@@ -22,6 +22,38 @@
       "autre": 1
     }
   },
+  "2026-05-23": {
+    "count": 22,
+    "activités": [
+      "Resolve — OWNER_HOUSE · Here we go again · Medileak 3",
+      "Resolve — RS_CHANTEUSE · Here we go again · Medileak 3",
+      "Resolve — PSEUDO_CHANTEUSE · Money For Nothing · Medileak 3",
+      "Resolve — PSEUDO_CROWDSOURCED · Money For Nothing · Medileak 3",
+      "Resolve — FINACE_SITE · Money For Nothing · Medileak 3",
+      "Resolve — FAN_CROWEDSOURCE · Money For Nothing · Medileak 3",
+      "Resolve — FAN_CROWEDSOURCE · Money For Nothing · Medileak 3",
+      "Resolve — AMOUT_CROWDSOURCED · Money For Nothing · Medileak 3",
+      "Resolve — ISLAND · Voyage Voyage · Medileak 3",
+      "Resolve — CONCERTLOCATION · Voyage Voyage · Medileak 3",
+      "Resolve — ISLAND ROAD · Voyage Voyage · Medileak 3",
+      "Resolve — SCOTDESTINATION · Voyage Voyage · Medileak 3",
+      "Resolve — LABEL_STAMP · Voyage Voyage · Medileak 3",
+      "Resolve — FLIGHTNUMBER · Voyage Voyage · Medileak 3",
+      "Resolve — FLIGHTDEP · Voyage Voyage · Medileak 3",
+      "Resolve — FLIGHTDES · Voyage Voyage · Medileak 3",
+      "Resolve — OBJETS_1 · Money For Nothing · Medileak 3",
+      "Resolve — LABO_SITE · Money For Nothing · Medileak 3",
+      "Resolve — PLANT_LABO · Money For Nothing · Medileak 3",
+      "Resolve — LABO_COUNTRY · Money For Nothing · Medileak 3",
+      "Resolve — MEDIBOSS · Money For Nothing · Medileak 3",
+      "Resolve — MEDIROLE · Money For Nothing · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 22,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-17": {
     "count": 6,
     "activités": [
@@ -233,6 +265,22 @@
     "stats": {
       "resolve": 1,
       "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-05-22": {
+    "count": 6,
+    "activités": [
+      "Resolve — RAOULPICTURE · Here we go again · Medileak 3",
+      "Resolve — SITE_PHOTOGRAPHE · Here we go again · Medileak 3",
+      "Resolve — ALBUM_PHOTOGRAPHE · Here we go again · Medileak 3",
+      "Resolve — PRENOM_CHANTEUSE · Here we go again · Medileak 3",
+      "Resolve — CLINIQUE · Here we go again · Medileak 3",
+      "Resolve — MUSIQUE_PLATFORM · Here we go again · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -1077,7 +1125,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 195,
+    "resolve": 223,
     "retex": 106,
     "autre": 16
   }
