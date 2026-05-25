@@ -902,6 +902,31 @@
       "autre": 0
     }
   },
+  "2026-05-25": {
+    "count": 15,
+    "activités": [
+      "Resolve — PARTNER · Ya foye · Medileak 3",
+      "Resolve — GIVEAWAY · Ya foye · Medileak 3",
+      "Resolve — COMPANY_GIVEAWAY · Ya foye · Medileak 3",
+      "Resolve — BLOCK_GIVEAWAY · Ya foye · Medileak 3",
+      "Resolve — PERSON_GIVEAWAY · Ya foye · Medileak 3",
+      "Resolve — GIVEAWAY_LOCATION · Ya foye · Medileak 3",
+      "Resolve — PORTEUR_MANAGE · Ya foye · Medileak 3",
+      "Resolve — PORTED_SITE · Ya foye · Medileak 3",
+      "Resolve — DATA_SITE · Ya foye · Medileak 3",
+      "Resolve — DATA_FORMAT · Ya foye · Medileak 3",
+      "Resolve — DATA_DECODE · Ya foye · Medileak 3",
+      "Resolve — CALLLOCATION · Antisocial · Medileak 3",
+      "Resolve — LOCATION_OWNER · Antisocial · Medileak 3",
+      "Resolve — LOCATION_PERSON · Antisocial · Medileak 3",
+      "Resolve — LOCATION_IMG · Antisocial · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 15,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-14": {
     "count": 6,
     "activités": [
@@ -1178,7 +1203,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 266,
+    "resolve": 281,
     "retex": 106,
     "autre": 16
   }
