@@ -2,7 +2,7 @@
 title: Journal d'activité
 description: Vue d'ensemble de mes activités au fil du temps
 ---
-![[content/Ban.jpeg]]
+![[Ban.jpeg]]
 
 >[!warning] Info
 >Ci-dessous, un aperçu de ma fréquence de travail et de ce que je fais par jours.
@@ -19,7 +19,7 @@ description: Vue d'ensemble de mes activités au fil du temps
 |   ![[Logo_O4F.png\|200]]   |               Osint4Fun<br><br>(Challenges très intéressant et pédagogiques)                |         [SKG](https://www.osint4fun.eu/user/89b4eb44c0c38592/#badges-tab)          | ![[Profil_Osint4Fun.png]] |
 | ![[Logo_Osint-FR.png\|40]] |                    Osint-FR<br><br>(Challenges plus réaliste et poussé)                     | [skg](https://ctf.challenge-osint.fr/user?id=56ab7c5e-6110-4d86-b4c0-6270ffa88f15) | ![[Profil_Osint-FR.png]]  |
 | ![[Logo_IsFred.jpeg\|90]]  |                  IsFred <br><br>(J'ai commencé à apprendre l'OSINT dessus)                  |                         [Skg](https://isfred.fr/users/349)                         |  ![[Profil_IsFred.png]]   |
-|   ![[Logo_THM.png\|50]]    | TryHackMe<br><br>(Peu d'OSINT mais très bonnes simulations de SOC et de challenges de DFIR) |                         [Skg](https://tryhackme.com/p/Skg)                         |       ![[content/Profil/Profil_THM.png]]        |
+|   ![[Logo_THM.png\|50]]    | TryHackMe<br><br>(Peu d'OSINT mais très bonnes simulations de SOC et de challenges de DFIR) |                         [Skg](https://tryhackme.com/p/Skg)                         |    ![[Profil_THM.png]]    |
 
 J'ajouterai mon profil Osintopia lorsqu'il y aura le retour de la plupart des challenges de l'ancienne plateforme. Pour l'instant ce n'est pas vraiment représentatif, mais pour donner un ordre d'idée, avant, j'étais de grade Prozint sur la plateforme.
 

@@ -23,45 +23,19 @@
     }
   },
   "2026-05-23": {
-    "count": 34,
+    "count": 8,
     "activités": [
-      "Resolve — OWNER_HOUSE · Here we go again · Medileak 3",
-      "Resolve — RS_CHANTEUSE · Here we go again · Medileak 3",
-      "Resolve — PSEUDO_CHANTEUSE · Money For Nothing · Medileak 3",
-      "Resolve — PSEUDO_CROWDSOURCED · Money For Nothing · Medileak 3",
-      "Resolve — FINACE_SITE · Money For Nothing · Medileak 3",
-      "Resolve — FAN_CROWEDSOURCE · Money For Nothing · Medileak 3",
-      "Resolve — FAN_CROWEDSOURCE · Money For Nothing · Medileak 3",
-      "Resolve — AMOUT_CROWDSOURCED · Money For Nothing · Medileak 3",
-      "Resolve — ISLAND · Voyage Voyage · Medileak 3",
-      "Resolve — CONCERTLOCATION · Voyage Voyage · Medileak 3",
-      "Resolve — ISLAND ROAD · Voyage Voyage · Medileak 3",
-      "Resolve — SCOTDESTINATION · Voyage Voyage · Medileak 3",
-      "Resolve — LABEL_STAMP · Voyage Voyage · Medileak 3",
-      "Resolve — FLIGHTNUMBER · Voyage Voyage · Medileak 3",
-      "Resolve — FLIGHTDEP · Voyage Voyage · Medileak 3",
-      "Resolve — FLIGHTDES · Voyage Voyage · Medileak 3",
-      "Resolve — OBJETS_1 · Money For Nothing · Medileak 3",
-      "Resolve — LABO_SITE · Money For Nothing · Medileak 3",
-      "Resolve — PLANT_LABO · Money For Nothing · Medileak 3",
-      "Resolve — LABO_COUNTRY · Money For Nothing · Medileak 3",
-      "Resolve — MEDIBOSS · Money For Nothing · Medileak 3",
-      "Resolve — MEDIROLE · Money For Nothing · Medileak 3",
-      "Resolve — MEET · Money For Nothing · Medileak 3",
-      "Resolve — ANEX · Money For Nothing · Medileak 3",
-      "Resolve — ANEXWEB · Money For Nothing · Medileak 3",
-      "Resolve — ANEXROLE · Money For Nothing · Medileak 3",
-      "Resolve — RAOULMAIL · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULJOB · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULJOBDURATION · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULRECRUITER · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULBEGIN · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULCOURSE · L'école du micro d'argent · Medileak 3",
-      "Resolve — RAOULSTUDENT · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTLIST · L'école du micro d'argent · Medileak 3"
+      "Resolve — Love me tender · Here we go again · Medileak 3",
+      "Resolve — In da club · Money For Nothing · Medileak 3",
+      "Resolve — Go West · Voyage Voyage · Medileak 3",
+      "Resolve — Mull of Kintyre · Voyage Voyage · Medileak 3",
+      "Resolve — Mon Amie La Rose · Money For Nothing · Medileak 3",
+      "Resolve — Magnolia For Ever · Money For Nothing · Medileak 3",
+      "Resolve — Je fais mon job à plein temps · L'école du micro d'argent · Medileak 3",
+      "Resolve — The Teacher · L'école du micro d'argent · Medileak 3"
     ],
     "stats": {
-      "resolve": 34,
+      "resolve": 8,
       "retex": 0,
       "autre": 0
     }
@@ -152,6 +126,17 @@
       "autre": 0
     }
   },
+  "2026-05-27": {
+    "count": 1,
+    "activités": [
+      "Resolve — Every Breath You Take · Antisocial · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-29": {
     "count": 1,
     "activités": [
@@ -212,6 +197,20 @@
     "stats": {
       "resolve": 0,
       "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-05-26": {
+    "count": 4,
+    "activités": [
+      "Resolve — Around the World · Ya foye · Medileak 3",
+      "Resolve — I Can See Clearly Now · Ya foye · Medileak 3",
+      "Resolve — Sweet Child o' Mine · Family Affair · Medileak 3",
+      "Resolve — Soldier of Fortune · Family Affair · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -281,17 +280,13 @@
     }
   },
   "2026-05-22": {
-    "count": 6,
+    "count": 2,
     "activités": [
-      "Resolve — RAOULPICTURE · Here we go again · Medileak 3",
-      "Resolve — SITE_PHOTOGRAPHE · Here we go again · Medileak 3",
-      "Resolve — ALBUM_PHOTOGRAPHE · Here we go again · Medileak 3",
-      "Resolve — PRENOM_CHANTEUSE · Here we go again · Medileak 3",
-      "Resolve — CLINIQUE · Here we go again · Medileak 3",
-      "Resolve — MUSIQUE_PLATFORM · Here we go again · Medileak 3"
+      "Resolve — Old Friend · Here we go again · Medileak 3",
+      "Resolve — Smile ! · Here we go again · Medileak 3"
     ],
     "stats": {
-      "resolve": 6,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -665,6 +660,19 @@
       "autre": 0
     }
   },
+  "2026-05-28": {
+    "count": 3,
+    "activités": [
+      "Retex  — Old Friend · Here we go again · Medileak 3",
+      "Retex — Smile ! · Here we go again · Medileak 3",
+      "Retex — Love me tender · Here we go again · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-04-12": {
     "count": 1,
     "activités": [
@@ -903,26 +911,13 @@
     }
   },
   "2026-05-25": {
-    "count": 15,
+    "count": 2,
     "activités": [
-      "Resolve — PARTNER · Ya foye · Medileak 3",
-      "Resolve — GIVEAWAY · Ya foye · Medileak 3",
-      "Resolve — COMPANY_GIVEAWAY · Ya foye · Medileak 3",
-      "Resolve — BLOCK_GIVEAWAY · Ya foye · Medileak 3",
-      "Resolve — PERSON_GIVEAWAY · Ya foye · Medileak 3",
-      "Resolve — GIVEAWAY_LOCATION · Ya foye · Medileak 3",
-      "Resolve — PORTEUR_MANAGE · Ya foye · Medileak 3",
-      "Resolve — PORTED_SITE · Ya foye · Medileak 3",
-      "Resolve — DATA_SITE · Ya foye · Medileak 3",
-      "Resolve — DATA_FORMAT · Ya foye · Medileak 3",
-      "Resolve — DATA_DECODE · Ya foye · Medileak 3",
-      "Resolve — CALLLOCATION · Antisocial · Medileak 3",
-      "Resolve — LOCATION_OWNER · Antisocial · Medileak 3",
-      "Resolve — LOCATION_PERSON · Antisocial · Medileak 3",
-      "Resolve — LOCATION_IMG · Antisocial · Medileak 3"
+      "Resolve — Under Pressure · Ya foye · Medileak 3",
+      "Resolve — Gold Digger · Ya foye · Medileak 3"
     ],
     "stats": {
-      "resolve": 15,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -1135,42 +1130,15 @@
     }
   },
   "2026-05-24": {
-    "count": 31,
+    "count": 4,
     "activités": [
-      "Resolve — STUDENTNAME · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTPSEUDO · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTRS · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTLABOCITY · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTCONV · L'école du micro d'argent · Medileak 3",
-      "Resolve — STUDENTLABO · L'école du micro d'argent · Medileak 3",
-      "Resolve — HASHTAGRS · Antisocial · Medileak 3",
-      "Resolve — HASHTAPRO · Antisocial · Medileak 3",
-      "Resolve — HASHTAGCONS · Antisocial · Medileak 3",
-      "Resolve — HPGRS · Antisocial · Medileak 3",
-      "Resolve — HPGNAME · Antisocial · Medileak 3",
-      "Resolve — HPGSITE · Antisocial · Medileak 3",
-      "Resolve — AGAINSITE · Hygiaphone · Medileak 3",
-      "Resolve — AGAINSTMEDIA · Hygiaphone · Medileak 3",
-      "Resolve — VEHICLEIMAT · Hygiaphone · Medileak 3",
-      "Resolve — VEHICLEMODEL · Hygiaphone · Medileak 3",
-      "Resolve — VEHICLECOLOR · Hygiaphone · Medileak 3",
-      "Resolve — LOCATE_PHOTO · Hygiaphone · Medileak 3",
-      "Resolve — AGAINSTNAME · Hygiaphone · Medileak 3",
-      "Resolve — AGAINSTRR · Hygiaphone · Medileak 3",
-      "Resolve — AGAINCYNTHIA · Hygiaphone · Medileak 3",
-      "Resolve — CYNTHIACONTACT · Hygiaphone · Medileak 3",
-      "Resolve — ELEMENT1 · Hygiaphone · Medileak 3",
-      "Resolve — ELEMENT2 · Hygiaphone · Medileak 3",
-      "Resolve — ELEMENT3 · Hygiaphone · Medileak 3",
-      "Resolve — ELEMENT4 · Hygiaphone · Medileak 3",
-      "Resolve — ELEMENT5 · Hygiaphone · Medileak 3",
-      "Resolve — MONEY3 · Ya foye · Medileak 3",
-      "Resolve — MONEY1 · Ya foye · Medileak 3",
-      "Resolve — MONEY2 · Ya foye · Medileak 3",
-      "Resolve — MONEY4 · Ya foye · Medileak 3"
+      "Resolve — Étudiant poil aux dents · L'école du micro d'argent · Medileak 3",
+      "Resolve — Message in a Bottle · Antisocial · Medileak 3",
+      "Resolve — Undercover of the night · Hygiaphone · Medileak 3",
+      "Resolve — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3"
     ],
     "stats": {
-      "resolve": 31,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
@@ -1203,8 +1171,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 281,
-    "retex": 106,
+    "resolve": 216,
+    "retex": 109,
     "autre": 16
   }
 }
