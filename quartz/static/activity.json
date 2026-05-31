@@ -398,6 +398,18 @@
       "autre": 0
     }
   },
+  "2026-05-29": {
+    "count": 2,
+    "activités": [
+      "Retex — Go West · Voyage Voyage · Medileak 3",
+      "Retex — Mull of Kintyre · Voyage Voyage · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
   "2026-04-13": {
     "count": 1,
     "activités": [
@@ -966,6 +978,18 @@
       "autre": 1
     }
   },
+  "2026-05-31": {
+    "count": 2,
+    "activités": [
+      "Retex — Mon Amie La Rose · Money For Nothing · Medileak 3",
+      "Retex — Magnolia For Ever · Money For Nothing · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
   "2026-05-21": {
     "count": 1,
     "activités": [
@@ -1039,6 +1063,17 @@
     "stats": {
       "resolve": 5,
       "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-30": {
+    "count": 1,
+    "activités": [
+      "Retex — In da club · Money For Nothing · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
       "autre": 0
     }
   },
@@ -1172,7 +1207,7 @@
   },
   "__totaux__": {
     "resolve": 216,
-    "retex": 109,
+    "retex": 114,
     "autre": 16
   }
 }
