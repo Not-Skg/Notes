@@ -14,25 +14,23 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 >[!info] Prochainement
 > - [ ] Searchlight - Imint
 > - [ ] Présentation De Osint4Fun
-> - [ ] Simulation de SOC dans Learning Path SOC Level 1
-> - [ ] RETEX Integrity
 > - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)
-> - [ ] Ajout des Badges dans le "Journal d'activité"
 
 ---
 # ▸ CTF
-- [[Bleuet de France V5]] - [10ᵉ/430] - [Solo vs Equipes] - 
+>  Voici quelques RETEX de CTF que j'ai réalisé avec le classement lié : 
+- Medileak 3 - [17ᵉ/186] - [Équipe - 4 membres]
+- [[Bleuet de France V5]] - [10ᵉ/430] - [Solo]  · | ·  [18ᵉ/220] - [Équipe - 1 membre]
 - [[Bellatrix Orion 26]] - [ 82ᵉ / 1006 ] - [Solo]
-- [[Love at First Breach 2026]] - [ Duo]
+- [[Love at First Breach 2026]] - [Duo]
 
 ---
 # ▸ CHALL
->  Voici quelques RETEX de ma part : 
+>  Voici quelques RETEX de challenge sur des plateformes sympas: 
 ## Osintopia
 ==[Bientôt]==
 ## Osint4Fun
 -  [[Advent Of Osint 2025]]
-- Integrity ==[Bientôt]==
 - Présentation De Osint4Fun ==[Bientôt]==
 ## TryHackMe
 - [[Have a Break]]
@@ -47,14 +45,9 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 
 ---
 # ▸ SOC Simulator
+> Résolution de Simulateur de SOC (Ticketing, Splunk, DFIR, ...)
 - [[Introduction to phishing]]
 - [[Phishing Unfolding]]
-
----
-# ▸ Enquêtes
-> Voici un exemple d'enquête (et de rapport) que je suis capable de réaliser.
-
-==[Bientôt]==
 
 ---
 # ▸ Coups de coeur

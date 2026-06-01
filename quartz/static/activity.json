@@ -712,6 +712,21 @@
       "autre": 0
     }
   },
+  "2026-06-01": {
+    "count": 5,
+    "activités": [
+      "Retex — Je fais mon job à plein temps · L'École du micro d'Argent · Medileak 3",
+      "Retex — The Teacher · L'École du micro d'Argent · Medileak 3",
+      "Retex — Étudiant poil aux dents · L'École du micro d'Argent · Medileak 3",
+      "Retex — Message in a Bottle · Antisocial · Medileak 3",
+      "Retex — Every Breath You Take · Antisocial · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
   "2026-04-21": {
     "count": 1,
     "activités": [
@@ -1207,7 +1222,7 @@
   },
   "__totaux__": {
     "resolve": 216,
-    "retex": 114,
+    "retex": 119,
     "autre": 16
   }
 }
