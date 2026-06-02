@@ -601,6 +601,22 @@
       "autre": 0
     }
   },
+  "2026-06-02": {
+    "count": 6,
+    "activités": [
+      "Retex — Undercover of the night · Hygiaphone · Medileak 3",
+      "Retex — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3",
+      "Retex — Under Pressure · Ya foye · Medileak 3",
+      "Retex — Gold Digger · Ya foye · Medileak 3",
+      "Retex — Around the World · Ya foye · Medileak 3",
+      "Retex — I Can See Clearly Now · Ya foye · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
   "2026-05-18": {
     "count": 2,
     "activités": [
@@ -1222,7 +1238,7 @@
   },
   "__totaux__": {
     "resolve": 216,
-    "retex": 119,
+    "retex": 125,
     "autre": 16
   }
 }
