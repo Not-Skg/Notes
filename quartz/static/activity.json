@@ -499,6 +499,19 @@
       "autre": 1
     }
   },
+  "2026-06-03": {
+    "count": 3,
+    "activités": [
+      "Retex — Sweet Child o' Mine · Family Affair · Medileak 3",
+      "Retex — Soldier of Fortune · Family Affair · Medileak 3",
+      "Created — Medileak 3 · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 1
+    }
+  },
   "2026-05-19": {
     "count": 2,
     "activités": [
@@ -1238,7 +1251,7 @@
   },
   "__totaux__": {
     "resolve": 216,
-    "retex": 125,
-    "autre": 16
+    "retex": 127,
+    "autre": 17
   }
 }
