@@ -19,7 +19,7 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 ---
 # ▸ CTF
 >  Voici quelques RETEX de CTF que j'ai réalisé avec le classement lié : 
-- Medileak 3 - [17ᵉ/186] - [Équipe - 4 membres]
+- [[Medileak 3]] - [17ᵉ/186] - [Équipe - 4 membres]
 - [[Bleuet de France V5]] - [10ᵉ/430] - [Solo]  · | ·  [18ᵉ/220] - [Équipe - 1 membre]
 - [[Bellatrix Orion 26]] - [ 82ᵉ / 1006 ] - [Solo]
 - [[Love at First Breach 2026]] - [Duo]
@@ -51,6 +51,11 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 
 ---
 # ▸ Coups de coeur
+>[!example] [[Medileak 3/]]
+>Un CTF qui m’a particulièrement plu pour son format très immersif, sa progression par déblocage de challenges et la qualité de l’environnement mis en place.  
+J’ai beaucoup aimé l’ambiance générale, le soin apporté au scénario et l’équilibre entre réflexion, méthodologie et travail d’équipe.  
+C’était aussi ma première participation à un CTF d’Oscar Zulu et ma première vraie expérience en équipe avec des inconnus, ce qui le rend d’autant plus marquant.
+
 >[!example] [[Bleuet de France V5/]]
 >Le CTF Bleuet de France V5 est un coup de coeur parce qu’il m’a vraiment fait découvrir une partie de l’histoire de mon pays que je ne connaissais pas bien.  
 >J’ai énormément appris grâce aux documents, livres, archives et témoignages auxquels j’ai été amené à aller chercher, parfois carrément au beau milieu de rabbit holes très intéressants.  
