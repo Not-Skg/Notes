@@ -12,7 +12,7 @@ tags:
  · | · [[Here we go again]]
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
- · | · [[Ecole du micro d argent]]
+ · | · Ecole du micro d argent
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
  · | · [[Ya foye]]
@@ -130,7 +130,7 @@ On y apprend que c'est une plateforme de donnees de sante anonymisees qui permet
  · | · [[Here we go again]]
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
- · | · [[Ecole du micro d argent]]
+ · | · Ecole du micro d argent
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
  · | · [[Ya foye]]

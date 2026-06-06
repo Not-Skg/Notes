@@ -14,7 +14,7 @@ tags:
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
- · | · [[Hygiaphone]]
+ · | · Hygiaphone
  · | · [[Ya foye]]
  · | · [[Family Affair]]
  
@@ -95,6 +95,6 @@ Avant de couper la conversation, elle nous annonce qu'il faudrait creuser un peu
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
- · | · [[Hygiaphone]]
+ · | · Hygiaphone
  · | · [[Ya foye]]
  · | · [[Family Affair]]

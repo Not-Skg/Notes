@@ -13,7 +13,7 @@ tags:
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
- · | · [[Antisocial]]
+ · | · Antisocial
  · | · [[Hygiaphone]]
  · | · [[Ya foye]]
  · | · [[Family Affair]]
@@ -156,7 +156,7 @@ Et on peut retrouver le Range Rover sur un de leur poste en face d'une d'une nou
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
- · | · [[Antisocial]]
+ · | · Antisocial
  · | · [[Hygiaphone]]
  · | · [[Ya foye]]
  · | · [[Family Affair]]

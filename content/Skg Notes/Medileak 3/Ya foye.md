@@ -15,7 +15,7 @@ tags:
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
- · | · [[Ya foye]]
+ · | · Ya foye
  · | · [[Family Affair]]
 
 ---
@@ -260,5 +260,5 @@ C'est à n'y rien comprendre, lui pourtant si attentionné sur tout ce qui touch
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
- · | · [[Ya foye]]
+ · | · Ya foye
  · | · [[Family Affair]]

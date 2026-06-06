@@ -8,6 +8,15 @@ tags:
 >Vous avez une belle vision de l'ensemble... Enfin, si vous n'avez pas traversé les éléments de l'enquête comme un touriste sur la voie de gauche d'une autobahn allemande.
 ![[M3_FA.png]]
 
+***Les autres parties du CTF :***
+ · | · [[Here we go again]]
+ · | · [[Voyage Voyage]]
+ · | · [[Money For Nothing]]
+ · | · [[Ecole du micro d argent]]
+ · | · [[Antisocial]]
+ · | · [[Hygiaphone]]
+ · | · [[Ya foye]]
+ · | · Family Affair
 ## Sweet Child o' Mine
 
 ### Énoncé [1/3]
@@ -104,3 +113,13 @@ Les meilleurs d'entre vous auront à le découvrir très bientôt !
 >[!info]
 >Notre équipe n'a pas été retenue pour la finale, nous n'avons donc pas pû y accéder et découvrir le reste des challenges, je vous redirige donc vers leurs WU pour la suite.
 
+---
+***Les autres parties du CTF :***
+ · | · [[Here we go again]]
+ · | · [[Voyage Voyage]]
+ · | · [[Money For Nothing]]
+ · | · [[Ecole du micro d argent]]
+ · | · [[Antisocial]]
+ · | · [[Hygiaphone]]
+ · | · [[Ya foye]]
+ · | · Family Affair

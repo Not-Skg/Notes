@@ -9,7 +9,7 @@ Alors vraiment prêts pour l'aventure ?
 ![[M3_Hwga.png]]
 
 ***Les autres parties du CTF :***
- · | · [[Here we go again]]
+ · | · Here we go again
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
@@ -155,7 +155,7 @@ Dessus, elle a l'air d'y faire la promotion de son nouvel album et elle y partag
 
 ---
 ***Les autres parties du CTF :***
- · | · [[Here we go again]]
+ · | · Here we go again
  · | · [[Voyage Voyage]]
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]

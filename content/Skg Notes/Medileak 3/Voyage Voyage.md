@@ -10,7 +10,7 @@ tags:
 
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
- · | · [[Voyage Voyage]]
+ · | · Voyage Voyage
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
@@ -112,7 +112,7 @@ Ce qui colle avec la couleur des maillots de Manchester.
 ---
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
- · | · [[Voyage Voyage]]
+ · | · Voyage Voyage
  · | · [[Money For Nothing]]
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]

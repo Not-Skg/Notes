@@ -11,7 +11,7 @@ tags:
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
  · | · [[Voyage Voyage]]
- · | · [[Money For Nothing]]
+ · | · Money For Nothing
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
@@ -110,7 +110,7 @@ Ludvik Ogrizek est aussi le **==Co-Fondateur==** de la **==Veda Medical Data Sch
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
  · | · [[Voyage Voyage]]
- · | · [[Money For Nothing]]
+ · | · Money For Nothing
  · | · [[Ecole du micro d argent]]
  · | · [[Antisocial]]
  · | · [[Hygiaphone]]
