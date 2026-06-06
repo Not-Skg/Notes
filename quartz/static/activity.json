@@ -714,6 +714,17 @@
       "autre": 0
     }
   },
+  "2026-06-06": {
+    "count": 1,
+    "activités": [
+      "Created — MAJ & Publish · Medileak 3 · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-04-12": {
     "count": 1,
     "activités": [
@@ -823,6 +834,19 @@
       "autre": 0
     }
   },
+  "2026-06-05": {
+    "count": 3,
+    "activités": [
+      "Resolve — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
+      "Resolve — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
+      "Resolve — Monsieur C Découverte · ROSO · 404CTF"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-15": {
     "count": 2,
     "activités": [
@@ -855,6 +879,27 @@
     "stats": {
       "resolve": 0,
       "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-06-04": {
+    "count": 11,
+    "activités": [
+      "Resolve — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions",
+      "Resolve — SCROLL PRE-DODO · Les origines · Le Caire nid d'espions",
+      "Resolve — MAAAARRRRRC · Les origines · Le Caire nid d'espions",
+      "Resolve — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
+      "Resolve — SALUT LA COMMU · Good cop · Le Caire nid d'espions",
+      "Resolve — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
+      "Resolve — LE MESSAGER · Good cop · Le Caire nid d'espions",
+      "Resolve — LA GUERRE DES HASHTAGS · La tempête · Le Caire nid d'espions",
+      "Resolve — LA PLUME VENIMEUSE · La tempête · Le Caire nid d'espions",
+      "Resolve — PRIDE AND PREJUDICE · La tempête · Le Caire nid d'espions",
+      "Resolve — MONSIEUR POULPE · La tempête · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -1250,8 +1295,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 216,
+    "resolve": 230,
     "retex": 127,
-    "autre": 17
+    "autre": 18
   }
 }

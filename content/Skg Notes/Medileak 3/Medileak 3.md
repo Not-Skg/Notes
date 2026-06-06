@@ -37,7 +37,3 @@ Ce RETEX ne couvre donc pas le **Clochint**, qui était le seul challenge optio
  · | · [[Hygiaphone]]
  · | · [[Ya foye]]
  · | · [[Family Affair]]
-
->[!Warning] Attention
->Je ne publierai le WU que lorsque la finale du CTF sera finie.
-
