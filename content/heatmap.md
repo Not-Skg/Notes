@@ -28,6 +28,7 @@ J'ajouterai mon profil Osintopia lorsqu'il y aura le retour de la plupart des ch
 
 | Badge                                                                           | Description                   |
 | ------------------------------------------------------------------------------- | ----------------------------- |
+| ![[badge-5cf43f67e1ab99e6.png\|50]]                                             | Finisher Medileak 3           |
 | ![[openbadge-OZ-2026-ZH5LL3.png\|50]]                                           | Permis d'Osinter              |
 | ![[9730f577ea93510f9180c06aec57f8b56b5d025a33f92a9b1376be2f5c58e4d0.jpg\|50]]   | ADOPTION 2026-FINISHER        |
 | ![[9fd5e1796585701410bfec08c513409b16a005bf9e051b12c53cf4029e3d27ca-2.jpg\|50]] | Advent Of OSINT 2025-FINISHER |

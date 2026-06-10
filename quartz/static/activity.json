@@ -126,6 +126,21 @@
       "autre": 0
     }
   },
+  "2026-06-09": {
+    "count": 5,
+    "activités": [
+      "Resolve — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-27": {
     "count": 1,
     "activités": [
@@ -197,6 +212,17 @@
     "stats": {
       "resolve": 0,
       "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-06-08": {
+    "count": 1,
+    "activités": [
+      "Resolve — MADELEINE DE PROUST · Bad cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -407,6 +433,20 @@
     "stats": {
       "resolve": 0,
       "retex": 2,
+      "autre": 0
+    }
+  },
+  "2026-06-07": {
+    "count": 4,
+    "activités": [
+      "Resolve — UN GRAND PHILOSOPHE · Bad cop · Le Caire nid d'espions",
+      "Resolve — BETE D'ASTUCE · Bad cop · Le Caire nid d'espions",
+      "Resolve — LE GONG · Bad cop · Le Caire nid d'espions",
+      "Resolve — IL Y A FORT FORT PEU DE TEMPS · Bad cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -715,12 +755,14 @@
     }
   },
   "2026-06-06": {
-    "count": 1,
+    "count": 3,
     "activités": [
-      "Created — MAJ & Publish · Medileak 3 · Site"
+      "Created — MAJ & Publish · Medileak 3 · Site",
+      "Resolve — C'était caché · ROSO · 404CTF",
+      "Resolve — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 2,
       "retex": 0,
       "autre": 1
     }
@@ -917,6 +959,17 @@
     "stats": {
       "resolve": 0,
       "retex": 7,
+      "autre": 0
+    }
+  },
+  "2026-06-10": {
+    "count": 1,
+    "activités": [
+      "Retex — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
       "autre": 0
     }
   },
@@ -1295,8 +1348,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 230,
-    "retex": 127,
+    "resolve": 242,
+    "retex": 128,
     "autre": 18
   }
 }
