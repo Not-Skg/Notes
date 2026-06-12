@@ -585,6 +585,20 @@
       "autre": 0
     }
   },
+  "2026-06-12": {
+    "count": 4,
+    "activités": [
+      "Retex — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
+      "Retex — SALUT LA COMMU  · Good cop · Le Caire nid d'espions",
+      "Retex — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
+      "Retex — LE MESSAGER · Good cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-04-06": {
     "count": 6,
     "activités": [
@@ -1362,7 +1376,7 @@
   },
   "__totaux__": {
     "resolve": 242,
-    "retex": 130,
+    "retex": 134,
     "autre": 19
   }
 }
