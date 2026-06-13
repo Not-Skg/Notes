@@ -480,6 +480,20 @@
       "autre": 0
     }
   },
+  "2026-06-13": {
+    "count": 4,
+    "activités": [
+      "Retex — LA GUERRE DES HASHTAGS · La tempete · Le Caire nid d'espions",
+      "Retex — LA PLUME VENIMEUSE · La tempete · Le Caire nid d'espions",
+      "Retex — PRIDE AND PREJUDICE · La tempete · Le Caire nid d'espions",
+      "Retex — MONSIEUR POULPE · La tempete · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-04-07": {
     "count": 3,
     "activités": [
@@ -1376,7 +1390,7 @@
   },
   "__totaux__": {
     "resolve": 242,
-    "retex": 134,
+    "retex": 138,
     "autre": 19
   }
 }
