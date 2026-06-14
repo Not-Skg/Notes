@@ -929,6 +929,19 @@
       "autre": 0
     }
   },
+  "2026-06-14": {
+    "count": 3,
+    "activités": [
+      "Retex — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
+      "Retex — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
+      "Retex — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-02-15": {
     "count": 2,
     "activités": [
@@ -1390,7 +1403,7 @@
   },
   "__totaux__": {
     "resolve": 242,
-    "retex": 138,
+    "retex": 141,
     "autre": 19
   }
 }
