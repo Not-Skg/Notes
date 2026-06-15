@@ -860,6 +860,20 @@
       "autre": 0
     }
   },
+  "2026-06-15": {
+    "count": 4,
+    "activités": [
+      "Retex — UN GRAND PHILOSOPHE · Bad Cop · Le Caire nid d'espions",
+      "Retex — BETE D ASTUCE· Bad Cop · Le Caire nid d'espions",
+      "Retex — LE GONG· Bad Cop · Le Caire nid d'espions",
+      "Retex — IL Y A FORT FORT PEU DE TEMPS · Bad Cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-04-01": {
     "count": 11,
     "activités": [
@@ -1403,7 +1417,7 @@
   },
   "__totaux__": {
     "resolve": 242,
-    "retex": 141,
+    "retex": 145,
     "autre": 19
   }
 }
