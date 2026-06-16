@@ -329,7 +329,7 @@
       "Retex — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
       "Retex — Interception de code · Dans la peau d'un résistant · BleuetV5",
       "Retex — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Zone sud · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Zone Sud · Dans la peau d'un résistant · BleuetV5",
       "Resolve — Pour Téo · Hates · Osint4Fun",
       "Resolve — Tout est possible · Hates · Osint4Fun",
       "Resolve — On est là · Hates · Osint4Fun"
@@ -464,7 +464,7 @@
   "2026-05-09": {
     "count": 9,
     "activités": [
-      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · ",
+      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
       "Resolve — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
       "Resolve — Résistant dans l'art · L'art de résister · BleuetV5",
       "Resolve — Une oreille pour se souvenir · L'art de résister · BleuetV5",
@@ -744,18 +744,21 @@
     }
   },
   "2026-06-16": {
-    "count": 5,
+    "count": 8,
     "activités": [
-      "Resolve — A · CTF · Site",
-      "Resolve — B · CTF · Site",
-      "Retex — A · CTF · Site",
-      "Created — Heatmap · Site",
-      "Created — Chall C · CTF · Site"
+      "Resolve — Agree to disagree · MADAME_IRMA · Osint-FR",
+      "Resolve — Vision · MADAME_IRMA · Osint-FR",
+      "Resolve — Trop_longgggg · DETENTE · Osint-FR",
+      "Resolve — Mémoire · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Avatar · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Pivot · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Flux croisés · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Transparence · Novice / Pas à Pas · Osint-FR"
     ],
     "stats": {
-      "resolve": 2,
-      "retex": 1,
-      "autre": 2
+      "resolve": 8,
+      "retex": 0,
+      "autre": 0
     }
   },
   "2026-03-19": {
@@ -935,20 +938,13 @@
     }
   },
   "2026-04-11": {
-    "count": 8,
+    "count": 1,
     "activités": [
-      "Resolve — Agree to disagree · MADAME_IRMA · Osint-FR",
-      "Resolve — Vision · MADAME_IRMA · Osint-FR",
-      "Resolve — Trop_longgggg · DETENTE · Osint-FR",
-      "Resolve — Mémoire · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Avatar · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Pivot · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Flux croisés · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Transparence · Novice / Pas à Pas · Osint-FR"
+      "Retex — Digital Footprint · TryHackMe"
     ],
     "stats": {
-      "resolve": 8,
-      "retex": 0,
+      "resolve": 0,
+      "retex": 1,
       "autre": 0
     }
   },
@@ -1439,8 +1435,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 253,
+    "resolve": 251,
     "retex": 145,
-    "autre": 21
+    "autre": 19
   }
 }
