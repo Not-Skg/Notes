@@ -398,6 +398,17 @@
       "autre": 0
     }
   },
+  "2026-06-17": {
+    "count": 1,
+    "activités": [
+      "Retex — MADELEINE DE PROUST · Bad Cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-02-16": {
     "count": 2,
     "activités": [
@@ -1436,7 +1447,7 @@
   },
   "__totaux__": {
     "resolve": 251,
-    "retex": 145,
+    "retex": 146,
     "autre": 19
   }
 }
