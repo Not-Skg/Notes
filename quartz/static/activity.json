@@ -72,9 +72,9 @@
   "2026-03-26": {
     "count": 8,
     "activités": [
-      "Created — Phase 3 Bellatrix",
+      "Created — Phase 3 · Bellatrix",
       "Resolve — En chemin pour une partie de pêche · Bellatrix",
-      "Resolve — Remonter la piste",
+      "Resolve — Remonter la piste · Bellatrix",
       "Resolve — On se rapproche · Bellatrix",
       "Resolve — Les archives au secours · Bellatrix",
       "Resolve — Le plein trop cher · Bellatrix",
@@ -726,7 +726,7 @@
     "count": 11,
     "activités": [
       "Retex — Surveillance du réseau social · Bellatrix",
-      "Retex — La piste de l'organisation",
+      "Retex — La piste de l'organisation · Bellatrix",
       "Retex — Fouiller le site · Bellatrix",
       "Retex — Nos réalisations... · Bellatrix",
       "Retex — Découverte de preuves cachées · Bellatrix",
@@ -1252,7 +1252,7 @@
   "2026-03-24": {
     "count": 12,
     "activités": [
-      "Created — Phase 1 Bellatrix",
+      "Created — Phase 1 · Bellatrix",
       "Resolve — Un message d'alerte · Bellatrix",
       "Resolve — La vidéo du sauvetage · Bellatrix",
       "Resolve — Trop Beau pour être vrai · Bellatrix",
@@ -1336,11 +1336,11 @@
     }
   },
   "2026-03-25": {
-    "count": 11,
+    "count": 12,
     "activités": [
-      "Created — Phase 2 Bellatrix",
+      "Created — Phase 2 · Bellatrix",
       "Resolve — Surveillance du réseau social · Bellatrix",
-      "Resolve — La piste de l'organisation",
+      "Resolve — La piste de l'organisation · Bellatrix",
       "Resolve — Fouiller le site · Bellatrix",
       "Resolve — Nos réalisations... · Bellatrix",
       "Resolve — Découverte de preuves cachées · Bellatrix",
@@ -1348,10 +1348,11 @@
       "Resolve — Analyse WHOIS des domaines suspects · Bellatrix",
       "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix",
       "Resolve — La temporalité de l'attaque · Bellatrix",
-      "Resolve — Réutilisation de code sur les domaines · Bellatrix"
+      "Resolve — Réutilisation de code sur les domaines · Bellatrix",
+      "Resolve — Déclenchement immédiat · Bellatrix"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 11,
       "retex": 0,
       "autre": 1
     }
@@ -1438,7 +1439,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 252,
+    "resolve": 253,
     "retex": 145,
     "autre": 21
   }
