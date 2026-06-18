@@ -12,7 +12,7 @@ tags:
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]
 
@@ -53,6 +53,6 @@ Durant cette enquête semée d’embûches, faites attention à vous : Le Caire 
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]

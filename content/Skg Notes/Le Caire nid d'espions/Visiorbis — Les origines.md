@@ -10,7 +10,7 @@ tags:
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]
 
@@ -83,6 +83,6 @@ Et un post du compte bluesky nous confirme que c'est bien son nom :
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]

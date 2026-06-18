@@ -11,7 +11,7 @@ tags:
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · Le pacte
 
@@ -31,6 +31,7 @@ A travers les 2 documents, seuls 2 noms sont cités :
 
 - He Zeyu (何泽宇) en tant que président-directeur général.
 - Et Wei Junliang (魏俊良) est remercié d'avoir mené à bien cette acquisition stratégique.
+
 En cherchant avec plusieurs outils comme sherlock, enola ou whatsmyname, ou juste en se créant un compte Roblox et en utilisant la recherche classique, on trouve un compte avec le nom de **==Wei_Junliang==**.
 ![[LC_MN_R.png|500]]
 On remarque même une map qu'il a réalisé, lié à Visiobise et la famille André. Elle a même l'air de porter un message contre la famille derrière l'entreprise Française, mais à ce moment, il était 20:52 et je n'avais plus le temps pour me créer un compte Roblox, le télécharger et tester la map pour voir tout ça.
@@ -45,6 +46,6 @@ On remarque même une map qu'il a réalisé, lié à Visiobise et la famille And
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · Le pacte

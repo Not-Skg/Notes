@@ -10,7 +10,7 @@ tags:
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · La brume
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]
 
@@ -72,7 +72,7 @@ Sur la fiche de post, un mail est mentionné : "n.zhou@hazyoffice.fr", c'est don
 Lorsque l'on inspecte la page, on apprend que c'est elle qui a développé le site.
 On va donc inspecter le site via un WHOIS.
 ![[LC_LB_W.png|500]]
-Nathalie a utilisé son adresse perso pour créer le site et l'enregistrer, on a donc pu la récupérer : **==nathalie.zhou@protonmail.me==**.
+Nathalie a utilisé son adresse perso pour créer le site et l'enregistrer, on a donc pu la récupérer : **==nathalie.zhou\@protonmail.me==**.
 
 ---
 ***Les autres parties du CTF :***
@@ -80,6 +80,6 @@ Nathalie a utilisé son adresse perso pour créer le site et l'enregistrer, on a
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · La brume
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]

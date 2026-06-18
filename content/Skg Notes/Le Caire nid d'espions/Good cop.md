@@ -10,7 +10,7 @@ tags:
  · | · Good cop
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]
 
@@ -91,6 +91,6 @@ Et d'après ses tweets, il a l'air de s'intéresser de près à Visiorbis.
  · | · Good cop
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]

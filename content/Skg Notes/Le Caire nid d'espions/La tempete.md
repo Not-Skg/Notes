@@ -10,7 +10,7 @@ tags:
  · | · [[Good cop]]
  · | · La tempete
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]
 
@@ -22,7 +22,7 @@ tags:
 >
 >Quel hashtag est utilisé pour incriminer Visiorbis ?
 >
->>_Format du flag : #AaaaaAaaaaaa_
+>>_Format du flag : \#AaaaaAaaaaaa_
 
 ### RETEX
 On avait pu voir dans la catégorie [[Good cop]] que le compte Twitter de 
@@ -94,6 +94,6 @@ En recherchant `"كراهية فرنسا9812"` sur Google, on trouve un unique r
  · | · [[Good cop]]
  · | · La tempete
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · [[黑市 — Marché Noir]]
  · | · [[Le pacte]]

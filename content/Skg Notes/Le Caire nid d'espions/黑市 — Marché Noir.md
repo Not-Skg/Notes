@@ -10,7 +10,7 @@ tags:
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · 黑市 — Marché Noir
  · | · [[Le pacte]]
 
@@ -122,6 +122,6 @@ Le montant exact reçu était donc de **==8.334279 ADA==**.
  · | · [[Good cop]]
  · | · [[La tempete]]
  · | · [[La brume]]
- · | · [[Bad cop]]
+ · | · [[Bad Cop]]
  · | · 黑市 — Marché Noir
  · | · [[Le pacte]]
