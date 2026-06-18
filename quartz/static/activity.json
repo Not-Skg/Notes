@@ -190,6 +190,21 @@
       "autre": 1
     }
   },
+  "2026-06-18": {
+    "count": 5,
+    "activités": [
+      "Retex — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
   "2026-05-02": {
     "count": 1,
     "activités": [
@@ -1447,7 +1462,7 @@
   },
   "__totaux__": {
     "resolve": 251,
-    "retex": 146,
+    "retex": 151,
     "autre": 19
   }
 }
