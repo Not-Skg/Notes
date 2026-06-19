@@ -22,7 +22,7 @@ tags:
 >
 >Quel hashtag est utilisé pour incriminer Visiorbis ?
 >
->>_Format du flag : \#AaaaaAaaaaaa_
+>>_Format du flag : `#AaaaaAaaaaaa`_
 
 ### RETEX
 On avait pu voir dans la catégorie [[Good cop]] que le compte Twitter de 

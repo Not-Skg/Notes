@@ -19,6 +19,7 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 ---
 # ▸ CTF
 >  Voici quelques RETEX de CTF que j'ai réalisé avec le classement lié : 
+- [[404CTF 2026]] - ∅ Classement (Chill)
 - [[Le Caire nid d'espions]] - [29ᵉ/112] - [Équipe - 3 membres]
 - [[Medileak 3]] - [17ᵉ/186] - [Équipe - 4 membres]
 - [[Bleuet de France V5]] - [10ᵉ/430] - [Solo]  · | ·  [18ᵉ/220] - [Équipe - 1 membre]
