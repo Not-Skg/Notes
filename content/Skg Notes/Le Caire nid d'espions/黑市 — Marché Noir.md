@@ -2,6 +2,7 @@
 tags:
   - Osint
   - Chall
+  - crypto
 ---
 ![[LeCaire.jpeg]]
 

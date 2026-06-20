@@ -1012,6 +1012,17 @@
       "autre": 0
     }
   },
+  "2026-06-20": {
+    "count": 1,
+    "activités": [
+      "Retex — C'était caché · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-02-15": {
     "count": 2,
     "activités": [
@@ -1474,7 +1485,7 @@
   },
   "__totaux__": {
     "resolve": 251,
-    "retex": 152,
+    "retex": 153,
     "autre": 20
   }
 }
