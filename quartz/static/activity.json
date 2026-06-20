@@ -1013,13 +1013,14 @@
     }
   },
   "2026-06-20": {
-    "count": 1,
+    "count": 2,
     "activités": [
-      "Retex — C'était caché · ROSO · 404CTF 2026"
+      "Retex — C'était caché · ROSO · 404CTF 2026",
+      "Retex — Doctor Es Langues · ROSO · 404CTF 2026"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 1,
+      "retex": 2,
       "autre": 0
     }
   },
@@ -1485,7 +1486,7 @@
   },
   "__totaux__": {
     "resolve": 251,
-    "retex": 153,
+    "retex": 154,
     "autre": 20
   }
 }

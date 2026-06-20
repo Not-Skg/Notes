@@ -1,3 +1,8 @@
+---
+tags:
+  - Chall
+  - Osint
+---
 ## Énoncé
 >Une très grande dame française de l'informatique est en possession d'un flag, égaré sur une plateforme bien connue. 
 >![[404_26_CC.png]]
@@ -22,6 +27,6 @@ On peut donc déjà cloner le repos via la commande : `git clone https://github.
 
 Le repos contient plusieurs flag.txt mais aucun ne possède le vrai flag. Et un de ces fichiers nous informe que le flag a été censuré, potentiellement suite à une maj, j'imagine.
 
-Étant donné qu'on connait le format du flag, on peut déjà rechercher dans tout le repos, notamment l'historique, toutes les chaines de caractère qui commence par `404CTF{`.
+Étant donné qu'on connait le format du flag, on peut déjà rechercher dans tout le repos, notamment l'historique, toutes les chaines de caractère qui commence par `404CTF{` via la commande : `git log -S "404CTF{" --all -p`.
 ![[404_26_CC_F.png|500]]
 On a donc le flag : **==404CTF{PLuT0T_FriTE5_0û_P0T@T03S?}==**
