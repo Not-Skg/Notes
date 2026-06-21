@@ -951,6 +951,18 @@
       "autre": 0
     }
   },
+  "2026-06-21": {
+    "count": 2,
+    "activités": [
+      "Resolve — C’est l’heure du Du-du-du-du-Duel 1/2 · Osintopia",
+      "Resolve — Mémoire d'un garage oublié 1/3 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-14": {
     "count": 3,
     "activités": [
@@ -1485,7 +1497,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 251,
+    "resolve": 253,
     "retex": 154,
     "autre": 20
   }
