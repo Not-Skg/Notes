@@ -799,6 +799,17 @@
       "autre": 0
     }
   },
+  "2026-06-22": {
+    "count": 1,
+    "activités": [
+      "Retex — Metro OSINT Dodo · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-03-19": {
     "count": 3,
     "activités": [
@@ -1498,7 +1509,7 @@
   },
   "__totaux__": {
     "resolve": 253,
-    "retex": 154,
+    "retex": 155,
     "autre": 20
   }
 }
