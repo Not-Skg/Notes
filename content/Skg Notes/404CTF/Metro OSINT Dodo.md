@@ -50,7 +50,7 @@ Malheureusement, le trajet est trop long, il fait 14 minutes au lieu de 11/12.
 Il faut donc chercher une station entre les deux dernières pour raccourcir le temps de trajet.
 
 Je m'aperçois que `Montparnasse - Bienvenüe` à une façon étrange d'écrire "Bienvenue", ça doit donc potentiellement être un nom de famille.
-En effet, c'est le nom du [créateur du métro parisien](https://fr.wikipedia.org/wiki/Montparnasse_-_Bienven%C3%BCe_(m%C3%At l9tro_de_Paris) : Fulgence Bienvenüe.
+En effet, c'est le nom du [créateur du métro parisien](https://fr.wikipedia.org/wiki/Montparnasse_-_Bienven%C3%BCe_(m%C3%A9tro_de_Paris)) : Fulgence Bienvenüe.
 ![[404_26_MOD_WMB.png|500]]
 Les ingénieurs sont proches des scientifiques : ils s’appuient sur la science pour tester des hypothèses et produire des solutions, même si leur but principal est l’application.
 On peut donc vérifier si le trajet est dans les temps.
