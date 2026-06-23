@@ -4,6 +4,7 @@ tags:
   - GEOINT
   - Tool
   - Cheatsheet
+  - OverpassTurbo
 ---
 >Outil qui permet d'émettre des requêtes à l'API d'Open Street Map (OSM), et d'en visualiser les résultats sur une carte interactive.
 
@@ -153,3 +154,5 @@ Ex :
 Ressources utiles pour aller plus loin : 
 - [Article du Predicta Lab](https://predictalab.medium.com/geoint-comment-utiliser-overpass-turbo-pour-losint-ed1da66354e9) , 
 - [Introduction à Overpass turbo de Boris Mericskay](https://sites-formations.univ-rennes2.fr/mastersigat/Cours/OverpassTurbo_SOTM_2022.pdf)
+
+Pour une utilisation d'Overpass-Turbo dans un challenge : [[Canular savant 1]]

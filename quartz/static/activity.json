@@ -436,6 +436,18 @@
       "autre": 0
     }
   },
+  "2026-06-23": {
+    "count": 2,
+    "activités": [
+      "Retex — Moniseur C Decouverte · ROSO · 404CTF 2026",
+      "Retex — Canular savant 1 · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
   "2026-02-16": {
     "count": 2,
     "activités": [
@@ -1509,7 +1521,7 @@
   },
   "__totaux__": {
     "resolve": 253,
-    "retex": 155,
+    "retex": 157,
     "autre": 20
   }
 }
