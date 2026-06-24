@@ -1,6 +1,5 @@
 ---
 tags:
-  - 404CTF
   - Osint
   - Chall
 ---

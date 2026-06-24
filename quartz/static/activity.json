@@ -1115,6 +1115,17 @@
       "autre": 0
     }
   },
+  "2026-06-24": {
+    "count": 1,
+    "activités": [
+      "Retex — Canular savant 2 · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-04-04": {
     "count": 7,
     "activités": [
@@ -1521,7 +1532,7 @@
   },
   "__totaux__": {
     "resolve": 253,
-    "retex": 157,
+    "retex": 158,
     "autre": 20
   }
 }
