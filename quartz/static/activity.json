@@ -885,6 +885,17 @@
       "autre": 0
     }
   },
+  "2026-06-25": {
+    "count": 1,
+    "activités": [
+      "Retex — Une aiguille dans une ile-de-France · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-04-05": {
     "count": 6,
     "activités": [
@@ -1532,7 +1543,7 @@
   },
   "__totaux__": {
     "resolve": 253,
-    "retex": 158,
+    "retex": 159,
     "autre": 20
   }
 }

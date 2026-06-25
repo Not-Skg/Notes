@@ -155,4 +155,4 @@ Ressources utiles pour aller plus loin :
 - [Article du Predicta Lab](https://predictalab.medium.com/geoint-comment-utiliser-overpass-turbo-pour-losint-ed1da66354e9) , 
 - [Introduction à Overpass turbo de Boris Mericskay](https://sites-formations.univ-rennes2.fr/mastersigat/Cours/OverpassTurbo_SOTM_2022.pdf)
 
-Pour une utilisation d'Overpass-Turbo dans un challenge : [[Canular savant 1]]
+Pour une utilisation d'Overpass-Turbo dans des challenge : [[Canular savant 1]], [[Une aiguille dans une ile-de-France]]
