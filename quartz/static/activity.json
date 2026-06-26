@@ -628,6 +628,17 @@
       "autre": 0
     }
   },
+  "2026-06-26": {
+    "count": 1,
+    "activités": [
+      "Retex — Enfance gourmande · ROSO · 404CTF 2026"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-05-08": {
     "count": 11,
     "activités": [
@@ -1543,7 +1554,7 @@
   },
   "__totaux__": {
     "resolve": 253,
-    "retex": 159,
+    "retex": 160,
     "autre": 20
   }
 }

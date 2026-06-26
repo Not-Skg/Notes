@@ -114,6 +114,6 @@ Pour terminer le challenge, il suffisait en réalité de consulter la page Wikip
 
 Je n'ai tout simplement pas pensé à consulter cette source pourtant évidente. Comme quoi, il ne faut jamais négliger les sources les plus simples.
 
-> Je remercie Kubvo pour le pivot sur la page Wikipédia de Viroflay. Sans son write-up, je ne suis pas certain que j'aurais trouvé cette dernière étape.
+> Je remercie Kubow pour le pivot sur la page Wikipédia de Viroflay. Sans son write-up, je ne suis pas certain que j'aurais trouvé cette dernière étape.
 >https://kubo-security.github.io/ctf/404ctf-2026/aiguille.html
 

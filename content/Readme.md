@@ -32,3 +32,4 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 **Général**
 - [ ] Ajout Badge (plateforme + challmakers) sur les RETEX
 - [ ] Possibilité d’agrandir les images au clic
+- [ ] Étoffer la Toolbox et les tags des challs

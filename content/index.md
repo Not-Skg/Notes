@@ -11,11 +11,6 @@ title: Homepage
 Généralement, je me concentre sur les plateformes comme : **Osintopia**, **Osint4Fun** ou **TryHackMe**.
 J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les challenges d'Osint4Fun.
 
->[!info] Prochainement
-> - [ ] Quelques RETEX du 404CTF
-> - [ ] Présentation De Osint4Fun
-> - [ ] Page ToolBox (OverPass Turbo, WebScrapping, ...)
-
 ---
 # ▸ CTF
 >  Voici quelques RETEX de CTF que j'ai réalisé avec le classement lié : 
