@@ -10,7 +10,7 @@ tags:
 >Mais vous avez beau vous creuser la cervelle, impossible de retrouver le nom du lieu !
 >Seules quelques images vous reviennent par flash quand vous essayez de vous souvenir. 
 >Parviendrez-vous à retrouver le nom de l'hôtel de ce restaurant, et le prix du plat ? 
->![[404_26_EF_V.mp4]]
+>![[404_26_EG_V.mp4]]
 >>Format : 404CTF{plaza_athenee-12}
 
 ## RETEX
@@ -55,7 +55,7 @@ Nous pouvons désormais confirmer avec un très haut niveau de confiance que nou
 L'établissement recherché est donc **Les Étangs de Corot**, qui fait à la fois hôtel et restaurant.
 À partir de là, je me suis mis à la recherche du plat mentionné dans l'énoncé.
 
-La carte disponible sur Google Maps ne contenait malheureusement aucune trace du menu recherché.
+Les cartes disponibles sur Google Maps ne contenaient malheureusement aucune trace du menu recherché.
 J'ai ensuite exploré les photos associées à l'établissement sur Google Maps, sans succès.
 
 Comme l'énoncé précise que le repas a eu lieu peu avant Noël, durant le confinement, il était peu probable que le menu soit encore présent sur les supports actuels. Je me suis donc tourné vers le [site](https://www.etangs-corot.com/) officiel de l'établissement puis vers ses archives sur la Wayback Machine.

@@ -4,6 +4,9 @@ description: Vue d'ensemble de mes activités au fil du temps
 ---
 ![[Ban.jpeg]]
 
+<div id="site-stats-root"></div>
+
+
 >[!warning] Info
 >Ci-dessous, un aperçu de ma fréquence de travail et de ce que je fais par jours.
 >J'ai **ajouté cette heatmap le 17/04/2026** donc je n'ai pas toutes les données liées aux jours plus vieux, mais j'ai quand même pu récupérer certaines données jusqu'à la **création de ce site (le 11/03/2026)**.
@@ -12,7 +15,7 @@ description: Vue d'ensemble de mes activités au fil du temps
 <div id="heatmap-root"></div>
 
 ---
-## Mon profil sur les plateformes intéressantes
+## Mon profil sur les plateformes interessantes
 
 |                            |                                         Plateforme                                          |                                    ID/Username                                     |             Aperçu             |
 | :------------------------: | :-----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: | :----------------------------: |

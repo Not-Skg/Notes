@@ -1,13 +1,18 @@
-import os
 import json
 import re
 from collections import Counter
+from pathlib import Path
 
-JOURNAL_PATH = "./content/journal"
-OUTPUT = "./quartz/static/activity.json"
+JOURNAL_PATH = Path("./content/journal")
+PROFILS_PATH = Path("./content/Profil")
+BADGES_PATH = Path("./content/Badges")
+OUTPUT = Path("./quartz/static/activity.json")
+
+IMAGE_EXTS = {".jpg", ".jpeg", ".png"}
 
 data = {}
 totaux = Counter({"resolve": 0, "retex": 0, "autre": 0})
+
 
 def classify_activity(activity: str) -> str:
     a = activity.strip().lower()
@@ -17,16 +22,28 @@ def classify_activity(activity: str) -> str:
         return "retex"
     return "autre"
 
-for f in os.listdir(JOURNAL_PATH):
-    if not f.endswith(".md"):
+
+def count_images(directory: Path, recursive: bool = False) -> int:
+    if not directory.exists() or not directory.is_dir():
+        return 0
+
+    iterator = directory.rglob("*") if recursive else directory.iterdir()
+    return sum(
+        1
+        for path in iterator
+        if path.is_file() and path.suffix.lower() in IMAGE_EXTS
+    )
+
+
+for file_path in JOURNAL_PATH.iterdir():
+    if file_path.suffix.lower() != ".md":
         continue
 
-    date = f.replace(".md", "")
+    date = file_path.stem
     if not re.match(r"\d{4}-\d{2}-\d{2}$", date):
         continue
 
-    with open(os.path.join(JOURNAL_PATH, f), encoding="utf-8") as fh:
-        content = fh.read()
+    content = file_path.read_text(encoding="utf-8")
 
     match = re.search(r"## Activités\n(.*?)(?=\n##|\Z)", content, re.DOTALL)
     if not match:
@@ -49,8 +66,11 @@ for f in os.listdir(JOURNAL_PATH):
             "resolve": stats["resolve"],
             "retex": stats["retex"],
             "autre": stats["autre"],
-        }
+        },
     }
+
+profil_count = count_images(PROFILS_PATH)
+badge_count = count_images(BADGES_PATH)
 
 data["__totaux__"] = {
     "resolve": totaux["resolve"],
@@ -58,12 +78,22 @@ data["__totaux__"] = {
     "autre": totaux["autre"],
 }
 
-with open(OUTPUT, "w", encoding="utf-8") as f:
+data["__assets__"] = {
+    "profils": profil_count,
+    "badges": badge_count,
+}
+
+OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+with OUTPUT.open("w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-print(f"✓ {len(data) - 1} jours générés")
+print(f"✓ {len([k for k in data.keys() if not k.startswith('__')])} jours générés")
 print(
     f"✓ Totaux — Resolve: {totaux['resolve']}, "
     f"RETEX: {totaux['retex']}, "
     f"Autre: {totaux['autre']}"
+)
+print(
+    f"✓ Assets — Profils: {profil_count}, "
+    f"Badges: {badge_count}"
 )

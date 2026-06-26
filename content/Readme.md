@@ -15,12 +15,12 @@ L’objectif est double :
 Ci-dessous les améliorations prévues à court/moyen terme :
 
 **Journal d'activité**
-- [ ] Ajout de statistiques en haut de la page
+- [x] Ajout de statistiques en haut de la page
       - Nb Challs résolus (dont x ce mois)
       - Nb RETEX publiés (dont x ce mois)
       - Nb Plateformes actives (avec lien vers profils)
       - Nb Badges obtenus (avec lien vers badges)
-- [ ] Section "Activités récentes" automatisé (x dernières activités)
+- [x] Section "Activités récentes" automatisé (x dernières activités)
 - [ ] Pareil mais avec "Derniers WUS"
 - [ ] Remplacement du tableau par des cartes “Mes plateformes”
 - [ ] Ajout de streaks d'activités sur Heatmap

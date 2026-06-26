@@ -511,6 +511,18 @@
       "autre": 0
     }
   },
+  "2026-06-27": {
+    "count": 2,
+    "activités": [
+      "Created — Cartes de stats · Heatmap · Site",
+      "Created — Section \"Activités récentes\" · Heatmap · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-05-09": {
     "count": 9,
     "activités": [
@@ -1555,6 +1567,10 @@
   "__totaux__": {
     "resolve": 253,
     "retex": 160,
-    "autre": 20
+    "autre": 22
+  },
+  "__assets__": {
+    "profils": 4,
+    "badges": 8
   }
 }
