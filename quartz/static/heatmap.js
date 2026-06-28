@@ -140,6 +140,12 @@ const init = async () => {
         return `${y}-${m}-${day}`;
     };
 
+    const getPreviousDate = (dateStr) => {
+        const d = new Date(dateStr + "T12:00:00");
+        d.setDate(d.getDate() - 1);
+        return formatLocalDate(d);
+    };
+
     const today = new Date();
     const todayStr = formatLocalDate(today);
     const year = today.getFullYear();
@@ -151,6 +157,52 @@ const init = async () => {
     while (formatLocalDate(cursor) <= todayStr) {
         days.push(formatLocalDate(cursor));
         cursor.setDate(cursor.getDate() + 1);
+    }
+
+    const activeDates = new Set(
+        days.filter(date => (data[date]?.count || 0) > 0)
+    );
+
+    let currentStreak = 0;
+    let streakAnchor = todayStr;
+
+    while (activeDates.has(streakAnchor)) {
+        currentStreak += 1;
+        streakAnchor = getPreviousDate(streakAnchor);
+    }
+
+    let longestStreak = 0;
+    let longestStreakStart = null;
+    let longestStreakEnd = null;
+
+    let runStart = null;
+    let runLength = 0;
+    let prevActiveDate = null;
+
+    for (const date of days) {
+        if (!activeDates.has(date)) {
+            runStart = null;
+            runLength = 0;
+            prevActiveDate = null;
+            continue;
+        }
+
+        const expectedPrev = prevActiveDate ? getPreviousDate(date) : null;
+
+        if (prevActiveDate && prevActiveDate === expectedPrev) {
+            runLength += 1;
+        } else {
+            runStart = date;
+            runLength = 1;
+        }
+
+        if (runLength > longestStreak) {
+            longestStreak = runLength;
+            longestStreakStart = runStart;
+            longestStreakEnd = date;
+        }
+
+        prevActiveDate = date;
     }
 
     const color = (count) => {
@@ -525,14 +577,21 @@ const init = async () => {
         .hm-date { color: var(--hm-muted); font-weight: 500; font-size: 1rem; }
         .hm-count { color: var(--hm-muted); font-size: .85rem; margin-left: .5rem; }
 
+        .hm-legend-row {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          flex-wrap: wrap;
+        }
+
         .hm-legend {
           display: flex;
           align-items: center;
           gap: 4px;
           font-size: .8rem;
           color: var(--hm-muted);
-          margin-top: 1rem;
-          margin-bottom: 0;
+          margin: 0;
           flex-wrap: wrap;
         }
 
@@ -540,6 +599,35 @@ const init = async () => {
           width: ${CELL}px;
           height: ${CELL}px;
           border-radius: 3px;
+        }
+
+        .hm-streak-inline {
+          margin-left: auto;
+          display: flex;
+          align-items: baseline;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .hm-streak-mini {
+          display: inline-flex;
+          align-items: baseline;
+          gap: 0.38rem;
+          color: var(--hm-muted);
+          font-size: 0.8rem;
+          white-space: nowrap;
+        }
+
+        .hm-streak-mini-label {
+          color: var(--hm-muted);
+          font-weight: 500;
+        }
+
+        .hm-streak-mini-value {
+          color: var(--hm-text);
+          font-size: 0.92rem;
+          font-weight: 700;
+          letter-spacing: -0.01em;
         }
 
         .hm-donut-and-bars {
@@ -689,6 +777,16 @@ const init = async () => {
           .hm-bars-container {
             gap: 1.5rem;
           }
+
+          .hm-legend-row {
+            align-items: flex-start;
+          }
+
+          .hm-streak-inline {
+            margin-left: 0;
+            width: 100%;
+            justify-content: flex-start;
+          }
         }
       </style>
     `;
@@ -733,15 +831,29 @@ const init = async () => {
                 <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>
               </div>
             </div>
-            <div class="hm-legend">
-              -
-              <div class="hm-legend-box" style="background:var(--hm-empty)"></div>
-              <div class="hm-legend-box" style="background:#fdca98"></div>
-              <div class="hm-legend-box" style="background:#fda460"></div>
-              <div class="hm-legend-box" style="background:#fd8235"></div>
-              <div class="hm-legend-box" style="background:#e24b0f"></div>
-              <div class="hm-legend-box" style="background:#9c2f07"></div>
-              +
+
+            <div class="hm-legend-row">
+              <div class="hm-legend">
+                -
+                <div class="hm-legend-box" style="background:var(--hm-empty)"></div>
+                <div class="hm-legend-box" style="background:#fdca98"></div>
+                <div class="hm-legend-box" style="background:#fda460"></div>
+                <div class="hm-legend-box" style="background:#fd8235"></div>
+                <div class="hm-legend-box" style="background:#e24b0f"></div>
+                <div class="hm-legend-box" style="background:#9c2f07"></div>
+                +
+              </div>
+
+              <div class="hm-streak-inline">
+                <span class="hm-streak-mini" title="Série actuelle">
+                  <span class="hm-streak-mini-label">Série</span>
+                  <strong class="hm-streak-mini-value">${currentStreak}j</strong>
+                </span>
+                <span class="hm-streak-mini" title="Meilleure série">
+                  <span class="hm-streak-mini-label">Record</span>
+                  <strong class="hm-streak-mini-value">${longestStreak}j</strong>
+                </span>
+              </div>
             </div>
           </div>
         </div>

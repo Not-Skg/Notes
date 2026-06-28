@@ -23,7 +23,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Section "Activités récentes" automatisé (x dernières activités)
 - [ ] Pareil mais avec "Derniers WUS"
 - [ ] Remplacement du tableau par des cartes “Mes plateformes”
-- [ ] Ajout de streaks d'activités sur Heatmap
+- [x] Ajout de streaks d'activités sur Heatmap
 
 **HomePage**
 - [ ] Aperçu journal d'activité (via stats : activités, wu, challs, badges)
@@ -31,5 +31,5 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 
 **Général**
 - [ ] Ajout Badge (plateforme + challmakers) sur les RETEX
-- [ ] Possibilité d’agrandir les images au clic
+- [x] Possibilité d’agrandir les images au clic
 - [ ] Étoffer la Toolbox et les tags des challs
