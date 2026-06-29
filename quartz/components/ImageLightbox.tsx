@@ -62,18 +62,39 @@ ImageLightbox.afterDOMLoaded = `
         document.body.style.overflow = ""
       }
 
+      const shouldSkipImage = (img) => {
+        const rawSrc = img.getAttribute("src") || ""
+        const resolvedSrc = img.src || ""
+
+        if (img.closest("#badges-root")) return true
+        if (img.closest("a")) return true
+
+        if (
+          rawSrc.includes("content/Logo/") ||
+          rawSrc.includes("/Logo/") ||
+          resolvedSrc.includes("content/Logo/") ||
+          resolvedSrc.includes("/Logo/")
+        ) {
+          return true
+        }
+
+        if (
+          rawSrc.includes("content/Badges/") ||
+          rawSrc.includes("/Badges/") ||
+          resolvedSrc.includes("content/Badges/") ||
+          resolvedSrc.includes("/Badges/")
+        ) {
+          return true
+        }
+
+        return false
+      }
+
       const bindImages = (root = document) => {
         root.querySelectorAll("article img").forEach((img) => {
-          const rawSrc = img.getAttribute("src") || ""
-          const resolvedSrc = img.src || ""
-
-          if (
-            rawSrc.includes("content/Logo/") ||
-            rawSrc.includes("/Logo/") ||
-            resolvedSrc.includes("content/Logo/") ||
-            resolvedSrc.includes("/Logo/")
-          ) {
+          if (shouldSkipImage(img)) {
             img.style.cursor = "default"
+            img.dataset.lightboxBound = "skip"
             return
           }
 
@@ -81,7 +102,11 @@ ImageLightbox.afterDOMLoaded = `
 
           img.dataset.lightboxBound = "true"
           img.style.cursor = "zoom-in"
-          img.addEventListener("click", () => openLightbox(img))
+          img.addEventListener("click", (e) => {
+            e.preventDefault()
+            e.stopPropagation()
+            openLightbox(img)
+          })
         })
       }
 

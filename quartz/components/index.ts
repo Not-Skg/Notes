@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ImageLightbox from "./ImageLightbox"
+import PlatformProfiles from "./PlatformProfiles"
 
 export {
     ArticleTitle,
@@ -52,4 +53,5 @@ export {
     Flex,
     ConditionalRender,
     ImageLightbox,
+    PlatformProfiles,
 }

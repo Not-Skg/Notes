@@ -1,7 +1,8 @@
 const init = async () => {
     const heatmapRoot = document.getElementById("heatmap-root");
     const statsRoot = document.getElementById("site-stats-root");
-    if (!heatmapRoot && !statsRoot) return;
+    const badgesRoot = document.getElementById("badges-root");
+    if (!heatmapRoot && !statsRoot && !badgesRoot) return;
 
     const base = document.querySelector('meta[name="base-url"]')?.content || "";
 
@@ -33,6 +34,60 @@ const init = async () => {
 
     console.log("activity.json chargé via :", usedPath);
     const data = await res.json();
+
+    const milestones = {
+        "2026-03-11": {
+            marker: "S",
+            label: "Création du site",
+        },
+        "2026-04-17": {
+            marker: "H",
+            label: "Ajout de la heatmap",
+        },
+    };
+
+    const badges = [
+        {
+            src: "Badges/badge-5cf43f67e1ab99e6.png",
+            href: "https://www.badgeforge.eu/verify/5cf43f67e1ab99e6b9450a50f6adae4e5de73c481e22e132598c822046a5e2a8",
+            alt: "Finisher Medileak 3",
+        },
+        {
+            src: "Badges/openbadge-OZ-2026-ZH5LL3.png",
+            href: "https://permis-osint.fr/verifier/OZ-2026-ZH5LL3",
+            alt: "Permis d'Osinter'",
+        },
+        {
+            src: "Badges/AI1.png",
+            href: "https://www.badgeforge.eu/verify/9f1a8de37357ffb4ab1bb9fa1581e6664f00fda7eddeea73e91e7dd0e64ff1bc",
+            alt: "ADOPTION 2026-FINISHER",
+        },
+        {
+            src: "Badges/AOO2025.png",
+            href: "https://www.badgeforge.eu/verify/c53f517cb3204c6ddc7b2043f824cb15cd120581cb240b047c6f09da2b0a1024",
+            alt: "Advent Of OSINT 2025-FINISHER",
+        },
+        {
+            src: "Badges/HCF.png",
+            href: "https://www.badgeforge.eu/verify/8bf59f1c3d572c542c16de5a66161fadeffeeeb1081f56b58395c07fb46fd1d6",
+            alt: "HATES 2025-FINISHER",
+        },
+        {
+            src: "Badges/OPB.png",
+            href: "https://www.badgeforge.eu/verify/93a95b277c3fe4e7fcc26f53d325d18da446e4e72bc56d5a7b50104990caf520",
+            alt: "OSINT: Practical Basics",
+        },
+        {
+            src: "Badges/GNOSINT2025.png",
+            href: "https://www.badgeforge.eu/verify/ec2013798801bbb46f0d6b682e220adbdc37d34741d535b19b05160cb05956e5",
+            alt: "GNOSINT 2025-FINISHER",
+        },
+        {
+            src: "Badges/f1.png",
+            href: "https://mooc.osintfr.com/badges/badge.php?hash=9da3cc793fc856168bb5816420fcecd160e24981",
+            alt: "1er MOOC OSINT-FR",
+        }
+    ];
 
     const ACTIVITY_COLORS = {
         Resolve: "#c49a6c",
@@ -281,11 +336,14 @@ const init = async () => {
         const count = d?.count || 0;
         const cx = LABEL_W + colToPx(col);
         const cy = row * step;
-        return `<div class="hm-day"
+        const milestone = milestones[date];
+
+        return `<div class="hm-day${milestone ? " hm-day-milestone" : ""}"
             style="position:absolute;left:${cx}px;top:${cy}px;background:${color(count)}"
             data-date="${date}"
             data-count="${count}"
-            title="${date} — ${count} activité(s)"
+            ${milestone ? `data-marker="${milestone.marker}" data-marker-label="${milestone.label}"` : ""}
+            title="${date} — ${count} activité(s)${milestone ? ` — ${milestone.label}` : ""}"
         ></div>`;
     }).join("");
 
@@ -347,20 +405,26 @@ const init = async () => {
     const sharedStyle = `
       <style>
         @media (prefers-color-scheme: light) {
-          #heatmap-root, #site-stats-root {
+          #heatmap-root, #site-stats-root, #badges-root {
             --hm-empty: #b3b3b5;
             --hm-border: rgba(160, 82, 45, 0.3);
             --hm-text: #2a211d;
             --hm-muted: #6f625c;
             --hm-active: #a0522d;
-            --hm-card-bg: #ffffff;
+            --hm-card-bg: transparent;
             --hm-accent: #d86f2d;
             --hm-accent-soft: #b85b22;
+          }
+
+          .hm-stat-card,
+          .hm-recent-panel,
+          .hm-badges-panel {
+            box-shadow: none;
           }
         }
 
         @media (prefers-color-scheme: dark) {
-          #heatmap-root, #site-stats-root {
+          #heatmap-root, #site-stats-root, #badges-root {
             --hm-empty: #5c5b5b;
             --hm-border: rgba(255, 255, 255, 0.08);
             --hm-text: #ebebec;
@@ -372,7 +436,7 @@ const init = async () => {
           }
         }
 
-        #heatmap-root, #site-stats-root { font-family: inherit; }
+        #heatmap-root, #site-stats-root, #badges-root { font-family: inherit; }
         #site-stats-root { margin-bottom: 1.2rem; }
 
         .hm-site-stats {
@@ -429,6 +493,52 @@ const init = async () => {
           line-height: 1.3;
           font-weight: 600;
           color: var(--hm-accent-soft);
+        }
+
+        .hm-badges-panel {
+          padding: 0.1rem 1.2rem;
+          border: 1px solid var(--hm-border);
+          border-radius: 8px;
+          background: var(--hm-card-bg);
+          color: var(--hm-text);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .hm-badges-scroll {
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: thin;
+          padding-bottom: 0.35rem;
+        }
+
+        .hm-badges-row {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 0.55rem;
+          align-items: center;
+          width: max-content;
+          min-width: 100%;
+        }
+
+        .hm-badge-link {
+          display: inline-flex;
+          flex: 0 0 auto;
+          text-decoration: none;
+        }
+
+        .hm-badge-img {
+          display: block;
+          height: 54px;
+          width: auto;
+          border-radius: 8px;
+          transition: transform .12s ease, opacity .12s ease;
+        }
+
+        .hm-badge-link:hover .hm-badge-img {
+          transform: translateY(-1px);
+          opacity: 0.92;
         }
 
         .hm-heatmap-panel {
@@ -544,6 +654,7 @@ const init = async () => {
         }
 
         .hm-day {
+          position: absolute;
           width: ${CELL}px;
           height: ${CELL}px;
           border-radius: 3px;
@@ -554,6 +665,25 @@ const init = async () => {
 
         .hm-day:hover { transform: scale(1.4); }
         .hm-day.active { outline-color: var(--hm-active); outline-offset: 1px; }
+
+        .hm-day-milestone {
+          outline: 1px solid rgba(255, 255, 255, 0.55);
+          outline-offset: -1px;
+        }
+
+        .hm-day-milestone::after {
+          content: attr(data-marker);
+          position: absolute;
+          inset: 0;
+          display: grid;
+          place-items: center;
+          font-size: 0.5rem;
+          font-weight: 800;
+          line-height: 1;
+          color: #ffffff;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+          pointer-events: none;
+        }
 
         .hm-detail, .hm-summary {
           padding: 1rem 1.2rem;
@@ -601,6 +731,36 @@ const init = async () => {
           border-radius: 3px;
         }
 
+        .hm-milestone-legend {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+          font-size: .8rem;
+          color: var(--hm-muted);
+        }
+
+        .hm-milestone-key {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+        }
+
+        .hm-milestone-letter {
+          display: inline-grid;
+          place-items: center;
+          width: ${CELL}px;
+          height: ${CELL}px;
+          border-radius: 3px;
+          background: #7a7a7a;
+          color: #fff;
+          font-size: 0.55rem;
+          font-weight: 800;
+          line-height: 1;
+          outline: 1px solid rgba(255, 255, 255, 0.45);
+          outline-offset: -1px;
+        }
+
         .hm-streak-inline {
           margin-left: auto;
           display: flex;
@@ -624,7 +784,7 @@ const init = async () => {
         }
 
         .hm-streak-mini-value {
-          color: var(--hm-text);
+          color: var(--hm-accent);
           font-size: 0.92rem;
           font-weight: 700;
           letter-spacing: -0.01em;
@@ -654,7 +814,8 @@ const init = async () => {
         .hm-donut-total {
           font-size: 1.1rem;
           font-weight: bold;
-          fill: var(--hm-text);
+          fill: currentColor;
+          color: var(--hm-text);
         }
 
         .hm-donut-legend {
@@ -787,6 +948,10 @@ const init = async () => {
             width: 100%;
             justify-content: flex-start;
           }
+
+          .hm-badge-img {
+            height: 48px;
+          }
         }
       </style>
     `;
@@ -805,7 +970,7 @@ const init = async () => {
                 <span class="hm-stat-label">RETEX publiés</span>
                 <span class="hm-stat-sub">+ ${monthRetex} ce mois</span>
             </div>
-            <a class="hm-stat-card hm-stat-link" href="#mon-profil-sur-les-plateformes-interessantes">
+            <a class="hm-stat-card hm-stat-link" href="#mes-plateformes">
                 <strong class="hm-stat-value">${activePlatforms}</strong>
                 <span class="hm-stat-label">Plateformes actives</span>
                 <span class="hm-stat-sub">Voir mes profils</span>
@@ -815,6 +980,34 @@ const init = async () => {
                 <span class="hm-stat-label">Badges obtenus</span>
                 <span class="hm-stat-sub">Voir mes badges</span>
             </a>
+        </div>
+        `;
+    }
+
+    if (badgesRoot) {
+        badgesRoot.innerHTML = `
+        ${sharedStyle}
+        <div class="hm-badges-panel">
+            <div class="hm-badges-scroll">
+                <div class="hm-badges-row">
+                    ${badges.map((badge) => `
+                        <a
+                        class="hm-badge-link"
+                        href="${badge.href}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="${badge.alt}"
+                        >
+                        <img
+                            class="hm-badge-img"
+                            src="./${badge.src}"
+                            alt="${badge.alt}"
+                            loading="lazy"
+                        >
+                        </a>
+                    `).join("")}
+                </div>
+            </div>
         </div>
         `;
     }
@@ -844,11 +1037,23 @@ const init = async () => {
                 +
               </div>
 
+              <div class="hm-milestone-legend">
+                <span class="hm-milestone-key">
+                  <span class="hm-milestone-letter">S</span>
+                  <span>Création du site</span>
+                </span>
+                <span class="hm-milestone-key">
+                  <span class="hm-milestone-letter">H</span>
+                  <span>Ajout de la heatmap</span>
+                </span>
+              </div>
+
               <div class="hm-streak-inline">
                 <span class="hm-streak-mini" title="Série actuelle">
                   <span class="hm-streak-mini-label">Série</span>
                   <strong class="hm-streak-mini-value">${currentStreak}j</strong>
                 </span>
+                <span class="hm-streak-mini-label"> · </span>
                 <span class="hm-streak-mini" title="Meilleure série">
                   <span class="hm-streak-mini-label">Record</span>
                   <strong class="hm-streak-mini-value">${longestStreak}j</strong>
@@ -878,7 +1083,7 @@ const init = async () => {
                         <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="8" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
                         <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="8" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
                         <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="8" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
-                        <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total">${totalActivities}</text>
+                        <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total" fill="currentColor">${totalActivities}</text>
                     </svg>
                     <div class="hm-donut-legend">
                         <div class="hm-donut-legend-item"><span class="hm-donut-legend-color" style="background: #c49a6c;"></span><span>Resolve: ${totals.resolve}</span></div>
@@ -950,10 +1155,15 @@ const init = async () => {
             }
 
             const items = d.activités.map(colorize).join("");
+            const milestoneText = el.dataset.markerLabel
+                ? `<div style="margin-top:.55rem;color:var(--hm-accent-soft);font-size:.9rem;font-weight:600">${el.dataset.marker} — ${el.dataset.markerLabel}</div>`
+                : "";
+
             detail.innerHTML = `
                 <span class="hm-date">${date}</span>
                 <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
                 <ul>${items}</ul>
+                ${milestoneText}
             `;
         });
     });

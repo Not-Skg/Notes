@@ -22,7 +22,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
       - Nb Badges obtenus (avec lien vers badges)
 - [x] Section "Activités récentes" automatisé (x dernières activités)
 - [ ] Pareil mais avec "Derniers WUS"
-- [ ] Remplacement du tableau par des cartes “Mes plateformes”
+- [x] Remplacement du tableau par des cartes “Mes plateformes”
 - [x] Ajout de streaks d'activités sur Heatmap
 
 **HomePage**
