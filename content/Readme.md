@@ -1,4 +1,4 @@
-Ce README présente un site personnel dédié au stockage et au partage de retours d’expérience (RETEX), essentiellement autour de l’OSINT, mais aussi de challenges CTF et d’activités liées à la cybersécurité.
+<Ce README présente un site personnel dédié au stockage et au partage de retours d’expérience (RETEX), essentiellement autour de l’OSINT, mais aussi de challenges CTF et d’activités liées à la cybersécurité.
 
 L’objectif est double :
 - Documenter mes recherches et méthodologies

@@ -169,24 +169,33 @@ const init = async () => {
     });
 
     const getAllPlatforms = (counts) => Object.entries(counts).sort((a, b) => b[1] - a[1]);
-    const getTop3Platforms = (counts) => Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
 
     const allRetexPlatforms = getAllPlatforms(platformCounts.retex);
     const allResolvePlatforms = getAllPlatforms(platformCounts.resolve);
 
-    const topRetexPlatformsForLegend = getTop3Platforms(platformCounts.retex);
-    const topResolvePlatformsForLegend = getTop3Platforms(platformCounts.resolve);
-
-    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3"];
-
-    const maxRetexCount = Math.max(...allRetexPlatforms.map(p => p[1]), 1);
-    const maxResolveCount = Math.max(...allResolvePlatforms.map(p => p[1]), 1);
+    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#a78bfa", "#34d399"];
 
     const platformToColor = new Map();
     const allPlatforms = [...new Set([...allRetexPlatforms.map(p => p[0]), ...allResolvePlatforms.map(p => p[0])])];
     allPlatforms.forEach((platform, i) => {
         platformToColor.set(platform, platformColors[i % platformColors.length]);
     });
+
+    const globalLegendHtml = allPlatforms.length
+        ? `
+            <div class="hm-summary-block">
+                <div class="hm-summary-title">Les plateformes</div>
+                <div class="hm-hbar-legend hm-hbar-legend-global">
+                    ${allPlatforms.map((platform) => `
+                        <div class="hm-hbar-legend-item">
+                            <span class="hm-hbar-legend-color" style="background:${platformToColor.get(platform)};"></span>
+                            <span>${platform}</span>
+                        </div>
+                    `).join("")}
+                </div>
+            </div>
+        `
+        : "";
 
     const formatLocalDate = (d) => {
         const y = d.getFullYear();
@@ -214,9 +223,7 @@ const init = async () => {
         cursor.setDate(cursor.getDate() + 1);
     }
 
-    const activeDates = new Set(
-        days.filter(date => (data[date]?.count || 0) > 0)
-    );
+    const activeDates = new Set(days.filter(date => (data[date]?.count || 0) > 0));
 
     let currentStreak = 0;
     let streakAnchor = todayStr;
@@ -227,16 +234,11 @@ const init = async () => {
     }
 
     let longestStreak = 0;
-    let longestStreakStart = null;
-    let longestStreakEnd = null;
-
-    let runStart = null;
     let runLength = 0;
     let prevActiveDate = null;
 
     for (const date of days) {
         if (!activeDates.has(date)) {
-            runStart = null;
             runLength = 0;
             prevActiveDate = null;
             continue;
@@ -247,14 +249,11 @@ const init = async () => {
         if (prevActiveDate && prevActiveDate === expectedPrev) {
             runLength += 1;
         } else {
-            runStart = date;
             runLength = 1;
         }
 
         if (runLength > longestStreak) {
             longestStreak = runLength;
-            longestStreakStart = runStart;
-            longestStreakEnd = date;
         }
 
         prevActiveDate = date;
@@ -355,9 +354,9 @@ const init = async () => {
 
     const colorize = (text) => {
         const keywords = {
-            "Resolve": "#c49a6c",
-            "Retex": "#fd8235",
-            "Created": "#9FE1CB",
+            Resolve: "#c49a6c",
+            Retex: "#fd8235",
+            Created: "#9FE1CB",
         };
         const dashIdx = text.indexOf(" — ");
         if (dashIdx === -1) return `<li>${text}</li>`;
@@ -380,9 +379,6 @@ const init = async () => {
     const assets = data.__assets__ || { profils: 0, badges: 0 };
 
     const totalActivities = totals.resolve + totals.retex + totals.autre;
-    const resolvePercent = totalActivities > 0 ? (totals.resolve / totalActivities) * 100 : 0;
-    const retexPercent = totalActivities > 0 ? (totals.retex / totalActivities) * 100 : 0;
-    const autrePercent = totalActivities > 0 ? (totals.autre / totalActivities) * 100 : 0;
 
     const currentMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
     let monthResolve = 0;
@@ -401,6 +397,54 @@ const init = async () => {
 
     const activePlatforms = assets.profils ?? 0;
     const badgeCount = assets.badges ?? 0;
+
+    const activitySegments = [
+        { label: "Autres", value: totals.autre, color: "#9FE1CB" },
+        { label: "RETEX", value: totals.retex, color: "#fd8235" },
+        { label: "Resolve", value: totals.resolve, color: "#c49a6c" },
+    ].filter(item => item.value > 0);
+
+    const renderHorizontalSegments = (items, total, emptyLabel = "Aucune donnée") => {
+        if (!items.length || total <= 0) {
+            return `<div class="hm-hbar-empty">${emptyLabel}</div>`;
+        }
+
+        return `
+            <div class="hm-hbar-track">
+                ${items.map(({ label, value, color }) => `
+                    <div
+                        class="hm-hbar-segment"
+                        style="width:${(value / total) * 100}%;background:${color};"
+                        title="${label}: ${value}"
+                    >
+                        <span class="hm-hbar-segment-label">${label}</span>
+                    </div>
+                `).join("")}
+            </div>
+        `;
+    };
+
+    const renderPlatformSegments = (entries) => {
+        const total = entries.reduce((sum, [, count]) => sum + count, 0);
+
+        if (!entries.length || total <= 0) {
+            return `<div class="hm-hbar-empty">Aucune donnée</div>`;
+        }
+
+        return `
+            <div class="hm-hbar-track">
+                ${entries.map(([platform, count]) => `
+                    <div
+                        class="hm-hbar-segment"
+                        style="width:${(count / total) * 100}%;background:${platformToColor.get(platform)};"
+                        title="${platform}: ${count}"
+                    >
+                        <span class="hm-hbar-segment-label">${count}</span>
+                    </div>
+                `).join("")}
+            </div>
+        `;
+    };
 
     const sharedStyle = `
       <style>
@@ -541,27 +585,37 @@ const init = async () => {
           opacity: 0.92;
         }
 
+        .hm-top-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 290px;
+          gap: 1rem;
+          align-items: center;
+          margin-bottom: 1rem;
+          min-width: 0;
+        }
+
         .hm-heatmap-panel {
           min-width: 0;
-          margin-bottom: 1rem;
+          margin-bottom: 0;
+          display: flex;
+          align-items: center;
+          overflow: visible;
         }
 
         .hm-heatmap-block {
-          display: block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           width: 100%;
           min-width: 0;
+          height: 100%;
+          padding-block: 0.25rem;
+          overflow: visible;
         }
 
         .hm-below-grid {
-          display: grid;
-          grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
-          column-gap: 3.25rem;
-          row-gap: 1rem;
-          align-items: start;
-        }
-
-        .hm-below-grid > * {
-          min-width: 0;
+          display: block;
+          margin-bottom: 1rem;
         }
 
         .hm-recent-panel {
@@ -640,17 +694,51 @@ const init = async () => {
         }
 
         .hm-heatmap-scroll {
+          display: block;
           width: 100%;
+          max-width: 100%;
+          min-width: 0;
           overflow-x: auto;
           overflow-y: hidden;
           -webkit-overflow-scrolling: touch;
+          overscroll-behavior: contain;
+          overscroll-behavior-x: contain;
+          overscroll-behavior-y: contain;
+          touch-action: pan-x;
+          scrollbar-gutter: stable;
           scrollbar-width: thin;
-          padding-bottom: 0.35rem;
+          scrollbar-color: var(--hm-accent-soft) color-mix(in srgb, var(--hm-empty) 16%, transparent);
+          padding-bottom: 10px;
+        }
+
+        .hm-heatmap-scroll::-webkit-scrollbar {
+          height: 12px;
+          -webkit-appearance: none;
+        }
+
+        .hm-heatmap-scroll::-webkit-scrollbar-track {
+          background: color-mix(in srgb, var(--hm-empty) 16%, transparent);
+          border-radius: 999px;
+        }
+
+        .hm-heatmap-scroll::-webkit-scrollbar-thumb {
+          background: var(--hm-accent-soft);
+          border-radius: 999px;
+          border: 2px solid transparent;
+          background-clip: padding-box;
+        }
+
+        .hm-heatmap-scroll::-webkit-scrollbar-thumb:hover {
+          background: var(--hm-accent);
+          background-clip: padding-box;
         }
 
         .hm-heatmap-inner {
+          display: inline-block;
           width: ${totalWidth}px;
           min-width: ${totalWidth}px;
+          max-width: none;
+          vertical-align: top;
         }
 
         .hm-day {
@@ -693,14 +781,41 @@ const init = async () => {
 
         .hm-detail {
           min-width: 0;
-          min-height: 64px;
+          width: 100%;
+          max-width: 290px;
+          height: 260px;
+          min-height: 260px;
+          max-height: 260px;
           color: var(--hm-text);
           margin-top: 0;
-          width: 100%;
-          overflow: hidden;
+          overflow-y: auto;
+          overflow-x: hidden;
+          scrollbar-width: thin;
+          box-sizing: border-box;
+          align-self: center;
         }
 
-        .hm-summary { margin-top: 1rem; }
+        .hm-detail-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            background: var(--background);
+            padding: 0.35rem 0 0.7rem 0;
+            margin: -0.15rem 0 0.7rem 0;
+            border-bottom: 1px solid var(--hm-border);
+        }
+
+        .hm-detail-body {
+          min-width: 0;
+        }
+
+        .hm-summary {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+        }
+
         .hm-detail em { color: var(--hm-muted); }
         .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
         .hm-detail li { margin: .3rem 0; }
@@ -790,124 +905,102 @@ const init = async () => {
           letter-spacing: -0.01em;
         }
 
-        .hm-donut-and-bars {
+        .hm-summary-block {
           display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 3rem;
-          width: 100%;
-          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 0.65rem;
         }
 
-        .hm-donut-chart {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-          margin-top: 1.5rem;
-        }
-
-        .hm-donut-svg {
-          width: 100px;
-          height: 100px;
-        }
-
-        .hm-donut-total {
-          font-size: 1.1rem;
-          font-weight: bold;
-          fill: currentColor;
+        .hm-summary-title {
+          font-size: 0.95rem;
+          font-weight: 700;
           color: var(--hm-text);
         }
 
-        .hm-donut-legend {
+        .hm-hbar-track {
+          width: 100%;
+          min-height: 44px;
           display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
+          overflow: hidden;
+          border: 1px solid var(--hm-border);
+          border-radius: 10px;
+          background: color-mix(in srgb, var(--hm-empty) 18%, transparent);
         }
 
-        .hm-donut-legend-item {
+        .hm-hbar-segment {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
-          font-size: 0.9rem;
+          justify-content: center;
+          min-width: 26px;
+          padding: 0.55rem 0.45rem;
+          color: #fff;
+          font-size: 0.84rem;
+          font-weight: 700;
+          line-height: 1.1;
+          white-space: nowrap;
+          border-right: 1px solid rgba(0, 0, 0, 0.22);
         }
 
-        .hm-donut-legend-color {
-          display: inline-block;
-          width: 12px;
-          height: 12px;
-          border-radius: 2px;
+        .hm-hbar-segment:last-child {
+          border-right: none;
         }
 
-        .hm-bars-container {
+        .hm-hbar-segment-label {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .hm-hbar-legend {
           display: flex;
-          gap: 3rem;
-          align-items: flex-start;
           flex-wrap: wrap;
+          gap: 0.5rem 1rem;
         }
 
-        .hm-bar-chart {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.3rem;
-          width: 120px;
+        .hm-hbar-legend-global {
+          margin-top: 0.25rem;
         }
 
-        .hm-bar-title {
-          font-size: 0.9rem;
-          font-weight: 500;
-          width: 100%;
-          text-align: center;
-        }
-
-        .hm-bar-and-legend {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.5rem;
-        }
-
-        .hm-bar {
-          width: 20px;
-          height: 100px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          border-left: 1px solid var(--hm-border);
-          border-bottom: 1px solid var(--hm-border);
-          position: relative;
-        }
-
-        .hm-bar-segment {
-          width: 100%;
-          transition: height 0.3s ease;
-          white-space: nowrap;
-        }
-
-        .hm-bar-legend {
-          display: flex;
-          flex-direction: column;
-          gap: 0.3rem;
-          font-size: 0.8rem;
-          min-width: 100px;
-        }
-
-        .hm-bar-legend-item {
-          display: flex;
+        .hm-hbar-legend-item {
+          display: inline-flex;
           align-items: center;
-          gap: 0.5rem;
-          white-space: nowrap;
+          gap: 0.45rem;
+          font-size: 0.84rem;
+          color: var(--hm-muted);
         }
 
-        .hm-bar-legend-color {
-          display: inline-block;
+        .hm-hbar-legend-color {
           width: 12px;
           height: 12px;
-          border-radius: 2px;
+          border-radius: 3px;
+          flex: 0 0 auto;
+        }
+
+        .hm-hbar-empty {
+          padding: 0.85rem 1rem;
+          border: 1px dashed var(--hm-border);
+          border-radius: 10px;
+          color: var(--hm-muted);
+          font-size: 0.9rem;
         }
 
         @media (max-width: 980px) {
-          .hm-below-grid {
+          .hm-top-grid {
             grid-template-columns: 1fr;
+            align-items: stretch;
+          }
+
+          .hm-heatmap-panel,
+          .hm-heatmap-block {
+            overflow: visible;
+          }
+
+          .hm-detail {
+            max-width: 100%;
+            width: 100%;
+            height: 220px;
+            min-height: 220px;
+            max-height: 220px;
+            align-self: stretch;
           }
         }
 
@@ -930,15 +1023,6 @@ const init = async () => {
             font-size: 2rem;
           }
 
-          .hm-donut-chart {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-
-          .hm-bars-container {
-            gap: 1.5rem;
-          }
-
           .hm-legend-row {
             align-items: flex-start;
           }
@@ -951,6 +1035,20 @@ const init = async () => {
 
           .hm-badge-img {
             height: 48px;
+          }
+
+          .hm-hbar-track {
+            min-height: 38px;
+          }
+
+          .hm-hbar-segment {
+            font-size: 0.76rem;
+            padding: 0.45rem 0.25rem;
+          }
+
+          .hm-hbar-legend {
+            flex-direction: column;
+            gap: 0.35rem;
           }
         }
       </style>
@@ -992,18 +1090,18 @@ const init = async () => {
                 <div class="hm-badges-row">
                     ${badges.map((badge) => `
                         <a
-                        class="hm-badge-link"
-                        href="${badge.href}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="${badge.alt}"
+                          class="hm-badge-link"
+                          href="${badge.href}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="${badge.alt}"
                         >
-                        <img
+                          <img
                             class="hm-badge-img"
                             src="./${badge.src}"
                             alt="${badge.alt}"
                             loading="lazy"
-                        >
+                          >
                         </a>
                     `).join("")}
                 </div>
@@ -1016,56 +1114,65 @@ const init = async () => {
         heatmapRoot.innerHTML = `
         ${sharedStyle}
 
-        <div class="hm-heatmap-panel">
-          <div class="hm-heatmap-block">
-            <div class="hm-heatmap-scroll">
-              <div class="hm-heatmap-inner">
-                <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">${monthHeader}</div>
-                <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>
+        <div class="hm-top-grid">
+          <div class="hm-heatmap-panel">
+            <div class="hm-heatmap-block">
+              <div class="hm-heatmap-scroll" tabindex="0" aria-label="Heatmap scrollable horizontalement">
+                <div class="hm-heatmap-inner">
+                  <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">${monthHeader}</div>
+                  <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>
+                </div>
+              </div>
+
+              <div class="hm-legend-row">
+                <div class="hm-legend">
+                  -
+                  <div class="hm-legend-box" style="background:var(--hm-empty)"></div>
+                  <div class="hm-legend-box" style="background:#fdca98"></div>
+                  <div class="hm-legend-box" style="background:#fda460"></div>
+                  <div class="hm-legend-box" style="background:#fd8235"></div>
+                  <div class="hm-legend-box" style="background:#e24b0f"></div>
+                  <div class="hm-legend-box" style="background:#9c2f07"></div>
+                  +
+                </div>
+
+                <div class="hm-milestone-legend">
+                  <span class="hm-milestone-key">
+                    <span class="hm-milestone-letter">S</span>
+                    <span>Création du site</span>
+                  </span>
+                  <span class="hm-milestone-key">
+                    <span class="hm-milestone-letter">H</span>
+                    <span>Ajout de la heatmap</span>
+                  </span>
+                </div>
+
+                <div class="hm-streak-inline">
+                  <span class="hm-streak-mini" title="Série actuelle">
+                    <span class="hm-streak-mini-label">Série</span>
+                    <strong class="hm-streak-mini-value">${currentStreak}j</strong>
+                  </span>
+                  <span class="hm-streak-mini-label"> · </span>
+                  <span class="hm-streak-mini" title="Meilleure série">
+                    <span class="hm-streak-mini-label">Record</span>
+                    <strong class="hm-streak-mini-value">${longestStreak}j</strong>
+                  </span>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="hm-legend-row">
-              <div class="hm-legend">
-                -
-                <div class="hm-legend-box" style="background:var(--hm-empty)"></div>
-                <div class="hm-legend-box" style="background:#fdca98"></div>
-                <div class="hm-legend-box" style="background:#fda460"></div>
-                <div class="hm-legend-box" style="background:#fd8235"></div>
-                <div class="hm-legend-box" style="background:#e24b0f"></div>
-                <div class="hm-legend-box" style="background:#9c2f07"></div>
-                +
-              </div>
-
-              <div class="hm-milestone-legend">
-                <span class="hm-milestone-key">
-                  <span class="hm-milestone-letter">S</span>
-                  <span>Création du site</span>
-                </span>
-                <span class="hm-milestone-key">
-                  <span class="hm-milestone-letter">H</span>
-                  <span>Ajout de la heatmap</span>
-                </span>
-              </div>
-
-              <div class="hm-streak-inline">
-                <span class="hm-streak-mini" title="Série actuelle">
-                  <span class="hm-streak-mini-label">Série</span>
-                  <strong class="hm-streak-mini-value">${currentStreak}j</strong>
-                </span>
-                <span class="hm-streak-mini-label"> · </span>
-                <span class="hm-streak-mini" title="Meilleure série">
-                  <span class="hm-streak-mini-label">Record</span>
-                  <strong class="hm-streak-mini-value">${longestStreak}j</strong>
-                </span>
-              </div>
+          <div class="hm-detail" id="hm-detail">
+            <div class="hm-detail-sticky">
+              <span class="hm-date">Détail</span>
+            </div>
+            <div class="hm-detail-body">
+              <em>Clique sur un jour pour voir les activités</em>
             </div>
           </div>
         </div>
 
         <div class="hm-below-grid">
-          <div class="hm-detail" id="hm-detail"><em>Clique sur un jour pour voir les activités</em></div>
-
           <aside class="hm-recent-panel">
             <span class="hm-recent-title">Activités récentes</span>
             <div class="hm-recent-list">
@@ -1076,64 +1183,67 @@ const init = async () => {
 
         <div class="hm-summary">
             <span class="hm-date">Compteurs globaux</span>
-            <div class="hm-donut-and-bars">
-                <div class="hm-donut-chart">
-                    <svg viewBox="0 0 100 100" class="hm-donut-svg">
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hm-empty)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="#c49a6c" stroke-width="8" stroke-dasharray="${resolvePercent * 2.83} 283" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="#fd8235" stroke-width="8" stroke-dasharray="${retexPercent * 2.83} 283" stroke-dashoffset="${-resolvePercent * 2.83}" transform="rotate(-90 50 50)" />
-                        <circle cx="50" cy="50" r="45" fill="none" stroke="#9FE1CB" stroke-width="8" stroke-dasharray="${autrePercent * 2.83} 283" stroke-dashoffset="${-(resolvePercent + retexPercent) * 2.83}" transform="rotate(-90 50 50)" />
-                        <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" class="hm-donut-total" fill="currentColor">${totalActivities}</text>
-                    </svg>
-                    <div class="hm-donut-legend">
-                        <div class="hm-donut-legend-item"><span class="hm-donut-legend-color" style="background: #c49a6c;"></span><span>Resolve: ${totals.resolve}</span></div>
-                        <div class="hm-donut-legend-item"><span class="hm-donut-legend-color" style="background: #fd8235;"></span><span>RETEX: ${totals.retex}</span></div>
-                        <div class="hm-donut-legend-item"><span class="hm-donut-legend-color" style="background: #9FE1CB;"></span><span>Autre: ${totals.autre}</span></div>
-                    </div>
-                </div>
-                <div class="hm-bars-container">
-                    <div class="hm-bar-chart">
-                        <span class="hm-bar-title">RETEX</span>
-                        <div class="hm-bar-and-legend">
-                            <div class="hm-bar">
-                                ${allRetexPlatforms.map(([platform, count]) => {
-            const barColor = platformToColor.get(platform);
-            return `<div class="hm-bar-segment" style="height: ${(count / maxRetexCount) * 100}%; background: ${barColor};" title="${platform}: ${count}"></div>`;
-        }).join("")}
-                            </div>
-                            <div class="hm-bar-legend">
-                                ${topRetexPlatformsForLegend.map(([platform, count]) => {
-            const legendColor = platformToColor.get(platform);
-            return `<div class="hm-bar-legend-item"><span class="hm-bar-legend-color" style="background: ${legendColor};"></span><span>${platform}: ${count}</span></div>`;
-        }).join("")}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hm-bar-chart">
-                        <span class="hm-bar-title">Resolve</span>
-                        <div class="hm-bar-and-legend">
-                            <div class="hm-bar">
-                                ${allResolvePlatforms.map(([platform, count]) => {
-            const barColor = platformToColor.get(platform);
-            return `<div class="hm-bar-segment" style="height: ${(count / maxResolveCount) * 100}%; background: ${barColor};" title="${platform}: ${count}"></div>`;
-        }).join("")}
-                            </div>
-                            <div class="hm-bar-legend">
-                                ${topResolvePlatformsForLegend.map(([platform, count]) => {
-            const legendColor = platformToColor.get(platform);
-            return `<div class="hm-bar-legend-item"><span class="hm-bar-legend-color" style="background: ${legendColor};"></span><span>${platform}: ${count}</span></div>`;
-        }).join("")}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="hm-summary-block">
+                <div class="hm-summary-title">Activités</div>
+                ${renderHorizontalSegments(activitySegments, totalActivities, "Aucune activité")}
             </div>
+
+            <div class="hm-summary-block">
+                <div class="hm-summary-title">RESOLVE par plateforme</div>
+                ${renderPlatformSegments(allResolvePlatforms)}
+            </div>
+
+            <div class="hm-summary-block">
+                <div class="hm-summary-title">RETEX par plateforme</div>
+                ${renderPlatformSegments(allRetexPlatforms)}
+            </div>
+
+            ${globalLegendHtml}
         </div>
         `;
 
         const scrollEl = heatmapRoot.querySelector(".hm-heatmap-scroll");
+
         if (scrollEl) {
-            scrollEl.scrollLeft = Math.max(0, scrollEl.scrollWidth - scrollEl.clientWidth);
+            requestAnimationFrame(() => {
+                scrollEl.scrollLeft = Math.max(0, scrollEl.scrollWidth - scrollEl.clientWidth);
+            });
+
+            scrollEl.addEventListener("wheel", (event) => {
+                if (scrollEl.scrollWidth <= scrollEl.clientWidth) return;
+
+                const delta = Math.abs(event.deltaY) > Math.abs(event.deltaX)
+                    ? event.deltaY
+                    : event.deltaX;
+
+                if (delta === 0) return;
+
+                const maxScrollLeft = scrollEl.scrollWidth - scrollEl.clientWidth;
+                const next = Math.max(0, Math.min(maxScrollLeft, scrollEl.scrollLeft + delta));
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                scrollEl.scrollLeft = next;
+            }, { passive: false, capture: true });
+
+            scrollEl.addEventListener("keydown", (event) => {
+                const step = 60;
+                if (event.key === "ArrowLeft") {
+                    event.preventDefault();
+                    scrollEl.scrollLeft -= step;
+                } else if (event.key === "ArrowRight") {
+                    event.preventDefault();
+                    scrollEl.scrollLeft += step;
+                } else if (event.key === "Home") {
+                    event.preventDefault();
+                    scrollEl.scrollLeft = 0;
+                } else if (event.key === "End") {
+                    event.preventDefault();
+                    scrollEl.scrollLeft = scrollEl.scrollWidth;
+                }
+            });
         }
     }
 
@@ -1150,7 +1260,14 @@ const init = async () => {
             if (!detail) return;
 
             if (!count || !d) {
-                detail.innerHTML = `<span class="hm-date">${date}</span> — <em>Aucune activité enregistrée.</em>`;
+                detail.innerHTML = `
+                    <div class="hm-detail-sticky">
+                        <span class="hm-date">${date}</span>
+                    </div>
+                    <div class="hm-detail-body">
+                        <em>Aucune activité enregistrée.</em>
+                    </div>
+                `;
                 return;
             }
 
@@ -1160,10 +1277,14 @@ const init = async () => {
                 : "";
 
             detail.innerHTML = `
-                <span class="hm-date">${date}</span>
-                <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
-                <ul>${items}</ul>
-                ${milestoneText}
+                <div class="hm-detail-sticky">
+                    <span class="hm-date">${date}</span>
+                    <span class="hm-count">${count} activité${count > 1 ? "s" : ""}</span>
+                </div>
+                <div class="hm-detail-body">
+                    <ul>${items}</ul>
+                    ${milestoneText}
+                </div>
             `;
         });
     });
