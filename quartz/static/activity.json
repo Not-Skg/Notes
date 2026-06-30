@@ -1131,17 +1131,18 @@
     }
   },
   "2026-06-30": {
-    "count": 4,
+    "count": 5,
     "activités": [
       "Resolve — Gladiator · Osint · YouArePlayer",
       "Resolve — Grandpa's souvenir · Osint · YouArePlayer",
       "Resolve — Battle · fun · YouArePlayer",
-      "Resolve — Pepsi · Osint · YouArePlayer"
+      "Resolve — Pepsi · Osint · YouArePlayer",
+      "Created — Refontes Compteurs globaux · Heatmap · Site"
     ],
     "stats": {
       "resolve": 4,
       "retex": 0,
-      "autre": 0
+      "autre": 1
     }
   },
   "2026-04-24": {
@@ -1606,7 +1607,7 @@
   "__totaux__": {
     "resolve": 257,
     "retex": 160,
-    "autre": 27
+    "autre": 28
   },
   "__assets__": {
     "profils": 6,
