@@ -1,5 +1,4 @@
 @use "./base.scss";
-
 // put your custom CSS here!
 
 pre {
@@ -11,25 +10,21 @@ article img {
 }
 
 // ImageLightbox
-
 .img-lightbox {
   position: fixed;
   inset: 0;
   z-index: 9999;
   display: none;
 }
-
 .img-lightbox.is-open {
   display: block;
 }
-
 .img-lightbox-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(4px);
 }
-
 .img-lightbox-dialog {
   position: relative;
   z-index: 1;
@@ -42,7 +37,6 @@ article img {
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
-
 .img-lightbox-image {
   display: block;
   max-width: 100%;
@@ -51,7 +45,6 @@ article img {
   border-radius: 10px;
   object-fit: contain;
 }
-
 .img-lightbox-caption {
   margin: 0.75rem 0 0;
   text-align: center;
@@ -59,7 +52,6 @@ article img {
   font-size: 0.92rem;
   line-height: 1.4;
 }
-
 .img-lightbox-close {
   position: absolute;
   top: 0.65rem;
@@ -76,38 +68,37 @@ article img {
   line-height: 1;
   cursor: pointer;
 }
-
 .img-lightbox-close:hover {
   background: rgba(255, 255, 255, 0.18);
 }
 
-// Plateform Cards
-
+// Platform Cards
 .platform-cards-section {
   margin-top: 2rem;
 }
-
 .platform-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .platform-card {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
-  padding: 1rem;
-  background: rgba(17, 19, 23, 0.72);
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: border-color .14s ease, box-shadow .14s ease;
 }
-
+.platform-card:hover {
+  border-color: #ff8a3d;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
 .platform-card-top {
   display: flex;
   align-items: center;
   gap: 0.9rem;
   margin-bottom: 0.8rem;
 }
-
 .platform-logo {
   width: 52px;
   height: 52px;
@@ -115,34 +106,28 @@ article img {
   border-radius: 10px;
   flex-shrink: 0;
 }
-
 .platform-card h3 {
   margin: 0;
   font-size: 1rem;
 }
-
 .platform-username {
   margin: 0.2rem 0 0;
   color: var(--secondary);
   font-size: 0.9rem;
 }
-
 .platform-description {
   margin: 0 0 1rem;
   line-height: 1.5;
 }
-
 .platform-card a {
   display: inline-block;
   color: #fd8235;
   font-weight: 600;
   text-decoration: none;
 }
-
 .platform-card a:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 700px) {
   .platform-cards {
     grid-template-columns: 1fr;

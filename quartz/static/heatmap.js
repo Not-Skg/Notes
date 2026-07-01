@@ -143,15 +143,51 @@ const init = async () => {
     const recentActivitiesHtml = recentActivities.length
         ? recentActivities.map(item => `
             <div class="hm-recent-item">
-                <div class="hm-recent-meta">
+                <div class="hm-recent-top">
+                    <div class="hm-recent-tags">
+                        <span class="hm-recent-badge" style="background:color-mix(in srgb, ${item.typeColor} 16%, transparent);color:${item.typeColor}">${item.typeLabel}</span>
+                        <span class="hm-recent-platform" style="--dot-color:${item.typeColor}">${item.platform}</span>
+                    </div>
                     <span class="hm-recent-date">${item.date}</span>
-                    <span class="hm-recent-type" style="color:${item.typeColor}">— ${item.typeLabel}</span>
                 </div>
                 <div class="hm-recent-name">${item.name}</div>
-                <div class="hm-recent-platform">${item.platform}</div>
             </div>
         `).join("")
         : `<div class="hm-recent-empty">Aucune activité récente</div>`;
+
+    const recentRetex = Object.keys(data)
+        .filter(date => date !== "__totaux__" && date !== "__badges__" && date !== "__assets__")
+        .sort((a, b) => new Date(b) - new Date(a))
+        .flatMap(date => {
+            const day = data[date];
+            if (!day?.activités) return [];
+            return day.activités
+                .filter(activity => extractType(activity) === "Retex")
+                .map(activity => ({
+                    date,
+                    type: "Retex",
+                    typeLabel: "RETEX",
+                    typeColor: ACTIVITY_COLORS.Retex,
+                    name: extractName(activity),
+                    platform: extractPlatform(activity),
+                }));
+        })
+        .slice(0, 6);
+
+    const recentRetexHtml = recentRetex.length
+        ? recentRetex.map(item => `
+            <div class="hm-recent-item">
+                <div class="hm-recent-top">
+                    <div class="hm-recent-tags">
+                        <span class="hm-recent-badge" style="background:color-mix(in srgb, ${item.typeColor} 16%, transparent);color:${item.typeColor}">${item.typeLabel}</span>
+                        <span class="hm-recent-platform" style="--dot-color:${item.typeColor}">${item.platform}</span>
+                    </div>
+                    <span class="hm-recent-date">${item.date}</span>
+                </div>
+                <div class="hm-recent-name">${item.name}</div>
+            </div>
+        `).join("")
+        : `<div class="hm-recent-empty">Aucun RETEX récent</div>`;
 
     const platformCounts = { retex: {}, resolve: {} };
     Object.keys(data).forEach(date => {
@@ -358,20 +394,27 @@ const init = async () => {
             Retex: "#fd8235",
             Created: "#9FE1CB",
         };
+        const labels = {
+            Resolve: "RESOLVED",
+            Retex: "RETEX",
+            Created: "CREATED",
+        };
         const dashIdx = text.indexOf(" — ");
-        if (dashIdx === -1) return `<li>${text}</li>`;
+        if (dashIdx === -1) return `<li class="hm-detail-item"><div class="hm-detail-item-name">${text}</div></li>`;
         const keyword = text.slice(0, dashIdx);
         const rest = text.slice(dashIdx + 3);
         const keywordColor = keywords[keyword];
-        if (!keywordColor) return `<li>${text}</li>`;
+        if (!keywordColor) return `<li class="hm-detail-item"><div class="hm-detail-item-name">${text}</div></li>`;
         const parts = rest.split(" · ");
         const name = parts[0];
-        const context = parts.slice(1).join(" · ");
-        return `<li>
-            <span style="color:${keywordColor};font-weight:500">${keyword}</span>
-            <span style="color:${keywordColor};font-weight:300"> — </span>
-            <span style="font-weight:500">${name}</span>
-            ${context ? `<span style="color:var(--hm-muted);font-size:.9em"> · ${context}</span>` : ""}
+        const context = parts.length > 1 ? parts[parts.length - 1] : "";
+        const label = labels[keyword] || keyword.toUpperCase();
+        return `<li class="hm-detail-item">
+            <div class="hm-detail-item-top">
+                <span class="hm-detail-badge" style="background:color-mix(in srgb, ${keywordColor} 16%, transparent);color:${keywordColor}">${label}</span>
+                ${context ? `<span class="hm-detail-platform" style="--dot-color:${keywordColor}">${context}</span>` : ""}
+            </div>
+            <div class="hm-detail-item-name">${name}</div>
         </li>`;
     };
 
@@ -490,29 +533,26 @@ const init = async () => {
         }
 
         .hm-stat-card {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 0;
-          min-height: 122px;
-          padding: 1.1rem 1.2rem;
-          border: 1px solid var(--hm-border);
-          border-radius: 14px;
-          color: var(--hm-text);
-          background: var(--hm-card-bg);
-          text-decoration: none;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0;
+            min-height: 122px;
+            padding: 1.1rem 1.2rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         .hm-stat-link {
-          transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+            display: inline-block;
+            text-decoration: none;
+            transition: color .14s ease, text-decoration-color .14s ease;
         }
 
         .hm-stat-link:hover {
-          transform: translateY(-2px);
-          border-color: var(--hm-accent);
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+            text-decoration: underline;
         }
 
         .hm-stat-value {
@@ -528,7 +568,6 @@ const init = async () => {
           font-size: 1rem;
           line-height: 1.3;
           font-weight: 650;
-          color: var(--hm-text);
           margin-bottom: 0.38rem;
         }
 
@@ -543,7 +582,6 @@ const init = async () => {
           padding: 0.1rem 1.2rem;
           border: 1px solid var(--hm-border);
           border-radius: 8px;
-          background: var(--hm-card-bg);
           color: var(--hm-text);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
@@ -614,7 +652,9 @@ const init = async () => {
         }
 
         .hm-below-grid {
-          display: block;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: 1rem;
           margin-bottom: 1rem;
         }
 
@@ -622,18 +662,15 @@ const init = async () => {
           padding: 1rem 1rem;
           border: 1px solid var(--hm-border);
           border-radius: 12px;
-          background: var(--hm-card-bg);
-          color: var(--hm-text);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
           min-width: 0;
         }
 
         .hm-recent-title {
-          display: block;
-          font-size: 0.95rem;
-          font-weight: 700;
-          color: var(--hm-text);
-          margin-bottom: 0.85rem;
+            display: block;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.85rem;
         }
 
         .hm-recent-list {
@@ -644,7 +681,7 @@ const init = async () => {
 
         .hm-recent-item {
           padding-bottom: 0.72rem;
-          border-bottom: 1px solid var(--hm-border);
+          border-bottom: 1px solid var(--lightgray);
         }
 
         .hm-recent-item:last-child {
@@ -652,40 +689,66 @@ const init = async () => {
           border-bottom: none;
         }
 
-        .hm-recent-meta {
-          display: flex;
-          align-items: center;
-          gap: 0.45rem;
-          flex-wrap: wrap;
-          margin-bottom: 0.18rem;
+        .hm-recent-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.6rem;
+            margin-bottom: 0.42rem;
+            flex-wrap: wrap;
+        }
+
+        .hm-recent-tags {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .hm-recent-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            line-height: 1.3;
         }
 
         .hm-recent-date {
-          font-size: 0.76rem;
-          color: var(--hm-muted);
-        }
-
-        .hm-recent-type {
-          font-size: 0.76rem;
-          font-weight: 700;
-          letter-spacing: 0.02em;
-          white-space: nowrap;
+            font-size: 0.76rem;
+            color: var(--hm-muted);
+            white-space: nowrap;
         }
 
         .hm-recent-name {
-          font-size: 0.93rem;
-          font-weight: 650;
-          color: var(--hm-text);
-          line-height: 1.3;
-          margin-bottom: 0.12rem;
-          word-break: break-word;
+            font-size: 0.87rem;
+            font-weight: 500;
+            color: var(--hm-muted);
+            line-height: 1.3;
+            margin-bottom: 0;
+            word-break: break-word;
         }
 
         .hm-recent-platform {
-          font-size: 0.8rem;
-          color: var(--hm-accent-soft);
-          line-height: 1.25;
-          word-break: break-word;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--hm-muted);
+            line-height: 1.25;
+            word-break: break-word;
+        }
+
+            .hm-recent-platform::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--dot-color, var(--hm-muted));
+            flex-shrink: 0;
         }
 
         .hm-recent-empty {
@@ -774,39 +837,46 @@ const init = async () => {
         }
 
         .hm-detail, .hm-summary {
-          padding: 1rem 1.2rem;
-          border: 1px solid var(--lightgray);
-          border-radius: 8px;
+            border: 1px solid var(--lightgray);
+            border-radius: 8px;
+        }
+        
+        .hm-summary {
+               padding: 1rem 1.2rem;
         }
 
         .hm-detail {
-          min-width: 0;
-          width: 100%;
-          max-width: 290px;
-          height: 260px;
-          min-height: 260px;
-          max-height: 260px;
-          color: var(--hm-text);
-          margin-top: 0;
-          overflow-y: auto;
-          overflow-x: hidden;
-          scrollbar-width: thin;
-          box-sizing: border-box;
-          align-self: center;
-        }
+            min-width: 0;
+            width: 100%;
+            max-width: 290px;
+            height: 260px;
+            min-height: 260px;
+            max-height: 260px;
+            margin-top: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }  
 
         .hm-detail-sticky {
-            position: sticky;
-            top: 0;
+            flex: 0 0 auto;
+            position: static;
             z-index: 3;
-            background: var(--background);
-            padding: 0.35rem 0 0.7rem 0;
-            margin: -0.15rem 0 0.7rem 0;
-            border-bottom: 1px solid var(--hm-border);
+            padding: 0.85rem 1.2rem 0.7rem 1.2rem;
+            margin: 0;
+            border-bottom: 1px solid var(--lightgray);
         }
 
         .hm-detail-body {
-          min-width: 0;
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            padding: 0.7rem 1.2rem 1rem 1.2rem;
         }
 
         .hm-summary {
@@ -817,9 +887,74 @@ const init = async () => {
         }
 
         .hm-detail em { color: var(--hm-muted); }
-        .hm-detail ul { margin: .6rem 0 0; padding-left: 1.2rem; }
-        .hm-detail li { margin: .3rem 0; }
-        .hm-date { color: var(--hm-muted); font-weight: 500; font-size: 1rem; }
+
+        .hm-detail ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+
+        .hm-detail-item {
+            padding-bottom: 0.65rem;
+            border-bottom: 1px solid var(--lightgray);
+        }
+
+        .hm-detail-item:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .hm-detail-item-top {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem !important;
+        }
+
+        .hm-detail-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.16rem 0.5rem;
+            border-radius: 999px;
+            font-size: 0.64rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            line-height: 1.3;
+        }
+
+        .hm-detail-platform {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.74rem;
+            color: var(--hm-muted);
+            line-height: 1.2;
+            word-break: break-word;
+        }
+
+        .hm-detail-platform::before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--dot-color, var(--hm-muted));
+            flex-shrink: 0;
+        }
+
+        .hm-detail-item-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--hm-muted);
+            line-height: 1.3;
+            word-break: break-word;
+        }
+
+        .hm-date { font-weight: 700; font-size: 1.05rem; }
         .hm-count { color: var(--hm-muted); font-size: .85rem; margin-left: .5rem; }
 
         .hm-legend-row {
@@ -913,8 +1048,6 @@ const init = async () => {
 
         .hm-summary-title {
           font-size: 0.95rem;
-          font-weight: 700;
-          color: var(--hm-text);
         }
 
         .hm-hbar-track {
@@ -1002,6 +1135,10 @@ const init = async () => {
             max-height: 220px;
             align-self: stretch;
           }
+
+          .hm-below-grid {
+            grid-template-columns: 1fr;
+          }
         }
 
         @media (max-width: 900px) {
@@ -1068,16 +1205,16 @@ const init = async () => {
                 <span class="hm-stat-label">RETEX publiés</span>
                 <span class="hm-stat-sub">+ ${monthRetex} ce mois</span>
             </div>
-            <a class="hm-stat-card hm-stat-link" href="#mes-plateformes">
+            <div class="hm-stat-card">
                 <strong class="hm-stat-value">${activePlatforms}</strong>
                 <span class="hm-stat-label">Plateformes actives</span>
-                <span class="hm-stat-sub">Voir mes profils</span>
-            </a>
-            <a class="hm-stat-card hm-stat-link" href="#mes-badges">
+                <a class="hm-stat-sub hm-stat-link" href="#mes-plateformes">Voir mes profils</a>
+            </div>
+            <div class="hm-stat-card">
                 <strong class="hm-stat-value">${badgeCount}</strong>
                 <span class="hm-stat-label">Badges obtenus</span>
-                <span class="hm-stat-sub">Voir mes badges</span>
-            </a>
+                <a class="hm-stat-sub hm-stat-link" href="#mes-badges">Voir mes badges</a>
+            </div>
         </div>
         `;
     }
@@ -1177,6 +1314,13 @@ const init = async () => {
             <span class="hm-recent-title">Activités récentes</span>
             <div class="hm-recent-list">
               ${recentActivitiesHtml}
+            </div>
+          </aside>
+
+          <aside class="hm-recent-panel">
+            <span class="hm-recent-title">Derniers RETEX</span>
+            <div class="hm-recent-list">
+              ${recentRetexHtml}
             </div>
           </aside>
         </div>

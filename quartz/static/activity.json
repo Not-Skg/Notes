@@ -1399,6 +1399,19 @@
       "autre": 0
     }
   },
+  "2026-07-01": {
+    "count": 3,
+    "activités": [
+      "Created — Fix DA · Heatmap · Site",
+      "Created — Derniers RETEX · Heatmap · Site",
+      "Resolve — Flag Hunt · fun · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-05-15": {
     "count": 6,
     "activités": [
@@ -1605,9 +1618,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 257,
+    "resolve": 258,
     "retex": 160,
-    "autre": 28
+    "autre": 30
   },
   "__assets__": {
     "profils": 6,
