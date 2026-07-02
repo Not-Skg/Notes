@@ -2,7 +2,8 @@ const init = async () => {
     const heatmapRoot = document.getElementById("heatmap-root");
     const statsRoot = document.getElementById("site-stats-root");
     const badgesRoot = document.getElementById("badges-root");
-    if (!heatmapRoot && !statsRoot && !badgesRoot) return;
+    const ctfStatsRoot = document.getElementById("stats-ctf");
+    if (!heatmapRoot && !statsRoot && !badgesRoot && !ctfStatsRoot) return;
 
     const base = document.querySelector('meta[name="base-url"]')?.content || "";
 
@@ -88,6 +89,77 @@ const init = async () => {
             alt: "1er MOOC OSINT-FR",
         }
     ];
+
+    const ctfResults = [
+        {
+            name: "Le Caire nid d'espions",
+            date: "Juin 2026",
+            position: 29,
+            total: 112,
+            solo: false,
+            href: "/Skg-Notes/Le-Caire-nid-d'espions/Le-Caire-nid-d'espions",
+            accent: "#9b928b",
+            note: "",
+            logoSrc: "Logo_CTF/L_LCS.png",
+        },
+        {
+            name: "Medileak 3",
+            date: "Mai 2026",
+            position: 17,
+            total: 186,
+            solo: false,
+            href: "/Skg-Notes/Medileak-3/Medileak-3",
+            accent: "#ff6b2b",
+            note: "Parmis 36 équipes FINISHER",
+            logoSrc: "Logo_CTF/L_M3.png",
+        },
+        {
+            name: "Bleuet V5",
+            date: "Mai 2026",
+            position: 18,
+            total: 220,
+            solo: false,
+            href: "/Skg-Notes/Bleuet-de-France-V5/Bleuet-de-France-V5",
+            accent: "#ff6b2b",
+            note: "Solo v Squad : 10ᵉ meilleur joueur.",
+            logoSrc: "Logo_CTF/L_BV5.png",
+        },
+        {
+            name: "Bellatrix",
+            date: "Mars 2026",
+            position: 82,
+            total: 1006,
+            solo: true,
+            href: "/Skg-Notes/Bellatrix-Orion-26/Bellatrix-Orion-26",
+            accent: "#ff6b2b",
+            note: "",
+            logoSrc: "Logo_CTF/L_BO.png",
+        },
+    ];
+
+    const getCtfRankColor = (position, total) => {
+        if (!position || !total) return "var(--hm-muted)";
+        const percentile = position / total;
+        if (position <= 3) return "#e24b0f";
+        if (percentile <= 0.10) return "#fd8235";
+        if (percentile <= 0.30) return "#c49a6c";
+        return "var(--hm-muted)";
+    };
+
+    const getCtfProgress = (position, total) => {
+        if (!position || !total) return 0;
+        return Math.max(4, Math.min(100, 100 - (position / total) * 100));
+    };
+
+    const getCtfTopPercent = (position, total) => {
+        if (!position || !total) return null;
+        return Math.ceil((position / total) * 100);
+    };
+
+    const formatOrdinal = (n) => {
+        if (n === 1) return "1er";
+        return `${n}ᵉ`;
+    };
 
     const ACTIVITY_COLORS = {
         Resolve: "#c49a6c",
@@ -492,7 +564,7 @@ const init = async () => {
     const sharedStyle = `
       <style>
         @media (prefers-color-scheme: light) {
-          #heatmap-root, #site-stats-root, #badges-root {
+          #heatmap-root, #site-stats-root, #badges-root, #stats-ctf {
             --hm-empty: #b3b3b5;
             --hm-border: rgba(160, 82, 45, 0.3);
             --hm-text: #2a211d;
@@ -508,12 +580,14 @@ const init = async () => {
           .hm-badges-panel {
             box-shadow: none;
           }
+        
+        
         }
 
         @media (prefers-color-scheme: dark) {
-          #heatmap-root, #site-stats-root, #badges-root {
+          #heatmap-root, #site-stats-root, #badges-root, #stats-ctf {
             --hm-empty: #5c5b5b;
-            --hm-border: rgba(255, 255, 255, 0.08);
+            --hm-border: rgba(150, 150, 150, 0.2);
             --hm-text: #ebebec;
             --hm-muted: #a29a95;
             --hm-active: #c4845a;
@@ -523,8 +597,8 @@ const init = async () => {
           }
         }
 
-        #heatmap-root, #site-stats-root, #badges-root { font-family: inherit; }
-        #site-stats-root { margin-bottom: 1.2rem; }
+        #heatmap-root, #site-stats-root, #badges-root, #stats-ctf { font-family: inherit; }
+        #site-stats-root, #stats-ctf { margin-bottom: 1.2rem; }
 
         .hm-site-stats {
           display: grid;
@@ -622,6 +696,236 @@ const init = async () => {
           transform: translateY(-1px);
           opacity: 0.92;
         }
+        
+
+        .hm-ctf-panel {
+            padding: 1.55rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+        }
+
+        .hm-ctf-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.35rem;
+        }
+
+        .hm-ctf-heading {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+        }
+
+        .hm-ctf-icon {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            color: var(--hm-accent);
+            background: color-mix(in srgb, var(--hm-accent) 13%, transparent);
+            font-size: 1.45rem;
+        }
+
+        .hm-ctf-title {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 850;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .hm-ctf-subtitle {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.92rem;
+        }
+
+        .hm-ctf-count {
+            padding: 0.45rem 0.85rem;
+            border-radius: 999px;
+            background: color-mix(in srgb, var(--hm-accent) 18%, transparent);
+            font-size: 0.86rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .hm-ctf-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .hm-ctf-card {
+            position: relative;
+            display: grid;
+            grid-template-columns: 90px minmax(0, 1.25fr) 180px minmax(220px, 1fr);
+            gap: 1.35rem;
+            align-items: center;
+            padding: 1.35rem 1.45rem;
+            border: 1px solid var(--lightgray);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.025);
+            overflow: hidden;
+        }
+
+        .hm-ctf-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            bottom: 12px;
+            width: 4px;
+            border-radius: 999px;
+            background: var(--ctf-accent);
+        }
+
+        .hm-ctf-logo {
+            width: 82px;
+            height: 82px;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .hm-ctf-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .hm-ctf-name {
+            font-size: 1.2rem;
+            font-weight: 850;
+            line-height: 1.2;
+            color: #fff;
+        }
+
+        .hm-ctf-link {
+            text-decoration: none;
+        }
+
+        .hm-ctf-link:hover {
+            color: var(--ctf-accent);
+            text-decoration: underline;
+        }
+
+        .hm-ctf-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.55rem;
+            font-size: 0.88rem;
+        }
+
+        .hm-ctf-top {
+            display: inline-flex;
+            margin-top: 0.75rem;
+            padding: 0.32rem 0.7rem;
+            border-radius: 999px;
+            color: var(--ctf-accent);
+            background: color-mix(in srgb, var(--ctf-accent) 17%, transparent);
+            font-weight: 800;
+            font-size: 0.86rem;
+        }
+
+        .hm-ctf-rank-block {
+            border-left: 1px solid var(--lightgray);
+            padding-left: 1.35rem;
+        }
+
+        .hm-ctf-rank-label,
+            .hm-ctf-progress-label {
+            font-size: 0.9rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .hm-ctf-rank-value {
+            color: var(--ctf-accent);
+            font-size: 2.25rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .hm-ctf-rank-total {
+            margin-top: 0.35rem;
+            font-size: 0.95rem;
+        }
+
+        .hm-ctf-progress-block {
+            border-left: 1px solid var(--lightgray);
+            padding-left: 1.35rem;
+        }
+
+        .hm-ctf-progress-top {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .hm-ctf-progress-percent {
+            color: var(--ctf-accent);
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        .hm-ctf-progress {
+            height: 13px;
+            margin-top: 0.75rem;
+            border-radius: 999px;
+            overflow: hidden;
+            background: rgba(150, 150, 150, 0.2);
+        }
+
+        .hm-ctf-progress-fill {
+            height: 100%;
+            border-radius: inherit;
+            background: var(--ctf-accent);
+        }
+
+        .hm-ctf-progress-caption {
+            margin-top: 0.6rem;
+            font-size: 0.86rem;
+        }
+
+        @media (max-width: 980px) {
+            .hm-ctf-card {
+                grid-template-columns: 90px 1fr;
+        }
+
+             .hm-ctf-rank-block,
+            .hm-ctf-progress-block {
+                grid-column: 1 / -1;
+                border-left: none;
+                padding-left: 0;
+            }
+            }
+
+                   @media (max-width: 560px) {
+            .hm-ctf-panel {
+                padding: 1rem;
+            }
+
+             .hm-ctf-card {
+                grid-template-columns: 1fr;
+            }
+
+             .hm-ctf-logo {
+                width: 70px;
+                height: 70px;
+            }
+
+             .hm-ctf-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            }
 
         .hm-top-grid {
           display: grid;
@@ -1244,6 +1548,68 @@ const init = async () => {
                 </div>
             </div>
         </div>
+        `;
+    }
+
+    if (ctfStatsRoot) {
+        ctfStatsRoot.innerHTML = `
+        ${sharedStyle}
+        <section class="hm-ctf-panel">
+            <div class="hm-ctf-header">
+                <div class="hm-ctf-heading">
+                    <div>
+                        <span class="hm-ctf-subtitle">Aperçu de mes performances sur les CTF récents.</span>
+                    </div>
+                </div>
+                <span class="hm-ctf-count">${ctfResults.length} CTF récent${ctfResults.length > 1 ? "s" : ""}</span>
+            </div>
+
+               <div class="hm-ctf-list">
+                ${ctfResults.map(item => {
+            const rankColor = getCtfRankColor(item.position, item.total);
+            const accent = item.accent || rankColor;
+            const progress = getCtfProgress(item.position, item.total);
+            const topPercent = getCtfTopPercent(item.position, item.total);
+            const unit = item.solo ? "participants" : "équipes";
+
+            return `
+                    <article class="hm-ctf-card" style="--ctf-accent:${accent}">
+                        <div class="hm-ctf-logo">
+                            ${item.logoSrc
+                    ? `<img src="./${item.logoSrc}" alt="${item.name}">`
+                    : (item.logo || item.name.slice(0, 2).toUpperCase())
+                }
+                        </div>
+
+                           <div>
+                            <div class="hm-ctf-name">
+                                ${item.href ? `<a class="hm-ctf-link" href="${item.href}">${item.name}</a>` : item.name}
+                            </div>
+                            <div class="hm-ctf-meta">${item.date} · ${item.solo ? "Solo" : "Équipe"}</div>
+                            <span class="hm-ctf-top">Top ${topPercent}%</span>
+                        </div>
+
+                           <div class="hm-ctf-rank-block">
+                            <div class="hm-ctf-rank-label">Classement</div>
+                            <div class="hm-ctf-rank-value">${formatOrdinal(item.position)}</div>
+                            <div class="hm-ctf-rank-total">sur ${item.total} ${unit}</div>
+                        </div>
+
+                           <div class="hm-ctf-progress-block">
+                            <div class="hm-ctf-progress-top">
+                                <span class="hm-ctf-progress-label">Participants devancés</span>
+                                <span class="hm-ctf-progress-percent">${Math.round(progress)}%</span>
+                            </div>
+                            <div class="hm-ctf-progress">
+                                <div class="hm-ctf-progress-fill" style="width:${progress}%"></div>
+                            </div>
+                            <div class="hm-ctf-progress-caption">${item.note}</div>
+                        </div>
+                    </article>
+                    `;
+        }).join("")}
+            </div>
+        </section>
         `;
     }
 

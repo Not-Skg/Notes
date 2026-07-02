@@ -392,6 +392,19 @@
       "autre": 1
     }
   },
+  "2026-07-02": {
+    "count": 3,
+    "activités": [
+      "Created — Stats CTF · Heatmap · Site",
+      "Created — MAJ Bannières · Site",
+      "Resolve — Caught in act · GEOINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-04-18": {
     "count": 1,
     "activités": [
@@ -1618,9 +1631,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 258,
+    "resolve": 259,
     "retex": 160,
-    "autre": 30
+    "autre": 32
   },
   "__assets__": {
     "profils": 6,

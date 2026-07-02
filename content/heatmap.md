@@ -2,7 +2,7 @@
 title: Journal d'activité
 description: Vue d'ensemble de ma progression
 ---
-![[Ban.jpeg]]
+![[ban1.png]]
 ## Vue d'ensemble de ma progression
 
 <div id="site-stats-root"></div>
@@ -10,6 +10,11 @@ description: Vue d'ensemble de ma progression
 ## Heatmap
 
 <div id="heatmap-root"></div>
+
+---
+## 🏆 Résultats CTF
+
+<div id="stats-ctf"></div>
 
 ---
 ## Mes plateformes

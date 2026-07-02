@@ -1,7 +1,7 @@
 ---
 title: Homepage
 ---
-![[Ban.jpeg]]
+![[ban1.png]]
 > Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même pour des enquêtes que je pourrais faire.
 > Le thème principal, ça sera l'OSINT, mais aussi potentiellement un peu de SOC ou de WEB.
 > *==J'ai pleins d'autres Retex à partager, mais je ne les ai pas mis au propre, donc je vais les uploads au fur et à mesure. Vous pouvez voir l'état d'avancement ici :== [[heatmap|Journal d'activité]].*
