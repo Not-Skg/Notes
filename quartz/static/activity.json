@@ -1611,12 +1611,18 @@
     }
   },
   "2026-07-04": {
-    "count": 1,
+    "count": 7,
     "activités": [
-      "Resolve — Le sens de l'orientation d'un chat · Faits divers · L'appel de la forêt"
+      "Resolve — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt",
+      "Resolve — Pris dans la toile · Petsitter · L'appel de la forêt",
+      "Resolve — Le terrier du lapin · Petsitter · L'appel de la forêt",
+      "Resolve — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
+      "Resolve — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
+      "Resolve — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt",
+      "Resolve — La parade du paon · Acte 2 - Activités · L'appel de la forêt"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 7,
       "retex": 0,
       "autre": 0
     }
@@ -1663,7 +1669,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 271,
+    "resolve": 277,
     "retex": 160,
     "autre": 32
   },
