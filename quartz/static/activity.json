@@ -69,6 +69,27 @@
       "autre": 0
     }
   },
+  "2026-07-03": {
+    "count": 11,
+    "activités": [
+      "Resolve — Reportage animalier · Intro · L'appel de la forêt",
+      "Resolve — Chill comme un capybara · Introduction · L'appel de la forêt",
+      "Resolve — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
+      "Resolve — La mésange babysitter · Petsitter · L'appel de la forêt",
+      "Resolve — Bavard comme une pie · Petsitter · L'appel de la forêt",
+      "Resolve — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
+      "Resolve — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
+      "Resolve — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
+      "Resolve — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
+      "Resolve — L'envol des perroquets · Faits divers · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-19": {
     "count": 3,
     "activités": [
@@ -1589,6 +1610,17 @@
       "autre": 0
     }
   },
+  "2026-07-04": {
+    "count": 1,
+    "activités": [
+      "Resolve — Le sens de l'orientation d'un chat · Faits divers · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-24": {
     "count": 4,
     "activités": [
@@ -1631,7 +1663,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 259,
+    "resolve": 271,
     "retex": 160,
     "autre": 32
   },
