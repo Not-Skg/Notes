@@ -1355,7 +1355,7 @@
     }
   },
   "2026-07-05": {
-    "count": 7,
+    "count": 10,
     "activités": [
       "Resolve — La Mémoire de l'Éléphant · Acte 2 - Développement · L'appel de la forêt",
       "Resolve — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt",
@@ -1363,10 +1363,13 @@
       "Resolve — La Fourmilière d'Informations · Acte 2 - Développement · L'appel de la forêt",
       "Resolve — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
       "Resolve — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — Le trésor des corbeaux · Faits divers · L'appel de la forêt"
+      "Resolve — Le trésor des corbeaux · Faits divers · L'appel de la forêt",
+      "Resolve — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt",
+      "Resolve — La danse des abeilles · Acte 3 - Communication",
+      "Resolve — L'Instinct du Pigeon Voyageur · Acte 3 - Communication"
     ],
     "stats": {
-      "resolve": 7,
+      "resolve": 10,
       "retex": 0,
       "autre": 0
     }
@@ -1689,7 +1692,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 287,
+    "resolve": 290,
     "retex": 160,
     "autre": 32
   },
