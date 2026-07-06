@@ -1,4 +1,4 @@
-<Ce README présente un site personnel dédié au stockage et au partage de retours d’expérience (RETEX), essentiellement autour de l’OSINT, mais aussi de challenges CTF et d’activités liées à la cybersécurité.
+>Ce README présente un site personnel dédié au stockage et au partage de retours d’expérience (RETEX), essentiellement autour de l’OSINT, mais aussi de challenges CTF et d’activités liées à la cybersécurité.
 
 L’objectif est double :
 - Documenter mes recherches et méthodologies
@@ -21,7 +21,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
       - Nb Plateformes actives (avec lien vers profils)
       - Nb Badges obtenus (avec lien vers badges)
 - [x] Section "Activités récentes" automatisé (x dernières activités)
-- [ ] Pareil mais avec "Derniers WUS"
+- [x] Pareil mais avec "Derniers WUS"
 - [x] Remplacement du tableau par des cartes “Mes plateformes”
 - [x] Ajout de streaks d'activités sur Heatmap
 

@@ -262,6 +262,22 @@
       "autre": 1
     }
   },
+  "2026-07-06": {
+    "count": 6,
+    "activités": [
+      "Resolve — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La Toile du Tisserin · Acte 3 - Communication · L'appel de la forêt",
+      "Resolve — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
+      "Resolve — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
+      "Resolve — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — L'énergie du frelon oriental · Acte 3 - Organisation · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-12": {
     "count": 4,
     "activités": [
@@ -1365,8 +1381,8 @@
       "Resolve — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
       "Resolve — Le trésor des corbeaux · Faits divers · L'appel de la forêt",
       "Resolve — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — La danse des abeilles · Acte 3 - Communication",
-      "Resolve — L'Instinct du Pigeon Voyageur · Acte 3 - Communication"
+      "Resolve — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt",
+      "Resolve — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
     ],
     "stats": {
       "resolve": 10,
@@ -1692,7 +1708,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 290,
+    "resolve": 296,
     "retex": 160,
     "autre": 32
   },

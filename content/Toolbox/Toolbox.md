@@ -2,7 +2,7 @@
 tags:
   - Tool
 ---
-![[Ban_tools.jpg]]
+![[WP.png]]
 >[!info] 
 >Ici, je vais partager des outils que j'aime utiliser et que je trouve intéressant. 
 > Ça peut être des outils existants et déjà "mainstream" dans l'osint, comme quelques scripts que j'aurai dev sur mon temps perso et que j'aime utiliser pour gagner du temps dans mes challs.
