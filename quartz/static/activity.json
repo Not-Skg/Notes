@@ -157,6 +157,22 @@
       "autre": 2
     }
   },
+  "2026-07-07": {
+    "count": 6,
+    "activités": [
+      "Resolve — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La balade du zèbre · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-13": {
     "count": 5,
     "activités": [
@@ -1708,7 +1724,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 296,
+    "resolve": 302,
     "retex": 160,
     "autre": 32
   },

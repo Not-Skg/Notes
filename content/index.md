@@ -24,11 +24,8 @@ J'ai commencé l'Osint via Osintopia et IsFred, mais j'aime aussi beaucoup les c
 ---
 # ▸ CHALL
 >  Voici quelques RETEX de challenge sur des plateformes sympas: 
-## Osintopia
-==[Bientôt]==
 ## Osint4Fun
 -  [[Advent Of Osint 2025]]
-- Présentation De Osint4Fun ==[Bientôt]==
 ## TryHackMe
 - [[Have a Break]]
 - [[Letter]]

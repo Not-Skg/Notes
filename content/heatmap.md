@@ -3,7 +3,6 @@ title: Journal d'activité
 description: Vue d'ensemble de ma progression
 ---
 ![[WP_HM.png]]
-
 ## Vue d'ensemble de ma progression
 
 <div id="site-stats-root"></div>
