@@ -999,6 +999,21 @@
       "autre": 0
     }
   },
+  "2026-07-08": {
+    "count": 5,
+    "activités": [
+      "Resolve — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — Le Piège de l'Araignée · Acte 4 - Organisation · L'appel de la forêt",
+      "Resolve — La hiérarchie de la meute · Acte 4 - Organisation · L'appel de la forêt",
+      "Resolve — Tusko · Acte 4 - Organisation · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-25": {
     "count": 1,
     "activités": [
@@ -1724,7 +1739,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 302,
+    "resolve": 307,
     "retex": 160,
     "autre": 32
   },
