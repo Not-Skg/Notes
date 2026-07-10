@@ -1590,6 +1590,17 @@
       "autre": 0
     }
   },
+  "2026-07-10": {
+    "count": 1,
+    "activités": [
+      "Resolve — Noctua · Acte 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-30": {
     "count": 1,
     "activités": [
@@ -1751,7 +1762,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 309,
+    "resolve": 310,
     "retex": 160,
     "autre": 32
   },
