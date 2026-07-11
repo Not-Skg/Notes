@@ -1489,6 +1489,19 @@
       "autre": 1
     }
   },
+  "2026-07-11": {
+    "count": 3,
+    "activités": [
+      "Resolve — Le festin du vautour · Crime · L'appel de la forêt",
+      "Resolve — Le venin du Taïpan · Crime · L'appel de la forêt",
+      "Resolve — La protection de la tortue · Péhuson · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-31": {
     "count": 2,
     "activités": [
@@ -1591,12 +1604,17 @@
     }
   },
   "2026-07-10": {
-    "count": 1,
+    "count": 6,
     "activités": [
-      "Resolve — Noctua · Acte 4 · L'appel de la forêt"
+      "Resolve — Noctua · Acte 4 · L'appel de la forêt",
+      "Resolve — Scorpiox · Acte 4 · L'appel de la forêt",
+      "Resolve — La joie du quokka · Chapitre 2 - Fin · L'appel de la forêt",
+      "Resolve — Le Silence des Mouettes · Chapitre 3 · L'appel de la forêt",
+      "Resolve — La Vigile du Hibou · Crime · L'appel de la forêt",
+      "Resolve — Chargé comme une mule · Péhuson · L'appel de la forêt"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
@@ -1762,7 +1780,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 310,
+    "resolve": 318,
     "retex": 160,
     "autre": 32
   },
