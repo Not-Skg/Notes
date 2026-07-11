@@ -1490,14 +1490,18 @@
     }
   },
   "2026-07-11": {
-    "count": 3,
+    "count": 7,
     "activités": [
       "Resolve — Le festin du vautour · Crime · L'appel de la forêt",
       "Resolve — Le venin du Taïpan · Crime · L'appel de la forêt",
-      "Resolve — La protection de la tortue · Péhuson · L'appel de la forêt"
+      "Resolve — La protection de la tortue · Péhuson · L'appel de la forêt",
+      "Resolve — Le caillou de la loutre · Crime · L'appel de la forêt",
+      "Resolve — La taupe · Péhuson · L'appel de la forêt",
+      "Resolve — Hors de la Tanière · Péhuson · L'appel de la forêt",
+      "Resolve — La vraie joie du quokka · Chapitre 4 · L'appel de la forêt"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 7,
       "retex": 0,
       "autre": 0
     }
@@ -1780,7 +1784,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 318,
+    "resolve": 322,
     "retex": 160,
     "autre": 32
   },
