@@ -92,6 +92,17 @@ const init = async () => {
 
     const ctfResults = [
         {
+            name: "L'appel de la forêt",
+            date: "Juillet 2026",
+            position: 22,
+            total: 202,
+            solo: false,
+            href: "/Notes/Skg-Notes/L'-appel-ded-la-forêt/L'-appel-ded-la-forêt",
+            accent: "#ff6b2b",
+            note: "Finisher",
+            logoSrc: "Logo_CTF/L_AF.png",
+        },
+        {
             name: "Le Caire nid d'espions",
             date: "Juin 2026",
             position: 29,
@@ -281,7 +292,10 @@ const init = async () => {
     const allRetexPlatforms = getAllPlatforms(platformCounts.retex);
     const allResolvePlatforms = getAllPlatforms(platformCounts.resolve);
 
-    const platformColors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#a78bfa", "#34d399"];
+    const platformColors = ["#4ecdc4", "#ff6b6b", "#45b7d1", "#feca57", "#96ceb4",
+    "#a78bfa", "#ff9ff3", "#34d399", "#f472b6", "#60a5fa",
+    "#fb923c", "#facc15", "#2dd4bf", "#c084fc", "#f87171",
+    "#38bdf8", "#a3e635", "#fbbf24", "#e879f9", "#22d3ee"];
 
     const platformToColor = new Map();
     const allPlatforms = [...new Set([...allRetexPlatforms.map(p => p[0]), ...allResolvePlatforms.map(p => p[0])])];

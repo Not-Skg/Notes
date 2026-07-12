@@ -398,6 +398,18 @@
       "autre": 0
     }
   },
+  "2026-07-12": {
+    "count": 2,
+    "activités": [
+      "Resolve — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt",
+      "Created — L'appel de la forêt · Site"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-06-28": {
     "count": 2,
     "activités": [
@@ -1784,9 +1796,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 322,
+    "resolve": 323,
     "retex": 160,
-    "autre": 32
+    "autre": 33
   },
   "__assets__": {
     "profils": 6,

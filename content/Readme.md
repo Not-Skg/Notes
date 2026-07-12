@@ -24,6 +24,8 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Pareil mais avec "Derniers WUS"
 - [x] Remplacement du tableau par des cartes “Mes plateformes”
 - [x] Ajout de streaks d'activités sur Heatmap
+- [ ] Modifier système de couleurs pour éviter les doublons de couleurs dans les compteurs globaux
+- [ ] Check le côté responsive de la partie "Résultats CTF"
 
 **HomePage**
 - [ ] Aperçu journal d'activité (via stats : activités, wu, challs, badges)
