@@ -22,6 +22,18 @@
       "autre": 1
     }
   },
+  "2026-07-13": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ - DA \"Compteurs Globaux\" · Site",
+      "Created — MAJ - Responsiveness \"Resultats CTF\" · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-06-29": {
     "count": 3,
     "activités": [
@@ -1798,7 +1810,7 @@
   "__totaux__": {
     "resolve": 323,
     "retex": 160,
-    "autre": 33
+    "autre": 35
   },
   "__assets__": {
     "profils": 6,

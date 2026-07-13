@@ -97,9 +97,9 @@ const init = async () => {
             position: 22,
             total: 202,
             solo: false,
-            href: "/Notes/Skg-Notes/L'-appel-ded-la-forêt/L'-appel-ded-la-forêt",
+            href: "/Notes/Skg-Notes/L'-appel-de-la-forêt/L'-appel-de-la-forêt",
             accent: "#ff6b2b",
-            note: "Finisher",
+            note: "Parmis 30 équipes FINISHER",
             logoSrc: "Logo_CTF/L_AF.png",
         },
         {
@@ -303,21 +303,249 @@ const init = async () => {
         platformToColor.set(platform, platformColors[i % platformColors.length]);
     });
 
-    const globalLegendHtml = allPlatforms.length
-        ? `
-            <div class="hm-summary-block">
-                <div class="hm-summary-title">Les plateformes</div>
-                <div class="hm-hbar-legend hm-hbar-legend-global">
-                    ${allPlatforms.map((platform) => `
-                        <div class="hm-hbar-legend-item">
-                            <span class="hm-hbar-legend-color" style="background:${platformToColor.get(platform)};"></span>
-                            <span>${platform}</span>
-                        </div>
-                    `).join("")}
-                </div>
+    const scatterPoints = allPlatforms.map((platform) => ({
+        platform,
+        retex: platformCounts.retex[platform] || 0,
+        resolve: platformCounts.resolve[platform] || 0,
+        color: platformToColor.get(platform),
+    }));
+
+    const roundUpToNext10 = (value) => {
+        return Math.max(10, Math.ceil((value + 1) / 10) * 10);
+    };
+
+    const maxScatterX = roundUpToNext10(Math.max(0, ...scatterPoints.map((item) => item.resolve)));
+    const maxScatterY = roundUpToNext10(Math.max(0, ...scatterPoints.map((item) => item.retex)));
+
+    const buildScatterTicks = (max) => {
+        const step = Math.max(10, max / 5);
+        return Array.from({ length: 6 }, (_, i) => Math.round(i * step));
+    };
+
+    const scatterXTicks = buildScatterTicks(maxScatterX);
+    const scatterYTicks = buildScatterTicks(maxScatterY);
+
+    const renderScatterPlot = () => {
+        if (!scatterPoints.length) {
+            return `<div class="hm-hbar-empty">Aucune donnée</div>`;
+        }
+
+           const width = 900;
+        const height = 500;
+
+           const padding = {
+            top: 42,
+            right: 42,
+            bottom: 72,
+            left: 72,
+        };
+
+           const innerWidth = width - padding.left - padding.right;
+        const innerHeight = height - padding.top - padding.bottom;
+
+           const xToPx = value =>
+            padding.left + (value / maxScatterX) * innerWidth;
+
+           const yToPx = value =>
+            height - padding.bottom - (value / maxScatterY) * innerHeight;
+
+           const verticalGrid = scatterXTicks.map(tick => {
+            const x = xToPx(tick);
+
+               return `
+                <line
+                    x1="${x}"
+                    y1="${padding.top}"
+                    x2="${x}"
+                    y2="${height - padding.bottom}"
+                    class="hm-scatter-grid-line"
+                ></line>
+
+                   <text
+                    x="${x}"
+                    y="${height - 38}"
+                    text-anchor="middle"
+                    class="hm-scatter-tick"
+                >${tick}</text>
+            `;
+        }).join("");
+
+           const horizontalGrid = scatterYTicks.map(tick => {
+            const y = yToPx(tick);
+
+               return `
+                <line
+                    x1="${padding.left}"
+                    y1="${y}"
+                    x2="${width - padding.right}"
+                    y2="${y}"
+                    class="hm-scatter-grid-line"
+                ></line>
+
+                   <text
+                    x="${padding.left - 14}"
+                    y="${y + 4}"
+                    text-anchor="end"
+                    class="hm-scatter-tick"
+                >${tick}</text>
+            `;
+        }).join("");
+
+           const diagonalMax = Math.min(maxScatterX, maxScatterY);
+
+           const diagonal = `
+            <line
+                x1="${xToPx(0)}"
+                y1="${yToPx(0)}"
+                x2="${xToPx(diagonalMax)}"
+                y2="${yToPx(diagonalMax)}"
+                class="hm-scatter-diagonal"
+            ></line>
+
+               <text
+                x="${xToPx(diagonalMax) + 10}"
+                y="${yToPx(diagonalMax) + 4}"
+                class="hm-scatter-diagonal-label"
+            >
+                RETEX = RESOLVED
+            </text>
+        `;
+        const coordinateGroups = new Map();
+
+        scatterPoints.forEach(item => {
+            const key = `${item.resolve}:${item.retex}`;
+
+                if (!coordinateGroups.has(key)) {
+                coordinateGroups.set(key, []);
+            }
+
+                coordinateGroups.get(key).push(item);
+        });
+
+          const points = scatterPoints.map(item => {
+            const key = `${item.resolve}:${item.retex}`;
+            const group = coordinateGroups.get(key);
+
+                const firstItem = group[0];
+
+                if (firstItem !== item) {
+                return "";
+            }
+
+                const x = xToPx(item.resolve);
+            const y = yToPx(item.retex);
+
+                const labels = group.map((platform, index) => {
+                    const showLabel =
+                        platform.resolve > 7 ||
+                        platform.retex > 7;
+
+                            if (!showLabel) {
+                        return "";
+                    }
+
+                            const direction = index % 2 === 0 ? -1 : 1;
+
+                            return `
+                        <text
+                            x="${x + direction * 14}"
+                            y="${y + (Math.floor(index / 2) * 14)}"
+                            text-anchor="${direction < 0 ? "end" : "start"}"
+                            class="hm-scatter-label"
+                        >
+                            ${platform.platform}
+                        </text>
+                    `;
+                }).join("");
+
+                return `
+                <g>
+                    <circle
+                        cx="${x}"
+                        cy="${y}"
+                        r="8"
+                        fill="${item.color}"
+                        class="hm-scatter-point"
+                    >
+                        <title>${group.map(g => g.platform).join(", ")} (${item.resolve}, ${item.retex})</title>
+                    </circle>
+
+                        ${labels}
+                </g>
+            `;
+        }).join("");
+
+                   return `
+            <div class="hm-scatter-wrap">
+
+                   <svg
+                    viewBox="0 0 ${width} ${height}"
+                    class="hm-scatter-svg"
+                    role="img"
+                    aria-label="Graphique RESOLVED en abscisse et RETEX en ordonnée par plateforme"
+                >
+                    ${verticalGrid}
+                    ${horizontalGrid}
+                    ${diagonal}
+
+                       <line
+                        x1="${padding.left}"
+                        y1="${height - padding.bottom}"
+                        x2="${width - padding.right}"
+                        y2="${height - padding.bottom}"
+                        class="hm-scatter-axis"
+                    ></line>
+
+                       <line
+                        x1="${padding.left}"
+                        y1="${padding.top}"
+                        x2="${padding.left}"
+                        y2="${height - padding.bottom}"
+                        class="hm-scatter-axis"
+                    ></line>
+
+                       ${points}
+
+                       <text
+                        x="${padding.left + innerWidth / 2}"
+                        y="${height - 6}"
+                        text-anchor="middle"
+                        class="hm-scatter-axis-label"
+                    >
+                        RESOLVED
+                    </text>
+
+                       <text
+                        x="18"
+                        y="${padding.top + innerHeight / 2}"
+                        text-anchor="middle"
+                        class="hm-scatter-axis-label"
+                        transform="rotate(-90 18 ${padding.top + innerHeight / 2})"
+                    >
+                        RETEX
+                    </text>
+                </svg>
             </div>
-        `
-        : "";
+        `;
+    };
+    const renderScatterLegend = () => {
+        if (!scatterPoints.length) return "";
+
+           return `
+            <div class="hm-scatter-legend">
+                ${scatterPoints.map(item => `
+                    <div class="hm-scatter-legend-item">
+                        <span
+                            class="hm-scatter-legend-dot"
+                            style="background:${item.color}"
+                        ></span>
+
+                           <span>${item.platform}</span>
+                    </div>
+                `).join("")}
+            </div>
+        `;
+    };
 
     const formatLocalDate = (d) => {
         const y = d.getFullYear();
@@ -713,7 +941,10 @@ const init = async () => {
         
 
         .hm-ctf-panel {
-            padding: 1.55rem;
+            container-type: inline-size;
+            container-name: ctf-panel;
+
+                padding: 1.55rem;
             border: 1px solid var(--hm-border);
             border-radius: 18px;
             box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
@@ -907,39 +1138,75 @@ const init = async () => {
             margin-top: 0.6rem;
             font-size: 0.86rem;
         }
-
-        @media (max-width: 980px) {
-            .hm-ctf-card {
-                grid-template-columns: 90px 1fr;
+        
+        .hm-ctf-card > div {
+            min-width: 0;
         }
 
-             .hm-ctf-rank-block,
+        .hm-ctf-name,
+        .hm-ctf-link {
+            overflow-wrap: normal;
+            word-break: normal;
+            hyphens: none;
+        }
+
+            /* Quand la section CTF devient trop étroite */
+        @container ctf-panel (max-width: 760px) {
+            .hm-ctf-card {
+                grid-template-columns: 90px minmax(180px, 1fr);
+                align-items: center;
+            }
+
+            .hm-ctf-rank-block,
             .hm-ctf-progress-block {
                 grid-column: 1 / -1;
                 border-left: none;
                 padding-left: 0;
             }
-            }
+        }
 
-                   @media (max-width: 560px) {
-            .hm-ctf-panel {
-                padding: 1rem;
-            }
-
-             .hm-ctf-card {
+            /* Très petite largeur */
+        @container ctf-panel (max-width: 520px) {
+            .hm-ctf-card {
                 grid-template-columns: 1fr;
             }
 
-             .hm-ctf-logo {
+            .hm-ctf-logo {
                 width: 70px;
                 height: 70px;
             }
 
-             .hm-ctf-header {
+            .hm-ctf-header {
                 align-items: flex-start;
                 flex-direction: column;
             }
+        }
+        
+        @media (max-width: 980px) {
+            .hm-scatter-explanations {
+                grid-template-columns: 1fr;
             }
+        }
+
+        @media (max-width: 560px) {
+            .hm-ctf-panel {
+                padding: 1rem;
+            }
+
+                .hm-ctf-card {
+                grid-template-columns: 1fr;
+            }
+
+                .hm-ctf-logo {
+                width: 70px;
+                height: 70px;
+            }
+
+                .hm-ctf-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
 
         .hm-top-grid {
           display: grid;
@@ -1433,6 +1700,181 @@ const init = async () => {
           color: var(--hm-muted);
           font-size: 0.9rem;
         }
+        
+        .hm-scatter-wrap {
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          padding-bottom: 0.35rem;
+        }
+
+        .hm-scatter-svg {
+          width: 100%;
+          min-width: 620px;
+          height: auto;
+          display: block;
+        }
+
+        .hm-scatter-grid-line {
+          stroke: color-mix(in srgb, var(--hm-muted) 18%, transparent);
+          stroke-width: 1;
+          shape-rendering: crispEdges;
+        }
+
+        .hm-scatter-axis {
+          stroke: var(--hm-border);
+          stroke-width: 1.2;
+          shape-rendering: crispEdges;
+        }
+
+        .hm-scatter-tick {
+          fill: var(--hm-muted);
+          font-size: 11px;
+          font-weight: 600;
+        }
+
+        .hm-scatter-axis-label {
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+        }
+
+        .hm-scatter-label {
+          font-size: 11px;
+          font-weight: 700;
+          paint-order: stroke;
+          stroke-width: 4px;
+          stroke-linejoin: round;
+        }
+
+        .hm-scatter-point {
+          stroke: color-mix(in srgb, #ffffff 75%, transparent);
+          stroke-width: 1.5;
+          transition: transform .12s ease, opacity .12s ease;
+        }
+
+        .hm-scatter-point:hover {
+          opacity: 0.92;
+        }
+        
+        .hm-scatter-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hm-scatter-header-text {
+            min-width: 220px;
+        }
+
+        .hm-scatter-kpis {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(145px, 1fr));
+            gap: 0.8rem;
+            flex: 1 1 540px;
+        }
+
+        .hm-scatter-kpi {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 12px;
+        }
+
+        .hm-scatter-kpi-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 999px;
+            flex: 0 0 auto;
+        }
+
+        .hm-scatter-kpi-value {
+            display: block;
+            font-size: 1.45rem;
+            font-weight: 850;
+            line-height: 1;
+        }
+
+        .hm-scatter-kpi-label {
+            display: block;
+            margin-top: 0.3rem;
+            font-size: 0.8rem;
+            color: var(--hm-muted);
+        }
+
+        .hm-scatter-wrap {
+            position: relative;
+        }
+
+        .hm-scatter-diagonal {
+            stroke: color-mix(
+                in srgb,
+                var(--hm-muted) 65%,
+                transparent
+            );
+            stroke-width: 1.4;
+            stroke-dasharray: 7 7;
+        }
+
+        .hm-scatter-diagonal-label {
+            fill: var(--hm-muted);
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .hm-scatter-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem 1rem;
+            margin-top: 0.9rem;
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 12px;
+        }
+
+        .hm-scatter-legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.82rem;
+            color: var(--hm-muted);
+        }
+
+        .hm-scatter-legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            flex: 0 0 auto;
+        }
+
+        .hm-scatter-explanations {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 0.8rem;
+            margin-top: 0.9rem;
+        }
+
+        .hm-scatter-explanation {
+            padding: 0.9rem 1rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 12px;
+        }
+
+        .hm-scatter-explanation strong {
+            display: block;
+            margin-bottom: 0.35rem;
+            font-size: 0.9rem;
+        }
+
+        .hm-scatter-explanation span {
+            color: var(--hm-muted);
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
 
         @media (max-width: 980px) {
           .hm-top-grid {
@@ -1457,6 +1899,12 @@ const init = async () => {
           .hm-below-grid {
             grid-template-columns: 1fr;
           }
+        
+        .hm-scatter-kpis,
+        .hm-scatter-explanations {
+            grid-template-columns: 1fr;
+        }
+
         }
 
         @media (max-width: 900px) {
@@ -1706,24 +2154,95 @@ const init = async () => {
         </div>
 
         <div class="hm-summary">
-            <span class="hm-date">Compteurs globaux</span>
+            <div class="hm-scatter-header">
+                <div class="hm-scatter-header-text">
+                    <span class="hm-date">
+                        Activité par plateforme
+                    </span>
 
-            <div class="hm-summary-block">
-                <div class="hm-summary-title">Activités</div>
-                ${renderHorizontalSegments(activitySegments, totalActivities, "Aucune activité")}
+                        <div class="hm-summary-title">
+                        Aperçu de mes activités sur différentes plateformes.
+                    </div>
+                </div>
+
+                    <div class="hm-scatter-kpis">
+                    <div class="hm-scatter-kpi">
+                        <span
+                            class="hm-scatter-kpi-dot"
+                            style="background:#c49a6c"
+                        ></span>
+
+                            <div>
+                            <strong class="hm-scatter-kpi-value">
+                                ${totals.resolve}
+                            </strong>
+
+                                <span class="hm-scatter-kpi-label">
+                                Total RESOLVED
+                            </span>
+                        </div>
+                    </div>
+
+                        <div class="hm-scatter-kpi">
+                        <span
+                            class="hm-scatter-kpi-dot"
+                            style="background:#fd8235"
+                        ></span>
+
+                            <div>
+                            <strong class="hm-scatter-kpi-value">
+                                ${totals.retex}
+                            </strong>
+
+                                <span class="hm-scatter-kpi-label">
+                                Total RETEX
+                            </span>
+                        </div>
+                    </div>
+
+                        <div class="hm-scatter-kpi">
+                        <span
+                            class="hm-scatter-kpi-dot"
+                            style="background:#9FE1CB"
+                        ></span>
+
+                                   <div>
+                            <strong class="hm-scatter-kpi-value">
+                                ${totals.autre}
+                            </strong>
+
+                                       <span class="hm-scatter-kpi-label">
+                                Total AUTRE
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="hm-summary-block">
-                <div class="hm-summary-title">RESOLVE par plateforme</div>
-                ${renderPlatformSegments(allResolvePlatforms)}
-            </div>
+                <div class="hm-summary-block">
+                ${renderScatterPlot()}
 
-            <div class="hm-summary-block">
-                <div class="hm-summary-title">RETEX par plateforme</div>
-                ${renderPlatformSegments(allRetexPlatforms)}
-            </div>
+                    ${renderScatterLegend()}
 
-            ${globalLegendHtml}
+                    <div class="hm-scatter-explanations">
+
+                        <div class="hm-scatter-explanation">
+                            <strong>Note</strong>
+                            <span>
+                                Les RETEX ne sont publiés que lorsque la plateforme autorise leur partage.
+                                Certaines plateformes (OSINT-FR, Osintopia…) ne sont donc volontairement pas documentées.
+                            </span>
+                        </div>
+
+                                   <div class="hm-scatter-explanation">
+                            <strong>Astuce</strong>
+                            <span>
+                                Survole un point pour voir les statistiques.
+                            </span>
+                        </div>
+
+                    </div>
+            </div>
         </div>
         `;
 
