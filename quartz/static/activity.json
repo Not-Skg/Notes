@@ -1408,6 +1408,17 @@
       "autre": 0
     }
   },
+  "2026-07-15": {
+    "count": 1,
+    "activités": [
+      "Resolve — UK Suspect · GEOINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-01": {
     "count": 3,
     "activités": [
@@ -1819,7 +1830,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 324,
+    "resolve": 325,
     "retex": 160,
     "autre": 35
   },
