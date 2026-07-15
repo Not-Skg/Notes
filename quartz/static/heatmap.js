@@ -113,7 +113,7 @@ const init = async () => {
             note: "Duo vs Squad",
             logoSrc: "Logo_CTF/L_LCS.png",
         },
-        {o
+        {
             name: "Medileak 3",
             date: "Mai 2026",
             position: 17,
