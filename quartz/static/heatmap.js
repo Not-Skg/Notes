@@ -97,7 +97,7 @@ const init = async () => {
             position: 22,
             total: 202,
             solo: false,
-            href: "/Notes/Skg-Notes/https://not-skg.github.io/Notes/Skg-Notes/L'appel-de-la-forêt/L'appel-de-la-forêt",
+            href: "/Notes/Skg-Notes/L'appel-de-la-forêt/L'appel-de-la-forêt",
             accent: "#ff6b2b",
             note: "Parmis 30 équipes FINISHER",
             logoSrc: "Logo_CTF/L_AF.png",
@@ -113,7 +113,7 @@ const init = async () => {
             note: "Duo vs Squad",
             logoSrc: "Logo_CTF/L_LCS.png",
         },
-        {
+        {o
             name: "Medileak 3",
             date: "Mai 2026",
             position: 17,
