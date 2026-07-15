@@ -1733,6 +1733,17 @@
       "autre": 0
     }
   },
+  "2026-07-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — PGA · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-10": {
     "count": 3,
     "activités": [
@@ -1808,7 +1819,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 323,
+    "resolve": 324,
     "retex": 160,
     "autre": 35
   },
