@@ -10,10 +10,10 @@ tags:
  >Le CTF étant très long, je prendrais mon temps pour écrire le RETEX, je rajouterai des pages au fur et a mesure.
 
 ***Les différentes parties du CTF :***
- · | · `[[Intro]]`
- · | · `[[Chapitre 1 - Faits divers [BONUS]]]`
+ · | · [[Intro]]
  · | · `[[Chapitre 1 - Introduction]]`
- · | · `[[Chapitre 1 - La Famille Michelle [BONUS]]]`
+ · | · `[[Chapitre 1 - La Famille Michelle - BONUS]]`
+ · | · `[[Chapitre 1 - Faits divers - BONUS]]`
  · | · `[[Chapitre 1 - Petsitter]]`
  · | · `[[Chapitre 2 - Acte 1]]`
  · | · `[[Chapitre 2 - Acte 2 - Activités]]`
@@ -43,9 +43,8 @@ Un moment notable reste notre recours à un indice personnalisé (coût : 50 poi
 
 L’immersion narrative est également un point fort du CTF. L’histoire, à la fois réaliste et engageante, donnait envie de s’investir pleinement dans l’enquête et contribuait fortement à la qualité globale de l’expérience.
 
-Au final, nous terminons 22e sur 202 équipes, avec 65 challenges résolus sur 67. Nous faisons partie des 30 équipes ayant complété la trame principale, ce qui nous permet d’obtenir le badge _Finisher_, ainsi que le badge _Survivant_, attribué aux 69 équipes ayant dépassé le chapitre clé.
-
 ![[LAF_STATS.png]]
-
+Au final, nous terminons 22e sur 202 équipes, avec 65 challenges résolus sur 67. Nous faisons partie des 30 équipes ayant complété la trame principale, ce qui nous permet d’obtenir le badge _Finisher_, ainsi que le badge _Survivor_, attribué aux 69 équipes ayant dépassé le chapitre clé.
+![[Badges/badge-a284b2b9eaf3b6ff.png]]![[Badges/badge-6208beaf12143c0e.png]]
 
 Ce RETEX sera complété progressivement, au fil de l’ajout des différentes parties détaillant chaque étape du CTF.

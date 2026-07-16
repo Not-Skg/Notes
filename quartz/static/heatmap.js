@@ -49,6 +49,16 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/badge-a284b2b9eaf3b6ff.png",
+            href: "https://www.badgeforge.eu/verify/a284b2b9eaf3b6ff1ed870c61f5d2b065eaee724f7726165099a599e88b2fae8",
+            alt: "CTF Tacosint - L'appel de la forêt - Badge finisher",
+        },
+        {
+            src: "Badges/badge-6208beaf12143c0e.png",
+            href: "https://www.badgeforge.eu/verify/6208beaf12143c0e2f43cb46dccca030d5755bdc5126eaf898abc6a9d7e36db4",
+            alt: "CTF Tacosint - L'appel de la forêt - Badge survivor",
+        },
+        {
             src: "Badges/badge-5cf43f67e1ab99e6.png",
             href: "https://www.badgeforge.eu/verify/5cf43f67e1ab99e6b9450a50f6adae4e5de73c481e22e132598c822046a5e2a8",
             alt: "Finisher Medileak 3",

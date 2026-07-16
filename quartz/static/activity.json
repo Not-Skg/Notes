@@ -290,6 +290,18 @@
       "autre": 1
     }
   },
+  "2026-07-16": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ Badges · L'appel de la forêt · Site",
+      "Retex — Reportage animalier · Intro · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 1
+    }
+  },
   "2026-07-06": {
     "count": 6,
     "activités": [
@@ -1831,11 +1843,11 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 160,
-    "autre": 35
+    "retex": 161,
+    "autre": 36
   },
   "__assets__": {
     "profils": 6,
-    "badges": 8
+    "badges": 10
   }
 }
