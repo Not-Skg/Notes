@@ -169,6 +169,19 @@
       "autre": 2
     }
   },
+  "2026-07-17": {
+    "count": 3,
+    "activités": [
+      "Retex — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
+      "Retex — L'envol des perroquets · Faits divers · L'appel de la forêt",
+      "Retex — Le trésor des corbeaux · Faits divers · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-07-07": {
     "count": 6,
     "activités": [
@@ -1843,7 +1856,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 161,
+    "retex": 164,
     "autre": 36
   },
   "__assets__": {
