@@ -11,9 +11,9 @@ tags:
 
 ***Les différentes parties du CTF :***
  · | · [[Intro]]
- · | · `[[Chapitre 1 - Introduction]]`
- · | · `[[Chapitre 1 - La Famille Michelle - BONUS]]`
- · | · `[[Chapitre 1 - Faits divers - BONUS]]`
+ · | · [[Chapitre 1 - Introduction]]
+ · | · [[Chapitre 1 - La Famille Michelle - BONUS]]
+ · | · [[Chapitre 1 - Faits divers - BONUS]]
  · | · `[[Chapitre 1 - Petsitter]]`
  · | · `[[Chapitre 2 - Acte 1]]`
  · | · `[[Chapitre 2 - Acte 2 - Activités]]`

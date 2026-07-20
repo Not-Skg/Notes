@@ -549,6 +549,22 @@
       "autre": 0
     }
   },
+  "2026-07-19": {
+    "count": 6,
+    "activités": [
+      "Retex — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
+      "Retex — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
+      "Retex — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
+      "Retex — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
+      "Retex — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
+      "Retex — La balade du zèbre · La Famille Michelle · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
   "2026-04-03": {
     "count": 6,
     "activités": [
@@ -944,6 +960,19 @@
     "stats": {
       "resolve": 1,
       "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-07-18": {
+    "count": 3,
+    "activités": [
+      "Retex — Chill comme un capybara · Introduction · L'appel de la forêt",
+      "Retex — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
+      "Retex — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
       "autre": 0
     }
   },
@@ -1856,7 +1885,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 164,
+    "retex": 173,
     "autre": 36
   },
   "__assets__": {

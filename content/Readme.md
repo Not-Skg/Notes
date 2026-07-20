@@ -31,6 +31,10 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [ ] Aperçu journal d'activité (via stats : activités, wu, challs, badges)
 - [ ] Mise en avant des "coups de cœur"
 
+**ToolBox**
+- [ ] Article sur Casebandit
+- [ ] Tuto BeautifulSoup & Scrapy
+
 **Général**
 - [ ] Ajout Badge (plateforme + challmakers) sur les RETEX
 - [x] Possibilité d’agrandir les images au clic
