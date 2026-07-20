@@ -10,6 +10,8 @@ tags:
 > Parce que ce CTF est très long, je me permets de partager à chaque fin de page dédiée un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble de nos éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 > Voici le graphique résultant de la dernière partie : [[Chapitre 1 - Introduction]]
 
+![[LAF_C1_I.svg]]
+
  Nous allons pouvoir nous baser sur ce dernier pour continuer nos recherches dans la suite du CTF.
 
 ---
@@ -318,3 +320,4 @@ Au final, on a pu trouver où se trouve Jean Michelle Jr lors du kidnapping de M
 ## Synthèse de nos éléments
 > Parce que ce CTF est très long, je me permets de partager à chaque fin de page dédiée un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l'ensemble de nos éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 
+![[LAF_C1_LFM.svg]]

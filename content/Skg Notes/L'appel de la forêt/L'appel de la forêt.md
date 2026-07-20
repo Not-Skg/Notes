@@ -31,6 +31,7 @@ tags:
 Le CTF _L’Appel de la Forêt_, organisé par les très reconnus Tacosint, s’est déroulé du 3 au 12 juillet 2026. Conçu comme un véritable parcours progressif, il imposait de résoudre certains challenges pour débloquer la suite, avec un système de score pénalisant les erreurs et récompensant la progression. Des défis bonus venaient également enrichir l’expérience.
 
 Ce premier CTF signé Tacosint, en partenariat avec Badgeforge, Epieos, ZeroNeurone, OneNeurone, GoNeurone, OsintIsNotaCrime et Indaga, a clairement marqué les esprits. Par son ampleur et sa diversité, il s’apparentait à un véritable marathon mêlant de nombreux domaines : SOCMINT, GEOINT, cryptomonnaies, mais aussi des challenges plus atypiques et très spécialisés, comme l’identification de modèles et calibres d’armes à partir de douilles usagées.
+
 ![[l-appel-de-la-f-ret-2026-07-12-graph.svg]]
 
 Au fil des épreuves, j’ai eu l’impression de parcourir une synthèse de nombreux types de challenges rencontrés ces dernières années, avec en prime quelques nouveautés particulièrement intéressantes. La richesse du contenu et la quantité d’informations à traiter rendaient l’expérience aussi exigeante que stimulante.

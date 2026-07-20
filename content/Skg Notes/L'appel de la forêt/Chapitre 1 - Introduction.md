@@ -69,7 +69,7 @@ On peut aussi noter qu'elle a pour amis sur cette plateforme plusieurs personnes
 - [Sarah Michelle](https://www.facebook.com/michelle.sarah2003)
 
 En survolant très rapidement ces trois comptes, on apprend que Jean et Lucia sont mariés, et que Sarah est leur fille et appelle Renée "Mamie". 
-On peut aussi trouver[un post](https://www.facebook.com/michelle.sarah2003/posts/pfbid02euSNaM9KUWSFMrBfyJb17dNXoQ7WUi9XL6kLsZqE24Mv9Lh8ux1K91ADhf6LL7kEl) sur le compte Facebook de cette dernière qui interpelle sa grand-mère via une photo montrant une affiche de PetSitter à Orléans, en lui précisant qu’il pourrait garder Malo.
+On peut aussi trouver [un post](https://www.facebook.com/michelle.sarah2003/posts/pfbid02euSNaM9KUWSFMrBfyJb17dNXoQ7WUi9XL6kLsZqE24Mv9Lh8ux1K91ADhf6LL7kEl) sur le compte Facebook de cette dernière qui interpelle sa grand-mère via une photo montrant une affiche de PetSitter à Orléans, en lui précisant qu’il pourrait garder Malo.
 ![[LAF_C1_I_SOS_AP.png]]
 Cette affiche présente le numéro suivant : **==0261913352==**.
 On peut aussi noter que Lucia explique en commentaire qu'une de ses amies a déjà vu un des messages de ce PetSitter sur un autre réseau avec le même numéro.
@@ -92,9 +92,11 @@ Essayons de les utiliser dans une recherche : `SPA autonome régionale Orléans`
 Le premier lien indexé via cette recherche est une page du site de la [SPA du Centre](https://www.spa-du-centre.com).
 ![[LAF_C1_I_SOC.png]]
 On peut retrouver sur leur page d'accueil exactement les mêmes termes pour décrire la SPA du Centre d'Orléans, ce qui confirme qu’on est au bon endroit. 
-Après avoir vérifié les distances respectives entre chacun de leurs sites présents sur cette page et la "Route d'Olivet" via Google Maps, on peut s'assurer que le site le plus proche possède le numéro :**==0238448964==**.
+Après avoir vérifié les distances respectives entre chacun de leurs sites présents sur cette page et la "Route d'Olivet" via Google Maps, on peut s'assurer que le site le plus proche possède le numéro : **==0238448964==**.
 
 ---
 
 ## Synthèse de nos éléments
 > Parce que ce CTF est très long, je me permets de partager à chaque fin de page dédiée un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l'ensemble de nos éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
+
+![[LAF_C1_I.svg]]

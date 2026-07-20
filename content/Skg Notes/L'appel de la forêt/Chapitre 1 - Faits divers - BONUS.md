@@ -21,6 +21,7 @@ En faisant la recherche : `"janvier 2023 convention signée maltraitance animale
 2. [Un article du ministère de l'Agriculture détaillant cette coopération renforcée](https://agriculture.gouv.fr/cooperation-renforcee-entre-la-spa-et-letat-pour-lutter-contre-les-abandons-et-la-maltraitance)
 3. [Une page de la préfecture du Maine-et-Loire qui mentionne la convention tripartite](https://www.maine-et-loire.gouv.fr/Actions-de-l-Etat/Protection-et-sante-des-animaux/Maltraitance-animale#:~:text=Le%2027%20janvier%202023%2C%20les,coopération%20entre%20les%20trois%20acteurs.)
 4. [Un article de la Gendarmerie qui revient sur cette mobilisation renforcée](https://www.gendarmerie.interieur.gouv.fr/gendinfo/actualites/2025/lutte-contre-la-maltraitance-animale-une-mobilisation-renforcee)
+
 Toutes parlent d'une convention signée fin janvier 2023 à ce sujet par le ministère de l’Intérieur et des Outre-mer (MIOM), le ministère de l’Agriculture et de la Souveraineté alimentaire (MASA) et la Société protectrice des animaux (SPA).
 ![[LAF_C1_FD_EDP.png]]
 On a donc le flag dans l'ordre alphabétique : **==MASA_MIOM_SPA==**
