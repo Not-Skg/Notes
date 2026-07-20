@@ -6,6 +6,8 @@ tags:
   - OverpassTurbo
 
 ---
+>[!info] Information
+>Tous les challenges ci-dessous, sont censé être des challenges bonus et donc comporter `[BONUS]` dans leur titre, mais je le met pas par soucis de lisibilité.
 ## Éléments déjà découverts
 > Parce que ce CTF est très long, je me permets de partager à chaque fin de page dédiée un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble de nos éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 > Voici le graphique résultant de la dernière partie : [[Chapitre 1 - Introduction]]
@@ -15,7 +17,7 @@ tags:
  Nous allons pouvoir nous baser sur ce dernier pour continuer nos recherches dans la suite du CTF.
 
 ---
-## BONUS - La coquetterie du paon
+## La coquetterie du paon
 
 ### Énoncé
 >Vous continuez de vous renseigner sur le cercle proche de Renée. Sa petite fille, Sarah, semble à l'aise avec les réseaux sociaux. C'est en effet elle qui a communiqué le contact d'un pet-sitter à sa grand-mère.
@@ -41,7 +43,7 @@ _Au cas où, “AKA” signifie : “Also Known As”._
 Donc, en plus d'avoir trouvé son compte Instagram, nous venons de trouver son pseudo sur d'autres réseaux : **==UnderTheVeil03==**.
 
 ---
-## BONUS - La générosité d'une Girafe
+## La générosité d'une Girafe
 
 ### Énoncé
 >Et voilà, un nouveau pseudo pour Sarah. Vous avez de plus en plus d'informations sur elle, mais vous n'en savez pas beaucoup plus sur la disparition de Malo...
@@ -122,7 +124,7 @@ En regardant rapidement le contenu de chacun de ses comptes, on peut trouver [un
 On sait donc qu'elle n'est pas disponible à ce jour, et qu'elle ne pourra donc pas nous aider.
 
 ---
-## BONUS - Le grand rêve d'un Tatou
+## Le grand rêve d'un Tatou
 
 ### Énoncé
 >Vous voilà désormais en possession de beaucoup d'informations grâce aux réseaux de Sarah. Il semblerait d'ailleurs qu'elle ait une soeur avec qui elle passe souvent du temps.
@@ -155,7 +157,7 @@ Le contexte du post semble être une visite de la Cité de l’espace, promouvan
 On peut donc en déduire que sa soeur y a découvert le métier de ses rêves.
 
 ---
-## BONUS - Cachée comme un phasme
+## Cachée comme un phasme
 
 ### Énoncé
 > Vous voilà avec de plus en plus d'information sur toute la famille Michelle. La seule personne majeure dont vous ignorez la localisation ce week-end est Lucia... Si elle est dans le coin, elle aura peut-être des informations sur Malo.
@@ -206,7 +208,7 @@ Puis via Google Maps, on peut trouver le nom de l'hôtel lié à ce bâtiment : 
 Ce qui confirme donc que Lucia Michelle est en Italie à l'heure actuelle et ne peut donc pas nous aider pour Malo.
 
 ---
-## BONUS - Le câlin du chimpanzé
+## Le câlin du chimpanzé
 
 ### Énoncé
 >Vous voilà avec la localisation de Lucia. Elle ne semble pas être liée à la disparition de Malo. Afin d'en savoir un peu plus sur elle, vous décidez de continuer un peu vos investigations sur cette dernière pour être sûr de ne rien omettre.
@@ -226,7 +228,7 @@ L’alt de l’image a probablement été renseigné manuellement par Jean suite
 On a donc trouvé son nom de jeune fille : **==Karlson==**
 
 ---
-## BONUS - La balade du zèbre
+## La balade du zèbre
 
 ### Énoncé
 >Maintenant que vous avez réuni des informations sur les petites-filles de Renée, qu'en est-t'il de leur parents ? 
@@ -234,7 +236,7 @@ On a donc trouvé son nom de jeune fille : **==Karlson==**
 >
 >>Où doit-il se trouver ce week-end ? 
 >
->_Format : `45.8351822, 1.4901815`
+>_Format : `XX.XXXXXXX, XX.XXXXXXX`
 
 ### RETEX
 Le [compte Facebook de Jean](https://www.facebook.com/profile.php?id=61579482161478) ne comporte pas grand chose, il ne va pas être facile d'avancer dans nos recherches uniquement avec ce dernier.

@@ -1798,6 +1798,20 @@
       "autre": 0
     }
   },
+  "2026-07-20": {
+    "count": 4,
+    "activités": [
+      "Retex — La mésange babysitter · Petsitter · L'appel de la forêt",
+      "Retex — Bavard comme une pie · Petsitter · L'appel de la forê",
+      "Retex — Pris dans la toile · Petsitter · L'appel de la forêt",
+      "Retex — Le terrier du lapin · Petsitter · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-07-14": {
     "count": 1,
     "activités": [
@@ -1885,7 +1899,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 173,
+    "retex": 177,
     "autre": 36
   },
   "__assets__": {
