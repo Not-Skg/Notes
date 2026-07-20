@@ -98,5 +98,3 @@ Après avoir vérifié les distances respectives entre chacun de leurs sites pr�
 
 ## Synthèse de nos éléments
 > Parce que ce CTF est très long, je me permets de partager à chaque fin de page dédiée un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l'ensemble de nos éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
-
-![[LAF_C1_I.svg]]
