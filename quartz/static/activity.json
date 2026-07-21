@@ -1462,6 +1462,19 @@
       "autre": 0
     }
   },
+  "2026-07-21": {
+    "count": 3,
+    "activités": [
+      "Retex — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
+      "Retex — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
+      "Retex — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-07-15": {
     "count": 1,
     "activités": [
@@ -1899,7 +1912,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 177,
+    "retex": 180,
     "autre": 36
   },
   "__assets__": {
