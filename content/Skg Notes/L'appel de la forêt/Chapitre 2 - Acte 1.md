@@ -116,15 +116,14 @@ On est donc sûr que PetOsint et OsintTheAnimals sont la même personne : **==St
 ### Énoncé
 >Vous avez réussi à identifier la personne derrière tout ça, même si ce n'était pas évident, vous pouvez être fier de vous. Cependant, quelque chose vous dit que Steven n'a pas dû agir seul. La logistique mise en place semble plus correspondre à un travail de groupe.
 >
->>Quel est le nom de domaine du site web, outre son blog, qui est lié à Steven Pichon ,
+>>Quel est le nom de domaine du site web, outre son blog, qui est lié à Steven Pichon ?
 >
 >_Format : `google.com`
 
 ### RETEX
 Généralement, pour prouver que deux sites sont liés, une des manières de faire consiste à montrer qu’ils partagent le même certificat SSL, par exemple.
 ![[LAF_C2_A1_PH_CSSL.png]]
-Et, dans ce cas, le certificat SSL du blog est partagé avec un site nommé **==into-tacs.shop==**
-
+Et, dans ce cas, le certificat SSL du blog est partagé avec un site nommé **==into-tacs.shop==**.
 
 ---
 ## Synthèse de nos éléments

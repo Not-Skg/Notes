@@ -277,6 +277,20 @@
       "autre": 1
     }
   },
+  "2026-07-22": {
+    "count": 4,
+    "activités": [
+      "Retex — La parade du paon · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-06-18": {
     "count": 5,
     "activités": [
@@ -1912,7 +1926,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 180,
+    "retex": 184,
     "autre": 36
   },
   "__assets__": {

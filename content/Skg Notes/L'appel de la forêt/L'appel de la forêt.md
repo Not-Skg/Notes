@@ -16,7 +16,7 @@ tags:
  · | · [[Chapitre 1 - Faits divers - BONUS]]
  · | · [[Chapitre 1 - Petsitter]]
  · | · [[Chapitre 2 - Acte 1]]
- · | · `[[Chapitre 2 - Acte 2 - Activités]]`
+ · | · [[Chapitre 2 - Acte 2 - Activités]]
  · | · `[[Chapitre 2 - Acte 2 - Droit]]`
  · | · `[[Chapitre 2 - Acte 2 - Développement]]`
  · | · `[[Chapitre 2 - Acte 3 - Communication]]`
