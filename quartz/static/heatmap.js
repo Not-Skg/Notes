@@ -142,7 +142,7 @@ const init = async () => {
             solo: false,
             href: "/Notes/Skg-Notes/Bleuet-de-France-V5/Bleuet-de-France-V5",
             accent: "#ff6b2b",
-            note: "Solo v Squad : 10ᵉ meilleur joueur.",
+            note: "Solo vs Squad : 10ᵉ meilleur joueur.",
             logoSrc: "Logo_CTF/L_BV5.png",
         },
         {

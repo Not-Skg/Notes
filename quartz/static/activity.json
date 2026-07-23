@@ -145,6 +145,20 @@
       "autre": 0
     }
   },
+  "2026-07-23": {
+    "count": 4,
+    "activités": [
+      "Retex — Les fourberies du renard · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Le loup déguisé · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Les commencements de l'oiseau · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-06-19": {
     "count": 2,
     "activités": [
@@ -1926,7 +1940,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 184,
+    "retex": 188,
     "autre": 36
   },
   "__assets__": {
