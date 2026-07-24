@@ -18,7 +18,7 @@ tags:
  · | · [[Chapitre 2 - Acte 1]]
  · | · [[Chapitre 2 - Acte 2 - Activités]]
  · | · [[Chapitre 2 - Acte 2 - Droit]]
- · | · `[[Chapitre 2 - Acte 2 - Développement]]`
+ · | · [[Chapitre 2 - Acte 2 - Développement]]
  · | · `[[Chapitre 2 - Acte 3 - Communication]]`
  · | · `[[Chapitre 2 - Acte 3 - Financement]]`
  · | · `[[Chapitre 2 - Acte 3 - Organisation]]`
