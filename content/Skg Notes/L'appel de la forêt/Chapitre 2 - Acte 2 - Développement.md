@@ -99,4 +99,4 @@ Dans les données EXIF, on peut noter trois points intéressants : l’identité
 ## Synthèse de nos éléments
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 
-![[LAF_C2_A2_DT.svg]]
+![[LAF_C2_A2_DV.svg]]•
