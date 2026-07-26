@@ -487,6 +487,17 @@
       "autre": 2
     }
   },
+  "2026-07-26": {
+    "count": 1,
+    "activités": [
+      "Retex — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-05-22": {
     "count": 2,
     "activités": [
@@ -1636,6 +1647,17 @@
       "autre": 0
     }
   },
+  "2026-07-25": {
+    "count": 1,
+    "activités": [
+      "Retex — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-05-31": {
     "count": 2,
     "activités": [
@@ -1953,7 +1975,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 191,
+    "retex": 193,
     "autre": 36
   },
   "__assets__": {
