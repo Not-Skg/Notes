@@ -47,6 +47,18 @@
       "autre": 3
     }
   },
+  "2026-07-27": {
+    "count": 2,
+    "activités": [
+      "Retex — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
+      "Retex — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
   "2026-05-23": {
     "count": 8,
     "activités": [
@@ -347,7 +359,7 @@
     "count": 6,
     "activités": [
       "Resolve — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
-      "Resolve — La Toile du Tisserin · Acte 3 - Communication · L'appel de la forêt",
+      "Resolve — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
       "Resolve — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
       "Resolve — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
       "Resolve — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
@@ -1975,7 +1987,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 193,
+    "retex": 195,
     "autre": 36
   },
   "__assets__": {
