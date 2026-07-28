@@ -3,7 +3,7 @@ tags:
   - Osint
   - Chall
   - CaseBandit
-draft: true
+draft: false
 ---
 ## Éléments déjà découverts
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
@@ -125,6 +125,41 @@ Le challenge n’en est pas vraiment un : il sert surtout à faire avancer l’h
 >_Format : `Guadeloupe`
 
 ### RETEX
+Sur le drive découvert précédemment, il y avait un fichier nommé : appel_Uncia_15-06-2025.wav.
+Ce doit être l’asset principal pour ce challenge.
+![[appel_Uncia_15-06-2025.wav]]
+Ce fichier est un message vocal d’Uncia à destination de Lycaon. Voici le texte que j’arrive à retranscrire :
+```
+Salut Sylvie ! Pardon Lycaon !
+
+Je viens de rencontrer le nouveau prospect, il a l'air bien intéressé par ce qu'on peut lui proposer.
+Financièrement, je ne m'inquiète pas, vu sa villa, on ne devrait avoir aucun problème pour être payés. Je vais quand même en profiter pour faire un petit check pour vérifier qu'il ne nous a pas embobinés.
+
+Au fait, je vais essayer de vous ramener une petite bière artisanale, je sais que ça vous fera plaisir !
+Je pense être de retour d'ici 2 ou 3 jours, le temps de faire les dernières vérifs et de rentrer.
+
+Je vous tiens au courant si j'ai quoi que ce soit d'intéressant d'ici là.
+
+Bonne fin de journée cheffe, à plus tard.
+
+[BIP-BIP-BIP]
+```
+Le message précise bien qu’Uncia revient d’un rendez-vous avec un client et qu’elle ramène des bières artisanales, mais on ne peut rien tirer de plus du contenu, à part qu’on connaît maintenant le prénom de Lycaon : Sylvie. 
+
+Par contre, en bruit de fond, on peut entendre un chant d’oiseau.
+![[crop_appel_Uncia_15-06-2025.wav]]
+
+En utilisant un outil comme [birdnet](https://birdnet.cornell.edu/demo/?lang=fr), on peut essayer de reconnaître le chant de l’oiseau.
+![[LAF_C2_A3_O_RCS_BD.png]]
+L’outil reconnaît l’oiseau « Corsican Nuthatch », aussi appelé « Sitta whiteheadi », la sittelle corse.
+
+On peut vérifier cela en cherchant le chant de cet oiseau sur [oiseaux.net](https://www.oiseaux.net/oiseaux/sittelle.corse.html)
+![[LAF_C2_A3_O_RCS_ON.png]]
+On y retrouve exactement le même chant, enregistré par Fernand Deroussen.
+![[XC134311 - Sittelle corse - Sitta whiteheadi.mp3]]
+
+On est donc sûr de l’espèce de l’oiseau et, d’après oiseaux.net, cette espèce vit exclusivement en **==Corse==**.
+Uncia se trouvait donc forcément en Corse le 15/06/2025.
 
 ---
 ## L'énergie du frelon oriental
@@ -139,9 +174,26 @@ Le challenge n’en est pas vraiment un : il sert surtout à faire avancer l’h
 >_Format : `XX.XXXXXXX, XX.XXXXXXX`
 
 ### RETEX
+En relisant attentivement les canaux sur Keybase, on peut trouver une conversation dans le canal « Membres uniquement » sur la dégustation de bière artisanale.
+![[LAF_C2_A3_O_EFO_GE1.png]]
+Lycaon y partage la photo ci-dessous en précisant qu’elle déguste la bière depuis son appartement.
+![[LAF_C2_A3_O_EFO_GE2.png]]
+Donc, si l’on arrive à localiser le point de vue de cette photo, alors on trouve son appartement.
 
+En utilisant Google Lens sur la cathédrale visible sur la photo, on peut reconnaître la cathédrale Sainte-Croix d’Orléans.
+![[LAF_C2_A3_O_EFO_GE3.png]]
+En prenant en compte le placement des deux tours de la cathédrale et de la flèche, on peut déjà avoir une idée de l’endroit où la photo a été prise (on regarde vers le nord-est lorsque la cathédrale est devant nous).
+
+En regardant de plus près la photo, on peut voir un bout de toit rond. Ce sera notre point de repère (un toit rond au sud-ouest de la cathédrale).
+![[LAF_C2_A3_O_EFO_GE4.png]]
+On peut ensuite s’approcher via la vue sur Google Earth en utilisant certains éléments clés de la photo.
+![[LAF_C2_A3_O_EFO_GE5.png]]
+Enfin, on peut s’assurer de l’emplacement exact via l’angle de la photo et les repères visibles en vue satellite.
+![[LAF_C2_A3_O_EFO_GE6.png]]
+Lycaon habite donc aux coordonnées : **==47.9000918, 1.9089714==**
 
 ---
 ## Synthèse de nos éléments
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 
+![[LAF_C2_A3_O.svg]]
