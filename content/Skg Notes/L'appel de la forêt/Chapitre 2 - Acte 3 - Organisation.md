@@ -3,7 +3,6 @@ tags:
   - Osint
   - Chall
   - CaseBandit
-draft: false
 ---
 ## Éléments déjà découverts
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.

@@ -730,6 +730,19 @@
       "autre": 0
     }
   },
+  "2026-07-29": {
+    "count": 3,
+    "activités": [
+      "Retex — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
+      "Retex — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
+      "Retex — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-06-27": {
     "count": 2,
     "activités": [
@@ -1999,7 +2012,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 197,
+    "retex": 200,
     "autre": 36
   },
   "__assets__": {

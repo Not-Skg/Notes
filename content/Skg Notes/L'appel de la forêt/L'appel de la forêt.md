@@ -21,7 +21,7 @@ tags:
  · | · [[Chapitre 2 - Acte 2 - Développement]]
  · | · [[Chapitre 2 - Acte 3 - Communication]]
   · | · [[Chapitre 2 - Acte 3 - Organisation]]
- · | · `[[Chapitre 2 - Acte 3 - Financement]]`
+ · | · [[Chapitre 2 - Acte 3 - Financement]]
  · | · `[[Chapitre 2 - Acte 3 - Transport]]`
  · | · `[[Chapitre 2 - Acte 4]]`
  · | · `[[Chapitre 3 - Crime]]`
