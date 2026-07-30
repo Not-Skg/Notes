@@ -16,9 +16,9 @@ tags:
 ## RETEX
 Pour rappel, le personnage du [[03 December|3 décembre]] est le Grinch, donc en cherchant : `inurl:"wp-content" "arrêté" "grinch" "décembre 2024"`
 On trouve directement les liens wordpress lié à des arrêtés du style.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/5 December/5D_WP.png|500]]
+![[5D_WP.png|500]]
 Le premier lien nous donne le nom ==Driol==
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/5 December/5D_Driol.png|500]]
+![[5D_Driol.png|500]]
 Et le deuxième nous donne ==Dupuy==
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/5 December/5D_Dupuy.png|500]]
+![[5D_Dupuy.png|500]]
 

@@ -15,7 +15,7 @@ tags:
 En utilisant Google LENS, j'ai trouvé [ce site](https://www.alamyimages.fr/le-pere-noel-recoit-sa-licence-de-pilote-avion-du-sous-secretaire-du-commerce-bien-qu-il-y-a-peut-etre-pas-suffisamment-de-neige-pour-son-traineau-de-rennes-le-pere-noel-sera-encore-en-mesure-de-livrer-son-chargement-de-presente-a-temps-pour-noel-en-utilisant-la-voie-aerienne-l-ancien-saint-appele-a-le-departement-du-commerce-a-washington-aujourd-hui-ou-il-est-indique-de-la-reception-d-une-licence-de-pilote-d-avion-du-sous-secretaire-du-commerce-pour-l-aeronautique-william-p-maccracken-alors-que-clarence-m-young-a-droite-directeur-de-l-aeronautique-departement-du-commerce-les-regarde-image229977751.html) qui dit :
 `...la réception d'une licence de pilote d'avion du sous-secrétaire du Commerce. pour l'aéronautique William P. MacCracken, alors que Clarence M. Young (à droite) Directeur de l'aéronautique, Département du commerce, les regarde.`
 On retrouve aussi la photo originale non tronquée.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/15 December/15D_Image.png|500]]
+![[15D_Image.png|500]]
 
 Grâce à ça, on peut pivoter sur cette recherche : `First US Federal Pilot License`. Et retomber sur [ce pdf](https://www.faa.gov/sites/faa.gov/files/about/history/milestones/first_pilots_license.pdf) qui nous dit que c'est pour ==Orville Wright==
 

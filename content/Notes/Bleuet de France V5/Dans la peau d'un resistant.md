@@ -5,14 +5,14 @@ tags:
   - Chall
   - aperisolve
 ---
-![[content/Notes/Bleuet de France V5/BleuetV5.png]]
+![[BleuetV5.png]]
 
 >[!info] Notes
 > Voici les retex des challs liés à la partie "Dans la peau d'un résistant" du CTF BLEUET DE FRANCE V5 by  AEGE.
 
 ***Les autres parties du CTF :***
  · | · Dans la peau d'un resistant
- · | ·  [[L'audace de resister]]
+ · | · [[L'audace de resister]]
  · | · [[Un devoir de memoire]]
  · | · [[L'art de resister]]
  · | · [[Nos partenaires]]
@@ -21,9 +21,9 @@ tags:
 ## Alpha ici Bravo
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_AB.png|500]]
+>![[BLEUETV5_PR_AB.png|500]]
 > Votre grand-père adorait se mettre dans la peau de résistants. Il est parvenu à obtenir l'[archive audio](https://bleuet.aege.fr/files/f0a4740d14f2b11c4914dd46b14b2025/CTF_Bleuet_2K26_-_Alpha_ici_Bravo_-_audio.wav) d'un enregistrement radio intercepté en 1944. Il avait noté que cet enregistrement semblait provenir d’un maquis de la résistance capté accidentellement lors d’une transmission clandestine. Un largage de matériel y était programmé dans les jours suivants la transmission, mais le lieu exact de réception était inconnu.
-> ![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_AB.wav]]
+> ![[BLEUETV5_PR_AB.wav]]
 > Votre grand-père s'était donné pour mission de localiser la commune concernée par ce largage à partir des seuls éléments donnés.
 >
 >> **Format de flag** : Nomcommune
@@ -50,10 +50,10 @@ Globalement, on comprend que c'est un message d'annonce dans une gare. Ce qui po
 Commençons par le terme qui me donne le plus de confiance : Besançon/Briançon.
 Je ne sais pas si la gare indiquée est "Besançon" ou "Briançon", mais pour le savoir, je peux chercher sur la carte si des villes à côté ressemble la gare précédente que j'ai entendu "L'Argentine-la-Gaçait".
 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_AB_M1.png|500]]
+![[BLEUETV5_PR_AB_M1.png|500]]
 Pour Besançon, je ne trouve rien d'intéressant. Ça doit donc être une hallucination auditive.
 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_AB_M.png|500]]
+![[BLEUETV5_PR_AB_M.png|500]]
 Par contre pour Briançon, on retrouve plein de nom de ville qui permettent de reconstituer le message de façon crédible : 
 ```
 Le train en provenance de Veynes et en direction de Briançon desservira essentiellement les gares de :
@@ -68,7 +68,7 @@ On sait donc que l'on se trouve dans une gare entre Veynes et Embrun qui a une l
 Et plus précisément, on est à l'arrêt de cette ligne juste avant l'arret d'Embrun.
 
 On peut retrouver la carte de la ligne de Veynes à Briançon sur sa [page wikipédia](https://fr.wikipedia.org/wiki/Ligne_de_Veynes_%C3%A0_Brian%C3%A7on#:~:text=La%20ligne%20de%20Veynes%20%C3%A0,%2DC%C3%B4te%2Dd'Azur.). 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_AB_C.png]]
+![[BLEUETV5_PR_AB_C.png]]
 
 Le dernier arrêt avant Embrun est donc **==Chorges==**.
 
@@ -76,9 +76,9 @@ Le dernier arrêt avant Embrun est donc **==Chorges==**.
 ## Décryptage en piqué
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_DP.png|500]]
+>![[BLEUETV5_PR_DP.png|500]]
 > La captation d’image et de son. S’agirait-il d’une preuve irréfutable pour identifier des actions ? Ici, nous voulons reconnaître et retrouver des renseignements en lien avec la libération de l’Europe. Une [courte vidéo](https://bleuet.aege.fr/files/dbd91830ff8f3c7ec68d33634c729088/CTF_Bleuet_2K26_-_Decryptage_en_pique_-_video.mp4), manifestement ancienne. Des images de bombardements, un lieu, des dates. A l'époque, votre grand-père du haut de son mètre d'enfant attendait les Alliés. Ces images témoignent de ce qu'il espérait.
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_DP_V.mp4|500]]
+>![[BLEUETV5_PR_DP_V.mp4|500]]
 > Retrouvez le lieu et la date du début de ces faits.
 >
 >> **Format du flag** : 03/05/2024_lyon (_Le résultat attendu est sans accent et en minuscule. La date est au format : JJ/MM/AAAA_)
@@ -86,16 +86,16 @@ Le dernier arrêt avant Embrun est donc **==Chorges==**.
 ### RETEX
 La vidéo présente manifestement la préparation, le déroulement et la reconstruction d'une ville suite à un bombardement intensif.
 En utilisant Google Lens sur une image de la vidéo qui présente un point de vue de la ville par avion, on arrive à trouver des résultats qui pointent vers ==Brest==
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_DP_GL.png|500]]
+![[BLEUETV5_PR_DP_GL.png|500]]
 Puis en cherchant `brest seconde guerre mondiale bombardement`, on trouve un article du [site de l'Union Nationale des Combattants du Finistère](https://www.unc29.fr/39-45/brest-et-la-seconde-guerre-mondiale/) qui nous donne plus de détail sur ce bombardement, mais aussi la date de début de ces bombardements. 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_DP_UNC.png|500]]
+![[BLEUETV5_PR_DP_UNC.png|500]]
 On a donc le flag : **==07/08/1944_brest==**
 
 ---
 ## Le repère
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_R.png|500]]
+>![[BLEUETV5_PR_R.png|500]]
 >**Latitude** : 48.844001  **Longitude** : 2.34805 
 >
 > Des coordonnées précises, notées à la main ? Peut être un point de rendez-vous utilisé par des agents de la ==Résistance française== lors d’une mission de préparation et notamment d’appui ? Il n'était pas rare que ==pour se reconnaître==, les agents utilisent une ==phrase codée ainsi qu’une photographie==. 
@@ -106,16 +106,16 @@ On a donc le flag : **==07/08/1944_brest==**
 
 ### RETEX
 On a donc des coordonnées en degrés décimaux, ces coordonnées renvoient vers "8 Rue Tournefort, 75005 Paris, France"
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_R_C.png|500]]
+![[BLEUETV5_PR_R_C.png|500]]
 En s'y rendant sur Google Maps, on peut trouver un restaurant et une plaque qui a l'air de rendre hommage a quelqu'un ou quelque chose, un bouquet de fleur y est même présent.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_R_M.png|500]]
+![[BLEUETV5_PR_R_M.png|500]]
 [Une page wikipédia](https://fr.wikipedia.org/wiki/Rue_Tournefort_(Paris)) existe pour cette rue, et dessus, on peut y trouver [une photo](https://en.wikipedia.org/wiki/File:8_rue_Tournefort_-_Paris_-IMG_3681.jpg) de la plaque commémorative.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_R_W.png|500]]
+![[BLEUETV5_PR_R_W.png|500]]
 On y apprend qu'une certaine "Madame Andrée Goubillon" a caché 42 parachutistes français lors de la Seconde Guerre mondiale dans l'initiative du plan Sussex.
 
 En cherchant `Andree Goubillon photo`, on peut trouver [cette page](https://www.plan-sussex-1944.net/fr/missions/mission_pathfinder.htm) qui nous donne plus d'informations.
 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_R_MA.png|500]]
+![[BLEUETV5_PR_R_MA.png|500]]
 ```
 Madame Goubillon se souvient que pour se présenter, les agents qui entraient la première fois dans son café devaient dire : « Bonjour ma tante, comment va mon oncle ? » 
 Ils montraient en même temps la photo d’un bébé, connu sous le nom de Mic-Mic, en fait le dernier fils du colonel Rémy.
@@ -127,7 +127,7 @@ On a donc le flag : **==Mic_Mic==**
 ## Plastique et crayons
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_PC.png]]
+>![[BLEUETV5_PR_PC.png]]
 > Parmi les images conservées par votre grand-père figure [cet endroit](https://bleuet.aege.fr/files/4430ca250e5269bc711aa3a731667062/CTF_Bleuet_2K26_-_Plastique_et_crayons_-_bis.png). Après quelques recherches, vous vous apercevez qu'ici s’est joué l'un des sabotages ferroviaires les plus efficaces de la résistance française. L’auteur des faits a agi en plein jour, alors même que les sentinelles allemandes patrouillaient dans les alentours. Par ailleurs, un document titré de son nom relate encore son exploit.
 >
 > D’après ce dernier, combien de temps ont duré les explosions et à quelle distance ont-elles pu être entendues ?
@@ -136,20 +136,20 @@ On a donc le flag : **==Mic_Mic==**
 
 ### RETEX
 En utilisant Google Lens sur l'image de l'énoncé, on peut trouver [ce site](https://cprd-landes.org/actualites/evenements/il-y-a-80-ans-lexplosion-du-train-de-laluque/.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_PC_M.png|500]]
+![[BLEUETV5_PR_PC_M.png|500]]
 Ce site nous apprend qu'==Henri Ferrand==, un ancien instituteur a fait exploser plusieurs wagons Allemands en plein jour dans les Landes.
 Ce site nous donne plein d'informations, mais aucune citation de monsieur qui pourrait nous aider à compléter ce flag.
 En cherchant `archives henry ferrand Landes`, on peut trouver tout ce qui concerne Henri Ferrand sur [le site d'archives des Landes](https://archives.landes.fr/service-educatif/concours-national-de-la-resistance-et-de-la-deportation/cnrd-2022-2023/les-documents/theme-4--enseignants-et-eleves-resistants/henri-ferrand).
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_PC_AL.png|500]]
+![[BLEUETV5_PR_PC_AL.png|500]]
 Notamment [un dossier](https://archives.landes.fr/service-educatif/concours-national-de-la-resistance-et-de-la-deportation/cnrd-2022-2023/les-documents/theme-4--enseignants-et-eleves-resistants/henri-ferrand#visionneuse-cms_3942694_0) à son nom.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_PC_FH.png|500]]
+![[BLEUETV5_PR_PC_FH.png|500]]
 On a donc le flag : **==plus_de_48h_plus_de_50km==**
 
 ---
 ## Lettre d'un soldat
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_LS.png|500]]
+>![[BLEUETV5_PR_LS.png|500]]
 > Il y a 80 ans, le maréchal Pétain venait de signer l’armistice avec l’Allemagne nazie, le général de Gaulle lançait depuis la radio de Londres son appel à la résistance et à la poursuite du combat contre l’ennemi. Parmi les premiers documents de la valise de votre grand-père, figurent un [tract](https://bleuet.aege.fr/files/00c2ae68a608f74705b1ef40106ba133/CTF_Bleuet_2K26_-_Lettre_dun_soldat_-_Tract.png) clandestin froissé, et le  [portrait](https://bleuet.aege.fr/files/00f87ab409944aedb36894d1cfc3c436/CTF_Bleuet_2K26_-_Lettre_dun_soldat_-_SoldatLettre.png) au fusain d'un soldat. Ce portrait illustre une lettre.
 >
 > Retrouvez la dernière phrase de cette lettre.
@@ -160,17 +160,17 @@ On a donc le flag : **==plus_de_48h_plus_de_50km==**
 Pour ce challenge, nous avons accès à deux fichiers, avançons par étape.
 
 Après une recherche inversée via Google Lens, on peut déduire que le casque représenté [est probablement](https://www.world-war-helmets.com/fiche/Casque-Francais-Adrian-Mle-15) un casque Adrian d'infanterie.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_LS_CI.png|500]]
+![[BLEUETV5_PR_LS_CI.png|500]]
 On ne peut pas vraiment tirer plus d'information de ce croquis.
 
 Par contre, on peut trouver via Google Lens [un article de la BNF](https://www.bnf.fr/fr/actualites/lappel-du-18-juin-1940-et-le-general-de-gaulle-dans-les-collections-de-la-bnf) sur l'appel du 18 juin 1940 du Général de Gaulle illustré par ce tract clandestin de la resistance française.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_BNF.png|500]]
+![[BLEUETV5_PR_BNF.png|500]]
 Une de leurs sources : "des tracts de la Résistance française" renvoie vers Gallica, leur outil d'archives.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_LS_G.png|500]]
+![[BLEUETV5_PR_LS_G.png|500]]
 On y retrouve quelques documents, mais en cliquant sur "voir tous les documents du même ensemble" on en trouve 3 spécifiques dont [une lettre comportant le croquis de l'énoncé](https://gallica.bnf.fr/ark:/12148/bpt6k990554s).
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_LS_G2.png|500]]
+![[BLEUETV5_PR_LS_G2.png|500]]
 On peut donc lire la lettre entière.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_LS_G3.png|500]]
+![[BLEUETV5_PR_LS_G3.png|500]]
 Et en déduire le flag : **==Si je suis aujourd'hui déchu de mes droits, privé de ma nationalité, dépossédé de mes biens, je ne désespère pas d'être demain comblé d'honneur, traité en héros national et pensionné.==**
 
 Ce challenge m'a pris beaucoup de temps parce que je n'avais pas vu le bouton "voir tous les documents du même ensemble", je n'avais donc pas accès à la lettre et je cherchais directement via mots clés sans trouver de combinaison intéressante.
@@ -179,7 +179,7 @@ Ce challenge m'a pris beaucoup de temps parce que je n'avais pas vu le bouton "v
 ## Motif aléatoire
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_MA.png|500]]
+>![[BLEUETV5_PR_MA.png|500]]
 > Une [image](https://bleuet.aege.fr/files/7e36f21d21d70a4a8ced1b5be81043ba/CTF_Bleuet_2K26_-_Motif_aleatoire_-_bis.png) qui ressemble à du bruit aléatoire... Cependant, votre grand-père ne gardait rien sans raison. Ce qui semble chaotique cache toujours un ordre...
 >
 > À vous de le trouver.
@@ -197,7 +197,7 @@ Qui était l'[un des plus grands mouvements de la Résistance intérieure franç
 ## Interception de code
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_IC.png|500]]
+>![[BLEUETV5_PR_IC.png|500]]
 > Dans les nombreux documents laissés dans la valise de votre grand-père, certains sont beaucoup plus récents. Il semblerait qu'un ami de votre grand-père, lui aussi passionné, par le courage des résistants, a laissé un message chiffré à l’aide d’un algorithme baptisé CTFCodec. Vous avez en votre possession le [code source de l’algorithme](https://bleuet.aege.fr/files/c1add2f43d21d2fbe058b70abe0151c5/CTF_Bleuet_2K26_-_Interception_de_code_-_codec_1.php)ainsi qu’un message chiffré.
 >
 > On sait que la clé a été communiquée par un certain ==Philippe Kieffer==. Retrouvez-la.
@@ -369,25 +369,25 @@ Après une rapide analyse du code, j'en déduis que le code sert à chiffre et d
 Je pourrais la brut force, mais ce n'est pas vraiment l'esprit OSINT recherché dans ce CTF.
 
 Je cherche donc des informations sur ce Philippe Kieffer. [Sa page wikipédia](https://fr.wikipedia.org/wiki/Philippe_Kieffer) est une des plus remplies de ce CTF.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_IC_W.png|500]]
+![[BLEUETV5_PR_IC_W.png|500]]
 Étant donné que l'énoncé dit qu'il a partagé une clé, je cherche un homonyme sur les réseaux.
 Je trouve une [chaine Youtube](https://www.youtube.com/@philippekieffer3532/videos) et un [compte Facebook](https://www.facebook.com/CommandantPhilippeKieffer/), mais elles ne donnent pas réellement d'informations sur cette fameuse clé.
 Par contre, je trouve un [compte Github](https://github.com/Philippe-Kieffer) intéressant.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_IC_G.png|500]]
+![[BLEUETV5_PR_IC_G.png|500]]
 
 On a donc la clé : `Commandos-SAS-Qui-ose-gagne!`
 
 En modifiant un peu la fin du code php, on peut décoder le message chiffré. 
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_IC_PHP.png|500]]
+![[BLEUETV5_PR_IC_PHP.png|500]]
 On obtient donc les coordonnées suivantes : **(49.3696815, -0.8710842)**
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_IC_GM.png|500]]
+![[BLEUETV5_PR_IC_GM.png|500]]
 Ces coordonnées nous mènent au lieu du débarquement de Normandie : **==omaha_beach==**
 
 ---
 ## Les ondes du silence
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_OS.png|500]]
+>![[BLEUETV5_PR_OS.png|500]]
 > Une [page arrachée](https://bleuet.aege.fr/files/2ea9ebc56675c034ab9e08e325e444ac/CTF_Bleuet_2K26_-_Les_ondes_du_silence_-_bis.png), sans en-tête. Elle évoque un ==sabotage réussi mené par des Français libres==. Votre grand-père n'avait pas signé ce document, mais il évoquerait un sabotage réussi, mené par des Français libres.
 >
 > Quel est le nom de cette opération ? Et quelles ==infrastructures se sont effondrées== à la suite des explosions ?
@@ -413,7 +413,7 @@ Jusqu'ici, on est bon par rapport à ce que j'avais déjà trouvé. Débloquons 
 Ça je n'y avais pas pensé, enfin un vrai indice lors d'un CTF, et pas juste une évidence ou une reformulation/paraphrase de l'énoncé.
 
 En cherchant `waveforms alphabet` on peut donc trouver ce dont on a besoin.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_OS_A.png|500]]
+![[BLEUETV5_PR_OS_A.png|500]]
 On peut traduire ces wavesforms par ==Radio paris==
 
 On peut donc maintenant chercher les mots clés suivants `radio paris sabotage résistant`. On peut ensuite avoir accès à [ce site](https://www.archives18.fr/espace-culturel-et-pedagogique/jeux-et-decouvertes/detournons-les-archives-/deuxieme-concours--le-sabotage-des-pylones-emetteurs-dallouis-du-vendredi-13-au-mercredi-25-novembre) qui décrit "Le sabotage des pylônes émetteurs d'Allouis".
@@ -428,14 +428,14 @@ La neutralisation des pylônes d'Allouis était un objectif majeur de la guerre 
 
 Ça concorde parfaitement avec l'énoncé !
 On peut ensuite lire les documents extraits d'un dossier de procédure du tribunal de Bourges qui nous donnent plus de détails.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_OS_AP.png|500]]
+![[BLEUETV5_PR_OS_AP.png|500]]
 On obtient donc le flag : **==operation_pilchard_pylones_nord_et_ouest==**
 
 ---
 ## Zone Sud
 
 ### Énoncé 
->![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_ZS.png|500]]
+>![[BLEUETV5_PR_ZS.png|500]]
 > Si le mot « résisté » doit toujours se conjuguer au présent, nous devons tout de même revenir sur une histoire marquante d’un personnage féminin unique. Une photographie d'une femme. Aucun nom, ni prénom au dos, votre grand-père admirait certaines personnes en silence, ou bien, [cette photo](https://bleuet.aege.fr/files/e53a636865eca08422b3293fca3042a0/CTF_Bleuet_2K26_-_Zone_Sud_-_bis.jpeg) cache peut être un secret. Un lieu propice pour une ==action d’éclat== est lié à ce document, il sera nécessaire de trouver l'identité de cette femme et d’approfondir vos recherches à l’aide de la photographie jointe. Son prénom et son nom d’épouse d’origine vous serviront de clé.
 >
 > Retrouvez les coordonnées géographiques du lieu des faits !
@@ -445,7 +445,7 @@ On obtient donc le flag : **==operation_pilchard_pylones_nord_et_ouest==**
 ### RETEX
 
 En utilisant Google Lens sur la photo, on peut trouver le nom de cette personne, mais aussi la ville associée a cette personne.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_ZS_GL.png|500]]
+![[BLEUETV5_PR_ZS_GL.png|500]]
 Il s'agit donc de Lucie Aubrac, qui est connue notamment pour son [rôle dans la résistance](https://fr.wikipedia.org/wiki/Lucie_Aubrac) :
 
 ```
@@ -487,10 +487,10 @@ Je test donc avec d'autres lieux liés à ces coups, dont le lieu du 21 octobre 
 C'est vrai que je n'avais pas forcément beaucoup prété attention à la "clé" de l'énoncé.
 
 Je lance donc [aperisolve](https://www.aperisolve.com) sur la photo de l'énoncé ce qui me donne le mot de passe `Lucie Samuel` qui est le nom d'épouse de Lucie Aubrac, ce qui coïncide encore avec l'énoncé.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_ZS_A.png|500]]
+![[BLEUETV5_PR_ZS_A.png|500]]
 En utilisant un [Steganographic decoder en ligne](https://futureboy.us/stegano/decinput.html) avec ce mot de passe on trouve les mots `Hopital de l Antiquaille`.
 On pouvait aussi ouvrir la partie Steghide d'aperisolve qui nous renvoie vers la payload caché via le mot de passe.
-![[content/Notes/Bleuet de France V5/Dans la peau d'un resistant/BLEUETV5_PR_ZS_SD.png|500]]
+![[BLEUETV5_PR_ZS_SD.png|500]]
 Ma première idée était donc la bonne.
 Je reteste les coordonnées mais ça ne marche toujours pas, pourtant c'est celles sur wikipédia et je les modifie pour qu'elles ai le même format que dans l'énoncé....
 

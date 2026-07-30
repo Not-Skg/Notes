@@ -4,7 +4,7 @@ tags:
   - Chall
   - Bellatrix
 ---
-![[content/Notes/Bellatrix Orion 26/Bellatrix_Illustration.png]]
+![[Bellatrix_Illustration.png]]
 >[!info] Notes
 >Voici les retex de tous les challenges de cette troisième journée de l'opération Bellatrix !
 >C'était varié et immersif, c'est toujours sympa de jouer avec du Morse (Temps incertains), il y avait un peu trop de réalisme à mon goût (cc "**Plein trop cher**").  
@@ -31,7 +31,7 @@ tags:
 
 ### RETEX
 Le but de cette troisième journée est de trouver la localisation de la pilote "Lynx", pour ce faire commençons nos recherches en retraçant la route du primo-diffuseur de la campagne de désinformation.
-![[content/Notes/Bellatrix Orion 26/P3/P3_avis.png|500]]
+![[P3_avis.png|500]]
 Après avoir trouvé son compte Google, on se rend compte qu'il a laissé quatre avis à un intervalle très court, et ça dans la période de temps où Lynx a disparu.
 Le premier avis se trouve à "Arcachon", et le dernier dans le "domaine Départementale Gérard Lagors". En traçant une ligne entre ces deux points, on obtient un trajet à vol d'oiseau de ==43.54 km==.
 
@@ -55,7 +55,7 @@ Pour "remonter la piste", j'ai calculé l'**azimut** entre les 2 avis extrêmes 
 3. **Azimut obtenu** : **==114.63°==** (sud-est) 
 
 Pour le calcul j'ai utilisé le site dcode :
-![[content/Notes/Bellatrix Orion 26/P3/P3_decode_azimut.png|500]]
+![[P3_decode_azimut.png|500]]
 
 >[!Tips] **Interprétation** de l'azimut
 >On trace une ligne droite entre ces 2 points, puis on **prolonge cette droite** pour anticiper sa direction de déplacement. 
@@ -77,15 +77,15 @@ On sait que Marc Veylanne aime et pratique énormément la randonnée. On le sai
 Un site de randonnée connue (Rando-Gogo) a récemment été utilisé par Veylanne, on va le fouiller un peu pour voir s'il n'y a pas un indice intéressant dedans sur sa destination.
 
 Ce site répertorie des randonnées sympas à faire, et Veylanne a récemment proposé celle-ci.
-![[content/Notes/Bellatrix Orion 26/P3/P3_rgg_vlan.png|500]]
-![[content/Notes/Bellatrix Orion 26/P3/P3_rgg_vlan_desc.png|500]]
+![[P3_rgg_vlan.png|500]]
+![[P3_rgg_vlan_desc.png|500]]
 Cette randonnée aurait pu nous être utile, mais la trace GPS ne peut pas être récupéré, et les points d'intérêts sont assez nombreux et pas vraiment dans une localisation intéressante.
 
 On va donc se pencher sur le dernier chemin de randonnée partagé sur ce site : 
-![[content/Notes/Bellatrix Orion 26/P3/P3_rgg_boucle_pecheur.png|500]]
-![[content/Notes/Bellatrix Orion 26/P3/P3_rgg_boucle_pecheur_desc.png|500]]
+![[P3_rgg_boucle_pecheur.png|500]]
+![[P3_rgg_boucle_pecheur_desc.png|500]]
 Ce qui est intéressant, c'est que ce trajet se situe en Aquilonnie.
-![[content/Notes/Bellatrix Orion 26/P3/P3_maps_pi.png|500]]
+![[P3_maps_pi.png|500]]
 Et le plus intéressant, c'est que le point d'intérêt "L’aire de Caussaieu" ne se trouve pas très loin de la localisation du dernier avis google de Veylanne.
 La localisation de ce nouveau point est donc : ==GJ5F+R5_Leogeats==
 
@@ -100,7 +100,7 @@ La localisation de ce nouveau point est donc : ==GJ5F+R5_Leogeats==
 >>- Consulter le cadastre en ligne Utiliser le site officiel du cadastre français : cadastre.gouv.fr. 
 >>- Identifier la parcelle cadastrale précise par son code.
 >
->![[content/Notes/Bellatrix Orion 26/P3/P3_titre_propriete.pdf]]
+>![[P3_titre_propriete.pdf]]
 >Vérifier les limites de la parcelle et son environnement (proximité avec d’autres terrains suspects).
 ### RETEX
 On sait, d'après ce titre de propriété, que Marc Veylanne a vendue la parcelle ==00C198== a la milice Aquilonne.
@@ -116,17 +116,17 @@ Et cette parcelle se trouve près de Leogats (donc proche du point d'intérêt d
 >>Vérifier les prix du diesel le 18/03/2026 via les plateformes de suivi des prix (comme [https://www.prix-carburants.gouv.fr/](https://www.prix-carburants.gouv.fr/) ). Nom et adresse de la station. Prix du diesel le 18/03/2026.
 ### RETEX
 Grace a cette interception de message, on a appris que Veylanne s'approvisionne en diesel à Langon, une petite recherche Google nous permet de trouver rapidement la station-service en question.
-![[content/Notes/Bellatrix Orion 26/P3/P3_map_langon.png|500]]
+![[P3_map_langon.png|500]]
 Et Langon se trouve un peu à l'est de l'aire de Caussarieu, ça nous aide donc à compléter sa trajectoire.
 Grâce à ce site : [prix-carburant.eu](https://prix-carburant.eu/station/33210010#google_vignette ), on est capable de trouver le prix du diesel le 18 mars dans la station que Marc a visité.
-![[content/Notes/Bellatrix Orion 26/P3/P3_prix_diesel.png|500]]
+![[P3_prix_diesel.png|500]]
 Il était à 2.013€/L, il est encore plus cher maintenant...
 
 ---
 ## Temps incertains (optionnel)
 ### Mission
 >Votre objectif est de décrypter un message caché dans un bulletin météo spécial, probablement diffusé à une date ou sur un canal spécifique (radio, site web, application). Ce message pourrait être dissimulé sous forme de codes, d’anagrammes, de séquences numériques, ou de mots-clés intégrés dans les prévisions.
->![[content/Notes/Bellatrix Orion 26/P3/bms.wav]]
+>![[bms.wav]]
 >**Actions requises :**
 >Analyser le contenu pour repérer des anomalies :
 >>- Mots ou phrases inhabituels (ex. : termes techniques détournés, répétitions).
@@ -139,12 +139,12 @@ Il était à 2.013€/L, il est encore plus cher maintenant...
 Pour déchiffrer le message caché derrière ce bulletin météo, je vais utiliser l'application "Audacity".
 À la première écoute de ce message, j'entends des bips sonores irréguliers.
 Ça ressemble clairement à du morse, pour retranscrire plus facilement ce message, je vais afficher le spectrogramme de la piste audio, et je vais filtrer les fréquences pour ne voir que ce qu'il y a entre 760 et 830.
-![[content/Notes/Bellatrix Orion 26/P3/P3_waw_morse.png|500]]
+![[P3_waw_morse.png|500]]
 Je distingue maintenant plutôt bien le code morse. Mais pour le visualiser encore mieux, je vais zoomer un peu plus sur certains endroits : 
-![[content/Notes/Bellatrix Orion 26/P3/P3_wav_zoom.png|500]]
+![[P3_wav_zoom.png|500]]
 Maintenant, il ne reste plus qu'à retranscrire les longs violets par des " ", les courts jaunes par des "." et les longs jaunes par des "-".
 Ensuite, on a plus qu'à copier-coller ça sur un [site de traduction de code morse](https://morsecodetranslator.com/fr) : 
-![[content/Notes/Bellatrix Orion 26/P3/P3_morse_translate.png|500]]
+![[P3_morse_translate.png|500]]
 
 On a donc le message caché suivant : ==LYNX_RÉCUPÉRÉE==
 On est maintenant sûr que c'est bien eux qui ont récupéré la pilote, mais on a déjà une idée de la localisation "près de Leogats"
@@ -154,7 +154,7 @@ On est maintenant sûr que c'est bien eux qui ont récupéré la pilote, mais on
 
 ### Mission
 >Vous avez désormais toutes les preuves de l'implication de la milice, il faut désormais localiser la pilote pour déclencher l'opération "ouvrir la cage" afin de la libérer. Votre objectif final : localiser précisément la pilote LYNX retenu en otage. Vous disposez de deux photos de la maison de détention.
->![[content/Notes/Bellatrix Orion 26/P3/P3_photo1.jpeg|500]]![[content/Notes/Bellatrix Orion 26/P3/P3_photo2.jpeg|500]]
+>![[P3_photo1.jpeg|500]]![[P3_photo2.jpeg|500]]
 >**Actions requises :**
 >>- Analyser la photo de la maison pour extraire des indices visuels
 >>- Valider la localisation avec les indices fournis sur la plateforme
@@ -165,14 +165,14 @@ Maintenant qu'on a ces photos, on a tout ce qu'il nous faut pour retrouver la lo
 Les outils de recherche inversée ne vont pas nous aider ici, parce que les photos sont trop "basiques", il n'y a pas vraiment d'élément notable.
 
 Par contre, on peut utiliser toutes les informations que l'on a.
-![[content/Notes/Bellatrix Orion 26/P3/P3_loc_lynx.png|500]]
+![[P3_loc_lynx.png|500]]
 On sait qu'une parcelle a été vendue proche de Leogats, on va donc rester dans le coin.
 On sait que sur la photo, il y a des palissades sur la gauche.
-![[content/Notes/Bellatrix Orion 26/P3/P3_loc_lynx_pallissades.png|500]]
+![[P3_loc_lynx_pallissades.png|500]]
 On va donc chercher des petites cabanes proches de ces palissades.
-![[content/Notes/Bellatrix Orion 26/P3/P3_loc_lynx_idea.png|500]]
+![[P3_loc_lynx_idea.png|500]]
 Je trouve une petite cabane avec ces caractéristique proche de l'aire.
-![[content/Notes/Bellatrix Orion 26/P3/P3_localisaion_Lynx.png|500]]
+![[P3_localisaion_Lynx.png|500]]
 En se positionnant sur la route à côté, on retrouve le même cadrage que la photo originale, on est donc au bon endroit.
 
 On a donc la localisation suivante : ==44.509103, -0.372658==.

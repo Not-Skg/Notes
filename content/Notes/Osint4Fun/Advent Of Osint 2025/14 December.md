@@ -13,6 +13,6 @@ tags:
 
 ## RETEX 
 Via l'utilisation de Google Lens, on arrive à trouver un [article](https://svenblogt.boardingarea.com/flying-home-for-christmas-mit-airberlin/) avec une image similaire qui en parle.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/14 December/14D_Boeing.png|500]]
+![[14D_Boeing.png|500]]
 Il y a même une seconde photo, de l'extérieur de l'avion. 
 Et il y est mention de la compagnie **==Air Berlin==**, et d'un **==Boeing 737-800==**.

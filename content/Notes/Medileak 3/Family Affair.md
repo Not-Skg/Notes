@@ -6,7 +6,7 @@ tags:
 ---
 
 >Vous avez une belle vision de l'ensemble... Enfin, si vous n'avez pas traversé les éléments de l'enquête comme un touriste sur la voie de gauche d'une autobahn allemande.
-![[content/Notes/Medileak 3/Familly Affair/M3_FA.png]]
+![[M3_FA.png]]
 
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
@@ -87,7 +87,7 @@ En étudiant ces investisseurs, vous découvrez qu'ils ont lancé en 2026 une en
 ### RETEX [2/3]
 
 En parcourant la [review annuel de 2025 de S&L](https://stavroslynch.com/sl_annual_review_2025.html), des investisseurs du projet VEDA, on apprend qu'ils ont lancé en 2026 une entreprise au Moyen-Orient nommé **==Kydonia Continental Security Holdings Ltd==**
-![[content/Notes/Medileak 3/M3_FA_1.png|500]]
+![[M3_FA_1.png|500]]
 Cette entreprise possède son propre site internet : **==hxxps://kydonia.vip==**
 
 ### Énoncé [3/3]
@@ -100,7 +100,7 @@ Cette entreprise possède son propre site internet : **==hxxps://kydonia.vip==**
 ### RETEX [3/3]
 
 Cette entreprise est aussi présente sur [X](https://x.com/KidoniaSecurity) sous le pseudo `KidoniaSecurity`.
-![[content/Notes/Medileak 3/Familly Affair/M3_FA_2.png|500]]
+![[M3_FA_2.png|500]]
 Sur un de leur post sur X, le **==11 mai==** ils ont d'ailleurs posté leur arrivée à **==Limoges==** pour assurer la sécurité d'un évènement début juin.
 Sur la photo qui accompagne l'annonce, on retrouve même la voiture présente devant la maison de Despina et Gizem, la même qui était devant l'agence de Crédit Briance & Vienne et aussi la même qui avait suivi H-P.G.
 

@@ -28,4 +28,4 @@ Le premier lien ne me donne pas grand-chose mais pour le deuxième, j'ai des tru
 Plus précisément l'histoire suivante : ![[22 Decembre.png|500]]
 
 Et la personne qui raconte l'histoire est **==Tiitus==**
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/22 December/22D_Tiitus.png|500]]
+![[22D_Tiitus.png|500]]

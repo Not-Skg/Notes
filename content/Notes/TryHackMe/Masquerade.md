@@ -19,12 +19,12 @@ Pour nous aider dans nos analyses, on a reçu un evtx et un pcap.
 > What external domain was contacted during script execution?
 
 Pour commencer, j'ai voulu regarder le contenu de l'evtx, pour ce faire j'ai utiliser un outil en ligne sympa développé par Omer Benamram, et sobrement nommé evtx.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_evtx1.png]]
+![[THM_Masquerade_evtx1.png]]
 Il n'y a pas beaucoup d'entrée, je peux donc les regarder une à une. 
 Une entrée en particulier retient mon attention, elle contient un script.
 Dans la deuxième ligne de ce script, je distingue une sorte de lien mais éparpiller et avec pleins de caractères dedans (`+`, `,`, `'`).
 
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_cc_evtx1.png]]
+![[THM_Masquerade_cc_evtx1.png]]
 En utilisant CyberChef, on peut facilement les retirer.
 
 Ce qui nous donne donc deux strings intéressants : 
@@ -37,59 +37,59 @@ En relisant attentivement le script, je m'aperçois qu'il télécharge `amd.bin`
 > What encryption algorithm was used by the script?
 
 Pour savoir la méthode de chiffrement utilisé, j'ai demandé à Perplexity.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_perpl.png]]
+![[THM_Masquerade_perpl.png]]
 Il en a déduit que c'est du ==RC4==, et ça on aime bien parce que ça utilise une clé symétrique, on chiffre et déchiffre donc avec la même clé.
 
 ---
 > What key was used to decrypt the second-stage payload?
 
 Pour s'assurer que c'était bien la bonne clé, on peut essayer de déchiffrer le fichier.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_WS_amd.png]]
+![[THM_Masquerade_WS_amd.png]]
 Pour ça il faut d'abord extraire le fichier comme suit :
 File -> Export Objects -> HTTP -> amd.bin -> Save
 
 Enfin, on peut l'ajouter sur CyberChef, lui préciser que c'est de l'Hex, qu'on veut le déchiffrer via RC4 et la clé **==`X9vT3pL2QwE8xR6ZkYhC4s`==**
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC2.png]]
+![[THM_Masquerade_CC2.png]]
 Et en téléchargeant le fichier résultant, on trouve bien un fichier considéré comme virus...
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_DL.png]]
+![[THM_Masquerade_DL.png]]
 
 On peut vérifier son état via la commande `file` et on apprend que c'est un PE32
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_PE.png]]
+![[THM_Masquerade_PE.png]]
 
 ---
 > What was the timestamp of the server response containing the payload?
 
 Pour retrouver le timestamp lié a la réponse du serveur contenant la payload, on peut faire : 
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_WS_Follow.png]]
+![[THM_Masquerade_WS_Follow.png]]
 Clic droit sur la requête à l'origine du téléchargement du ficheir amd.bin -> Follow -> HTTP stream
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_WS_Follow_bin.png]]
+![[THM_Masquerade_WS_Follow_bin.png]]
 On apprend donc que le serveur attaquant fonctionne sous python 3.11.2 et le timestamp est le suivant : **==Fri, 10 Apr 2026 05:28:23 GMT==**
 
 ---
 > What is the SHA-256 hash of the extracted and decrypted payload?
 
 Pour avoir le SHA-256 on peut juste demander à CyberChef d'ajouter un SHA256 sur le fichier qu'il nous a sorti plus tôt.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC_SHA.png]]
+![[THM_Masquerade_CC_SHA.png]]
 On obtient donc : **==`e3d39d42df63c6874780737244370ba517820f598fd2443e47ff6580f10c17cb`==**
 
 ---
 > What remote URL did the client use to communicate with the victim machine?
 
 En analysant les trames réseaux (Statistics -> Conversations -> IPv4) on s'aperçoit qu'une IP a eu un énorme trafic avec la victime lors de l'incident.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_WS_IP.png]]
+![[THM_Masquerade_WS_IP.png]]
 
 En recherchant le SHA256 récupéré plus tôt sur VirusTotal, on apprend que c'est bien un virus connu, et qu'il est lié a une adresse spécifique, la même adresse qu'on a trouvé dans notre pcap : [http://34.174.57.99/](https://www.virustotal.com/gui/url/4f4c092eae02f1c391b9b5a6f8bdefd6a5c81e21b624192e2af22f8cf0684e33)
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_VT.png]]
+![[THM_Masquerade_VT.png]]
 
 ---
 > Which encryption key and algorithm does the client use?
 
 Normalement, si l'on veut vraiment analyser un PE dans les règles de l'art, il faudrait le décompiler, avec ghidra par exemple.
 Mais je n'ai pas beaucoup de temps, donc je vais faire autrement.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_strings.png]] 
+![[THM_Masquerade_strings.png]] 
 En regardant le résultat de la commande `strings` sur le PE, je me rends compte qu'il y a beaucoup de mot clé intéressant, `CIPHER`, `SHA256Managed`, `AesManaged`, `encryptedStriingWithIV`, ...
 On peut donc déjà en déduire qu'il y a d'autres informations chiffrées liées à ce PE, et elles sont chiffrées via **==AES==** puisque le SHA256 était utilisé à l'étape d'avant.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_cat.png]]
+![[THM_Masquerade_cat.png]]
 
 Si on regarde un peu plus en détails avec un `cat`par exemple, on peut revoir ces mots clé, mais surtout ceci : `KeyCreateAesKeykeySystem.Security.Cryptographyop_EqualityEM4squ3r4d3Th3P4ck3tSt34lthM0d31337`
 On a donc la clé de chiffrement AES utilisé : **==M4squ3r4d3Th3P4ck3tSt34lthM0d31337==**
@@ -98,7 +98,7 @@ On a donc la clé de chiffrement AES utilisé : **==M4squ3r4d3Th3P4ck3tSt34lthM0
 > After determining the client's encryption, decrypt the commands the attacker executed on the victim and submit the flag.
 
 En analysant encore un peu le PE, on retrouve ce `http://34.174.57.99/images?guid=GET...` que j'avais vu auparavant dans Wireshark.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_GET.png]]
+![[THM_Masquerade_GET.png]]
 En revenant sur Wireshark, on voit qu'il y en a quatre liés à cette adresse.
 - `guid=c09Gc3pZOGRaOGF6MWo4bUNKM0tGUktFK2t2b3dOOEtQR2hhWUF0VVlhcUdwWjl4RGJHNXR1UnkyRzdOTXptdQ==`
 - `guid=bk8zVGkzeDhoR1BYMjl5S1MvUHJEdHFTaVBvUlE1Q05xNGFkNS8xRGE3U1hzenBCeDJOamNuc1lGRE1INEdtRERxYkNMc1BsWFlaT2RXbmpYV1l1RGpHenUvdjlkMStCSnV1VC91a1lZVjlGUjR3NVR1TklVOVVBZExkMktDQnRqa0xjSnlpUW9oc1F0REowNS9COC9wQjlSK0EvL20rMGt0RnBhYWxMQW9YeG5teEJ0am81QkphMTExSmdFcXI0THcwSlB0OHg5dk8wNXNrTk92WkczUVNNZ2JUSTlMdGlpL2E4Z0t3NlRCemkybXM4WEVhTlpoQWlEMU5nMTZad0JJVCtSZEN5Wlg1Rm5hUHczcEZDZFVhbEFnRDdraWd4L29XTTVqOVBZWEl3dFBOQk44Tkx6bzNGd054OU9oYlNGSEhvUXdabXdzT3l6L0xsR0g0Zy9UbWRkVlByME1BZnVGNmY0WmptOExCRE40Y2ZzamRwVmJ2MHR1dDc2ZjR2MGQzSVFZT2FadmoxdzJrNm05MTAxcHhJM1I4REw1WWVXRHR6bC9QZUpxU2E3Qis1KzJvSHl0M3FsY1kwaUVoZzJ0ekYyaW9qYVlrSUZjNXVXMmtqUk9rMzFVcVFGengyTzN0c21KTU80L1U0S2VrM3dEQnRESTRiaG5rRjFTZnVKN0ZQVmtxU3R1RVE5Z2tsc0pNS3o5YnoxUzRLOXNpZnhoT0JTVS84ZmFweFRVQ0o5YkprOUt1c2JEZzZyaTQ3Wk1JbVFVRXpxV2ZaU2wwYTZ0VE5TUm40N3FOOFJpbjh4ZzhCTnZyT0FsUHdYMjdxcytqeExJTDFmM1FDcWlNb01mOU4xaTIrT1FneE5TT0pDVzdjb05WSEk4L2JERWh0aWhPa3V0bC85WGZjL2lKVWV1TDVXclFESHp6Mzg2azN2UWxHQzFTQ3ppVHBoRFM2VTFmeXNHSXNINzlIOENYakl4RjBLR0x4RE5YNFE1Y2pGczZSWjJ3K3Exd3BUTjBsclpad3NQbUV1YUdjZ0JoUXNBbW1LQ3AxODhSSUFNK2NaVTV1Q2NBZXJ4dytyaDFkbWk0elVmQUdRM2tqb2RXMTBuaUhPend0UGlDazUycXlmWWlrblJKdW12SDRMbytsb1BXRjNJOWFQTkFBUU94VUE2UkMvZkxwM0g0bkFiNTdmRksrcFRlcHcwc25IVzFuY2RDcjJyZUF1TmEwWFpidkVuK2RoeEdUUU95UTZlakNjSnhUZm1lSEJzZ1phWGNzVUZ6SkZ5N2F1Vk1hYnprZUFTOHNnQWhNeDRzTTAwZlNubGUyOG8xQUdtNEF2eU91VW85eXNtY0ZiN3FyVTZhWldtSVJqdkpXdFRuLzRraC84UUQyc3V6UzlJK2pxWkw0RWFqNzNNRFFDMmhOMmljRFlKWFNnUDZ3b1hvR256RS9ZOERxR2RDY2NsdWJwMVRxcUlodEVYVFM1N3Z0Q2NYeU9VQ1VRNWt2U0tyUkdNRWRrYlpQaHVVN1J0SW9SYlhEUUZtTW5YNmdnMWR6YUZiOTJTR29IZ3VseVY3KzRYYUJRK0FtM1ZDdXg4aXNOWHZWTzZwSDFpWDNIaUFxTlIyT3hYc0J6V2xlME90M3pzTGN1ZzNpNWhUZGZib3BCaS93bWt4KzhocHljYnhzOWJCbEVneENiUlVwRUhyZVpoL0lVY3J4ZXNGYmlyeERBL25icjBmSVAwT2VlOEFXRWVUSjJNZVNUeCt4dkZwcWorVUE0S1l5ZGZQOVJMdWJQcndvTTRJaFIrL0VvQnBTVWxPWEZ3NXNVTnEzQVdDeDVHdFdiWHR2eEt2Zy9NVi9acFJNSkdXcW1IUWZVaTdBc0xTenhnRk9Icm1lMDhTZTNlWVVLcHlzMzhaSXg1STlNRjJRd2YxQ01oaVJ4a0xnTldDT0RjYmY0WU16R2YwTllKT05TWkV2dWYrRWtubWg1YU5OQzBtYiszRWs3dWxmVFlFMGhhMDJoUlk3Ty9odXp5bWZqNm8zTVd0YTk5R0kxSE9KdjNkcU5IYWNqOElTcEdjSTliTC9DamtxWUpqR2YreWEySVhQODhkc3ptN2N5cUplUDZENCtTR211YXlJcWtmK0ZqVk9vMVpWc2liZnVUTXIwd1laemF6RW1icERWc1U3d1J0cEsvTjNMZFV4MFhXTFJTZ0ZTNkNSVHFLc3pWRnlrTnFHeEYrdVBQM2Y1UGNqWmxjcGV1L1VqTlJEbVhoRjM3NnJTNzkrRE9wN015dXFhUVhKNlFzWENFVlhxbVArUnV2cHBoOHlWUHJxZ0pkc2lEOHdJZXNIR1k3Znl6QmtJVFZUYjl4M0s2YU9pZzJ2clJEOVYzYnJHbzBIZ1MrbnZ2N05zNnlobTlkNDNsSjRQL2xNN0s5L2pXZGVjUi9xRWVpclo5WXhwd28vaFhJR0J3cDZQZVFxVFFzQnBqRGpxZkxlaVp4M2lKSXE5Ly9TY3R6QTIzUHdDdXZLbGNYNFlmWDYvVlkvZWVFTCtzZlN6UncyZ0JibnBRR2ZHaGEzZmpmTUFpM0o1aHBhVGJFWnpGVzJmY2VFYzlnMTFESzdWVWtaNnNUd2lLTUxsU0hLN3VSelV0cTJ2bGJtRjhiNi90ajNHdEE4ZS9YTm9WeGhVQ1NMUWZleE4waTMySzFQdUwwaTNmdGtkOVJtcEEyelgwSjhoTm93cjlFZDBoVHk2Nys5azFlcU41MEFWRFBIY3BFbDl1N1k0eXJ2RGV1WFRjZU93d1hUQm16L1ltV0tERlBJcVRLYU0yUzhIQmFOV1BSZXNNeEJua0xJTHpuOTc0TEgydUIvZzFJdUFvNmlaTU53UnZCQjhiNW9UN213aFBsY29KdzRBdmdvSXFUbkJjWUFoSHFnR1BEVzIxN25rb2pmM3VJT01XbU0zbU9RWkNOM2QyUmY3Zzh3K0NYL3NBUjlPMEVPdXFNYXBoTG4wMlNMRHFMOTA2RXU3ZkxTVkFXVzRwY0dGMm1pZGcwMjhjQ0RibXlCZFdRdkJSeHBJK1pIc2U5U0xnaWIxTlUwaUJ5UHFSemhsVzdzN2xML3NYYUdIVk9iUkFZUWJYMXErcjBrRkxHYXF2V1h5VitTOWJCSXJXc01lRlBCNVBEQWE1QS8xa243clpqZnA5aWR4Zm9jQlhUd2luaHlOYTZzcE9FUm5jd1F4a0xrK2pRNWZ5SGN6UXVlOTdaU3E5eUVPQkt0SGJOYlRmc1NsL1hZTzZ5a1dYeCtLY3NiVTNBanlzbXhsKzduTVBHYmttMnU4ZDVEdU5lWlArNEllWEdYUndzL3ZlQWpiLzRCN3k5YkRNZm5wYlRoRmY1Z0VkdldMM1lGcmlFZEZhYjEzeVZTdk9ObXBQVlFwd1d2MWo5Z3lZS2xPMklpVVpuTU9MbjZ2QTB1L1ZuNWFOb2FuTkUwdWpVdDR4dEhOK0xLQXNUQ29aL3VlK1ZZTEFGcWFSTExCWnUvajQ3ZmFYVFZIR2Fub0ZlMWNNUXBKK0k4ZEV0V3lodU00M3F2NGsrekRITU1IelRtTnVTR3FwTmQ2YnRwVjJEcWVTdktKWCtyQzVWSnY3OXowU1FBRURIOW1NR1FJeExYK0xvQW0xcUxaU0hReko3T1RDRTVNVURiVEdSbkNoQitiRkgwM0QzVk1aaUIvaUZzaEI1UWtHdTBpNmtlMGdaOWlzbVFRbHpTdWRpcFhHbUFvNXlCbi92bzZTV1oxZStZUWdscG5OWHFYZDh1Nmd3aHJOcmF2RnBJSVJxdjByQy9oVXcyK0QyV3ZrMXpBNi9RR0JJNlNlVmRYY0hLQ21WaUdRQWJMVjErYnAwZzRzZmZRaGV2bUNkY1lUaktKTGVoTTVMWnRMRWRaVjVueUdVd0YrdDE0N3ZSdWlqZXNYTGVZR3p6Mm1xUnFGSjhIeTZsMDJsK3lQWlpFK2c0ZVM5eGNCVlBIZmpCaEdzVGdNRFVRMjZMbVplWnRELzh2UExRTEczWExRY1VqK3lrbzduT1VjSFlUY2wvaHFUZVRvWWRJdDV2SGZFMk5RL3J0aStZS25ET3dHNFVVYkJNNlV5OHRWdmpPNVJ0M2pxbXVINVY1Y3NlbElPSWFSZkd2dEdXaU01UGtEaXIrN0pUbUhDSHNvUlFRVXdPLzhneVBpMU82STZJVENIRS8rSGVYVGhKeFJVY09wWms3aGRBWUt2NXFPUlVvRC8rNlpTWTNuWW0rYU5tbU5oUldhaVk2a1JrTXYrdHpvNXo0YjNKYmJ1bTlwekx1V0dzSVFZT0J0bFQ1cGtaeTF1QUgxWTNVc042bFZsbWloNVM5MWFtWmZXUll5VUpxcHlxVXhaZFVlaVJ0VG5Ub0Z4RGJBa3h6SFlHZ2lhMlV2cC9iVityRGNUaVdrZ1JsRG5aZnAxZXNObTQ2bktsNUx3RjlxUHlYK290SFpFSmhBL011TTlDcCtxUTFLTDR4UnF4RzBTd2o0OHlsckxEalNHOG8rM0xqOUVwb2dWVldkRlBmc0JNRmVMMWwrQ3U5bVdFa3VoSEtqSTBzcnJFM3QvdW5PQWNsT0xwajhncjhJR3NnY1FVRHcvSVFhZ3RJRUZYWWFIRnFHM051cFZmMTlLUFNOWlN4ZW9QWnIzTDIyOW5HQTBQNzVRdU8zakJCZWY3YUZJRFplTUtRZ0lWZ3AydlRmTDcwQ3BFUFdlL3ZLWHEvbStUN0creW16NWdpMGFOMEkzaWNhWnhHeEF3YWtFalM3QXRjd2EvWWJZTHVqTk9DVjJIS2pxYXFFOVNyWnkrVnJHU0hYS0oyaEJETGF0dWl2OVVQZnBsS2VQejBUTWJsVmlERTgrRGFqSnl0R3A5eTdSVHptS1lDUVF1SUxwY09PUnVGbi9acFlPdmNlRWx2cGRaMVdWMFhqQVRKdXNGa0xqVmd5bnVrNW4rSlRFTkZWbnlpUnVZeDVsYTNzdU14OHRyU09aVWFaNGJrc3dyYVpoQmhHNDd0K084ZFpmTFYwTVFzcG9ZWERsOHRIOGN6N1I1NmxBa2RwdDU5cys1dlB0VUNzRjlaVHR5UUxFWEowcjQ0TDg3bDM1ZFFETUdoWDUvYktXa2JMcDhWbDRLYkl6TjIxalpRSU9YVUllbURaYThobDFnZkFPUzU1WGwzQmo4MkNHd1lJWkVxditXR1BvK0Yxcjc0TVpXU1BQNG1MYXBpVjl4SHc9PQ==`
@@ -108,25 +108,25 @@ En revenant sur Wireshark, on voit qu'il y en a quatre liés à cette adresse.
 Ce doit être les données exfiltrées vers le serveur C2 de l'attaquant.
 Essayons de les déchiffrer pour s'en assurer.
 Pour l'instant ça ressemble à du base64.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC_b64.png]]
+![[THM_Masquerade_CC_b64.png]]
 Après avoir déchiffré le base64 ça a toujours la même tête, on va donc retenter.
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC_b64x2.png]]
+![[THM_Masquerade_CC_b64x2.png]]
 Maintenant ça ressemble enfin a autre chose, on va transcrire en HEX pour l'instant
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC_b64x2_hex.png]]
+![[THM_Masquerade_CC_b64x2_hex.png]]
 Là, on a donc notre iv + cipher avec l'iv qui est le string comportant les 32 premiers caractères (générique dans les chiffrements AES)
 
 On va aussi transcrire la clé M4squ3r4d3Th3P4ck3tSt34lthM0d31337 en sha256
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_CC_Key.png]]
+![[THM_Masquerade_CC_Key.png]]
 iv : b0e16ccd8f1d67c6b3d63f26089dca15
 cipher : 1284fa4be8c0df0a3c685a600b5461aa86a59f710db1b9b6e472d86ecd3339ae
 key : 1284fa4be8c0df0a3c685a600b5461aa86a59f710db1b9b6e472d86ecd3339ae
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_Clear1.png]]
+![[THM_Masquerade_Clear1.png]]
 
 En déchiffrant l'aes, on obtient donc : magic_hostname=DESKTOP-I6C5C7M
 C'est donc bien le canal utilisé pour exfiltrer les infos de la machine compromise.
 
 En déchiffrant les autres :
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_Clear2.png]]
+![[THM_Masquerade_Clear2.png]]
 ```
 DESKTOP-I6C5C7M::::
 USER INFORMATION
@@ -169,7 +169,7 @@ SeTimeZonePrivilege           Change the time zone                 Disabled
 
 ```
 
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_Clear3.png]]
+![[THM_Masquerade_Clear3.png]]
 ```
 DESKTOP-I6C5C7M::::
 Windows IP Configuration
@@ -204,7 +204,7 @@ Ethernet adapter Ethernet:
 
 ```
 
-![[content/Notes/TryHackMe/Masquerade/THM_Masquerade_Clear4.png]]
+![[THM_Masquerade_Clear4.png]]
 
 ```
 DESKTOP-I6C5C7M::::THM{m45k3d_tr4ff1c_0v3r_c0v3rt_ch4nn3lz} 

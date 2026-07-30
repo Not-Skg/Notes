@@ -5,7 +5,7 @@ tags:
   - Phishing
 ---
 ## Contexte
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing.png]]
+![[THM_intro-phishing.png]]
 Ce challenge est un peu particulier. Il fait partie des challenges, développés par TryHackMe, qui repose sur un simulateur de SOC. Le principe, se mettre dans la peau d'un Analyste SOC L1. 
 Nous allons donc avoir accès à une interface de ticketing classique, nous devrons les analyser (en utilisant des outils comme Splunk), puis répondre aux tickets en expliquant la situation, les impacts, les actions recommandées et décider si un passage au niveau 2 (pour plus d'analyse) est requis ou non.
 
@@ -121,31 +121,31 @@ True Positive alert must be escalated if additional actions or remediation are r
     
 
 Voici l'annuaire de l'entreprise avec l'identifiant des postes pour chaque utilisateur.
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_info_compagnie.png]]
+![[THM_intro-phishing_info_compagnie.png]]
 On peut aussi préciser le sous réseau utilisé : Office Network → 10.20.2.0/24
 
 ---
 ## Tickets
 Nous avons à notre disposition une interface de SIEM, il était possible de choisir entre Splunk et Elastik, pour cette fois, j'ai pris Splunk.
 Nous avons aussi accès à une machine d'analyste avec un outil nommé `TryDetectThis` qui permet de vérifier la légitimité d'un domaine par exemple.
-![[content/Notes/TryHackMe/Introduction to phishing/THM_into-Phishing_alertes.png]]
+![[THM_into-Phishing_alertes.png]]
 Enfin, nous avons aussi accès à une file de ticket, qui s'agrandit avec le temps.
 
 ---
 ### Ticket 8816 - Access to Blacklisted External URL Blocked by Firewall
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phihsing_1_alerte.png]]
+![[THM_intro-phihsing_1_alerte.png]]
 J'ai choisi de prioriser ce ticket parce qu'il était le seul avec une sévérité Haute, pour les autres, je prendrais le plus vieux de la sévérité la plus haute.
 Ce ticket nous décrit donc une tentative d'accès à un URL bloqué par le firewall : `http://bit.ly/3sHkX3da12340`.
 Cette URL serait soit dans la blacklist, soit résultante d'un canal d'intelligence de la menace.
 On peut donc la check sur TryDetectThis.
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phihsing_1_alerte_url.png]]
+![[THM_intro-phihsing_1_alerte_url.png]]
 L'outil nous dit qu'elle est clean, mais c'est possible qu'elle ne fasse juste pas encore partie des bases de données contactées par l'outil.
 Continuons en vérifiant l'IP liée à cette URL : `67.199.248.11`
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_1_alerte_ip.png]]
+![[THM_intro-phishing_1_alerte_ip.png]]
 L'adresse IP est considérée comme malicieuse. 
 
 Essayons d'avoir plus de contexte, pour ce faire, on peut chercher les mots clés qui nous intéressent dans Splunk, comme l'adresse IP ou le lien directement.
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_1_alerte_mail.png]]
+![[THM_intro-phishing_1_alerte_mail.png]]
 On peut trouver un log qui explicite qu'`h.harris@thetrydaily` a reçu un email de la part de `urgents@amazon.biz` qui lui explique que son colis n'a pas pu être livré parce qu'il manque des informations dans l'adresse et que ce colis sera retourné à l'expéditeur si les informations manquantes ne sont pas ajoutées via le lien suivant dans les 48H : `http://bit.ly/3sHkX3da12340`.
 
 Après avoir vérifié l'annuaire, on apprend que `h.harris@thetrydaily`, c'est Hannah Harris du service des ressources humaines et que son poste, c'est le `win-3457`.
@@ -181,18 +181,18 @@ Alert Hannah Harris that it was a phishing attempted, and make her participate i
 ---
 
 ### Ticket 8814 - Inbound Email Containing Suspicious External Link
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_2_alerte.png]]
+![[THM_intro-phishing_2_alerte.png]]
 Pour ce ticket, c'est une alerte de réception d'un email contenant un lien externe suspicieux.
 L'email a été réceptionné par `j.garcia@thetrydaily.thm` qui est Julia Garcia du service "Content", et qui utilise le poste win-3452, avec l'IP suivante : `10.20.2.8`.
 
 L'expéditeur est `onboarding@hrconnex.thm` et le lien suspicieux est le suivant : `https://hrconnex.thm/onboarding/15400654060/j.garcia`
 
 Encore une fois, je commence par vérifier tout ça sur TryDetectThis :
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_mail.png]]
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_url.png]]
+![[THM_intro-phishing_mail.png]]
+![[THM_intro-phishing_url.png]]
 Cette fois-ci, le domaine et l'URL sont clean, mais continuons les analyses.
 
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_2_alerte_splunk.png]]
+![[THM_intro-phishing_2_alerte_splunk.png]]
 En recherchant des logs contenant `hrconnex.thm` je suis tombé sur un log qui explicite un mail de `h.harris@thetrydaily` (du service des ressources humaines) qui explique à `j.carter@thetrydaily.thm` (du IT Support) que J. Garcia (celui qui a reçu le mail avec le lien suspicieux) n'a pas reçu son mail d'inscription a leur nouvelle application externe `hrconnex.thm`, ce qui fait qu'il ne peut pas compléter son profil et signer des papiers.
 
 La date et le nom de l'application concorde avec les infos du ticket, on sait donc que ce n'est qu'un faux positif, et qu'il faudrait mettre en whitelist le domaine et les mails de la part de cette application.
@@ -207,7 +207,7 @@ We need to white list mails from this app.
 
 ---
 ### Ticket 8815 - Inbound Email Containing Suspicious External Link
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phihsing_3_alerte.png]]
+![[THM_intro-phihsing_3_alerte.png]]
 Ce ticket fait directement référence au mail reçu par Harris avec le lien suspicieux sur lequel elle aurait cliquée.
 On peut donc lier ce ticket au ticket 8816.
 Puis répondre directement au ticket : 
@@ -238,14 +238,14 @@ Alert Hannah Harris that it was a phishing attempted, and make her participate i
 
 ---
 ### Ticket 8817 - Inbound Email Containing Suspicious External Link
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_3_alerte.png]]
+![[THM_intro-phishing_3_alerte.png]]
 Ce ticket est aussi lié à la réception d'un mail qui contient un lien suspicieux.
 Le mail aurait été reçu par `c.allen@thetrydaily.thm` (Charlotte Allen du service Développement Web sur la machine `win-3463` avec l'IP `10.20.2.25`).
 
 Cette fois-ci l'expéditeur est `no-reply@m1crosoftsupport.co`, et le lien est : `https://m1crosoftsupport.co/login`.
 Cette fois-ci pas de doute, c'est un phishing, ils ont même utilisé une technique de Typosquatting en remplaçant le "i" de Microsoft par un "1" pour paraître légitime.
 Nous devons donc constater si l'utilisatrice a cliqué ou non sur le lien.
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing_splunk.png]]
+![[THM_intro-phishing_splunk.png]]
 D'après Splunk, le firewall a autorisé la requête suite au clic sur le lien par Charlotte. L'IP de destination est `45.148.10.131`.
 Je ne vois pas grand-chose d'autre avec mes logs, mais on peut donc en déduire que c'est un vrai positif et qu'il faut l'envoyer un L2 pour qu'ils vérifient l'étendu des dégats (s'il y en a), mais aussi pour bloquer le domaine et l'IP et faire les actions de remédiations nécessaires (renouvellement de mot de passe, kill session momentanée, etc).
 
@@ -280,7 +280,7 @@ Et apparemment, c'était le dernier vrai positif, l'exercice s'arrête donc avec
 
 ---
 ## Résultats
-![[content/Notes/TryHackMe/Introduction to phishing/THM_intro-phishing-1.png]]
+![[THM_intro-phishing-1.png]]
 J'ai donc réussi à trouver tous les vrais positifs.
 
 Par contre, j'ai perdu beaucoup de point sur les détails de renvoi de ticket, en voici une analyse : 

@@ -6,7 +6,7 @@ tags:
 ---
 
 >On peut ne pas être d'accord, mais au moins on peut débattre non ?
-![[content/Notes/Medileak 3/Antisocial/M3_A.png]]
+![[M3_A.png]]
 
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
@@ -28,7 +28,7 @@ tags:
 
 ### RETEX [1/3]
 Le projet dont parle l'énoncé doit être le projet de stage avec des étudiants pour un Laboratoire sur de vraies données de santé.
-![[content/Notes/Medileak 3/Antisocial/M3_A_M1.png|500]]
+![[M3_A_M1.png|500]]
 Le post sur **==Mastodon==** de Thimothé nous met sur la piste avec son **==#healthdatalake==**.
 En cherchant les posts liés, on trouve des posts du camp des **==#nohealthdatalake==**.
 
@@ -38,9 +38,9 @@ En cherchant les posts liés, on trouve des posts du camp des **==#nohealthdatal
 ### RETEX[2/3]
 
 Techniquement le compte qui poste le plus avec le \#nohealthdatalake c'est **lucfera**.
-![[content/Notes/Medileak 3/Antisocial/M3_A_M2.png|500]]
+![[M3_A_M2.png|500]]
 Mais si on regarde plus en détail, il y a un autre compte qui en parle beaucoup et surtout qui a plus d'expérience de vie visible, c'est **==hpgirolle==** un retraité de l'Éducation nationale et ancien conseiller communautaire en Haute-Vienne.
-![[content/Notes/Medileak 3/Antisocial/M3_A_M3.png|500]]
+![[M3_A_M3.png|500]]
 
 
 ### Énoncé [3/3]
@@ -60,13 +60,13 @@ En visitant son site personnel **==hxxps://henripierregirolles.wordpress.com==**
 
 ### RETEX [1/4]
 HP en avait parlé dans un post Mastodon : 
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_M1.png|500]]
+![[M3_A_EBYT_M1.png|500]]
 En analysant la photo, on peut voir que c'est un **==Range Rover==** de couloir **==noir==** immatriculé **==LE-003-AK==**
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_M2.png|500]]
+![[M3_A_EBYT_M2.png|500]]
 De plus, on peut noter qu'il y a une station essence ESSO à gauche et que le Range Rover se trouvait en face du numéro 11 de la rue.
 
 En cherchant les stations d'essence ESSO à l'image, on peut facilement trouver [la localisation](https://www.google.fr/maps/place/ESSO+EXPRESS+COUZEIX/@45.8657844,1.2381798,3a,75y,209.43h,83.54t/data=!3m7!1e1!3m5!1sFhpSwfUtb38OPAYgEulzVw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D6.460141316982771%26panoid%3DFhpSwfUtb38OPAYgEulzVw%26yaw%3D209.42714526645426!7i16384!8i8192!4m10!1m2!2m1!1sEsso+limoges!3m6!1s0x47fecada4014d6fd:0xaaad24d742536b19!8m2!3d45.865269!4d1.238365!15sCgxFc3NvIGxpbW9nZXMiA4gBAZIBC2dhc19zdGF0aW9u4AEA!16s%2Fg%2F1jky_53fs?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D).
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_M.png]]
+![[M3_A_EBYT_M.png]]
 Les coordonnées GPS sont donc les suivantes : **==45.865724, 1.238156==**
 
 ### Énoncé [2/4]
@@ -77,7 +77,7 @@ Les coordonnées GPS sont donc les suivantes : **==45.865724, 1.238156==**
 ### RETEX[2/4]
 Encore une fois, HP n'a pas hésité à parler de ce qui lui arrive de bizarre en ce moment [sur son site](https://henripierregirolles.wordpress.com/2026/04/08/un-message-sur-mon-repondeur/).
 
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_WP.png|500]]
+![[M3_A_EBYT_WP.png|500]]
 Il y décrit le contexte et ce qu'il a compris de ce message.
 
 Il a même précisé qu'il l'avait enregistré et qu'il nous le met à disposition.
@@ -103,34 +103,34 @@ La seule chose qui me vient a l'idée, c'est une carrière, les carrières en Fr
 En plus, on a plusieurs fois trouvé des traces de pneus de voitures à Limoges avec des résidus de terre rouge incrustés.
 
 Les carrières qui correspondent à ces éléments sont les **==carrières de Chambon==**.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_C.png|500]]
+![[M3_A_EBYT_C.png|500]]
 
 En cherchant un peu plus loin qui aurait pu lui en vouloir, on a lu tous les articles de H-P.G.
 Et [un article](https://henripierregirolles.wordpress.com/2026/01/16/le-projet-de-campus-veda-abandonne-une-bonne-nouvelle-ou-presque/) en particulier a capté notre attention : 
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_HPG1.png|500]]
+![[M3_A_EBYT_HPG1.png|500]]
 Il y explique que la Veda avait pour projet de s'étendre à Limoges, mais qu'il y a 
 	_plusieurs zones d’incertitude n’ont pu être levées de manière satisfaisante concernant la structure actionnariale de l’établissement_
 Dans le document qui donne l'avis défavorable pour ce projet, il y est mention de quelques sociétés  : STAVROS & LYNCH PARTNERS LTD et LIMOUSIN HOLDING SA
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_HPG2.png|500]]
+![[M3_A_EBYT_HPG2.png|500]]
 
 Lorsque l'on cherche plus d'information sur LIMOUSIN HOLDING SA, on est redirigé vers la société Crédit Briance & Vienne dont LIMOUSIN HOLDING SA est le Président du conseil d'administration et directeur général.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_HPG3.png|500]]
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_CBV.png|500]]
+![[M3_A_EBYT_HPG3.png|500]]
+![[M3_A_EBYT_CBV.png|500]]
 
 Et lorsque l'on cherche des informations sur STAVROS & LYNCH PARTNERS LTD, on trouve dans ses partenaires Despina Kyparissidou.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_SLP.png|500]]
+![[M3_A_EBYT_SLP.png|500]]
 
 Et cette dame est la dirigeante de Nicosian Holding.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_NH.png|500]]
+![[M3_A_EBYT_NH.png|500]]
 
 ### Énoncé [3/4]
 >Vous remontez la propriété du terrain. C'est une parcelle qui appartient à la **==XXxxx XXxxx==** ! **==XXxxx XXxxx==** serait donc derrière les menaces visant Henri-Pierre.
 
 ### RETEX
 En utilisant Rhinocorp, on arrive à retrouver à qui appartient la parcelle, et c'est à la **==SCI Nicosian Holding==**
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_RC.png|500]]
+![[M3_A_EBYT_RC.png|500]]
 D'ailleurs, on peut retrouver le Range Rover garé à côté d'une maison proche de cette carrière.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_RR.png|500]]
+![[M3_A_EBYT_RR.png|500]]
 
 La seule dirigeante et propriétaire de ces terres, c'est **==Despina KYPARISSIDOU==** on peut donc penser que c'est son véhicule et que c'est elle derrière cet appel masqué.
 
@@ -147,7 +147,7 @@ La seule dirigeante et propriétaire de ces terres, c'est **==Despina KYPARISSID
 ### RETEX
 Étant donné que H-P.G se prend des coups de pressions parce qu'il a fait échouer le plan de la Veda, un véhicule potentiellement appartenant à la dirigeante d'un partenaire de l'investisseur du projet annulé à suivi H-P.G. Donc ça peut être une bonne idée de continuer à jeter un œil sur les sociétés liés à STAVROS & LYNCH PARTNERS LTD.
 Pour rappel **==Crédit Briance & Vienne==** en est une filiale. Et ils possèdent un compte linkedin.
-![[content/Notes/Medileak 3/Antisocial/M3_A_EBYT_L.png|500]]
+![[M3_A_EBYT_L.png|500]]
 Et on peut retrouver le Range Rover sur un de leur poste en face d'une d'une nouvelle **==agence==**.
 
 ---

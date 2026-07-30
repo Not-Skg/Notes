@@ -13,7 +13,7 @@ tags:
 
 ## Retex [1/3]
 En recherchant l'image sur Google Lens on trouve rapidement le pilote.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/1 December/1D_Lens.png|500]]
+![[1D_Lens.png|500]]
 Et [Wikipedia](https://fr.wikipedia.org/wiki/Minardi_PS01#/media/Fichier:Mobil_Fernando_Alonso_tahun_2001.jpg) nous confirme que c'est bien **==Fernando Alonso==**.
 
 ---
@@ -25,7 +25,7 @@ Et [Wikipedia](https://fr.wikipedia.org/wiki/Minardi_PS01#/media/Fichier:Mobil_F
 Toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Minardi_PS01) cette F1 a été piloté lors de la saison 2001.
 Et en regardant les [statistiques](https://racingnews365.com/drivers/fernando-alonso/results/2001) de ce pilote lors de cette saison.
 
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/1 December/1D_Stats.png|500]]
+![[1D_Stats.png|500]]
 On apprend qu'il a fini 10ème lors du GP Allemand.
 
 Et ce GP [se déroulait](https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%27Allemagne_2001) sur le circuit de **==Hockenheim==**.
@@ -37,6 +37,6 @@ Et ce GP [se déroulait](https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%2
 > > *Format de réponse :* 198,123 km/h
 ## Retex [3/3]
 Toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Hockenheimring), Alonso prend sa revanche en 2005 dans une Renault.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/1 December/1D_2005.png|500]]
+![[1D_2005.png|500]]
 Et sa [vitesse moyenne](https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%27Allemagne_2005) était de **==212.629 km/h==**.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/1 December/1D_Speed.png|500]]
+![[1D_Speed.png|500]]

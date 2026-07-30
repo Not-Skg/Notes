@@ -5,7 +5,7 @@ tags:
   - wpscan
   - Chall
 ---
-![[content/Notes/Bellatrix Orion 26/Bellatrix_Illustration.png]]
+![[Bellatrix_Illustration.png]]
 >[!info] Notes
 >Voici les retex de tous les challenges de cette deuxième journée de l'opération Bellatrix !
 >Ils étaient un peu plus techniques que ceux de la première phase, mais toujours aussi réaliste et immersif.
@@ -14,7 +14,7 @@ tags:
 >Et les indice ont été juste ce qu'il fallait pour m'achever, je n'aime pas en utiliser habituellement, mais là, j'en étais carrément dégouté. La plupart des indices paraphrasaient uniquement les énoncés, quand ils ne tombaient pas sous le sens. Le seul vraiment utile, c'était le masque pour casser le bcrypt du dernier challenge.
 >
 >Le Comcyber a quand même continué sur une très bonne lancée !
->![[content/Notes/Bellatrix Orion 26/P2/P2_Challs.png]]
+>![[P2_Challs.png]]
 
 ---
 ## Surveillance du réseau social (intrigue principale)
@@ -30,9 +30,9 @@ tags:
 
 ### RETEX
 On va donc essayer de trouver un contact proche du primo diffuseur. Pour ce faire, on va fouiller son profil sur le réseau social Amstramgram.
-![[content/Notes/Bellatrix Orion 26/P2/P2_rs_mv.png|500]]
+![[P2_rs_mv.png|500]]
 On a de la chance, il vient juste de faire un post pour féliciter sa sœur pour son anniversaire de mariage. Il va même jusqu'à la tagger, ce qui nous évite d'avoir à la chercher dans les abonnements de Marc.
-![[content/Notes/Bellatrix Orion 26/P2/P2_rs_sp.png|500]]
+![[P2_rs_sp.png|500]]
 On a donc un contact : ===Sophie Pichon== de naissance Veylanne, professeure de mathématique.
 
 ---
@@ -50,15 +50,15 @@ On a donc un contact : ===Sophie Pichon== de naissance Veylanne, professeure de 
 
 ### RETEX
 Pour chercher les possibles liens entre le primo diffuseur et des sociétés, on peut tout simplement rechercher son identité sur le registre de sociétés aquiloniennes.
-![[content/Notes/Bellatrix Orion 26/P2/P2_orga_mv.png|500]]
+![[P2_orga_mv.png|500]]
 Sans grande surprise, rien ne lui est rattaché directement.
 On va donc creuser du côté d'une de ses relations (sa sœur).
-![[content/Notes/Bellatrix Orion 26/P2/P2_orga_sp.png|500]]
+![[P2_orga_sp.png|500]]
 Cette fois-ci, on trouve cinq résultats.
 En creusant un peu, on apprend que sa sœur serait gérante majoritaire d'une SARL de deux personnes.
-![[content/Notes/Bellatrix Orion 26/P2/P2_statuts_peche_fraiche.pdf]]
+![[P2_statuts_peche_fraiche.pdf]]
 
-![[content/Notes/Bellatrix Orion 26/P2/P2_rapport_annuel_2022_peche_fraiche.pdf]]
+![[P2_rapport_annuel_2022_peche_fraiche.pdf]]
 Et cette deuxième personne n'est jamais nommée.
 De plus, en 2022, ils auraient fait un chiffre d'affaires de 10M€, ce qui est énorme pour une entreprise de cette taille.
 Le rapport annuel nous permet de récupérer un lien vers le site vitrine de cette société ==peche-fraiche.boutique==
@@ -77,10 +77,10 @@ Le rapport annuel nous permet de récupérer un lien vers le site vitrine de cet
 
 ### RETEX
 Comme précisé dans l'énoncé, le site paraît légitime. 
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine.png|500]]
+![[P2_vitrine.png|500]]
 Nous allons donc l'analyser pour essayer de trouver des traces d'un prestataire technique.
 Mon premier réflexe est d'aller sur la page à propos : 
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_presta.png|500]]
+![[P2_vitrine_presta.png|500]]
 Et ça a payé, on a donc le nom de la personne qui a réalisé ce site : ==Helene Volquoffe==. On a même un lien vers son site/portfolio personnel : https://quoffe-telephonie.tech/.
 
 ---
@@ -97,7 +97,7 @@ Et ça a payé, on a donc le nom de la personne qui a réalisé ce site : ==Hele
 
 ### RETEX
 On va donc éplucher le site du presta pour essayer de trouver de potentiels clients puissant qui pourrait être le commanditaire derrière la campagne de désinformation.
-![[content/Notes/Bellatrix Orion 26/P2/P2_presta.png|500]]
+![[P2_presta.png|500]]
 Outre le site vitrine de la SARL, cette prestataire a aussi développé un des sites de désinformation rencontré lors de la phase 1.
 De plus, elle a aussi développé le site personnel / officiel du président de Mercure, Agrid Sokjon : ==agrid-sokjon.ovh==.
 
@@ -123,30 +123,30 @@ De plus, elle a aussi développé le site personnel / officiel du président de 
 >Adresse email : Utilisez **une adresse fonctionnelle en mesure de recevoir des emails** . Idéalement une adresse email temporaire.
 ### RETEX
 Après m'être créé une nouvelle identité numérique, je me suis créé un compte sur le site vitrine en suivant le conseille d'un service partenaire.
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_puppet.png|500]]
+![[P2_vitrine_puppet.png|500]]
 
 Suite à ça, je me suis mis à éplucher les articles, j'ai commencé mes recherches par les articles avec un prix incohérent (trop cher / trop peu cher), j'ai aussi retenu les articles avec des noms intrigants.
 
 Le premier qui a attiré mon oeil est le "chapeau parti".
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_cap.png|500]]
+![[P2_vitrine_cap.png|500]]
 J'ai pensé un moment que son prix était trop élevé et que son nom pouvait être un sous-entendu comme le parti d'opposition, et que donc, si l'on l'achetait, alors on montrerait que l'on est du camp de ceux qui ont mené la campagne de désinformation.
 Le problème, c'est que la description paraît trop propre pour ça.
 
 Mon regard a donc divagué sur cette combinaison politique avec la même idée en tête : 
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_combi.png|500]]
+![[P2_vitrine_combi.png|500]]
 Mais pour les mêmes raisons, j'ai fini par le délaisser.
 
 Au final, ce qui m'a vraiment intrigué, c'est le nom de cet article : "L'art de maîtriser l'invisible"
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_veste.png|500]]
+![[P2_vitrine_veste.png|500]]
 Et la description a confirmé mon doute : 
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_veste_desc.png|500]]
+![[P2_vitrine_veste_desc.png|500]]
 Rien que le fait qu'on puisse la commander lorsqu'elle est noté hors stock est douteux. Mais le fait qu'en plus, il est noté qu'elle sert à sécuriser des données sensibles et les transporter sans traces. Tous ces signaux nous poussent à croire que quelque chose se cache derrière.
 
 Étant donné que le commanditaire de la campagne de désinformation supposément lié à ce site vitrine est lié à Mercure, je décide de commander cet article en me faisant passer pour un habitant de Mercure.
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_commande.png|500]]
+![[P2_vitrine_commande.png|500]]
 Et lors de la réception de la validation de commande, on m'offre un "bon de réduction" : AQUILONIE-UNIE.ORG.
 Ce bon de réduction a le pattern d'un nom de domaine d'un site web.
-![[content/Notes/Bellatrix Orion 26/P2/P2_milice.png|500]]
+![[P2_milice.png|500]]
 Ma déduction était bonne, c'est littéralement le site caché de la milice.
 On y trouve même leur slogan en page d'accueil : ==Vigilance, Honneur, Victoire==
 
@@ -165,10 +165,10 @@ On y trouve même leur slogan en page d'accueil : ==Vigilance, Honneur, Victoire
 ### RETEX
 Maintenant qu'on a de bons soupçons sur les liens entre les sites, il faut le prouver.
 Pour ce faire, on va analyser les enregistrements des sites de désinformation, du site du président de Mercure et du site de la milice.
-![[content/Notes/Bellatrix Orion 26/P2/P2_whois_gnm.png|500]]
-![[content/Notes/Bellatrix Orion 26/P2/P2_whois_mercurien.png|500]]
-![[content/Notes/Bellatrix Orion 26/P2/P2_whois_pres.png|500]]
-![[content/Notes/Bellatrix Orion 26/P2/P2_whois_milice.png|500]]
+![[P2_whois_gnm.png|500]]
+![[P2_whois_mercurien.png|500]]
+![[P2_whois_pres.png|500]]
+![[P2_whois_milice.png|500]]
 Leur point commun, c'est qu'ils ont tous été créés le ==02/02/2024== et plus grosse coïncidence ils ont tous le même registrar : ==Njalla==.
 Sachant qu'en plus le même prestataire s'est occupé du développement de la plupart de ces sites, ça prouve que ce n'est pas juste une succession de coïncidences mais bien des engrenages de la campagne de désinformation en cours.
 
@@ -189,9 +189,9 @@ Sachant qu'en plus le même prestataire s'est occupé du développement de la pl
 En fouillant chacun de ces sites, plus en détaille, on se rend compte qu'ils ont tous le même robots.txt (ou presque). Dedans, la prestataire y a systématiquement laissé sa signature et un lien vers son portfolio.
 
 Et sur le site vitrine de la boutique, le robots.txt bloque l'accès aux fichiers spécifiques : /==sauvegardes_reduc.php== et /htpasswd.
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_robot.png|500]]
+![[P2_vitrine_robot.png|500]]
 Et lorsque l'on se rend sur peche-fraiche.boutique/sauvegardes_reduc.php, on trouve une page de connexion, ce qui laisse penser qu'une partie est caché.
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_php.png|500]]
+![[P2_vitrine_php.png|500]]
 
 ---
 ## Les Wordpress d'Hélène Volquoffe (optionnel)
@@ -210,7 +210,7 @@ Et lorsque l'on se rend sur peche-fraiche.boutique/sauvegardes_reduc.php, on tro
 ### RETEX
 En signature récurrente, on pourrait prendre le robots.txt qui est littéralement identique à chaque fois, mais on va aller plus loin.
 Pour gagner du temps et éviter de réinventer la roue à chaque projet, certains devs réutilisent des plugins qu'ils ont eux-mêmes créés. Ça leur permet de ne pas partir de zéro sur chaque projet et d'avoir une certaine base maitrisée.
-![[content/Notes/Bellatrix Orion 26/P2/P2_wpscan.png|500]]
+![[P2_wpscan.png|500]]
 En utilisant un outil comme `wpscan` on peut rapidement analyser les wordpress et identifier les points communs.
 En l'occurrence, la même version de wordpress est utilisé à chaque fois et un certain plugin ==my-plugin== est utilisé sous la version ==1.6.3==. C'est un plugin développé par la presta, ce qui prouve encore une fois le lien entre ces sites.
 
@@ -227,9 +227,9 @@ En l'occurrence, la même version de wordpress est utilisé à chaque fois et un
 ### RETEX
 Pour continuer dans cette approche de trouver des liens entre les sites, nous pouvons utiliser l'outil `dig`.
 
-![[content/Notes/Bellatrix Orion 26/P2/P2_dig_txt.png|500]]
+![[P2_dig_txt.png|500]]
 On s'aperçoit que les sites de la presta ont tous la même infra.
-![[content/Notes/Bellatrix Orion 26/P2/P2_dig_gg.png|500]]
+![[P2_dig_gg.png|500]]
 On peut aussi retrouver le code de vérification Google Search Console : ==RkxBR3tNYXJ0eSBCT0xBTn0==.
 C'est la preuve technique ultime que tous ces sites sont liés au même proprio, car même infra DNS/OVH et même validation GSC.
 
@@ -256,9 +256,9 @@ C'est la preuve technique ultime que tous ces sites sont liés au même proprio,
 
 ### RETEX
 Pour ce challenge, il n'y a pas de technique spéciale, il faut juste chercher à la main.
-![[content/Notes/Bellatrix Orion 26/P2/P2_temp1.png|500]]
+![[P2_temp1.png|500]]
 Le premier commentaire du primo-diffuseur sur Global News Maq était à ==202603221259==
-![[content/Notes/Bellatrix Orion 26/P2/P2_temp_2_3.png|500]]
+![[P2_temp_2_3.png|500]]
 Le premier post de Marc sur Amstramgram et le deuxième a ce propos ont été publié respectivement à ==202603240847== et ==202603241130==.
 
 ---
@@ -276,7 +276,7 @@ Le premier post de Marc sur Amstramgram et le deuxième a ce propos ont été pu
 
 ### RETEX
 On va enfin utiliser la page /htpasswd du site vitrine de la boutique et l'interface de connexion sur sauvegardes_reduc.php.
-![[content/Notes/Bellatrix Orion 26/P2/P2_vitrine_htpasswd.png|500]]
+![[P2_vitrine_htpasswd.png|500]]
 Cette première page contient `mveylanne:$2y$12$rENXhbwnj/o4ZqPg9w0EOe0ZuSb.VDLrJeb7MAdbK7xFjcglNA0DC`.
 Ce sont les credentials à utiliser pour se connecter.
 Le username est : `mveylanne`, `$2y$` signifie que c'est en bcrypt et `$2y$12$rENXhbwnj/o4ZqPg9w0EOe0ZuSb.VDLrJeb7MAdbK7xFjcglNA0DC` le hash du mot de passe.
@@ -284,16 +284,16 @@ Le username est : `mveylanne`, `$2y$` signifie que c'est en bcrypt et `$2y$12$rE
 Il faut donc casser le hash pour pouvoir se connecter sur la page cachée.
 Vu que je n'ai pas beaucoup de temps, _(je rappelle que je travaille sur le CTF le soir après le travail)_, je vais chercher plus d'information sur Marc pour essayer de m'aider à construire un mot de passe type qu'il pourrait utiliser.
 
-![[content/Notes/Bellatrix Orion 26/P2/P2_marc_info.png|500]]
+![[P2_marc_info.png|500]]
 Sur le blog de Marc, on peut trouver sa date d'anniversaire : 1996.
 J'ai donc croisé les doigts et lancé des hashcat pour tenter de casser le mdp en espérant qu'il y ait sa date de naissance dedans : 
-![[content/Notes/Bellatrix Orion 26/P2/P2_hashcat.png|500]]
+![[P2_hashcat.png|500]]
 Le script a tourné toute la nuit et n'a rien trouvé, le problème, c'est que je dois aller au travail, je ne pourrais donc pas finir ce challenge par faute de temps.
 Si j'avais su qu'il fallait casser un mot de passe, j'aurais lancé un script depuis le début avec plus de possibilité.
 
 > Le lendemain, le mdp a été révélé : VLAN2024
 > Je n'ai aucune idée de pourquoi 2024, du coup ça veut dire que j'étais sur une fausse piste avec son anniversaire.
-> ![[content/Notes/Bellatrix Orion 26/P2/P2_hidden.png|500]]
+> ![[P2_hidden.png|500]]
 > Le nom de l'opération était donc : ==OPE-Briser-Les-Ailes==.
 
 ---

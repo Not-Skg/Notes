@@ -6,7 +6,7 @@ tags:
 ---
 
 >Plus on crie plus fort, moins ça fait du moins de bruit. (Normalement.)
-![[content/Notes/Medileak 3/Hygiaphone/M3_H.png]]
+![[M3_H.png]]
 
 ***Les autres parties du CTF :***
  · | · [[Here we go again]]
@@ -28,7 +28,7 @@ tags:
 
 ### RETEX [1/3]
 En se baladant un peu sur les comptes Mastodon qui ont relayé les `#nohealthdatalake`, peut trouver des post mettant en avant des articles de **==Santé Éthique==**.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_UOTN.png|500]]
+![[M3_H_UOTN.png|500]]
 Ces articles sont hébergés sur le site **==hxxps://santethique.eu==**.
 
 
@@ -38,15 +38,15 @@ Ces articles sont hébergés sur le site **==hxxps://santethique.eu==**.
 >Saura-t-on l'identifier ?
 
 On peut retrouver sur le site santé éthique, [un article](https://santethique.eu/article/sur-la-piste-de-rr-skye-hebrides) de **==Cynthia==** qui porte sur une enquête sur terrain au sujet des agissements d'un certain R.R.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_UOTN_SE1.png|500]]
+![[M3_H_UOTN_SE1.png|500]]
 Rien que le synopsis et les mots clés associés nous permettent d'affirmer qu'elle parle de Raoul Reidid.
 
 En lisant son article, on s'aperçoit qu'elle a vraiment suivi Raoul à la trace, et s'est donc rendu dans tous les endroits qu'il a traversé : petites salles, des festivals de village, des pubs.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_UOTN_SE2.png|500]]
+![[M3_H_UOTN_SE2.png|500]]
 
 Ça nous rappelle donc le photographe du premier challenge, qui avait pris Raoul et Gizem en photo dans des lieux ou Gizem se produisait en concert.
 D'ailleurs, il avait aussi photographié une journaliste qui ne voulait pas donner son nom…
-![[content/Notes/Medileak 3/Here we go again/M3_Hwga_S_5px_U.png]]
+![[M3_Hwga_S_5px_U.png]]
 On peut donc facilement affirmer que c'est un portrait de Cynthia.
 
 ### Énoncé [3/3]
@@ -57,10 +57,10 @@ On peut donc facilement affirmer que c'est un portrait de Cynthia.
 À la fin de l'article, il est précisé que si on a plus d'informations sur cette affaire, on peut contacter Santé Éthique.
 
 On peut même retrouver sur [la page de contact](https://santethique.eu/contact) un code d'accès à une messagerie chiffrée.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_UOTN_SE3.png|500]]
+![[M3_H_UOTN_SE3.png|500]]
 
 Ce code nous donne accès à une conversation avec la rédaction de Santé Éthique.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_UOTN_I1.png|500]]
+![[M3_H_UOTN_I1.png|500]]
 En se faisant passer pour un journaliste qui est tombé sur l'article de Cynthia suite à ses recherches sur Raoul.
 Et après avoir mis en confiance la rédaction en lui prouvant qu'on était de bonnes volontés, un minimum prudent et professionnel, la rédaction nous donne le code d'accès à la messagerie chiffrée de Cynthia.
 
@@ -80,7 +80,7 @@ Cynthia est aussi très prudente, après avoir répondu ses questions et lui en 
 
 ### RETEX [2/3]
 Cynthia nous oriente ensuite vers la lettre ouverte de **==Henri-Pierre Girolles==** cité précédemment.
-![[content/Notes/Medileak 3/Hygiaphone/M3_H_S.png|500]]
+![[M3_H_S.png|500]]
 
 ### Énoncé [3/3]
 >Et avant de raccrocher, elle glisse une dernière information : **==XXxxx==** n'est pas un acteur secondaire dans cette histoire — car **==XXxxx==** est richissime.

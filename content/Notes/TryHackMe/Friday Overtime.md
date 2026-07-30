@@ -25,7 +25,7 @@ Pour ce challenge, j’utilise une **machine virtuelle isolée**, spécialement
 Mon premier réflexe est de **découvrir mon environnement** : j’ai accès à un terminal, mais aucun fichier disponible en local.  
 Je remarque aussi la présence d’une plateforme appelée **DocIntel / PandaProb**, qui semble être notre outil de ticketing interne.  
 Un **ticket est déjà disponible**.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_ticket.png|500]]
+![[THM_FO_ticket.png|500]]
 **Le ticket explique qu’un possible RAT a été découvert**, et qu’il aurait déjà infecté plus de **9 000 systèmes**.  
 Dans le descriptif, plusieurs fichiers suspects sont partagés dans une archive ZIP protégée par le mot de passe suivant : `Panda321!`
 
@@ -38,7 +38,7 @@ D’après le ticket, **la personne à l’origine du partage est ==Olivier Ben
 > What is the SHA1 hash of the file "pRsm.dll" inside samples.zip?
 
 Après avoir décompressé le fichier `samples.zip` à l’aide du mot de passe communiqué (`Panda321!`), j’obtiens plusieurs fichiers DLL supposés malveillants.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_sha1sum_dll.png|500]]
+![[THM_FO_sha1sum_dll.png|500]]
 
 Afin de générer une empreinte qui permettra d’identifier précisément le fichier, j’utilise la commande suivante dans le terminal : `sha1sum pRsm.dll`
 
@@ -51,37 +51,37 @@ Le résultat renvoyé est :
 Je souhaite maintenant déterminer si ce fichier correspond à un malware déjà connu.  
 Pour cela, je soumets le **hash** obtenu précédemment sur **VirusTotal** afin de le comparer avec des échantillons référencés.  
 Les résultats indiquent que ces DLL sont bien connues et utilisées comme modules additionnels du **framework de malware ==MgBot==**.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_VT.png|500]]
+![[THM_FO_VT.png|500]]
 Ce framework est fréquemment lié à des campagnes menées par le groupe **Evasive Panda** et offre des fonctions modulaires telles que la collecte de données, la persistance ou le contrôle à distance.
 
 ---
 > Which MITRE ATT&CK Technique is linked to using pRsm.dll in this malware framework?
 
 En effectuant une recherche sur les mots-clés _“MgBot MITRE pRsm.dll”_, je trouve [cet article](https://www.welivesecurity.com/2023/04/26/evasive-panda-apt-group-malware-updates-popular-chinese-software/) expliquant la correspondance MITRE ATT&CK.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_article.png|500]]
+![[THM_FO_article.png|500]]
 L’article mentionne que le fichier `pRsm.dll` est associé à la **technique ==T11223==** du cadre **MITRE ATT&CK**, correspondant à des comportements d’injection et d’exécution de modules RAT.
 
 ---
 > What is the CyberChef defanged URL of the malicious download location first seen on 2020-11-02?
 
 L’article précédemment cité répertorie également l’URL malveillante utilisée pour la distribution du malware.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_url.png|500]]
+![[THM_FO_url.png|500]]
 Pour éviter toute ouverture accidentelle, je passe l’adresse dans **CyberChef** afin de la _defang_(neutraliser) :
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_cyberchef.png|500]]
+![[THM_FO_cyberchef.png|500]]
 On a donc l'URL de sortie suivante : **==hxxp[://]update[.]browser[.]qq[.]com/qmbs/QQ/QQUrlMgr_QQ88_4296[.]exe==**
 
 ---
 > What is the CyberChef defanged IP address of the C&C server first detected on 2020-09-14 using these modules?
 
 En recherchant la date **2020‑09‑14** dans la même source, je repère l’adresse IP du serveur de commande et contrôle (C2) utilisé par ces modules.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_C2.png|500]]
+![[THM_FO_C2.png|500]]
 Je la defang également dans CyberChef  : **==122[.]10[.]90[.]12==**
 
 ---
 > What is the md5 hash of the spyagent family spyware hosted on the same IP targeting Android devices in Jun 2025?
 
 Enfin, je poursuis la corrélation en étudiant les autres malwares hébergés sur la même IP via **VirusTotal**.
-![[content/Notes/TryHackMe/Friday Overtime/THM_FO_ip.png|500]]
+![[THM_FO_ip.png|500]]
 On y découvre qu’en **juin 2025**, un spyware Android appartenant à la **famille SpyAgent** a été détecté à la même adresse.
 Voici le hash du spyware Android : **==951F41930489A8BFE963FCED5D8DFD79==**
 

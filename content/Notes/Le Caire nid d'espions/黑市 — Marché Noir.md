@@ -4,7 +4,7 @@ tags:
   - Chall
   - crypto
 ---
-![[content/Notes/Le Caire nid d'espions/LeCaire.jpeg]]
+![[LeCaire.jpeg]]
 
 ***Les autres parties du CTF :***
  · | · [[Visiorbis — Les origines]]
@@ -31,12 +31,12 @@ tags:
 
 Le lien de l'énoncé nous redirige vers `http://r5zxdoyib3qfw6dgtutyl7ylmqnlvmm2ckpva2saami5bvk3fon3w2yd.onion`.
 On va donc devoir sortir TOR.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_T1.png|500]]
+![[LC_MN_T1.png|500]]
 Le lien nous redirige donc vers un site avec une interface en chinois, et une direction artistique digne d'un film Matrix.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_T2.png|500]]
+![[LC_MN_T2.png|500]]
 En inspectant le code source, on trouve sur le potentiel auteur du site : Anonymous. Mais malheureusement ça ne flag pas, pourtant, c'est le groupe de hacker le plus connu, c'est peut-être juste trop évident pour être ça.
 Il y avait aussi `powered by 铪` écrit sur le footer de la page.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_GHT.png|500]]
+![[LC_MN_GHT.png|500]]
 En traduisant le caractère, on trouve **==Hafnium==**, un APT chinois assez connu et affilié à APT40. On a donc notre flag.
 
 ---
@@ -51,7 +51,7 @@ En traduisant le caractère, on trouve **==Hafnium==**, un APT chinois assez con
 
 ### RETEX
 En recherchant `archive_bot` dans la barre de recherche, on peut trouver deux posts.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_OS1.png|500]]
+![[LC_MN_OS1.png|500]]
 En traduisant tout ça on obtient : 
 
 | Sujet                                                                        | Rubrique            | Auteur      | Réponses |
@@ -59,10 +59,10 @@ En traduisant tout ça on obtient :
 | Document de décision relatif à une opération d'acquisition [Pièce jointe]    | Partage de fichiers | archive_bot | 2        |
 | Archivage des informations sur la structure de l'actionnariat [Pièce jointe] | Partage de fichiers | archive_bot | 2        |
 Étant donné que le premier parle d'une décision de rachat, on va y jeter un coup d'œil.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_OS2.png|500]]
+![[LC_MN_OS2.png|500]]
 Le premier commentaire associé provient d'un utilisateur nommé "PGP_King" et a été posté le **==22/12/2025==**.
 La pièce jointe mentionne bien une entreprise de technologie, on a donc trouvé le bon article et la bonne date.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_PDF1.png|500]]
+![[LC_MN_PDF1.png|500]]
 
 ---
 ## ASHIDAKON
@@ -76,7 +76,7 @@ La pièce jointe mentionne bien une entreprise de technologie, on a donc trouvé
 
 ### RETEX
 Une partie du document comporte une liste avec dates, on va donc traduire cette partie.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_PDF1T.png|500]]
+![[LC_MN_PDF1T.png|500]]
 
 Ça nous donne donc : 
 ```
@@ -109,12 +109,12 @@ De plus, d'après le point (3), un centre de recherche et développement dédié
 
 ### RETEX
 Le premier document ne nous donne rien à ce sujet, on va donc s'intéresser à la pièce jointe du deuxième article.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_OS3.png|500]]
+![[LC_MN_OS3.png|500]]
 On n'a même pas vraiment de le lire puisque l'adresse est notée noir sur blanc.
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_PDF2.png|500]]
+![[LC_MN_PDF2.png|500]]
 En cherchant ```addr1qxt6fk4t7jhjpsxm72zhhztwjpaxmqxt3zscykey0gad042e9778qy80m9fserhews0fj6wux2xurtdmr3upgdqc34
 lqvzy5pq``` sur [adastat](https://adastat.net/addresses/addr1qxt6fk4t7jhjpsxm72zhhztwjpaxmqxt3zscykey0gad042e9778qy80m9fserhews0fj6wux2xurtdmr3upgdqc34lqvzy5pq), on peut retrouver l'unique transaction liée à cette adresse. 
-![[content/Notes/Le Caire nid d'espions/LC_MN/LC_MN_ADA.png|500]]
+![[LC_MN_ADA.png|500]]
 Le montant exact reçu était donc de **==8.334279 ADA==**.
 
 ---

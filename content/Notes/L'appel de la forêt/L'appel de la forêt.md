@@ -32,20 +32,20 @@ Le CTF _L’Appel de la Forêt_, organisé par les très reconnus Tacosint, s�
 
 Ce premier CTF signé Tacosint, en partenariat avec Badgeforge, Epieos, ZeroNeurone, OneNeurone, GoNeurone, OsintIsNotaCrime et Indaga, a clairement marqué les esprits. Par son ampleur et sa diversité, il s’apparentait à un véritable marathon mêlant de nombreux domaines : SOCMINT, GEOINT, cryptomonnaies, mais aussi des challenges plus atypiques et très spécialisés, comme l’identification de modèles et calibres d’armes à partir de douilles usagées.
 
-![[content/Notes/L'appel de la forêt/l-appel-de-la-f-ret-2026-07-12-graph.svg]]
+![[l-appel-de-la-f-ret-2026-07-12-graph.svg]]
 
 Au fil des épreuves, j’ai eu l’impression de parcourir une synthèse de nombreux types de challenges rencontrés ces dernières années, avec en prime quelques nouveautés particulièrement intéressantes. La richesse du contenu et la quantité d’informations à traiter rendaient l’expérience aussi exigeante que stimulante.
 
 Nous avons participé en équipe de quatre avec Global, Heiden et Sherif. Ensemble, nous avons réussi à compléter l’intégralité de la trame principale ainsi que 13 des 15 challenges bonus. Malgré les contraintes habituelles (travail, fatigue, disponibilité), nous avons maintenu une bonne dynamique, même si quelques erreurs d’inattention nous ont coûté des points.
 
-![[content/Notes/L'appel de la forêt/LAF_TEAM.png]]
+![[LAF_TEAM.png]]
 
 Un moment notable reste notre recours à un indice personnalisé (coût : 50 points) sur un challenge particulièrement bloquant. Avec le recul, cela en valait largement la peine, notamment pour la découverte d’une fonctionnalité méconnue de Twitter.
 
 L’immersion narrative est également un point fort du CTF. L’histoire, à la fois réaliste et engageante, donnait envie de s’investir pleinement dans l’enquête et contribuait fortement à la qualité globale de l’expérience.
 
-![[content/Notes/L'appel de la forêt/LAF_STATS.png]]
+![[LAF_STATS.png]]
 Au final, nous terminons 22e sur 202 équipes, avec 65 challenges résolus sur 67. Nous faisons partie des 30 équipes ayant complété la trame principale, ce qui nous permet d’obtenir le badge _Finisher_, ainsi que le badge _Survivor_, attribué aux 69 équipes ayant dépassé le chapitre clé.
-![[Badges/badge-a284b2b9eaf3b6ff.png]]![[Badges/badge-6208beaf12143c0e.png]]
+![[badge-a284b2b9eaf3b6ff.png]]![[badge-6208beaf12143c0e.png]]
 
 Ce RETEX sera complété progressivement, au fil de l’ajout des différentes parties détaillant chaque étape du CTF.

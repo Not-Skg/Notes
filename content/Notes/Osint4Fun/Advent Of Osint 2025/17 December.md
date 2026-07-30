@@ -31,10 +31,10 @@ Vu que je n'ai pas plus d'info j'utilise l'indice : ==rappel toi du slogan de Ni
 Pour rappel ce dernier est **Just Do It**.
 J'imagine qu'il faut donc faire le konami code sur l'interface du chall.
 Et si besoin, ce code est le suivant :
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/17 December/17D_Konami.png|500]]
+![[17D_Konami.png|500]]
 
 Quand on le fait sur l'interface du chall, un popup apparaît :
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/17 December/17D_Code.png|500]]
+![[17D_Code.png|500]]
 
 J'imagine qu'on doit donc utiliser le flag : `*-ALBUM 1991:!` avec le nom de l'album en question à la place de `ALBUM 1991`
 Toujours d'après le site de [Metal](https://www.metal-archives.com/albums/Dante/In_the_Lost_Paradise/239747 "In the Lost Paradise"), cet album est nommé :  **==In the Lost Paradise==**

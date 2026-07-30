@@ -19,7 +19,7 @@ tags:
 
 ### RETEX
 Ce type de premier challenge est un grand classique.
-![[content/Notes/L'appel de la forêt/LAF_I/LAF_I_W.png]]
+![[LAF_I_W.png]]
 On peut trouver très facilement le flag **==J'ai lu le règlement, et je m'engage à le respecter==** dans le règlement.
 
 ---
@@ -38,5 +38,5 @@ On est donc sur du France 2, France 3, France 5 ou France 24, ce qui permet de r
 On va donc construire une requête Google avec des mots-clés assez larges (`"vol animaux compagnies race octobre 2024 france"`) pour maximiser les chances de tomber sur un article ou un reportage. On peut ensuite affiner en ajoutant directement le nom des chaînes (France 2, France 3, etc.) dans la recherche pour tester rapidement chaque possibilité.
 
 On peut rapidement identifier deux articles pertinents via cette recherche : un de [France 2 via France Info](https://www.franceinfo.fr/environnement/biodiversite/animaux/animaux-les-vols-de-chiens-de-race-un-phenomene-en-pleine-expansion_6859943.html) et un de [France 3](https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/les-vols-de-chiens-sont-en-hausse-en-ile-de-france-et-visent-des-races-specifiques-3050170.html)
-![[content/Notes/L'appel de la forêt/LAF_I/LAF_I_RA.png]]
+![[LAF_I_RA.png]]
 Dans les deux articles, le même nombre de signalements est mis en avant (2400), ce qui permet de recouper l’information et de valider le flag : **==2400==**.

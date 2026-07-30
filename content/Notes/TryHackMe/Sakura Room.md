@@ -16,7 +16,7 @@ tags:
 
 ### Retex
 Il faut donc commencer ce challenge en analysant la photo nommé : `sakurapwnedletter.svg`
-![[content/Notes/TryHackMe/Sakura Room/sakurapwnedletter.png|300]]
+![[sakurapwnedletter.png|300]]
 Cette image a l'air d'une image classique que laisserait un attaquant.
 Le binaire derrière veut surement dire quelque chose, mais ça doit être une phrase sans importance du style "une image, c'est beau, mais ce qu'elle renferme encore plus".
 En inspectant la page tout bêtement, on a accès à plein d'information, mais la plus importante, c'est que le `.svg` a été créé via l'outil `Inkscape` et a été exporté à partir du chemin : `/home/SakuraSnowAngelAiko/Desktop/pwnedletter.png`. Son nom d'origine était donc `pwnedletter.png` mais surtout, elle était présente sur le bureau de l'utilisateur **==SakuraSnowAngelAiko==**
@@ -34,22 +34,22 @@ En inspectant la page tout bêtement, on a accès à plein d'information, mais l
 
 On va donc devoir rechercher les comptes avec le même username qu'à la question précédente.
 Via l'outil `sherlock` on en trouve une petite trentaine.
-![[content/Notes/TryHackMe/Sakura Room/SR_sherlock.png|500]]
+![[SR_sherlock.png|500]]
 On y reconnait un profil plutôt lié à l'informatique et au code. Le site qui nous intéresse donc le plus dans ce résultat, c'est ==Github==.
-![[content/Notes/TryHackMe/Sakura Room/SR_github.png|500]]
+![[SR_github.png|500]]
 Son [compte](https://github.com/SakuraSnowAngelAiko) n'est plus du tout actif, mais un nom se dégage de ce compte : ==Aiko==.
 Sur son compte, un repos attire mon regard : ==PGP==. Il contient une clé publique et d'après le site keys.openpgp.org, elle appartient bien a notre attaquant.
-![[content/Notes/TryHackMe/Sakura Room/SR_Public.png|500]]
+![[SR_Public.png|500]]
 Et en prime, on a son adresse mail : **==sakurasnowangel83[@]protonmail[.]com==**
 Essayons de trouver son nom/prénom via ses autres comptes.
 Les résultats de sherlock ne nous donne pas grand-chose d'intéressant de ce côté, essayons donc de chercher directement sur Google.
-![[content/Notes/TryHackMe/Sakura Room/SR_GG.png|500]]
+![[SR_GG.png|500]]
 On retrouve très facilement son [twitter](https://x.com/SakuraLoverAiko).
-![[content/Notes/TryHackMe/Sakura Room/SR_2acc.png|500]]
+![[SR_2acc.png|500]]
 Et dessus, il a posté un message en donnant son compte secondaire nommé ==AikoAbe3==. On peut en déduire son nom et prénom **==Aiko Abe==**.
 Et ce qui appuie notre hypothèse, c'est que c'est vraiment un nom et prénom commun au Japon.
-![[content/Notes/TryHackMe/Sakura Room/SR_prénom.png|500]]
-![[content/Notes/TryHackMe/Sakura Room/SR_Nom.png|500]]
+![[SR_prénom.png|500]]
+![[SR_Nom.png|500]]
 
 ---
 ## 3. UNVEIL
@@ -63,16 +63,16 @@ Et ce qui appuie notre hypothèse, c'est que c'est vraiment un nom et prénom co
 On va donc devoir retourner sur son compte Github et chercher ses dernières modifications.
 On va donc dans l'onglet "Repositories" et on les trie par "Last updated". Le tout premier qui remonte est "IO" mais il n'est pas vraiment intéressant parce que c'est juste un simple test de sa part.
 Par contre, le deuxième est nommé ==ETH== et c'est aussi le nom d'une crypto.
-![[content/Notes/TryHackMe/Sakura Room/SR_eth.png|500]]
+![[SR_eth.png|500]]
 `stratum://0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef.Aiko:pswd@eu1.ethermine.org:4444`
 La dernière modification a eu pour but de remplacer la ligne rouge par la ligne verte.
 En gros, il a caviardé la ligne parce qu'elle contenait l'adresse de son wallet **==ethereum==** : **==0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef==**.
 
 Allons voir ce qu'il s'est passé sur ce wallet le 23 Janvier 2021 via le site [etherscan.io](https://etherscan.io/address/0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef#analytics).
-![[content/Notes/TryHackMe/Sakura Room/SR_ethermine.png|500]]
+![[SR_ethermine.png|500]]
 
 Il a donc reçu un paiement d'**==Ethermine==** et a pour habitude de les échanger en **==Tether==**
-![[content/Notes/TryHackMe/Sakura Room/SR_Tether.png|500]]
+![[SR_Tether.png|500]]
 
 ---
 ## 4. TAUNT 
@@ -80,21 +80,21 @@ Il a donc reçu un paiement d'**==Ethermine==** et a pour habitude de les échan
 >Just as we thought, the cybercriminal is fully aware that we are gathering information about them after their attack. They were even so brazen as to message the OSINT Dojo on ==Twitter== and taunt us for our efforts. The Twitter account which they used appears to use a different username than what we were previously tracking, maybe there is some additional information we can locate to get an idea of ==where they are heading to next==?
 >
 >We've taken a screenshot of the message sent to us by the attacker, you can view it in your browser [here](https://raw.githubusercontent.com/OsintDojo/public/main/taunt.png).
->![[content/Notes/TryHackMe/Sakura Room/SR_Taunt.png|500]]
+>![[SR_Taunt.png|500]]
 ### Instructions
 >Although many users share their username across different platforms, it isn't uncommon for users to also have alternative accounts that they keep entirely separate, such as for investigations, trolling, or just as a way to separate their personal and public lives. These alternative accounts might contain information not seen in their other accounts, and should also be investigated thoroughly. In order to answer the following questions, you will need to view the screenshot of the message sent by the attacker to the OSINT Dojo on Twitter and use it to locate additional information on the attacker's Twitter account. You will then need to follow the leads from the Twitter account to the ==Dark Web== and other platforms in order to discover additional information.
 ### Retex
 On va donc retourner sur le compte twitter **==SakuraLoverAiko==**
 En regardant un peu ses posts, on trouve quelques posts sympa comme celui-ci ou le hacker insiste sur les mots ==Deep== et ==Paste==.
-![[content/Notes/TryHackMe/Sakura Room/SR_DP.png|500]]
+![[SR_DP.png|500]]
 Et celui-ci, où il a l'air de donnée une adresse `b2b37b3c106eb3f86e2340a3050968e2`.
-![[content/Notes/TryHackMe/Sakura Room/SR_Wifi.png|500]]
+![[SR_Wifi.png|500]]
 Il voulait donc qu'on cherche un site sur le darkweb nommé ==DeepPaste==.
 *(Ce site n'existe plus, mais c'est un équivalent de pastbin)*
-![[content/Notes/TryHackMe/Sakura Room/SR_DPV3.png|500]]
+![[SR_DPV3.png|500]]
 En recherchant l'adresse qu'il avait donné, on trouve des noms de wifi, des ssiDs et des MDP.
 Ce qui nous intéress, c'est donc le SSID du wifi de sa maison ==DK1F-G==, on va donc faire une recherche via ce dernier sur wigle.net.
-![[content/Notes/TryHackMe/Sakura Room/SR_BSSID.png|150]]
+![[SR_BSSID.png|150]]
 On retrouve donc le BSSID suivant : **==84:AF:EC:34:FC:F8==**.
 
 ---
@@ -106,19 +106,19 @@ On retrouve donc le BSSID suivant : **==84:AF:EC:34:FC:F8==**.
 ### Retex
 On va donc essayer de retrouver sa localisation.
 Son premier tweet est une photo qui va nous aider puisqu'elle dit qu'elle part de là pour aller à la maison.
-![[content/Notes/TryHackMe/Sakura Room/SR_blossom.png|500]]
+![[SR_blossom.png|500]]
 Sur cette photo en fond, on peut y voir le ==washington monument==.
-![[content/Notes/TryHackMe/Sakura Room/SR_map.png|500]]
+![[SR_map.png|500]]
 On peut donc en conclure qu'elle n'était pas très loin de l'aéroport Donald Reagan (**==DCA==**).
 
 Ensuite, on peut prendre son post qui parle de sa dernière escale : 
-![[content/Notes/TryHackMe/Sakura Room/SR_JAL.png|500]]
+![[SR_JAL.png|500]]
 On y voit d'inscrit "First Class Lounge Sakura Lounge", en cherchant sur Google on apprend que c'est au Japon au Tokyo International Airport avec l'abréviation : **==HND==**
 
 Maintenant, on peut s'attaquer au dernier post :
-![[content/Notes/TryHackMe/Sakura Room/SR_mappy.png|500]]
+![[SR_mappy.png|500]]
 Via ce qu'on a trouvé précédemment, on peut croire que l'attaquant vient du Japon, et cette photo le confirme puisqu'on le retrouve au Japon sur Google map :
-![[content/Notes/TryHackMe/Sakura Room/SR_lac.png|500]]
+![[SR_lac.png|500]]
 Le lac qu'on voit sur la carte est le **==Lake Inawashiro==**  et sur le DeepPaste, la ville notée était **==Hirosaki==**.
 
 L'attaquant est donc un japonais qui visitait l'Amérique.

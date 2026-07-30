@@ -11,7 +11,7 @@ tags:
 Vous êtes tranquillement chez vous, en train de ~~stalker~~ faire de l'OSINT sur cette charmante personne que vous croisez régulièrement pendant que vous faites vos courses, lorsque vous entendez un cri sur le palier. La voix ressemble à celle de Renée Michelle, votre sympathique voisine.
 
 Intrigué, vous ouvrez la porte et découvrez votre voisine paniquée : la porte de son appartement est fracturée et grande ouverte. Entre deux sanglots, vous parvenez à comprendre que son chat n'est plus dans l'appartement : elle n'était partie qu'une courte demi-heure afin de faire ses courses au supermarché du coin, Route d'Olivet semble-t-il.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_CCC.png]]
+![[LAF_C1_I_CCC.png]]
 >**Renée Michelle**
 > « Mon Malo... On m'a pris mon Malo... J'avais pourtant bien tout fermé, c'est sûr qu'il n'est pas parti... Je suis sûre que c'est des voleurs de chat, comme ils l'ont dit à la télé ! »
 
@@ -36,13 +36,13 @@ Avant toute chose, rassemblons les infos que l'on a : 
 Notre première piste est donc de chercher un réseau social sur lequel elle pourrait avoir un contact avec sa famille. 
 Au vu de sa tranche d'âge supposée, je penche vers Facebook. 
 En recherchant "Renée Michelle" dans les publications Facebook de 2026, on peut trouver un post d'un compte éponyme.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_CCC_PF.png]]
+![[LAF_C1_I_CCC_PF.png]]
 Ce post fait mention de "Malo" et de petites-filles. La photo de profil correspond à la photo de Renée Michelle paniquée de l'énoncé.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_CCC_PP.png]]
+![[LAF_C1_I_CCC_PP.png]]
 On vient donc de trouver [le compte Facebook](https://www.facebook.com/profile.php?id=61578487714446) de cette dame.
 En épluchant les posts de son compte, on peut trouver très rapidement [un post en hommage](https://www.facebook.com/photo?fbid=122101238324949590&set=a.122101239230949590) à son défunt mari.
 Sur ce post, elle annonce que le jour de cette publication, cela faisait 13 ans jour pour jour que son mari est décédé.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_CCC_PM.png]]
+![[LAF_C1_I_CCC_PM.png]]
 Son post datant du 24/03/2026, cela veut dire que son mari est décédé le **==24/03/2013==**.
 
 ---
@@ -60,9 +60,9 @@ Son post datant du 24/03/2026, cela veut dire que son mari est décédé le **==
 ### RETEX
 
 Continuons sur notre lancée avec le compte Facebook de madame Michelle.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_ICF.png]]
+![[LAF_C1_I_SOS_ICF.png]]
 Son compte annonce qu'elle habite Orléans. Une petite recherche sur Google Maps permet de confirmer qu'il y a bien une "Route d'Olivet" avec un supermarché à proximité, ce qui colle bien avec l'énoncé.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_GGM.png]]
+![[LAF_C1_I_SOS_GGM.png]]
 On peut aussi noter qu'elle a pour amis sur cette plateforme plusieurs personnes portant le même nom de famille, ce qui corrobore avec l'indice selon lequel elle utilise ce réseau pour garder contact avec sa famille. Parmi eux, il y a notamment :
 - [Lucia Michelle](https://www.facebook.com/profile.php?id=61577432904055)
 - [Jean Michelle Jr.](https://www.facebook.com/profile.php?id=61579482161478)
@@ -70,10 +70,10 @@ On peut aussi noter qu'elle a pour amis sur cette plateforme plusieurs personnes
 
 En survolant très rapidement ces trois comptes, on apprend que Jean et Lucia sont mariés, et que Sarah est leur fille et appelle Renée "Mamie". 
 On peut aussi trouver [un post](https://www.facebook.com/michelle.sarah2003/posts/pfbid02euSNaM9KUWSFMrBfyJb17dNXoQ7WUi9XL6kLsZqE24Mv9Lh8ux1K91ADhf6LL7kEl) sur le compte Facebook de cette dernière qui interpelle sa grand-mère via une photo montrant une affiche de PetSitter à Orléans, en lui précisant qu’il pourrait garder Malo.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_AP.png]]
+![[LAF_C1_I_SOS_AP.png]]
 Cette affiche présente le numéro suivant : **==0261913352==**.
 On peut aussi noter que Lucia explique en commentaire qu'une de ses amies a déjà vu un des messages de ce PetSitter sur un autre réseau avec le même numéro.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_APC.png]]
+![[LAF_C1_I_SOS_APC.png]]
 
 ---
 
@@ -90,7 +90,7 @@ On peut aussi noter que Lucia explique en commentaire qu'une de ses amies a déj
 Cette question contient étonnamment beaucoup de mots compliqués... 
 Essayons de les utiliser dans une recherche : `SPA autonome régionale Orléans`. 
 Le premier lien indexé via cette recherche est une page du site de la [SPA du Centre](https://www.spa-du-centre.com).
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOC.png]]
+![[LAF_C1_I_SOC.png]]
 On peut retrouver sur leur page d'accueil exactement les mêmes termes pour décrire la SPA du Centre d'Orléans, ce qui confirme qu’on est au bon endroit. 
 Après avoir vérifié les distances respectives entre chacun de leurs sites présents sur cette page et la "Route d'Olivet" via Google Maps, on peut s'assurer que le site le plus proche possède le numéro : **==0238448964==**.
 

@@ -16,6 +16,6 @@ tags:
 
 ## Retex
 En cherchant sur Google Maps, je trouve une île nommée ==Amsterdamøya==.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/4 December/4D_Island.png|500]]
+![[4D_Island.png|500]]
 Et en cherchant sur [Wikipedia](https://fr.wikipedia.org/wiki/Amsterdam%C3%B8ya), on apprend qu'une station semi-permanente a été construit en 1619 sur cette île, et elle était nommée : [Smeerenburg](https://fr.wikipedia.org/wiki/Smeerenburg).
 Et toujours d'après [Wikipedia](https://fr.wikipedia.org/wiki/Smeerenburg) le film d'animation **==Klaus==** est sorti en **==2019==** et se déroule dans la ville de "Smeerensburg"

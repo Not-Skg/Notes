@@ -21,7 +21,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 
 ### Énoncé
 >Le nouveau site que vous venez de trouver est une véritable mine d'informations. Ainsi, le groupe que vous avez commencé à suivre ne se limite pas aux animaux locaux, mais s'intéresse aussi aux animaux plus exotiques.
->![[Chapitre 2 - Acte 3 - Transportzefsd.png]]
+>![[LAF_C2_A3_T_SC_P.png]]
 >
 >Il n'a pas tort, alors autant commencer par le commencement.
 >
@@ -31,10 +31,10 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 
 ### RETEX
 Pour rappel, le nouveau site trouvé en question c'est le .onion.
-![[Chapitre 2 - Acte 3 - Transportzfefds.png]]
+![[LAF_C2_A3_T_SC_1.png]]
 Et dans l'onglet "Actualité", on peut voir une notification sur un nouvel approvisionnement par cargo portée par Maximus.
 Et on a accès à une image du cargo en question.
-![[Chapitre 2 - Acte 3 - Transportazdfsdf.png]]
+![[LAF_C2_A3_T_SC_2.png]]
 Et sur ce cargo, on peut lire : "GERD" et "safety first".
 En utilisant google lens sur l'image, on peut retrouver plus d'informations sur ce cargo, notamment sur identifiant IMO : 9052707
 Et le nom de ce cargo : [GERD](https://www.shipspotting.com/photos/3926582?).
@@ -47,12 +47,12 @@ Pour trouver ça, on peut pivoter sur Maximus, on avait trouvé un peu plus tôt
 ![[LAF_C2_A3_O_TT_CGG.png]]
 
 Sur ce planning, il est noté que le départ du cargo était le 25/02/2026 et que l'arrivé était le 27 février. De plus, Morelos le confirme dans Keybase.
-![[Chapitre 2 - Acte 3 - Transportazfsefd.png]]
+![[LAF_C2_A3_T_SC_3.png]]
 
 En rentrant l'imo du cargo et les dates recherché, on peut récupérer le trajet.
-![[Chapitre 2 - Acte 3 - Transportzefsdf.png]]
+![[LAF_C2_A3_T_SC_4.png]]
 Le Gerd était donc à quai à Nador, au Maroc depuis 25 févr. 2026 à 05:24 UTC pendant 7h 52'
-![[Chapitre 2 - Acte 3 - Transportzzedfzd.png]]
+![[LAF_C2_A3_T_SC_5.png]]
 Et il a finit à quai à esp-valencia, en Espagne le 27 févr. 2026 à 08:44 UTC.
 
 Le flag était donc : **==Nador-Valence==**
@@ -72,11 +72,12 @@ Toujours sur le [calendrier Google de Maximus](https://calendar.google.com/calen
 
 Pour continuer nos recherches on aurait pu utiliser les avis google maps provenant du compte de Maximus, mais il n'en a qu'un seul, localisé a Orléans.
 Il va donc falloir chercher autre part.
-![[LAF_C2_A3_O_TT_WMN.png]]Dans la partie [[Chapitre 2 - Acte 3 - Organisation]], on avais fait une recherche whatsmyname pour trouver ce qui était lié au nom d'utilisateur de Maximus `tuskontheroad`.
+![[LAF_C2_A3_O_TT_WMN.png]]
+Dans la partie [[Chapitre 2 - Acte 3 - Organisation]], on avais fait une recherche whatsmyname pour trouver ce qui était lié au nom d'utilisateur de Maximus `tuskontheroad`.
 Et dans les résultats, on avait eu un [avis tripadvisor](https://www.tripadvisor.com/ShowUserReviews-g303168-d8024019-r269336747-Hotel_Tahat-Tamanrasset_Tamanrasset_Province.html) sur l'hôtel "Hotel Tahat" !
-![[Chapitre 2 - Acte 3 - Transportsedcdsd.png]]
+![[LAF_C2_A3_T_CD_1.png]]
 On reconnait bien maximus sur sa photo de profil et il utilise même le pseudo Maximus.
-![[Chapitre 2 - Acte 3 - Transportsefsd.png]]
+![[LAF_C2_A3_T_CD_2.png]]
 On peut récupérer les coordonnées de l'hôtel en question via google maps : **==22.782784, 5.535160==**
 
 ---

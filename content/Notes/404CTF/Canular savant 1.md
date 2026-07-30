@@ -41,7 +41,7 @@ Décomposition :
 - `out tags center` : affiche les tags et le centre géométrique de chaque objet.
 
 Cette requête permet d'afficher toutes les fontaines recensées dans OpenStreetMap pour Paris.
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_FP.png]]
+![[404_26_CS1_FP.png]]
 
 
 ### Ronds-points de Paris
@@ -55,7 +55,7 @@ out center;
 ```
 Cette requête fonctionne de la même manière que la précédente, mais cherche cette fois les objets possédant : `junction=circular`
 
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_RPP.png]]
+![[404_26_CS1_RPP.png]]
 
 Je préfère utiliser `junction=circular` plutôt que `junction=roundabout` parce que les deux tags n'ont pas exactement la même signification dans OpenStreetMap.
 
@@ -131,15 +131,15 @@ Affiche les résultats sur la carte.
 ### Identification du bon rond-point
 
 Grâce à cette dernière requête, on remarque plusieurs carrefours circulaires possédant des fontaines à proximité.
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_FP1.png]]
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_FP2.png]]
+![[404_26_CS1_FP1.png]]
+![[404_26_CS1_FP2.png]]
 Cependant, dans la plupart des cas :
 - les fontaines sont placées au centre de la place ;
 - il n'y en a qu'une seule ;
 - ou elles ne correspondent pas à la description de l'énoncé.
 
 En inspectant les résultats, un lieu attire immédiatement l'attention : le **Rond-point des Champs-Élysées-Marcel-Dassault**.
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_VP.png]]
+![[404_26_CS1_VP.png]]
 
 On y trouve plusieurs fontaines distinctes réparties sur le pourtour du rond-point :
 
@@ -154,7 +154,7 @@ Way 67027587
 
 Toutes sont taguées `amenity=fountain`et `natural=water`
 De plus elles forment exactement l'ensemble des fontaines visibles autour du rond-point.
-![[content/Notes/404CTF/404_26_CS1/404_26_CS1_P.png]]
+![[404_26_CS1_P.png]]
 Un autre indice confirme l'hypothèse : parmi tous les carrefours circulaires trouvés, c'est le seul dont le champ `name`contient explicitement `Rond-point`, alors que les autres sont généralement nommés :
 
 ```json

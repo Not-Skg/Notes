@@ -16,11 +16,11 @@ tags:
 ## RETEX [1/2]
 Déjà le texte sur la pancarte parle d'une académie et ça a l'air d'être de l'italien.
 Via Google Lens, on trouve la photo suivante quand on se concentre sur la montagne au fond.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/19 December/19D_Napleds.png|500]]
+![[19D_Napleds.png|500]]
 On est donc bien en Italie.
 
 Sur la pancarte, il y a ==club & event, ristorante, cocktail bar== de marqué et grâce à tout ça, on peut trouver la localisation exacte de la prise de photo : 
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/19 December/19D_bar.png|500]]
+![[19D_bar.png|500]]
 
 Maintenant cherchons l'association qui y a tenu une cérémonie vers décembre 2024.
 Vu qu'ils n'ont pas de site, on retrouve leur [insta](https://www.instagram.com/akademiacucina/?hl=fr) et leur [facebook](https://www.facebook.com/akademiacucina/?locale=it_IT)

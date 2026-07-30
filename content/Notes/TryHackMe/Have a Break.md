@@ -36,34 +36,34 @@ L’objectif est d’identifier la personne responsable du vol à partir d’un 
 - `transeuro_data/access_log.csv` : les journaux d’accès du système de planification. 
 - `transeuro_data/comms_export.txt` : un export de communications internes. 
 À partir de ces éléments, il faut recouper les indices techniques, logiques et OSINT pour remonter jusqu’au coupable.
-![[content/Notes/TryHackMe/Have a Break/HaB_tree.png|500]]
+![[HaB_tree.png|500]]
 
 ---
 >Which VPN service was used to send the anonymous email from the **.eml** file?
 
 Pour trouver le vpn utilisé lors de l'envoi de l'email,  on peut analyser `exhibit_a.eml`.
-![[content/Notes/TryHackMe/Have a Break/HaB_eml.png|500]]
+![[HaB_eml.png|500]]
 Dans les entêtes cachés de l'email, il y a l'adresse source suivante : `193.32.249.132`.
 Une petite recherche Google sur cette IP nous donne immédiatement le résultat : elle appartient à **==Mullvad VPN==**.
-![[content/Notes/TryHackMe/Have a Break/HaB_VPN.png|500]]
+![[HaB_VPN.png|500]]
 
 ---
 >What is the full street address of the petrol station where the missing vehicle was last seen?
 
 Pour localiser la station essence où le véhicule a été vu pour la dernière fois, on commence par lire le briefing `ecta_memo.pdf`.
-![[content/Notes/TryHackMe/Have a Break/HaB_ecta_memo_hint.png|500]]
+![[HaB_ecta_memo_hint.png|500]]
 On y apprend que `exhibit_b.jpg` montre la **dernière photo** du véhicule, prise à une station sur la **D1 proche de Hulin**. 
-![[content/Notes/TryHackMe/Have a Break/exhibit_b.png|500]]
+![[exhibit_b.png|500]]
 En examinant la photo, on identifie clairement l'enseigne : **Orlen**.
 Une recherche "Orlen Hulin" sur Google Maps nous donne instantanément la station correspondante à l'adresse :  **==Kroměřížská 1281, 768 24 Hulín, Czechia==** _(ne pas oublier de mettre le nom du pays en anglais)_
-![[content/Notes/TryHackMe/Have a Break/HaB_Orlen_hulin.png|500]]
+![[HaB_Orlen_hulin.png|500]]
 
 ---
 >At what time did the suspicious action take place in the route planning system on March 25th, 2026?  
 >>**Format: HH:MM:SS**
 
 Pour identifier l'horaire de l'action suspecte dans le système de planification, on examine les logs `access_log.csv`.
-![[content/Notes/TryHackMe/Have a Break/HaB_access_log.png|500]]
+![[HaB_access_log.png|500]]
 Parmi toutes les actions, **une seule se démarque** : l'**export de `ROUTE_IT_PL_Q1_2026`** réalisé à **==22:14:09==**. 
 Ce qui est troublant : 
 - C'est le **seul export** dans les logs 
@@ -73,9 +73,9 @@ Ce qui est troublant :
 >What is the employee ID of the person who sent the anonymous email?
 
 L'employé anonyme précise dans son mail qu'il a vu dans les **activités du système interne la nuit** que quelqu'un avait donné les détails de la route à une autre personne.
-![[content/Notes/TryHackMe/Have a Break/HaB_eml_hint.png|500]]
+![[HaB_eml_hint.png|500]]
 On peut donc en déduire qu'il a consulté les logs **quelque temps après l'exfiltration**, mais encore **pendant la nuit**.
-![[content/Notes/TryHackMe/Have a Break/HaB_sus_night.png|500]]
+![[HaB_sus_night.png|500]]
 La seule personne qui a accédé au fichier en question le **même soir** est l'ID **BR-0312**.
 
 ---
@@ -90,14 +90,14 @@ Parce que :
 >What is the full name of the culprit?
 
 En examinant minutieusement `comms_export.txt`, on remarque que l'employé BR-0291 s'est **connecté sur un autre compte**.
-![[content/Notes/TryHackMe/Have a Break/HaB_switch_account.png|500]]
+![[HaB_switch_account.png|500]]
 Sur ce compte secondaire, il a utilisé l'adresse **kraliknovak09@gmail.com** pour envoyer le document.
-![[content/Notes/TryHackMe/Have a Break/HaB_pa.png|500]]
+![[HaB_pa.png|500]]
 Sur ce compte secondaire, BR-0291 utilise l'adresse **kraliknovak09@gmail.com** pour envoyer le document.
 En utilisant l'outil **Epios**, on fait la liaison entre cette adresse et un compte Google.
-![[content/Notes/TryHackMe/Have a Break/HaB_Epios.png|500]]
+![[HaB_Epios.png|500]]
 On pivote ensuite sur ses **avis** et on confirme que c'est bien lui : il a laissé un **commentaire sur la station essence** du début du challenge.
-![[content/Notes/TryHackMe/Have a Break/HaB_map_contribution.png|500]]
+![[HaB_map_contribution.png|500]]
 On a donc son nom complet : **==Radovan Blšťák==**.
 
 ---

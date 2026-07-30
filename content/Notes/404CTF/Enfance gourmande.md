@@ -10,7 +10,7 @@ tags:
 >Mais vous avez beau vous creuser la cervelle, impossible de retrouver le nom du lieu !
 >Seules quelques images vous reviennent par flash quand vous essayez de vous souvenir. 
 >Parviendrez-vous à retrouver le nom de l'hôtel de ce restaurant, et le prix du plat ? 
->![[content/Notes/404CTF/404_26_EG/404_26_EG_V.mp4]]
+>![[404_26_EG_V.mp4]]
 >>Format : 404CTF{plaza_athenee-12}
 
 ## RETEX
@@ -19,35 +19,35 @@ Je n'ai malheureusement pas réussi à résoudre complètement ce challenge, mai
 Je trouve la démarche intéressante, je me permets donc de la partager malgré tout.
 
 Avant toute chose, analysons quelques arrêts sur image de la vidéo fournie dans l'énoncé.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_AI1.png]]
+![[404_26_EG_AI1.png]]
 Le premier arrêt sur image nous montre un logo avec l'intitulé **« Relais & Châteaux »**.
 
-![[content/Notes/404CTF/404_26_EG/404_26_EG_AI2.png]]
+![[404_26_EG_AI2.png]]
 Le deuxième arrêt sur image nous montre une vue sur le bord d'un lac ou d'un étang. On peut déjà relever plusieurs éléments caractéristiques :
 - des constructions humaines sur la rive opposée ;
 - quelques arbres atypiques qui dépassent nettement de la canopée ;
 - une berge présentant une forme en arc de cercle.
 
 Ces éléments pourront servir plus tard pour confirmer une localisation.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_AI3.png]]
+![[404_26_EG_AI3.png]]
 Ce troisième arrêt sur image apporte davantage d'informations. On distingue clairement la tour Eiffel au loin, un bâtiment présentant une forme sphérique sur sa droite ainsi qu'une colline boisée au premier plan, sur laquelle se trouvent plusieurs bâtiments de tailles variées.
 
 On peut donc raisonnablement limiter nos recherches aux environs de Paris.
 
 D'après [Wikipédia](https://fr.wikipedia.org/wiki/Relais_%26_Ch%C3%A2teaux), **Relais & Châteaux** est une association regroupant des hôtels et restaurants de luxe indépendants. Le logo présenté correspond parfaitement à celui visible sur le premier arrêt sur image.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_RCP.png]]
+![[404_26_EG_RCP.png]]
 Il existe toutefois un nombre important d'établissements Relais & Châteaux autour de Paris. Il va donc falloir exploiter les autres indices afin de réduire la zone de recherche.
 
 Je décide alors de partir du troisième arrêt sur image dans le but de déterminer l'emplacement exact depuis lequel la vidéo a été prise.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_EM.png]]
+![[404_26_EG_EM.png]]
 En explorant les environs de Paris sur Google Earth tout en gardant la tour Eiffel comme point de repère principal, on finit par retrouver un point de vue identique à celui visible dans la vidéo.
 Je n'ai jamais identifié avec certitude le bâtiment sphérique visible sur la capture, mais ce détail n'était finalement pas nécessaire pour la suite de l'investigation.
 Les encadrés rouges permettent de comparer les éléments caractéristiques du paysage et de confirmer qu'il s'agit bien du même point de vue.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_ML.png]]
+![[404_26_EG_ML.png]]
 Un élément attire immédiatement l'attention : un établissement Relais & Châteaux se trouve à proximité immédiate du point de vue identifié.
 
 De plus, un étang est également présent juste à côté. Si notre hypothèse est correcte, il devrait correspondre au second arrêt sur image.
-![[content/Notes/404CTF/404_26_EG/404_26_EG_EM-1.png]]
+![[404_26_EG_EM-1.png]]
 En faisant le tour de l'étang à l'aide de Google Maps, on retrouve exactement le même point de vue que celui visible sur la vidéo.
 Là encore, les encadrés rouges permettent de mettre en évidence les éléments communs entre les deux images.
 

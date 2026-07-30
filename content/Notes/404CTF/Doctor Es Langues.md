@@ -5,7 +5,7 @@ tags:
 ---
 ## Énoncé
 >En farfouillant bien, vous devriez trouver le petit compte d'un chercheur qui utilise cette image en bannière. 
->![[content/Notes/404CTF/404_26_DES/404_26_DES_B.jpg]]
+>![[404_26_DES_B.jpg]]
 >En étudiant son CV, vous trouverez qu'il maîtrise une langue à un niveau "confirmé”. 
 >Quelle est cette langue ?
 > 
@@ -15,13 +15,13 @@ tags:
 
 ## Énoncé
 Vu que la photo de l'énoncé parait vraiment banale, on peut commencer par regarder les méta-données via un outil comme exiftool :
-![[content/Notes/404CTF/404_26_DES/404_26_DES_ET.png|500]]
+![[404_26_DES_ET.png|500]]
 Je pense que le message est passé... c'est la bannière du [compte Twitter de SadiQuatrenot](https://x.com/SadiQuatrenot/with_replies).
-![[content/Notes/404CTF/404_26_DES/404_26_DES_TX.png|500]]
+![[404_26_DES_TX.png|500]]
 On peut donc retrouver facilement son compte Twitter.
-![[content/Notes/404CTF/404_26_DES/404_26_DES_TP.png|500]]
+![[404_26_DES_TP.png|500]]
 Et en cherchant un peu, on peut trouver un post dans lequel il partage son CV et son [blog](https://www.blogger.com/profile/15995011235130208479) par la même occasion.
 Étant donné que le post Twitter mentionne une mise à jour du CV et qu'on peut le retrouver sur le blog, je vais directement chercher si une archive du blog existe sur la [WBM](https://web.archive.org/web/20260507223535/https://quiestsadiquatrenot.blogspot.com/).  
-![[content/Notes/404CTF/404_26_DES/404_26_DES_WBM.png|500]]
+![[404_26_DES_WBM.png|500]]
 On y retrouve une version très légèrement différente, avec la mention de l'apprentissage du malais.
 On a donc le flag : **==404CTF{malais}==**

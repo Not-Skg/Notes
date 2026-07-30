@@ -5,7 +5,7 @@ tags:
   - CTF
 ---
 
-![[content/Notes/Le Caire nid d'espions/LeCaire.jpeg]]
+![[LeCaire.jpeg]]
 
 ***Les différentes parties du CTF :***
  · | · [[Visiorbis — Les origines]]
@@ -20,7 +20,7 @@ tags:
 Le CTF « Le Caire, nid d’espions », organisé par SKOPEIN et l’EIEE, s’est déroulé du 2 au 9 juin. Initialement pensé comme un événement présentiel, il était également accessible à distance, en solo ou en équipe.
 
 À l’origine, je comptais simplement y jeter un œil rapide. Mais je me suis rapidement laissé embarquer par le scénario et l’ambiance, au point de m’y investir bien plus que prévu. J’ai réellement commencé le 5 juin, en rejoignant Mrlunatic25, avec qui j’avais déjà collaboré sur Medileak 3.
-![[content/Notes/Le Caire nid d'espions/LC_C-1.png]]
+![[LC_C-1.png]]
 Le format du CTF imposait une progression linéaire : un seul challenge disponible à la fois, avec impossibilité de passer au suivant sans avoir validé le précédent. À cela s’ajoutait une limitation du nombre de tentatives (généralement cinq), ce qui empêchait toute approche par brute force et obligeait à être sûr de ses réponses.
 
 De mon côté, contraintes personnelles obligent, je travaillais principalement tard le soir, voire dans la nuit après le travail. Cela a donné lieu à des sessions assez mémorables, mêlant fatigue, incompréhensions… et quelques fous rires.
@@ -30,7 +30,7 @@ Globalement, j’ai beaucoup apprécié l’expérience, même si je n’étais 
 Nous n’avons malheureusement pas réussi à terminer le CTF, en grande partie à cause du temps passé sur ce challenge GEOINT. Avec quelques heures supplémentaires ou un démarrage plus anticipé, l’issue aurait sans doute été différente.
 
 C’est d’autant plus frustrant que la compétition incluait également un classement basé sur la qualité d’un rapport final, un exercice que j’aurais vraiment aimé expérimenter. Cela explique également pourquoi ce RETEX s’arrête au challenge DIGITAL PLAYGROUND, dans la catégorie [[Le pacte]], qui constituait la dernière étape du CTF.
-![[content/Notes/Le Caire nid d'espions/LC_C.png]]
+![[LC_C.png]]
 Nous terminons malgré tout à la 29ᵉ place sur 112 équipes à la clôture du CTF, le 9 juin à 21h, un résultat honorable compte tenu des contraintes rencontrées.
 
 ---

@@ -17,6 +17,6 @@ Je ferai bientôt une maj du site pour incorporer le nom de tous les challmakers
 
 Ce challenge a été écrit par ==Sherpearce==, étant donné que c'est un challenge d'intro et que le seul réseau que l'on a instantanément de lui, c'est discord, on peut vérifier la légende de son compte.
 
-![[content/Notes/404CTF/404_26_CS1/404_26_MCD.png]]
+![[404_26_MCD.png]]
 
 On a donc le flag : **==404CTF{hxxps://lab.c.404ctf.fr/}==**

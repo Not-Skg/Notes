@@ -15,7 +15,7 @@ tags:
 D'après un extracteur de date spécialisé pour Linkedin, le post a été créé le dimanche 17 avril 2022.
 
 En faisant une recherche avancée sur la première image de la vidéo, on trouve un article d'India Time qui republie un poste X avec cette vidéo. 
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/6 December/6D_IT.png|500]]
+![[6D_IT.png|500]]
 On peut partir du principe que si une chaine d'information republie ça alors, elle republie le post qui l'a rendu virale.
-![[content/Notes/Osint4Fun/Advent Of Osint 2025/6 December/6D_X.png|500]]
+![[6D_X.png|500]]
 Et ce poste X a été publié par un certain **==Anand Mahindra==**

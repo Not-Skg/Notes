@@ -10,7 +10,7 @@ tags:
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 >Voici le graphique issu de la dernière partie : [[Chapitre 1 - La Famille Michelle - BONUS]]
 
-![[content/Notes/L'appel de la forêt/LAF_C1_LFM.svg]]
+![[LAF_C1_LFM.svg]]
 
 Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la suite du CTF.
 
@@ -43,9 +43,9 @@ Bon, où en étiez-vous ? Ah oui, ce pet-sitter semble être un bon point de dé
 
 Pour rappel, on avait pu trouver dans un post Facebook de Sarah Michelle (la petite-fille de Renée Michelle) une affiche publicitaire pour le pet-sitter dans la rue, avec un numéro de téléphone inscrit dessus.
 
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_AP.png]]
+![[LAF_C1_I_SOS_AP.png]]
 De plus, un commentaire sur ce post, de la part de Lucia Michelle (la belle-fille de Renée), précisait qu’une de ses amies avait trouvé un de ses messages sur un autre réseau avec le même numéro.
-![[content/Notes/L'appel de la forêt/LAF_C1_I/LAF_C1_I_SOS_APC.png]]
+![[LAF_C1_I/LAF_C1_I_SOS_APC.png]]
 Après plusieurs tentatives de reverse phone lookup avec des outils comme EPIEOS, la seule idée qui me vient à l’esprit est de chercher directement à la main ce numéro de téléphone sur tous les réseaux sociaux connus.
 Bluesky s’avère être le bon réseau social, puisque la recherche `https://bsky.app/search?q=0261913352` est la seule à renvoyer un résultat intéressant.
 
