@@ -19,6 +19,7 @@ export type ContentDetails = {
   richContent?: string
   date?: Date
   description?: string
+  order?: number
 }
 
 interface Options {
@@ -103,6 +104,11 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
+          const rawOrder = file.data.frontmatter?.order
+          const parsedOrder = rawOrder === undefined ? undefined : Number(rawOrder)
+          const order =
+            parsedOrder !== undefined && !isNaN(parsedOrder) ? parsedOrder : undefined
+
           linkIndex.set(slug, {
             slug,
             filePath: file.data.relativePath!,
@@ -115,6 +121,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               : undefined,
             date: date,
             description: file.data.description ?? "",
+            order,
           })
         }
       }

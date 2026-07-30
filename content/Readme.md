@@ -40,7 +40,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Possibilité d’agrandir les images au clic
 - [ ] Étoffer la Toolbox et les tags des challs
 - [ ] Régler problèmes "click to open"
-- [ ] Gérer ordre dans "Explorer" via ID
-- [ ] remplacer les redirection des visualisations de dossier vers les pages d'accueilles
-- [ ] Mise en avant des pages d'accueilles
+- [x] Gérer ordre dans "Explorer" via ID
+- [x] remplacer les redirection des visualisations de dossier vers les pages d'accueils
+- [ ] Mise en avant des pages d'accueils
 - [ ] Régler effets de bords changement de domain

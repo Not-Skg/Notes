@@ -51,6 +51,26 @@ export class FileTrieNode<T extends FileTrieData = ContentDetails> {
     return this.slugSegments[this.slugSegments.length - 1]
   }
 
+  /**
+   * True if this is a "home file" for its parent folder: a regular file whose
+   * name matches the folder it lives in (e.g. `Notes/Foo/Foo.md`). This is the
+   * convention used for folder landing pages in this vault (instead of `index.md`).
+   */
+  get isHomeFileOfParent(): boolean {
+    if (this.isFolder) return false
+    const segments = this.slug.split("/")
+    return segments.length >= 2 && segments.at(-1) === segments.at(-2)
+  }
+
+  /**
+   * For a folder node, find the child that acts as its "home file" (see
+   * `isHomeFileOfParent`), if any.
+   */
+  findHomeChild(): FileTrieNode<T> | undefined {
+    if (!this.isFolder) return undefined
+    return this.children.find((child) => child.isHomeFileOfParent)
+  }
+
   private makeChild(path: string[], file?: T) {
     const fullPath = [...this.slugSegments, path[0]]
     const child = new FileTrieNode<T>(fullPath, file)

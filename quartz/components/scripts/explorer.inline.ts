@@ -111,7 +111,13 @@ function createFolderNode(
   const folderPath = node.slug
   folderContainer.dataset.folderpath = folderPath
 
-  if (currentSlug === folderPath) {
+  // If this folder has a "home file" (a file sharing the folder's name, e.g.
+  // `Foo/Foo.md`), its data gets hoisted onto this node by the explorer's
+  // mapFn. In that case, link to the home file instead of the auto-generated
+  // folder listing page.
+  const linkTarget = node.data?.slug ?? folderPath
+
+  if (currentSlug === folderPath || currentSlug === linkTarget) {
     folderContainer.classList.add("active")
   }
 
@@ -119,8 +125,8 @@ function createFolderNode(
     // Replace button with link for link behavior
     const button = titleContainer.querySelector(".folder-button") as HTMLElement
     const a = document.createElement("a")
-    a.href = resolveRelative(currentSlug, folderPath)
-    a.dataset.for = folderPath
+    a.href = resolveRelative(currentSlug, linkTarget)
+    a.dataset.for = linkTarget
     a.className = "folder-title"
     a.textContent = node.displayName
     button.replaceWith(a)

@@ -59,7 +59,13 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     }
 
     const crumbs: CrumbData[] = pathNodes.map((node, idx) => {
-      const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(node.slug))
+      // Folders that have a "home file" (a file sharing the folder's name,
+      // e.g. `Foo/Foo.md`) should link to that home file rather than the
+      // auto-generated folder listing page.
+      const home = node.findHomeChild()
+      const targetSlug = (home?.data?.slug as FullSlug | undefined) ?? node.slug
+
+      const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(targetSlug))
       if (idx === 0) {
         crumb.displayName = options.rootName
       }
@@ -76,12 +82,20 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       crumbs.pop()
     }
 
+    // Collapse consecutive crumbs with the same display name. This happens
+    // when viewing a folder's home file directly: the folder crumb and the
+    // current-page crumb would otherwise show the same name twice.
+    const dedupedCrumbs = crumbs.filter((crumb, idx) => {
+      const next = crumbs[idx + 1]
+      return !(next && next.displayName === crumb.displayName)
+    })
+
     return (
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
-        {crumbs.map((crumb, index) => (
+        {dedupedCrumbs.map((crumb, index) => (
           <div class="breadcrumb-element">
             <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+            {index !== dedupedCrumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
           </div>
         ))}
       </nav>
