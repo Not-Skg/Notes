@@ -1969,6 +1969,17 @@
       "autre": 0
     }
   },
+  "2026-07-30": {
+    "count": 1,
+    "activités": [
+      "Created — not-skg domain · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-05-24": {
     "count": 4,
     "activités": [
@@ -2013,7 +2024,7 @@
   "__totaux__": {
     "resolve": 325,
     "retex": 200,
-    "autre": 36
+    "autre": 37
   },
   "__assets__": {
     "profils": 6,
