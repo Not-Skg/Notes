@@ -4,8 +4,7 @@ tags:
   - Chall
   - CaseBandit
   - ChainMap
-  - Crypto
-draft: false
+  - crypto
 ---
 
 ## Éléments déjà découverts
