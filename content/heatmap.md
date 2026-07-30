@@ -28,4 +28,4 @@ description: Vue d'ensemble de ma progression
 
 ---
 
-[[content/index|HomePage]]  · | ·  Les pages sympas  · | ·  [[heatmap|Journal d'activité]]
+[[index|HomePage]]  · | ·  Les pages sympas  · | ·  [[heatmap|Journal d'activité]]

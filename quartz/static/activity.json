@@ -1970,13 +1970,15 @@
     }
   },
   "2026-07-30": {
-    "count": 1,
+    "count": 3,
     "activités": [
-      "Created — not-skg domain · Site"
+      "Created — not-skg domain · Site",
+      "Retex — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 0,
+      "retex": 2,
       "autre": 1
     }
   },
@@ -2023,7 +2025,7 @@
   },
   "__totaux__": {
     "resolve": 325,
-    "retex": 200,
+    "retex": 202,
     "autre": 37
   },
   "__assets__": {
