@@ -4,6 +4,7 @@ tags:
   - BleuetV5
   - Chall
   - suncalc
+order: 3
 ---
 ![[BleuetV5.png]]
 

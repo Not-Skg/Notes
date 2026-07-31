@@ -1,3 +1,10 @@
+---
+tags:
+  - Osint
+  - BleuetV5
+  - Chall
+order: 4
+---
 ![[BleuetV5.png]]
 
 >[!info] Notes
