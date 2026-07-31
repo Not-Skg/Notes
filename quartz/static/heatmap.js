@@ -420,6 +420,7 @@ const init = async () => {
                 RETEX = RESOLVED
             </text>
         `;
+        // Points sharing the exact same coordinates render as a single circle.
         const coordinateGroups = new Map();
 
         scatterPoints.forEach(item => {
@@ -432,52 +433,141 @@ const init = async () => {
                 coordinateGroups.get(key).push(item);
         });
 
-          const points = scatterPoints.map(item => {
-            const key = `${item.resolve}:${item.retex}`;
-            const group = coordinateGroups.get(key);
+        const circleGroups = [...coordinateGroups.values()].map(group => ({
+            platforms: group,
+            x: xToPx(group[0].resolve),
+            y: yToPx(group[0].retex),
+        }));
 
-                const firstItem = group[0];
+        // Each dot keeps its own label (dots stay individually readable even
+        // when close together). We only avoid text collisions: every label
+        // starts at its default spot (to the right of its dot), and if it would
+        // overlap a label already placed, it gets nudged up/down or flipped to
+        // the other side. Whenever a label ends up away from its default spot,
+        // a thin leader line reconnects it to its dot so it stays traceable.
+        const LABEL_LINE_HEIGHT = 13;
+        const LABEL_CHAR_WIDTH = 5.6;
 
-                if (firstItem !== item) {
-                return "";
-            }
+        const labelCandidates = circleGroups
+            .map((group) => {
+                const names = group.platforms
+                    .filter((p) => p.resolve > 7 || p.retex > 7)
+                    .map((p) => p.platform);
 
-                const x = xToPx(item.resolve);
-            const y = yToPx(item.retex);
+                return names.length ? { group, names, side: 1, dx: 14, dy: 0 } : null;
+            })
+            .filter(Boolean);
 
-                const labels = group.map((platform, index) => {
-                    const showLabel =
-                        platform.resolve > 7 ||
-                        platform.retex > 7;
+        const labelWidth = (names) => Math.max(...names.map((n) => n.length)) * LABEL_CHAR_WIDTH;
+        const labelHeight = (names) => names.length * LABEL_LINE_HEIGHT;
 
-                            if (!showLabel) {
-                        return "";
+        const candidateBox = (candidate) => {
+            const w = labelWidth(candidate.names);
+            const h = labelHeight(candidate.names);
+            const x =
+                candidate.side === 1
+                    ? candidate.group.x + candidate.dx
+                    : candidate.group.x + candidate.dx - w;
+            const y = candidate.group.y + candidate.dy - h / 2;
+            return { x, y, w, h };
+        };
+
+        const boxesOverlap = (a, b) =>
+            !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
+
+        // Every dot is also an obstacle: a label must not land on top of a point
+        // it doesn't belong to, otherwise the text becomes unreadable against
+        // the dot's fill color.
+        const DOT_CLEARANCE = 11;
+        const dotBoxes = circleGroups.map((group) => ({
+            x: group.x - DOT_CLEARANCE,
+            y: group.y - DOT_CLEARANCE,
+            w: DOT_CLEARANCE * 2,
+            h: DOT_CLEARANCE * 2,
+        }));
+
+        const placed = [];
+        labelCandidates
+            .slice()
+            .sort((a, b) => a.group.x - b.group.x)
+            .forEach((candidate) => {
+                for (let attempt = 0; attempt < 24; attempt++) {
+                    const box = candidateBox(candidate);
+                    const collides =
+                        placed.some((other) => boxesOverlap(box, candidateBox(other))) ||
+                        dotBoxes.some((dotBox) => boxesOverlap(box, dotBox));
+                    if (!collides) break;
+
+                    if (attempt === 8) {
+                        candidate.side = -candidate.side;
+                        candidate.dx = candidate.side === 1 ? 14 : -14;
+                        candidate.dy = 0;
+                        continue;
                     }
 
-                            const direction = index % 2 === 0 ? -1 : 1;
+                    const step = Math.ceil((attempt + 1) / 2) * LABEL_LINE_HEIGHT;
+                    candidate.dy = attempt % 2 === 0 ? step : -step;
+                }
+                placed.push(candidate);
+            });
 
-                            return `
+        const labelMarkupByGroup = new Map();
+        placed.forEach((candidate) => {
+            const { group, names, side, dx, dy } = candidate;
+            const anchorX = group.x + dx;
+            const lineCount = names.length;
+
+            const text = names
+                .map((name, index) => {
+                    const lineY =
+                        group.y +
+                        dy -
+                        ((lineCount - 1) * LABEL_LINE_HEIGHT) / 2 +
+                        index * LABEL_LINE_HEIGHT;
+
+                    return `
                         <text
-                            x="${x + direction * 14}"
-                            y="${y + (Math.floor(index / 2) * 14)}"
-                            text-anchor="${direction < 0 ? "end" : "start"}"
+                            x="${anchorX}"
+                            y="${lineY}"
+                            text-anchor="${side === 1 ? "start" : "end"}"
                             class="hm-scatter-label"
                         >
-                            ${platform.platform}
+                            ${name}
                         </text>
                     `;
-                }).join("");
+                })
+                .join("");
 
-                return `
+            const leader =
+                dy !== 0
+                    ? `
+                        <line
+                            x1="${group.x + side * 8}"
+                            y1="${group.y}"
+                            x2="${anchorX}"
+                            y2="${group.y + dy}"
+                            class="hm-scatter-leader"
+                        ></line>
+                    `
+                    : "";
+
+            labelMarkupByGroup.set(group, `${leader}${text}`);
+        });
+
+        const points = circleGroups.map((group) => {
+            const { x, y, platforms } = group;
+            const labels = labelMarkupByGroup.get(group) ?? "";
+
+            return `
                 <g>
                     <circle
                         cx="${x}"
                         cy="${y}"
                         r="8"
-                        fill="${item.color}"
+                        fill="${platforms[0].color}"
                         class="hm-scatter-point"
                     >
-                        <title>${group.map(g => g.platform).join(", ")} (${item.resolve}, ${item.retex})</title>
+                        <title>${platforms.map(g => g.platform).join(", ")} (${platforms[0].resolve}, ${platforms[0].retex})</title>
                     </circle>
 
                         ${labels}
@@ -1755,6 +1845,12 @@ const init = async () => {
           paint-order: stroke;
           stroke-width: 4px;
           stroke-linejoin: round;
+        }
+
+        .hm-scatter-leader {
+          stroke: var(--hm-muted);
+          stroke-width: 1;
+          opacity: 0.4;
         }
 
         .hm-scatter-point {
