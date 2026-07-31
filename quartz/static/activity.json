@@ -1612,15 +1612,17 @@
     }
   },
   "2026-07-31": {
-    "count": 2,
+    "count": 4,
     "activités": [
       "Created — Explorer sort · Site ",
-      "Created — Folder redirect · Site"
+      "Created — Folder redirect · Site",
+      "Created — Lightbox SVG pan/zoom · Site",
+      "Created — Zoom molette SVG · Site"
     ],
     "stats": {
       "resolve": 0,
       "retex": 0,
-      "autre": 2
+      "autre": 4
     }
   },
   "2026-05-25": {
@@ -2038,7 +2040,7 @@
   "__totaux__": {
     "resolve": 325,
     "retex": 202,
-    "autre": 39
+    "autre": 41
   },
   "__assets__": {
     "profils": 6,

@@ -42,5 +42,6 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [ ] Régler problèmes "click to open"
 - [x] Gérer ordre dans "Explorer" via ID
 - [x] remplacer les redirection des visualisations de dossier vers les pages d'accueils
+- [ ] MAJ Ordre de tout "Explorer"
 - [ ] Mise en avant des pages d'accueils
 - [ ] Régler effets de bords changement de domain

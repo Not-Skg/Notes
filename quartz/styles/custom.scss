@@ -17,7 +17,9 @@ article img {
   display: none;
 }
 .img-lightbox.is-open {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img-lightbox-backdrop {
   position: absolute;
@@ -28,14 +30,91 @@ article img {
 .img-lightbox-dialog {
   position: relative;
   z-index: 1;
-  width: min(92vw, 1280px);
+  width: 95vw;
   max-height: 90vh;
-  margin: 5vh auto;
+  margin: 0;
   padding: 1rem;
   border-radius: 14px;
   background: rgba(18, 18, 20, 0.96);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+.img-lightbox-viewport {
+  display: block;
+}
+.img-lightbox-content {
+  display: block;
+  position: relative;
+  transform-origin: 0 0;
+}
+// SVGs get pan/zoom controls (like Mermaid diagrams): the viewport becomes a
+// fixed, clipped box and the image is freed from its normal max-width/height
+// cap so DiagramPanZoom can scale/pan it via transform.
+.img-lightbox-viewport--zoomable {
+  position: relative;
+  width: 100%;
+  height: calc(90vh - 80px);
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.img-lightbox-viewport--zoomable .img-lightbox-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // Match the viewport exactly (instead of shrink-wrapping to the image's
+  // intrinsic size) so the starting scale is always a predictable "fit the
+  // box" view. <img src="*.svg"> has unreliable intrinsic dimensions (some
+  // SVGs report a default ~300x150 box when they don't declare width/height),
+  // which made the initial zoom level look arbitrary.
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease;
+}
+.img-lightbox-viewport--zoomable .img-lightbox-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  display: block;
+}
+.img-lightbox-viewport--zoomable .diagram-controls {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: rgba(28, 28, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  z-index: 2;
+}
+.img-lightbox-viewport--zoomable .diagram-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.img-lightbox-viewport--zoomable .diagram-control-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.img-lightbox-viewport--zoomable .diagram-control-button:active {
+  transform: translateY(1px);
+}
+.img-lightbox-viewport--zoomable .diagram-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
 }
 .img-lightbox-image {
   display: block;
@@ -44,6 +123,8 @@ article img {
   margin: 0 auto;
   border-radius: 10px;
   object-fit: contain;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 .img-lightbox-caption {
   margin: 0.75rem 0 0;
@@ -56,6 +137,14 @@ article img {
   position: absolute;
   top: 0.65rem;
   right: 0.65rem;
+  // Neither .img-lightbox-viewport--zoomable nor .img-lightbox-content sets
+  // z-index, so with none specified here this button follows plain DOM
+  // order — and the zoomable content (which creates its own stacking
+  // context via `transform`) comes after it in the markup, so it was
+  // painting (and catching clicks) on top of the close button once an SVG's
+  // pan/zoom was active. An explicit z-index fixes the stacking order
+  // regardless of DOM position.
+  z-index: 5;
   width: 40px;
   height: 40px;
   display: grid;

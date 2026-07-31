@@ -16,6 +16,15 @@
     .sidebar.left:has(.explorer) {
       box-sizing: border-box;
       position: sticky;
+      // `position: sticky` makes this its own stacking context, which traps
+      // the z-index of .explorer-content/.mobile-explorer inside it. Without
+      // an explicit z-index here, this whole sidebar is treated as "auto" from
+      // the outside, so any other element on the page with an explicit
+      // z-index (even a low one, e.g. a sticky detail panel) would paint over
+      // the mobile menu. Setting it here keeps the sidebar itself above
+      // regular page content while staying under overlays like search,
+      // popovers, or the image lightbox.
+      z-index: 150;
       background-color: var(--light);
       padding: 1rem 0 1rem 0;
       margin: 0;
@@ -130,10 +139,26 @@ button.desktop-explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      display: inline-block;
+      border-radius: 4px;
+      padding: 0.05rem 0.35rem;
+      margin-left: -0.35rem;
+      transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        opacity 0.15s ease;
+
+      &:hover {
+        opacity: 1;
+        color: var(--tertiary);
+        background-color: var(--highlight);
+      }
 
       &.active {
         opacity: 1;
         color: var(--tertiary);
+        background-color: var(--highlight);
+        font-weight: $semiBoldWeight;
       }
     }
   }
@@ -165,6 +190,14 @@ button.desktop-explorer {
   display: flex;
   align-items: center;
   user-select: none;
+  border-radius: 4px;
+  padding: 0.05rem 0.3rem;
+  margin-left: -0.3rem;
+  transition: background-color 0.15s ease;
+
+  &.active {
+    background-color: var(--highlight);
+  }
 
   & div > a {
     color: var(--secondary);
@@ -176,6 +209,11 @@ button.desktop-explorer {
   }
 
   & div > a:hover {
+    color: var(--tertiary);
+  }
+
+  &.active div > a,
+  &.active div > button > span {
     color: var(--tertiary);
   }
 
