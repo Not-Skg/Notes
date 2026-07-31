@@ -987,6 +987,19 @@
       "autre": 0
     }
   },
+  "2026-08-01": {
+    "count": 3,
+    "activités": [
+      "Retex — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-04-16": {
     "count": 2,
     "activités": [
@@ -1612,15 +1625,20 @@
     }
   },
   "2026-07-31": {
-    "count": 4,
+    "count": 9,
     "activités": [
       "Created — Explorer sort · Site ",
       "Created — Folder redirect · Site",
       "Created — Lightbox SVG pan/zoom · Site",
-      "Created — Zoom molette SVG · Site"
+      "Created — Zoom molette SVG · Site",
+      "Resolve — From space with love - [5/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [4/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [3/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [2/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [1/5]  · Chapitre I  · Osintopia"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 5,
       "retex": 0,
       "autre": 4
     }
@@ -2038,8 +2056,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 325,
-    "retex": 202,
+    "resolve": 330,
+    "retex": 205,
     "autre": 41
   },
   "__assets__": {
