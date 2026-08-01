@@ -1,10 +1,11 @@
 ---
 tags:
   - Osint
+  - googlelens
+  - whatsmyname
+  - LAF
   - Chall
-  - CaseBandit
-  - ChainMap
-  - crypto
+  - casebandit
 draft: false
 order: 14
 ---

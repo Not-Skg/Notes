@@ -1,9 +1,13 @@
 ---
 tags:
   - Osint
+  - googlelens
+  - whatsmyname
+  - sherlock
+  - LAF
   - Chall
-  - CaseBandit
-  - OverpassTurbo
+  - casebandit
+  - overpassturbo
 order: 4
 ---
 >[!info] Information

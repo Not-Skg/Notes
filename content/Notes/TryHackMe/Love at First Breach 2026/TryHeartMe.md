@@ -4,7 +4,7 @@ tags:
   - TryHackMe
   - LoveAtFirstBreach
   - web
-  - Token_jwt
+  - jwt
 ---
 ## Énoncé
 >The TryHeartMe shop is open for business. Can you find a way to purchase the hidden “Valenflag” item?

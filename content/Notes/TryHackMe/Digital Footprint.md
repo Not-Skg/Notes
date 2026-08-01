@@ -1,10 +1,12 @@
 ---
 tags:
   - Osint
-  - Chall
+  - googlelens
+  - exif
+  - ChallOsint
   - TryHackMe
-  - WBM
-  - Sherlock
+  - wayback
+  - sherlock
 ---
 ## 1. The Leaked Photo
 ### Énoncé

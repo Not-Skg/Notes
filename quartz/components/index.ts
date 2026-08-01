@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ImageLightbox from "./ImageLightbox"
 import PlatformProfiles from "./PlatformProfiles"
+import HomeExplorer from "./HomeExplorer"
 
 export {
     ArticleTitle,
@@ -54,4 +55,5 @@ export {
     ConditionalRender,
     ImageLightbox,
     PlatformProfiles,
+    HomeExplorer,
 }

@@ -1,9 +1,9 @@
 ---
 tags:
   - Osint
-  - Chall
+  - ChallOsint
   - TryHackMe
-  - Gallica
+  - gallica
 ---
 ## Énoncé 
 >It's just another Monday morning on your mail delivery route when an unusual letter catches your eye. The envelope is battered, riddled with holes as if it's been through a storm. The address is barely legible, and your coworkers at the post office wave it off as a lost cause.

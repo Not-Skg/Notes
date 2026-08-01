@@ -2,6 +2,7 @@
 tags:
   - Chall
   - Osint
+  - exif
 ---
 ## Énoncé
 >En farfouillant bien, vous devriez trouver le petit compte d'un chercheur qui utilise cette image en bannière. 

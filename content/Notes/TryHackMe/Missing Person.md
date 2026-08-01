@@ -1,7 +1,9 @@
 ---
 tags:
   - Osint
-  - Chall
+  - googlelens
+  - exif
+  - ChallOsint
   - TryHackMe
 ---
 ## Énoncé

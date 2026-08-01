@@ -1,7 +1,7 @@
 ---
 tags:
   - Osint
-  - Chall
+  - ChallOsint
   - TryHackMe
 ---
 ## Investigation

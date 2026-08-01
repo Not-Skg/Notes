@@ -988,8 +988,15 @@
     }
   },
   "2026-08-01": {
-    "count": 3,
+    "count": 10,
     "activités": [
+      "Created — Homepage stats + CTA · Site",
+      "Created — Coups de cœur (cards) · Site",
+      "Created — Explorer par thématique (HomeExplorer) · Site",
+      "Created — Tags ChallOsint / AutreChall / Toolbox · Site",
+      "Created — Capture graphe Obsidian (homepage) · Site",
+      "Created — Fix liens internes (padding) · Site",
+      "Created — Fix liens CTF (Notes vs Skg-Notes) · Site",
       "Retex — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
       "Retex — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
       "Retex — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
@@ -997,7 +1004,7 @@
     "stats": {
       "resolve": 0,
       "retex": 3,
-      "autre": 0
+      "autre": 7
     }
   },
   "2026-04-16": {
@@ -2058,7 +2065,7 @@
   "__totaux__": {
     "resolve": 330,
     "retex": 205,
-    "autre": 41
+    "autre": 48
   },
   "__assets__": {
     "profils": 6,

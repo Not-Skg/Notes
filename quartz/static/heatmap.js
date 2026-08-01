@@ -7,6 +7,14 @@ const init = async () => {
 
     const base = document.querySelector('meta[name="base-url"]')?.content || "";
 
+    // Les liens "Voir mes profils" / "Voir mes badges" des stat cards doivent
+    // toujours pointer vers les sections de la page Journal d'activité. Sur
+    // la page heatmap elle-même, un simple ancre suffit ; ailleurs (ex: la
+    // homepage, où site-stats-root est aussi affiché), il faut d'abord
+    // naviguer vers la page heatmap avant de scroller jusqu'à l'ancre.
+    const onHeatmapPage = document.body?.dataset?.slug === "heatmap";
+    const heatmapAnchor = (anchor) => (onHeatmapPage ? `#${anchor}` : `./heatmap#${anchor}`);
+
     const candidates = [
         `${base}/static/activity.json`,
         `/static/activity.json`,
@@ -2080,12 +2088,12 @@ const init = async () => {
             <div class="hm-stat-card">
                 <strong class="hm-stat-value">${activePlatforms}</strong>
                 <span class="hm-stat-label">Plateformes actives</span>
-                <a class="hm-stat-sub hm-stat-link" href="#mes-plateformes">Voir mes profils</a>
+                <a class="hm-stat-sub hm-stat-link" href="${heatmapAnchor("mes-plateformes")}">Voir mes profils</a>
             </div>
             <div class="hm-stat-card">
                 <strong class="hm-stat-value">${badgeCount}</strong>
                 <span class="hm-stat-label">Badges obtenus</span>
-                <a class="hm-stat-sub hm-stat-link" href="#mes-badges">Voir mes badges</a>
+                <a class="hm-stat-sub hm-stat-link" href="${heatmapAnchor("mes-badges")}">Voir mes badges</a>
             </div>
         </div>
         `;

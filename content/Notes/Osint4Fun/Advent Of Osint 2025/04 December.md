@@ -1,6 +1,6 @@
 ---
 tags:
-  - Chall
+  - ChallOsint
   - Osint
   - Osint4fun
   - AdventOfOsint

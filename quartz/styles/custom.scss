@@ -222,3 +222,237 @@ article img {
     grid-template-columns: 1fr;
   }
 }
+
+// Homepage — bouton CTA (ex: "Voir le journal d'activité")
+//
+// Quartz ajoute automatiquement la classe "internal" (voire "alias") aux
+// liens internes, y compris dans du HTML brut comme ce bouton. La règle
+// globale `a.internal` (cf. base.scss) a une spécificité plus élevée qu'un
+// simple `.home-cta` et écrasait le fond orange plein par un fond
+// quasi-transparent (var(--highlight)) + un border-radius/padding différents
+// → texte sombre illisible sur fond presque invisible en mode sombre.
+// On double la classe du wrapper pour repasser devant sans !important.
+.home-cta-wrap {
+  text-align: center;
+  margin: 1.4rem 0 0.5rem;
+
+  // Même esprit que le badge "5 CTF récents" de la page Journal d'activité :
+  // pastille arrondie, fond orange translucide, texte dans la couleur de
+  // base du thème (clair en mode sombre, sombre en mode clair) — juste un
+  // peu plus grand puisque c'est un bouton et non un badge.
+  .home-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    background-color: color-mix(in srgb, #ff8a3d 18%, transparent);
+    color: var(--dark);
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: background-color .14s ease, transform .14s ease;
+
+    &:hover {
+      background-color: color-mix(in srgb, #ff8a3d 28%, transparent);
+      color: var(--dark);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+  }
+}
+
+// Homepage — capture figée de l'ancien vault Obsidian, sous le bouton CTA.
+// Volontairement statique (pas de mise à jour prévue), juste une légende
+// pour éviter toute confusion avec une donnée live.
+.old-graph-snapshot {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.old-graph-thumb {
+  flex-shrink: 0;
+  height: 150px;
+  width: auto;
+  margin: 0;
+  border-radius: 8px;
+  display: block;
+}
+.old-graph-caption {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--darkgray);
+}
+@media (max-width: 600px) {
+  .old-graph-snapshot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+// Homepage — "Mes coups de cœur"
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.favorite-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: border-color .14s ease, box-shadow .14s ease;
+}
+.favorite-card:hover {
+  border-color: #ff8a3d;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.favorite-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.7rem;
+}
+.favorite-tag--ctf {
+  background: rgba(124, 109, 242, 0.18);
+  color: #b7aefb;
+}
+.favorite-tag--soc {
+  background: rgba(29, 158, 117, 0.18);
+  color: #7fe0bd;
+}
+.favorite-tag--chall {
+  background: rgba(216, 90, 48, 0.18);
+  color: #ffab84;
+}
+.favorite-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.02rem;
+}
+.favorite-desc {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--darkgray);
+}
+.favorite-link {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fd8235;
+  text-decoration: none;
+}
+.favorite-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .favorites-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Homepage — "Explorer par thématique" (rempli dynamiquement par
+// HomeExplorer.tsx à partir des tags CTF / ChallOsint / AutreChall / Toolbox)
+.explorer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.explorer-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: border-color .14s ease, box-shadow .14s ease;
+}
+.explorer-card:hover {
+  border-color: #ff8a3d;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.explorer-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.6rem;
+}
+.explorer-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: #ff8a3d;
+}
+.explorer-card-top h3 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+.explorer-description {
+  margin: 0 0 0.8rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--darkgray);
+}
+.explorer-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  min-height: 2.2rem;
+  flex-grow: 1;
+}
+.explorer-list li {
+  margin: 0.35rem 0;
+  font-size: 0.9rem;
+}
+.explorer-list a {
+  color: #fd8235;
+  font-weight: 600;
+  text-decoration: none;
+}
+.explorer-list a:hover {
+  text-decoration: underline;
+}
+.explorer-empty,
+.explorer-more-count {
+  color: var(--gray);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.explorer-more {
+  align-self: flex-end;
+  margin-top: auto;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fd8235;
+  text-decoration: none;
+}
+.explorer-more:hover {
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .explorer-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,8 +1,11 @@
 ---
 tags:
   - Osint
+  - exif
+  - sherlock
+  - LAF
   - Chall
-  - CaseBandit
+  - casebandit
 order: 10
 ---
 

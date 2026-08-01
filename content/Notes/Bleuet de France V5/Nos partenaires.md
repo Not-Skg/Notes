@@ -1,6 +1,7 @@
 ---
 tags:
   - Osint
+  - wayback
   - BleuetV5
   - Chall
 order: 6

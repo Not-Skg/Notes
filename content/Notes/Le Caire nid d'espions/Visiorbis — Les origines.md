@@ -1,6 +1,8 @@
 ---
 tags:
   - Osint
+  - exif
+  - LeCaire
   - Chall
 order: 2
 ---

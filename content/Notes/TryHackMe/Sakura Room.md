@@ -1,9 +1,10 @@
 ---
 tags:
   - Osint
-  - Chall
+  - wigle
+  - ChallOsint
   - TryHackMe
-  - Sherlock
+  - sherlock
   - crypto
 ---
 ## 1. TIP-OFF

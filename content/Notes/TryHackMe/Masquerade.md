@@ -1,7 +1,8 @@
 ---
 tags:
+  - cyberchef
   - DFIR
-  - Chall
+  - AutreChall
   - TryHackMe
 ---
 

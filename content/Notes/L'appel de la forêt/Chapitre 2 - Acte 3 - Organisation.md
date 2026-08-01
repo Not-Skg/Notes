@@ -1,8 +1,11 @@
 ---
 tags:
   - Osint
+  - googlelens
+  - whatsmyname
+  - LAF
   - Chall
-  - CaseBandit
+  - casebandit
 order: 12
 ---
 ## Éléments déjà découverts

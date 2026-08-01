@@ -1,5 +1,7 @@
 ---
 tags:
+  - exif
+  - AutreChall
   - SOC_Simulator
   - TryHackMe
   - Phishing

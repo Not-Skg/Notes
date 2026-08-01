@@ -1,6 +1,7 @@
 ---
 tags:
   - Osint
+  - LAF
   - Chall
 order: 2
 ---

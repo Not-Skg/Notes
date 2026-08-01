@@ -1,7 +1,8 @@
 ---
 tags:
+  - cyberchef
   - CTI
-  - Chall
+  - AutreChall
   - TryHackMe
 ---
 ## Énoncé 

@@ -1,14 +1,15 @@
 ---
 tags:
   - Osint
+  - ChallOsint
   - CTI
   - TryHackMe
-  - Recon
+  - recon
   - web
   - crackstation
   - reverse_shell
   - nmap
-  - Gobuster
+  - gobuster
 ---
 ## Énoncé
 >Welcome to the OSINT challenge, part of TryHackMe’s Red Teaming Path. In this task, you will be an ethical hacker aiming to exploit a newly developed web application.

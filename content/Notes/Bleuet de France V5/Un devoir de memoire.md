@@ -1,6 +1,8 @@
 ---
 tags:
   - Osint
+  - googlelens
+  - wayback
   - BleuetV5
   - Chall
 order: 4

@@ -1,6 +1,8 @@
 ---
 tags:
   - Osint
+  - exif
+  - sherlock
   - Medileak3
   - Chall
 order: 2

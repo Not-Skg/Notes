@@ -1,7 +1,8 @@
 ---
 tags:
-  - Chall
+  - ChallOsint
   - Osint
+  - wayback
   - Osint4fun
   - AdventOfOsint
 ---

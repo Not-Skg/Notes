@@ -2,9 +2,9 @@
 tags:
   - Chall
   - Osint
-  - OverpassTurbo
+  - overpassturbo
   - GEOINT
-  - Umap
+  - umap
 ---
 ## Énoncé
 >D'après nos renseignements, un duo d'individus malicieux cherche à s'en prendre à des scientifiques en Île-de-France pour dérober leurs prix. 

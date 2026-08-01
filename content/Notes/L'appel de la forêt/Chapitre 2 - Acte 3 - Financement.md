@@ -1,9 +1,11 @@
 ---
 tags:
   - Osint
+  - exif
+  - LAF
   - Chall
-  - CaseBandit
-  - ChainMap
+  - casebandit
+  - chainmap
   - crypto
 order: 13
 ---

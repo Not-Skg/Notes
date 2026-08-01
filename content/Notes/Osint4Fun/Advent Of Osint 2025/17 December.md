@@ -1,7 +1,9 @@
 ---
 tags:
-  - Chall
+  - ChallOsint
   - Osint
+  - googlelens
+  - bing
   - Osint4fun
   - AdventOfOsint
 ---

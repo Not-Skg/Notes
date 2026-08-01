@@ -1,9 +1,10 @@
 ---
 tags:
   - Osint
+  - googlelens
   - Bellatrix
-  - Disarm
-  - Scrapp
+  - disarm
+  - scrapp
   - Chall
 ---
 ![[Bellatrix_Illustration.png]]

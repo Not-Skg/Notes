@@ -1,8 +1,10 @@
 ---
 tags:
   - Osint
+  - sherlock
+  - LAF
   - Chall
-  - CaseBandit
+  - casebandit
 order: 8
 ---
 

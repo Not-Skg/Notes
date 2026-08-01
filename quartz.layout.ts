@@ -60,7 +60,7 @@ export const explorerOrder: ExplorerOptions["order"] = ["map", "filter", "sort"]
 export const sharedPageComponents: SharedLayout = {
     head: Component.Head(),
     header: [],
-    afterBody: [Component.ImageLightbox(), Component.PlatformProfiles()],
+    afterBody: [Component.ImageLightbox(), Component.PlatformProfiles(), Component.HomeExplorer()],
     footer: Component.Footer({
     }),
 }

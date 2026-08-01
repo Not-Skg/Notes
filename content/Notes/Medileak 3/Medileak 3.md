@@ -1,8 +1,7 @@
 ---
 tags:
   - Osint
-  - Medileak
-  - Medileak-3
+  - Medileak3
   - Oscar-Zulu
   - CTF
 order: 1

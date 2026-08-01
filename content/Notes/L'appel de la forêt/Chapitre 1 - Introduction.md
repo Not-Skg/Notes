@@ -1,8 +1,9 @@
 ---
 tags:
   - Osint
+  - LAF
   - Chall
-  - CaseBandit
+  - casebandit
 order: 3
 ---
 ---

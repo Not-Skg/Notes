@@ -1,7 +1,6 @@
 ---
 tags:
   - Osint
-  - Bleuet
   - BleuetV5
   - CTF
 order: 1

@@ -28,8 +28,8 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Check le côté responsive de la partie "Résultats CTF"
 
 **HomePage**
-- [ ] Aperçu journal d'activité (via stats : activités, wu, challs, badges)
-- [ ] Mise en avant des "coups de cœur"
+- [x] Aperçu journal d'activité (via stats : activités, wu, challs, badges)
+- [x] Mise en avant des "coups de cœur"
 
 **ToolBox**
 - [ ] Article sur Casebandit
@@ -39,9 +39,9 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [ ] Ajout Badge (plateforme + challmakers) sur les RETEX
 - [x] Possibilité d’agrandir les images au clic
 - [ ] Étoffer la Toolbox et les tags des challs
-- [ ] Régler problèmes "click to open"
+- [x] Régler problèmes "click to open"
 - [x] Gérer ordre dans "Explorer" via ID
 - [x] remplacer les redirection des visualisations de dossier vers les pages d'accueils
-- [ ] MAJ Ordre de tout "Explorer"
-- [ ] Mise en avant des pages d'accueils
+- [x] MAJ Ordre de tout "Explorer"
+- [x] Mise en avant des pages d'accueils
 - [ ] Régler effets de bords changement de domain

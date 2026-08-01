@@ -2,6 +2,7 @@
 tags:
   - Chall
   - Osint
+  - wayback
   - GEOINT
 ---
 ## Énoncé

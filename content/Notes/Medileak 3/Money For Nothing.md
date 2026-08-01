@@ -1,6 +1,7 @@
 ---
 tags:
   - Osint
+  - sherlock
   - Medileak3
   - Chall
 order: 4

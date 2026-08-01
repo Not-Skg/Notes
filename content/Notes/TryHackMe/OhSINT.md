@@ -1,7 +1,9 @@
 ---
 tags:
   - Osint
-  - Chall
+  - exif
+  - wigle
+  - ChallOsint
   - TryHackMe
   - enola
 ---

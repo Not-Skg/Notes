@@ -2,9 +2,9 @@
 tags:
   - Osint
   - GEOINT
-  - Tool
+  - Toolbox
   - Cheatsheet
-  - OverpassTurbo
+  - overpassturbo
 ---
 >Outil qui permet d'émettre des requêtes à l'API d'Open Street Map (OSM), et d'en visualiser les résultats sur une carte interactive.
 
