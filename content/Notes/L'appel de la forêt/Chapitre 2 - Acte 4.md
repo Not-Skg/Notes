@@ -23,7 +23,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 >« Madame Brethone,
 > Suite à notre dernier échange en lien avec l'enlèvement du chat Malo de madame Michelle, j'ai pu récolter de nouvelles informations. Afin de vous aider dans votre enquête, veuillez trouver ci-dessous les éléments que j'ai pu obtenir : »
 >![[LAF_C2_A4_PA_B.png]]
->>Les dates sont à renseigner au format format `dd/mm/yyyy`
+>>Les dates sont à renseigner au format `dd/mm/yyyy`
 
 ### RETEX
 ![[LAF_C2_A4_PA_1.jpg]]
@@ -216,10 +216,23 @@ Le carrousel ne contient que 10 animaux, et ne propose donc que 10 prix, mais so
 
 Attention, le fichier Excel fait foi, donc même si un individu est noté comme réservé sur le .onion, on le considère quand même comme faisant partie de ceux destinés à la vente.
 ![[LAF_C2_A4_NP_2.png]]
-On arrive donc à la somme de **==407 100==**€ après avoir réalisé le calcul démontré sur la capture d'écran.
+On arrive donc à la somme de **==407 100==** € après avoir réalisé le calcul démontré sur la capture d'écran.
 
 ---
 ## Synthèse de nos éléments
 >Parce que ce CTF est très long, je me permets de partager, à la fin de chaque page dédiée, un extrait du graphique généré via [CaseBandit](https://app.casebandit.com), qui permet de visualiser l’ensemble des éléments et de garder une vue d’ensemble des liens entre personnes, lieux et indices.
 
 ![[LAF_C2_A4.svg]]
+
+---
+# Chapitre 2 - Fin
+
+## La joie du quokka
+
+### Énoncé
+>Suite à votre dernier message, Péhusson vous a remercié avant de retourner vaquer à ses occupations :  
+>![[LAF_C2_F.png]]
+>Vous en profitez donc pour vous accorder un repos bien mérité. Ce n'est pas tous les jours qu'on parvient à remonter toute une organisation criminelle, et là vous n'avez pas chômé. Vous espérez aussi que la police va parvenir à mettre la main sur ces malfrats, cela vous permettra de dormir plus sereinement en sachant que tous ces animaux ne seront plus victimes de cette organisation.
+
+### RETEX
+Ce challenge n'en est pas vraiment un, il permet juste de conclure le chapitre 2 de ce CTF et d'enrichir le lore lié.

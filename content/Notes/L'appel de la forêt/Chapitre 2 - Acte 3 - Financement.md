@@ -119,7 +119,7 @@ Enfin, [une dernière](https://sepolia.etherscan.io/tx/0xdc7d15e57103b861d77f4b2
 ![[LAF_C2_A3_F_AS_F.png]]
 
 Enfin, on peut s’apercevoir que le wallet `0x6cc[...]455` est en fait un faucet, au vu du nombre de transactions et de leur fréquence.
-![[LAF_C2_A3_F_FC.png]]
+![[content/Notes/L'appel de la forêt/LAF_C2_A3_F/LAF_C2_A3_F_FC.png]]
 
 ![[LAF_C2_A3_F_AS_FF.png]]
 En soi, on n’a pas besoin d’aller plus loin, on a déjà bien cartographié les flux de cryptos.

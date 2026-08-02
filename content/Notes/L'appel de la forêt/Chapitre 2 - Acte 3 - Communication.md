@@ -25,7 +25,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 >
 >>Quels sont le nom et la date de l'événement qui a été organisé par le groupe que vous venez de découvrir afin de rencontrer leurs futurs clients ? 
 >
->_Format : `calembour_13/01/2000`
+>_Format : `calembour_13/01/2000`_
 
 ### RETEX
 Pour rappel, on avait pu trouver la page cachée qui nous renvoyait vers le .onion via le Pastebin de Morelos et le mot de passe leaké dans une vidéo Twitch de Martinezi dans [[Chapitre 2 - Acte 2 - Activités]].
