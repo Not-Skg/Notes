@@ -6,7 +6,7 @@ tags:
   - LAF
   - Chall
   - casebandit
-draft: false
+
 order: 14
 ---
 ## Éléments déjà découverts

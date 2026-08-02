@@ -49,7 +49,7 @@ HomeExplorer.afterDOMLoaded = `
           icon: icons.autre,
           title: "Autres challenges",
           description: "Tout ce qui sort de l'OSINT : SOC, DFIR, CTI, et le reste.",
-          moreLabel: "Voir tous les labs",
+          moreLabel: "Voir tous les challenges",
         },
         {
           tag: "Toolbox",
