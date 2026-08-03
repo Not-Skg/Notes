@@ -4,6 +4,7 @@ tags:
   - LAF
   - Chall
   - casebandit
+  - googlelens
 order: 16
 ---
 ## Éléments déjà découverts

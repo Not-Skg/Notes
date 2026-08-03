@@ -16,14 +16,19 @@
 > Ou comment faire du webscrapping basique.
 
 ==[Bientôt]==
+
 # Extension navigateur utiles
 1. EXIF Analyzer (Osint4fun)
 2. Search by Image
+3. Google Lens
+
 # Outils CLI
 1. gobuster : énumération de page web
 2. wpscan : scan de wordpress
 3. nuclei : scan de vulns
 4. sherlock / enola
+5. nmap : scan de ports
+
 # Google Dorks
 > Ou comment "vraiment" faire une recherche Google.
 
@@ -32,6 +37,16 @@
 2. Wigle.net
 3. Cyberchef
 4. Aperisolv
+5. Rhinomap
+6. Geneanet
+7. dotdb
+8. ChainMap
+9. Umap
+10. Suncalc
+11. Crackstation
+12. WhatsMyName
+13. Gallica
+14. DISARM framework
 
 ---
 

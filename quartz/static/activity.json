@@ -48,14 +48,15 @@
     }
   },
   "2026-07-27": {
-    "count": 2,
+    "count": 3,
     "activités": [
       "Retex — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
-      "Retex — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt"
+      "Retex — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
+      "Retex — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 2,
+      "retex": 3,
       "autre": 0
     }
   },
@@ -704,6 +705,21 @@
     "stats": {
       "resolve": 4,
       "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-04": {
+    "count": 5,
+    "activités": [
+      "Retex — Chargé comme une mule · Péhuson · L'appel de la forêt",
+      "Retex — La protection de la tortue · Péhuson · L'appel de la forêt",
+      "Retex — La taupe · Péhuson · L'appel de la forêt",
+      "Retex — Hors de la Tanière · Péhuson · L'appel de la forêt",
+      "Retex — La vraie joie du quokka · Chapitre 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
       "autre": 0
     }
   },
@@ -2097,7 +2113,7 @@
   },
   "__totaux__": {
     "resolve": 330,
-    "retex": 218,
+    "retex": 224,
     "autre": 48
   },
   "__assets__": {

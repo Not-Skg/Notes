@@ -24,6 +24,13 @@ title: Homepage
 
 <div class="favorites-grid">
 
+<article class="favorite-card"> 
+	<span class="favorite-tag favorite-tag--ctf">CTF</span> 
+	<h3 class="favorite-title">L'Appel de la Forêt</h3> 
+	<p class="favorite-desc">Un marathon OSINT particulièrement long et immersif, porté par une histoire prenante jusqu'à un twist final marquant.</p>
+	 <a class="favorite-link" href="./Notes/L'appel-de-la-forêt/L'appel-de-la-forêt">Writeup →</a> 
+ </article>
+
   <article class="favorite-card">
     <span class="favorite-tag favorite-tag--ctf">CTF</span>
     <h3 class="favorite-title">Medileak 3</h3>

@@ -4,6 +4,7 @@ tags:
   - LAF
   - Chall
   - casebandit
+  - chainmap
 order: 15
 ---
 ## Éléments déjà découverts
