@@ -8,10 +8,9 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   const avatarPath = joinSegments(baseDir, "static/icon.png")
 
-  // Split "SKG Notes" into "SKG" / "Notes" so desktop can stack them on two
-  // lines next to the (now bigger) avatar, like a wordmark. On mobile the
-  // two spans get forced back onto a single line (see media query below) to
-  // keep the top bar compact.
+  // Split "SKG Notes" into "SKG" / "Notes" so it can stack on two lines next
+  // to the avatar, like a wordmark. Kept stacked on mobile too (just smaller,
+  // see media query below) so it doesn't collide with the search bar.
   const [firstWord, ...restWords] = title.split(" ")
   const rest = restWords.join(" ")
 
@@ -72,14 +71,13 @@ PageTitle.css = `
 }
 
 @media (max-width: 800px) {
+  .page-title {
+    font-size: 1.4rem;
+  }
+
   .page-title-avatar {
     width: 3rem;
     height: 3rem;
-  }
-
-  .page-title-text {
-    flex-direction: row;
-    gap: 0.35rem;
   }
 }
 `
