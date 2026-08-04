@@ -1260,6 +1260,19 @@
       "autre": 0
     }
   },
+  "2026-08-05": {
+    "count": 3,
+    "activités": [
+      "Resolve — La Feta, Athènes · IsFred",
+      "Resolve — L'ourson intraçable ? · IsFred",
+      "Resolve — Voyage Temporel 1 · IsFred"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-07-08": {
     "count": 5,
     "activités": [
@@ -2175,7 +2188,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 383,
+    "resolve": 386,
     "retex": 224,
     "autre": 48
   },
