@@ -601,6 +601,25 @@
       "autre": 0
     }
   },
+  "2026-03-13": {
+    "count": 9,
+    "activités": [
+      "Resolve — OSintroduction · IsFred",
+      "Resolve — On the loose 1 · IsFred",
+      "Resolve — On the loose 2 · IsFred",
+      "Resolve — High altitude Environment · IsFred",
+      "Resolve — Agent Hobbs · IsFred",
+      "Resolve — Johny Black Hat · IsFred",
+      "Resolve — Marvelous Fire · IsFred",
+      "Resolve — Who is Fred · IsFred",
+      "Resolve — Balade nocturne · IsFred"
+    ],
+    "stats": {
+      "resolve": 9,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-07-19": {
     "count": 6,
     "activités": [
@@ -2156,7 +2175,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 374,
+    "resolve": 383,
     "retex": 224,
     "autre": 48
   },
