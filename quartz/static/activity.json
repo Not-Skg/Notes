@@ -1261,7 +1261,7 @@
     }
   },
   "2026-08-05": {
-    "count": 7,
+    "count": 9,
     "activités": [
       "Created — The Other Door 1 · YouArePlayer",
       "Created — The Other Door 2 · YouArePlayer",
@@ -1269,12 +1269,14 @@
       "Resolve — L'ourson intraçable ? · IsFred",
       "Resolve — Voyage Temporel 1 · IsFred",
       "Resolve — Voyage Temporel 2 · IsFred",
-      "Resolve — Voyage Temporel 3 · IsFred"
+      "Resolve — Voyage Temporel 3 · IsFred",
+      "Created — SOUP · Osint · YouArePlayer",
+      "Created — The park's madman · Osint · YouArePlayer"
     ],
     "stats": {
       "resolve": 5,
       "retex": 0,
-      "autre": 2
+      "autre": 4
     }
   },
   "2026-07-08": {
@@ -2194,7 +2196,7 @@
   "__totaux__": {
     "resolve": 388,
     "retex": 224,
-    "autre": 50
+    "autre": 52
   },
   "__assets__": {
     "profils": 6,
