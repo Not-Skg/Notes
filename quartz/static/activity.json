@@ -1261,16 +1261,20 @@
     }
   },
   "2026-08-05": {
-    "count": 3,
+    "count": 7,
     "activités": [
+      "Created — The Other Door 1 · YouArePlayer",
+      "Created — The Other Door 2 · YouArePlayer",
       "Resolve — La Feta, Athènes · IsFred",
       "Resolve — L'ourson intraçable ? · IsFred",
-      "Resolve — Voyage Temporel 1 · IsFred"
+      "Resolve — Voyage Temporel 1 · IsFred",
+      "Resolve — Voyage Temporel 2 · IsFred",
+      "Resolve — Voyage Temporel 3 · IsFred"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 5,
       "retex": 0,
-      "autre": 0
+      "autre": 2
     }
   },
   "2026-07-08": {
@@ -2188,9 +2192,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 386,
+    "resolve": 388,
     "retex": 224,
-    "autre": 48
+    "autre": 50
   },
   "__assets__": {
     "profils": 6,
