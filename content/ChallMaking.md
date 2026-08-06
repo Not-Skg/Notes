@@ -1,7 +1,8 @@
 ---
 title: ChallMaking
 ---
-![[ban3.jpg]]
+![[WP_CM.png]]
+
 > [!tip] Info
 > Ici, je vais lister les challs que j'ai créé pour certaines plateformes, et je donnerai les retex lorsque je trouverai le moment opportun.
 

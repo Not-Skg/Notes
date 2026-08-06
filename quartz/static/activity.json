@@ -1459,6 +1459,20 @@
       "autre": 0
     }
   },
+  "2026-08-06": {
+    "count": 4,
+    "activités": [
+      "Resolve — BLACK ROOSTER · Osint · YouArePlayer",
+      "Created — Project Not-SKG · Site",
+      "Created — Not-SKG · Project Not-SKG",
+      "Created — MAJordome · Project Not-SKG"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 3
+    }
+  },
   "2026-06-05": {
     "count": 3,
     "activités": [
@@ -2194,9 +2208,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 388,
+    "resolve": 389,
     "retex": 224,
-    "autre": 52
+    "autre": 55
   },
   "__assets__": {
     "profils": 6,

@@ -1,4 +1,4 @@
-![[WP.png]]
+![[WP.jpg]]
 >[!info] 
 >Ici, je vais partager des outils que j'aime utiliser et que je trouve intéressant. 
 
