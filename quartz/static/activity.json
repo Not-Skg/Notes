@@ -1755,6 +1755,22 @@
       "autre": 0
     }
   },
+  "2026-08-08": {
+    "count": 6,
+    "activités": [
+      "Created — message-intercepté · Beta-Tester · Project Not-SKG",
+      "Created — Project Sentry · Project Not-SKG",
+      "Resolve — Time & book · Osintopia",
+      "Resolve — Spaghettis · Osintopia",
+      "Resolve — Robot Factory · Osintopia",
+      "Resolve — Tempête · Osintopia"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-05-11": {
     "count": 6,
     "activités": [
@@ -2223,9 +2239,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 396,
+    "resolve": 400,
     "retex": 224,
-    "autre": 53
+    "autre": 55
   },
   "__assets__": {
     "profils": 6,

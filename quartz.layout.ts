@@ -40,7 +40,17 @@ export const explorerSortFn: ExplorerOptions["sortFn"] = (a, b) => {
 // de listing générée automatiquement (voir explorer.inline.ts).
 // Le mapFn doit s'exécuter AVANT le filterFn (voir `order` ci-dessous) pour
 // pouvoir encore lire l'enfant avant qu'il ne soit retiré de l'arbre.
+// Affichage compact dans l'Explorer pour "L'appel de la forêt" : le préfixe
+// "Chapitre N" des titres est raccourci en "CN" (ex: "Chapitre 2 - Acte 2 -
+// Activités" -> "C2 - Acte 2 - Activités"). Ça ne touche que l'affichage
+// dans la sidebar : le titre de la page, les breadcrumbs, etc. restent
+// inchangés.
 export const explorerMapFn: ExplorerOptions["mapFn"] = (node) => {
+    const chapitreMatch = node.displayName.match(/^Chapitre\s+(\d+)\b(.*)$/)
+    if (chapitreMatch) {
+        node.displayName = `C${chapitreMatch[1]}${chapitreMatch[2]}`
+    }
+
     if (!node.isFolder) return
     const home = node.findHomeChild()
     if (home?.data) {
@@ -62,6 +72,10 @@ export const sharedPageComponents: SharedLayout = {
     header: [],
     afterBody: [Component.ImageLightbox(), Component.PlatformProfiles(), Component.HomeExplorer()],
     footer: Component.Footer({
+        links: {
+            Email: "mailto:skgatwork@protonmail.com",
+            Discord: "https://discord.gg/3duPWeqCbn",
+        },
     }),
 }
 
