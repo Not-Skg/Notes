@@ -1,7 +1,16 @@
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   text-align: left;
   margin-bottom: 4rem;
   opacity: 0.7;
+
+  & p {
+    margin: 0;
+  }
 
   & ul {
     list-style: none;
@@ -10,6 +19,15 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: -1rem;
+
+    & li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    & .footer-icon {
+      flex-shrink: 0;
+    }
   }
 }
