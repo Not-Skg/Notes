@@ -17,7 +17,7 @@ title: ChallMaking
 1. Message Intercepté
 
 > [!Info] Discord
-> Avant de proposer mes challenges aux plateformes, je les fais tester par sur [mon serveur Discord](https://discord.gg/3duPWeqCbn). 
+> Avant de proposer mes challenges aux plateformes, je les fais tester sur [mon serveur Discord](https://discord.gg/3duPWeqCbn). 
 > Ce serveur me sert aussi pour ma veille OSINT.
 
 ---
