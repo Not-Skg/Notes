@@ -23,6 +23,7 @@ order: 4
 ---
 ## La coquetterie du paon
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Vous continuez de vous renseigner sur le cercle proche de Renée. Sa petite fille, Sarah, semble à l'aise avec les réseaux sociaux. C'est en effet elle qui a communiqué le contact d'un pet-sitter à sa grand-mère.
 >En approfondissant vos recherches sur elle, vous trouverez peut-être de nouvelles pistes.
@@ -49,6 +50,7 @@ Donc, en plus d'avoir trouvé son compte Instagram, nous venons de trouver son p
 ---
 ## La générosité d'une Girafe
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Et voilà, un nouveau pseudo pour Sarah. Vous avez de plus en plus d'informations sur elle, mais vous n'en savez pas beaucoup plus sur la disparition de Malo...
 >Peut-être que Sarah pourrait vous aider à avancer dans votre enquête ? Mais pour cela il faudrait savoir si elle est disponible et dans le coin.
@@ -130,6 +132,7 @@ On sait donc qu'elle n'est pas disponible à ce jour, et qu'elle ne pourra donc 
 ---
 ## Le grand rêve d'un Tatou
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Vous voilà désormais en possession de beaucoup d'informations grâce aux réseaux de Sarah. Il semblerait d'ailleurs qu'elle ait une soeur avec qui elle passe souvent du temps.
 >
@@ -163,6 +166,7 @@ On peut donc en déduire que sa soeur y a découvert le métier de ses rêves.
 ---
 ## Cachée comme un phasme
 
+> [!challmaker] Eldwiin
 ### Énoncé
 > Vous voilà avec de plus en plus d'information sur toute la famille Michelle. La seule personne majeure dont vous ignorez la localisation ce week-end est Lucia... Si elle est dans le coin, elle aura peut-être des informations sur Malo.
 >
@@ -214,6 +218,7 @@ Ce qui confirme donc que Lucia Michelle est en Italie à l'heure actuelle et ne 
 ---
 ## Le câlin du chimpanzé
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Vous voilà avec la localisation de Lucia. Elle ne semble pas être liée à la disparition de Malo. Afin d'en savoir un peu plus sur elle, vous décidez de continuer un peu vos investigations sur cette dernière pour être sûr de ne rien omettre.
 >
@@ -234,6 +239,7 @@ On a donc trouvé son nom de jeune fille : **==Karlson==**
 ---
 ## La balade du zèbre
 
+> [!challmaker] Zmondy, Eldwiin
 ### Énoncé
 >Maintenant que vous avez réuni des informations sur les petites-filles de Renée, qu'en est-t'il de leur parents ? 
 >Même s'il n'est pas aussi bavard que Sarah, leur père semble lui aussi partager quelques informations sur les réseaux sociaux.

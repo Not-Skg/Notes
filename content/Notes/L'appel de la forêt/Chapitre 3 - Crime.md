@@ -16,6 +16,7 @@ order: 16
 ---
 ## Le Silence des Mouettes
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >![[LAF_C3_C_SM1.png]]
 >>Pour une question de déroulement du CTF, nous n’allons pas vous faire attendre, mais nous allons faire comme si vous aviez eu le temps de vous reposer, et que nous sommes le dimanche 05/07/2026 au matin.
@@ -36,6 +37,7 @@ Les seules personnes au courant du lieu et de l'heure sont les clients, les poli
 ---
 ## Le festin du vautour
 
+> [!challmaker] R0ck3t
 ### Énoncé
 >_📳 Bling 📳_
 >Vous sentez que cette policière ne va pas vous lâcher de sitôt pour cette affaire. Ce qui vous arrange bien, car vous comptez découvrir ce qu’il s’est réellement passé dans cette ferme :
@@ -63,6 +65,7 @@ On a donc le flag : **==5.7x28mm_Five-Seven==**
 ---
 ## La Vigile du Hibou
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >_📳 Bling 📳_
 >Votre nouvelle alliée vous a envoyé un nouveau message pour vous demander de l’aide :
@@ -82,6 +85,7 @@ Après avoir vérifié que la veste concorde bien visuellement avec celle de la 
 ---
 ## Le venin du Taïpan
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >_📳 Bling 📳_
 >Cette coopération avec la Police porte vraiment ses fruits, et vous sentez que vous vous rapprochez du véritable dénouement de cette affaire :

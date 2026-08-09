@@ -19,6 +19,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## Tapir dans l'ombre
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 Avec toutes ces informations, vous pouvez en déduire 2 choses. Premièrement il semblerait que la famille de votre voisine, bien que vous ayez quelques soupçons, ne soit pas dans le coup. Deuxièmement, vous feriez bien de communiquer ce que vous avez trouvé, notamment concernant le gardien de Malo, à la police.
 Sur cette pensée, vous allez voir votre voisine pour lui annoncer la nouvelle.
@@ -72,6 +73,7 @@ Le post ayant été publié le 30 mars 2026, sa date de naissance est donc le **
 ---
 ## Le Caméléon des internet
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >_📳 Bling 📳_
 >Ça n'en finira donc jamais ? 
@@ -115,6 +117,7 @@ On est donc sûr que PetOsint et OsintTheAnimals sont la même personne : **==St
 ---
 ## Les piqueboeufs et l'hippopotame
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Vous avez réussi à identifier la personne derrière tout ça, même si ce n'était pas évident, vous pouvez être fier de vous. Cependant, quelque chose vous dit que Steven n'a pas dû agir seul. La logistique mise en place semble plus correspondre à un travail de groupe.
 >

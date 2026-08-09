@@ -21,6 +21,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## L'épine de l'Oursin
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Votre téléphone sonne, annonciateur d'une catastrophe, ou d'une bonne nouvelle : 
 >![[LAF_C2_A3_F_EO_P.png]]
@@ -44,6 +45,7 @@ On peut donc retrouver le wallet via le lien : [Sepolia Etherscan](https://sepol
 ---
 ## La Pieuvre et ses Tentacules
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Cette adresse crypto est très intéressante. Dans une organisation de ce type, il est commun que la partie financière soit gérée par une personne dédiée à cela.
 >
@@ -70,6 +72,7 @@ On en est donc maintenant certain : c’est **==Yves Poulain==** qui gère les f
 ---
 ## Bonus - L'astuce du Singe
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Vous voilà donc avec une adresse crypto en plus de tout le reste sur les bras, comme si vous n'aviez pas assez de travail. Vous décidez donc de commencer à travailler sur celle-ci.
 >

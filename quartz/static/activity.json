@@ -2151,6 +2151,20 @@
       "autre": 0
     }
   },
+  "2026-08-09": {
+    "count": 4,
+    "activités": [
+      "Created — Badge Challmakers · Site",
+      "Created — MAJ Visu Graph · Site",
+      "Resolve — Des carottes, des lapins et des statues · Osintopia",
+      "Resolve — Mayday · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-05-10": {
     "count": 3,
     "activités": [
@@ -2239,9 +2253,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 400,
+    "resolve": 402,
     "retex": 224,
-    "autre": 55
+    "autre": 57
   },
   "__assets__": {
     "profils": 6,

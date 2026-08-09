@@ -19,6 +19,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## La parade du paon
 
+> [!challmaker] Tab, Zmondy
 ### Énoncé
 >Vous informez votre coéquipier de vos trouvailles sur Steven Pichon :
 >![[LAF_C2_A2_A_PDD_P.png]]
@@ -53,6 +54,7 @@ On peut reconnaître Julietteae en photo de profil, et en description : Emma Poi
 ---
 ## Les Traces de l'Ours
 
+> [!challmaker] Eldwiin, Tab
 ### Énoncé
 >Maintenant que vous avez identifié Emma, vous décidez de continuer de faire son environnement en espérant trouver des informations sur ses deux comparses. Vous vous concentrez d'abord sur Morelos.
 >
@@ -99,6 +101,7 @@ On peut aussi noter que le texte sur Pastebin contient un bout d’URL : `/c3e5e
 ---
 ## La chasse du guépard
 
+> [!challmaker] Tab
 ### Énoncé
 >Maintenant que vous avez identifié Emma, vous décidez de continuer de faire son environnement en espérant trouver des informations sur ses deux comparses. Vous vous concentrez d'abord sur Martinezi.
 >
@@ -132,6 +135,7 @@ On remercie donc fortement le support, car apprendre est toujours un plaisir, et
 ---
 ## Les Abysses des Lophiiformes 
 
+> [!challmaker] Eldwiin, Tab, Zmondy
 ### Énoncé
 >Hop, vous informez Péhuson de vos de vos avancées, et échangez un peu sur la suite de l'enquête :
 >![[LAF_C2_A2_A_AL_P.png]]

@@ -9,6 +9,7 @@ order: 3
 ---
 ##  Chill comme un capybara
 
+> [!challmaker] Zmondy
 ### Énoncé
 Vous êtes tranquillement chez vous, en train de ~~stalker~~ faire de l'OSINT sur cette charmante personne que vous croisez régulièrement pendant que vous faites vos courses, lorsque vous entendez un cri sur le palier. La voix ressemble à celle de Renée Michelle, votre sympathique voisine.
 
@@ -51,6 +52,7 @@ Son post datant du 24/03/2026, cela veut dire que son mari est décédé le **==
 
 ## Sous l'oeil du Sphynx
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Les publications de Renée sur son réseau social semblent confirmer qu'elle tient beaucoup à son chat, mais que celui-ci ne supporte pas très bien les voyages.   
 >Vous vous souvenez qu'elle est pourtant allée voir sa famille cette année. Elle doit donc avoir trouvé un moyen de garde pour Malo.
@@ -81,6 +83,7 @@ On peut aussi noter que Lucia explique en commentaire qu'une de ses amies a déj
 
 ## BONUS - Le sens de l'orientation d'un chat
 
+> [!challmaker] R0ck3t
 ### Énoncé
 >Si Malo s'est enfui pendant que des cambrioleurs étaient là, il est possible que quelqu'un l'ait ramené à la SPA.
 >

@@ -230,6 +230,7 @@ On arrive donc à la somme de **==407 100==** € après avoir réalisé le calc
 
 ## La joie du quokka
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Suite à votre dernier message, Péhusson vous a remercié avant de retourner vaquer à ses occupations :  
 >![[LAF_C2_F.png]]

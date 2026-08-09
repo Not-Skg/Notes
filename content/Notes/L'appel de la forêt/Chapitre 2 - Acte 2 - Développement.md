@@ -21,6 +21,7 @@ Néanmoins, il faut noter que cette partie du CTF se débloquait en même temps 
 ---
 ## La Mémoire de l'Éléphant
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Le fait que ces deux sites web soient liés est en effet intéressant. Obtenir des informations sur le développeur ayant publié ces sites pourrait permettre de faire avancer l'enquête.
 >
@@ -52,6 +53,7 @@ On vient donc de confirmer qu’il existe bien.
 ---
 ## Le Nid douillet
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Son nom est donc Dave Renault. Vous en informez votre partenaire d'enquête dont la réponse ne tarde pas : 
 >![[LAF_C2_A2_DV_ND_P.png]]
@@ -71,6 +73,7 @@ On va commencer par vérifier les commits. En ouvrant son [dernier commit](https
 ---
 ## Bonus - La Fourmilière d'Informations
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Tout ce que vous pourrez trouver sur ce développeur pourrait vous aider, après tout on ne sait jamais, même la marque de son téléphone pourrait peut-être vous être utile un jour... Ou pas. Mais quitte à faire vos recherches, autant aller jusqu'au bout !
 >

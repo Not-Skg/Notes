@@ -8,6 +8,7 @@ order: 2
 ---
 ## Welcome
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Au cours de ce CTF, votre équipe sera amenée à réaliser une enquête en se reposant sur des informations disponibles en sources ouvertes. Les éléments récupérés devront ensuite être capitalisés et analysés afin de répondre à des questions disponibles sur cette plateforme CTFd.
 >
@@ -27,6 +28,7 @@ On peut trouver très facilement le flag **==J'ai lu le règlement, et je m'enga
 ---
 ## Reportage animalier
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Un reportage d'une chaîne du service public, en Octobre 2024, fait état d'un fait alarmant. Des animaux de compagnie, souvent de race, se font enlever.
 >

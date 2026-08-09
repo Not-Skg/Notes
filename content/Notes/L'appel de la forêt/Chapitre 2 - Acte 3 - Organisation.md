@@ -18,6 +18,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 
 ## La Toile du Tisserin
 
+> [!challmaker] Tab
 ### Énoncé
 >_📳 Bling 📳_
 >![[LAF_C2_A3_O_TT_P.png]]
@@ -72,6 +73,7 @@ Cela a fortement l’air d’être un mot de passe, et en le testant sur le driv
 ---
 ## La traque du faucon
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Bon, ce groupe est vraiment bine organisé, et semble même mener des campagnes à l'étranger. Les informations que vous avez pu obtenir jusqu'à présent semblent indiquer qu'ils ont mené la traque d'un animal bien spécifique en janvier 2025.
 >
@@ -104,6 +106,7 @@ On vient donc de trouver l’animal qui a été kidnappé par la Meute Rouge, et
 ---
 ## La colère du dragon
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Voilà donc comment ils procèdent pour obtenir de nouveaux animaux plus exotiques que Malo...
 >![[LAF_C2_A3_O_CD_P.png]]
@@ -118,6 +121,7 @@ Le challenge n’en est pas vraiment un : il sert surtout à faire avancer l’h
 ---
 ## Le radar de la chauve-souris
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Ce drive est une vraie mine d'informations ! En regardant de plus près, vous pensez pouvoir trouver des informations sur les membres et leurs clients.
 >Vous informez votre acolyte de votre trouvaille, et vous vous lancez dans l'exploration du contenu de celle-ci.
@@ -167,6 +171,7 @@ Uncia se trouvait donc forcément en Corse le 15/06/2025.
 ---
 ## L'énergie du frelon oriental
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Vous commencez enfin à voir plus clair dans l'organisation du groupe. Après un court échange avec votre acolyte, vous orientez vos recherches sur la personne qui semble chapeauter toute cette organisation.
 >![[LAF_C2_A3_O_EFO_P.png]]

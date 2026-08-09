@@ -32,13 +32,14 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Mise en avant des "coups de cœur"
 
 **ToolBox**
-- [ ] Article sur Casebandit
+- [ ] Article sur Casebandit & Chainmap
 - [ ] Tuto BeautifulSoup & Scrapy
 
 **Général**
-- [ ] Ajout Badge (plateforme + challmakers) sur les RETEX
+- [x] Ajout Badge (plateforme + challmakers) sur les RETEX
+- [ ] Ajouter Badges challmaker sur les anciens chall
 - [x] Possibilité d’agrandir les images au clic
-- [ ] Étoffer la Toolbox et les tags des challs
+- [ ] Étoffer la Toolbox
 - [x] Régler problèmes "click to open"
 - [x] Gérer ordre dans "Explorer" via ID
 - [x] remplacer les redirection des visualisations de dossier vers les pages d'accueils

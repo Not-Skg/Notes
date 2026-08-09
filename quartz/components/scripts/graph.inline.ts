@@ -194,10 +194,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   )
 
   // calculate color
+  const currentNodeColor = "#9c2f07"
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
-      return computedStyleMap["--secondary"]
+      return currentNodeColor
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
@@ -209,7 +210,10 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    const base = 2 + Math.sqrt(numLinks)
+    // Le noeud de la page actuelle est agrandi pour rester repérable même
+    // dans un graphe dense.
+    return d.id === slug ? base * 1.8 : base
   }
 
   let hoveredNodeId: string | null = null
@@ -417,6 +421,10 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     if (isTagNode) {
       gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
+    } else if (nodeId === slug) {
+      // Anneau autour du noeud courant pour le distinguer même sans compter
+      // sur la couleur (contraste, daltonisme, etc.)
+      gfx.stroke({ width: 2, color: computedStyleMap["--dark"] })
     }
 
     nodesContainer.addChild(gfx)
@@ -602,7 +610,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       container.classList.add("active")
       const sidebar = container.closest(".sidebar") as HTMLElement
       if (sidebar) {
-        sidebar.style.zIndex = "1"
+        sidebar.style.zIndex = "20"
       }
 
       const graphContainer = container.querySelector(".global-graph-container") as HTMLElement

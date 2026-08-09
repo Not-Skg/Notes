@@ -18,6 +18,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## La danse des abeilles
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Vous avez trouvé un très bon filon avec ce site onion. Vous en avez informé Péhuson qui répond très rapidement. Retrouver ceux qui s'en prennent à de petites boules de poils comme Malo à l'air de lui tenir autant à coeur qu'à vous. En effet, vous n'avez pas eu le temps de reposer votre téléphone qu'il vous a déjà répondu : 
 >
@@ -65,6 +66,7 @@ Deux soirées y sont référencées :
 ---
 ## L'Instinct du Pigeon Voyageur
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Parmi les membres du groupe que vous avez réussi à identifier, certains sont assez proches des clients et semblent se déplacer régulièrement. Notamment, un membre apparaît être en charge de récupérer physiquement les demandes des différents clients.
 >

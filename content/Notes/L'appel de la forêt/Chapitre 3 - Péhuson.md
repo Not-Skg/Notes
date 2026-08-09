@@ -19,6 +19,7 @@ order: 17
 ---
 ## Chargé comme une mule
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >_📳 Bling 📳_
 >Il semblerait que votre nouvelle amie policière ait vraiment besoin de vous sur cette affaire. Vous recevez un nouveau message avec une nouvelle piste :
@@ -42,6 +43,7 @@ Et on peut voir que son dernier post était un post d'enquêteur à **==La SPA_R
 ---
 ## La protection de la tortue
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Vous en apprenez un peu plus sur la personne qui vous a aidé tout au long de votre enquête. Jusque-là, rien d'anormal, vous voilà rassuré. Vous décidez de creuser encore un petit peu, juste pour être sûr.
 >
@@ -122,6 +124,7 @@ Aussi, on peut y trouver un poster de l'organisation de la meute rouge, ce qui p
 ---
 ## Hors de la Tanière
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Vous informez votre contact de la police des doutes qui se sont inscrits dans votre esprit au fur et à mesure de votre enquête. Vous soupçonnez fortement Péhuson d'avoir un lien avec cette affaire sordide et en informez la Policière en charge de l'affaire :
 >![[LAF_C3_P_HT_1.png]]
@@ -228,6 +231,8 @@ out;
 ```
 
 ---
+
+> [!challmaker] Eldwiin
 # Fin
 >Vous venez tout juste d'appuyer sur envoyer pour transmettre à la police la localisation de la planque parfaite selon Péhuson. Celle-ci vous remercie et part directement en direction de la planque qui, fort heureusement, n'est pas si loin.
 >
@@ -264,7 +269,7 @@ Pour finir ça proprement, voici une synthèse de tous les éléments récoltés
 
 ![[LAF_C3_P.svg]]
 
-## Résumé synthétique du lore de ce CTF
+# Résumé synthétique du lore de ce CTF
 Tout commence le vendredi 3 juillet 2026 à Orléans : notre voisine, Renée Michelle, se fait « voler » son chat Malo pendant qu'elle fait ses courses. En creusant sur elle et sa famille (son fils Jean Michelle Jr, sa belle-fille Lucia née Karlson, ses petites-filles Sarah et Martine), on comprend vite qu'aucun d'eux n'est impliqué : ils sont tous ailleurs ce week-end-là.
 
 La vraie piste, c'est le pet-sitter de Renée, Joseph Delamarre, étudiant précaire payé pour transmettre l'adresse de Malo à un certain « Virgata », en réalité Steven Pichon, un « chasseur » d'animaux de compagnie basé à Limoges.

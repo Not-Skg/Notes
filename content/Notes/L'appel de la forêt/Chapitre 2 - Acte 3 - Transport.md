@@ -20,6 +20,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## Dans le sillage du cachalot
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 >Le nouveau site que vous venez de trouver est une véritable mine d'informations. Ainsi, le groupe que vous avez commencé à suivre ne se limite pas aux animaux locaux, mais s'intéresse aussi aux animaux plus exotiques.
 >![[LAF_C2_A3_T_SC_P.png]]
@@ -61,6 +62,7 @@ Le flag était donc : **==Nador-Valence==**
 ---
 ## La caravane de dromadaires
 
+> [!challmaker] Zmondy, Eldwiin
 ### Énoncé
 >Vous vous lancez donc dans la tâche fastidieuse de retracer le parcours de ces pauvres animaux. Vous avez déjà un morceau du trajet, mais pour le retracer complètement, il vous faut déjà déterminer le lieu où ces animaux ont été pris en charge par le groupe que vous suivez.
 >
@@ -83,6 +85,7 @@ On peut récupérer les coordonnées de l'hôtel via Google Maps : **==22.782784
 ---
 ## La Migration de la Cigogne
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Nous savons donc où le cargo est arrivé. Mais pour procéder à la livraison des clients finaux, les animaux ont dû passer par la frontière avec la France. Un groupe de cette envergure doit sûrement réutiliser les mêmes routes, il serait donc utile de connaître ce point de passage afin d'empêcher la prochaine livraison.
 >
@@ -126,6 +129,7 @@ La borne 482 y était bien référencée, localisée à Bourg-Madame ; on pouvai
 ---
 ## La nuée de chauves-souris
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Au cours de leur trajet pour rapatrier les animaux, ceux-ci vont devoir effectuer plusieurs pauses. Parmi ces pauses, l'une d'elles semble avoir un double usage, car les membres en profitent pour rencontrer un certain "groupe du Sud-Ouest".
 >
@@ -148,6 +152,7 @@ On vient donc de trouver le lieu de rassemblement avec le groupe du Sud-Ouest : 
 ---
 ## La tanière du lion
 
+> [!challmaker] Eldwiin
 ### Énoncé
 >Bon, vous décidez de vous recentrer sur l'essentiel. Ce groupe va procéder à une grosse opération, et ce qui compte c'est de savoir le point de chute de tout ça pour avertir la police et leur tomber dessus quand ils seront tous au même endroit.
 >

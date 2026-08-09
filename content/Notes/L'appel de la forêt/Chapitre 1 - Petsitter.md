@@ -19,6 +19,7 @@ Nous allons pouvoir nous appuyer dessus pour poursuivre nos recherches dans la s
 ---
 ## La mésange babysitter
 
+> [!challmaker] Zmondy
 ### Énoncé
 _🔔 Drriiiiiiiiiiing 🔔_
 Vous sursautez. Vous ne vous ferez donc jamais à cette sonnette, celui qui a réglé le son devait avoir le même âge que votre voisine... Vous ouvrez la porte et vous retrouvez justement face à Renée. Celle-ci semble un peu plus rassurée que tout à l'heure.
@@ -68,6 +69,7 @@ Il précise même, dans [un autre post](https://www.instagram.com/p/DWJMl-UjEZC/
 ---
 ## Bavard comme une pie
 
+> [!challmaker] Eldwiin
 ### Énoncé
 _🔔 Drriiiiiiiiiiing 🔔_
 Encore une fois vous sursautez. Encore une fois vous retrouvez la mère Michelle devant votre porte.
@@ -104,6 +106,7 @@ On peut confirmer ces résultats en faisant une recherche d’image inversée su
 ---
 ## Pris dans la toile
 
+> [!challmaker] Eldwiin, Zmondy
 ### Énoncé
 _🔔 Drriiiiiiiiiiing 🔔_
 ![[LAF_C1_P_PDT_EMM.png]]
@@ -155,6 +158,7 @@ Le flag de ce challenge est donc constitué des coordonnées du bâtiment en cha
 ---
 ## Le terrier du lapin
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Vous informez votre comparse que vous pensez avoir trouvé l'endroit où est retenu Malo, ou en tout cas un endroit où les catnappeurs pourraient être.
 >Vous vous étirez et vous accordez quelques minutes de repos en lançant de la musique.

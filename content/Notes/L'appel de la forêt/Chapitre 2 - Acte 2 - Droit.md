@@ -19,6 +19,7 @@ Néanmoins, il faut noter que cette partie du CTF se débloquait en même temps 
 ---
 ## BONUS - Les fourberies du renard
 
+> [!challmaker] R0ck3t
 ### Énoncé
 >Ce site vitrine vous permet de constater une infraction en lien avec leurs activités de dressage.
 >
@@ -52,6 +53,7 @@ Ils exercent donc cette activité de manière illégale, puisqu’ils ne possèd
 ---
 ## Le loup déguisé
 
+> [!challmaker] Zmondy
 ### Énoncé
 >En plus de leurs liens avec l'enlèvement de Malo, ces individus ne respectent donc pas la loi. Mais pour que leur petite entreprise de dressage de chiens continue d'exister, ils doivent avoir un ami dans le domaine juridique.
 >
@@ -72,6 +74,7 @@ On a donc une proximité géographique avec le lieu du catnapping, un partenaria
 ---
 ## Les commencements de l'oiseau
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Il est fort probable que James utilise lui aussi un pseudo, qui pourra vous être utile pour la suite de votre enquête.
 >
@@ -92,6 +95,7 @@ On peut le confirmer sur chess.com en cherchant `James Artaux`, où il apparaît
 ---
 ## Le Territoire du Loup
 
+> [!challmaker] Zmondy
 ### Énoncé
 >Afin d'aider la police, il peut être intéressant de pouvoir indiquer où vit ce James. Il doit bien avoir laissé des indications quelque part.
 >
