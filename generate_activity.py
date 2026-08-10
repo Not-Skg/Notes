@@ -8,10 +8,9 @@ PROFILS_PATH = Path("./content/Profil")
 BADGES_PATH = Path("./content/Badges")
 OUTPUT = Path("./quartz/static/activity.json")
 
-# Fichier non publié (dans private/, gitignoré) listant les périodes de CTF
-# (début/fin) utilisées par la heatmap pour afficher un losange sur les jours
-# concernés.
-CTF_PERIODS_PATH = Path("./private/ctf_periods.json")
+# Fichier committé listant les périodes de CTF (début/fin) utilisées par la
+# heatmap pour afficher un losange sur les jours concernés.
+CTF_PERIODS_PATH = Path("./ctf_periods.json")
 
 
 def load_ctf_periods() -> list[dict]:
