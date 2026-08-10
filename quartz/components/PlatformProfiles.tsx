@@ -49,7 +49,7 @@ PlatformProfiles.afterDOMLoaded = `
         {
         name: "YouArePlayer",
         username: "SKG",
-        description: "Plateforme émergente vraiment sympa.<br> Osint mais que... ",
+        description: "Plateforme émergente vraiment sympa.<br> Osint mais pas que... ",
         url: "https://youareplayer.com/users/3ef5b34a-7396-4ae9-b1f2-da914e27da2d",
         logo: "Logo/yap.png",
       }

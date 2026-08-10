@@ -44,6 +44,11 @@ const init = async () => {
     console.log("activity.json chargé via :", usedPath);
     const data = await res.json();
 
+    const ctfPeriods = data.__ctf_periods__ || [];
+
+    const findCtfPeriod = (date) =>
+        ctfPeriods.find(p => date >= p.start && date <= p.end);
+
     const milestones = {
         "2026-03-11": {
             marker: "S",
@@ -794,13 +799,14 @@ const init = async () => {
         const cx = LABEL_W + colToPx(col);
         const cy = row * step;
         const milestone = milestones[date];
+        const ctfPeriod = findCtfPeriod(date);
 
-        return `<div class="hm-day${milestone ? " hm-day-milestone" : ""}"
+        return `<div class="hm-day${milestone ? " hm-day-milestone" : ""}${ctfPeriod ? " hm-day-ctf" : ""}"
             style="position:absolute;left:${cx}px;top:${cy}px;background:${color(count)}"
             data-date="${date}"
             data-count="${count}"
             ${milestone ? `data-marker="${milestone.marker}" data-marker-label="${milestone.label}"` : ""}
-            title="${date} — ${count} activité(s)${milestone ? ` — ${milestone.label}` : ""}"
+            title="${date} — ${count} activité(s)${milestone ? ` — ${milestone.label}` : ""}${ctfPeriod ? ` — CTF : ${ctfPeriod.name}` : ""}"
         ></div>`;
     }).join("");
 
@@ -1529,6 +1535,20 @@ const init = async () => {
           pointer-events: none;
         }
 
+        .hm-day-ctf::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: ${Math.round(CELL * 0.46)}px;
+          height: ${Math.round(CELL * 0.46)}px;
+          background: var(--light);
+          outline: 1px solid var(--hm-border);
+          outline-offset: -1px;
+          transform: translate(-50%, -50%) rotate(45deg);
+          pointer-events: none;
+        }
+
         .hm-detail, .hm-summary {
             border: 1px solid var(--lightgray);
             border-radius: 8px;
@@ -1687,6 +1707,17 @@ const init = async () => {
           display: inline-flex;
           align-items: center;
           gap: 0.35rem;
+        }
+
+        .hm-ctf-diamond {
+          display: inline-block;
+          width: ${Math.round(CELL * 0.6)}px;
+          height: ${Math.round(CELL * 0.6)}px;
+          background: var(--light);
+          outline: 1px solid var(--hm-border);
+          outline-offset: -1px;
+          transform: rotate(45deg);
+          flex-shrink: 0;
         }
 
         .hm-milestone-letter {
@@ -2224,6 +2255,12 @@ const init = async () => {
                     <span class="hm-milestone-letter">H</span>
                     <span>Ajout de la heatmap</span>
                   </span>
+                  ${ctfPeriods.length ? `
+                  <span class="hm-milestone-key">
+                    <span class="hm-ctf-diamond"></span>
+                    <span>Période de CTF</span>
+                  </span>
+                  ` : ""}
                 </div>
 
                 <div class="hm-streak-inline">

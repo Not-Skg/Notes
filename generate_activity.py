@@ -8,6 +8,29 @@ PROFILS_PATH = Path("./content/Profil")
 BADGES_PATH = Path("./content/Badges")
 OUTPUT = Path("./quartz/static/activity.json")
 
+# Fichier non publié (dans private/, gitignoré) listant les périodes de CTF
+# (début/fin) utilisées par la heatmap pour afficher un losange sur les jours
+# concernés.
+CTF_PERIODS_PATH = Path("./private/ctf_periods.json")
+
+
+def load_ctf_periods() -> list[dict]:
+    if not CTF_PERIODS_PATH.exists():
+        return []
+
+    with CTF_PERIODS_PATH.open(encoding="utf-8") as f:
+        periods = json.load(f)
+
+    valid = []
+    for period in periods:
+        start, end = period.get("start"), period.get("end")
+        if not start or not end or not re.match(r"\d{4}-\d{2}-\d{2}$", start) or not re.match(r"\d{4}-\d{2}-\d{2}$", end):
+            print(f"⚠ Période CTF ignorée (dates invalides ou TODO) : {period.get('name', '?')}")
+            continue
+        valid.append({"name": period.get("name", ""), "start": start, "end": end})
+
+    return valid
+
 IMAGE_EXTS = {".jpg", ".jpeg", ".png"}
 
 data = {}
@@ -83,6 +106,9 @@ data["__assets__"] = {
     "badges": badge_count,
 }
 
+ctf_periods = load_ctf_periods()
+data["__ctf_periods__"] = ctf_periods
+
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 with OUTPUT.open("w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
@@ -97,3 +123,4 @@ print(
     f"✓ Assets — Profils: {profil_count}, "
     f"Badges: {badge_count}"
 )
+print(f"✓ Périodes CTF — {len(ctf_periods)} période(s) chargée(s)")

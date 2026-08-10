@@ -25,6 +25,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] Remplacement du tableau par des cartes “Mes plateformes”
 - [x] Ajout de streaks d'activités sur Heatmap
 - [ ] Modifier système de couleurs pour éviter les doublons de couleurs dans les compteurs globaux
+- [x] Ajouter période CTF sur Heatmap
 - [x] Check le côté responsive de la partie "Résultats CTF"
 
 **HomePage**
@@ -45,4 +46,4 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [x] remplacer les redirection des visualisations de dossier vers les pages d'accueils
 - [x] MAJ Ordre de tout "Explorer"
 - [x] Mise en avant des pages d'accueils
-- [ ] Régler effets de bords changement de domain
+- [ ] Régler effets de bords changement de domaine
