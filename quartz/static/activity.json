@@ -1024,6 +1024,18 @@
       "autre": 0
     }
   },
+  "2026-08-11": {
+    "count": 2,
+    "activités": [
+      "Resolve — The Red Letter · Mixed · YouArePlayer",
+      "Resolve — De haut en bas · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-06": {
     "count": 6,
     "activités": [
@@ -2273,7 +2285,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 411,
+    "resolve": 413,
     "retex": 224,
     "autre": 58
   },
