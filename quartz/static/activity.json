@@ -1336,6 +1336,17 @@
       "autre": 0
     }
   },
+  "2026-08-12": {
+    "count": 1,
+    "activités": [
+      "Resolve — TH3 VOID · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-05": {
     "count": 6,
     "activités": [
@@ -2285,7 +2296,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 413,
+    "resolve": 414,
     "retex": 224,
     "autre": 58
   },
