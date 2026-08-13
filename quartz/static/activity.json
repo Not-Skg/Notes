@@ -1670,6 +1670,18 @@
       "autre": 0
     }
   },
+  "2026-08-13": {
+    "count": 2,
+    "activités": [
+      "Resolve — Mexican Mafia Boss · AI EVASION · YouArePlayer",
+      "Resolve — Arnou Leroy · AI EVASION · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-10": {
     "count": 2,
     "activités": [
@@ -2296,7 +2308,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 414,
+    "resolve": 416,
     "retex": 224,
     "autre": 58
   },
