@@ -636,6 +636,17 @@
       "autre": 0
     }
   },
+  "2026-08-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — OPERATION · MIXED · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-03": {
     "count": 6,
     "activités": [
@@ -2308,7 +2319,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 416,
+    "resolve": 417,
     "retex": 224,
     "autre": 58
   },
