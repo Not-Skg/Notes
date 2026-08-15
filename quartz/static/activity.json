@@ -1210,6 +1210,17 @@
       "autre": 0
     }
   },
+  "2026-08-15": {
+    "count": 1,
+    "activités": [
+      "Resolve — KaboomKaboodle · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-16": {
     "count": 8,
     "activités": [
@@ -2319,7 +2330,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 417,
+    "resolve": 418,
     "retex": 224,
     "autre": 58
   },
