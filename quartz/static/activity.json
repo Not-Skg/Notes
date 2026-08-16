@@ -1476,6 +1476,18 @@
       "autre": 0
     }
   },
+  "2026-08-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Gourmandise · Osintopia",
+      "Resolve — Freedom · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-21": {
     "count": 2,
     "activités": [
@@ -2330,7 +2342,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 418,
+    "resolve": 420,
     "retex": 224,
     "autre": 58
   },
