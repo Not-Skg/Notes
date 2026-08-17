@@ -1575,6 +1575,17 @@
       "autre": 0
     }
   },
+  "2026-08-17": {
+    "count": 1,
+    "activités": [
+      "Resolve — The Right Breakdown · CRYPTO · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-20": {
     "count": 5,
     "activités": [
@@ -2342,7 +2353,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 420,
+    "resolve": 421,
     "retex": 224,
     "autre": 58
   },
