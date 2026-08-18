@@ -1854,6 +1854,17 @@
       "autre": 0
     }
   },
+  "2026-08-18": {
+    "count": 1,
+    "activités": [
+      "Created — MAJ PubLeak · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-08-08": {
     "count": 6,
     "activités": [
@@ -2355,7 +2366,7 @@
   "__totaux__": {
     "resolve": 421,
     "retex": 224,
-    "autre": 58
+    "autre": 59
   },
   "__assets__": {
     "profils": 6,
