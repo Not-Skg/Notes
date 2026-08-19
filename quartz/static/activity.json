@@ -2261,6 +2261,17 @@
       "autre": 0
     }
   },
+  "2026-08-19": {
+    "count": 1,
+    "activités": [
+      "Created — MAJ Sentry · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-08-09": {
     "count": 5,
     "activités": [
@@ -2366,7 +2377,7 @@
   "__totaux__": {
     "resolve": 421,
     "retex": 224,
-    "autre": 59
+    "autre": 60
   },
   "__assets__": {
     "profils": 6,
