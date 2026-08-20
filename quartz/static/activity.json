@@ -686,6 +686,18 @@
       "autre": 0
     }
   },
+  "2026-08-20": {
+    "count": 2,
+    "activités": [
+      "Resolve — FREEDOM101 · CYBER · YouArePlayer",
+      "Resolve — NSUARFWIC · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-16": {
     "count": 2,
     "activités": [
@@ -2375,7 +2387,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 421,
+    "resolve": 423,
     "retex": 224,
     "autre": 60
   },
