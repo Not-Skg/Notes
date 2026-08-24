@@ -841,6 +841,17 @@
       "autre": 0
     }
   },
+  "2026-08-24": {
+    "count": 1,
+    "activités": [
+      "Resolve — TURBO · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-27": {
     "count": 2,
     "activités": [
@@ -2422,7 +2433,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 428,
+    "resolve": 429,
     "retex": 224,
     "autre": 60
   },
