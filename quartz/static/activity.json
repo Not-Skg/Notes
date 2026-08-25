@@ -1012,6 +1012,17 @@
       "autre": 0
     }
   },
+  "2026-08-25": {
+    "count": 1,
+    "activités": [
+      "Resolve — Space Adventure · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-26": {
     "count": 1,
     "activités": [
@@ -2433,7 +2444,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 429,
+    "resolve": 430,
     "retex": 224,
     "autre": 60
   },
