@@ -1405,6 +1405,17 @@
       "autre": 0
     }
   },
+  "2026-08-26": {
+    "count": 1,
+    "activités": [
+      "Resolve — IKnowAdditions · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-08-12": {
     "count": 1,
     "activités": [
@@ -2444,7 +2455,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 430,
+    "resolve": 431,
     "retex": 224,
     "autre": 60
   },
