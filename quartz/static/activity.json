@@ -1778,6 +1778,17 @@
       "autre": 0
     }
   },
+  "2026-08-27": {
+    "count": 1,
+    "activités": [
+      "Resolve — THE 300 WORD BACKUP · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-04": {
     "count": 7,
     "activités": [
@@ -2455,7 +2466,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 431,
+    "resolve": 432,
     "retex": 224,
     "autre": 60
   },
