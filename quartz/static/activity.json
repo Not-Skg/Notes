@@ -2124,6 +2124,17 @@
       "autre": 0
     }
   },
+  "2026-08-28": {
+    "count": 1,
+    "activités": [
+      "Resolve — The Cattle Relay · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-21": {
     "count": 1,
     "activités": [
@@ -2467,7 +2478,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 433,
+    "resolve": 434,
     "retex": 224,
     "autre": 60
   },
