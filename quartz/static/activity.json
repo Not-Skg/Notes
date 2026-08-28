@@ -2125,12 +2125,13 @@
     }
   },
   "2026-08-28": {
-    "count": 1,
+    "count": 2,
     "activités": [
-      "Resolve — The Cattle Relay · OSINT · YouArePlayer"
+      "Resolve — The Cattle Relay · OSINT · YouArePlayer",
+      "Resolve — YUMMY · OSINT · YouArePlayer"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -2478,7 +2479,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 434,
+    "resolve": 435,
     "retex": 224,
     "autre": 60
   },
