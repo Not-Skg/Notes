@@ -2265,6 +2265,17 @@
       "autre": 0
     }
   },
+  "2026-08-29": {
+    "count": 1,
+    "activités": [
+      "Resolve — Satellite Hopper · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-20": {
     "count": 1,
     "activités": [
@@ -2479,7 +2490,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 435,
+    "resolve": 436,
     "retex": 224,
     "autre": 60
   },
