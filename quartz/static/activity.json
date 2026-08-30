@@ -724,6 +724,17 @@
       "autre": 0
     }
   },
+  "2026-08-30": {
+    "count": 1,
+    "activités": [
+      "Resolve — DEPIX · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-29": {
     "count": 2,
     "activités": [
@@ -2490,7 +2501,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 436,
+    "resolve": 437,
     "retex": 224,
     "autre": 60
   },
