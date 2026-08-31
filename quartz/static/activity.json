@@ -1334,6 +1334,17 @@
       "autre": 0
     }
   },
+  "2026-08-31": {
+    "count": 1,
+    "activités": [
+      "Resolve — FIND THE MASKED MAN · GEOINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-28": {
     "count": 3,
     "activités": [
@@ -2501,7 +2512,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 437,
+    "resolve": 438,
     "retex": 224,
     "autre": 60
   },
