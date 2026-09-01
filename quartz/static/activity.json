@@ -546,6 +546,18 @@
       "autre": 1
     }
   },
+  "2026-09-01": {
+    "count": 2,
+    "activités": [
+      "Resolve — HOLEHE & THE SECRET EMAIL · OSINT · OSINT Industries",
+      "Created — MAJ Toolbox · Site"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-07-02": {
     "count": 3,
     "activités": [
@@ -2513,9 +2525,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 439,
+    "resolve": 440,
     "retex": 224,
-    "autre": 60
+    "autre": 61
   },
   "__assets__": {
     "profils": 6,
