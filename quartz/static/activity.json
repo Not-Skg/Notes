@@ -2211,6 +2211,18 @@
       "autre": 0
     }
   },
+  "2026-09-02": {
+    "count": 2,
+    "activités": [
+      "Resolve — The Benarroch File · INTERPOL · OSINT Industries",
+      "Resolve — The Hadjej File · INTERPOL · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-24": {
     "count": 12,
     "activités": [
@@ -2525,7 +2537,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 440,
+    "resolve": 442,
     "retex": 224,
     "autre": 61
   },
