@@ -80,6 +80,7 @@ HomeExplorer.afterDOMLoaded = `
         { tag: "IsFred", label: "IsFred" },
         { tag: "OSINTOPIA", label: "Osintopia" },
         { tag: "YouArePlayer", label: "YouArePlayer" },
+        { tag: "OsintIndustries", label: "Osint Industries" },
       ]
 
       const escapeHtml = (str) =>

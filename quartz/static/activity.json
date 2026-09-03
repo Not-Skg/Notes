@@ -2334,6 +2334,18 @@
       "autre": 0
     }
   },
+  "2026-09-03": {
+    "count": 2,
+    "activités": [
+      "Resolve — Operation LOCKERGOGA · EUROPOL · OSINT Industries",
+      "Retex — Operation LOCKERGOGA · EUROPOL · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
+  },
   "2026-05-14": {
     "count": 5,
     "activités": [
@@ -2537,8 +2549,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 442,
-    "retex": 224,
+    "resolve": 443,
+    "retex": 225,
     "autre": 61
   },
   "__assets__": {
