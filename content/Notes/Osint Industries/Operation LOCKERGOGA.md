@@ -14,7 +14,7 @@ tags:
 >Participants may verify the information on the official Europol website:  
 [https://eumostwanted.eu/de#/tymoshchuk-timoschuk-volodymyr-viktorovych-volodimir-viktorovich](https://eumostwanted.eu/de#/tymoshchuk-timoschuk-volodymyr-viktorovych-volodimir-viktorovich)
 >
-==**Target Information**==
+>==**Target Information**==
 >- Name: TYMOSHCHUK (ТИМОЩУК), Volodymyr Viktorovych (Володимир Вікторович)
 >- Date of birth: October 2, 1996 (29 years old)
 >- Countries linked: France, Ukraine
