@@ -240,6 +240,19 @@
       "autre": 0
     }
   },
+  "2026-09-04": {
+    "count": 3,
+    "activités": [
+      "Resolve — NEVER DELETED · OSINT · OSINT Industries",
+      "Resolve — FSB Part 1 · FSB · OSINT Industries",
+      "Resolve — FSB Part 2 · FSB · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-09": {
     "count": 5,
     "activités": [
@@ -2549,7 +2562,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 443,
+    "resolve": 446,
     "retex": 225,
     "autre": 61
   },
