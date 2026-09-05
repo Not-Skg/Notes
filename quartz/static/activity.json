@@ -387,6 +387,18 @@
       "autre": 0
     }
   },
+  "2026-09-05": {
+    "count": 2,
+    "activités": [
+      "Resolve — Oops… Wrong Base · GEOINT · OSINT Industries",
+      "Resolve — FSB Part 3 · FSB · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-05-12": {
     "count": 4,
     "activités": [
@@ -2564,7 +2576,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 448,
+    "resolve": 450,
     "retex": 225,
     "autre": 61
   },
