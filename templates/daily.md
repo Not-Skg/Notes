@@ -1,7 +1,7 @@
 ---
 date: "{{date:YYYY-MM-DD}}"
 ---
-## Activités
+{## Activités
 
 - Resolve — A · CTF · Site
 - Resolve — B · CTF · Site

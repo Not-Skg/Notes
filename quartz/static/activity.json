@@ -2036,15 +2036,16 @@
     }
   },
   "2026-09-06": {
-    "count": 4,
+    "count": 5,
     "activités": [
       "Resolve — The Suspicious Stop · GEOINT · OSINT Industries",
       "Resolve — Lost in Transit · GEOINT · OSINT Industries",
       "Resolve — DAMASCUS · OSINT · OSINT Industries",
-      "Resolve — Secret Location · OSINT · OSINT Industries"
+      "Resolve — Secret Location · OSINT · OSINT Industries",
+      "Resolve — FAKE DOCTOR · OSINT · OSINT Industries"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -2590,7 +2591,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 454,
+    "resolve": 455,
     "retex": 225,
     "autre": 61
   },
