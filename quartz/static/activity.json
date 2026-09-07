@@ -2516,6 +2516,18 @@
       "autre": 0
     }
   },
+  "2026-09-07": {
+    "count": 2,
+    "activités": [
+      "Resolve — Red Carpet · OSINT · OSINT Industries",
+      "Resolve — Operation Masked Dive · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-07-04": {
     "count": 10,
     "activités": [
@@ -2591,7 +2603,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 455,
+    "resolve": 457,
     "retex": 225,
     "autre": 61
   },
