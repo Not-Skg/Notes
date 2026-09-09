@@ -1793,6 +1793,17 @@
       "autre": 0
     }
   },
+  "2026-09-09": {
+    "count": 1,
+    "activités": [
+      "Resolve — 24/12/24 · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-08-07": {
     "count": 5,
     "activités": [
@@ -2614,7 +2625,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 458,
+    "resolve": 459,
     "retex": 225,
     "autre": 61
   },
