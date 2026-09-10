@@ -34,6 +34,17 @@
       "autre": 2
     }
   },
+  "2026-09-10": {
+    "count": 1,
+    "activités": [
+      "Resolve — KNIFE ATTACK · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-29": {
     "count": 3,
     "activités": [
@@ -2625,7 +2636,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 459,
+    "resolve": 460,
     "retex": 225,
     "autre": 61
   },
