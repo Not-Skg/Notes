@@ -535,8 +535,18 @@
     }
   },
   "2026-09-11": {
-    "count": 9,
+    "count": 19,
     "activités": [
+      "Resolve — A table ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
+      "Resolve — Jardinier anonyme · Une drôle de fleur · DeepThreats",
+      "Resolve — Une belle histoire · Partenaire particulier · DeepThreats",
+      "Resolve — French Touch · L'ile mystérieuse · DeepThreats",
+      "Resolve — The creator · Une drôle de fleur · DeepThreats",
+      "Resolve — Un visage famillier · Une drôle de fleur · DeepThreats",
+      "Resolve — La plume et le pouvoir · Une drôle de fleur · DeepThreats",
+      "Resolve — Tableau de chasse · Une drôle de fleur · DeepThreats",
       "Resolve — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
       "Resolve — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
       "Resolve — Metal hurlant · En eaux troubles · DeepThreats",
@@ -548,7 +558,7 @@
       "Resolve — L'écolo · En eaux troubles · DeepThreats"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 19,
       "retex": 0,
       "autre": 0
     }
@@ -2663,7 +2673,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 477,
+    "resolve": 487,
     "retex": 225,
     "autre": 61
   },
