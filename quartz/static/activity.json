@@ -35,12 +35,20 @@
     }
   },
   "2026-09-10": {
-    "count": 1,
+    "count": 9,
     "activités": [
+      "Resolve — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
+      "Resolve — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats",
+      "Resolve — Un nouvel allié · En eaux troubles · DeepThreats",
+      "Resolve — Un soupçon de soupçon · En eaux troubles · DeepThreats",
+      "Resolve — Président ! · En eaux troubles · DeepThreats",
+      "Resolve — Ordre de mission · A vos marques · DeepThreats",
+      "Resolve — Scoring · A vos marques · DeepThreats",
+      "Resolve — Votre attention s'il vous plait ! · A vos marques · DeepThreats",
       "Resolve — KNIFE ATTACK · OSINT · OSINT Industries"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
@@ -524,6 +532,25 @@
       "resolve": 1,
       "retex": 0,
       "autre": 1
+    }
+  },
+  "2026-09-11": {
+    "count": 9,
+    "activités": [
+      "Resolve — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
+      "Resolve — Metal hurlant · En eaux troubles · DeepThreats",
+      "Resolve — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
+      "Resolve — Wuan upon a time · En eaux troubles · DeepThreats",
+      "Resolve — Doctor who · What's up doc ? · DeepThreats",
+      "Resolve — Un coin discret · En eaux troubles · DeepThreats",
+      "Resolve — Deal · En eaux troubles · DeepThreats",
+      "Resolve — L'écolo · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 9,
+      "retex": 0,
+      "autre": 0
     }
   },
   "2026-06-28": {
@@ -2636,7 +2663,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 460,
+    "resolve": 477,
     "retex": 225,
     "autre": 61
   },
