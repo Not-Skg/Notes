@@ -215,6 +215,17 @@
       "autre": 2
     }
   },
+  "2026-09-14": {
+    "count": 1,
+    "activités": [
+      "Created — DeepThreats · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-07-17": {
     "count": 3,
     "activités": [
@@ -2708,7 +2719,7 @@
   "__totaux__": {
     "resolve": 500,
     "retex": 225,
-    "autre": 61
+    "autre": 62
   },
   "__assets__": {
     "profils": 6,

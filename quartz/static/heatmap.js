@@ -120,7 +120,7 @@ const init = async () => {
             position: 50,
             total: 455,
             solo: false,
-            href: "",
+            href: "/Notes/DeepThreats/DeepThreats",
             accent: "#ff6b2b",
             note: "",
             logoSrc: "Logo_CTF/L_DT.png",
