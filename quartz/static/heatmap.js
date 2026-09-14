@@ -115,6 +115,17 @@ const init = async () => {
 
     const ctfResults = [
         {
+            name: "DeepThreats",
+            date: "Septembre 2026",
+            position: 50,
+            total: 455,
+            solo: false,
+            href: "",
+            accent: "#ff6b2b",
+            note: "",
+            logoSrc: "Logo_CTF/L_DT.png",
+        },
+        {
             name: "L'appel de la forêt",
             date: "Juillet 2026",
             position: 22,
