@@ -378,6 +378,19 @@
       "autre": 0
     }
   },
+  "2026-09-15": {
+    "count": 3,
+    "activités": [
+      "Retex — Ordre de mission · A vos marques · DeepThreats",
+      "Retex — Scoring · A vos marques · DeepThreats",
+      "Retex — Votre attention s'il vous plait ! · A vos marques · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-05-02": {
     "count": 1,
     "activités": [
@@ -2718,7 +2731,7 @@
   },
   "__totaux__": {
     "resolve": 500,
-    "retex": 225,
+    "retex": 228,
     "autre": 62
   },
   "__assets__": {
