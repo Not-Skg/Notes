@@ -1680,6 +1680,19 @@
       "autre": 0
     }
   },
+  "2026-09-18": {
+    "count": 3,
+    "activités": [
+      "Retex — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
+      "Retex — Metal hurlant · En eaux troubles · DeepThreats",
+      "Retex — Un coin discret · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-08-22": {
     "count": 1,
     "activités": [
@@ -2086,6 +2099,19 @@
     "stats": {
       "resolve": 1,
       "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-16": {
+    "count": 3,
+    "activités": [
+      "Retex — Un nouvel allié · En eaux troubles · DeepThreats",
+      "Retex — Un soupçon de soupçon · En eaux troubles · DeepThreats",
+      "Retex — Président ! · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
       "autre": 0
     }
   },
@@ -2604,6 +2630,19 @@
       "autre": 0
     }
   },
+  "2026-09-17": {
+    "count": 3,
+    "activités": [
+      "Retex — Deal · En eaux troubles · DeepThreats",
+      "Retex — L'écolo · En eaux troubles · DeepThreats",
+      "Retex — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-08-19": {
     "count": 1,
     "activités": [
@@ -2731,7 +2770,7 @@
   },
   "__totaux__": {
     "resolve": 500,
-    "retex": 228,
+    "retex": 237,
     "autre": 62
   },
   "__assets__": {

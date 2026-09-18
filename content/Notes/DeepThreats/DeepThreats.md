@@ -12,13 +12,12 @@ description: Mon RETEX sur le CTF DeepThreats
 >[!info] Ce RETEX sera complété au fur et à mesure, au fil de la publication des différentes parties du CTF.
 
 ***Les différentes parties du CTF :***
- · | · `[[A vos marques]]`
- · | · `[[En eaux troubles]]`
+ · | · [[A vos marques]]
+ · | · [[En eaux troubles 1]]
+ · | · `[[Une drôle de fleur]]`
  · | · `[[What's up doc ?]]`
  · | · `[[Partenaire particulier]]`
- · | · `[[Une drôle de fleur]]`
  · | · `[[L'ile mystérieuse]]`
-
 
 ---
 
