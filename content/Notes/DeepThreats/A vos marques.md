@@ -5,6 +5,8 @@ tags:
   - Chall
 order: 2
 ---
+Prochaine partie : [[En eaux troubles 1]]
+
 ---
 ## Welcome
 
@@ -140,3 +142,4 @@ Ce contexte nous ramène à ces trois questions :
 
 Nous allons donc tenter de trouver ces réponses durant ce CTF.
 
+Prochaine partie : [[En eaux troubles 1]]

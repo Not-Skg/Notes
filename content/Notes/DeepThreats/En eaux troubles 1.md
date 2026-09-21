@@ -8,11 +8,13 @@ description: RETEX des challenges de la partie 1 de "En eaux troubles" du CTF De
 ---
 ---
 >[!info] Contexte
-> Pour rappel voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
+> Pour rappel, voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
 > ![[DT_AVM.svg]]
 >
 > Aussi, ce RETEX ne contient que la partie 1 de "En eaux troubles" du CTF DeepThreats, celui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
 
+Partie Précédente : [[A vos marques]]
+Prochain partie : [[Une drôle de fleur]]
 
 ---
 ## Président !
@@ -61,7 +63,7 @@ Son [premier tweet](http://x.com/enzoriesmeyer/status/2060753298030809541) à ce
 ---
 ## Un nouvel allié
 ### Énoncé
->![[CT_EET_UNA_E.png]]
+>![[DT_EET_UNA_E.png]]
 > En un peu plus de 20 ans d'existence, Marinatech Industries s'est développée pour devenir une PME reconnue de la base industrielle et technologique de Défense française. Arrivé il y a 10 ans à la tête de l'entreprise, Marc-Olivier Chasseneuil souhaite augmenter son portefeuille clients sur tous les continents et développer son chiffre d'affaire. Alors en 2026, Marinatech a signé un partenariat pour accélérer son développement à l'international et affiner sa stratégie commerciale.
 >
 >> À quelle date a-t-elle signé ce partenariat ?
@@ -72,11 +74,11 @@ Son [premier tweet](http://x.com/enzoriesmeyer/status/2060753298030809541) à ce
 Généralement, lorsqu'un partenariat se fait entre deux entreprises, leurs acteurs clés aiment bien en faire part sur des réseaux comme Linkedin et en communiquer sur leur site respectif.
 
 Commençons nos recherches par le compte Linkedin du PDG de Marinatech.
-![[CT_EET_UNA_1.png]]
+![[DT_EET_UNA_1.png]]
 Sur ce compte, on peut y trouver [une publication](https://www.linkedin.com/feed/update/urn:li:activity:7465056395772637184/) portant sur un récent partenariat avec l'entreprise "Aquaventis Partners" pour "accélérer" le déploiement à l'internationale de Marinatech.
 Il y a même une photo du PDG de Marinatech posant à côté de Jérôme Osfart, le président d'Aquaventis Partners. Et son compte est même directement taggué dans le poste, ce qui permet de le récupérer au passage.
 
-![[CT_EET_UNA_2.png]]
+![[DT_EET_UNA_2.png]]
 Maintenant que l'on connaît les deux entreprises liées au partenariat, on peut essayer de trouver la date de signature de ce dernier.
 
 Marc-Olivier précise dans son post Linkedin que le partenariat a été signé "récemment" mais ne précise pas la date exacte.
@@ -84,9 +86,9 @@ Marc-Olivier précise dans son post Linkedin que le partenariat a été signé "
 Jérôme Osfart quant à lui ne fait mention d'aucune date. Il va donc falloir se tourner vers le site de Marinatech et chercher sur un site lié à Aquaventis Partners.
 Malheureusement, Marinatech n'en fait pas mention non plus sur son site internet.
 Mais en cherchant "Aquaventis Partners" sur un moteur de recherche, on peut trouver [le site officiel de l'entreprise](https://aquaventis-partners.org). 
-![[CT_EET_UNA_3.png]]
+![[DT_EET_UNA_3.png]]
 Et ce site contient une section "Actualités" qui fait référence à ce partenariat en expliquant qu'il a été réalisé le **==20/05/2026==**. Cette actualité fait aussi mention de l'acquisition de 20% du capital de Marinatech et du fait qu'ils vont notamment collaborer pour le développement des projets de recherches et plus spécifiquement sur les technologies marines émergentes et aux coopérations industrielles internationales.
-![[CT_EET_UNA_4.png]]
+![[DT_EET_UNA_4.png]]
 On peut aussi profiter de l'occasion d'avoir trouvé le site d'Aquaventis pour cartographier ses acteurs clés, à savoir : "le board" de l'[onglet gouvernance](https://aquaventis-partners.org/equipe.html).
 
 
@@ -244,8 +246,12 @@ On vient donc de répondre à une bonne partie des interrogations posées dans l
 On sait désormais qui est le partenaire auquel Marinatech a confié 20 % de son capital : Aquaventis Partners, dont on a pu identifier le président, Jérôme Osfart, ainsi que le reste de la direction. Ce qui n'était qu'un nœud anonyme sur le graphique initial est maintenant une entité à part entière, avec sa propre équipe cartographiée.
 
 On sait aussi qui est à l'origine de la fuite ayant nui à la réputation de Marinatech : Tanguy Bordelier, alias Tang_Bordel, qui a diffusé l'usage non conforme du tributylétain découvert dans la formule développée par Wuan Xijiang. Cette fuite n'était pas spontanée : elle a été rémunérée, et le paiement remonte jusqu'à une entité nommée Institut Lotus, elle-même intéressée de près par le Lantrium, le métal stratégique au cœur des recherches de Marinatech. Ce recoupement laisse penser que l'on tient peut-être le fil conducteur reliant plusieurs des incidents qui touchent Marinatech depuis plusieurs mois.
-<
+
 En parallèle, une piste indépendante s'est ouverte avec la disparition du cousin d'Enzo, dont la dernière localisation connue a pu être identifiée aux Philippines, ainsi qu'une menace reçue par Enzo lui-même, dont l'adresse IP d'origine a été retrouvée.
 
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie : ![[DT_EET.svg]]
+Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie : 
+![[DT_EET.svg]]
+
+Partie Précédente : [[A vos marques]]
+Prochain partie : [[Une drôle de fleur]]

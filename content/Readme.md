@@ -27,6 +27,7 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [ ] Modifier système de couleurs pour éviter les doublons de couleurs dans les compteurs globaux
 - [x] Ajouter période CTF sur Heatmap
 - [x] Check le côté responsive de la partie "Résultats CTF"
+- [ ] Ajouter Bouton "Derniers RESOLVED" à droite de "Derniers RETEX"
 
 **HomePage**
 - [x] Aperçu journal d'activité (via stats : activités, wu, challs, badges)

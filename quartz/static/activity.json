@@ -191,6 +191,19 @@
       "autre": 0
     }
   },
+  "2026-09-20": {
+    "count": 3,
+    "activités": [
+      "Retex — Un visage familier · Une drôle de fleur · DeepThreats",
+      "Retex — The creator · Une drôle de fleur · DeepThreats",
+      "Retex — Jardinier anonyme · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-06-19": {
     "count": 2,
     "activités": [
@@ -360,6 +373,19 @@
     "stats": {
       "resolve": 0,
       "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-09-21": {
+    "count": 3,
+    "activités": [
+      "Retex — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
+      "Retex — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
+      "Retex — A table ! · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
       "autre": 0
     }
   },
@@ -1813,6 +1839,19 @@
       "autre": 0
     }
   },
+  "2026-09-19": {
+    "count": 3,
+    "activités": [
+      "Retex — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
+      "Retex — Tableau de chasse · Une drôle de fleur · DeepThreats",
+      "Retex — La plume et le pouvoir · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
   "2026-08-23": {
     "count": 1,
     "activités": [
@@ -2770,7 +2809,7 @@
   },
   "__totaux__": {
     "resolve": 500,
-    "retex": 237,
+    "retex": 246,
     "autre": 62
   },
   "__assets__": {
