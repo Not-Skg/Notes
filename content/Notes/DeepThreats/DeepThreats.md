@@ -38,6 +38,7 @@ Cette connexion était surveillée via un score de détection : toute action jug
 
 ![[DT_STATS.png]]
 
-Au final, nous terminons 50e sur 455 équipes, soit le top 11 %. Mon principal regret sur ce CTF reste de ne pas avoir pu boucler la trame principale « officiellement », à quelques minutes près. Ce regret mis à part, et en dehors de l'épisode d'intrusion évoqué plus haut, j'ai vraiment apprécié cette expérience et la performance de toute l'équipe.
+Au final, nous terminons 49e sur 489 équipes, soit le top 10 %. Mon principal regret sur ce CTF reste de ne pas avoir pu boucler la trame principale « officiellement », à quelques minutes près. Ce regret mis à part, et en dehors de l'épisode d'intrusion évoqué plus haut, j'ai vraiment apprécié cette expérience et la performance de toute l'équipe.
 
-`[Bientôt - Certificat]`
+Le certificat officiel : 
+![[certificat_2026-09-21.png]]

@@ -117,8 +117,8 @@ const init = async () => {
         {
             name: "DeepThreats",
             date: "Septembre 2026",
-            position: 50,
-            total: 455,
+            position: 49,
+            total: 489,
             solo: false,
             href: "/Notes/DeepThreats/DeepThreats",
             accent: "#ff6b2b",
