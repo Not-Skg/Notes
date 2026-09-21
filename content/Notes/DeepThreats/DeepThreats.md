@@ -14,7 +14,7 @@ description: Mon RETEX sur le CTF DeepThreats
 ***Les différentes parties du CTF :***
  · | · [[A vos marques]]
  · | · [[En eaux troubles 1]]
- · | · `[[Une drôle de fleur]]`
+ · | · [[Une drôle de fleur]]
  · | · `[[What's up doc ?]]`
  · | · `[[Partenaire particulier]]`
  · | · `[[L'ile mystérieuse]]`
