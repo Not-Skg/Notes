@@ -3,6 +3,7 @@ tags:
   - Osint
   - DeepThreats
   - Chall
+  - casebandit
 order: 3
 description: RETEX des challenges de la partie 1 de "En eaux troubles" du CTF DeepThreats
 ---

@@ -3,6 +3,7 @@ tags:
   - Osint
   - DeepThreats
   - Chall
+  - casebandit
 order: 2
 ---
 Prochaine partie : [[En eaux troubles 1]]

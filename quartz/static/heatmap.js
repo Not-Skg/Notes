@@ -49,6 +49,9 @@ const init = async () => {
     const findCtfPeriod = (date) =>
         ctfPeriods.find(p => date >= p.start && date <= p.end);
 
+    const META_KEYS = new Set(["__totaux__", "__badges__", "__assets__", "__ctf_periods__"]);
+    const isMetaKey = (date) => META_KEYS.has(date);
+
     const milestones = {
         "2026-03-11": {
             marker: "S",
@@ -238,7 +241,7 @@ const init = async () => {
     };
 
     const recentActivities = Object.keys(data)
-        .filter(date => date !== "__totaux__" && date !== "__badges__" && date !== "__assets__")
+        .filter(date => !isMetaKey(date))
         .sort((a, b) => new Date(b) - new Date(a))
         .flatMap(date => {
             const day = data[date];
@@ -273,7 +276,7 @@ const init = async () => {
         : `<div class="hm-recent-empty">Aucune activité récente</div>`;
 
     const recentRetex = Object.keys(data)
-        .filter(date => date !== "__totaux__" && date !== "__badges__" && date !== "__assets__")
+        .filter(date => !isMetaKey(date))
         .sort((a, b) => new Date(b) - new Date(a))
         .flatMap(date => {
             const day = data[date];
@@ -306,9 +309,43 @@ const init = async () => {
         `).join("")
         : `<div class="hm-recent-empty">Aucun RETEX récent</div>`;
 
+    const recentResolve = Object.keys(data)
+        .filter(date => !isMetaKey(date))
+        .sort((a, b) => new Date(b) - new Date(a))
+        .flatMap(date => {
+            const day = data[date];
+            if (!day?.activités) return [];
+            return day.activités
+                .filter(activity => extractType(activity) === "Resolve")
+                .map(activity => ({
+                    date,
+                    type: "Resolve",
+                    typeLabel: "RESOLVED",
+                    typeColor: ACTIVITY_COLORS.Resolve,
+                    name: extractName(activity),
+                    platform: extractPlatform(activity),
+                }));
+        })
+        .slice(0, 6);
+
+    const recentResolveHtml = recentResolve.length
+        ? recentResolve.map(item => `
+            <div class="hm-recent-item">
+                <div class="hm-recent-top">
+                    <div class="hm-recent-tags">
+                        <span class="hm-recent-badge" style="background:color-mix(in srgb, ${item.typeColor} 16%, transparent);color:${item.typeColor}">${item.typeLabel}</span>
+                        <span class="hm-recent-platform" style="--dot-color:${item.typeColor}">${item.platform}</span>
+                    </div>
+                    <span class="hm-recent-date">${item.date}</span>
+                </div>
+                <div class="hm-recent-name">${item.name}</div>
+            </div>
+        `).join("")
+        : `<div class="hm-recent-empty">Aucun Resolved récent</div>`;
+
     const platformCounts = { retex: {}, resolve: {} };
     Object.keys(data).forEach(date => {
-        if (date === "__totaux__" || date === "__badges__" || date === "__assets__") return;
+        if (isMetaKey(date)) return;
         const dayData = data[date];
         if (!dayData?.activités) return;
         dayData.activités.forEach(activity => {
@@ -867,7 +904,7 @@ const init = async () => {
     let monthRetex = 0;
 
     Object.keys(data).forEach(date => {
-        if (date === "__totaux__" || date === "__badges__" || date === "__assets__") return;
+        if (isMetaKey(date)) return;
         if (!date.startsWith(currentMonth)) return;
         const day = data[date];
         if (!day?.activités) return;
@@ -1131,10 +1168,10 @@ const init = async () => {
         .hm-ctf-card {
             position: relative;
             display: grid;
-            grid-template-columns: 90px minmax(0, 1.25fr) 180px minmax(220px, 1fr);
-            gap: 1.35rem;
+            grid-template-columns: 84px minmax(0, 1.25fr) 140px minmax(180px, 1fr);
+            gap: 1.1rem;
             align-items: center;
-            padding: 1.35rem 1.45rem;
+            padding: 1.1rem 1.25rem;
             border: 1px solid var(--lightgray);
             border-radius: 16px;
             background: rgba(255, 255, 255, 0.025);
@@ -1206,7 +1243,7 @@ const init = async () => {
 
         .hm-ctf-rank-block {
             border-left: 1px solid var(--lightgray);
-            padding-left: 1.35rem;
+            padding-left: 1.1rem;
         }
 
         .hm-ctf-rank-label,
@@ -1229,7 +1266,7 @@ const init = async () => {
 
         .hm-ctf-progress-block {
             border-left: 1px solid var(--lightgray);
-            padding-left: 1.35rem;
+            padding-left: 1.1rem;
         }
 
         .hm-ctf-progress-top {
@@ -1276,13 +1313,12 @@ const init = async () => {
         }
 
             /* Quand la section CTF devient trop étroite */
-        @container ctf-panel (max-width: 760px) {
+        @container ctf-panel (max-width: 640px) {
             .hm-ctf-card {
-                grid-template-columns: 90px minmax(180px, 1fr);
+                grid-template-columns: 84px minmax(150px, 1fr) minmax(130px, auto);
                 align-items: center;
             }
 
-            .hm-ctf-rank-block,
             .hm-ctf-progress-block {
                 grid-column: 1 / -1;
                 border-left: none;
@@ -1291,9 +1327,14 @@ const init = async () => {
         }
 
             /* Très petite largeur */
-        @container ctf-panel (max-width: 520px) {
+        @container ctf-panel (max-width: 460px) {
             .hm-ctf-card {
                 grid-template-columns: 1fr;
+            }
+
+            .hm-ctf-rank-block {
+                border-left: none;
+                padding-left: 0;
             }
 
             .hm-ctf-logo {
@@ -1381,6 +1422,37 @@ const init = async () => {
             font-size: 1.05rem;
             font-weight: 700;
             margin-bottom: 0.85rem;
+        }
+
+        .hm-recent-toggle {
+            display: inline-flex;
+            gap: 0.4rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .hm-recent-toggle-btn {
+            font: inherit;
+            cursor: pointer;
+            padding: 0.32rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid var(--hm-border);
+            background: transparent;
+            color: var(--hm-muted);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            transition: background .14s ease, color .14s ease, border-color .14s ease;
+        }
+
+        .hm-recent-toggle-btn:hover {
+            color: var(--btn-color, var(--hm-text));
+            border-color: var(--btn-color, var(--hm-accent-soft));
+        }
+
+        .hm-recent-toggle-btn.active {
+            color: var(--btn-color, var(--hm-accent));
+            border-color: var(--btn-color, var(--hm-accent));
+            background: color-mix(in srgb, var(--btn-color, var(--hm-accent)) 14%, transparent);
         }
 
         .hm-recent-list {
@@ -2308,8 +2380,11 @@ const init = async () => {
           </aside>
 
           <aside class="hm-recent-panel">
-            <span class="hm-recent-title">Derniers RETEX</span>
-            <div class="hm-recent-list">
+            <div class="hm-recent-toggle" role="tablist" aria-label="Filtrer les activités récentes">
+              <button type="button" class="hm-recent-toggle-btn active" data-view="retex" style="--btn-color:${ACTIVITY_COLORS.Retex}" role="tab" aria-selected="true">RETEX</button>
+              <button type="button" class="hm-recent-toggle-btn" data-view="resolve" style="--btn-color:${ACTIVITY_COLORS.Resolve}" role="tab" aria-selected="false">Resolved</button>
+            </div>
+            <div class="hm-recent-list" id="hm-recent-toggle-list" data-retex-html="${encodeURIComponent(recentRetexHtml)}" data-resolve-html="${encodeURIComponent(recentResolveHtml)}">
               ${recentRetexHtml}
             </div>
           </aside>
@@ -2450,6 +2525,25 @@ const init = async () => {
                 }
             });
         }
+    }
+
+    const recentToggleList = document.getElementById("hm-recent-toggle-list");
+    if (recentToggleList) {
+        document.querySelectorAll(".hm-recent-toggle-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                if (btn.classList.contains("active")) return;
+
+                document.querySelectorAll(".hm-recent-toggle-btn").forEach(b => {
+                    b.classList.remove("active");
+                    b.setAttribute("aria-selected", "false");
+                });
+                btn.classList.add("active");
+                btn.setAttribute("aria-selected", "true");
+
+                const key = btn.dataset.view === "resolve" ? "resolveHtml" : "retexHtml";
+                recentToggleList.innerHTML = decodeURIComponent(recentToggleList.dataset[key]);
+            });
+        });
     }
 
     document.querySelectorAll(".hm-day").forEach(el => {

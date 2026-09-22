@@ -2117,6 +2117,18 @@
       "autre": 0
     }
   },
+  "2026-09-22": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ responsive \"Journal d'activité\" · Site",
+      "Created — Ajout Boutons \"RETEX\"/\"Resolved\" dernières activités · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-07-21": {
     "count": 3,
     "activités": [
@@ -2810,7 +2822,7 @@
   "__totaux__": {
     "resolve": 500,
     "retex": 246,
-    "autre": 62
+    "autre": 64
   },
   "__assets__": {
     "profils": 6,

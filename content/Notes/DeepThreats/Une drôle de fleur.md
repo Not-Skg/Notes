@@ -3,6 +3,7 @@ tags:
   - Osint
   - DeepThreats
   - Chall
+  - casebandit
 order: 4
 description: RETEX des challenges de la partie "Une drôle de fleur" du CTF DeepThreats
 ---
