@@ -2656,6 +2656,18 @@
       "autre": 0
     }
   },
+  "2026-09-23": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ graphe \"Activité par plateforme\" · Site",
+      "Created — MAJ légende \"Activité par plateforme\" · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
   "2026-07-20": {
     "count": 4,
     "activités": [
@@ -2822,7 +2834,7 @@
   "__totaux__": {
     "resolve": 500,
     "retex": 246,
-    "autre": 64
+    "autre": 66
   },
   "__assets__": {
     "profils": 6,

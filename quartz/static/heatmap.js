@@ -368,10 +368,37 @@ const init = async () => {
     "#fb923c", "#facc15", "#2dd4bf", "#c084fc", "#f87171",
     "#38bdf8", "#a3e635", "#fbbf24", "#e879f9", "#22d3ee"];
 
-    const platformToColor = new Map();
+    // Certains noms de plateforme dans le journal sont des raccourcis du nom
+    // officiel utilisé dans ctf_periods.json (ex: "BleuetV5" pour "Bleuet de
+    // France V5"). Cette table fait le lien pour savoir quels points du
+    // scatter plot représentent un CTF ponctuel (losange) plutôt qu'une
+    // plateforme récurrente.
+    const CTF_PLATFORM_ALIASES = {
+        "BleuetV5": "Bleuet de France V5",
+        "404CTF26": "404 CTF 2026",
+    };
+
+    const ctfPeriodNames = new Set(ctfPeriods.map(p => p.name));
+    const isCtfPlatform = (platform) =>
+        ctfPeriodNames.has(platform) || ctfPeriodNames.has(CTF_PLATFORM_ALIASES[platform]);
+
     const allPlatforms = [...new Set([...allRetexPlatforms.map(p => p[0]), ...allResolvePlatforms.map(p => p[0])])];
-    allPlatforms.forEach((platform, i) => {
-        platformToColor.set(platform, platformColors[i % platformColors.length]);
+
+    // Deux pools de couleurs indépendants (CTF ponctuels / plateformes
+    // classiques) : une couleur peut donc être réutilisée d'une catégorie à
+    // l'autre (le losange fait déjà la distinction), sans jamais se répéter
+    // à l'intérieur d'une même catégorie avant d'avoir dépassé 20 entrées.
+    const platformToColor = new Map();
+    let ctfColorIndex = 0;
+    let classicColorIndex = 0;
+    allPlatforms.forEach((platform) => {
+        if (isCtfPlatform(platform)) {
+            platformToColor.set(platform, platformColors[ctfColorIndex % platformColors.length]);
+            ctfColorIndex += 1;
+        } else {
+            platformToColor.set(platform, platformColors[classicColorIndex % platformColors.length]);
+            classicColorIndex += 1;
+        }
     });
 
     const scatterPoints = allPlatforms.map((platform) => ({
@@ -379,6 +406,7 @@ const init = async () => {
         retex: platformCounts.retex[platform] || 0,
         resolve: platformCounts.resolve[platform] || 0,
         color: platformToColor.get(platform),
+        isCtf: isCtfPlatform(platform),
     }));
 
     const roundUpToNext10 = (value) => {
@@ -615,12 +643,27 @@ const init = async () => {
             labelMarkupByGroup.set(group, `${leader}${text}`);
         });
 
+        const CTF_DIAMOND_SIZE = 7;
+
         const points = circleGroups.map((group) => {
             const { x, y, platforms } = group;
             const labels = labelMarkupByGroup.get(group) ?? "";
+            const isCtf = platforms.some(p => p.isCtf);
+
+            const diamond = isCtf ? `
+                <rect
+                    x="${x - CTF_DIAMOND_SIZE / 2}"
+                    y="${y - CTF_DIAMOND_SIZE / 2}"
+                    width="${CTF_DIAMOND_SIZE}"
+                    height="${CTF_DIAMOND_SIZE}"
+                    transform="rotate(45 ${x} ${y})"
+                    class="hm-scatter-ctf-diamond"
+                    pointer-events="none"
+                ></rect>
+            ` : "";
 
             return `
-                <g>
+                <g class="hm-scatter-point-group" data-platforms="${platforms.map(p => p.platform).join("|")}">
                     <circle
                         cx="${x}"
                         cy="${y}"
@@ -628,9 +671,10 @@ const init = async () => {
                         fill="${platforms[0].color}"
                         class="hm-scatter-point"
                     >
-                        <title>${platforms.map(g => g.platform).join(", ")} (${platforms[0].resolve}, ${platforms[0].retex})</title>
+                        <title>${platforms.map(g => g.platform).join(", ")} (${platforms[0].resolve}, ${platforms[0].retex})${isCtf ? " — CTF" : ""}</title>
                     </circle>
 
+                        ${diamond}
                         ${labels}
                 </g>
             `;
@@ -691,19 +735,67 @@ const init = async () => {
     };
     const renderScatterLegend = () => {
         if (!scatterPoints.length) return "";
+        const ctfCount = scatterPoints.filter(p => p.isCtf).length;
+        const ctfPlatforms = scatterPoints.filter(p => p.isCtf);
+        const classicPlatforms = scatterPoints.filter(p => !p.isCtf);
+
+        const renderLegendItems = (items) => items.map(item => `
+            <div class="hm-scatter-legend-item hm-scatter-legend-clickable" data-platform="${item.platform}" role="button" tabindex="0">
+                <span class="hm-scatter-legend-marker">
+                    <span
+                        class="hm-scatter-legend-dot"
+                        style="background:${item.color}"
+                    ></span>
+                    ${item.isCtf ? `<span class="hm-scatter-legend-diamond"></span>` : ""}
+                </span>
+
+                   <span>${item.platform}</span>
+            </div>
+        `).join("");
 
            return `
-            <div class="hm-scatter-legend">
-                ${scatterPoints.map(item => `
-                    <div class="hm-scatter-legend-item">
-                        <span
-                            class="hm-scatter-legend-dot"
-                            style="background:${item.color}"
-                        ></span>
-
-                           <span>${item.platform}</span>
+            <div class="hm-scatter-legend-wrap">
+                ${ctfCount ? `
+                <div class="hm-scatter-legend-hint-row">
+                    <div class="hm-scatter-legend-item hm-scatter-legend-hint">
+                        <span class="hm-scatter-legend-marker">
+                            <span class="hm-scatter-legend-dot" style="background:var(--hm-muted)"></span>
+                            <span class="hm-scatter-legend-diamond"></span>
+                        </span>
+                        <span>= CTF ponctuel</span>
                     </div>
-                `).join("")}
+                    <div class="hm-scatter-legend-item hm-scatter-legend-hint">
+                        <span class="hm-scatter-legend-marker">
+                            <span class="hm-scatter-legend-dot" style="background:var(--hm-muted)"></span>
+                        </span>
+                        <span>= Plateforme de challenge classique</span>
+                    </div>
+                </div>
+                ` : ""}
+                <details class="hm-scatter-legend">
+                    <summary class="hm-scatter-legend-summary">
+                        <span>Plateformes (${scatterPoints.length})</span>
+                        <span class="hm-scatter-legend-chevron" aria-hidden="true">▾</span>
+                    </summary>
+                    <div class="hm-scatter-legend-items">
+                        ${ctfPlatforms.length ? `
+                        <div class="hm-scatter-legend-group">
+                            <span class="hm-scatter-legend-group-label">CTF ponctuels (${ctfPlatforms.length})</span>
+                            <div class="hm-scatter-legend-group-items">
+                                ${renderLegendItems(ctfPlatforms)}
+                            </div>
+                        </div>
+                        ` : ""}
+                        ${classicPlatforms.length ? `
+                        <div class="hm-scatter-legend-group">
+                            <span class="hm-scatter-legend-group-label">Plateformes classiques (${classicPlatforms.length})</span>
+                            <div class="hm-scatter-legend-group-items">
+                                ${renderLegendItems(classicPlatforms)}
+                            </div>
+                        </div>
+                        ` : ""}
+                    </div>
+                </details>
             </div>
         `;
     };
@@ -1984,6 +2076,32 @@ const init = async () => {
         .hm-scatter-point:hover {
           opacity: 0.92;
         }
+
+        .hm-scatter-point-group {
+          transition: opacity .15s ease;
+        }
+
+        .hm-scatter-point-group.hm-scatter-dimmed {
+          opacity: 0.15;
+        }
+
+        .hm-scatter-legend-clickable {
+          cursor: pointer;
+          padding: 2px 6px;
+          margin: -2px -6px;
+          border-radius: 8px;
+          transition: background .12s ease;
+        }
+
+        .hm-scatter-legend-clickable:hover {
+          background: color-mix(in srgb, var(--hm-accent) 10%, transparent);
+        }
+
+        .hm-scatter-legend-clickable.active {
+          background: color-mix(in srgb, var(--hm-accent) 16%, transparent);
+          color: var(--hm-text);
+          font-weight: 700;
+        }
         
         .hm-scatter-header {
             display: flex;
@@ -2054,14 +2172,73 @@ const init = async () => {
             font-weight: 700;
         }
 
-        .hm-scatter-legend {
+        .hm-scatter-ctf-diamond {
+            fill: var(--light);
+            stroke: var(--hm-border);
+            stroke-width: 1;
+        }
+
+        .hm-scatter-legend-wrap {
+            margin-top: 0.9rem;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--hm-border);
+            border-radius: 12px;
+        }
+
+        .hm-scatter-legend[open] {
+            padding-bottom: 0.2rem;
+        }
+
+        .hm-scatter-legend-summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            cursor: pointer;
+            font-size: 0.86rem;
+            font-weight: 700;
+            list-style: none;
+        }
+
+        .hm-scatter-legend-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .hm-scatter-legend-chevron {
+            color: var(--hm-muted);
+            transition: transform .16s ease;
+        }
+
+        .hm-scatter-legend[open] .hm-scatter-legend-chevron {
+            transform: rotate(180deg);
+        }
+
+        .hm-scatter-legend-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            margin-top: 0.85rem;
+        }
+
+        .hm-scatter-legend-group + .hm-scatter-legend-group {
+            padding-top: 0.65rem;
+            border-top: 1px solid var(--hm-border);
+        }
+
+        .hm-scatter-legend-group-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--hm-muted);
+        }
+
+        .hm-scatter-legend-group-items {
             display: flex;
             flex-wrap: wrap;
             gap: 0.65rem 1rem;
-            margin-top: 0.9rem;
-            padding: 0.9rem 1rem;
-            border: 1px solid var(--hm-border);
-            border-radius: 12px;
         }
 
         .hm-scatter-legend-item {
@@ -2072,11 +2249,51 @@ const init = async () => {
             color: var(--hm-muted);
         }
 
+        .hm-scatter-legend-hint-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem 1.2rem;
+            width: 100%;
+            padding-bottom: 0.65rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid var(--hm-border);
+        }
+
+        .hm-scatter-legend-hint-row .hm-scatter-legend-hint {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .hm-scatter-legend-hint {
+            font-style: italic;
+        }
+
+        .hm-scatter-legend-marker {
+            position: relative;
+            display: inline-flex;
+            width: 10px;
+            height: 10px;
+            flex: 0 0 auto;
+        }
+
         .hm-scatter-legend-dot {
             width: 10px;
             height: 10px;
             border-radius: 999px;
             flex: 0 0 auto;
+        }
+
+        .hm-scatter-legend-diamond {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: var(--light);
+            outline: 1px solid var(--hm-border);
+            outline-offset: -1px;
+            transform: translate(-50%, -50%) rotate(45deg);
+            pointer-events: none;
         }
 
         .hm-scatter-explanations {
@@ -2102,6 +2319,32 @@ const init = async () => {
             color: var(--hm-muted);
             font-size: 0.8rem;
             line-height: 1.4;
+        }
+
+        .hm-scatter-explanation-list {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+            color: var(--hm-muted);
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .hm-scatter-explanation-list li {
+            position: relative;
+            padding-left: 1.1rem;
+            color: var(--hm-muted);
+        }
+
+        .hm-scatter-explanation-list li + li {
+            margin-top: 0.1rem;
+        }
+
+        .hm-scatter-explanation-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0.2rem;
+            color: var(--hm-muted);
         }
 
         @media (max-width: 980px) {
@@ -2473,9 +2716,10 @@ const init = async () => {
 
                                    <div class="hm-scatter-explanation">
                             <strong>Astuce</strong>
-                            <span>
-                                Survole un point pour voir les statistiques.
-                            </span>
+                            <ul class="hm-scatter-explanation-list">
+                                <li>Survole un point pour voir ses statistiques.</li>
+                                <li>Clique une plateforme dans la légende pour l'isoler sur le graphe.</li>
+                            </ul>
                         </div>
 
                     </div>
@@ -2545,6 +2789,33 @@ const init = async () => {
             });
         });
     }
+
+    document.querySelectorAll(".hm-scatter-legend-clickable").forEach(item => {
+        item.addEventListener("click", () => {
+            const platform = item.dataset.platform;
+            const alreadyActive = item.classList.contains("active");
+
+            document.querySelectorAll(".hm-scatter-legend-clickable").forEach(o => o.classList.remove("active"));
+            document.querySelectorAll(".hm-scatter-point-group").forEach(g => g.classList.remove("hm-scatter-dimmed"));
+
+            if (alreadyActive) return;
+
+            item.classList.add("active");
+            document.querySelectorAll(".hm-scatter-point-group").forEach(g => {
+                const platforms = (g.dataset.platforms || "").split("|");
+                if (!platforms.includes(platform)) {
+                    g.classList.add("hm-scatter-dimmed");
+                }
+            });
+        });
+
+        item.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                item.click();
+            }
+        });
+    });
 
     document.querySelectorAll(".hm-day").forEach(el => {
         el.addEventListener("click", () => {

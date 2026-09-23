@@ -19,8 +19,8 @@ L’objectif est double :
 Ci-dessous les améliorations prévues à court/moyen terme :
 
 **Journal d'activité**
-- [ ] Modifier système de couleurs pour éviter les doublons de couleurs dans les compteurs globaux
-- [ ] Modifier le Graph par plateforme pour plus de minimaliste
+- [x] Modifier système de couleurs pour éviter les doublons de couleurs dans les compteurs globaux
+- [x] Modifier le Graph par plateforme pour plus de minimaliste
 - [x] Ajouter Bouton "Derniers RESOLVED" à droite de "Derniers RETEX"
 
 **HomePage**
