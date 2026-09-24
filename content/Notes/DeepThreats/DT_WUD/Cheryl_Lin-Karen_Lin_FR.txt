@@ -1,0 +1,113 @@
+========================================================================
+  Conversation : Cheryl Lin <-> Karen Lin
+  Traduit du chinois (traditionnel) vers le français
+========================================================================
+
+
+---- Date non indiquée (avant le 27 février 2026) ----------------------
+
+[09:00] Karen Lin  : La première semaine est terminée.
+[09:01] Karen Lin  : L'équipe est très sympathique avec moi.
+[09:15] Cheryl Lin : Et Jérôme ?
+[09:20] Karen Lin  : Très professionnel.
+[09:21] Karen Lin  : Il maîtrise très bien son travail.
+[09:30] Cheryl Lin : Tant mieux.
+[09:31] Cheryl Lin : Prends d'abord le temps de comprendre le fonctionnement de l'accélérateur, avant de proposer des ajustements.
+
+---- 27 février 2026 ---------------------------------------------------
+
+[14:00] Karen Lin  : Nous avons reçu huit propositions cette semaine.
+[14:10] Cheryl Lin : Des dossiers qui méritent l'attention ?
+[14:18] Karen Lin  : Quelques-uns sont intéressants. Nous avons déjà commencé à investir dans certains.
+[14:25] Cheryl Lin : C'est toi qui sais le mieux juger, mais d'après ce que Zhou m'a dit, le dossier Marinatech semble très prometteur.
+[14:32] Karen Lin  : D'accord, je m'en occupe.
+
+---- 11 mars 2026 ------------------------------------------------------
+
+[17:00] Karen Lin  : Premier rendez-vous avec Marinatech aujourd'hui.
+[17:10] Cheryl Lin : Ton impression ?
+[17:16] Karen Lin  : L'équipe est très compétente.
+[17:17] Karen Lin  : Une culture d'ingénieurs typique.
+[17:18] Karen Lin  : Mais quasiment aucune orientation vers le développement international.
+[17:26] Cheryl Lin : C'est souvent le cas des PME les plus innovantes.
+
+---- 25 mars 2026 ------------------------------------------------------
+
+[11:00] Karen Lin  : Jérôme pense que Chasseneuil est prêt à ouvrir son capital.
+[11:08] Cheryl Lin : À quelles conditions ?
+[11:15] Karen Lin  : Il souhaite être accompagné pour l'international.
+[11:16] Karen Lin  : Et obtenir un accès à certains marchés.
+[11:24] Cheryl Lin : Cela correspond à l'orientation de notre proposition.
+
+---- 9 avril 2026 ------------------------------------------------------
+
+[15:00] Karen Lin  : J'ai assisté à une présentation technique.
+[15:06] Cheryl Lin : Alors ?
+[15:12] Karen Lin  : Leurs recherches sur les revêtements sont très prometteuses.
+[15:20] Cheryl Lin : Cela confirme l'analyse de Zhou.
+
+---- 12 mai 2026 -------------------------------------------------------
+
+[10:00] Karen Lin  : La procédure d'entrée au capital est terminée.
+[10:06] Cheryl Lin : Comment ont-ils réagi ?
+[10:12] Karen Lin  : Très positivement.
+[10:13] Karen Lin  : Ils voient AquaVentis comme un partenaire de croissance.
+[10:20] Cheryl Lin : C'est précisément ce que nous devons entretenir.
+
+---- 29 mai 2026 -------------------------------------------------------
+
+[16:00] Karen Lin  : L'ambiance a changé.
+[16:05] Cheryl Lin : Pourquoi ?
+[16:10] Karen Lin  : Le directeur technique semble préoccupé.
+[16:16] Cheryl Lin : À quel sujet ?
+[16:22] Karen Lin  : Je n'ai pas encore tous les détails.
+[16:23] Karen Lin  : Mais plusieurs réunions ont déjà été organisées au sujet du doctorant.
+
+---- 7 juin 2026 -------------------------------------------------------
+
+[09:00] Karen Lin  : Jérôme pense que la situation finira par se calmer.
+[09:08] Cheryl Lin : Et toi, qu'en penses-tu ?
+[09:14] Karen Lin  : J'ai l'impression que le directeur technique enquête sur quelque chose.
+[09:22] Cheryl Lin : Contente-toi de continuer à observer.
+
+---- 2 juillet 2026 ----------------------------------------------------
+
+[13:00] Karen Lin  : Les échanges sont devenus beaucoup plus tendus.
+[13:06] Cheryl Lin : Entre qui ?
+[13:12] Karen Lin  : Enzo et Wuan.
+[13:13] Karen Lin  : Ils ne déjeunent plus ensemble.
+
+---- 16 juillet 2026 ---------------------------------------------------
+
+[19:40] Karen Lin  : Les publications sur les réseaux sociaux ont suscité beaucoup d'attention.
+[19:48] Cheryl Lin : Est-ce que ça va affecter AquaVentis ?
+[19:55] Karen Lin  : Pas directement.
+[19:56] Karen Lin  : Mais Marinatech consacre désormais une grande partie de son énergie à gérer cette controverse.
+
+---- 29 juillet 2026 ---------------------------------------------------
+
+[11:00] Karen Lin  : Jérôme m'a demandé si je pensais que la demande de brevet pourrait aboutir avant l'automne.
+[11:10] Cheryl Lin : Qu'as-tu répondu ?
+[11:16] Karen Lin  : Que tout dépendait du calendrier des procédures réglementaires.
+[11:24] Cheryl Lin : Réponse prudente.
+
+---- 14 août 2026 ------------------------------------------------------
+
+[15:00] Karen Lin  : Wuan a l'air épuisé.
+[15:08] Cheryl Lin : Tu lui as parlé ?
+[15:14] Karen Lin  : Quelques minutes.
+[15:15] Karen Lin  : Il semble très préoccupé, mais refuse de dire quoi que ce soit.
+[15:22] Cheryl Lin : Ne le force pas.
+
+---- 2 septembre 2026 --------------------------------------------------
+
+[08:30] Karen Lin  : Je n'ai jamais vu Chasseneuil aussi abattu. L'annonce de la loi sur le Lantrium l'a durement touché. Il a appelé Jérôme pour lui demander comment, avec tous ses contacts au Lianhua, il avait pu ne pas être au courant.
+[08:45] Cheryl Lin : Oui, Jérôme m'a appelée aussi pour me le dire.
+
+---- 8 septembre 2026 --------------------------------------------------
+
+[12:00] Karen Lin  : Blue Current reprend officiellement la participation d'AquaVentis.
+[12:08] Cheryl Lin : Merci.
+[12:09] Cheryl Lin : Ce dossier peut maintenant être archivé et clos.
+[12:16] Karen Lin  : Tu penses que nous retravaillerons avec Marinatech un jour ?
+[12:24] Cheryl Lin : D'une manière ou d'une autre, nos chemins se croiseront sans doute à nouveau.

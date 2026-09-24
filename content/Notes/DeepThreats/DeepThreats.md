@@ -16,7 +16,6 @@ description: Mon RETEX sur le CTF DeepThreats
  · | · [[A vos marques]]
  · | · [[En eaux troubles 1]]
  · | · [[Une drôle de fleur]]
- · | · `[[What's up doc ?]]`
  · | · `[[Partenaire particulier]]`
  · | · `[[L'ile mystérieuse]]`
 

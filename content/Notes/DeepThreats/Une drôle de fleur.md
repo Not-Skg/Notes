@@ -13,7 +13,7 @@ description: RETEX des challenges de la partie "Une drôle de fleur" du CTF Deep
 > ![[DT_EET.svg]]
 
 Partie Précédente : [[En eaux troubles 1]]
-Prochaine partie : `[[Bientôt]]`
+Prochaine partie : [[What's up doc ?]]
 
 ---
 ## Ça c'est de la doctrine ! 
@@ -310,4 +310,4 @@ Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette parti
 ![[DT_UDDF.svg]]
 
 Partie Précédente : [[En eaux troubles 1]]
-Prochaine partie : `[[Bientôt]]`
+Prochaine partie : [[What's up doc ?]]

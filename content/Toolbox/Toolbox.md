@@ -69,6 +69,7 @@
 25. nitter (twitter sans compte)
 26. peakvisor
 27. graffiti-database
+28. [rosint.dev](https://www.rosint.dev) pour analyser un compte reddit (utile quand shadowban)
 
 # Pages cachés
 1. robots.txt
