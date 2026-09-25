@@ -12,7 +12,7 @@ description: RETEX des challenges de la partie 1 de "En eaux troubles" du CTF De
 > Pour rappel, voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
 > ![[DT_AVM.svg]]
 >
-> Aussi, ce RETEX ne contient que la partie 1 de "En eaux troubles" du CTF DeepThreats, celui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
+> Aussi, ce RETEX ne contient que la partie 1 de "En eaux troubles" du CTF DeepThreats, ce qui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
 
 Partie Précédente : [[A vos marques]]
 Prochain partie : [[Une drôle de fleur]]

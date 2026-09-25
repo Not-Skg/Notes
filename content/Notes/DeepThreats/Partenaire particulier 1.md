@@ -11,6 +11,7 @@ description: RETEX des challenges de la partie "Partenaire particulier" du CTF D
 >[!info] Contexte
 > Pour rappel, voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
 > ![[DT_WUD.svg]]
+> Aussi, ce RETEX ne contient que la partie 1 de "Partenaire particulier" du CTF DeepThreats, ce qui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
 
 Partie Précédente : [[What's up doc ?]]
 Prochaine partie : `[[L'ile mystérieuse]]`

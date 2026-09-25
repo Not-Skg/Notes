@@ -13,7 +13,7 @@ draft: true
 > Pour rappel, voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
 > `![[DT_EET2.svg]]`
 >
-> J'ai séparé "En eaux troubles" en deux RETEX distincts : ces deux derniers challenges ne sont faisables qu'après avoir gagné l'accès au VPN, ce qui n'arrive que plus tard dans le CTF.
+> J'ai séparé "Partenaire particulier" en deux RETEX distincts : ces deux derniers challenges ne sont faisables qu'après avoir gagné l'accès au VPN, ce qui n'arrive que plus tard dans le CTF.
 
 Partie Précédente : [[En eaux troubles 2]]
 
