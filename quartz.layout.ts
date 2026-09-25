@@ -8,6 +8,13 @@ import { Options as ExplorerOptions } from "./quartz/components/Explorer"
 // tri alphabétique). Ça permet de choisir un ordre manuel dossier par
 // dossier, sans y toucher pour le reste du site.
 export const explorerSortFn: ExplorerOptions["sortFn"] = (a, b) => {
+    // "À propos" reste toujours tout en bas de l'Explorer, peu importe le
+    // reste du tri (order, alphabétique, dossiers vs fichiers).
+    const aIsAbout = a.slugSegment === "a-propos"
+    const bIsAbout = b.slugSegment === "a-propos"
+    if (aIsAbout && !bIsAbout) return 1
+    if (bIsAbout && !aIsAbout) return -1
+
     const orderA = a.data?.order
     const orderB = b.data?.order
 
@@ -114,6 +121,7 @@ export const defaultContentPageLayout: PageLayout = {
         Component.Graph(),
         Component.DesktopOnly(Component.TableOfContents()),
         Component.Backlinks(),
+        Component.JobSeekingCallout(),
     ],
 }
 

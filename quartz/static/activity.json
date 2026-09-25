@@ -639,6 +639,20 @@
       "autre": 2
     }
   },
+  "2026-09-25": {
+    "count": 4,
+    "activités": [
+      "Created — À propos · Site",
+      "Created — Job-seeking-callout · Site",
+      "Retex — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
+      "Retex — Une belle histoire · Partenaire particulier · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 2
+    }
+  },
   "2026-07-26": {
     "count": 1,
     "activités": [
@@ -2403,6 +2417,18 @@
       "autre": 0
     }
   },
+  "2026-09-26": {
+    "count": 2,
+    "activités": [
+      "Retex — Capital risque · Partenaire particulier · DeepThreats",
+      "Retex — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
   "2026-08-28": {
     "count": 2,
     "activités": [
@@ -2848,8 +2874,8 @@
   },
   "__totaux__": {
     "resolve": 501,
-    "retex": 250,
-    "autre": 66
+    "retex": 254,
+    "autre": 68
   },
   "__assets__": {
     "profils": 6,

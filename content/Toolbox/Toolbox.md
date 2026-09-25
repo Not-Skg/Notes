@@ -2,6 +2,9 @@
 >[!info] 
 >Ici, je vais partager des outils que j'aime utiliser et que je trouve intéressant. 
 
+>[!warning] Page pas encore vraiment à jour
+>Cette page manque encore de mises à jour régulières, certains outils listés ci-dessous restent à documenter.
+
 # CaseBandit
 > Parce qu'on ne peut pas faire d'investigation sans noter proprement ses trouvailles.
 

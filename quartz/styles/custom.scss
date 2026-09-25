@@ -456,3 +456,326 @@ article img {
     grid-template-columns: 1fr;
   }
 }
+
+// Page "À propos" — en-tête avec mascotte, à côté du callout "recherche un poste"
+.about-top {
+  display: flex;
+  align-items: stretch;
+  gap: 1.2rem;
+  margin: 0 0 1.2rem;
+}
+.about-top > .about-header {
+  flex: 1 1 50%;
+  margin: 0;
+}
+.about-top > .callout {
+  flex: 1 1 50%;
+  margin: 0;
+  align-self: center;
+}
+.about-top > .callout .callout-title {
+  padding: 0.82rem 0;
+}
+.about-top > .callout .callout-content p {
+  margin-bottom: 0.7em;
+}
+@media (max-width: 700px) {
+  .about-top {
+    flex-direction: column;
+  }
+}
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0 0 1.2rem;
+}
+.about-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0;
+  border: 2px solid var(--lightgray);
+  cursor: default;
+}
+.about-header-text h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.25rem;
+}
+.about-header-text p {
+  margin: 0 0 0.5rem;
+  color: var(--darkgray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #34d399 14%, transparent);
+  border: 1px solid color-mix(in srgb, #34d399 35%, transparent);
+  color: var(--dark);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .about-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+// Page "À propos" — illustration flottante à côté de "Qui suis-je"
+.about-motto {
+  float: right;
+  width: 220px;
+  max-width: 40%;
+  margin: 0 0 0.8rem 1.2rem;
+}
+.about-illustration {
+  float: left;
+  width: 234px;
+  max-width: 38%;
+  border-radius: 10px;
+  margin: 0.2rem 0.6rem 0.8rem 0;
+}
+@media (max-width: 700px) {
+  .about-motto {
+    float: none;
+    width: 160px;
+    max-width: 60%;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  .about-illustration {
+    float: none;
+    width: 220px;
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+}
+
+// Page "À propos" — trio de faits clés ("Ce que je recherche")
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.about-fact {
+  border: 1px solid var(--lightgray);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.about-fact-icon {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+.about-fact-label {
+  margin: 0 0 0.25rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #34d399;
+  font-weight: 700;
+}
+.about-fact-value {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+@media (max-width: 700px) {
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Page "À propos" — liste à icônes ("Ce que je peux apporter")
+.apporter-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
+  margin: 1.2rem 0;
+}
+.apporter-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0 0 1.1rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+.apporter-item--noborder {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.apporter-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 0.15rem;
+  color: #ff8a3d;
+}
+.apporter-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.apporter-text h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.96rem;
+}
+.apporter-text p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--darkgray);
+}
+@media (max-width: 700px) {
+  .apporter-list {
+    grid-template-columns: 1fr;
+  }
+  .apporter-item {
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  .apporter-item--noborder {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+// Page "À propos" — bouton de contact (variante verte du home-cta)
+.about-cta-wrap {
+  text-align: center;
+  margin: 1.4rem 0 0.5rem;
+}
+.about-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, #34d399 18%, transparent);
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  transition: background-color .14s ease, transform .14s ease;
+}
+.about-cta:hover {
+  background-color: color-mix(in srgb, #34d399 28%, transparent);
+  color: var(--dark);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.about-cta .external-icon {
+  height: 1.6ex !important;
+  margin: 0 0 0 0.25em !important;
+}
+.about-contact-note {
+  text-align: center;
+  color: var(--darkgray);
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+}
+
+// Page "À propos" — carte "Mon expérience"
+.experience-card {
+  border: 1px solid var(--lightgray);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 1rem 0;
+}
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+.experience-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.experience-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: color-mix(in srgb, #ff8a3d 18%, transparent);
+  color: #ff8a3d;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+.experience-title-group h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+}
+.experience-subtitle {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--darkgray);
+}
+.experience-duration {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--darkgray);
+  white-space: nowrap;
+}
+.experience-desc {
+  margin: 0 0 0.7rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--darkgray);
+}
+.experience-list {
+  margin: 0 0 0.8rem;
+  padding-left: 1.2rem;
+}
+.experience-list li {
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--darkgray);
+}
+.experience-list li + li {
+  margin-top: 0.25rem;
+}
+.experience-list li::marker {
+  color: #ff8a3d;
+}
+.experience-note {
+  margin: 0;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--gray);
+  border-top: 1px solid var(--lightgray);
+  padding-top: 0.6rem;
+}
+@media (max-width: 600px) {
+  .experience-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}

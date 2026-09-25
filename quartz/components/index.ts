@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import ImageLightbox from "./ImageLightbox"
 import PlatformProfiles from "./PlatformProfiles"
 import HomeExplorer from "./HomeExplorer"
+import JobSeekingCallout from "./JobSeekingCallout"
 
 export {
     ArticleTitle,
@@ -56,4 +57,5 @@ export {
     ImageLightbox,
     PlatformProfiles,
     HomeExplorer,
+    JobSeekingCallout,
 }

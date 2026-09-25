@@ -12,9 +12,9 @@ title: ChallMaking
 
 # YouArePlayer
 1. [The Other Door](https://youareplayer.com/challenges/CHAL_14) (Part 1 à 2)
-
+2. [Intercepted Message](https://youareplayer.com/challenges/CHAL_23)
 # Sans plateforme (beta-test)
-1. Message Intercepté
+- Bientôt
 
 > [!Info] Discord
 > Avant de proposer mes challenges aux plateformes, je les fais tester sur [mon serveur Discord](https://discord.gg/3duPWeqCbn). 

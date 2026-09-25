@@ -16,9 +16,12 @@ description: Mon RETEX sur le CTF DeepThreats
  · | · [[A vos marques]]
  · | · [[En eaux troubles 1]]
  · | · [[Une drôle de fleur]]
- · | · `[[Partenaire particulier]]`
+ · | · [[What's up doc ?]]
+ · | · [[Partenaire particulier 1]]
  · | · `[[L'ile mystérieuse]]`
-
+ · | · `[[En eaux troubles 2]]`
+ · | · `[[Partenaire particulier 2]]`
+  
 ---
 
 Le CTF _DeepThreats_, organisé par le Campus OSINT de la DGA (Direction générale de l'armement), s'est déroulé du 10 au 13 septembre 2026, de 20h à 20h. Le scénario plongeait les participants dans l'investigation d'une ingérence étrangère menée par un pays fictif, situé en mer de Chine et inspiré de la Corée du Nord, contre une entreprise française stratégique de défense. Le système de score reposait sur des points variables selon la difficulté, un nombre de tentatives limité par challenge (3 à 5) et des indices payants (50 à 150 points) en cas de blocage.
