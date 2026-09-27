@@ -15,7 +15,7 @@ description: RETEX des challenges de la partie 1 de "En eaux troubles" du CTF De
 > Aussi, ce RETEX ne contient que la partie 1 de "En eaux troubles" du CTF DeepThreats, ce qui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
 
 Partie Précédente : [[A vos marques]]
-Prochain partie : [[Une drôle de fleur]]
+Prochaine partie : [[Une drôle de fleur]]
 
 ---
 ## Président !
@@ -39,7 +39,7 @@ Maintenant que l'on a un nom et un visage, nous pouvons chercher sa présence su
 ![[TD_EET_P_3.png]]
 Un [profil Linkedin](https://www.linkedin.com/in/marc-olivier-chasseneuil-1b5a6a3b5/) est rapidement identifié et la photo de profil ainsi que les mentions de Marinatech nous prouvent bien que c'est le compte que l'on cherche.
 ![[TD_EET_P_4.png]]
-Dans la section "Expérience" de son profil Linkedin, on peut y apprendre que Marc-Olivier a d'abord été **==Ingénieur naval==** à Naval Group avant de passer Ingénieur système principal chez Marinatech et enfin PDG.
+Dans la section "Expérience" de son profil Linkedin, on peut y apprendre que Marc-Olivier a d'abord été **==Ingénieur naval==** à Naval Group avant de devenir Ingénieur système principal chez Marinatech et enfin PDG.
 
 ---
 ## Un soupçon de soupçon
@@ -72,12 +72,12 @@ Son [premier tweet](http://x.com/enzoriesmeyer/status/2060753298030809541) à ce
 >_Flag format :  `A quelle date a t-elle signé ce partenariat ?`_
 
 ### RETEX
-Généralement, lorsqu'un partenariat se fait entre deux entreprises, leurs acteurs clés aiment bien en faire part sur des réseaux comme Linkedin et en communiquer sur leur site respectif.
+Généralement, lorsqu'un partenariat se fait entre deux entreprises, leurs acteurs clés aiment bien en faire part sur des réseaux comme Linkedin et en communiquer sur leurs sites respectifs.
 
 Commençons nos recherches par le compte Linkedin du PDG de Marinatech.
 ![[DT_EET_UNA_1.png]]
-Sur ce compte, on peut y trouver [une publication](https://www.linkedin.com/feed/update/urn:li:activity:7465056395772637184/) portant sur un récent partenariat avec l'entreprise "Aquaventis Partners" pour "accélérer" le déploiement à l'internationale de Marinatech.
-Il y a même une photo du PDG de Marinatech posant à côté de Jérôme Osfart, le président d'Aquaventis Partners. Et son compte est même directement taggué dans le poste, ce qui permet de le récupérer au passage.
+Sur ce compte, on peut y trouver [une publication](https://www.linkedin.com/feed/update/urn:li:activity:7465056395772637184/) portant sur un récent partenariat avec l'entreprise "Aquaventis Partners" pour "accélérer" le déploiement à l'international de Marinatech.
+Il y a même une photo du PDG de Marinatech posant à côté de Jérôme Osfart, le président d'Aquaventis Partners. Et son compte est même directement taggué dans le post, ce qui permet de le récupérer au passage.
 
 ![[DT_EET_UNA_2.png]]
 Maintenant que l'on connaît les deux entreprises liées au partenariat, on peut essayer de trouver la date de signature de ce dernier.
@@ -88,7 +88,7 @@ Jérôme Osfart quant à lui ne fait mention d'aucune date. Il va donc falloir s
 Malheureusement, Marinatech n'en fait pas mention non plus sur son site internet.
 Mais en cherchant "Aquaventis Partners" sur un moteur de recherche, on peut trouver [le site officiel de l'entreprise](https://aquaventis-partners.org). 
 ![[DT_EET_UNA_3.png]]
-Et ce site contient une section "Actualités" qui fait référence à ce partenariat en expliquant qu'il a été réalisé le **==20/05/2026==**. Cette actualité fait aussi mention de l'acquisition de 20% du capital de Marinatech et du fait qu'ils vont notamment collaborer pour le développement des projets de recherches et plus spécifiquement sur les technologies marines émergentes et aux coopérations industrielles internationales.
+Et ce site contient une section "Actualités" qui fait référence à ce partenariat en expliquant qu'il a été réalisé le **==20/05/2026==**. Cette actualité fait aussi mention de l'acquisition de 20% du capital de Marinatech et du fait qu'ils vont notamment collaborer au développement de projets de recherche, plus spécifiquement sur les technologies marines émergentes, et à des coopérations industrielles internationales.
 ![[DT_EET_UNA_4.png]]
 On peut aussi profiter de l'occasion d'avoir trouvé le site d'Aquaventis pour cartographier ses acteurs clés, à savoir : "le board" de l'[onglet gouvernance](https://aquaventis-partners.org/equipe.html).
 
@@ -104,7 +104,7 @@ On peut aussi profiter de l'occasion d'avoir trouvé le site d'Aquaventis pour c
 >_Flag format :  `Atlanta Museum of Coca Cola_Etats-Unis`_
 
 ### RETEX
-Via le rapide survol du compte X de Enzo Riesmeyer durant un précédent challenge, nous avions déjà identifié ces postes : 
+Via le rapide survol du compte X d'Enzo Riesmeyer durant un précédent challenge, nous avions déjà identifié ces posts : 
 ![[DT_EET_WCTO_1.png]]
 
 Il y explique que son cousin a disparu et y montre la dernière photo que son cousin lui a envoyée avant de disparaître.
@@ -112,7 +112,7 @@ Il y explique que son cousin a disparu et y montre la dernière photo que son co
 Ici, il y a plusieurs méthodes pour trouver cette localisation.
 Personnellement j'ai remarqué 2 indications visuelles qui vont nous aider : 
 1. Le bâtiment surplombé d'une croix blanche.
-2. Le bâtiment avec un logo bleu blanc et rouge avec une forme de rouage.
+2. Le bâtiment avec un logo bleu, blanc et rouge avec une forme de rouage.
 ![[DT_EET_WCTO_2.png]]
 Via une recherche par image inversée sur le logo, on peut apprendre que c'est le logo du Département des Travaux Publics et des Autoroutes (DPWH) des Philippines.
 ![[DT_EET_WCTO_3.png]]
@@ -122,7 +122,7 @@ Cet article nous précise aussi la ville : Mandaue.
 
 Donc en cherchant : "Mandaue DPWH" sur Google maps, on peut rapidement retrouver le point de vue de la photo du cousin d'Enzo.
 ![[DT_EET_WCTO_4.png]]
-Et d'après Google Maps, le bâtiment sur la gauche est **==Mandaue Assembly of God International==** et il se situe au **==Philippines==**.
+Et d'après Google Maps, le bâtiment sur la gauche est **==Mandaue Assembly of God International==** et il se situe aux **==Philippines==**.
 
 ![[DT_EET_WCTO_5.png]]
 L'autre méthode aurait été de zoomer sur la photo (en l'ouvrant dans un autre onglet) pour lire le panneau bleu à droite du bâtiment qui précisait : Mandaue Assembly of God International puis pivoter sur ce nom pour trouver le pays.
@@ -148,11 +148,11 @@ En procédant ainsi on peut trouver un compte X nommé [Tang_Bordel](https://x.c
 ![[DT_EET_E_1.png]]
 Le [dernier post](https://x.com/Tang_Bordel/status/2077377451382964612) de ce compte cite directement le cas de Marinatech Industries et du tributylétain. C'est donc le bon compte.
 
-Mais il ne contient pas grand chose, et aucune archive n'a été fait sur la waybackmachine et il ne fait partie d'aucune liste X publique.
+Mais il ne contient pas grand-chose, et aucune archive n'a été faite sur la Wayback Machine et il ne fait partie d'aucune liste X publique.
 En continuant nos recherches via ce username, on peut trouver ce [compte mastodon](https://mastodon.social/@tang_bordel) avec le même pseudo et une photo de profil très similaire (sans le masque), on a donc maintenant un deuxième profil et un visage à mettre sur ce pseudo.
 ![[DT_EET_E_2.png]]
 On peut aussi noter une adresse Ethereum dans sa description.
-Et cette fois-ci, le compte a déjà été archivé sur la WayBack Machine.
+Et cette fois-ci, le compte a déjà été archivé sur la Wayback Machine.
 ![[DT_EET_E_3.png]]
 Et sur cette archive, on peut y trouver l'identité "**==Tanguy Bordelier==**", à la place du username "tang_bordel" précédent.
 
@@ -238,7 +238,7 @@ Le Lantrium est un métal stratégique ultra-lourd utilisé dans de nombreuses t
 ### RETEX
 En analysant le fichier Menace-Enzo.eml, on peut trouver pas mal d'informations dans les Headers.
 ![[DT_EET_CI1_1.png]]
-On peut y retrouver l'adresse mail en destination : `e.riesmeyer@marinatech-industries.eu` mais aussi l'adresse IP d'origine : **==47.242.108.213==**
+On peut y retrouver l'adresse mail de destination : `e.riesmeyer@marinatech-industries.eu` mais aussi l'adresse IP d'origine : **==47.242.108.213==**
 
 ---
 ## Synthèse de nos éléments
@@ -251,8 +251,8 @@ On sait aussi qui est à l'origine de la fuite ayant nui à la réputation de Ma
 En parallèle, une piste indépendante s'est ouverte avec la disparition du cousin d'Enzo, dont la dernière localisation connue a pu être identifiée aux Philippines, ainsi qu'une menace reçue par Enzo lui-même, dont l'adresse IP d'origine a été retrouvée.
 
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie : 
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie : 
 ![[DT_EET.svg]]
 
 Partie Précédente : [[A vos marques]]
-Prochain partie : [[Une drôle de fleur]]
+Prochaine partie : [[Une drôle de fleur]]

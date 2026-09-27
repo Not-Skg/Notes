@@ -306,7 +306,7 @@ Sur la question d'une succession d'incidents indépendants ou d'une dynamique pl
 
 Enfin, le séjour de Cheryl Lin au Lianhua, à proximité immédiate de la mairie, des ministères et du siège du gouvernement, laisse penser que cette opération pourrait être commanditée au plus haut niveau, ce qui apporte un nouvel éclairage sur le "que s'est-il passé ?" posé dès le départ de l'enquête.
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie :
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 ![[DT_UDDF.svg]]
 
 Partie Précédente : [[En eaux troubles 1]]

@@ -451,7 +451,7 @@ Sur le "qui poursuit quels intérêts ?", on découvre que même l'arrivée de K
 
 Et sur la dynamique structurée, la préméditation du recrutement de Karen Lin, couplée à la coordination millimétrée entre Zhou, Cheryl, Chen et Liam sur plusieurs mois, confirme qu'on est bien face à une opération construite de longue date, et non une succession d'incidents malheureux.
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie :
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 ![[DT_WUD.svg]]
 
 Partie Précédente : [[Une drôle de fleur]]

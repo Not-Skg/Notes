@@ -18,9 +18,9 @@ description: Mon RETEX sur le CTF DeepThreats
  · | · [[Une drôle de fleur]]
  · | · [[What's up doc ?]]
  · | · [[Partenaire particulier 1]]
- · | · `[[L'ile mystérieuse]]`
- · | · `[[En eaux troubles 2]]`
- · | · `[[Partenaire particulier 2]]`
+ · | · [[L'ile mystérieuse]]
+ · | · `[[En eaux troubles 2]]` (suite au déblocage du vpn)
+ · | · `[[Partenaire particulier 2]]` (suite au déblocage du vpn)
   
 ---
 

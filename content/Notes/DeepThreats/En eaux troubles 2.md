@@ -11,7 +11,7 @@ draft: true
 ---
 >[!info] Contexte
 > Pour rappel, voici le contexte actuel de ce CTF sous forme de graphique Casebandit.
-> `![[DT_LM.svg]]`
+> ![[DT_IM.svg]]
 >
 > J'ai séparé "En eaux troubles" en deux RETEX distincts : ces deux derniers challenges ne sont faisables qu'après avoir gagné l'accès au VPN, ce qui n'arrive que plus tard dans le CTF.
 
@@ -49,7 +49,7 @@ Prochaine partie : `[[Partenaire particulier 2]]`
 ## Synthèse de nos éléments
 
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie :
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 `![[DT_EET2.svg]]`
 
 Partie Précédente : [[L'ile mystérieuse]]

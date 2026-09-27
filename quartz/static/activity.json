@@ -2418,14 +2418,18 @@
     }
   },
   "2026-09-26": {
-    "count": 2,
+    "count": 6,
     "activités": [
       "Retex — Capital risque · Partenaire particulier · DeepThreats",
-      "Retex — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats"
+      "Retex — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats",
+      "Retex — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
+      "Retex — French Touch · L'ile mystérieuse · DeepThreats",
+      "Retex — Connexion établie · L'ile mystérieuse · DeepThreats",
+      "Retex — Un homme occupé · L'ile mystérieuse · DeepThreats"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 2,
+      "retex": 6,
       "autre": 0
     }
   },
@@ -2584,6 +2588,20 @@
     "stats": {
       "resolve": 0,
       "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-27": {
+    "count": 4,
+    "activités": [
+      "Retex — Contrôle total · L'ile mystérieuse · DeepThreats",
+      "Retex — Made in France· L'ile mystérieuse · DeepThreats",
+      "Retex — Non négociable · L'ile mystérieuse · DeepThreats",
+      "Retex — Mon précieux · L'ile mystérieuse · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
       "autre": 0
     }
   },
@@ -2874,7 +2892,7 @@
   },
   "__totaux__": {
     "resolve": 501,
-    "retex": 254,
+    "retex": 262,
     "autre": 68
   },
   "__assets__": {

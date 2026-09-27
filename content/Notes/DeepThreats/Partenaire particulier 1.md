@@ -94,7 +94,7 @@ Et [plusieurs fois](https://lianhuanews-network.info/article/hydronix-marine-lor
 
 ### RETEX
 
-Pour rappel, on sait qu'Aquaventis Partners a cédé ses parts de Marinatech Industries qu'il détenait depuis quelque mois via la conversation entre Cheryl Lin et Jerôme Osfart (président d'Aquaventis Partners) récupérée sur le Black Lotus en .onion.
+Pour rappel, on sait qu'Aquaventis Partners a cédé ses parts de Marinatech Industries qu'il détenait depuis quelques mois via la conversation entre Cheryl Lin et Jerôme Osfart (président d'Aquaventis Partners) récupérée sur le Black Lotus en .onion.
 ![[DT_PP_CR_1.png]]
 Et d'après la conversation, les fonds ont été transférés à une entité nommée Blue Current.
 
@@ -152,7 +152,7 @@ Sur le "qui poursuit quels intérêts ?", la découverte la plus marquante conce
 
 Et sur la question d'une succession d'incidents indépendants ou d'une dynamique plus structurée, cette partie penche clairement pour la seconde hypothèse : Blue Current Europe a appliqué exactement le même schéma de rachat discret sur plusieurs autres sociétés du portefeuille d'Aquaventis, ce qui écarte l'idée d'un cas isolé propre à Marinatech.
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie :
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 ![[DT_PP.svg]]
 Partie Précédente : [[What's up doc ?]]
 Prochaine partie : `[[L'ile mystérieuse]]`

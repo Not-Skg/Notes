@@ -70,7 +70,7 @@ Partie Précédente : [[En eaux troubles 2]]
 ## Synthèse de nos éléments
 
 
-Et voici le graphique CaseBandit qui résumé nos trouvailles durant cette partie :
+Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 `![[DT_PP2.svg]]`
 
 Partie Précédente : [[En eaux troubles 2]]
