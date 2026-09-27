@@ -6,7 +6,6 @@ tags:
   - casebandit
 order: 6
 description: RETEX des challenges de la partie "L'ile mystérieuse" du CTF DeepThreats, qui débloque le VPN.
-draft: true
 ---
 ---
 >[!info] Contexte
