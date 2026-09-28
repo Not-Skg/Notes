@@ -1605,15 +1605,16 @@
     }
   },
   "2026-09-28": {
-    "count": 4,
+    "count": 5,
     "activités": [
       "Retex — Le pacte · Partenaire particulier · DeepThreats",
       "Retex — Poupées russes · Partenaire particulier · DeepThreats",
       "Retex — Courrier indésirable 2/2 · En eaux troubles · DeepThreats",
-      "Retex — Oh la boulette ! · En eaux troubles · DeepThreats"
+      "Retex — Oh la boulette ! · En eaux troubles · DeepThreats",
+      "Resolve — FLIGHT QR23 · OSINT · OSINT Industries"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 1,
       "retex": 4,
       "autre": 0
     }
@@ -2906,7 +2907,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 502,
+    "resolve": 503,
     "retex": 266,
     "autre": 68
   },
