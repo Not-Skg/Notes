@@ -117,7 +117,7 @@ Personnellement j'ai remarqué 2 indications visuelles qui vont nous aider :
 Via une recherche par image inversée sur le logo, on peut apprendre que c'est le logo du Département des Travaux Publics et des Autoroutes (DPWH) des Philippines.
 ![[DT_EET_WCTO_3.png]]
 
-Et en faisant une recherche par image inversée sur la photo complète du Tweet, on peut trouver [cet article](https://www.gmanetwork.com/regionaltv/balitangbisdak/158734/road-markings-sa-as-fortuna-st-gustong-ipabalik-balitang-bisdak/video/)  possédant une vidéo avec une vue sur le même bâtiment que la photo mais avec un angle différent.
+Et en faisant une recherche par image inversée sur la photo complète du Tweet, on peut trouver [cet article](https://www.gmanetwork.com/regionaltv/balitangbisdak/158734/road-markings-sa-as-fortuna-st-gustong-ipabalik-balitang-bisdak/video/) possédant une vidéo avec une vue sur le même bâtiment que la photo mais avec un angle différent.
 Cet article nous précise aussi la ville : Mandaue.
 
 Donc en cherchant : "Mandaue DPWH" sur Google maps, on peut rapidement retrouver le point de vue de la photo du cousin d'Enzo.

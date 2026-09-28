@@ -14,7 +14,7 @@ description: RETEX des challenges de la partie "Partenaire particulier" du CTF D
 > Aussi, ce RETEX ne contient que la partie 1 de "Partenaire particulier" du CTF DeepThreats, ce qui permet de garder une cohérence au niveau de l'histoire, et de ne pas trop en dévoiler sur la suite.
 
 Partie Précédente : [[What's up doc ?]]
-Prochaine partie : `[[L'ile mystérieuse]]`
+Prochaine partie : [[L'ile mystérieuse]]
 
 ---
 ## Un portefeuille bien garni
@@ -155,4 +155,4 @@ Et sur la question d'une succession d'incidents indépendants ou d'une dynamique
 Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie :
 ![[DT_PP.svg]]
 Partie Précédente : [[What's up doc ?]]
-Prochaine partie : `[[L'ile mystérieuse]]`
+Prochaine partie : [[L'ile mystérieuse]]

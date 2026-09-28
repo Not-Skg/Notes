@@ -13,7 +13,7 @@ description: RETEX des challenges de la partie "What's up doc ?" du CTF DeepThre
 > ![[DT_UDDF.svg]]
 
 Partie Précédente : [[Une drôle de fleur]]
-Prochaine partie : `[[Partenaire particulier]]`
+Prochaine partie : [[Partenaire particulier 1]]
 
 ---
 ## Doctor who
@@ -455,4 +455,4 @@ Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie
 ![[DT_WUD.svg]]
 
 Partie Précédente : [[Une drôle de fleur]]
-Prochaine partie : `[[Partenaire particulier]]`
+Prochaine partie : [[Partenaire particulier 1]]

@@ -13,7 +13,7 @@ description: RETEX des challenges de la partie "L'ile mystérieuse" du CTF DeepT
 > ![[DT_PP.svg]]
 
 Partie Précédente : [[Partenaire particulier 1]]
-Prochaine partie : `[[En eaux troubles 2]]`
+Prochaine partie : [[En eaux troubles 2]]
 
 ---
 ## Geoguessr level 1
@@ -205,18 +205,23 @@ Il y est référencé comme étant **==Directeur==** du **==National Innovation 
 
 ### RETEX
 
-Là on va pouvoir utiliser laws.gouv.ln, le problème c'est que malgré la présence d'une barre de recherche, cette dernière ne fonctionne pas très bien, elle ne recherche que via les mots présents dans le titre ou la description des lois, nous avons donc dû parcourir les catégories de lois existantes pour trouver une qui pourrait nous aider.
+L'énoncé mentionne une loi sur les minerais stratégiques votée par le gouvernement du Lianhua : on retourne donc sur laws.gouv.ln, repéré lors du challenge « Connexion établie », pour tenter de la retrouver.
+
+Le problème, c'est que malgré la présence d'une barre de recherche, cette dernière ne fonctionne pas très bien, elle ne recherche que via les mots présents dans le titre ou la description des lois, nous avons donc dû parcourir les catégories de lois existantes pour trouver une qui pourrait nous aider. Le site propose un filtre par domaine juridique.
 ![[DT_IM_CT_1.png]]
-On a donc fait une liste en survolant les noms, puis lu en détail chaque loi de cette liste, en voici un extrait de cette liste :
+On parcourt donc chacun de ces domaines à la recherche d'une loi qui pourrait concerner le Lantrium. On a fait une liste en survolant les noms, puis lu en détail chaque loi de cette liste, en voici un extrait de cette liste :
+
 - Lantrium Research Infrastructure and Safety Act
 - Lantrium Mining Rehabilitation and Environmental Monitoring Act
 - Research Data and Scientific Repositories Act
 - Strategic Minerals and Materials Act of the Republic of Lianhua
 - Advendec Materials Research Coordination Act
 
-Mais celle qui a finalement comporté l'article qui nous intéresse, c'est "Strategic Minerals and Materials Act of the Republic of Lianhua"
+Après avoir feuilleté chacune d'elles, on trouve finalement l'article qui nous intéresse dans une loi classée du côté un peu inattendu du droit de l'énergie : « Strategic Minerals and Materials Act of the Republic of Lianhua ».
 ![[DT_IM_CT_2.png]]
+Cette loi porte la référence **LH-ENE-2026-082**, elle est en vigueur depuis le 1er septembre 2026 et comporte 20 articles répartis en 5 chapitres.
 
+En parcourant le chapitre IV, consacré au contrôle des exportations, on tombe sur l'article qui cite explicitement le Lantrium :
 ![[DT_IM_CT_3.png]]
 ```
 Art. 15 Enhanced Control of Lantrium
@@ -227,6 +232,14 @@ Applications involving Lantrium intended for advanced maritime systems, underwat
   
 The exporter shall take reasonable steps to determine the actual end user and intended use of the material. Where information submitted by the purchaser is incomplete, inconsistent or gives reasonable grounds to suspect diversion, the exporter shall suspend the transaction and seek guidance from the competent authority before proceeding
 ```
+
+En clair, cet article se découpe en trois temps :
+
+- « Exports of [...] Lantrium [...] shall require an individual export authorization unless expressly exempted by regulation » : toute exportation de Lantrium (brut, purifié, sous forme de composés, ou dans des produits industriels qui en contiennent) doit obtenir une autorisation d'exportation au cas par cas. Le Lianhua peut aussi imposer des quotas ou restreindre certaines destinations pour garder le métal chez lui ou éviter qu'il parte vers un acteur non désiré.
+- « Applications involving Lantrium intended for advanced maritime systems, underwater acoustic technologies, military propulsion, signature reduction [...] shall receive enhanced national security review » : si le Lantrium est destiné à des usages maritimes avancés, à des technologies acoustiques sous-marines, à la propulsion militaire ou à la réduction de signature (= rendre un sous-marin plus discret), la demande d'exportation subit un contrôle de sécurité nationale renforcé. C'est exactement le cas de Marinatech : son revêtement à base de Lantrium sert justement à réduire la signature acoustique des sous-marins.
+- « The exporter shall take reasonable steps to determine the actual end user [...] Where information [...] gives reasonable grounds to suspect diversion, the exporter shall suspend the transaction » : celui qui exporte le Lantrium doit vérifier qui va réellement l'utiliser et pourquoi. S'il y a un doute sur le véritable destinataire ou l'usage prévu, il doit stopper la vente et consulter les autorités avant de continuer.
+
+Autrement dit, cet article donne au Lianhua un droit de regard (et de veto) sur toute exportation de Lantrium à usage militaire ou stratégique, ce qui explique directement pourquoi Marinatech se retrouve bloquée : sa technologie de revêtement furtif coche justement toutes les cases qui déclenchent ce contrôle renforcé.
 
 La référence de l'article est la suivante **==LH-ENE-2026-082 - Art. 15==**.
 
@@ -261,11 +274,15 @@ Le brevet est nommé "Lantrium Phononic Damping Composite (LPDC)" et son identif
 
 ### RETEX
 
-En utilisant la même méthode qu'au challenge "Contrôle total", on finit par trouver la loi "**==National Intelligence Act==** of the Republic of Lianhua".
+Contrairement au challenge précédent, la loi qui nous intéresse ici se devine assez bien à partir de l'énoncé, qui parle de « lois sur le renseignement ». On peut donc directement chercher « National Intelligence Act » dans la barre de recherche de laws.gouv.ln, qui fonctionne bien tant qu'on tape des mots présents dans le titre ou la description des lois.
 ![[DT_IM_NN_1.png]]
-La description de cette loi a l'air de coller avec ce qu'on cherche.
+La recherche renvoie 5 résultats, dont un décret d'application et plusieurs articles isolés. Celui qui nous intéresse est le texte principal, le « **==National Intelligence Act==** of the Republic of Lianhua » (référence LH-INT-2020-001), dont la description annonce directement la couleur : « This Act regulates intelligence activities, cooperation duties, overseas obligations of Lianhua citizens and the protection of strategic State interests, including a strict provision on refusal to cooperate in national security matters. ». En clair, une loi sur le renseignement qui prévoit justement une clause stricte sur le refus de coopérer, exactement ce que cherche l'énoncé
+
+On ouvre donc la fiche complète de cette loi.
 ![[DT_IM_NN_2.png]]
-Puis en le lisant attentivement, on finit par trouver "**==Chapter III==** — Duties of Cooperation".
+Elle comporte 12 articles répartis en 4 chapitres, dont un « **==Chapter III== — Duties of Cooperation** » qui semble particulièrement prometteur.
+
+En l'ouvrant, on y trouve bien l'article qui nous intéresse :
 ![[DT_IM_NN_3.png]]
 
 ```
@@ -273,8 +290,12 @@ Art. 9 Refusal to Cooperate and High Treason
 
 Any deliberate and unjustified refusal by a citizen of the Republic of Lianhua to cooperate with lawful requests issued by competent national authorities, where such refusal seriously endangers or is likely to endanger national security, scientific assets, technological assets or strategic interests of the Republic, may constitute an act of High Treason. This provision applies regardless of whether the citizen is located within the territory of the Republic or abroad.
 ```
+En clair voici ce qui nous intéresse dans l'**==article 9==**:
 
-L'**==article 9==** est particulièrement intéressant, il implique qu'un scientifique provenant du Lianhua, peut se voir obligé de partager ses résultats de recherches et brevets avec le Lianhua sous peine d'être considéré comme traître à la nation, même s'il travaillait à l'étranger.
+- « Any deliberate and unjustified refusal [...] to cooperate with lawful requests [...] where such refusal seriously endangers [...] national security, scientific assets, technological assets or strategic interests of the Republic, may constitute an act of High Treason » : tout citoyen du Lianhua qui refuse volontairement et sans justification de coopérer avec une demande légale des autorités peut être considéré coupable de haute trahison, à condition que ce refus mette sérieusement en danger la sécurité nationale ou des intérêts scientifiques, technologiques ou stratégiques du pays.
+- « This provision applies regardless of whether the citizen is located within the territory of the Republic or abroad » : cette règle s'applique même si le citoyen concerné vit et travaille à l'étranger, elle suit donc les citoyens du Lianhua où qu'ils soient dans le monde.
+
+Autrement dit, un ressortissant du Lianhua ne peut pas se réfugier derrière le fait de travailler pour une entreprise étrangère (comme Marinatech) pour refuser de transmettre ses recherches ou ses brevets au Lianhua si les autorités les lui réclament : le risque encouru est d'être considéré comme traître à la nation, où qu'il se trouve dans le monde.
 
 ---
 ## Mon précieux
@@ -335,4 +356,4 @@ Et voici le graphique CaseBandit qui résume nos trouvailles durant cette partie
 ![[DT_IM.svg]]
 
 Partie Précédente : [[Partenaire particulier 1]]
-Prochaine partie : `[[En eaux troubles 2]]`
+Prochaine partie : [[En eaux troubles 2]]

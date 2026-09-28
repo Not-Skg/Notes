@@ -1604,6 +1604,20 @@
       "autre": 0
     }
   },
+  "2026-09-28": {
+    "count": 4,
+    "activités": [
+      "Retex — Le pacte · Partenaire particulier · DeepThreats",
+      "Retex — Poupées russes · Partenaire particulier · DeepThreats",
+      "Retex — Courrier indésirable 2/2 · En eaux troubles · DeepThreats",
+      "Retex — Oh la boulette ! · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
   "2026-08-12": {
     "count": 1,
     "activités": [
@@ -2592,15 +2606,16 @@
     }
   },
   "2026-09-27": {
-    "count": 4,
+    "count": 5,
     "activités": [
       "Retex — Contrôle total · L'ile mystérieuse · DeepThreats",
       "Retex — Made in France· L'ile mystérieuse · DeepThreats",
       "Retex — Non négociable · L'ile mystérieuse · DeepThreats",
-      "Retex — Mon précieux · L'ile mystérieuse · DeepThreats"
+      "Retex — Mon précieux · L'ile mystérieuse · DeepThreats",
+      "Resolve — Emoji Flag · Fun · YouArePlayer"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 1,
       "retex": 4,
       "autre": 0
     }
@@ -2891,8 +2906,8 @@
     }
   },
   "__totaux__": {
-    "resolve": 501,
-    "retex": 262,
+    "resolve": 502,
+    "retex": 266,
     "autre": 68
   },
   "__assets__": {
