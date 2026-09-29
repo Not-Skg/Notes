@@ -2041,6 +2041,19 @@
       "autre": 0
     }
   },
+  "2026-09-29": {
+    "count": 3,
+    "activités": [
+      "Resolve — Desaparicion 1/4 · Osint-FR",
+      "Resolve — THE ICE KEEPS WHAT IT TAKES · OSINT · YouArePlayer",
+      "Resolve — The Grocer's Cipher · Fun · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-04": {
     "count": 7,
     "activités": [
@@ -2907,7 +2920,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 503,
+    "resolve": 506,
     "retex": 266,
     "autre": 68
   },
