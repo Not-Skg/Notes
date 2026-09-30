@@ -338,6 +338,17 @@
       "autre": 0
     }
   },
+  "2026-09-30": {
+    "count": 1,
+    "activités": [
+      "Resolve — The Black Penny Dossier · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-29": {
     "count": 1,
     "activités": [
@@ -2920,7 +2931,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 506,
+    "resolve": 507,
     "retex": 266,
     "autre": 68
   },
