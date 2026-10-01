@@ -579,6 +579,19 @@
       "autre": 3
     }
   },
+  "2026-10-01": {
+    "count": 3,
+    "activités": [
+      "Resolve — Petit Caillou · Oscar Zulu",
+      "Resolve — BLUE ART · Oscar Zulu",
+      "Resolve — La liste · Oscar Zulu"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-03": {
     "count": 3,
     "activités": [
@@ -2938,7 +2951,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 514,
+    "resolve": 517,
     "retex": 266,
     "autre": 68
   },
