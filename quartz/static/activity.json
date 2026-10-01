@@ -580,14 +580,16 @@
     }
   },
   "2026-10-01": {
-    "count": 3,
+    "count": 5,
     "activités": [
+      "Resolve — Petit Boulot · Oscar Zulu",
+      "Resolve — Six petits pieds sous terre · Oscar Zulu",
       "Resolve — Petit Caillou · Oscar Zulu",
       "Resolve — BLUE ART · Oscar Zulu",
       "Resolve — La liste · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -2951,7 +2953,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 517,
+    "resolve": 519,
     "retex": 266,
     "autre": 68
   },
