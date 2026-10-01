@@ -580,8 +580,9 @@
     }
   },
   "2026-10-01": {
-    "count": 9,
+    "count": 10,
     "activités": [
+      "Resolve — Belles Plaques · Oscar Zulu",
       "Resolve — Une dizaine de millénaire · Osintopia",
       "Resolve — Pas de maire, pas de chocolat 2 · Oscar Zulu",
       "Resolve — Pas de maire, pas de chocolat 1 · Oscar Zulu",
@@ -593,7 +594,7 @@
       "Resolve — La liste · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 10,
       "retex": 0,
       "autre": 0
     }
@@ -2957,7 +2958,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 523,
+    "resolve": 524,
     "retex": 266,
     "autre": 68
   },
