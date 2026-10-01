@@ -344,11 +344,11 @@
       "Resolve —  WINDOWS RELEASE · Oscar Zulu",
       "Resolve —  WINDOWS UPGRADE · Oscar Zulu",
       "Resolve —  WINDOWS UPDATE · Oscar Zulu",
-      "Resolve —  Mémoire d'un garage oublié 3/3 · Osint-FR",
-      "Resolve — Chasse à l’homme 2/2 · Osint-FR",
-      "Resolve — Chasse à l’homme 1/2 · Osint-FR",
+      "Resolve —  Mémoire d'un garage oublié 3/3 · Osintopia",
+      "Resolve — Chasse à l’homme 2/2 · Osintopia",
+      "Resolve — Chasse à l’homme 1/2 · Osintopia",
       "Resolve — The Black Penny Dossier · OSINT · YouArePlayer",
-      "Resolve — Le monument 2/3 · Osint-FR"
+      "Resolve — Le monument 2/3 · Osintopia"
     ],
     "stats": {
       "resolve": 8,
@@ -580,8 +580,12 @@
     }
   },
   "2026-10-01": {
-    "count": 5,
+    "count": 9,
     "activités": [
+      "Resolve — Une dizaine de millénaire · Osintopia",
+      "Resolve — Pas de maire, pas de chocolat 2 · Oscar Zulu",
+      "Resolve — Pas de maire, pas de chocolat 1 · Oscar Zulu",
+      "Resolve — Tireur des litres · Oscar Zulu",
       "Resolve — Petit Boulot · Oscar Zulu",
       "Resolve — Six petits pieds sous terre · Oscar Zulu",
       "Resolve — Petit Caillou · Oscar Zulu",
@@ -589,7 +593,7 @@
       "Resolve — La liste · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
@@ -2077,7 +2081,7 @@
   "2026-09-29": {
     "count": 3,
     "activités": [
-      "Resolve — Desaparicion 1/4 · Osint-FR",
+      "Resolve — Desaparicion 1/4 · Osintopia",
       "Resolve — THE ICE KEEPS WHAT IT TAKES · OSINT · YouArePlayer",
       "Resolve — The Grocer's Cipher · Fun · YouArePlayer"
     ],
@@ -2953,7 +2957,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 519,
+    "resolve": 523,
     "retex": 266,
     "autre": 68
   },
