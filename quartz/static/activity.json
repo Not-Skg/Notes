@@ -2412,14 +2412,15 @@
     }
   },
   "2026-10-02": {
-    "count": 3,
+    "count": 4,
     "activités": [
+      "Resolve — Pas de comtesse · Oscar Zulu",
       "Resolve — BLACK SUN · Oscar Zulu",
       "Resolve — Qui a congelé mémé ? 2/7 · Oscar Zulu",
       "Resolve — Qui a congelé mémé ? 1/7 · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
@@ -2971,7 +2972,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 527,
+    "resolve": 528,
     "retex": 266,
     "autre": 68
   },
