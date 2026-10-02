@@ -2412,15 +2412,16 @@
     }
   },
   "2026-10-02": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — Radio Gaga · Oscar Zulu",
       "Resolve — Pas de comtesse · Oscar Zulu",
       "Resolve — BLACK SUN · Oscar Zulu",
       "Resolve — Qui a congelé mémé ? 2/7 · Oscar Zulu",
       "Resolve — Qui a congelé mémé ? 1/7 · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -2972,7 +2973,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 528,
+    "resolve": 529,
     "retex": 266,
     "autre": 68
   },
