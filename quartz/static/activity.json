@@ -2412,8 +2412,33 @@
     }
   },
   "2026-10-02": {
-    "count": 9,
+    "count": 34,
     "activités": [
+      "Resolve — Tous les chemins mènent au BIG · Sur les traces du fonds · Opération Culot",
+      "Resolve — Bis repetitas · Vérifications croisées · Opération Culot",
+      "Resolve — La poule aux œufs de plomb · Sur les traces du fonds · Opération Culot",
+      "Resolve — Hit and Run · Sur les traces du fonds · Opération Culot",
+      "Resolve — À qui profite la mise ? · Sur les traces du fonds · Opération Culot",
+      "Resolve — Anddddd it's gone · Sur les traces du fonds · Opération Culot",
+      "Resolve — Qui perd paie · Sur les traces du fonds · Opération Culot",
+      "Resolve — Cours de rattrapage · Vérifications croisées · Opération Culot",
+      "Resolve — Same Same but Different · Vérifications croisées · Opération Culot",
+      "Resolve — Qui ose gagne · Sur les traces du fonds · Opération Culot",
+      "Resolve — Follow the money · Sur les traces du fonds · Opération Culot",
+      "Resolve — L'autre côté · Sur les traces du fonds · Opération Culot",
+      "Resolve — Derrière la une · Vérifications croisées · Opération Culot",
+      "Resolve — Allons enfants de l'investissement · Vérifications croisées · Opération Culot",
+      "Resolve — La caisse noire · Sur les traces du fonds · Opération Culot",
+      "Resolve — L'artiste · Sur les traces du fonds · Opération Culot",
+      "Resolve — La holding · Sur les traces du fonds · Opération Culot",
+      "Resolve — Dans l'ombre du document · Sur les traces du fonds · Opération Culot",
+      "Resolve — Le diable se cache dans les détails · Sur les traces du fonds · Opération Culot",
+      "Resolve — Le prodome · Vérifications croisées · Opération Culot",
+      "Resolve — Phase Hybride · Avant - Propos · Opération Culot",
+      "Resolve — La force du collectif · Sur les traces du fonds · Opération Culot",
+      "Resolve — Déclare ton équipe · Avant - Propos · Opération Culot",
+      "Resolve — Comment jouer ? · Avant - Propos · Opération Culot",
+      "Resolve — Mot de bienvenue · Avant - Propos · Opération Culot",
       "Resolve — Sacré Hughes 3/3 · Oscar Zulu",
       "Resolve — Sacré Hughes 2/3 · Oscar Zulu",
       "Resolve — Sacré Hughes 1/3 · Oscar Zulu",
@@ -2425,7 +2450,7 @@
       "Resolve — Qui a congelé mémé ? 1/7 · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 34,
       "retex": 0,
       "autre": 0
     }
@@ -2609,6 +2634,18 @@
     "activités": [
       "Resolve — Un rêve au début du brouillard · Integrity · Osint4Fun",
       "Resolve — Dématérialisation · Integrity · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-03": {
+    "count": 2,
+    "activités": [
+      "Resolve — Tous les chemins mènent au BIG · Sur les traces du fonds · Opération Culot",
+      "Resolve — Bis repetitas · Vérifications croisées · Opération Culot"
     ],
     "stats": {
       "resolve": 2,
@@ -2977,7 +3014,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 533,
+    "resolve": 560,
     "retex": 266,
     "autre": 68
   },
