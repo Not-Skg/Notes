@@ -192,8 +192,9 @@
     }
   },
   "2026-10-04": {
-    "count": 5,
+    "count": 6,
     "activités": [
+      "Resolve — The Burglar Cat · FUN · YouArePlayer",
       "Resolve — The Long Baseline IV · MIXED · YouArePlayer",
       "Resolve — The Long Baseline III · MIXED · YouArePlayer",
       "Resolve — The Long Baseline II · MIXED · YouArePlayer",
@@ -201,7 +202,7 @@
       "Resolve — Le monument 3/3 · Osintopia"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
@@ -3029,7 +3030,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 565,
+    "resolve": 566,
     "retex": 266,
     "autre": 68
   },
