@@ -191,6 +191,17 @@
       "autre": 0
     }
   },
+  "2026-10-04": {
+    "count": 1,
+    "activités": [
+      "Resolve — Le monument 3/3 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-07-23": {
     "count": 4,
     "activités": [
@@ -3014,7 +3025,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 560,
+    "resolve": 561,
     "retex": 266,
     "autre": 68
   },
@@ -3023,6 +3034,11 @@
     "badges": 10
   },
   "__ctf_periods__": [
+    {
+      "name": "Opération Culot",
+      "start": "2026-10-02",
+      "end": "2026-10-08"
+    },
     {
       "name": "DeepThreats",
       "start": "2026-09-10",
