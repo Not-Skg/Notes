@@ -411,8 +411,9 @@
     }
   },
   "2026-10-05": {
-    "count": 10,
+    "count": 11,
     "activités": [
+      "Resolve — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2",
       "Resolve — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
       "Resolve — Le chant du retour · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
       "Resolve — Le train arrive · Les femmes dans les armées · Perce le front numérique ! V2",
@@ -425,7 +426,7 @@
       "Resolve — Bienvenue ! · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 11,
       "retex": 0,
       "autre": 0
     }
@@ -3050,7 +3051,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 576,
+    "resolve": 577,
     "retex": 266,
     "autre": 68
   },
@@ -3059,6 +3060,11 @@
     "badges": 10
   },
   "__ctf_periods__": [
+    {
+      "name": "Perce le front numérique ! V2",
+      "start": "2026-10-02",
+      "end": "2026-10-08"
+    },
     {
       "name": "Opération Culot",
       "start": "2026-10-02",
