@@ -410,6 +410,26 @@
       "autre": 1
     }
   },
+  "2026-10-05": {
+    "count": 10,
+    "activités": [
+      "Resolve — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve — Le chant du retour · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve — Le train arrive · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Une grande figure contemporaine · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Promenade historique · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Camouflage · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Bienvenue ! · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 10,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-07-22": {
     "count": 4,
     "activités": [
@@ -3030,7 +3050,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 566,
+    "resolve": 576,
     "retex": 266,
     "autre": 68
   },
