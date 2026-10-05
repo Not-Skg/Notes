@@ -411,8 +411,12 @@
     }
   },
   "2026-10-05": {
-    "count": 12,
+    "count": 16,
     "activités": [
+      "Resolve — Ecrire pour faire vivre leur mémoire · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Hommage à un enfant de la Nation · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
       "Resolve — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
       "Resolve — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2",
       "Resolve — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
@@ -427,7 +431,7 @@
       "Resolve — Bienvenue ! · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 12,
+      "resolve": 16,
       "retex": 0,
       "autre": 0
     }
@@ -3052,7 +3056,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 578,
+    "resolve": 582,
     "retex": 266,
     "autre": 68
   },
