@@ -2253,6 +2253,18 @@
       "autre": 0
     }
   },
+  "2026-10-06": {
+    "count": 2,
+    "activités": [
+      "Resolve — Une dénomination plus technique · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-09-22": {
     "count": 2,
     "activités": [
@@ -3056,7 +3068,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 582,
+    "resolve": 584,
     "retex": 266,
     "autre": 68
   },
