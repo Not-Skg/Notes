@@ -2254,14 +2254,15 @@
     }
   },
   "2026-10-06": {
-    "count": 3,
+    "count": 4,
     "activités": [
+      "Resolve — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
       "Resolve — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2",
       "Resolve — Une dénomination plus technique · Les femmes dans les armées · Perce le front numérique ! V2",
       "Resolve — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
@@ -3069,7 +3070,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 585,
+    "resolve": 586,
     "retex": 266,
     "autre": 68
   },
