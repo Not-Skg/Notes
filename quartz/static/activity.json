@@ -2894,12 +2894,13 @@
     }
   },
   "2026-10-07": {
-    "count": 1,
+    "count": 2,
     "activités": [
+      "Resolve — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
       "Resolve — BENEATH THE MAP · MIXED · YouArePlayer"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -3081,7 +3082,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 587,
+    "resolve": 588,
     "retex": 266,
     "autre": 68
   },
