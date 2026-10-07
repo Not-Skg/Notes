@@ -2893,6 +2893,17 @@
       "autre": 0
     }
   },
+  "2026-10-07": {
+    "count": 1,
+    "activités": [
+      "Resolve — BENEATH THE MAP · MIXED · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-09-23": {
     "count": 3,
     "activités": [
@@ -3070,7 +3081,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 586,
+    "resolve": 587,
     "retex": 266,
     "autre": 68
   },
