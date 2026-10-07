@@ -2894,14 +2894,15 @@
     }
   },
   "2026-10-07": {
-    "count": 3,
+    "count": 4,
     "activités": [
       "Resolve — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
       "Resolve — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
       "Resolve — BENEATH THE MAP · MIXED · YouArePlayer"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
@@ -3083,7 +3084,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 589,
+    "resolve": 590,
     "retex": 266,
     "autre": 68
   },
