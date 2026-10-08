@@ -207,7 +207,7 @@ const init = async () => {
 
     const getCtfProgress = (position, total) => {
         if (!position || !total) return 0;
-        return Math.max(4, Math.min(100, 100 - (position / total) * 100));
+        return Math.max(4, Math.min(100, 100 - getCtfTopPercent(position, total)));
     };
 
     const getCtfTopPercent = (position, total) => {
