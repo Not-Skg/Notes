@@ -1866,7 +1866,7 @@
     }
   },
   "2026-10-08": {
-    "count": 12,
+    "count": 13,
     "activités": [
       "Resolve — Fin de mission · Les secrets de HSOV · Opération Culot",
       "Resolve — Sésame, ouvre-toi ! · Les secrets de HSOV · Opération Culot",
@@ -1879,10 +1879,11 @@
       "Resolve — Les dizygotes · Les secrets de HSOV · Opération Culot",
       "Resolve — Relation épistolaire · Les secrets de HSOV · Opération Culot",
       "Resolve — Rejoindre le bon côté de la Force · Les secrets de HSOV · Opération Culot",
-      "Resolve — Métro, Boulot, Culot ! · Les secrets de HSOV · Opération Culot"
+      "Resolve — Métro, Boulot, Culot ! · Les secrets de HSOV · Opération Culot",
+      "Resolve — Th3 Lin3 · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 12,
+      "resolve": 13,
       "retex": 0,
       "autre": 0
     }
@@ -3106,7 +3107,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 602,
+    "resolve": 603,
     "retex": 266,
     "autre": 68
   },
