@@ -118,6 +118,17 @@ const init = async () => {
 
     const ctfResults = [
         {
+            name: "Opération Culot ",
+            date: "Octobre 2026",
+            position: 10,
+            total: 225,
+            solo: false,
+            href: "",
+            accent: "#ff6b2b",
+            note: "7ᵉ Classement SpeedRun & 8ᵉ Final no fail",
+            logoSrc: "Logo_CTF/L_DT.png"
+        },
+        {
             name: "DeepThreats",
             date: "Septembre 2026",
             position: 49,
