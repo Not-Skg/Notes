@@ -126,7 +126,7 @@ const init = async () => {
             href: "",
             accent: "#ff6b2b",
             note: "7ᵉ Classement SpeedRun & 8ᵉ Final no fail",
-            logoSrc: "Logo_CTF/L_DT.png"
+            logoSrc: "Logo_CTF/L_OPC.png"
         },
         {
             name: "DeepThreats",
