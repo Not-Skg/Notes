@@ -124,8 +124,8 @@ const init = async () => {
             total: 225,
             solo: false,
             href: "",
-            accent: "#ff6b2b",
-            note: "7ᵉ Classement SpeedRun & 8ᵉ Final no fail",
+            accent: "#f5b700",
+            note: "7ᵉ SpeedRun & 8ᵉ Final no fail",
             logoSrc: "Logo_CTF/L_OPC.png"
         },
         {
