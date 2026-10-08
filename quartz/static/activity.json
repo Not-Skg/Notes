@@ -1865,6 +1865,28 @@
       "autre": 0
     }
   },
+  "2026-10-08": {
+    "count": 12,
+    "activités": [
+      "Resolve — Fin de mission · Les secrets de HSOV · Opération Culot",
+      "Resolve — Sésame, ouvre-toi ! · Les secrets de HSOV · Opération Culot",
+      "Resolve — Coup de filet · Les secrets de HSOV · Opération Culot",
+      "Resolve — L'insoumis · Les secrets de HSOV · Opération Culot",
+      "Resolve — Le corbeau · Les secrets de HSOV · Opération Culot",
+      "Resolve — Kalimera · Les secrets de HSOV · Opération Culot",
+      "Resolve — La safe place · Les secrets de HSOV · Opération Culot",
+      "Resolve — Alias · Les secrets de HSOV · Opération Culot",
+      "Resolve — Les dizygotes · Les secrets de HSOV · Opération Culot",
+      "Resolve — Relation épistolaire · Les secrets de HSOV · Opération Culot",
+      "Resolve — Rejoindre le bon côté de la Force · Les secrets de HSOV · Opération Culot",
+      "Resolve — Métro, Boulot, Culot ! · Les secrets de HSOV · Opération Culot"
+    ],
+    "stats": {
+      "resolve": 12,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-14": {
     "count": 3,
     "activités": [
@@ -3084,7 +3106,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 590,
+    "resolve": 602,
     "retex": 266,
     "autre": 68
   },
