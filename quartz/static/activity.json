@@ -2024,6 +2024,17 @@
       "autre": 0
     }
   },
+  "2026-10-09": {
+    "count": 1,
+    "activités": [
+      "Resolve — Arrête ton char ! · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-15": {
     "count": 2,
     "activités": [
@@ -3107,7 +3118,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 603,
+    "resolve": 604,
     "retex": 266,
     "autre": 68
   },
