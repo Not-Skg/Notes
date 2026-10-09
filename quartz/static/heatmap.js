@@ -123,7 +123,7 @@ const init = async () => {
             position: 10,
             total: 225,
             solo: false,
-            href: "",
+            href: "/Notes/Opération-Culot/Opération-Culot",
             accent: "#f5b700",
             note: "7ᵉ SpeedRun & 8ᵉ Final no fail",
             logoSrc: "Logo_CTF/L_OPC.png"
