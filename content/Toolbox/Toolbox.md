@@ -73,6 +73,7 @@
 26. peakvisor
 27. graffiti-database
 28. [rosint.dev](https://www.rosint.dev) pour analyser un compte reddit (utile quand shadowban)
+29. [RNA](https://www.journal-officiel.gouv.fr/pages/associations-recherche/?sort=cronosort&disjunctive.source) pour trouver des infos sur des associations françaises
 
 # Pages cachés
 1. robots.txt
@@ -84,6 +85,7 @@
 7. Passe d'un compte Facebook à compte Facebook Marketplace : (en nav privée) passer de `https://www.facebook.com/profile.php?id=**MONID**` à `https://www.facebook.com/marketplace/profile/**MONID**`
 8. Listes sur twitter
 9. attribut alt sur photos sur réseaux ex (Facebook)
+10. `/server-status` pour Apache et `/nginx_status` pour NGINX
 
 ---
 

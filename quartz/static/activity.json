@@ -192,8 +192,9 @@
     }
   },
   "2026-10-10": {
-    "count": 7,
+    "count": 8,
     "activités": [
+      "Resolve — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
       "Resolve — J'aime la neige, bientôt y'en aura plus. · Oscar Zulu",
       "Resolve — Vol à vue 1/4 · Osintopia",
       "Resolve — La ville oubliée 6/6 · Osintopia",
@@ -203,7 +204,7 @@
       "Created — Opération Culot · Site"
     ],
     "stats": {
-      "resolve": 6,
+      "resolve": 7,
       "retex": 0,
       "autre": 1
     }
@@ -878,6 +879,17 @@
     ],
     "stats": {
       "resolve": 9,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-11": {
+    "count": 1,
+    "activités": [
+      "Resolve —  Wanted · Osintopia"
+    ],
+    "stats": {
+      "resolve": 1,
       "retex": 0,
       "autre": 0
     }
@@ -3135,7 +3147,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 610,
+    "resolve": 612,
     "retex": 266,
     "autre": 69
   },
