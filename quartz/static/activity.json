@@ -884,12 +884,13 @@
     }
   },
   "2026-10-11": {
-    "count": 1,
+    "count": 2,
     "activités": [
-      "Resolve —  Wanted · Osintopia"
+      "Resolve —  Wanted · Osintopia",
+      "Resolve —  Sécurise le défilé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -3147,7 +3148,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 612,
+    "resolve": 613,
     "retex": 266,
     "autre": 69
   },
