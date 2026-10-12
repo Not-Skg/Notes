@@ -2749,6 +2749,17 @@
       "autre": 1
     }
   },
+  "2026-10-12": {
+    "count": 1,
+    "activités": [
+      "Resolve — GUITOUB2 · Ô fil de l'Ôsint · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-01": {
     "count": 2,
     "activités": [
@@ -3148,7 +3159,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 613,
+    "resolve": 614,
     "retex": 266,
     "autre": 69
   },
