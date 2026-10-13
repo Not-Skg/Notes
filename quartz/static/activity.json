@@ -2942,12 +2942,13 @@
     }
   },
   "2026-10-13": {
-    "count": 1,
+    "count": 2,
     "activités": [
+      "Resolve — No Comment · MADAME_IRMA · Osint-FR",
       "Resolve — GEOINT · FLAG4ALL · Osint-FR"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
@@ -3170,7 +3171,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 615,
+    "resolve": 616,
     "retex": 266,
     "autre": 69
   },
