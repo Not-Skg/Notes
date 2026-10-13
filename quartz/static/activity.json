@@ -2941,6 +2941,17 @@
       "autre": 1
     }
   },
+  "2026-10-13": {
+    "count": 1,
+    "activités": [
+      "Resolve — GEOINT · FLAG4ALL · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-11": {
     "count": 1,
     "activités": [
@@ -3159,7 +3170,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 614,
+    "resolve": 615,
     "retex": 266,
     "autre": 69
   },

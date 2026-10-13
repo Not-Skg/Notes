@@ -45,7 +45,7 @@
 > Ou comment "vraiment" faire une recherche Google.
 
 # Sites utiles
-1. Wayback machine
+1. Wayback machine (gharchive.org spécifique à Github et repos supprimé par exemple)
 2. Wigle.net: BSSID / SSSID
 3. Cyberchef
 4. Crackstation
