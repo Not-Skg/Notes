@@ -418,14 +418,16 @@
     }
   },
   "2026-10-14": {
-    "count": 3,
+    "count": 5,
     "activités": [
+      "Resolve —  L'allié oublié · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve —  Mémoire d'un garage oublié 2/3 · Osintopia",
       "Created — Refonte ToolBox · Site",
       "Created — Maj Overpass-Turbo · Site",
       "Created — MAJ Bannière pages · Site"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 2,
       "retex": 0,
       "autre": 3
     }
@@ -3184,7 +3186,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 616,
+    "resolve": 618,
     "retex": 266,
     "autre": 72
   },
