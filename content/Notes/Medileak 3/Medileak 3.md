@@ -5,8 +5,15 @@ tags:
   - Oscar-Zulu
   - CTF
 order: 1
+description: RETEX de ma participation au CTF Medileak 3
 ---
-![[Medileak_3_Illustration.png]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./Medileak3_poster.webp" alt="" class="toolbox-banner-img" width="1200" height="1787" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 43%" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 
 Le CTF **Medileak 3** s’est déroulé du 22 mai 2026 à 20h au 31 mai 2026 à 20h, sous la forme de qualifications progressives construites comme une enquête scénarisée. La progression imposait de résoudre les challenges pour débloquer la suite, avec un système de score qui retirait des points à chaque erreur et en attribuait lorsqu’une partie était terminée.
 

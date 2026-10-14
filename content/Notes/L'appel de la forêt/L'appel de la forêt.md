@@ -5,8 +5,15 @@ tags:
   - TACOSINT
   - CTF
 order: 1
+description: RETEX de ma participation au CTF L'appel de la forêt
 ---
-![[LAF.png]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./LAF.webp" alt="" class="toolbox-banner-img" width="1403" height="910" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 38%" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 
 ***Les différentes parties du CTF :***
  · | · [[Intro]]

@@ -1,91 +1,87 @@
-![[WP.jpg]]
->[!info] 
->Ici, je vais partager des outils que j'aime utiliser et que je trouve intéressant. 
+---
+title: ToolBox
+description: Les outils que j'utilise, classés par situation pour ne rien oublier pendant une analyse.
+---
+<div class="toolbox-banner">
+<img src="./WP.webp" alt="" class="toolbox-banner-img" width="1400" height="560" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+<p class="toolbox-banner-sub">Les outils que j'utilise, classés par situation pour ne rien oublier pendant une analyse.</p>
+</div>
+</div>
 
->[!warning] Page pas encore vraiment à jour
->Cette page manque encore de mises à jour régulières, certains outils listés ci-dessous restent à documenter.
+<div id="tb-headings" hidden>
 
-# CaseBandit
-> Parce qu'on ne peut pas faire d'investigation sans noter proprement ses trouvailles.
+# Guides et cheatsheets
 
-==[Bientôt]==
+# Must have pour un CTF OSINT
 
-# ChainMap
-> Graphe d'investigation automatisé sur blockchain
+# J'ai quelque chose, je fais quoi ?
 
-==[Bientôt]==
+# Annuaire complet
 
-# OverPassTurbo
-> Ou comment géolocaliser comme un pro !
+</div>
 
-[[Overpass-turbo]]
+<div id="toolbox-root"></div>
 
-# BeautifulSoup & Scrapy
-> Ou comment faire du webscrapping basique.
+---
 
-==[Bientôt]==
+<div class="fiches-hero">
+<img src="./Fiches_techniques.webp" alt="" class="fiches-hero-img" />
+<div class="fiches-hero-text">
+<span class="fiches-hero-bar"></span>
 
-# Extension navigateur utiles
-1. EXIF Analyzer (Osint4fun)
-2. Search by Image ou ReveEye
-3. Google Lens
-4. InVID pour check des vidéos
-5. SingleFile pour enregistrer une page web
-6. Web Scraper (des fois plus simple que BeautifulSoup & Scrapy)
+# Fiches techniques
 
-# Outils CLI
-1. gobuster : énumération de page web
-2. wpscan : scan de wordpress
-3. nuclei : scan de vulns
-4. sherlock / enola / maigret
-5. nmap : scan de ports
-6. dig
+Des guides pratiques pour aller plus loin, avec des méthodes, des conseils et des exemples concrets.
 
-# Google Dorks
-> Ou comment "vraiment" faire une recherche Google.
+</div>
+</div>
 
-# Sites utiles
-1. Wayback machine (gharchive.org spécifique à Github et repos supprimé par exemple)
-2. Wigle.net: BSSID / SSSID
-3. Cyberchef
-4. Crackstation
-5. dcode
-6. Aperisolv : EXIF et steg
-7. Rhinomap / Umap : Mieux que google map pour tracer des formes et des angles
-8. app.traveltime : carte isochrones, distance atteignable suivant temps alloué
-9. Geneanet : arbre généalogiques
-10. dotdb : découverte de nom de domaine par mot clé
-11. web-check.xyz
-12. rdap
-13. viewdns.info
-14. Suncalc / shademap : horodatage via les ombres
-15. WhatsMyName : complément de sherlock / enola / maigret
-16. Epieos
-17. Gallica : archives de la BNF
-18. DISARM framework
-19. globalfishingwatch.org
-20. animaltracker.app
-21. birdnet
-22. papers
-23. datagouv
-24. cartoradio
-25. nitter (twitter sans compte)
-26. peakvisor
-27. graffiti-database
-28. [rosint.dev](https://www.rosint.dev) pour analyser un compte reddit (utile quand shadowban)
-29. [RNA](https://www.journal-officiel.gouv.fr/pages/associations-recherche/?sort=cronosort&disjunctive.source) pour trouver des infos sur des associations françaises
+## Pages cachées
 
-# Pages cachés
-1. robots.txt
-2. sitemap.xml
-3. security.txt
-4. ads.txt / app-ads.txt
-5. favicon.ico
-6. `.patch` à l’URL d’un commit GitHub, on peut récupérer sa version raw (brute)
-7. Passe d'un compte Facebook à compte Facebook Marketplace : (en nav privée) passer de `https://www.facebook.com/profile.php?id=**MONID**` à `https://www.facebook.com/marketplace/profile/**MONID**`
-8. Listes sur twitter
-9. attribut alt sur photos sur réseaux ex (Facebook)
-10. `/server-status` pour Apache et `/nginx_status` pour NGINX
+Quelques fichiers à tester à la racine d'un site (`https://exemple.com/...`), et ce qu'ils peuvent révéler.
+
+<div class="pc-group">
+<div class="pc-group-title">Sur n'importe quel site</div>
+<div class="pc-row"><div class="pc-name"><code>robots.txt</code><span class="pc-tag">Chemins cachés</span></div><p class="pc-desc">Indique aux moteurs de recherche les chemins à ne pas explorer. Les lignes <code>Disallow</code> pointent souvent vers des zones que le site préfère garder discrètes (administration, dossiers privés, environnement de test).</p></div>
+<div class="pc-row"><div class="pc-name"><code>sitemap.xml</code><span class="pc-tag">Pages oubliées</span></div><p class="pc-desc">Liste les pages que le site veut voir indexées. On y trouve parfois des pages qu'aucun menu ne mentionne, d'anciennes pages, et des dates de dernière modification.</p></div>
+<div class="pc-row"><div class="pc-name"><code>security.txt</code><span class="pc-tag">Contacts</span></div><p class="pc-desc">Souvent dans <code>/.well-known/security.txt</code>. Donne le contact à joindre pour signaler une faille : adresses mail, parfois des noms, une clé PGP ou la politique de sécurité de l'organisation.</p></div>
+<div class="pc-row"><div class="pc-name"><code>ads.txt / app-ads.txt</code><span class="pc-tag">Liens entre sites</span></div><p class="pc-desc">Liste les régies publicitaires autorisées à vendre les espaces du site ou de l'application, avec un identifiant d'éditeur. Retrouvé sur d'autres sites, cet identifiant permet de les relier au même propriétaire.</p></div>
+<div class="pc-row"><div class="pc-name"><code>favicon.ico</code><span class="pc-tag">Infrastructure</span></div><p class="pc-desc">L'icône du site. Son empreinte (hash) peut être recherchée sur des moteurs comme Shodan pour retrouver d'autres serveurs ou sites qui utilisent la même icône, donc souvent la même infrastructure.</p></div>
+</div>
+<div class="pc-group">
+<div class="pc-group-title">Pages de statut serveur</div>
+<p class="pc-intro">Un serveur, peu importe l'outil derrière (Apache, NGINX, etc.), possède souvent une page de statut qui permet de voir s'il fonctionne bien. Elle est parfois restée accessible au public.</p>
+<div class="pc-row"><div class="pc-name"><code>/server-status</code><span class="pc-tag">Apache</span></div><p class="pc-desc">La page de statut d'Apache.</p></div>
+<div class="pc-row"><div class="pc-name"><code>/nginx_status</code><span class="pc-tag">NGINX</span></div><p class="pc-desc">L'équivalent pour NGINX. Le nom du chemin est configurable, donc il peut varier.</p></div>
+</div>
+
+## GitHub .patch
+
+Ajouter `.patch` à l'URL d'un commit GitHub permet de récupérer sa version brute. En plus des modifications, l'en-tête du fichier contient souvent l'auteur du commit et l'adresse mail qu'il avait configurée.
+
+<div class="fiche-ex">
+<div class="fiche-ex-row"><span class="fiche-ex-label">Avant</span><code>https://github.com/utilisateur/projet/commit/abc123</code></div>
+<div class="fiche-ex-row"><span class="fiche-ex-label">Après</span><code>https://github.com/utilisateur/projet/commit/abc123.patch</code></div>
+</div>
+
+## Facebook vers Marketplace
+
+En navigation privée, on peut passer d'un compte Facebook à son compte Marketplace, en gardant le même identifiant.
+
+<div class="fiche-ex">
+<div class="fiche-ex-row"><span class="fiche-ex-label">Avant</span><code>https://www.facebook.com/profile.php?id=<b>MONID</b></code></div>
+<div class="fiche-ex-row"><span class="fiche-ex-label">Après</span><code>https://www.facebook.com/marketplace/profile/<b>MONID</b></code></div>
+</div>
+
+## Listes Twitter
+
+Les listes dans lesquelles un compte figure, ou qu'il a créées, donnent souvent des indices sur ses centres d'intérêt et son entourage.
+
+## Attribut alt des photos
+
+Sur certains réseaux (Facebook par exemple), l'attribut `alt` des images contient une description automatique de la photo. Elle se lit en inspectant la page.
 
 ---
 

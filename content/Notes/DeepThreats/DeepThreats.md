@@ -8,7 +8,13 @@ order: 1
 description: Mon RETEX sur le CTF DeepThreats
 ---
 
-![[DT.png]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./DT_banner.webp" alt="" class="toolbox-banner-img" width="920" height="383" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 50%" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 
 ***Les différentes parties du CTF :***
  · | · [[A vos marques]]

@@ -1,9 +1,14 @@
 ---
 title: ChallMaking
+description: Les challenges que j'ai créés pour certaines plateformes. Je donnerai les retex lorsque je trouverai le moment opportun.
 ---
-![[WP_CM.png]]
-> [!tip] Info
-> Ici, je vais lister les challs que j'ai créé pour certaines plateformes, et je donnerai les retex lorsque je trouverai le moment opportun.
+<div class="toolbox-banner">
+<img src="./WP_CM.webp" alt="" class="toolbox-banner-img" width="1600" height="639" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+<p class="toolbox-banner-sub">Les challenges que j'ai créés pour certaines plateformes. Je donnerai les retex lorsque je trouverai le moment opportun.</p>
+</div>
+</div>
 
 ---
 # GCC

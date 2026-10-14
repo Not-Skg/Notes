@@ -98,6 +98,7 @@ export default (() => {
           }
         })}
         <script src={`${baseDir}/static/heatmap.js`} defer></script>
+        <script src={`${baseDir}/static/toolbox.js`} defer></script>
       </head>
     )
   }

@@ -31,5 +31,5 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 - [ ] Tuto BeautifulSoup & Scrapy
 
 **Général**
-- [ ] Étoffer la Toolbox
+- [x] Étoffer la Toolbox
 - [ ] Ajout profil : decorated.pro

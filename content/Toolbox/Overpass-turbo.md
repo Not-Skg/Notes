@@ -1,12 +1,47 @@
 ---
+title: Overpass Turbo
 tags:
   - Osint
   - GEOINT
   - Toolbox
   - Cheatsheet
   - overpassturbo
+description: Petit cours / Cheetsheat sur l'utilisation d'Overpass Turbo
 ---
->Outil qui permet d'émettre des requêtes à l'API d'Open Street Map (OSM), et d'en visualiser les résultats sur une carte interactive.
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./Overpass_banner.webp" alt="" class="toolbox-banner-img" width="1600" height="533" style="aspect-ratio:3/1;object-fit:cover" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+<p class="toolbox-banner-sub">Outil qui permet d'émettre des requêtes à l'API d'OpenStreetMap (OSM), et d'en visualiser les résultats sur une carte interactive.</p>
+</div>
+</div>
+
+# Exemple de requête
+
+Vous venez d'emménager à Paris et vous souhaitez organiser une soirée parfaite avec votre copine. Au programme : un bon restaurant, une séance de cinéma et un dernier verre pour terminer la soirée. Mais pas question de traverser tout Paris entre chaque activité !
+
+Votre mission est de trouver des lieux qui respectent tous les critères suivants :
+
+- 🍽️ Un restaurant dans le 10<sup>e</sup> arrondissement de Paris, pour rester à proximité de votre appartement.
+- 🎬 Un cinéma à moins de 100 mètres du restaurant, pour ne pas risquer de manquer le début du film.
+- 🍸 Un bar à moins de 50 mètres du cinéma, pour finir la soirée en beauté.
+
+**Le problème ?** Sur Google Maps, trouver un restaurant, un cinéma et un bar est facile. Mais identifier tous les établissements qui respectent simultanément ces contraintes géographiques devient vite fastidieux.
+
+Heureusement, vous connaissez Overpass Turbo ! Grâce à une seule requête, vous pouvez croiser les données d'OpenStreetMap, appliquer vos critères de distance et visualiser les lieux correspondants sur une carte.
+
+![[Overpass_exemple.webp]]
+
+En quelques secondes, vous avez identifié plusieurs possibilités pour votre soirée, repérées par les numéros sur la carte :
+
+1. [Le Louxor](https://fr.wikipedia.org/wiki/Le%20Louxor), avec bar intégré, ou le Barbès et le Kyushu Japonais non loin
+2. [Le Brady](https://fr.wikipedia.org/wiki/Le_Brady), avec L'Exode et Palais des Rajpout
+3. [L'Archipel](https://fr.wikipedia.org/wiki/L'Archipel), avec La Scala et Le Canard Sauvage
+4. [Le Grand Rex](https://fr.wikipedia.org/wiki/Le%20Grand%20Rex), avec Le 40 et l'Indiana Café (restaurant)
+
+Il ne reste plus qu'à choisir selon vos préférences !
+
+Derrière cette requête, il n'y a que quelques briques à connaître : une zone, un type d'objet, un tag, une sortie. Voyons-les une par une.
 
 # Recherche simple
 

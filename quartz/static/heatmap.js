@@ -116,6 +116,7 @@ const init = async () => {
         }
     ];
 
+
     const ctfResults = [
         {
             name: "Opération Culot ",
@@ -1261,6 +1262,73 @@ const init = async () => {
             font-size: 0.86rem;
             font-weight: 700;
             white-space: nowrap;
+        }
+
+        .hm-featured {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            border: 1px solid #1f5c52;
+            border-radius: 16px;
+            background: #07100f;
+            min-height: 190px;
+        }
+        .hm-featured-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 62%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 55%;
+            margin: 0;
+            border-radius: 0;
+            cursor: default;
+            pointer-events: none;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+            mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+        }
+        .hm-featured-text {
+            position: relative;
+            z-index: 1;
+            max-width: 58%;
+            padding: 1.5rem 1.7rem;
+        }
+        .hm-featured-badge {
+            display: inline-block;
+            padding: 0.2rem 0.75rem;
+            border-radius: 999px;
+            background: #12382f;
+            color: #5dcaa5;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .hm-featured-name {
+            margin: 0.7rem 0 0.2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #f5f2ee;
+        }
+        .hm-featured-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .hm-featured-meta {
+            font-size: 0.82rem;
+            color: #9fb5ae;
+        }
+        .hm-featured-desc {
+            margin: 0.8rem 0 0;
+            font-size: 0.86rem;
+            line-height: 1.6;
+            color: #b9c8c2;
+        }
+        @media (max-width: 700px) {
+            .hm-featured-text { max-width: 100%; }
+            .hm-featured-img { width: 100%; opacity: 0.35; }
         }
 
         .hm-ctf-list {
@@ -2508,6 +2576,16 @@ const init = async () => {
                 <span class="hm-ctf-count">${ctfResults.length} CTF récent${ctfResults.length > 1 ? "s" : ""}</span>
             </div>
 
+            ${featuredCtf ? `
+            <article class="hm-featured">
+                <img class="hm-featured-img" src="./${featuredCtf.imgSrc}" alt="" width="1000" height="808">
+                <div class="hm-featured-text">
+                    <span class="hm-featured-badge">${featuredCtf.badge}</span>
+                    <div class="hm-featured-name">${featuredCtf.href ? `<a href="${featuredCtf.href}">${featuredCtf.name}</a>` : featuredCtf.name}</div>
+                    <div class="hm-featured-meta">${featuredCtf.date} · ${featuredCtf.solo ? "Solo" : "Équipe"}</div>
+                    ${featuredCtf.desc ? `<p class="hm-featured-desc">${featuredCtf.desc}</p>` : ""}
+                </div>
+            </article>` : ""}
                <div class="hm-ctf-list">
                 ${ctfResults.map(item => {
             const rankColor = getCtfRankColor(item.position, item.total);

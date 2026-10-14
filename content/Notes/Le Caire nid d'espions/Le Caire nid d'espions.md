@@ -4,9 +4,16 @@ tags:
   - LeCaire
   - CTF
 order: 1
+description: RETEX de ma participation au CTF Le Caire nid d'espions
 ---
 
-![[LeCaire.jpeg]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./LeCaire.webp" alt="" class="toolbox-banner-img" width="1280" height="848" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 72%" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 
 ***Les différentes parties du CTF :***
  · | · [[Visiorbis — Les origines]]

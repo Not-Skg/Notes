@@ -4,8 +4,15 @@ tags:
   - BleuetV5
   - CTF
 order: 1
+description: RETEX de ma participation au CTF Bleuet de France V5
 ---
-![[BleuetV5.png]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./BleuetV5.webp" alt="" class="toolbox-banner-img" width="1600" height="900" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 17%" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 Le CTF Bleuet de France V5 s'est déroulé du 8 mai 2026 au 15 mai 2026, entièrement en ligne, dans un format jouable en solo ou en équipe jusqu'à quatre membres. J'y ai participé seul, et j'ai pu terminer l'ensemble des challenges le 11 mai 2026 à 18:46.
 ![[BLEUETV5_EKIP.png|500]]
 

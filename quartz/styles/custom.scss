@@ -457,6 +457,373 @@ article img {
   }
 }
 
+// Page Toolbox — bannière du haut : illustration en fond, titre de la page et
+// ligne "Last Update" déplacés dedans (par toolbox.js), fil d'Ariane laissé au-dessus.
+.toolbox-banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 340px;
+  margin: 0.5rem 0 2.6rem;
+  border-radius: 16px;
+  background: #0b0b0d;
+  color: #f5f2ee;
+  color-scheme: dark;
+  isolation: isolate;
+}
+.toolbox-banner .toolbox-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: right center;
+  cursor: default;
+  pointer-events: none;
+}
+.toolbox-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(11, 11, 13, 0.94) 0%, rgba(11, 11, 13, 0.82) 38%, rgba(11, 11, 13, 0) 68%);
+}
+.toolbox-banner-text {
+  position: relative;
+  z-index: 2;
+  max-width: 56%;
+  padding: 2rem 2.4rem;
+}
+.toolbox-banner-text .article-title {
+  margin: 0 0 0.7rem;
+  font-size: 3.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: #f5f2ee;
+}
+.toolbox-banner-text .toolbox-banner-sub {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b9b2ab;
+}
+.toolbox-banner-text .content-meta {
+  margin: 0.9rem 0 0;
+  font-size: 0.78rem;
+  color: #8f8883;
+}
+.toolbox-banner-text .content-meta,
+.toolbox-banner-text .content-meta span,
+.toolbox-banner-text .article-title a {
+  color: #8f8883 !important;
+}
+.toolbox-banner-text .article-title {
+  color: #f5f2ee !important;
+}
+@media (max-width: 700px) {
+  .toolbox-banner {
+    min-height: 260px;
+  }
+  .toolbox-banner::before {
+    background: linear-gradient(to right, rgba(11, 11, 13, 0.92) 0%, rgba(11, 11, 13, 0.7) 100%);
+  }
+  .toolbox-banner-text {
+    max-width: 100%;
+    padding: 1.6rem 1.4rem;
+  }
+  .toolbox-banner-text .article-title {
+    font-size: 2.4rem;
+  }
+}
+
+// Variante "empilée" : l'illustration contient déjà le logo SKG, on place donc
+// le titre sous l'image, dans le même bloc sombre, avec un fondu entre les deux.
+.toolbox-banner--stack {
+  display: block;
+  min-height: 0;
+}
+.toolbox-banner--stack .toolbox-banner-img {
+  position: static;
+  display: block;
+  height: auto;
+  aspect-ratio: 1600 / 639;
+  -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
+}
+.toolbox-banner--stack::before {
+  display: none;
+}
+.toolbox-banner--stack .toolbox-banner-text {
+  max-width: 100%;
+  margin-top: -3.2rem;
+  padding: 0 2.4rem 1.8rem;
+}
+@media (max-width: 700px) {
+  .toolbox-banner--stack .toolbox-banner-text {
+    margin-top: -1.6rem;
+    padding: 0 1.4rem 1.4rem;
+  }
+}
+
+// Mode clair : le bas de l'image se fond directement dans le fond de la page
+// (pas de bloc sombre), le texte est en sombre en dessous.
+:root[saved-theme="light"] .toolbox-banner--stack {
+  background: transparent;
+}
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-img {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-text {
+  margin-top: -7rem;
+  padding: 3.8rem 2.4rem 1.2rem;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--light) 0%, transparent) 0%, var(--light) 4.4rem);
+}
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-text .article-title {
+  color: var(--dark) !important;
+}
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-sub {
+  color: var(--darkgray);
+}
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-text .content-meta,
+:root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-text .content-meta span {
+  color: var(--gray) !important;
+}
+@media (max-width: 700px) {
+  :root[saved-theme="light"] .toolbox-banner--stack .toolbox-banner-text {
+    margin-top: -4rem;
+    padding: 2.4rem 1.4rem 1rem;
+    background: linear-gradient(to bottom, color-mix(in srgb, var(--light) 0%, transparent) 0%, var(--light) 2.8rem);
+  }
+}
+
+// Variante "à plat" : l'image est déjà un bandeau complet (titre intégré),
+// on la montre telle quelle et le titre se place juste en dessous.
+:root .toolbox-banner--stack.toolbox-banner--flat .toolbox-banner-img {
+  aspect-ratio: auto;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+:root .toolbox-banner--stack.toolbox-banner--flat .toolbox-banner-text {
+  margin-top: 0;
+  padding: 1.4rem 2.4rem 1.6rem;
+  background: none;
+}
+:root[saved-theme="light"] .toolbox-banner--stack.toolbox-banner--flat .toolbox-banner-img {
+  border-radius: 16px;
+}
+:root[saved-theme="light"] .toolbox-banner--stack.toolbox-banner--flat .toolbox-banner-text {
+  padding: 1.4rem 0.2rem 0;
+}
+
+// Variante jaune (Opération Culot) : le bloc prend le jaune de l'image, l'image
+// s'y fond par le bas et le texte est en sombre, en mode clair comme sombre.
+:root .toolbox-banner--stack.toolbox-banner--yellow {
+  background: #ffc700;
+  overflow: hidden;
+}
+:root .toolbox-banner--stack.toolbox-banner--yellow .toolbox-banner-img {
+  border-radius: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+}
+:root .toolbox-banner--stack.toolbox-banner--yellow .toolbox-banner-text {
+  margin-top: -2.4rem;
+  padding: 0 2.4rem 1.8rem;
+  background: none;
+}
+:root .toolbox-banner--stack.toolbox-banner--yellow .fiches-hero-bar {
+  background: #0b0b0d;
+}
+:root .toolbox-banner--stack.toolbox-banner--yellow .toolbox-banner-text .article-title {
+  color: #0b0b0d !important;
+}
+:root .toolbox-banner--stack.toolbox-banner--yellow .toolbox-banner-text .content-meta,
+:root .toolbox-banner--stack.toolbox-banner--yellow .toolbox-banner-text .content-meta span {
+  color: rgba(11, 11, 13, 0.6) !important;
+}
+
+// Page Toolbox : section "Pages cachées" en lignes aérées, sans cartes.
+.pc-group {
+  margin: 2rem 0 2.4rem;
+}
+.pc-group-title {
+  margin-bottom: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.pc-intro {
+  margin: 0.4rem 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--darkgray);
+}
+.pc-row {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 0.4rem 2rem;
+  align-items: start;
+  padding: 1.3rem 0;
+  border-top: 1px solid var(--lightgray);
+}
+.pc-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+.pc-name code {
+  font-size: 0.92rem;
+}
+.pc-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.12rem 0.65rem;
+  border-radius: 999px;
+  color: var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 12%, transparent);
+}
+.pc-desc {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--darkgray);
+}
+@media (max-width: 700px) {
+  .pc-row {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    padding: 1.1rem 0;
+  }
+  .pc-name {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+}
+
+// Page Toolbox : encadré "avant / après" des fiches techniques.
+.fiche-ex {
+  margin: 1.4rem 0 2.4rem;
+  padding: 0.4rem 1.4rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+}
+.fiche-ex-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 0;
+}
+.fiche-ex-row + .fiche-ex-row {
+  border-top: 1px solid var(--lightgray);
+}
+.fiche-ex-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.fiche-ex code {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+.fiche-ex code b {
+  color: var(--secondary);
+}
+@media (max-width: 700px) {
+  .fiche-ex-row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+}
+
+// Page Toolbox — bandeau "Fiches techniques" : titre à gauche, illustration à
+// droite fondue dans le fond du bandeau (même noir que l'image, donc aucun
+// rectangle visible). Le bandeau reste sombre en mode clair comme en sombre.
+.fiches-hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  margin: 0 0 2rem;
+  border-radius: 16px;
+  background: #0b0b0d;
+}
+.fiches-hero .fiches-hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  cursor: default;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+}
+.fiches-hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 52%;
+  padding: 2rem 2.4rem;
+}
+.fiches-hero-bar {
+  display: block;
+  width: 36px;
+  height: 3px;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  background: #ff8a3d;
+}
+.fiches-hero-text h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  color: #f5f2ee;
+}
+.fiches-hero-text h1 a[role="anchor"] {
+  display: none;
+}
+.fiches-hero-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b9b2ab;
+}
+@media (max-width: 700px) {
+  .fiches-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+  }
+  .fiches-hero-text {
+    max-width: 100%;
+    padding: 1.6rem 1.5rem 0.5rem;
+  }
+  .fiches-hero .fiches-hero-img {
+    position: static;
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 30%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 30%);
+  }
+}
+
 // Page "À propos" — en-tête avec mascotte, à côté du callout "recherche un poste"
 .about-top {
   display: flex;

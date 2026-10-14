@@ -7,7 +7,13 @@ tags:
   - BPI
 description: Ressenti, participation et résultat à ma participation au CTF Opération Culot
 ---
-![[WPP.png]]
+<div class="toolbox-banner toolbox-banner--stack toolbox-banner--yellow">
+<img src="./OP_Culot_banner.webp" alt="" class="toolbox-banner-img" width="1600" height="666" style="" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+</div>
+</div>
+
 
 L'**Opération Culot** (*CTF OSINT BIG2026*) a débuté le 2 octobre 2026 à 20h00, et s'est terminé par une phase hybride en présentiel le 8 octobre 2026 à Paris (Accor Arena). Le scénario plongeait les participants dans l'investigation d'une escroquerie crypto : un faux fonds d'investissement et son jeton maison, montés en système de Ponzi par son fondateur, avant sa fuite et le détournement des fonds. Le dispositif se jouait en deux temps : une première phase d'enquête 100 % en ligne, puis une seconde phase hybride venant conclure l'histoire sur place.
 

@@ -1,9 +1,13 @@
 ---
 title: Homepage
 ---
-![[ban1.png]]
-> Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même des outils que j'utilise.
-> Le thème principal, ça sera l'OSINT, mais aussi potentiellement d'autres challenges qui m'intéressent.
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./ban1.webp" alt="" class="toolbox-banner-img" width="1600" height="639" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+<p class="toolbox-banner-sub">Ici, je vais partager un peu mon expérience, que ça soit pour des challs simples, des CTF, ou même des outils que j'utilise.<br>Le thème principal, ça sera l'OSINT, mais aussi potentiellement d'autres challenges qui m'intéressent.</p>
+</div>
+</div>
 
 ---
 # ▸ Mon activité en bref

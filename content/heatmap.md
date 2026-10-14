@@ -2,7 +2,14 @@
 title: Journal d'activité
 description: Vue d'ensemble de ma progression
 ---
-![[WP_HM.png]]
+<div class="toolbox-banner toolbox-banner--stack">
+<img src="./WP_HM.webp" alt="" class="toolbox-banner-img" width="1600" height="639" />
+<div class="toolbox-banner-text" id="toolbox-banner-text">
+<span class="fiches-hero-bar"></span>
+<p class="toolbox-banner-sub">Ma progression, mes CTF, mes plateformes et mes badges au même endroit.</p>
+</div>
+</div>
+
 ## Vue d'ensemble de ma progression
 
 <div id="site-stats-root"></div>
