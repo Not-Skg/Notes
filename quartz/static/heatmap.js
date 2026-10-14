@@ -117,6 +117,12 @@ const init = async () => {
     ];
 
 
+    // Participation mise en avant au-dessus de la liste. Mets null pour la masquer.
+    // Pour la réactiver, remplace null par :
+    // { name: "Trace Labs Search Party", date: "Octobre 2026", solo: false,
+    //   badge: "Enquête réelle · Personnes disparues", desc: "", imgSrc: "Logo_CTF/TL_banner.webp", href: "" }
+    const featuredCtf = null;
+
     const ctfResults = [
         {
             name: "Opération Culot ",
