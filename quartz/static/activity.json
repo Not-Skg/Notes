@@ -641,6 +641,18 @@
       "autre": 0
     }
   },
+  "2026-10-15": {
+    "count": 2,
+    "activités": [
+      "Resolve — Desaparicion 3/4 · Osintopia",
+      "Resolve — Desaparicion 2/4 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-23": {
     "count": 3,
     "activités": [
@@ -3186,7 +3198,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 618,
+    "resolve": 620,
     "retex": 266,
     "autre": 72
   },
