@@ -2530,6 +2530,18 @@
       "autre": 0
     }
   },
+  "2026-10-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Opération Galaxy · Osintopia",
+      "Resolve — Nice Garden · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-14": {
     "count": 6,
     "activités": [
@@ -3199,7 +3211,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 621,
+    "resolve": 623,
     "retex": 266,
     "autre": 72
   },
