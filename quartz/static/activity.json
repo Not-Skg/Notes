@@ -2531,15 +2531,16 @@
     }
   },
   "2026-10-16": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — Vol à vue 3/4 · Osintopia",
       "Resolve — Vol à vue 2/4 · Osintopia",
       "Resolve — Another brick on the wall · Osintopia",
       "Resolve — Opération Galaxy · Osintopia",
       "Resolve — Nice Garden · OSINT · YouArePlayer"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -3213,7 +3214,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 625,
+    "resolve": 626,
     "retex": 266,
     "autre": 72
   },
