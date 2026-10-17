@@ -3186,6 +3186,17 @@
       "autre": 0
     }
   },
+  "2026-10-17": {
+    "count": 1,
+    "activités": [
+      "Resolve — Vol à vue 4/4 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-15": {
     "count": 6,
     "activités": [
@@ -3214,7 +3225,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 626,
+    "resolve": 627,
     "retex": 266,
     "autre": 72
   },
