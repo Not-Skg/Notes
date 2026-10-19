@@ -2118,6 +2118,19 @@
       "autre": 0
     }
   },
+  "2026-10-19": {
+    "count": 3,
+    "activités": [
+      "Resolve — Galaxie · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Echo · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Mirage · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-30": {
     "count": 5,
     "activités": [
@@ -3239,7 +3252,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 631,
+    "resolve": 634,
     "retex": 266,
     "autre": 72
   },
