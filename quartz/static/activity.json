@@ -2119,15 +2119,16 @@
     }
   },
   "2026-10-19": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — Fork Fossile · CHALLENGE ADHERENTS · Osint-FR",
       "Resolve — Cheminée · Château · Osint-FR",
       "Resolve — Galaxie · Novice / Pas à Pas · Osint-FR",
       "Resolve — Echo · Novice / Pas à Pas · Osint-FR",
       "Resolve — Mirage · Novice / Pas à Pas · Osint-FR"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -3253,7 +3254,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 635,
+    "resolve": 636,
     "retex": 266,
     "autre": 72
   },
