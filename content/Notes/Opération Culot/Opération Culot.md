@@ -53,3 +53,4 @@ Voici, en un coup d'œil, l'ensemble des ramifications que notre enquête a perm
 ![[OP_Culot_Phase-2.png]]
 
 Je mettrai ici les badges et le certificat de participation dès que nous les aurons reçus.
+![[certificat_ID-ACW77GW.png]]

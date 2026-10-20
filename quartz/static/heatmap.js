@@ -65,6 +65,11 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/98420593-f8c5-4d97-a183-6b732a725424.png",
+            href: "https://badgify.eu/api/v1/ob2/assertions/98420593-f8c5-4d97-a183-6b732a725424",
+            alt: "Opération Culot 2026 – Participant",
+        },
+        {
             src: "Badges/badge-a284b2b9eaf3b6ff.png",
             href: "https://www.badgeforge.eu/verify/a284b2b9eaf3b6ff1ed870c61f5d2b065eaee724f7726165099a599e88b2fae8",
             alt: "CTF Tacosint - L'appel de la forêt - Badge finisher",
@@ -128,7 +133,7 @@ const init = async () => {
             name: "Opération Culot ",
             date: "Octobre 2026",
             position: 10,
-            total: 225,
+            total: 315,
             solo: false,
             href: "/Notes/Opération-Culot/Opération-Culot",
             accent: "#f5b700",
