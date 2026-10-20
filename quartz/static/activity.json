@@ -443,6 +443,19 @@
       "autre": 1
     }
   },
+  "2026-10-20": {
+    "count": 3,
+    "activités": [
+      "Resolve — Boston · CHALLENGE ADHERENTS · Osint-FR",
+      "Resolve — Welcome · CHALLENGE ADHERENTS · Osint-FR",
+      "Created — Perce le Front Numérique V2 · Site"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-10-05": {
     "count": 16,
     "activités": [
@@ -3254,9 +3267,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 636,
+    "resolve": 638,
     "retex": 266,
-    "autre": 72
+    "autre": 73
   },
   "__assets__": {
     "profils": 6,
