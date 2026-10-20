@@ -444,14 +444,15 @@
     }
   },
   "2026-10-20": {
-    "count": 3,
+    "count": 4,
     "activités": [
+      "Resolve — GEORGETTE · FLAG4ALL · Osint-FR",
       "Resolve — Boston · CHALLENGE ADHERENTS · Osint-FR",
       "Resolve — Welcome · CHALLENGE ADHERENTS · Osint-FR",
       "Created — Perce le Front Numérique V2 · Site"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 3,
       "retex": 0,
       "autre": 1
     }
@@ -3267,7 +3268,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 638,
+    "resolve": 639,
     "retex": 266,
     "autre": 73
   },
