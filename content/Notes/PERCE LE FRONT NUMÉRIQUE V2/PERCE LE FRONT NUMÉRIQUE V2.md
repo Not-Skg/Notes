@@ -18,7 +18,7 @@ Le CTF **Perce le front numérique !**, deuxième édition, s'est déroulé du 5
 
 Le thème de cette édition retrace les évolutions de l'armée de Terre de 1914 à aujourd'hui, autour du renseignement, de la mémoire et de l'histoire militaire. Le CTF est structuré en une Learning Track, puis quatre tracks thématiques : Les monuments militaires français, La Section camouflage, Les femmes dans les armées, et un Track Bonus consacré au 14 Juillet. Contrairement à un CTF narratif classique, chaque track rassemble des challenges indépendants les uns des autres, sans fil conducteur ni suite réelle entre eux, et tous étaient accessibles dès le lancement.
 
-Nous avons participé à trois sous la bannière DGSI (Direction Générale des Suppositions Improbables), avec Z3r0D4y_Gh05t et K@k@r0tt0 (K@k@r07), la même équipe qu'avec [[Opération Culot]].
+Nous avons participé à trois sous la bannière DGSI (Direction Générale des Suppositions Improbables), avec Z3r0D4y_Gh05t et K@k@r0tt0 (K@k@r07), la même équipe qu'avec Opération Culot.
 
 ![[PLFNV2_EKIP.png|500]]
 

@@ -683,6 +683,18 @@
       "autre": 3
     }
   },
+  "2026-10-21": {
+    "count": 2,
+    "activités": [
+      "Resolve — TAPERDU · CHALLENGE ADHERENTS · Osint-FR",
+      "Resolve — CRASH · CHALLENGE ADHERENTS · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-10-01": {
     "count": 10,
     "activités": [
@@ -3270,7 +3282,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 641,
+    "resolve": 643,
     "retex": 266,
     "autre": 73
   },
