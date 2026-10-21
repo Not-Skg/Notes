@@ -195,6 +195,40 @@ article img {
   border-radius: 10px;
   flex-shrink: 0;
 }
+.platform-logo-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--secondary) 14%, transparent);
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.platform-rank {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+  padding-left: 0.6rem;
+}
+.platform-rank span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--gray);
+}
+.platform-rank b {
+  font-size: 1.15rem;
+  line-height: 1.1;
+  color: #fd8235;
+  white-space: nowrap;
+}
+.platform-nolink {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
 .platform-card h3 {
   margin: 0;
   font-size: 1rem;
