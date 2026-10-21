@@ -33,7 +33,7 @@ PlatformProfiles.afterDOMLoaded = `
           description: "Des cours vraiment sympas.<br> J’ai commencé à apprendre l’OSINT dessus.",
           url: "https://isfred.fr/users/349",
           logo: "./Logo/isfred.png",
-          rank: "15ᵉ",
+          rank: "13ᵉ",
         },
         {
           name: "TryHackMe",
