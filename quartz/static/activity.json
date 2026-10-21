@@ -684,8 +684,11 @@
     }
   },
   "2026-10-21": {
-    "count": 5,
+    "count": 8,
     "activités": [
+      "Resolve — L’accident · RECON · IsFred",
+      "Resolve — Objet perdu · RECON · IsFred",
+      "Resolve — Famous Fred · SOCINT · IsFred",
       "Resolve — Artiste en herbe · SOCINT · IsFred",
       "Created — MAJ \"Mes Plateformes\" · Site",
       "Resolve — Surveillance lointaine · GEOINT · IsFred",
@@ -693,7 +696,7 @@
       "Resolve — CRASH · CHALLENGE ADHERENTS · Osint-FR"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 7,
       "retex": 0,
       "autre": 1
     }
@@ -3285,7 +3288,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 645,
+    "resolve": 648,
     "retex": 266,
     "autre": 74
   },
