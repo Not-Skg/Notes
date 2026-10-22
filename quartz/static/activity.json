@@ -2624,13 +2624,14 @@
     }
   },
   "2026-10-22": {
-    "count": 2,
+    "count": 3,
     "activités": [
+      "Resolve — FAKE GOFUNDME · OSINT · OSINT Industries",
       "Resolve — TRIAL OF THE CENTURY · OSINT · YouArePlayer",
       "Resolve — THIRSTY · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 3,
       "retex": 0,
       "autre": 0
     }
@@ -3300,7 +3301,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 650,
+    "resolve": 651,
     "retex": 266,
     "autre": 74
   },
