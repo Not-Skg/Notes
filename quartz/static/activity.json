@@ -2624,15 +2624,17 @@
     }
   },
   "2026-10-22": {
-    "count": 4,
+    "count": 6,
     "activités": [
+      "Resolve — Une école prestigieuse · Caneléa · Osint4Fun",
+      "Resolve — Acceptation · Caneléa · Osint4Fun",
       "Resolve — Autel · Osintopia",
       "Resolve — FAKE GOFUNDME · OSINT · OSINT Industries",
       "Resolve — TRIAL OF THE CENTURY · OSINT · YouArePlayer",
       "Resolve — THIRSTY · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
@@ -3302,7 +3304,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 652,
+    "resolve": 654,
     "retex": 266,
     "autre": 74
   },
