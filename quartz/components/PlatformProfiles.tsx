@@ -49,7 +49,7 @@ PlatformProfiles.afterDOMLoaded = `
         description: "Ma plateforme favorite pour l’OSINT.<br>Elle a connu une refonte, et les centaines d’anciens challenges ne sont plus pris en compte.",
         url: "https://challenges.osintopia.fr/users/111",
         logo: "Logo/osintopia.png",
-        rank: "11ᵉ",
+        rank: "10ᵉ",
       },
         {
         name: "YouArePlayer",
