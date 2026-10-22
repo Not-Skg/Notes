@@ -2623,6 +2623,18 @@
       "autre": 0
     }
   },
+  "2026-10-22": {
+    "count": 2,
+    "activités": [
+      "Resolve — TRIAL OF THE CENTURY · OSINT · YouArePlayer",
+      "Resolve — THIRSTY · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-20": {
     "count": 3,
     "activités": [
@@ -3288,7 +3300,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 648,
+    "resolve": 650,
     "retex": 266,
     "autre": 74
   },
