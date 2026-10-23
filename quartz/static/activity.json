@@ -3292,6 +3292,21 @@
       "autre": 0
     }
   },
+  "2026-10-23": {
+    "count": 5,
+    "activités": [
+      "Resolve — MURDER ATTEMPT · EUROPOL · OSINT Industries",
+      "Resolve — Criminal Partners · OSINT · OSINT Industries",
+      "Resolve — THE CHINESE SPY · OSINT · OSINT Industries",
+      "Created —Completion of Participant Orientation · Tracelabs",
+      "Resolve — Pourquoi tant de N ? · Caneléa · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "2026-03-21": {
     "count": 1,
     "activités": [
@@ -3304,9 +3319,9 @@
     }
   },
   "__totaux__": {
-    "resolve": 654,
+    "resolve": 658,
     "retex": 266,
-    "autre": 74
+    "autre": 75
   },
   "__assets__": {
     "profils": 8,
