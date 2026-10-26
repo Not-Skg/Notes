@@ -2889,8 +2889,11 @@
     }
   },
   "2026-10-26": {
-    "count": 14,
+    "count": 17,
     "activités": [
+      "Resolve — La rafle 3 · Oscar Zulu",
+      "Resolve — La rafle 2 · Oscar Zulu",
+      "Resolve — La rafle 1 · Oscar Zulu",
       "Resolve — A TABLE HORTENSE ! · Oscar Zulu",
       "Resolve — Avec modération · Oscar Zulu",
       "Resolve — La concurrence · Caneléa · Osint4Fun",
@@ -2907,7 +2910,7 @@
       "Retex — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 6,
       "retex": 11,
       "autre": 0
     }
@@ -3383,7 +3386,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 663,
+    "resolve": 666,
     "retex": 293,
     "autre": 77
   },
