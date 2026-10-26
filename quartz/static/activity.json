@@ -2889,8 +2889,9 @@
     }
   },
   "2026-10-26": {
-    "count": 13,
+    "count": 14,
     "activités": [
+      "Resolve — A TABLE HORTENSE ! · Oscar Zulu",
       "Resolve — Avec modération · Oscar Zulu",
       "Resolve — La concurrence · Caneléa · Osint4Fun",
       "Retex — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
@@ -2906,7 +2907,7 @@
       "Retex — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 3,
       "retex": 11,
       "autre": 0
     }
@@ -3382,7 +3383,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 662,
+    "resolve": 663,
     "retex": 293,
     "autre": 77
   },
