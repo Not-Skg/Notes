@@ -65,6 +65,11 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/TL_PO-2026.png",
+            href: "https://factory.cancred.ca/obv3/credentials/79e7c0bc1f1e03c39703f952120c33772c975339",
+            alt: "OSINT Search Party Participant Orientation - 2026",
+        },
+        {
             src: "Badges/98420593-f8c5-4d97-a183-6b732a725424.png",
             href: "https://badgify.eu/api/v1/ob2/assertions/98420593-f8c5-4d97-a183-6b732a725424",
             alt: "Opération Culot 2026 – Participant",
@@ -122,13 +127,22 @@ const init = async () => {
     ];
 
 
-    // Participation mise en avant au-dessus de la liste. Mets null pour la masquer.
-    // Pour la réactiver, remplace null par :
-    // { name: "Trace Labs Search Party", date: "Octobre 2026", solo: false,
-    //   badge: "Enquête réelle · Personnes disparues", desc: "", imgSrc: "Logo_CTF/TL_banner.webp", href: "" }
-    const featuredCtf = null;
-
+    // Résultats CTF : l'ordre ci-dessous est l'ordre d'affichage (du plus récent au
+    // plus ancien, à toi de ranger). Une entrée avec "special: true" s'affiche en
+    // grande carte (ex : Trace Labs, enquête réelle) à sa place dans la liste :
+    //   { special: true, name, date, solo, badge, desc, imgSrc, href }
     const ctfResults = [
+        {
+            special: true,
+            name: "Trace Labs Search Party",
+            date: "Octobre 2026",
+            solo: false,
+            badge: "Enquête réelle · Personnes disparues",
+            desc: "Participation à une enquête OSINT sur des cas réels de personnes disparues.<br> Objectif : recueillir et documenter des informations publiques susceptibles d'aider les autorités dans leurs recherches.",
+            note: "L'objectif : contribuer, pas se classer.",
+            imgSrc: "Logo_CTF/TL_banner.webp",
+            href: ""
+        },
         {
             name: "Opération Culot ",
             date: "Octobre 2026",
@@ -1278,7 +1292,7 @@ const init = async () => {
         .hm-featured {
             position: relative;
             overflow: hidden;
-            margin-bottom: 1rem;
+            margin: 0;
             border: 1px solid #1f5c52;
             border-radius: 16px;
             background: #07100f;
@@ -1330,6 +1344,15 @@ const init = async () => {
         .hm-featured-meta {
             font-size: 0.82rem;
             color: #9fb5ae;
+        }
+        .hm-featured-note {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            margin-top: 0.9rem;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: #5dcaa5;
         }
         .hm-featured-desc {
             margin: 0.8rem 0 0;
@@ -2584,21 +2607,24 @@ const init = async () => {
                         <span class="hm-ctf-subtitle">Aperçu de mes performances sur les CTF récents.</span>
                     </div>
                 </div>
-                <span class="hm-ctf-count">${ctfResults.length} CTF récent${ctfResults.length > 1 ? "s" : ""}</span>
+                <span class="hm-ctf-count">${ctfResults.filter(c => !c.special).length} CTF${ctfResults.some(c => c.special) ? ` · ${ctfResults.filter(c => c.special).length} Search Part${ctfResults.filter(c => c.special).length > 1 ? "ies" : "y"}` : ""}</span>
             </div>
 
-            ${featuredCtf ? `
-            <article class="hm-featured">
-                <img class="hm-featured-img" src="./${featuredCtf.imgSrc}" alt="" width="1000" height="808">
-                <div class="hm-featured-text">
-                    <span class="hm-featured-badge">${featuredCtf.badge}</span>
-                    <div class="hm-featured-name">${featuredCtf.href ? `<a href="${featuredCtf.href}">${featuredCtf.name}</a>` : featuredCtf.name}</div>
-                    <div class="hm-featured-meta">${featuredCtf.date} · ${featuredCtf.solo ? "Solo" : "Équipe"}</div>
-                    ${featuredCtf.desc ? `<p class="hm-featured-desc">${featuredCtf.desc}</p>` : ""}
-                </div>
-            </article>` : ""}
                <div class="hm-ctf-list">
                 ${ctfResults.map(item => {
+            if (item.special) {
+                return `
+                    <article class="hm-featured">
+                        <img class="hm-featured-img" src="./${item.imgSrc}" alt="" width="1000" height="808">
+                        <div class="hm-featured-text">
+                            <span class="hm-featured-badge">${item.badge}</span>
+                            <div class="hm-featured-name">${item.href ? `<a href="${item.href}">${item.name}</a>` : item.name}</div>
+                            <div class="hm-featured-meta">${item.date} · ${item.solo ? "Solo" : "Équipe"}</div>
+                            ${item.desc ? `<p class="hm-featured-desc">${item.desc}</p>` : ""}
+                            ${item.note ? `<div class="hm-featured-note"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"/></svg>${item.note}</div>` : ""}
+                        </div>
+                    </article>`;
+            }
             const rankColor = getCtfRankColor(item.position, item.total);
             const accent = item.accent || rankColor;
             const progress = getCtfProgress(item.position, item.total);

@@ -33,11 +33,11 @@ Malgré tout ça, nous avons réussi à boucler l'intégralité des challenges, 
 Je suis donc un peu déçu par la rigueur de l'organisation, m'attendant à quelque chose d'aussi léché que le Bleuet de France, mais ça m'a quand même fait découvrir des sources que je ne connaissais pas et fait réviser mes méthodes de recherche d'archives.
 
 ***Les différentes parties du CTF :***
- · | · `[[Learning Track]]`
- · | · `[[Les monuments militaires français]]`
- · | · `[[La Section camouflage]]`
- · | · `[[Les femmes dans les armées]]`
- · | · `[[Track Bonus - Le 14 Juillet]]`
+ · | · [[Learning Track]]
+ · | · [[Les monuments militaires français]]
+ · | · [[La Section camouflage]]
+ · | · [[Les femmes dans les armées]]
+ · | · [[Track Bonus - Le 14 Juillet]]
 
 > [!info] RETEX à venir
 > Le CTF n'étant pas encore terminé pour tout le monde, les RETEX détaillés par track seront publiés une fois le délai clos pour l'ensemble des participants.

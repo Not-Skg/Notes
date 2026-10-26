@@ -191,6 +191,28 @@
       "autre": 0
     }
   },
+  "2026-10-24": {
+    "count": 12,
+    "activités": [
+      "Resolve — GRINCHSTEIN · Osintopia",
+      "Created — Participation TraceLabs Search Party · Site",
+      "Retex — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Promenade historique · Learning Track · Perce le front numérique ! V2",
+      "Retex — Camouflage · Learning Track · Perce le front numérique ! V2",
+      "Retex — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
+      "Retex — Bienvenue ! · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 10,
+      "autre": 1
+    }
+  },
   "2026-10-10": {
     "count": 8,
     "activités": [
@@ -924,6 +946,24 @@
       "resolve": 21,
       "retex": 0,
       "autre": 0
+    }
+  },
+  "2026-10-25": {
+    "count": 8,
+    "activités": [
+      "Resolve — Livraison Internationale · RECON · IsFred",
+      "Created — Retex Premier Trace Labs Search Party · Site",
+      "Retex — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 6,
+      "autre": 1
     }
   },
   "2026-03-13": {
@@ -2848,6 +2888,27 @@
       "autre": 0
     }
   },
+  "2026-10-26": {
+    "count": 11,
+    "activités": [
+      "Retex — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Retex —  Sécurise le défilé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Retex — Arrête ton char ! · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Retex —  L'allié oublié · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Retex — Le chant du retour · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Retex — Hommage à un enfant de la Nation · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Retex — Une grande figure contemporaine · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Retex — Une dénomination plus technique · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Retex — Ecrire pour faire vivre leur mémoire · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Retex — Le train arrive · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Retex — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 11,
+      "autre": 0
+    }
+  },
   "2026-03-24": {
     "count": 12,
     "activités": [
@@ -3319,13 +3380,13 @@
     }
   },
   "__totaux__": {
-    "resolve": 658,
-    "retex": 266,
-    "autre": 75
+    "resolve": 660,
+    "retex": 293,
+    "autre": 77
   },
   "__assets__": {
     "profils": 8,
-    "badges": 11
+    "badges": 12
   },
   "__ctf_periods__": [
     {

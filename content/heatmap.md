@@ -10,7 +10,7 @@ description: Vue d'ensemble de ma progression
 </div>
 </div>
 
-## Vue d'ensemble de ma progression
+## Quelques chiffres
 
 <div id="site-stats-root"></div>
 
@@ -19,7 +19,7 @@ description: Vue d'ensemble de ma progression
 <div id="heatmap-root"></div>
 
 ---
-## 🏆 Résultats CTF
+## 🏆 CTF & Investigations OSINT
 
 <div id="stats-ctf"></div>
 
