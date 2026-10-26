@@ -41,7 +41,7 @@
     { "name": "Overpass Turbo", "desc": "Ou comment géolocaliser comme un pro !", "icon": "map", "href": "./Overpass-turbo", "soon": false },
     { "name": "BeautifulSoup et Scrapy", "desc": "Ou comment faire du webscraping basique.", "icon": "bug", "href": "", "soon": true },
     { "name": "Google Dorks", "desc": "Ou comment « vraiment » faire une recherche Google.", "icon": "search", "href": "", "soon": true },
-    { "name": "Trace Labs Search Party", "desc": "Comment bien débuter l'initiative et faire avancer l'enquête au mieux.", "icon": "users", "href": "", "soon": true }
+    { "name": "Trace Labs Search Party", "desc": "Comment bien débuter l'initiative et faire avancer l'enquête au mieux.", "icon": "users", "href": "./TraceLabs", "soon": false }
   ],
   "situations": {
     "dom": { "label": "Un domaine", "icon": "globe" },

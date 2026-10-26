@@ -1,5 +1,5 @@
 ---
-title: PERCE V2
+title: Learning Track
 tags:
   - Osint
   - Chall
