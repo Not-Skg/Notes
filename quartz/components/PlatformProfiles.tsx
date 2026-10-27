@@ -74,7 +74,7 @@ PlatformProfiles.afterDOMLoaded = `
         url: "https://discord.com/invite/oscar-zulu",
         linkLabel: "Rejoindre le Discord",
         logo: "Logo/oscar_zulu.png",
-        rank: "6ᵉ",
+        rank: "3ᵉ",
       }
       ]
 

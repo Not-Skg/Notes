@@ -3107,6 +3107,18 @@
       "autre": 0
     }
   },
+  "2026-10-27": {
+    "count": 2,
+    "activités": [
+      "Resolve — NE QUITTEZ PAS · Oscar Zulu",
+      "Resolve — Pas de cadastre mais… · Oscar Zulu"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-03-25": {
     "count": 12,
     "activités": [
@@ -3386,7 +3398,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 666,
+    "resolve": 668,
     "retex": 293,
     "autre": 77
   },

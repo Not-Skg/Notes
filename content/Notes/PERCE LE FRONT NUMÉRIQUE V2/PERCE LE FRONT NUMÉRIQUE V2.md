@@ -38,6 +38,3 @@ Je suis donc un peu déçu par la rigueur de l'organisation, m'attendant à quel
  · | · [[La Section camouflage]]
  · | · [[Les femmes dans les armées]]
  · | · [[Track Bonus - Le 14 Juillet]]
-
-> [!info] RETEX à venir
-> Le CTF n'étant pas encore terminé pour tout le monde, les RETEX détaillés par track seront publiés une fois le délai clos pour l'ensemble des participants.
