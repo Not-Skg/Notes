@@ -3108,8 +3108,11 @@
     }
   },
   "2026-10-27": {
-    "count": 6,
+    "count": 9,
     "activités": [
+      "Resolve — Qui a congelé mémé ? 7/7 · Oscar Zulu",
+      "Resolve — Qui a congelé mémé ? 6/7 · Oscar Zulu",
+      "Resolve — Qui a congelé mémé ? 5/7 · Oscar Zulu",
       "Resolve — Bateau sur l'eau, la rivière, la rivière 2/2 · Oscar Zulu",
       "Resolve — Bateau sur l'eau, la rivière, la rivière 1/2 · Oscar Zulu",
       "Resolve — Qui a congelé mémé ? 4/7 · Oscar Zulu",
@@ -3118,7 +3121,7 @@
       "Resolve — Pas de cadastre mais… · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 6,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
@@ -3402,7 +3405,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 672,
+    "resolve": 675,
     "retex": 293,
     "autre": 77
   },
