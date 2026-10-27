@@ -3108,13 +3108,15 @@
     }
   },
   "2026-10-27": {
-    "count": 2,
+    "count": 4,
     "activités": [
+      "Resolve — Qui a congelé mémé ? 4/7 · Oscar Zulu",
+      "Resolve — Qui a congelé mémé ? 3/7 · Oscar Zulu",
       "Resolve — NE QUITTEZ PAS · Oscar Zulu",
       "Resolve — Pas de cadastre mais… · Oscar Zulu"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
@@ -3398,7 +3400,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 668,
+    "resolve": 670,
     "retex": 293,
     "autre": 77
   },
