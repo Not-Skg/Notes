@@ -65,6 +65,11 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/TL_PSP.png",
+            href: "https://factory.cancred.ca/obv3/credentials/77dcfcb86747bd62696283faee0858afa56740d7",
+            alt: "Participant - Global OSINT Search Party CTF",
+        },
+        {
             src: "Badges/TL_PO-2026.png",
             href: "https://factory.cancred.ca/obv3/credentials/79e7c0bc1f1e03c39703f952120c33772c975339",
             alt: "OSINT Search Party Participant Orientation - 2026",

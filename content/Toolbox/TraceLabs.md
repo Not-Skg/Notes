@@ -190,3 +190,4 @@ Enfin, je garderais à l'esprit qu'un classement ne reflète pas nécessairement
 Le plus important n'est pas de trouver le plus de choses possible, mais de transmettre des informations fiables, pertinentes et obtenues sans perturber l'enquête.
 
 C'est ce qui distingue, à mon sens, une Search Party d'un simple CTF OSINT.
+![[TL_PO-2026.png|300]]![[TL_PSP.png|300]]
