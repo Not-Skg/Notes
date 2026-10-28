@@ -1870,6 +1870,27 @@
       "autre": 0
     }
   },
+  "2026-10-28": {
+    "count": 11,
+    "activités": [
+      "Resolve — Many more · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Activités · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Magnétique · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Ombres et lumières · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Computermusik · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Entendre des formes · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Smells · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Révolutionnaire · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — La vertu n'est pas si simple · Integrity · Osint4Fun",
+      "Resolve — Libre circulation · Integrity · Osint4Fun",
+      "Resolve — La Papesse · Integrity · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-01": {
     "count": 5,
     "activités": [
@@ -3405,7 +3426,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 675,
+    "resolve": 686,
     "retex": 293,
     "autre": 77
   },

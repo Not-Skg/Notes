@@ -68,7 +68,7 @@
     { "name": "rdap", "url": "https://client.rdap.org", "desc": "Propriétaire, registrar, dates de création.", "type": "web", "use": "Identité", "for": ["dom", "ip"] },
     { "name": "viewdns.info", "url": "https://viewdns.info", "desc": "DNS inversé, autres sites sur la même IP.", "type": "web", "use": "Pivot", "for": ["dom", "ip"] },
     { "name": "Wayback Machine", "url": "https://web.archive.org", "desc": "Ce que la page affichait avant.", "type": "web", "use": "Historique", "for": ["dom", "ip", "pse", "ent", "arch"] },
-    { "name": "Pages cachées", "url": "#pages-cachées", "desc": "robots.txt, sitemap.xml, security.txt, ads.txt, favicon.ico, /server-status, /nginx_status.", "type": "man", "use": "Découverte", "for": ["dom"] },
+    { "name": "Pages cachées", "url": "#pages-cachées", "desc": "robots.txt, sitemap.xml, security.txt, ads.txt, favicon.ico, /server-status, /nginx_status, /.well-known/", "type": "man", "use": "Découverte", "for": ["dom"] },
     { "name": "dotdb", "url": "https://dotdb.com", "desc": "Découverte de noms de domaine par mot-clé.", "type": "web", "use": "Pivot", "for": ["dom"], "verify": true },
     { "name": "dig", "url": "https://linux.die.net/man/1/dig", "desc": "Enregistrements DNS bruts.", "type": "cli", "use": "Technique", "for": ["dom"] },
     { "name": "wpscan", "url": "https://wpscan.com", "desc": "Scan de sites WordPress.", "type": "cli", "use": "Technique", "for": ["dom"] },

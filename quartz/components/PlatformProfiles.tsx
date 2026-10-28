@@ -17,7 +17,7 @@ PlatformProfiles.afterDOMLoaded = `
           description: "Challenges très intéressants et pédagogiques.",
           url: "https://www.osint4fun.eu/user/89b4eb44c0c38592/#badges-tab",
           logo: "./Logo/osint4fun.png",
-          rank: "38ᵉ",
+          rank: "34ᵉ",
         },
         {
           name: "OSINT-FR",
