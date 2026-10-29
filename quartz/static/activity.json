@@ -2403,8 +2403,9 @@
     }
   },
   "2026-10-29": {
-    "count": 3,
+    "count": 4,
     "activités": [
+      "Created — Challenge Friendly Fire · Site",
       "Resolve — Who's Calling? · COMMUNITY EDITION · Osint Industries",
       "Resolve — OPERATION KILLSWITCH · OSINT · Osint Industries",
       "Resolve — On the Traces of the Silk Road Black Market · OSINT · Osint Industries"
@@ -2412,7 +2413,7 @@
     "stats": {
       "resolve": 3,
       "retex": 0,
-      "autre": 0
+      "autre": 1
     }
   },
   "2026-04-14": {
@@ -3441,7 +3442,7 @@
   "__totaux__": {
     "resolve": 689,
     "retex": 293,
-    "autre": 77
+    "autre": 78
   },
   "__assets__": {
     "profils": 8,
