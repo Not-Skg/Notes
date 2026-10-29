@@ -2402,6 +2402,19 @@
       "autre": 0
     }
   },
+  "2026-10-29": {
+    "count": 3,
+    "activités": [
+      "Resolve — Who's Calling? · COMMUNITY EDITION · Osint Industries",
+      "Resolve — OPERATION KILLSWITCH · OSINT · Osint Industries",
+      "Resolve — On the Traces of the Silk Road Black Market · OSINT · Osint Industries"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-04-14": {
     "count": 1,
     "activités": [
@@ -3426,7 +3439,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 686,
+    "resolve": 689,
     "retex": 293,
     "autre": 77
   },
