@@ -232,8 +232,9 @@
     }
   },
   "2026-10-30": {
-    "count": 5,
+    "count": 6,
     "activités": [
+      "Resolve — Halloween · Osintopia",
       "Resolve — THE LIBER TACENDI · OSINT · YouArePlayer",
       "Resolve — A TASTE OF INFLUENCE  PART 4 · OSINT · Osint Industries",
       "Resolve — A TASTE OF INFLUENCE  PART 3 · OSINT · Osint Industries",
@@ -241,7 +242,7 @@
       "Resolve — A TASTE OF INFLUENCE  PART 1 · OSINT · Osint Industries"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
@@ -3455,7 +3456,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 694,
+    "resolve": 695,
     "retex": 293,
     "autre": 78
   },
