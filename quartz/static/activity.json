@@ -232,15 +232,16 @@
     }
   },
   "2026-10-30": {
-    "count": 4,
+    "count": 5,
     "activités": [
-      "Resolve A TASTE OF INFLUENCE — PART 4 · OSINT · Osint Industries",
-      "Resolve A TASTE OF INFLUENCE — PART 3 · OSINT · Osint Industries",
-      "Resolve A TASTE OF INFLUENCE — PART 2 · OSINT · Osint Industries",
-      "Resolve A TASTE OF INFLUENCE — PART 1 · OSINT · Osint Industries"
+      "Resolve — THE LIBER TACENDI · OSINT · YouArePlayer",
+      "Resolve — A TASTE OF INFLUENCE  PART 4 · OSINT · Osint Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 3 · OSINT · Osint Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 2 · OSINT · Osint Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 1 · OSINT · Osint Industries"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
@@ -3454,7 +3455,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 693,
+    "resolve": 694,
     "retex": 293,
     "autre": 78
   },
