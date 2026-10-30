@@ -141,6 +141,7 @@
     { "name": "GhostTrack", "url": "https://github.com/hunxbyts/ghosttrack", "desc": "Localiser une IP, un numéro de téléphone ou un pseudo.", "type": "cli", "use": "Pivot", "for": ["ip", "tel", "pse"] },
     { "name": "Global Fishing Watch", "url": "https://globalfishingwatch.org", "desc": "Suivi de l'activité des navires de pêche.", "type": "web", "use": "Thématique", "for": ["veh", "animal"] },
     { "name": "animaltracker.app", "url": "https://animaltracker.app", "desc": "Suivi d'animaux marqués.", "type": "web", "use": "Thématique", "for": ["animal"], "verify": true },
-    { "name": "BirdNET", "url": "https://birdnet.cornell.edu", "desc": "Identifier un oiseau à son chant.", "type": "web", "use": "Thématique", "for": ["animal"] }
+    { "name": "BirdNET", "url": "https://birdnet.cornell.edu", "desc": "Identifier un oiseau à son chant.", "type": "web", "use": "Thématique", "for": ["animal"] },
+    { "name": "YCF - Youtube Comment Finder", "url": "https://ytcomment.kmcat.uk/", "desc": "Retrouver un commentaire en particulier sur une vidéo Youtube.", "type": "web", "use": "Découverte", "for": ["img"] }
   ]
 }
