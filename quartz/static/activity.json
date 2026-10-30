@@ -231,6 +231,20 @@
       "autre": 1
     }
   },
+  "2026-10-30": {
+    "count": 4,
+    "activités": [
+      "Resolve A TASTE OF INFLUENCE — PART 4 · OSINT · Osint Industries",
+      "Resolve A TASTE OF INFLUENCE — PART 3 · OSINT · Osint Industries",
+      "Resolve A TASTE OF INFLUENCE — PART 2 · OSINT · Osint Industries",
+      "Resolve A TASTE OF INFLUENCE — PART 1 · OSINT · Osint Industries"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-10-04": {
     "count": 6,
     "activités": [
@@ -3440,7 +3454,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 689,
+    "resolve": 693,
     "retex": 293,
     "autre": 78
   },

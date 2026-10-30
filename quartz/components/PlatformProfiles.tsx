@@ -65,7 +65,7 @@ PlatformProfiles.afterDOMLoaded = `
         description: "Des challenges très réalistes, dont certains s\u2019appuient directement sur des fiches d\u2019Interpol, du GRU, du FSB et du FBI.",
         url: "https://ctf.osint.industries/users/7238",
         logo: "Logo/osint_industries.png",
-        rank: "28ᵉ",
+        rank: "26ᵉ",
       },
         {
         name: "Oscar Zulu",
