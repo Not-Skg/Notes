@@ -80,7 +80,7 @@ const init = async () => {
             alt: "Opération Culot 2026 – Participant présentiel",
         },
         {
-            src: "Badges/OP_CULOT_PP.png",
+            src: "Badges/OP_CULOT_P.png",
             href: "https://badgify.eu/api/v1/ob2/assertions/98420593-f8c5-4d97-a183-6b732a725424",
             alt: "Opération Culot 2026 – Participant",
         },
