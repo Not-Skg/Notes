@@ -54,3 +54,4 @@ Voici, en un coup d'œil, l'ensemble des ramifications que notre enquête a perm
 
 Je mettrai ici les badges et le certificat de participation dès que nous les aurons reçus.
 ![[certificat_ID-ACW77GW.png]]
+![[OP_CULOT_P.png|400]]![[OP_CULOT_PP.png|400]]
