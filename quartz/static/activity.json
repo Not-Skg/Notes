@@ -498,13 +498,17 @@
     }
   },
   "2026-10-31": {
-    "count": 2,
+    "count": 6,
     "activités": [
+      "Resolve — Éclipse de soleil · Phénomènes naturels · Osint4Fun",
+      "Resolve — Gérard Failler · Phénomènes naturels · Osint4Fun",
+      "Resolve — Grande marée · Phénomènes naturels · Osint4Fun",
+      "Resolve — Marée haute · Phénomènes naturels · Osint4Fun",
       "Resolve — SANCTIONED COMPANY · OSINT · Osint Industries",
       "Resolve — The Hidden Sunflowers · COMMUNITY EDITION · Osint Industries"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
@@ -3468,13 +3472,13 @@
     }
   },
   "__totaux__": {
-    "resolve": 697,
+    "resolve": 701,
     "retex": 293,
     "autre": 78
   },
   "__assets__": {
     "profils": 8,
-    "badges": 14
+    "badges": 15
   },
   "__ctf_periods__": [
     {

@@ -75,6 +75,11 @@ const init = async () => {
             alt: "OSINT Search Party Participant Orientation - 2026",
         },
         {
+            src: "Badges/OP_CULOT_PF.png",
+            href: "https://badgify.eu/api/v1/ob2/assertions/3265b962-1965-4a10-a8a9-459d48bdd263",
+            alt: "Opération Culot 2026 – Finisher",
+        },
+        {
             src: "Badges/OP_CULOT_PP.png",
             href: "https://badgify.eu/api/v1/ob2/assertions/60fb45ae-572d-41c2-9cec-c4d306e74645",
             alt: "Opération Culot 2026 – Participant présentiel",
