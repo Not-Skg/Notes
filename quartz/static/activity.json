@@ -1520,8 +1520,13 @@
     }
   },
   "2026-11-01": {
-    "count": 12,
+    "count": 17,
     "activités": [
+      "Resolve — Bingo · The Lost Connection · Osint4Fun",
+      "Resolve — La ligne · The Lost Connection · Osint4Fun",
+      "Resolve — Le lac · The Lost Connection · Osint4Fun",
+      "Resolve — La voie abandonnée · The Lost Connection · Osint4Fun",
+      "Resolve — Sur la route · The Lost Connection · Osint4Fun",
       "Resolve — Tic tac · The Lost Connection · Osint4Fun",
       "Resolve — Un détour · The Lost Connection · Osint4Fun",
       "Resolve — Des universités familières ? · The Lost Connection · Osint4Fun",
@@ -1536,7 +1541,7 @@
       "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
     ],
     "stats": {
-      "resolve": 12,
+      "resolve": 17,
       "retex": 0,
       "autre": 0
     }
@@ -3496,7 +3501,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 715,
+    "resolve": 720,
     "retex": 293,
     "autre": 78
   },
