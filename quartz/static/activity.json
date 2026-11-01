@@ -1519,6 +1519,21 @@
       "autre": 0
     }
   },
+  "2026-11-01": {
+    "count": 5,
+    "activités": [
+      "Resolve — Un faux départ · The Lost Connection · Osint4Fun",
+      "Resolve — Premier slogan · The Lost Connection · Osint4Fun",
+      "Resolve — Des étudiants heureux · The Lost Connection · Osint4Fun",
+      "Resolve — EU GREEN · The Lost Connection · Osint4Fun",
+      "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-13": {
     "count": 3,
     "activités": [
@@ -3474,7 +3489,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 703,
+    "resolve": 708,
     "retex": 293,
     "autre": 78
   },
