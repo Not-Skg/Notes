@@ -1520,8 +1520,15 @@
     }
   },
   "2026-11-01": {
-    "count": 5,
+    "count": 12,
     "activités": [
+      "Resolve — Tic tac · The Lost Connection · Osint4Fun",
+      "Resolve — Un détour · The Lost Connection · Osint4Fun",
+      "Resolve — Des universités familières ? · The Lost Connection · Osint4Fun",
+      "Resolve — La petite annonce · The Lost Connection · Osint4Fun",
+      "Resolve — Dring · The Lost Connection · Osint4Fun",
+      "Resolve — Des vacances bien méritées · The Lost Connection · Osint4Fun",
+      "Resolve — Un voyage international · The Lost Connection · Osint4Fun",
       "Resolve — Un faux départ · The Lost Connection · Osint4Fun",
       "Resolve — Premier slogan · The Lost Connection · Osint4Fun",
       "Resolve — Des étudiants heureux · The Lost Connection · Osint4Fun",
@@ -1529,7 +1536,7 @@
       "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 12,
       "retex": 0,
       "autre": 0
     }
@@ -3489,7 +3496,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 708,
+    "resolve": 715,
     "retex": 293,
     "autre": 78
   },
