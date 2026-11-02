@@ -1939,8 +1939,13 @@
     }
   },
   "2026-11-02": {
-    "count": 9,
+    "count": 14,
     "activités": [
+      "Resolve — UNDERGROUND SHIPMENT · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — READONLY · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Trusted Source · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Postponed Kickoff · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Ghost Anchor · COMMUNITY EDITION · OSINT Industries",
       "Resolve — Empreinte carbone · The Lost Connection · Osint4Fun",
       "Resolve — Quelle gare ! · The Lost Connection · Osint4Fun",
       "Resolve — Idée de sortie · The Lost Connection · Osint4Fun",
@@ -1952,7 +1957,7 @@
       "Created — MAJ Responsiveness · Site"
     ],
     "stats": {
-      "resolve": 7,
+      "resolve": 12,
       "retex": 0,
       "autre": 2
     }
@@ -3527,7 +3532,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 734,
+    "resolve": 739,
     "retex": 293,
     "autre": 80
   },
