@@ -65,6 +65,11 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/TL_ES.png",
+            href: "https://factory.cancred.ca/obv3/credentials/249b5350a4dbfa610e76e5fd83b3588a8c865ab0",
+            alt: "OSINT: Educational Series",
+        },
+        {
             src: "Badges/TL_PSP.png",
             href: "https://factory.cancred.ca/obv3/credentials/77dcfcb86747bd62696283faee0858afa56740d7",
             alt: "Participant - Global OSINT Search Party CTF",
@@ -465,7 +470,21 @@ const init = async () => {
         return Math.max(10, Math.ceil((value + 1) / 10) * 10);
     };
 
-    const maxScatterX = roundUpToNext10(Math.max(0, ...scatterPoints.map((item) => item.resolve)));
+    // Plateformes très éloignées du reste (grand vide dans les valeurs de RESOLVED) :
+    // l'axe s'arrête avant elles et elles sont montrées par une flèche au bord droit,
+    // pour ne pas écraser toutes les autres plateformes dans la moitié gauche.
+    const sortedResolves = [...new Set(scatterPoints.map((item) => item.resolve))].sort((a, b) => a - b);
+    let resolveCap = sortedResolves.length ? sortedResolves[sortedResolves.length - 1] : 0;
+    for (let i = 1; i < sortedResolves.length; i++) {
+        const gap = sortedResolves[i] - sortedResolves[i - 1];
+        if (gap > 25 && gap > 0.4 * sortedResolves[i - 1]) {
+            resolveCap = sortedResolves[i - 1];
+            break;
+        }
+    }
+    const maxScatterX = roundUpToNext10(resolveCap);
+    const outlierPoints = scatterPoints.filter((item) => item.resolve > maxScatterX);
+    const inlierPoints = scatterPoints.filter((item) => item.resolve <= maxScatterX);
     const maxScatterY = roundUpToNext10(Math.max(0, ...scatterPoints.map((item) => item.retex)));
 
     const buildScatterTicks = (max) => {
@@ -476,20 +495,27 @@ const init = async () => {
     const scatterXTicks = buildScatterTicks(maxScatterX);
     const scatterYTicks = buildScatterTicks(maxScatterY);
 
-    const renderScatterPlot = () => {
+    // Les noms des plateformes sont masqués par défaut (bouton pour les afficher).
+    let showScatterLabels = false;
+    // Plateforme isolée via la légende (son nom est alors affiché sur le graphique).
+    let selectedScatterPlatform = null;
+
+    // widthHint : largeur disponible en px. Le graphique est dessiné à cette largeur
+    // (1 unité du viewBox = 1 px à l'écran), avec une version compacte sur mobile
+    // pour que les étiquettes restent lisibles sans défilement horizontal.
+    const renderScatterPlot = (widthHint = 900) => {
         if (!scatterPoints.length) {
             return `<div class="hm-hbar-empty">Aucune donnée</div>`;
         }
 
-           const width = 900;
-        const height = 500;
+        const width = Math.max(280, Math.min(900, Math.floor(widthHint)));
+        const compact = width < 560;
+        const height = compact ? Math.round(width * 1.75) : Math.round(width * 0.56);
 
-           const padding = {
-            top: 42,
-            right: 42,
-            bottom: 72,
-            left: 72,
-        };
+           const padding = compact
+            ? { top: 30, right: 22, bottom: 74, left: 42 }
+            : { top: 42, right: 42, bottom: 72, left: 72 };
+        const dotRadius = compact ? 6 : 8;
 
            const innerWidth = width - padding.left - padding.right;
         const innerHeight = height - padding.top - padding.bottom;
@@ -514,7 +540,7 @@ const init = async () => {
 
                    <text
                     x="${x}"
-                    y="${height - 38}"
+                    y="${height - padding.bottom + (compact ? 18 : 34)}"
                     text-anchor="middle"
                     class="hm-scatter-tick"
                 >${tick}</text>
@@ -534,7 +560,7 @@ const init = async () => {
                 ></line>
 
                    <text
-                    x="${padding.left - 14}"
+                    x="${padding.left - (compact ? 8 : 14)}"
                     y="${y + 4}"
                     text-anchor="end"
                     class="hm-scatter-tick"
@@ -554,8 +580,9 @@ const init = async () => {
             ></line>
 
                <text
-                x="${xToPx(diagonalMax) + 10}"
-                y="${yToPx(diagonalMax) + 4}"
+                x="${xToPx(diagonalMax)}"
+                y="${yToPx(diagonalMax) - 14}"
+                text-anchor="end"
                 class="hm-scatter-diagonal-label"
             >
                 RETEX = RESOLVED
@@ -564,7 +591,7 @@ const init = async () => {
         // Points sharing the exact same coordinates render as a single circle.
         const coordinateGroups = new Map();
 
-        scatterPoints.forEach(item => {
+        inlierPoints.forEach(item => {
             const key = `${item.resolve}:${item.retex}`;
 
                 if (!coordinateGroups.has(key)) {
@@ -587,74 +614,165 @@ const init = async () => {
         // the other side. Whenever a label ends up away from its default spot,
         // a thin leader line reconnects it to its dot so it stays traceable.
         const LABEL_LINE_HEIGHT = 13;
-        const LABEL_CHAR_WIDTH = 5.6;
+        const LABEL_CHAR_WIDTH = compact ? 4.5 : 5.1;
+
+        // Position des flèches « hors cadre » calculée en amont : leurs étiquettes
+        // servent d'obstacles au placement des autres noms.
+        const OUT_ARROW_LENGTH = compact ? 32 : 46;
+        const OUT_MIN_GAP = 32;
+        const outlierYs = [];
+        const outlierLayout = outlierPoints
+            .slice()
+            .sort((a, b) => b.retex - a.retex)
+            .map((item) => {
+                let y = yToPx(item.retex) - (item.retex === 0 ? 16 : 0);
+                const previous = outlierYs[outlierYs.length - 1];
+                if (previous !== undefined && Math.abs(previous - y) < OUT_MIN_GAP) {
+                    y = previous - OUT_MIN_GAP;
+                }
+                y = Math.max(y, padding.top + 14);
+                outlierYs.push(y);
+                const xEnd = width - padding.right - 10;
+                const text = `${item.platform} (${item.resolve}, ${item.retex})`;
+                const w = text.length * LABEL_CHAR_WIDTH + 24;
+                return { item, y, xEnd, text, box: { x: xEnd - 6 - w, y: y - 9, w: w + 6, h: 18 } };
+            });
 
         const labelCandidates = circleGroups
-            .map((group) => {
+            .map((group, index) => {
                 const names = group.platforms
-                    .filter((p) => p.resolve > 7 || p.retex > 7)
+                    .filter((p) => compact ? true : (p.resolve > 7 || p.retex > 7))
                     .map((p) => p.platform);
 
-                return names.length ? { group, names, side: 1, dx: 14, dy: 0 } : null;
+                if (!names.length) return null;
+                // Sur mobile, les plateformes importantes sont placées en premier (les autres
+                // se rangent autour) ; tous les noms s'affichent avec le bouton.
+                const minor = compact && !group.platforms.some((p) => p.resolve >= 45 || p.retex >= 30);
+                const crowd = circleGroups.filter(
+                    (other) => other !== group && Math.hypot(other.x - group.x, other.y - group.y) < 70
+                ).length;
+                return { group, index, names, minor, crowd };
             })
             .filter(Boolean);
 
         const labelWidth = (names) => Math.max(...names.map((n) => n.length)) * LABEL_CHAR_WIDTH;
         const labelHeight = (names) => names.length * LABEL_LINE_HEIGHT;
 
-        const candidateBox = (candidate) => {
-            const w = labelWidth(candidate.names);
-            const h = labelHeight(candidate.names);
-            const x =
-                candidate.side === 1
-                    ? candidate.group.x + candidate.dx
-                    : candidate.group.x + candidate.dx - w;
-            const y = candidate.group.y + candidate.dy - h / 2;
-            return { x, y, w, h };
-        };
-
         const boxesOverlap = (a, b) =>
-            !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
+            !(a.x + a.w + 3 < b.x || b.x + b.w + 3 < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
 
-        // Every dot is also an obstacle: a label must not land on top of a point
-        // it doesn't belong to, otherwise the text becomes unreadable against
-        // the dot's fill color.
-        const DOT_CLEARANCE = 11;
+        // Zone autorisée : l'intérieur du repère (jamais sur les axes ni sous l'axe X).
+        const bounds = {
+            xMin: padding.left + 4,
+            xMax: width - padding.right - 2,
+            yMin: padding.top + 2,
+            yMax: yToPx(0) - 4,
+        };
+        const inBounds = (box) =>
+            box.x >= bounds.xMin && box.x + box.w <= bounds.xMax &&
+            box.y >= bounds.yMin && box.y + box.h <= bounds.yMax;
+
+        // Chaque point est un obstacle pour les étiquettes des autres points.
+        const DOT_CLEARANCE = dotRadius + 2;
         const dotBoxes = circleGroups.map((group) => ({
             x: group.x - DOT_CLEARANCE,
             y: group.y - DOT_CLEARANCE,
             w: DOT_CLEARANCE * 2,
             h: DOT_CLEARANCE * 2,
         }));
+        const fixedBoxes = outlierLayout.map((o) => o.box);
 
-        const placed = [];
-        labelCandidates
-            .slice()
-            .sort((a, b) => a.group.x - b.group.x)
-            .forEach((candidate) => {
-                for (let attempt = 0; attempt < 24; attempt++) {
-                    const box = candidateBox(candidate);
-                    const collides =
-                        placed.some((other) => boxesOverlap(box, candidateBox(other))) ||
-                        dotBoxes.some((dotBox) => boxesOverlap(box, dotBox));
-                    if (!collides) break;
-
-                    if (attempt === 8) {
-                        candidate.side = -candidate.side;
-                        candidate.dx = candidate.side === 1 ? 14 : -14;
-                        candidate.dy = 0;
-                        continue;
-                    }
-
-                    const step = Math.ceil((attempt + 1) / 2) * LABEL_LINE_HEIGHT;
-                    candidate.dy = attempt % 2 === 0 ? step : -step;
+        // Positions possibles autour d'un point, de la plus proche à la plus lointaine.
+        // Les anneaux 1 et 2 éloignent l'étiquette (un trait la relie alors au point).
+        const buildOptions = (group, names) => {
+            const w = labelWidth(names);
+            const h = labelHeight(names);
+            const out = [];
+            [0, 1, 2, 3, 4, 5, 6, 7].forEach((ring) => {
+                const d = dotRadius + 4 + ring * 13;
+                const k = ring * 10;
+                const diag = d * 0.75;
+                const mk = (anchor, dx, dy, cost) => {
+                    const x = anchor === "start" ? group.x + dx : anchor === "end" ? group.x + dx - w : group.x + dx - w / 2;
+                    out.push({ anchor, dx, dy, cost: cost + k, ring, box: { x, y: group.y + dy - h / 2, w, h } });
+                };
+                // Près du point : sans trait. Plus loin : uniquement à la verticale ou à
+                // l'horizontale du point, pour que le trait reste droit et lisible.
+                if (ring === 0) {
+                    mk("start", d, 0, 0);
+                    mk("middle", 0, -(d + h / 2 - 3), 1);
+                    mk("end", -d, 0, 1.5);
+                    mk("start", diag, -(diag + h / 2 - 4), 1.2);
+                    mk("end", -diag, -(diag + h / 2 - 4), 1.7);
+                    mk("middle", 0, d + h / 2 + 3, 2);
+                    mk("start", diag, diag + h / 2 + 2, 2.2);
+                    mk("end", -diag, diag + h / 2 + 2, 2.7);
+                    mk("start", d, -LABEL_LINE_HEIGHT, 3);
+                    mk("start", d, LABEL_LINE_HEIGHT, 3.2);
+                    mk("end", -d, -LABEL_LINE_HEIGHT, 3.4);
+                    mk("end", -d, LABEL_LINE_HEIGHT, 3.6);
+                } else {
+                    mk("middle", 0, -(d + h / 2 - 3), 0);
+                    mk("middle", 0, d + h / 2 + 3, 0.5);
+                    mk("start", d, 0, 1);
+                    mk("end", -d, 0, 1.5);
+                    // Dernier recours : décalé sur le côté (trait légèrement oblique).
+                    mk("start", -6, -(d + h / 2 - 3), 6);
+                    mk("end", 6, -(d + h / 2 - 3), 6.2);
+                    mk("start", -6, d + h / 2 + 3, 6.5);
+                    mk("end", 6, d + h / 2 + 3, 6.7);
                 }
-                placed.push(candidate);
             });
+            return out;
+        };
+
+        // Placement glouton, essayé dans plusieurs ordres (tirages déterministes) :
+        // on garde l'agencement dont le coût total est le plus faible.
+        const runPlacement = (order) => {
+            const placedList = [];
+            let total = 0;
+            order.forEach((candidate) => {
+                const options = candidate.options || (candidate.options = buildOptions(candidate.group, candidate.names));
+                let best = null;
+                options.forEach((option) => {
+                    const hits =
+                        placedList.filter((other) => boxesOverlap(option.box, other.box)).length +
+                        dotBoxes.filter((dotBox, i) => i !== candidate.index && boxesOverlap(option.box, dotBox)).length +
+                        fixedBoxes.filter((fixed) => boxesOverlap(option.box, fixed)).length;
+                    const score = (inBounds(option.box) ? 0 : 1000) + hits * 100 + option.cost;
+                    if (!best || score < best.score) best = { option, score };
+                });
+                total += best.score;
+                placedList.push({ candidate, choice: best.option, box: best.option.box });
+            });
+            return { placedList, total };
+        };
+
+        const baseOrder = labelCandidates
+            .slice()
+            .sort((a, b) => (a.minor - b.minor) || (b.crowd - a.crowd) || (a.group.x - b.group.x));
+        let bestRun = runPlacement(baseOrder);
+        let seed = 12345;
+        const rand = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+        for (let attempt = 0; attempt < 150 && bestRun.total >= 100; attempt++) {
+            const order = baseOrder.slice();
+            for (let i = order.length - 1; i > 0; i--) {
+                const j = Math.floor(rand() * (i + 1));
+                [order[i], order[j]] = [order[j], order[i]];
+            }
+            const run = runPlacement(order);
+            if (run.total < bestRun.total) bestRun = run;
+        }
+
+        const placed = bestRun.placedList.map(({ candidate, choice }) => {
+            candidate.choice = choice;
+            return candidate;
+        });
 
         const labelMarkupByGroup = new Map();
         placed.forEach((candidate) => {
-            const { group, names, side, dx, dy } = candidate;
+            const { group, names, choice } = candidate;
+            const { anchor, dx, dy, box, ring } = choice;
             const anchorX = group.x + dx;
             const lineCount = names.length;
 
@@ -668,10 +786,11 @@ const init = async () => {
 
                     return `
                         <text
-                            x="${anchorX}"
-                            y="${lineY}"
-                            text-anchor="${side === 1 ? "start" : "end"}"
-                            class="hm-scatter-label"
+                            x="${choice.rot ? group.x : anchorX}"
+                            y="${choice.rot ? group.y + choice.dy : lineY + 3}"
+                            ${choice.rot ? `transform="rotate(-90 ${group.x} ${group.y + choice.dy}) translate(0 3)"` : ""}
+                            text-anchor="${anchor}"
+                            class="hm-scatter-label${candidate.minor ? " hm-scatter-label-minor" : ""}"
                         >
                             ${name}
                         </text>
@@ -679,23 +798,28 @@ const init = async () => {
                 })
                 .join("");
 
-            const leader =
-                dy !== 0
-                    ? `
+            let leader = "";
+            if (ring > 0) {
+                const tx = Math.min(Math.max(group.x, box.x), box.x + box.w);
+                const ty = Math.min(Math.max(group.y, box.y), box.y + box.h);
+                const len = Math.hypot(tx - group.x, ty - group.y) || 1;
+                const x1 = group.x + ((tx - group.x) / len) * (dotRadius + 1);
+                const y1 = group.y + ((ty - group.y) / len) * (dotRadius + 1);
+                leader = `
                         <line
-                            x1="${group.x + side * 8}"
-                            y1="${group.y}"
-                            x2="${anchorX}"
-                            y2="${group.y + dy}"
-                            class="hm-scatter-leader"
+                            x1="${x1}"
+                            y1="${y1}"
+                            x2="${tx}"
+                            y2="${ty}"
+                            class="hm-scatter-leader${candidate.minor ? " hm-scatter-label-minor" : ""}"
                         ></line>
-                    `
-                    : "";
+                    `;
+            }
 
             labelMarkupByGroup.set(group, `${leader}${text}`);
         });
 
-        const CTF_DIAMOND_SIZE = 7;
+        const CTF_DIAMOND_SIZE = compact ? 5 : 7;
 
         const points = circleGroups.map((group) => {
             const { x, y, platforms } = group;
@@ -715,11 +839,11 @@ const init = async () => {
             ` : "";
 
             return `
-                <g class="hm-scatter-point-group" data-platforms="${platforms.map(p => p.platform).join("|")}">
+                <g class="hm-scatter-point-group${selectedScatterPlatform ? (platforms.some(p => p.platform === selectedScatterPlatform) ? " hm-scatter-selected" : " hm-scatter-dimmed") : ""}" data-platforms="${platforms.map(p => p.platform).join("|")}">
                     <circle
                         cx="${x}"
                         cy="${y}"
-                        r="8"
+                        r="${dotRadius}"
                         fill="${platforms[0].color}"
                         class="hm-scatter-point"
                     >
@@ -732,12 +856,70 @@ const init = async () => {
             `;
         }).join("");
 
+        // Flèches au bord droit pour les plateformes hors cadre. Un point à 0 RETEX
+        // est remonté au-dessus de l'axe, et les flèches trop proches s'empilent.
+        const outlierMarkup = outlierLayout
+            .map(({ item, y, xEnd, text }) => {
+                const xStart = xEnd - OUT_ARROW_LENGTH;
+                return `
+                <g class="hm-scatter-point-group${selectedScatterPlatform ? (item.platform === selectedScatterPlatform ? " hm-scatter-selected" : " hm-scatter-dimmed") : ""}" data-platforms="${item.platform}">
+                    <title>${item.platform} (${item.resolve}, ${item.retex}) : hors du cadre</title>
+                    <path
+                        d="M ${xEnd - 11} ${y - 5} L ${xEnd - 6} ${y} L ${xEnd - 11} ${y + 5} M ${xEnd - 5} ${y - 5} L ${xEnd} ${y} L ${xEnd - 5} ${y + 5}"
+                        fill="none"
+                        stroke="${item.color}"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></path>
+                    <text x="${xEnd - 18}" y="${y + 4}" text-anchor="end" class="hm-scatter-label hm-scatter-label-out">${text}</text>
+                </g>
+                `;
+            }).join("");
+
+        // Bulle d'infos (nom + stats) pour la plateforme sélectionnée par un clic.
+        let calloutMarkup = "";
+        if (selectedScatterPlatform) {
+            const inGroup = circleGroups.find((g) => g.platforms.some((p) => p.platform === selectedScatterPlatform));
+            const inOut = outlierLayout.find((o) => o.item.platform === selectedScatterPlatform);
+            const target = inGroup
+                ? { x: inGroup.x, y: inGroup.y, names: inGroup.platforms.map((p) => p.platform), resolve: inGroup.platforms[0].resolve, retex: inGroup.platforms[0].retex, r: dotRadius }
+                : inOut
+                    ? { x: inOut.xEnd - 5, y: inOut.y, names: [inOut.item.platform], resolve: inOut.item.resolve, retex: inOut.item.retex, r: 8 }
+                    : null;
+            if (target) {
+                const CALLOUT_LINE = compact ? 12 : 14;
+                const CHAR = compact ? 5 : 5.6;
+                const lines = [
+                    ...target.names.map((n) => ({ text: n, strong: true })),
+                    { text: `RESOLVED : ${target.resolve}` },
+                    { text: `RETEX : ${target.retex}` },
+                ];
+                const boxW = Math.ceil(Math.max(...lines.map((l) => l.text.length)) * CHAR) + 18;
+                const boxH = lines.length * CALLOUT_LINE + 10;
+                let bx = target.x + target.r + 8;
+                let by = target.y - boxH - target.r - 4;
+                if (bx + boxW > width - 4) bx = target.x - target.r - 8 - boxW;
+                if (bx < 4) bx = 4;
+                if (by < 4) by = target.y + target.r + 6;
+                if (by + boxH > height - 4) by = height - 4 - boxH;
+                calloutMarkup = `
+                    <g class="hm-scatter-callout" pointer-events="none">
+                        <rect x="${bx}" y="${by}" width="${boxW}" height="${boxH}" rx="7" class="hm-scatter-callout-box"></rect>
+                        ${lines.map((l, i) => `
+                            <text x="${bx + 9}" y="${by + 5 + (i + 1) * CALLOUT_LINE - 3}" class="hm-scatter-callout-text${l.strong ? " hm-scatter-callout-name" : ""}">${l.text}</text>
+                        `).join("")}
+                    </g>
+                `;
+            }
+        }
+
                    return `
-            <div class="hm-scatter-wrap">
+            <div class="hm-scatter-wrap${showScatterLabels ? " hm-scatter-show-labels" : ""}" data-w="${width}">
 
                    <svg
                     viewBox="0 0 ${width} ${height}"
-                    class="hm-scatter-svg"
+                    class="hm-scatter-svg${compact ? " hm-scatter-compact" : ""}"
                     role="img"
                     aria-label="Graphique RESOLVED en abscisse et RETEX en ordonnée par plateforme"
                 >
@@ -762,6 +944,7 @@ const init = async () => {
                     ></line>
 
                        ${points}
+                       ${outlierMarkup}
 
                        <text
                         x="${padding.left + innerWidth / 2}"
@@ -773,14 +956,15 @@ const init = async () => {
                     </text>
 
                        <text
-                        x="18"
+                        x="${compact ? 10 : 18}"
                         y="${padding.top + innerHeight / 2}"
                         text-anchor="middle"
                         class="hm-scatter-axis-label"
-                        transform="rotate(-90 18 ${padding.top + innerHeight / 2})"
+                        transform="rotate(-90 ${compact ? 10 : 18} ${padding.top + innerHeight / 2})"
                     >
                         RETEX
                     </text>
+                    ${calloutMarkup}
                 </svg>
             </div>
         `;
@@ -1213,8 +1397,69 @@ const init = async () => {
           overflow-x: auto;
           overflow-y: hidden;
           -webkit-overflow-scrolling: touch;
-          scrollbar-width: thin;
-          padding-bottom: 0.35rem;
+          padding-bottom: 0;
+        }
+
+        /* Barre de défilement dessinée en HTML : toujours visible, quel que soit le navigateur */
+        .hm-badges-scroll {
+          scrollbar-width: none;
+        }
+
+        .hm-badges-scroll::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Zone cliquable de 16 px ; seule la ligne fine centrale est dessinée. */
+        .hm-badges-track {
+          position: relative;
+          height: 16px;
+          margin: -0.1rem 0 0.3rem;
+          cursor: pointer;
+        }
+
+        .hm-badges-track::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 6px;
+          height: 4px;
+          border-radius: 999px;
+          background: color-mix(in srgb, var(--hm-muted) 10%, transparent);
+        }
+
+        .hm-badges-track[hidden] {
+          display: none;
+        }
+
+        .hm-badges-thumb {
+          position: absolute;
+          top: 6px;
+          left: 0;
+          height: 4px;
+          border-radius: 999px;
+          background: color-mix(in srgb, var(--hm-muted) 35%, transparent);
+          cursor: grab;
+          transition: background .15s ease;
+        }
+
+        /* Hitbox de la poignée = toute la hauteur de la zone cliquable */
+        .hm-badges-thumb::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -6px;
+          bottom: -6px;
+        }
+
+        .hm-badges-track:hover .hm-badges-thumb {
+          background: color-mix(in srgb, var(--hm-muted) 65%, transparent);
+        }
+
+        .hm-badges-thumb:hover,
+        .hm-badges-thumb.is-dragging {
+          background: #fd8235;
         }
 
         .hm-badges-row {
@@ -1234,6 +1479,7 @@ const init = async () => {
 
         .hm-badge-img {
           display: block;
+          margin: 0.6rem 0 0.3rem;
           height: 54px;
           width: auto;
           border-radius: 8px;
@@ -1548,18 +1794,40 @@ const init = async () => {
 
             /* Très petite largeur */
         @container ctf-panel (max-width: 460px) {
+            /* Carte compacte : logo, nom et classement sur une ligne, barre dessous */
             .hm-ctf-card {
-                grid-template-columns: 1fr;
+                grid-template-columns: 56px minmax(0, 1fr) auto;
+                gap: 0.7rem 0.85rem;
+                padding: 0.9rem 1rem 0.9rem 1.15rem;
             }
 
             .hm-ctf-rank-block {
                 border-left: none;
                 padding-left: 0;
+                text-align: right;
+            }
+
+            .hm-ctf-rank-label {
+                display: none;
+            }
+
+            .hm-ctf-rank-value {
+                font-size: 1.6rem;
+                line-height: 1;
+            }
+
+            .hm-ctf-rank-total {
+                font-size: 0.7rem;
+            }
+
+            .hm-ctf-progress-block {
+                grid-column: 1 / -1;
             }
 
             .hm-ctf-logo {
-                width: 70px;
-                height: 70px;
+                width: 56px;
+                height: 56px;
+                border-radius: 12px;
             }
 
             .hm-ctf-header {
@@ -1577,15 +1845,6 @@ const init = async () => {
         @media (max-width: 560px) {
             .hm-ctf-panel {
                 padding: 1rem;
-            }
-
-                .hm-ctf-card {
-                grid-template-columns: 1fr;
-            }
-
-                .hm-ctf-logo {
-                width: 70px;
-                height: 70px;
             }
 
                 .hm-ctf-header {
@@ -2152,9 +2411,46 @@ const init = async () => {
 
         .hm-scatter-svg {
           width: 100%;
-          min-width: 620px;
           height: auto;
           display: block;
+        }
+
+        .hm-scatter-toolbar {
+          display: flex;
+          justify-content: flex-end;
+          margin: 0.4rem 0 0.2rem;
+        }
+
+        .hm-scatter-labels-btn {
+          cursor: pointer;
+          padding: 0.3rem 0.85rem;
+          border-radius: 999px;
+          border: 1px solid color-mix(in srgb, var(--hm-muted) 35%, transparent);
+          background: transparent;
+          color: inherit;
+          font: inherit;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        .hm-scatter-labels-btn:hover,
+        .hm-scatter-labels-btn[aria-pressed="true"] {
+          border-color: #fd8235;
+          color: #fd8235;
+        }
+
+        .hm-scatter-wrap:not(.hm-scatter-show-labels) .hm-scatter-label,
+        .hm-scatter-wrap:not(.hm-scatter-show-labels) .hm-scatter-leader {
+          display: none;
+        }
+
+        .hm-scatter-wrap .hm-scatter-point-group.hm-scatter-selected .hm-scatter-label,
+        .hm-scatter-wrap .hm-scatter-point-group.hm-scatter-selected .hm-scatter-leader {
+          display: inline !important;
+        }
+
+        .hm-scatter-compact .hm-scatter-label {
+          font-size: 8.5px;
         }
 
         .hm-scatter-grid-line {
@@ -2182,11 +2478,43 @@ const init = async () => {
         }
 
         .hm-scatter-label {
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 700;
           paint-order: stroke;
           stroke-width: 4px;
           stroke-linejoin: round;
+        }
+
+        .hm-scatter-callout-box {
+          fill: var(--light, #161618);
+          stroke: #fd8235;
+          stroke-width: 1.2;
+          filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+        }
+
+        .hm-scatter-callout-text {
+          fill: var(--hm-text);
+          font-size: 10.5px;
+          font-weight: 600;
+        }
+
+        .hm-scatter-callout-name {
+          fill: #fd8235;
+          font-weight: 800;
+        }
+
+        .hm-scatter-compact .hm-scatter-callout-text {
+          font-size: 9px;
+        }
+
+        .hm-scatter-point-group {
+          cursor: pointer;
+        }
+
+        /* Le nom de la plateforme sélectionnée est dans la bulle : on masque son étiquette. */
+        .hm-scatter-wrap .hm-scatter-point-group.hm-scatter-selected .hm-scatter-label,
+        .hm-scatter-wrap .hm-scatter-point-group.hm-scatter-selected .hm-scatter-leader {
+          display: none !important;
         }
 
         .hm-scatter-leader {
@@ -2539,6 +2867,12 @@ const init = async () => {
             height: 48px;
           }
 
+          .hm-detail {
+            height: 160px;
+            min-height: 160px;
+            max-height: 160px;
+          }
+
           .hm-hbar-track {
             min-height: 38px;
           }
@@ -2585,6 +2919,19 @@ const init = async () => {
     }
 
     if (badgesRoot) {
+        // Bouton « Voir tous mes badges » à droite du titre « Mes Badges ».
+        const badgesHeading = document.getElementById("mes-badges");
+        if (badgesHeading && !badgesHeading.querySelector(".hm-heading-btn")) {
+            const allBadgesLink = document.createElement("a");
+            allBadgesLink.className = "hm-heading-btn";
+            allBadgesLink.href = "https://decorated.pro/u/skg";
+            allBadgesLink.target = "_blank";
+            allBadgesLink.rel = "noopener noreferrer";
+            allBadgesLink.textContent = "Voir tous mes badges";
+            badgesHeading.classList.add("hm-heading-with-btn");
+            badgesHeading.appendChild(allBadgesLink);
+        }
+
         badgesRoot.innerHTML = `
         ${sharedStyle}
         <div class="hm-badges-panel">
@@ -2608,8 +2955,61 @@ const init = async () => {
                     `).join("")}
                 </div>
             </div>
+            <div class="hm-badges-track" hidden><div class="hm-badges-thumb"></div></div>
         </div>
         `;
+
+        // Barre de défilement synchronisée avec la rangée de badges.
+        const badgesScroll = badgesRoot.querySelector(".hm-badges-scroll");
+        const badgesTrack = badgesRoot.querySelector(".hm-badges-track");
+        const badgesThumb = badgesRoot.querySelector(".hm-badges-thumb");
+        const updateBadgesThumb = () => {
+            const overflow = badgesScroll.scrollWidth - badgesScroll.clientWidth;
+            if (overflow <= 1) {
+                badgesTrack.hidden = true;
+                return;
+            }
+            badgesTrack.hidden = false;
+            const trackWidth = badgesTrack.clientWidth;
+            const thumbWidth = Math.max(40, (badgesScroll.clientWidth / badgesScroll.scrollWidth) * trackWidth);
+            badgesThumb.style.width = `${thumbWidth}px`;
+            badgesThumb.style.left = `${(badgesScroll.scrollLeft / overflow) * (trackWidth - thumbWidth)}px`;
+        };
+        const scrollFromTrack = (clientX, grabOffset) => {
+            const rect = badgesTrack.getBoundingClientRect();
+            const thumbWidth = badgesThumb.offsetWidth;
+            const ratio = (clientX - rect.left - grabOffset) / Math.max(1, rect.width - thumbWidth);
+            const overflow = badgesScroll.scrollWidth - badgesScroll.clientWidth;
+            badgesScroll.scrollLeft = Math.min(1, Math.max(0, ratio)) * overflow;
+        };
+        badgesScroll.addEventListener("scroll", updateBadgesThumb, { passive: true });
+        badgesScroll.querySelectorAll("img").forEach((img) => img.addEventListener("load", updateBadgesThumb));
+        window.addEventListener("resize", updateBadgesThumb);
+        if (typeof ResizeObserver !== "undefined") {
+            const badgesObserver = new ResizeObserver(updateBadgesThumb);
+            badgesObserver.observe(badgesScroll);
+            badgesObserver.observe(badgesRoot.querySelector(".hm-badges-row"));
+        }
+        badgesThumb.addEventListener("pointerdown", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            const grabOffset = event.clientX - badgesThumb.getBoundingClientRect().left;
+            badgesThumb.classList.add("is-dragging");
+            const onMove = (e) => scrollFromTrack(e.clientX, grabOffset);
+            const onUp = () => {
+                badgesThumb.classList.remove("is-dragging");
+                window.removeEventListener("pointermove", onMove);
+                window.removeEventListener("pointerup", onUp);
+            };
+            window.addEventListener("pointermove", onMove);
+            window.addEventListener("pointerup", onUp);
+        });
+        badgesTrack.addEventListener("pointerdown", (event) => {
+            if (event.target === badgesThumb) return;
+            scrollFromTrack(event.clientX, badgesThumb.offsetWidth / 2);
+        });
+        updateBadgesThumb();
+        requestAnimationFrame(updateBadgesThumb);
     }
 
     if (ctfStatsRoot) {
@@ -2841,7 +3241,12 @@ const init = async () => {
             </div>
 
                 <div class="hm-summary-block">
-                ${renderScatterPlot()}
+                <div class="hm-scatter-toolbar">
+                    <button type="button" class="hm-scatter-labels-btn" id="hm-scatter-labels-btn" aria-pressed="${showScatterLabels}">
+                        ${showScatterLabels ? "Masquer les noms" : "Afficher les noms"}
+                    </button>
+                </div>
+                ${renderScatterPlot(Math.max(280, heatmapRoot.getBoundingClientRect().width - 48))}
 
                     ${renderScatterLegend()}
 
@@ -2912,6 +3317,36 @@ const init = async () => {
         }
     }
 
+    const scatterLabelsBtn = document.getElementById("hm-scatter-labels-btn");
+    if (scatterLabelsBtn) {
+        scatterLabelsBtn.addEventListener("click", () => {
+            showScatterLabels = !showScatterLabels;
+            scatterLabelsBtn.setAttribute("aria-pressed", String(showScatterLabels));
+            scatterLabelsBtn.textContent = showScatterLabels ? "Masquer les noms" : "Afficher les noms";
+            const wrapEl = document.querySelector(".hm-scatter-wrap");
+            if (wrapEl) wrapEl.classList.toggle("hm-scatter-show-labels", showScatterLabels);
+        });
+    }
+
+    // Le graphique est redessiné quand la largeur disponible change (rotation du téléphone,
+    // redimensionnement de la fenêtre), pour rester lisible à toutes les tailles.
+    if (heatmapRoot) {
+        let lastScatterWidth = 0;
+        const refreshScatter = () => {
+            const wrapEl = heatmapRoot.querySelector(".hm-scatter-wrap");
+            if (!wrapEl) return;
+            const available = Math.floor(wrapEl.clientWidth);
+            if (!available || Math.abs(available - lastScatterWidth) < 24) return;
+            lastScatterWidth = available;
+            if (Math.abs(available - Number(wrapEl.dataset.w)) < 24) return;
+            wrapEl.outerHTML = renderScatterPlot(available);
+        };
+        if (window.__hmScatterResize) window.removeEventListener("resize", window.__hmScatterResize);
+        window.__hmScatterResize = refreshScatter;
+        window.addEventListener("resize", refreshScatter);
+        refreshScatter();
+    }
+
     const recentToggleList = document.getElementById("hm-recent-toggle-list");
     if (recentToggleList) {
         document.querySelectorAll(".hm-recent-toggle-btn").forEach(btn => {
@@ -2931,24 +3366,25 @@ const init = async () => {
         });
     }
 
-    document.querySelectorAll(".hm-scatter-legend-clickable").forEach(item => {
-        item.addEventListener("click", () => {
-            const platform = item.dataset.platform;
-            const alreadyActive = item.classList.contains("active");
-
-            document.querySelectorAll(".hm-scatter-legend-clickable").forEach(o => o.classList.remove("active"));
-            document.querySelectorAll(".hm-scatter-point-group").forEach(g => g.classList.remove("hm-scatter-dimmed"));
-
-            if (alreadyActive) return;
-
-            item.classList.add("active");
-            document.querySelectorAll(".hm-scatter-point-group").forEach(g => {
-                const platforms = (g.dataset.platforms || "").split("|");
-                if (!platforms.includes(platform)) {
-                    g.classList.add("hm-scatter-dimmed");
-                }
-            });
+    // Sélection d'une plateforme (clic sur un point ou dans la légende) :
+    // le graphique est redessiné avec la bulle d'infos, un second clic la retire.
+    const syncScatterLegend = () => {
+        document.querySelectorAll(".hm-scatter-legend-clickable").forEach(o => {
+            o.classList.toggle("active", o.dataset.platform === selectedScatterPlatform);
         });
+    };
+
+    const selectScatterPlatform = (platform) => {
+        selectedScatterPlatform = platform && platform !== selectedScatterPlatform ? platform : null;
+        const wrapEl = document.querySelector(".hm-scatter-wrap");
+        if (wrapEl) {
+            wrapEl.outerHTML = renderScatterPlot(Number(wrapEl.dataset.w) || 900);
+        }
+        syncScatterLegend();
+    };
+
+    document.querySelectorAll(".hm-scatter-legend-clickable").forEach(item => {
+        item.addEventListener("click", () => selectScatterPlatform(item.dataset.platform));
 
         item.addEventListener("keydown", (event) => {
             if (event.key === "Enter" || event.key === " ") {
@@ -2957,6 +3393,22 @@ const init = async () => {
             }
         });
     });
+
+    if (heatmapRoot) {
+        heatmapRoot.addEventListener("click", (event) => {
+            const group = event.target.closest && event.target.closest(".hm-scatter-point-group");
+            if (group && heatmapRoot.contains(group)) {
+                const platforms = (group.dataset.platforms || "").split("|");
+                const current = platforms.includes(selectedScatterPlatform) ? selectedScatterPlatform : platforms[0];
+                selectScatterPlatform(current);
+                return;
+            }
+            // Clic dans le vide du graphique : on referme la bulle.
+            if (selectedScatterPlatform && event.target.closest && event.target.closest(".hm-scatter-svg")) {
+                selectScatterPlatform(selectedScatterPlatform);
+            }
+        });
+    }
 
     document.querySelectorAll(".hm-day").forEach(el => {
         el.addEventListener("click", () => {

@@ -1520,8 +1520,15 @@
     }
   },
   "2026-11-01": {
-    "count": 17,
+    "count": 24,
     "activités": [
+      "Resolve — FINAL CHAPTER: THE WATCHERS · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 6: THE ROOM · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 5: THE DOOR · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 4: THE GUARD · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 3: ALEX'S JOKE · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 2: TRANSMISSION · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 1: ASSIGNMENT · Sentinel Mission · YouArePlayer",
       "Resolve — Bingo · The Lost Connection · Osint4Fun",
       "Resolve — La ligne · The Lost Connection · Osint4Fun",
       "Resolve — Le lac · The Lost Connection · Osint4Fun",
@@ -1541,7 +1548,7 @@
       "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
     ],
     "stats": {
-      "resolve": 17,
+      "resolve": 24,
       "retex": 0,
       "autre": 0
     }
@@ -1929,6 +1936,25 @@
       "resolve": 0,
       "retex": 2,
       "autre": 0
+    }
+  },
+  "2026-11-02": {
+    "count": 9,
+    "activités": [
+      "Resolve — Empreinte carbone · The Lost Connection · Osint4Fun",
+      "Resolve — Quelle gare ! · The Lost Connection · Osint4Fun",
+      "Resolve — Idée de sortie · The Lost Connection · Osint4Fun",
+      "Resolve — Greta · The Lost Connection · Osint4Fun",
+      "Resolve — Température changeante · The Lost Connection · Osint4Fun",
+      "Resolve — Un master adapté · The Lost Connection · Osint4Fun",
+      "Resolve — Une visite au musée · Caneléa · Osint4Fun",
+      "Created — MAJ Heatmap · Site",
+      "Created — MAJ Responsiveness · Site"
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 2
     }
   },
   "2026-10-28": {
@@ -3501,13 +3527,13 @@
     }
   },
   "__totaux__": {
-    "resolve": 720,
+    "resolve": 734,
     "retex": 293,
-    "autre": 78
+    "autre": 80
   },
   "__assets__": {
     "profils": 8,
-    "badges": 15
+    "badges": 16
   },
   "__ctf_periods__": [
     {
