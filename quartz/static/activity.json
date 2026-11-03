@@ -2483,8 +2483,24 @@
     }
   },
   "2026-11-03": {
-    "count": 9,
+    "count": 25,
     "activités": [
+      "Resolve — Tu as ta place ! · MATHILDA · Osint4Fun",
+      "Resolve — The show must go on... · MATHILDA · Osint4Fun",
+      "Resolve — Effet de serre · MATHILDA · Osint4Fun",
+      "Resolve — Cachez ce genre... · MATHILDA · Osint4Fun",
+      "Resolve — Un rêve d'enfant · MATHILDA · Osint4Fun",
+      "Resolve — Médecine · MATHILDA · Osint4Fun",
+      "Resolve — AGC · MATHILDA · Osint4Fun",
+      "Resolve — Actrice et inventrice · MATHILDA · Osint4Fun",
+      "Resolve — USA · MATHILDA · Osint4Fun",
+      "Resolve — ESPCI · MATHILDA · Osint4Fun",
+      "Resolve — Ada Lovelace · MATHILDA · Osint4Fun",
+      "Resolve — Oubliées de la science · MATHILDA · Osint4Fun",
+      "Resolve — La tête dans les étoiles · MATHILDA · Osint4Fun",
+      "Resolve — Européenne en orbite · MATHILDA · Osint4Fun",
+      "Resolve — Ingénieure et actrice · MATHILDA · Osint4Fun",
+      "Resolve — No-Nobel · MATHILDA · Osint4Fun",
       "Resolve — Wikipédia · MATHILDA · Osint4Fun",
       "Resolve — Lieu éponyme · MATHILDA · Osint4Fun",
       "Resolve — Elles bougent · MATHILDA · Osint4Fun",
@@ -2496,7 +2512,7 @@
       "Resolve — Introduction · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 25,
       "retex": 0,
       "autre": 0
     }
@@ -3551,7 +3567,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 748,
+    "resolve": 764,
     "retex": 293,
     "autre": 80
   },
