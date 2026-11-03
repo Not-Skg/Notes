@@ -2482,6 +2482,20 @@
       "autre": 1
     }
   },
+  "2026-11-03": {
+    "count": 4,
+    "activités": [
+      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
+      "Resolve — Maths, NSI et Arts plastiques · MATHILDA · Osint4Fun",
+      "Resolve — Des égéries scientifiques · MATHILDA · Osint4Fun",
+      "Resolve — Introduction · MATHILDA · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-25": {
     "count": 2,
     "activités": [
@@ -3532,7 +3546,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 739,
+    "resolve": 743,
     "retex": 293,
     "autre": 80
   },
