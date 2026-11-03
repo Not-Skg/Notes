@@ -2483,15 +2483,20 @@
     }
   },
   "2026-11-03": {
-    "count": 4,
+    "count": 9,
     "activités": [
+      "Resolve — Wikipédia · MATHILDA · Osint4Fun",
+      "Resolve — Lieu éponyme · MATHILDA · Osint4Fun",
+      "Resolve — Elles bougent · MATHILDA · Osint4Fun",
+      "Resolve — On en apprend un peu plus · Caneléa · Osint4Fun",
+      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
       "Resolve — Des statistiques · MATHILDA · Osint4Fun",
       "Resolve — Maths, NSI et Arts plastiques · MATHILDA · Osint4Fun",
       "Resolve — Des égéries scientifiques · MATHILDA · Osint4Fun",
       "Resolve — Introduction · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
@@ -3546,7 +3551,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 743,
+    "resolve": 748,
     "retex": 293,
     "autre": 80
   },
