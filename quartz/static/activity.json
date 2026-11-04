@@ -1109,6 +1109,22 @@
       "autre": 0
     }
   },
+  "2026-11-04": {
+    "count": 6,
+    "activités": [
+      "Resolve — Industrisité · MATHILDA · Osint4Fun",
+      "Resolve — Pousse, pousse ! · MATHILDA · Osint4Fun",
+      "Resolve — NoMoreMatildas · MATHILDA · Osint4Fun",
+      "Resolve — Hyperboles · MATHILDA · Osint4Fun",
+      "Resolve — Microbiologie · MATHILDA · Osint4Fun",
+      "Resolve — Un jour ce sera moi · MATHILDA · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-16": {
     "count": 2,
     "activités": [
@@ -2483,8 +2499,9 @@
     }
   },
   "2026-11-03": {
-    "count": 25,
+    "count": 26,
     "activités": [
+      "Resolve — Le dossier · Caneléa · Osint4Fun",
       "Resolve — Tu as ta place ! · MATHILDA · Osint4Fun",
       "Resolve — The show must go on... · MATHILDA · Osint4Fun",
       "Resolve — Effet de serre · MATHILDA · Osint4Fun",
@@ -2512,7 +2529,7 @@
       "Resolve — Introduction · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 25,
+      "resolve": 26,
       "retex": 0,
       "autre": 0
     }
@@ -3567,7 +3584,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 764,
+    "resolve": 771,
     "retex": 293,
     "autre": 80
   },
