@@ -1110,8 +1110,9 @@
     }
   },
   "2026-11-04": {
-    "count": 8,
+    "count": 9,
     "activités": [
+      "Resolve — La surveillance · Caneléa · Osint4Fun",
       "Resolve — Sans moi, pas de tour ? · MATHILDA · Osint4Fun",
       "Resolve — Bis repetita · MATHILDA · Osint4Fun",
       "Resolve — Industrisité · MATHILDA · Osint4Fun",
@@ -1122,7 +1123,7 @@
       "Resolve — Un jour ce sera moi · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 8,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
@@ -3586,7 +3587,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 773,
+    "resolve": 774,
     "retex": 293,
     "autre": 80
   },
