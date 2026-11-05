@@ -1784,8 +1784,16 @@
     }
   },
   "2026-11-05": {
-    "count": 20,
+    "count": 28,
     "activités": [
+      "Resolve — TERRORIST ATTACK · OSINT · OSINT Industries",
+      "Resolve — Sœur Angélique · Caneléa · Osint4Fun",
+      "Resolve — Sanctions · Garenne · Osint4Fun",
+      "Resolve — Manquant · Garenne · Osint4Fun",
+      "Resolve — Défenseur des droits · Garenne · Osint4Fun",
+      "Resolve — 36 15 Recours · Garenne · Osint4Fun",
+      "Resolve — Même pas drôle · Garenne · Osint4Fun",
+      "Resolve — It's personal · Garenne · Osint4Fun",
       "Resolve — Statut · Garenne · Osint4Fun",
       "Resolve — Contient des conservateurs · Garenne · Osint4Fun",
       "Resolve — Outrans · Garenne · Osint4Fun",
@@ -1808,7 +1816,7 @@
       "Resolve — Vengeance · SCENOSINT · Osint4Fun"
     ],
     "stats": {
-      "resolve": 20,
+      "resolve": 28,
       "retex": 0,
       "autre": 0
     }
@@ -3628,13 +3636,13 @@
     }
   },
   "__totaux__": {
-    "resolve": 805,
+    "resolve": 813,
     "retex": 293,
     "autre": 80
   },
   "__assets__": {
     "profils": 8,
-    "badges": 16
+    "badges": 17
   },
   "__ctf_periods__": [
     {

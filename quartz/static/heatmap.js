@@ -115,9 +115,14 @@ const init = async () => {
             alt: "Permis d'Osinter'",
         },
         {
-            src: "Badges/AI1.png",
-            href: "https://www.badgeforge.eu/verify/9f1a8de37357ffb4ab1bb9fa1581e6664f00fda7eddeea73e91e7dd0e64ff1bc",
-            alt: "ADOPTION 2026-FINISHER",
+            src: "Badges/badge-d67f944edce42d8d.png",
+            href: "https://www.badgeforge.eu/verify/d67f944edce42d8d02685508f05a3085f7d0160571d7b7be3e7941b373616996",
+            alt: "CANELEA 2025-FINISHER",
+        },
+        {
+            src: "Badges/AOO2025.png",
+            href: "https://www.badgeforge.eu/verify/c53f517cb3204c6ddc7b2043f824cb15cd120581cb240b047c6f09da2b0a1024",
+            alt: "Advent Of OSINT 2025-FINISHER",
         },
         {
             src: "Badges/AOO2025.png",
