@@ -1784,8 +1784,14 @@
     }
   },
   "2026-11-05": {
-    "count": 14,
+    "count": 20,
     "activités": [
+      "Resolve — Statut · Garenne · Osint4Fun",
+      "Resolve — Contient des conservateurs · Garenne · Osint4Fun",
+      "Resolve — Outrans · Garenne · Osint4Fun",
+      "Resolve — Camille · Garenne · Osint4Fun",
+      "Resolve — Des bancs, encore des bancs · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Des souvenirs · Un voyage avec Clara ? · Osint4Fun",
       "Resolve — Quelques activités · Un voyage avec Clara ? · Osint4Fun",
       "Resolve — Le logement · Un voyage avec Clara ? · Osint4Fun",
       "Resolve — Une ville mais laquelle ? · Un voyage avec Clara ? · Osint4Fun",
@@ -1802,7 +1808,7 @@
       "Resolve — Vengeance · SCENOSINT · Osint4Fun"
     ],
     "stats": {
-      "resolve": 14,
+      "resolve": 20,
       "retex": 0,
       "autre": 0
     }
@@ -3622,7 +3628,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 799,
+    "resolve": 805,
     "retex": 293,
     "autre": 80
   },
