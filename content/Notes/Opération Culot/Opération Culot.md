@@ -52,6 +52,5 @@ Le CTF était certes court, mais complet. Il m'a permis d'affiner mes to-do list
 Voici, en un coup d'œil, l'ensemble des ramifications que notre enquête a permis de mettre au jour (graphe d'investigation, assets et preuves anonymisés) :
 ![[OP_Culot_Phase-2.png]]
 
-Je mettrai ici les badges et le certificat de participation dès que nous les aurons reçus.
 ![[certificat_ID-ACW77GW.png]]
 ![[OP_CULOT_P.png|300]]![[OP_CULOT_PP.png|300]]![[OP_CULOT_PF.png|300]]
