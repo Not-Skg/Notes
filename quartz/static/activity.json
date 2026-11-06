@@ -1,159 +1,10 @@
 {
-  "2026-03-02": {
-    "count": 2,
-    "activités": [
-      "Resolve — I am Cole · Integrity · Osint4Fun",
-      "Resolve — Grain de sable · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-09": {
-    "count": 1,
-    "activités": [
-      "Created — Overpass-Turbo · Toolbox · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-07-13": {
-    "count": 2,
-    "activités": [
-      "Created — MAJ - DA \"Compteurs Globaux\" · Site",
-      "Created — MAJ - Responsiveness \"Resultats CTF\" · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-09-10": {
-    "count": 9,
-    "activités": [
-      "Resolve — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
-      "Resolve — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats",
-      "Resolve — Un nouvel allié · En eaux troubles · DeepThreats",
-      "Resolve — Un soupçon de soupçon · En eaux troubles · DeepThreats",
-      "Resolve — Président ! · En eaux troubles · DeepThreats",
-      "Resolve — Ordre de mission · A vos marques · DeepThreats",
-      "Resolve — Scoring · A vos marques · DeepThreats",
-      "Resolve — Votre attention s'il vous plait ! · A vos marques · DeepThreats",
-      "Resolve — KNIFE ATTACK · OSINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 9,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-29": {
+  "2026-02-13": {
     "count": 3,
     "activités": [
-      "Created — Grid Plateformes · Heatmap · Site",
-      "Created — Badges Lists · Heatmap · Site",
-      "Created — Dates Importantes · Heatmap · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 3
-    }
-  },
-  "2026-09-24": {
-    "count": 4,
-    "activités": [
-      "Retex — Doctor who · What's up doc ? · DeepThreats",
-      "Retex — Wuan upon a time · What's up doc ? · DeepThreats",
-      "Retex — Pas d'ami comme toi · What's up doc ? · DeepThreats",
-      "Retex — Message intime · What's up doc ? · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-07-27": {
-    "count": 3,
-    "activités": [
-      "Retex — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
-      "Retex — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
-      "Retex — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-05-23": {
-    "count": 8,
-    "activités": [
-      "Resolve — Love me tender · Here we go again · Medileak 3",
-      "Resolve — In da club · Money For Nothing · Medileak 3",
-      "Resolve — Go West · Voyage Voyage · Medileak 3",
-      "Resolve — Mull of Kintyre · Voyage Voyage · Medileak 3",
-      "Resolve — Mon Amie La Rose · Money For Nothing · Medileak 3",
-      "Resolve — Magnolia For Ever · Money For Nothing · Medileak 3",
-      "Resolve — Je fais mon job à plein temps · L'école du micro d'argent · Medileak 3",
-      "Resolve — The Teacher · L'école du micro d'argent · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 8,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-17": {
-    "count": 6,
-    "activités": [
-      "Resolve — Les retrouvailles · Hates · Osint4Fun",
-      "Resolve — Chaud devant · ROSO · 404CTF26",
-      "Resolve — Canular savant (1/3) · ROSO · 404CTF26",
-      "Resolve — Canular savant (2/3) · ROSO · 404CTF26",
-      "Resolve — Doctor Es Langues · ROSO · 404CTF26",
-      "Resolve — Metro OSINT Dodo · ROSO · 404CTF26"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-03": {
-    "count": 11,
-    "activités": [
-      "Resolve — Reportage animalier · Intro · L'appel de la forêt",
-      "Resolve — Chill comme un capybara · Introduction · L'appel de la forêt",
-      "Resolve — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
-      "Resolve — La mésange babysitter · Petsitter · L'appel de la forêt",
-      "Resolve — Bavard comme une pie · Petsitter · L'appel de la forêt",
-      "Resolve — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
-      "Resolve — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
-      "Resolve — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
-      "Resolve — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
-      "Resolve — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
-      "Resolve — L'envol des perroquets · Faits divers · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 11,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-19": {
-    "count": 3,
-    "activités": [
-      "Resolve — CyberHarcèlement · Hates · Osint4Fun",
-      "Resolve — Rue de la Reine Jeanne · Hates · Osint4Fun",
-      "Resolve — BUSINESS · Hates · Osint4Fun"
+      "Resolve — Hidden Deep Into My Heart · Love at First Breach · TryHackMe",
+      "Resolve — CupidBot · Love at First Breach · TryHackMe",
+      "Resolve — Valenfind · Love at First Breach · TryHackMe"
     ],
     "stats": {
       "resolve": 3,
@@ -161,22 +12,78 @@
       "autre": 0
     }
   },
-  "2026-03-26": {
-    "count": 8,
+  "2026-02-14": {
+    "count": 3,
     "activités": [
-      "Created — Phase 3 · Bellatrix",
-      "Resolve — En chemin pour une partie de pêche · Bellatrix",
-      "Resolve — Remonter la piste · Bellatrix",
-      "Resolve — On se rapproche · Bellatrix",
-      "Resolve — Les archives au secours · Bellatrix",
-      "Resolve — Le plein trop cher · Bellatrix",
-      "Resolve — Temps incertains · Bellatrix",
-      "Resolve — Localisation de \"Lynx\" · Bellatrix"
+      "Resolve — TryHeartMe · Love at First Breach · TryHackMe",
+      "Resolve — SpeedChatting · Love at First Breach · TryHackMe",
+      "Resolve — Love Letter Locker · Love at First Breach · TryHackMe"
     ],
     "stats": {
-      "resolve": 7,
+      "resolve": 3,
       "retex": 0,
-      "autre": 1
+      "autre": 0
+    }
+  },
+  "2026-02-15": {
+    "count": 2,
+    "activités": [
+      "Resolve — Cupid's Matchmaker · Love at First Breach · TryHackMe",
+      "Resolve — When Hearts Collide · Love at First Breach · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-02-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Corp Website · Love at First Breach · TryHackMe",
+      "Resolve — Signed Messages · Love at First Breach · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-02-25": {
+    "count": 2,
+    "activités": [
+      "Resolve — Précision · Integrity · Osint4Fun",
+      "Resolve — Restriction · Integrity · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-02-26": {
+    "count": 3,
+    "activités": [
+      "Resolve — Réduction · Integrity · Osint4Fun",
+      "Resolve — Netteté · Integrity · Osint4Fun",
+      "Resolve — Antériorité · Integrity · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-02-27": {
+    "count": 2,
+    "activités": [
+      "Resolve — Cigognes · Integrity · Osint4Fun",
+      "Resolve — Viser la lune · Integrity · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
     }
   },
   "2026-02-28": {
@@ -191,218 +98,47 @@
       "autre": 0
     }
   },
-  "2026-10-24": {
-    "count": 12,
-    "activités": [
-      "Resolve — GRINCHSTEIN · Osintopia",
-      "Created — Participation TraceLabs Search Party · Site",
-      "Retex — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2",
-      "Retex — Promenade historique · Learning Track · Perce le front numérique ! V2",
-      "Retex — Camouflage · Learning Track · Perce le front numérique ! V2",
-      "Retex — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
-      "Retex — Bienvenue ! · Perce le front numérique ! V2"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 10,
-      "autre": 1
-    }
-  },
-  "2026-10-10": {
-    "count": 8,
-    "activités": [
-      "Resolve — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
-      "Resolve — J'aime la neige, bientôt y'en aura plus. · Oscar Zulu",
-      "Resolve — Vol à vue 1/4 · Osintopia",
-      "Resolve — La ville oubliée 6/6 · Osintopia",
-      "Resolve — La ville oubliée 5/6 · Osintopia",
-      "Resolve — La ville oubliée 4/6 · Osintopia",
-      "Resolve — La ville oubliée 3/6 · Osintopia",
-      "Created — Opération Culot · Site"
-    ],
-    "stats": {
-      "resolve": 7,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-30": {
-    "count": 6,
-    "activités": [
-      "Resolve — Halloween · Osintopia",
-      "Resolve — THE LIBER TACENDI · OSINT · YouArePlayer",
-      "Resolve — A TASTE OF INFLUENCE  PART 4 · OSINT · OSINT Industries",
-      "Resolve — A TASTE OF INFLUENCE  PART 3 · OSINT · OSINT Industries",
-      "Resolve — A TASTE OF INFLUENCE  PART 2 · OSINT · OSINT Industries",
-      "Resolve — A TASTE OF INFLUENCE  PART 1 · OSINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-04": {
-    "count": 6,
-    "activités": [
-      "Resolve — The Burglar Cat · FUN · YouArePlayer",
-      "Resolve — The Long Baseline IV · MIXED · YouArePlayer",
-      "Resolve — The Long Baseline III · MIXED · YouArePlayer",
-      "Resolve — The Long Baseline II · MIXED · YouArePlayer",
-      "Resolve — The Long Baseline I · MIXED · YouArePlayer",
-      "Resolve — Le monument 3/3 · Osintopia"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-23": {
-    "count": 4,
-    "activités": [
-      "Retex — Les fourberies du renard · Acte 2 - Droit · L'appel de la forêt",
-      "Retex — Le loup déguisé · Acte 2 - Droit · L'appel de la forêt",
-      "Retex — Les commencements de l'oiseau · Acte 2 - Droit · L'appel de la forêt",
-      "Retex — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-09-20": {
-    "count": 3,
-    "activités": [
-      "Retex — Un visage familier · Une drôle de fleur · DeepThreats",
-      "Retex — The creator · Une drôle de fleur · DeepThreats",
-      "Retex — Jardinier anonyme · Une drôle de fleur · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-06-19": {
+  "2026-03-01": {
     "count": 2,
     "activités": [
-      "Retex — Chaud Devant · ROSO · 404CTF26",
-      "Created — 404CTF26 · Site"
+      "Resolve — Un rêve au début du brouillard · Integrity · Osint4Fun",
+      "Resolve — Dématérialisation · Integrity · Osint4Fun"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 1
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
     }
   },
-  "2026-05-03": {
+  "2026-03-02": {
     "count": 2,
     "activités": [
-      "Created — Donut Chart · Site",
-      "Created — Bar Charts · Site"
+      "Resolve — I am Cole · Integrity · Osint4Fun",
+      "Resolve — Grain de sable · Integrity · Osint4Fun"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 2,
       "retex": 0,
-      "autre": 2
+      "autre": 0
     }
   },
-  "2026-09-14": {
-    "count": 1,
-    "activités": [
-      "Created — DeepThreats · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-07-17": {
+  "2026-03-03": {
     "count": 3,
     "activités": [
-      "Retex — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
-      "Retex — L'envol des perroquets · Faits divers · L'appel de la forêt",
-      "Retex — Le trésor des corbeaux · Faits divers · L'appel de la forêt"
+      "Resolve — Sororité · Integrity · Osint4Fun",
+      "Resolve — Confraternité · Integrity · Osint4Fun",
+      "Resolve — Le monument 1/3 · Osintopia · Osintopia"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-07-07": {
-    "count": 6,
-    "activités": [
-      "Resolve — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
-      "Resolve — La balade du zèbre · La Famille Michelle · L'appel de la forêt",
-      "Resolve — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
-      "Resolve — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
-      "Resolve — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt",
-      "Resolve — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 6,
+      "resolve": 3,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-05-13": {
-    "count": 5,
-    "activités": [
-      "Retex — Des mots pour contrer les maux · Nos partenaires · BleuetV5",
-      "Retex — Un vers pour la liberté · L'art de résister · BleuetV5",
-      "Retex — L'art et la résistance · L'art de résister · BleuetV5",
-      "Retex — Résistant dans l'art · L'art de résister · BleuetV5",
-      "Retex — Une oreille pour se souvenir · L'art de résister · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 5,
-      "autre": 0
-    }
-  },
-  "2026-09-04": {
-    "count": 5,
-    "activités": [
-      "Resolve — NEVER DELETED · OSINT · OSINT Industries",
-      "Resolve — COUNTERINTELLIGENCE · OSINT · OSINT Industries",
-      "Resolve — FINANCIAL INTELLIGENCE · OSINT · OSINT Industries",
-      "Resolve — FSB Part 1 · FSB · OSINT Industries",
-      "Resolve — FSB Part 2 · FSB · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-09": {
-    "count": 5,
-    "activités": [
-      "Resolve — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Resolve — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Resolve — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Resolve — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Resolve — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-27": {
+  "2026-03-04": {
     "count": 1,
     "activités": [
-      "Resolve — Every Breath You Take · Antisocial · Medileak 3"
+      "Resolve — L'alter Ego · Integrity · Osint4Fun"
     ],
     "stats": {
       "resolve": 1,
@@ -410,32 +146,65 @@
       "autre": 0
     }
   },
-  "2026-09-30": {
-    "count": 8,
+  "2026-03-11": {
+    "count": 1,
     "activités": [
-      "Resolve —  WINDOWS RELEASE · Oscar Zulu",
-      "Resolve —  WINDOWS UPGRADE · Oscar Zulu",
-      "Resolve —  WINDOWS UPDATE · Oscar Zulu",
-      "Resolve —  Mémoire d'un garage oublié 3/3 · Osintopia",
-      "Resolve — Chasse à l’homme 2/2 · Osintopia",
-      "Resolve — Chasse à l’homme 1/2 · Osintopia",
-      "Resolve — The Black Penny Dossier · OSINT · YouArePlayer",
-      "Resolve — Le monument 2/3 · Osintopia"
+      "Created — Skg Notes · Site"
     ],
     "stats": {
-      "resolve": 8,
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-03-13": {
+    "count": 9,
+    "activités": [
+      "Resolve — OSintroduction · IsFred",
+      "Resolve — On the loose 1 · IsFred",
+      "Resolve — On the loose 2 · IsFred",
+      "Resolve — High altitude Environment · IsFred",
+      "Resolve — Agent Hobbs · IsFred",
+      "Resolve — Johny Black Hat · IsFred",
+      "Resolve — Marvelous Fire · IsFred",
+      "Resolve — Who is Fred · IsFred",
+      "Resolve — Balade nocturne · IsFred"
+    ],
+    "stats": {
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-04-29": {
-    "count": 1,
+  "2026-03-14": {
+    "count": 6,
     "activités": [
-      "Retex — Phishing Unfolding · SOC Simulator · TryHackMe"
+      "Retex — 1 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 2 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 3 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 4 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 5 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 6 Decembre · Advent of Osint · Osint4Fun"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 1,
+      "retex": 6,
+      "autre": 0
+    }
+  },
+  "2026-03-15": {
+    "count": 6,
+    "activités": [
+      "Retex — 7 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 8 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 9 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 10 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 11 Decembre · Advent of Osint · Osint4Fun",
+      "Retex — 12 Decembre · Advent of Osint · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
       "autre": 0
     }
   },
@@ -455,248 +224,6 @@
       "autre": 0
     }
   },
-  "2026-10-14": {
-    "count": 5,
-    "activités": [
-      "Resolve —  L'allié oublié · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
-      "Resolve —  Mémoire d'un garage oublié 2/3 · Osintopia",
-      "Created — Refonte ToolBox · Site",
-      "Created — Maj Overpass-Turbo · Site",
-      "Created — MAJ Bannière pages · Site"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 3
-    }
-  },
-  "2026-03-22": {
-    "count": 1,
-    "activités": [
-      "Created — Graffiti · GCC CTF · GCC"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-20": {
-    "count": 6,
-    "activités": [
-      "Resolve — PILOTE · FLAG4ALL · Osint-FR",
-      "Resolve — SCOTT · FLAG4ALL · Osint-FR",
-      "Resolve — GEORGETTE · FLAG4ALL · Osint-FR",
-      "Resolve — Boston · CHALLENGE ADHERENTS · Osint-FR",
-      "Resolve — Welcome · CHALLENGE ADHERENTS · Osint-FR",
-      "Created — Perce le Front Numérique V2 · Site"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-31": {
-    "count": 8,
-    "activités": [
-      "Resolve — Astronomy Picture of the Day · Phénomènes naturels · Osint4Fun",
-      "Resolve — Aurore boréale · Phénomènes naturels · Osint4Fun",
-      "Resolve — Éclipse de soleil · Phénomènes naturels · Osint4Fun",
-      "Resolve — Gérard Failler · Phénomènes naturels · Osint4Fun",
-      "Resolve — Grande marée · Phénomènes naturels · Osint4Fun",
-      "Resolve — Marée haute · Phénomènes naturels · Osint4Fun",
-      "Resolve — SANCTIONED COMPANY · OSINT · OSINT Industries",
-      "Resolve — The Hidden Sunflowers · COMMUNITY EDITION · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 8,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-05": {
-    "count": 16,
-    "activités": [
-      "Resolve — Ecrire pour faire vivre leur mémoire · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — Hommage à un enfant de la Nation · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
-      "Resolve — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
-      "Resolve — Le chant du retour · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
-      "Resolve — Le train arrive · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — Une grande figure contemporaine · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — Promenade historique · Learning Track · Perce le front numérique ! V2",
-      "Resolve — Camouflage · Learning Track · Perce le front numérique ! V2",
-      "Resolve — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
-      "Resolve — Bienvenue ! · Perce le front numérique ! V2"
-    ],
-    "stats": {
-      "resolve": 16,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-22": {
-    "count": 4,
-    "activités": [
-      "Retex — La parade du paon · Acte 2 - Activités · L'appel de la forêt",
-      "Retex — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
-      "Retex — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
-      "Retex — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-09-21": {
-    "count": 3,
-    "activités": [
-      "Retex — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
-      "Retex — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
-      "Retex — A table ! · Une drôle de fleur · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-06-18": {
-    "count": 5,
-    "activités": [
-      "Retex — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Retex — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Retex — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Retex — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
-      "Retex — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 5,
-      "autre": 0
-    }
-  },
-  "2026-09-15": {
-    "count": 3,
-    "activités": [
-      "Retex — Ordre de mission · A vos marques · DeepThreats",
-      "Retex — Scoring · A vos marques · DeepThreats",
-      "Retex — Votre attention s'il vous plait ! · A vos marques · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-05-02": {
-    "count": 1,
-    "activités": [
-      "Created — Compteurs Globaux · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-07-16": {
-    "count": 2,
-    "activités": [
-      "Created — MAJ Badges · L'appel de la forêt · Site",
-      "Retex — Reportage animalier · Intro · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 1
-    }
-  },
-  "2026-07-06": {
-    "count": 6,
-    "activités": [
-      "Resolve — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
-      "Resolve — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
-      "Resolve — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
-      "Resolve — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
-      "Resolve — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
-      "Resolve — L'énergie du frelon oriental · Acte 3 - Organisation · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-05": {
-    "count": 2,
-    "activités": [
-      "Resolve — Oops… Wrong Base · GEOINT · OSINT Industries",
-      "Resolve — FSB Part 3 · FSB · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-12": {
-    "count": 4,
-    "activités": [
-      "Retex — Alias et acide · L'audace de résister · BleuetV5",
-      "Retex — Le glacier tenace · L'audace de résister · BleuetV5",
-      "Retex — Plymouth 2 · L'audace de résister · BleuetV5",
-      "Retex — Le tract dissident · L'audace de résister · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-06-08": {
-    "count": 1,
-    "activités": [
-      "Resolve — MADELEINE DE PROUST · Bad cop · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-26": {
-    "count": 4,
-    "activités": [
-      "Resolve — Around the World · Ya foye · Medileak 3",
-      "Resolve — I Can See Clearly Now · Ya foye · Medileak 3",
-      "Resolve — Sweet Child o' Mine · Family Affair · Medileak 3",
-      "Resolve — Soldier of Fortune · Family Affair · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-28": {
-    "count": 1,
-    "activités": [
-      "Resolve — Phishing Unfolding · SOC Simulator · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
   "2026-03-17": {
     "count": 6,
     "activités": [
@@ -713,17 +240,66 @@
       "autre": 0
     }
   },
-  "2026-10-15": {
-    "count": 3,
+  "2026-03-18": {
+    "count": 4,
     "activités": [
-      "Resolve — Desaparicion 4/4 · Osintopia",
-      "Resolve — Desaparicion 3/4 · Osintopia",
-      "Resolve — Desaparicion 2/4 · Osintopia"
+      "Retex — Speed Chatting · Love at First Breach · TryHackMe",
+      "Retex — TryHeartMe · Love at First Breach · TryHackMe",
+      "Retex — Valenfind · Love at First Breach · TryHackMe",
+      "Retex — When Heats Collide · Love at First Breach · TryHackMe"
     ],
     "stats": {
-      "resolve": 3,
-      "retex": 0,
+      "resolve": 0,
+      "retex": 4,
       "autre": 0
+    }
+  },
+  "2026-03-19": {
+    "count": 3,
+    "activités": [
+      "Retex — Hidden Deep into my Heart · Love at First Breach · TryHackMe",
+      "Retex — Love Letter Locker · Love at First Breach · TryHackMe",
+      "Retex — Signed Messages · Love at First Breach · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-03-20": {
+    "count": 3,
+    "activités": [
+      "Retex — Corp Website · Love at First Breach · TryHackMe",
+      "Retex — Cupid's Matchmaker · Love at First Breach · TryHackMe",
+      "Retex — CupidBot · Love at First Breach · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-03-21": {
+    "count": 1,
+    "activités": [
+      "Retex — Sakura Room · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-03-22": {
+    "count": 1,
+    "activités": [
+      "Created — Graffiti · GCC CTF · GCC"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
     }
   },
   "2026-03-23": {
@@ -739,214 +315,64 @@
       "autre": 3
     }
   },
-  "2026-10-21": {
+  "2026-03-24": {
+    "count": 12,
+    "activités": [
+      "Created — Phase 1 · Bellatrix",
+      "Resolve — Un message d'alerte · Bellatrix",
+      "Resolve — La vidéo du sauvetage · Bellatrix",
+      "Resolve — Trop Beau pour être vrai · Bellatrix",
+      "Resolve — Dé-cridibiliser l'information · Bellatrix",
+      "Resolve — Au service d'une cause · Bellatrix",
+      "Resolve — Rétablir la véracité des faits · Bellatrix",
+      "Resolve — Une metadata vaut mille images · Bellatrix",
+      "Resolve — Mesurer l'attaque · Bellatrix",
+      "Resolve — Identifier le primo-diffuseur · Bellatrix",
+      "Resolve — Cyber-physique ! · Bellatrix",
+      "Resolve — Analyser l'attaque · Bellatrix"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-03-25": {
+    "count": 12,
+    "activités": [
+      "Created — Phase 2 · Bellatrix",
+      "Resolve — Surveillance du réseau social · Bellatrix",
+      "Resolve — La piste de l'organisation · Bellatrix",
+      "Resolve — Fouiller le site · Bellatrix",
+      "Resolve — Nos réalisations... · Bellatrix",
+      "Resolve — Découverte de preuves cachées · Bellatrix",
+      "Resolve — La piste du financement · Bellatrix",
+      "Resolve — Analyse WHOIS des domaines suspects · Bellatrix",
+      "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix",
+      "Resolve — La temporalité de l'attaque · Bellatrix",
+      "Resolve — Réutilisation de code sur les domaines · Bellatrix",
+      "Resolve — Déclenchement immédiat · Bellatrix"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-03-26": {
     "count": 8,
     "activités": [
-      "Resolve — L’accident · RECON · IsFred",
-      "Resolve — Objet perdu · RECON · IsFred",
-      "Resolve — Famous Fred · SOCINT · IsFred",
-      "Resolve — Artiste en herbe · SOCINT · IsFred",
-      "Created — MAJ \"Mes Plateformes\" · Site",
-      "Resolve — Surveillance lointaine · GEOINT · IsFred",
-      "Resolve — TAPERDU · CHALLENGE ADHERENTS · Osint-FR",
-      "Resolve — CRASH · CHALLENGE ADHERENTS · Osint-FR"
+      "Created — Phase 3 · Bellatrix",
+      "Resolve — En chemin pour une partie de pêche · Bellatrix",
+      "Resolve — Remonter la piste · Bellatrix",
+      "Resolve — On se rapproche · Bellatrix",
+      "Resolve — Les archives au secours · Bellatrix",
+      "Resolve — Le plein trop cher · Bellatrix",
+      "Resolve — Temps incertains · Bellatrix",
+      "Resolve — Localisation de \"Lynx\" · Bellatrix"
     ],
     "stats": {
       "resolve": 7,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-01": {
-    "count": 10,
-    "activités": [
-      "Resolve — Belles Plaques · Oscar Zulu",
-      "Resolve — Une dizaine de millénaire · Osintopia",
-      "Resolve — Pas de maire, pas de chocolat 2 · Oscar Zulu",
-      "Resolve — Pas de maire, pas de chocolat 1 · Oscar Zulu",
-      "Resolve — Tireur des litres · Oscar Zulu",
-      "Resolve — Petit Boulot · Oscar Zulu",
-      "Resolve — Six petits pieds sous terre · Oscar Zulu",
-      "Resolve — Petit Caillou · Oscar Zulu",
-      "Resolve — BLUE ART · Oscar Zulu",
-      "Resolve — La liste · Oscar Zulu"
-    ],
-    "stats": {
-      "resolve": 10,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-03": {
-    "count": 3,
-    "activités": [
-      "Resolve — Sororité · Integrity · Osint4Fun",
-      "Resolve — Confraternité · Integrity · Osint4Fun",
-      "Resolve — Le monument 1/3 · Osintopia · Osintopia"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-08": {
-    "count": 2,
-    "activités": [
-      "Resolve — Have a Break · TryHackMe",
-      "Retex — Have a Break · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-07-12": {
-    "count": 2,
-    "activités": [
-      "Resolve — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt",
-      "Created — L'appel de la forêt · Site"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-09-11": {
-    "count": 19,
-    "activités": [
-      "Resolve — A table ! · Une drôle de fleur · DeepThreats",
-      "Resolve — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
-      "Resolve — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
-      "Resolve — Jardinier anonyme · Une drôle de fleur · DeepThreats",
-      "Resolve — Une belle histoire · Partenaire particulier · DeepThreats",
-      "Resolve — French Touch · L'ile mystérieuse · DeepThreats",
-      "Resolve — The creator · Une drôle de fleur · DeepThreats",
-      "Resolve — Un visage famillier · Une drôle de fleur · DeepThreats",
-      "Resolve — La plume et le pouvoir · Une drôle de fleur · DeepThreats",
-      "Resolve — Tableau de chasse · Une drôle de fleur · DeepThreats",
-      "Resolve — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
-      "Resolve — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
-      "Resolve — Metal hurlant · En eaux troubles · DeepThreats",
-      "Resolve — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
-      "Resolve — Wuan upon a time · En eaux troubles · DeepThreats",
-      "Resolve — Doctor who · What's up doc ? · DeepThreats",
-      "Resolve — Un coin discret · En eaux troubles · DeepThreats",
-      "Resolve — Deal · En eaux troubles · DeepThreats",
-      "Resolve — L'écolo · En eaux troubles · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 19,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-28": {
-    "count": 2,
-    "activités": [
-      "Created — Streaks · Heatmap · Site",
-      "Created — Clic pour agrandir image · General · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-09-25": {
-    "count": 4,
-    "activités": [
-      "Created — À propos · Site",
-      "Created — Job-seeking-callout · Site",
-      "Retex — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
-      "Retex — Une belle histoire · Partenaire particulier · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 2,
-      "autre": 2
-    }
-  },
-  "2026-07-26": {
-    "count": 1,
-    "activités": [
-      "Retex — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-05-22": {
-    "count": 2,
-    "activités": [
-      "Resolve — Old Friend · Here we go again · Medileak 3",
-      "Resolve — Smile ! · Here we go again · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-16": {
-    "count": 13,
-    "activités": [
-      "Created — Bleuet de France V5 · site",
-      "Retex — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Le repère · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Interception de code · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
-      "Retex — Zone Sud · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Pour Téo · Hates · Osint4Fun",
-      "Resolve — Tout est possible · Hates · Osint4Fun",
-      "Resolve — On est là · Hates · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 9,
-      "autre": 1
-    }
-  },
-  "2026-09-01": {
-    "count": 2,
-    "activités": [
-      "Resolve — HOLEHE & THE SECRET EMAIL · OSINT · OSINT Industries",
-      "Created — MAJ Toolbox · Site"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-07-02": {
-    "count": 3,
-    "activités": [
-      "Created — Stats CTF · Heatmap · Site",
-      "Created — MAJ Bannières · Site",
-      "Resolve — Caught in act · GEOINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-04-18": {
-    "count": 1,
-    "activités": [
-      "Created — Data Heatmap · Site"
-    ],
-    "stats": {
-      "resolve": 0,
       "retex": 0,
       "autre": 1
     }
@@ -982,79 +408,110 @@
       "autre": 0
     }
   },
-  "2026-10-25": {
-    "count": 8,
+  "2026-03-28": {
+    "count": 6,
     "activités": [
-      "Resolve — Livraison Internationale · RECON · IsFred",
-      "Created — Retex Premier Trace Labs Search Party · Site",
-      "Retex — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
-      "Retex — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
-      "Retex — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
-      "Retex — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
-      "Retex — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
-      "Retex — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2"
+      "Resolve — Étape 1 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 2 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 3 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 4 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 5 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 6 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-03-29": {
+    "count": 6,
+    "activités": [
+      "Resolve — Étape 7 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 8 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 9 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 10 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 11 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 12 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-03-30": {
+    "count": 6,
+    "activités": [
+      "Resolve — Étape 13 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 14 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 15 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 16 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 17 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 18 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-03-31": {
+    "count": 6,
+    "activités": [
+      "Resolve — Étape 19 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 20 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 21 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 22 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 23 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 24 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-01": {
+    "count": 12,
+    "activités": [
+      "Retex — Un message d'alerte · Bellatrix",
+      "Retex — La vidéo du sauvetage · Bellatrix",
+      "Retex — Trop Beau pour être vrai · Bellatrix",
+      "Retex — Dé-cridibiliser l'information · Bellatrix",
+      "Retex — Au service d'une cause · Bellatrix",
+      "Retex — Rétablir la véracité des faits · Bellatrix",
+      "Retex — Une metadata vaut mille images · Bellatrix",
+      "Retex — Mesurer l'attaque · Bellatrix",
+      "Retex — Identifier le primo-diffuseur · Bellatrix",
+      "Retex — Cyber-physique ! · Bellatrix",
+      "Retex — Analyser l'attaque · Bellatrix",
+      "Resolve — La ville oubliée 1 · Osintopia"
     ],
     "stats": {
       "resolve": 1,
-      "retex": 6,
-      "autre": 1
-    }
-  },
-  "2026-03-13": {
-    "count": 9,
-    "activités": [
-      "Resolve — OSintroduction · IsFred",
-      "Resolve — On the loose 1 · IsFred",
-      "Resolve — On the loose 2 · IsFred",
-      "Resolve — High altitude Environment · IsFred",
-      "Resolve — Agent Hobbs · IsFred",
-      "Resolve — Johny Black Hat · IsFred",
-      "Resolve — Marvelous Fire · IsFred",
-      "Resolve — Who is Fred · IsFred",
-      "Resolve — Balade nocturne · IsFred"
-    ],
-    "stats": {
-      "resolve": 9,
-      "retex": 0,
+      "retex": 11,
       "autre": 0
     }
   },
-  "2026-10-11": {
-    "count": 2,
+  "2026-04-02": {
+    "count": 11,
     "activités": [
-      "Resolve —  Wanted · Osintopia",
-      "Resolve —  Sécurise le défilé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-19": {
-    "count": 6,
-    "activités": [
-      "Retex — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
-      "Retex — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
-      "Retex — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
-      "Retex — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
-      "Retex — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
-      "Retex — La balade du zèbre · La Famille Michelle · L'appel de la forêt"
+      "Retex — Surveillance du réseau social · Bellatrix",
+      "Retex — La piste de l'organisation · Bellatrix",
+      "Retex — Fouiller le site · Bellatrix",
+      "Retex — Nos réalisations... · Bellatrix",
+      "Retex — Découverte de preuves cachées · Bellatrix",
+      "Retex — La piste du financement · Bellatrix",
+      "Retex — Analyse WHOIS des domaines suspects · Bellatrix",
+      "Retex — Les Wordpress d'Hélène Volquoffe · Bellatrix",
+      "Retex — La temporalité de l'attaque · Bellatrix",
+      "Retex — Réutilisation de code sur les domaines · Bellatrix",
+      "Retex — Déclenchement immédiat · Bellatrix"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-08-14": {
-    "count": 1,
-    "activités": [
-      "Resolve — OPERATION · MIXED · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
+      "retex": 11,
       "autre": 0
     }
   },
@@ -1074,10 +531,998 @@
       "autre": 0
     }
   },
+  "2026-04-04": {
+    "count": 7,
+    "activités": [
+      "Retex — En chemin pour une partie de pêche · Bellatrix",
+      "Retex — Remonter la piste · Bellatrix",
+      "Retex — On se rapproche · Bellatrix",
+      "Retex — Les archives au secours · Bellatrix",
+      "Retex — Le plein trop cher · Bellatrix",
+      "Retex — Temps incertains · Bellatrix",
+      "Retex — Localisation de \"Lynx\" · Bellatrix"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 7,
+      "autre": 0
+    }
+  },
+  "2026-04-05": {
+    "count": 6,
+    "activités": [
+      "Resolve — Étape 31 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 32 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 33 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 34 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 35 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 36 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-06": {
+    "count": 6,
+    "activités": [
+      "Resolve — Étape 37 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 38 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 39 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 40 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 41 · GNOSINT : Le Défi · Osint4Fun",
+      "Resolve — Étape 42 · GNOSINT : Le Défi · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-07": {
+    "count": 3,
+    "activités": [
+      "Retex (retouche) — 24 jours · Advent of Osint · Osint4Fun",
+      "Retex (retouche) — Tous les challs · Love at First Breach · TryHackMe",
+      "Retex (retouche) — Sakura Room · Sakura Room · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-04-08": {
+    "count": 2,
+    "activités": [
+      "Resolve — Have a Break · TryHackMe",
+      "Retex — Have a Break · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-09": {
+    "count": 1,
+    "activités": [
+      "Created — Overpass-Turbo · Toolbox · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-04-10": {
+    "count": 1,
+    "activités": [
+      "Retex — OhSINT · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-11": {
+    "count": 1,
+    "activités": [
+      "Retex — Digital Footprint · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-12": {
+    "count": 1,
+    "activités": [
+      "Retex — Friday Overtime · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-13": {
+    "count": 1,
+    "activités": [
+      "Retex — Missing Person · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — Ombre & Rigueur · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — Letter · TryHackMe",
+      "Retex — Letter · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-17": {
+    "count": 7,
+    "activités": [
+      "Created — Heatmap · Site",
+      "Resolve — Sarda-garriga · Hates · Osint4Fun",
+      "Resolve — 138 ans demain · Hates · Osint4Fun",
+      "Resolve — Victor Hugo · Hates · Osint4Fun",
+      "Resolve — 1983 · Hates · Osint4Fun",
+      "Resolve — Somaliland · Hates · Osint4Fun",
+      "Resolve — Début du siècle · Hates · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-04-18": {
+    "count": 1,
+    "activités": [
+      "Created — Data Heatmap · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-04-19": {
+    "count": 3,
+    "activités": [
+      "Resolve — CyberHarcèlement · Hates · Osint4Fun",
+      "Resolve — Rue de la Reine Jeanne · Hates · Osint4Fun",
+      "Resolve — BUSINESS · Hates · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-20": {
+    "count": 2,
+    "activités": [
+      "Resolve — Bamboulas · Hates · Osint4Fun",
+      "Resolve — Masquerade · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-21": {
+    "count": 1,
+    "activités": [
+      "Retex — Masquerade · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-22": {
+    "count": 2,
+    "activités": [
+      "Resolve — Grep · TryHackMe",
+      "Retex — Grep · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-24": {
+    "count": 2,
+    "activités": [
+      "Resolve — La ville oubliée 2 · Osintopia",
+      "Resolve — Dependency Management · DevSecOps · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-25": {
+    "count": 1,
+    "activités": [
+      "Resolve — SAST · DevSecOps · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-26": {
+    "count": 3,
+    "activités": [
+      "Resolve — DAST · DevSecOps · TryHackMe",
+      "Resolve — Introduction to phishing · SOC Simulator · TryHackMe",
+      "Retex — Introduction to phishing · SOC Simulator · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-04-28": {
+    "count": 1,
+    "activités": [
+      "Resolve — Phishing Unfolding · SOC Simulator · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-04-29": {
+    "count": 1,
+    "activités": [
+      "Retex — Phishing Unfolding · SOC Simulator · TryHackMe"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-05-01": {
+    "count": 3,
+    "activités": [
+      "Resolve — Le village · Château · Osint-FR",
+      "Resolve — Mobilier · Château · Osint-FR",
+      "Resolve — Numéro 13 · Château · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-02": {
+    "count": 1,
+    "activités": [
+      "Created — Compteurs Globaux · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-05-03": {
+    "count": 2,
+    "activités": [
+      "Created — Donut Chart · Site",
+      "Created — Bar Charts · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-05-04": {
+    "count": 5,
+    "activités": [
+      "Resolve — IDENT · D3z1nT0x · Osint-FR",
+      "Resolve — D3z1nT0x · D3z1nT0x · Osint-FR",
+      "Resolve — Aesalerte · D3z1nT0x · Osint-FR",
+      "Resolve — Plan · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Le moteur · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-05": {
+    "count": 5,
+    "activités": [
+      "Resolve — ALL_IN · MADAME_IRMA · Osint-FR",
+      "Resolve — Passerelle · MADAME_IRMA · Osint-FR",
+      "Resolve — Divination · MADAME_IRMA · Osint-FR",
+      "Resolve — Read More · MADAME_IRMA · Osint-FR",
+      "Created — Badges · Site"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-05-08": {
+    "count": 11,
+    "activités": [
+      "Resolve — Alias et acide · L'audace de résister · BleuetV5",
+      "Resolve — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
+      "Resolve — L'équipage · Un devoir de mémoire · BleuetV5",
+      "Resolve — La Charente libérée · Un devoir de mémoire · BleuetV5",
+      "Resolve — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
+      "Resolve — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — La force du collectif · Nos partenaires · BleuetV5",
+      "Resolve — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
+      "Resolve — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
+      "Resolve — MEDEVAC NEEDED · Nos partenaires · BleuetV5",
+      "Resolve — L'éclosion du souvenir · Nos partenaires · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-09": {
+    "count": 9,
+    "activités": [
+      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Résistant dans l'art · L'art de résister · BleuetV5",
+      "Resolve — Une oreille pour se souvenir · L'art de résister · BleuetV5",
+      "Resolve — Des mots pour contrer les maux · L'art de résister · BleuetV5",
+      "Resolve — Un vers pour la liberté · L'art de résister · BleuetV5",
+      "Resolve — L'art et la résistance · L'art de résister · BleuetV5",
+      "Resolve — La princesse · Un devoir de mémoire · BleuetV5",
+      "Resolve — La Charente outragée · Un devoir de mémoire · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 9,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-10": {
+    "count": 3,
+    "activités": [
+      "Resolve — Le glacier tenace · L'audace de résister · BleuetV5",
+      "Resolve — Le tract dissident · L'audace de résister · BleuetV5",
+      "Resolve — Plymouth 2 · L'audace de résister · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-11": {
+    "count": 6,
+    "activités": [
+      "Resolve — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Le repère · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Interception de code · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Zone Sud · Dans la peau d'un résistant · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-12": {
+    "count": 4,
+    "activités": [
+      "Retex — Alias et acide · L'audace de résister · BleuetV5",
+      "Retex — Le glacier tenace · L'audace de résister · BleuetV5",
+      "Retex — Plymouth 2 · L'audace de résister · BleuetV5",
+      "Retex — Le tract dissident · L'audace de résister · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-05-13": {
+    "count": 5,
+    "activités": [
+      "Retex — Des mots pour contrer les maux · Nos partenaires · BleuetV5",
+      "Retex — Un vers pour la liberté · L'art de résister · BleuetV5",
+      "Retex — L'art et la résistance · L'art de résister · BleuetV5",
+      "Retex — Résistant dans l'art · L'art de résister · BleuetV5",
+      "Retex — Une oreille pour se souvenir · L'art de résister · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
+  "2026-05-14": {
+    "count": 5,
+    "activités": [
+      "Retex — La force du collectif · Nos partenaires · BleuetV5",
+      "Retex — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
+      "Retex — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
+      "Retex — L'éclosion du souvenir · Nos partenaires · BleuetV5",
+      "Retex — MEDEVAC NEEDED · Nos partenaires · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
+  "2026-05-15": {
+    "count": 6,
+    "activités": [
+      "Retex — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
+      "Retex — L'équipage · Un devoir de mémoire · BleuetV5",
+      "Retex — La Charente libérée · Un devoir de mémoire · BleuetV5",
+      "Retex — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
+      "Retex — La Charente outragée · Un devoir de mémoire · BleuetV5",
+      "Retex — La princesse · Un devoir de mémoire · BleuetV5"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
+  "2026-05-16": {
+    "count": 13,
+    "activités": [
+      "Created — Bleuet de France V5 · site",
+      "Retex — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Le repère · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Interception de code · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
+      "Retex — Zone Sud · Dans la peau d'un résistant · BleuetV5",
+      "Resolve — Pour Téo · Hates · Osint4Fun",
+      "Resolve — Tout est possible · Hates · Osint4Fun",
+      "Resolve — On est là · Hates · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 9,
+      "autre": 1
+    }
+  },
+  "2026-05-17": {
+    "count": 6,
+    "activités": [
+      "Resolve — Les retrouvailles · Hates · Osint4Fun",
+      "Resolve — Chaud devant · ROSO · 404CTF26",
+      "Resolve — Canular savant (1/3) · ROSO · 404CTF26",
+      "Resolve — Canular savant (2/3) · ROSO · 404CTF26",
+      "Resolve — Doctor Es Langues · ROSO · 404CTF26",
+      "Resolve — Metro OSINT Dodo · ROSO · 404CTF26"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-18": {
+    "count": 2,
+    "activités": [
+      "Resolve — Ingles · De l'ombre à la lumière - 1 · Osint-FR",
+      "Resolve — Like · De l'ombre à la lumière - 1 · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-19": {
+    "count": 2,
+    "activités": [
+      "Resolve — Dans les ordres · Ave maria · Osint-FR",
+      "Resolve — Eglise · Ave maria · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-20": {
+    "count": 1,
+    "activités": [
+      "Resolve — Réponds moi · De l'ombre à la lumière - 1 · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-21": {
+    "count": 1,
+    "activités": [
+      "Resolve — Surnom · De l'ombre à la lumière - 1 · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-22": {
+    "count": 2,
+    "activités": [
+      "Resolve — Old Friend · Here we go again · Medileak 3",
+      "Resolve — Smile ! · Here we go again · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-23": {
+    "count": 8,
+    "activités": [
+      "Resolve — Love me tender · Here we go again · Medileak 3",
+      "Resolve — In da club · Money For Nothing · Medileak 3",
+      "Resolve — Go West · Voyage Voyage · Medileak 3",
+      "Resolve — Mull of Kintyre · Voyage Voyage · Medileak 3",
+      "Resolve — Mon Amie La Rose · Money For Nothing · Medileak 3",
+      "Resolve — Magnolia For Ever · Money For Nothing · Medileak 3",
+      "Resolve — Je fais mon job à plein temps · L'école du micro d'argent · Medileak 3",
+      "Resolve — The Teacher · L'école du micro d'argent · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 8,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-24": {
+    "count": 4,
+    "activités": [
+      "Resolve — Étudiant poil aux dents · L'école du micro d'argent · Medileak 3",
+      "Resolve — Message in a Bottle · Antisocial · Medileak 3",
+      "Resolve — Undercover of the night · Hygiaphone · Medileak 3",
+      "Resolve — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-25": {
+    "count": 2,
+    "activités": [
+      "Resolve — Under Pressure · Ya foye · Medileak 3",
+      "Resolve — Gold Digger · Ya foye · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-26": {
+    "count": 4,
+    "activités": [
+      "Resolve — Around the World · Ya foye · Medileak 3",
+      "Resolve — I Can See Clearly Now · Ya foye · Medileak 3",
+      "Resolve — Sweet Child o' Mine · Family Affair · Medileak 3",
+      "Resolve — Soldier of Fortune · Family Affair · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-27": {
+    "count": 1,
+    "activités": [
+      "Resolve — Every Breath You Take · Antisocial · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-05-28": {
+    "count": 3,
+    "activités": [
+      "Retex — Old Friend · Here we go again · Medileak 3",
+      "Retex — Smile ! · Here we go again · Medileak 3",
+      "Retex — Love me tender · Here we go again · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-05-29": {
+    "count": 2,
+    "activités": [
+      "Retex — Go West · Voyage Voyage · Medileak 3",
+      "Retex — Mull of Kintyre · Voyage Voyage · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
+  "2026-05-30": {
+    "count": 1,
+    "activités": [
+      "Retex — In da club · Money For Nothing · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-05-31": {
+    "count": 2,
+    "activités": [
+      "Retex — Mon Amie La Rose · Money For Nothing · Medileak 3",
+      "Retex — Magnolia For Ever · Money For Nothing · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
+  "2026-06-01": {
+    "count": 5,
+    "activités": [
+      "Retex — Je fais mon job à plein temps · L'École du micro d'Argent · Medileak 3",
+      "Retex — The Teacher · L'École du micro d'Argent · Medileak 3",
+      "Retex — Étudiant poil aux dents · L'École du micro d'Argent · Medileak 3",
+      "Retex — Message in a Bottle · Antisocial · Medileak 3",
+      "Retex — Every Breath You Take · Antisocial · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
+  "2026-06-02": {
+    "count": 6,
+    "activités": [
+      "Retex — Undercover of the night · Hygiaphone · Medileak 3",
+      "Retex — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3",
+      "Retex — Under Pressure · Ya foye · Medileak 3",
+      "Retex — Gold Digger · Ya foye · Medileak 3",
+      "Retex — Around the World · Ya foye · Medileak 3",
+      "Retex — I Can See Clearly Now · Ya foye · Medileak 3"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
+  "2026-06-03": {
+    "count": 3,
+    "activités": [
+      "Retex — Sweet Child o' Mine · Family Affair · Medileak 3",
+      "Retex — Soldier of Fortune · Family Affair · Medileak 3",
+      "Created — Medileak 3 · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 1
+    }
+  },
+  "2026-06-04": {
+    "count": 11,
+    "activités": [
+      "Resolve — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions",
+      "Resolve — SCROLL PRE-DODO · Les origines · Le Caire nid d'espions",
+      "Resolve — MAAAARRRRRC · Les origines · Le Caire nid d'espions",
+      "Resolve — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
+      "Resolve — SALUT LA COMMU · Good cop · Le Caire nid d'espions",
+      "Resolve — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
+      "Resolve — LE MESSAGER · Good cop · Le Caire nid d'espions",
+      "Resolve — LA GUERRE DES HASHTAGS · La tempête · Le Caire nid d'espions",
+      "Resolve — LA PLUME VENIMEUSE · La tempête · Le Caire nid d'espions",
+      "Resolve — PRIDE AND PREJUDICE · La tempête · Le Caire nid d'espions",
+      "Resolve — MONSIEUR POULPE · La tempête · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-05": {
+    "count": 3,
+    "activités": [
+      "Resolve — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
+      "Resolve — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
+      "Resolve — Monsieur C Découverte · ROSO · 404CTF26"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-06": {
+    "count": 3,
+    "activités": [
+      "Created — MAJ & Publish · Medileak 3 · Site",
+      "Resolve — C'était caché · ROSO · 404CTF26",
+      "Resolve — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-06-07": {
+    "count": 4,
+    "activités": [
+      "Resolve — UN GRAND PHILOSOPHE · Bad cop · Le Caire nid d'espions",
+      "Resolve — BETE D'ASTUCE · Bad cop · Le Caire nid d'espions",
+      "Resolve — LE GONG · Bad cop · Le Caire nid d'espions",
+      "Resolve — IL Y A FORT FORT PEU DE TEMPS · Bad cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-08": {
+    "count": 1,
+    "activités": [
+      "Resolve — MADELEINE DE PROUST · Bad cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-09": {
+    "count": 5,
+    "activités": [
+      "Resolve — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Resolve — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-10": {
+    "count": 2,
+    "activités": [
+      "Retex — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions",
+      "Created — Le Caire nid d'espions · Le Caire nid d'espions · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 1
+    }
+  },
+  "2026-06-11": {
+    "count": 2,
+    "activités": [
+      "Retex — SCROLL PRE-DODO · Les origines · Le Caire nid d'espions",
+      "Retex — MAAAARRRRRC · Les origines · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 0
+    }
+  },
+  "2026-06-12": {
+    "count": 4,
+    "activités": [
+      "Retex — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
+      "Retex — SALUT LA COMMU  · Good cop · Le Caire nid d'espions",
+      "Retex — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
+      "Retex — LE MESSAGER · Good cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-06-13": {
+    "count": 4,
+    "activités": [
+      "Retex — LA GUERRE DES HASHTAGS · La tempete · Le Caire nid d'espions",
+      "Retex — LA PLUME VENIMEUSE · La tempete · Le Caire nid d'espions",
+      "Retex — PRIDE AND PREJUDICE · La tempete · Le Caire nid d'espions",
+      "Retex — MONSIEUR POULPE · La tempete · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-06-14": {
+    "count": 3,
+    "activités": [
+      "Retex — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
+      "Retex — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
+      "Retex — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-06-15": {
+    "count": 4,
+    "activités": [
+      "Retex — UN GRAND PHILOSOPHE · Bad Cop · Le Caire nid d'espions",
+      "Retex — BETE D ASTUCE· Bad Cop · Le Caire nid d'espions",
+      "Retex — LE GONG· Bad Cop · Le Caire nid d'espions",
+      "Retex — IL Y A FORT FORT PEU DE TEMPS · Bad Cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-06-16": {
+    "count": 8,
+    "activités": [
+      "Resolve — Agree to disagree · MADAME_IRMA · Osint-FR",
+      "Resolve — Vision · MADAME_IRMA · Osint-FR",
+      "Resolve — Trop_longgggg · DETENTE · Osint-FR",
+      "Resolve — Mémoire · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Avatar · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Pivot · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Flux croisés · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Transparence · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 8,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-06-17": {
     "count": 1,
     "activités": [
       "Retex — MADELEINE DE PROUST · Bad Cop · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-06-18": {
+    "count": 5,
+    "activités": [
+      "Retex — LES BÂTISSEURS DE L'OMBRE · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — 黑市 — PREMIER CONTACT · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — ASHIDAKON · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — CARDA NO LIES · 黑市 — Marché Noir · Le Caire nid d'espions",
+      "Retex — DIGITAL PLAYGROUND · Le pacte · Le Caire nid d'espions"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 5,
+      "autre": 0
+    }
+  },
+  "2026-06-19": {
+    "count": 2,
+    "activités": [
+      "Retex — Chaud Devant · ROSO · 404CTF26",
+      "Created — 404CTF26 · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 1
+    }
+  },
+  "2026-06-20": {
+    "count": 5,
+    "activités": [
+      "Retex — C'était caché · ROSO · 404CTF26",
+      "Retex — Doctor Es Langues · ROSO · 404CTF26",
+      "Resolve — Nautilus · Osintopia",
+      "Resolve — Le casse du siècle · Osintopia",
+      "Resolve — Street art · Osintopia"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 2,
+      "autre": 0
+    }
+  },
+  "2026-06-21": {
+    "count": 2,
+    "activités": [
+      "Resolve — C’est l’heure du Du-du-du-du-Duel 1/2 · Osintopia",
+      "Resolve — Mémoire d'un garage oublié 1/3 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-06-22": {
+    "count": 1,
+    "activités": [
+      "Retex — Metro OSINT Dodo · ROSO · 404CTF26"
     ],
     "stats": {
       "resolve": 0,
@@ -1097,78 +1542,298 @@
       "autre": 0
     }
   },
-  "2026-08-20": {
-    "count": 2,
+  "2026-06-24": {
+    "count": 1,
     "activités": [
-      "Resolve — FREEDOM101 · CYBER · YouArePlayer",
-      "Resolve — NSUARFWIC · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-11-04": {
-    "count": 20,
-    "activités": [
-      "Resolve — Tu ponds ou pondu ? · Autour de Tintin · Osint4Fun",
-      "Resolve — Lapsus en stock · Autour de Tintin · Osint4Fun",
-      "Resolve — Le guide du rossignol · Autour de Tintin · Osint4Fun",
-      "Resolve — Ninetta · Autour de Tintin · Osint4Fun",
-      "Resolve — L'émeraude des garamantes · Autour de Tintin · Osint4Fun",
-      "Resolve — Sous l'eau · Autour de Tintin · Osint4Fun",
-      "Resolve — Ah, jury de me voir... · Autour de Tintin · Osint4Fun",
-      "Resolve — Tête en l'air · Autour de Tintin · Osint4Fun",
-      "Resolve — En VO · Autour de Tintin · Osint4Fun",
-      "Resolve — Le tube · Autour de Tintin · Osint4Fun",
-      "Resolve — Tintin ? · Autour de Tintin · Osint4Fun",
-      "Resolve — La surveillance · Caneléa · Osint4Fun",
-      "Resolve — Sans moi, pas de tour ? · MATHILDA · Osint4Fun",
-      "Resolve — Bis repetita · MATHILDA · Osint4Fun",
-      "Resolve — Industrisité · MATHILDA · Osint4Fun",
-      "Resolve — Pousse, pousse ! · MATHILDA · Osint4Fun",
-      "Resolve — NoMoreMatildas · MATHILDA · Osint4Fun",
-      "Resolve — Hyperboles · MATHILDA · Osint4Fun",
-      "Resolve — Microbiologie · MATHILDA · Osint4Fun",
-      "Resolve — Un jour ce sera moi · MATHILDA · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 20,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-16": {
-    "count": 2,
-    "activités": [
-      "Resolve — Corp Website · Love at First Breach · TryHackMe",
-      "Resolve — Signed Messages · Love at First Breach · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-18": {
-    "count": 4,
-    "activités": [
-      "Retex — Speed Chatting · Love at First Breach · TryHackMe",
-      "Retex — TryHeartMe · Love at First Breach · TryHackMe",
-      "Retex — Valenfind · Love at First Breach · TryHackMe",
-      "Retex — When Heats Collide · Love at First Breach · TryHackMe"
+      "Retex — Canular savant 2 · ROSO · 404CTF26"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 4,
+      "retex": 1,
       "autre": 0
     }
   },
-  "2026-08-30": {
+  "2026-06-25": {
     "count": 1,
     "activités": [
-      "Resolve — DEPIX · OSINT · OSINT Industries"
+      "Retex — Une aiguille dans une ile-de-France · ROSO · 404CTF26"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-06-26": {
+    "count": 1,
+    "activités": [
+      "Retex — Enfance gourmande · ROSO · 404CTF26"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-06-27": {
+    "count": 2,
+    "activités": [
+      "Created — Cartes de stats · Heatmap · Site",
+      "Created — Section \"Activités récentes\" · Heatmap · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-06-28": {
+    "count": 2,
+    "activités": [
+      "Created — Streaks · Heatmap · Site",
+      "Created — Clic pour agrandir image · General · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-06-29": {
+    "count": 3,
+    "activités": [
+      "Created — Grid Plateformes · Heatmap · Site",
+      "Created — Badges Lists · Heatmap · Site",
+      "Created — Dates Importantes · Heatmap · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 3
+    }
+  },
+  "2026-06-30": {
+    "count": 5,
+    "activités": [
+      "Resolve — Gladiator · Osint · YouArePlayer",
+      "Resolve — Grandpa's souvenir · Osint · YouArePlayer",
+      "Resolve — Battle · fun · YouArePlayer",
+      "Resolve — Pepsi · Osint · YouArePlayer",
+      "Created — Refontes Compteurs globaux · Heatmap · Site"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-07-01": {
+    "count": 3,
+    "activités": [
+      "Created — Fix DA · Heatmap · Site",
+      "Created — Derniers RETEX · Heatmap · Site",
+      "Resolve — Flag Hunt · fun · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-07-02": {
+    "count": 3,
+    "activités": [
+      "Created — Stats CTF · Heatmap · Site",
+      "Created — MAJ Bannières · Site",
+      "Resolve — Caught in act · GEOINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-07-03": {
+    "count": 11,
+    "activités": [
+      "Resolve — Reportage animalier · Intro · L'appel de la forêt",
+      "Resolve — Chill comme un capybara · Introduction · L'appel de la forêt",
+      "Resolve — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
+      "Resolve — La mésange babysitter · Petsitter · L'appel de la forêt",
+      "Resolve — Bavard comme une pie · Petsitter · L'appel de la forêt",
+      "Resolve — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
+      "Resolve — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
+      "Resolve — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
+      "Resolve — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
+      "Resolve — L'envol des perroquets · Faits divers · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-04": {
+    "count": 10,
+    "activités": [
+      "Resolve — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt",
+      "Resolve — Pris dans la toile · Petsitter · L'appel de la forêt",
+      "Resolve — Le terrier du lapin · Petsitter · L'appel de la forêt",
+      "Resolve — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
+      "Resolve — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
+      "Resolve — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt",
+      "Resolve — La parade du paon · Acte 2 - Activités · L'appel de la forêt",
+      "Resolve — Le loup déguisé · Acte 2 - Droit · L'appel de la forêt",
+      "Resolve — Les commencements de l'oiseau · Acte 2 - Droit · L'appel de la forêt",
+      "Resolve — Les fourberies du renard · Acte 2 - Droit · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 10,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-05": {
+    "count": 10,
+    "activités": [
+      "Resolve — La Mémoire de l'Éléphant · Acte 2 - Développement · L'appel de la forêt",
+      "Resolve — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt",
+      "Resolve — Le Nid douillet · Acte 2 - Développement · L'appel de la forêt",
+      "Resolve — La Fourmilière d'Informations · Acte 2 - Développement · L'appel de la forêt",
+      "Resolve — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
+      "Resolve — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
+      "Resolve — Le trésor des corbeaux · Faits divers · L'appel de la forêt",
+      "Resolve — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt",
+      "Resolve — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt",
+      "Resolve — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 10,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-06": {
+    "count": 6,
+    "activités": [
+      "Resolve — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
+      "Resolve — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
+      "Resolve — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — L'énergie du frelon oriental · Acte 3 - Organisation · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-07": {
+    "count": 6,
+    "activités": [
+      "Resolve — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La balade du zèbre · La Famille Michelle · L'appel de la forêt",
+      "Resolve — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt",
+      "Resolve — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-08": {
+    "count": 5,
+    "activités": [
+      "Resolve — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt",
+      "Resolve — Le Piège de l'Araignée · Acte 4 · L'appel de la forêt",
+      "Resolve — La hiérarchie de la meute · Acte 4 · L'appel de la forêt",
+      "Resolve — Tusko · Acte 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-09": {
+    "count": 2,
+    "activités": [
+      "Resolve — Panthera · Acte 4 · L'appel de la forêt",
+      "Resolve — La nuit de la panthère · Acte 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-10": {
+    "count": 6,
+    "activités": [
+      "Resolve — Noctua · Acte 4 · L'appel de la forêt",
+      "Resolve — Scorpiox · Acte 4 · L'appel de la forêt",
+      "Resolve — La joie du quokka · Chapitre 2 - Fin · L'appel de la forêt",
+      "Resolve — Le Silence des Mouettes · Chapitre 3 · L'appel de la forêt",
+      "Resolve — La Vigile du Hibou · Crime · L'appel de la forêt",
+      "Resolve — Chargé comme une mule · Péhuson · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-11": {
+    "count": 7,
+    "activités": [
+      "Resolve — Le festin du vautour · Crime · L'appel de la forêt",
+      "Resolve — Le venin du Taïpan · Crime · L'appel de la forêt",
+      "Resolve — La protection de la tortue · Péhuson · L'appel de la forêt",
+      "Resolve — Le caillou de la loutre · Crime · L'appel de la forêt",
+      "Resolve — La taupe · Péhuson · L'appel de la forêt",
+      "Resolve — Hors de la Tanière · Péhuson · L'appel de la forêt",
+      "Resolve — La vraie joie du quokka · Chapitre 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-12": {
+    "count": 2,
+    "activités": [
+      "Resolve — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt",
+      "Created — L'appel de la forêt · Site"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-07-13": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ - DA \"Compteurs Globaux\" · Site",
+      "Created — MAJ - Responsiveness \"Resultats CTF\" · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-07-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — PGA · OSINT · YouArePlayer"
     ],
     "stats": {
       "resolve": 1,
@@ -1176,11 +1841,179 @@
       "autre": 0
     }
   },
-  "2026-05-29": {
+  "2026-07-15": {
+    "count": 1,
+    "activités": [
+      "Resolve — UK Suspect · GEOINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-07-16": {
     "count": 2,
     "activités": [
-      "Retex — Go West · Voyage Voyage · Medileak 3",
-      "Retex — Mull of Kintyre · Voyage Voyage · Medileak 3"
+      "Created — MAJ Badges · L'appel de la forêt · Site",
+      "Retex — Reportage animalier · Intro · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 1
+    }
+  },
+  "2026-07-17": {
+    "count": 3,
+    "activités": [
+      "Retex — L'insouciance du paresseux · Faits divers · L'appel de la forêt",
+      "Retex — L'envol des perroquets · Faits divers · L'appel de la forêt",
+      "Retex — Le trésor des corbeaux · Faits divers · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-18": {
+    "count": 3,
+    "activités": [
+      "Retex — Chill comme un capybara · Introduction · L'appel de la forêt",
+      "Retex — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
+      "Retex — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-19": {
+    "count": 6,
+    "activités": [
+      "Retex — La coquetterie du paon · La Famille Michelle · L'appel de la forêt",
+      "Retex — La générosité d'une Girafe · La Famille Michelle · L'appel de la forêt",
+      "Retex — Le grand rêve d'un Tatou · La Famille Michelle · L'appel de la forêt",
+      "Retex — Cachée comme un phasme · La Famille Michelle · L'appel de la forêt",
+      "Retex — Le câlin du chimpanzé · La Famille Michelle · L'appel de la forêt",
+      "Retex — La balade du zèbre · La Famille Michelle · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
+  "2026-07-20": {
+    "count": 4,
+    "activités": [
+      "Retex — La mésange babysitter · Petsitter · L'appel de la forêt",
+      "Retex — Bavard comme une pie · Petsitter · L'appel de la forêt",
+      "Retex — Pris dans la toile · Petsitter · L'appel de la forêt",
+      "Retex — Le terrier du lapin · Petsitter · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-07-21": {
+    "count": 3,
+    "activités": [
+      "Retex — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
+      "Retex — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
+      "Retex — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-22": {
+    "count": 4,
+    "activités": [
+      "Retex — La parade du paon · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
+      "Retex — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-07-23": {
+    "count": 4,
+    "activités": [
+      "Retex — Les fourberies du renard · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Le loup déguisé · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Les commencements de l'oiseau · Acte 2 - Droit · L'appel de la forêt",
+      "Retex — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-07-24": {
+    "count": 3,
+    "activités": [
+      "Retex — La Mémoire de l'Éléphant · Acte 2 - Développement · L'appel de la forêt",
+      "Retex — Le Nid douillet · Acte 2 - Développement · L'appel de la forêt",
+      "Retex — La Fourmilière d'Informations · Acte 2 - Développement · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-25": {
+    "count": 1,
+    "activités": [
+      "Retex — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-07-26": {
+    "count": 1,
+    "activités": [
+      "Retex — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 1,
+      "autre": 0
+    }
+  },
+  "2026-07-27": {
+    "count": 3,
+    "activités": [
+      "Retex — La Toile du Tisserin · Acte 3 - Organisation · L'appel de la forêt",
+      "Retex — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
+      "Retex — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-28": {
+    "count": 2,
+    "activités": [
+      "Retex — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
+      "Retex — L'énergie du frelon oriental · Acte 3 - Organisation · L'appel de la forêt"
     ],
     "stats": {
       "resolve": 0,
@@ -1188,17 +2021,101 @@
       "autre": 0
     }
   },
-  "2026-06-07": {
-    "count": 4,
+  "2026-07-29": {
+    "count": 3,
     "activités": [
-      "Resolve — UN GRAND PHILOSOPHE · Bad cop · Le Caire nid d'espions",
-      "Resolve — BETE D'ASTUCE · Bad cop · Le Caire nid d'espions",
-      "Resolve — LE GONG · Bad cop · Le Caire nid d'espions",
-      "Resolve — IL Y A FORT FORT PEU DE TEMPS · Bad cop · Le Caire nid d'espions"
+      "Retex — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
+      "Retex — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
+      "Retex — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-07-30": {
+    "count": 3,
+    "activités": [
+      "Created — not-skg domain · Site",
+      "Retex — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 1
+    }
+  },
+  "2026-07-31": {
+    "count": 9,
+    "activités": [
+      "Created — Explorer sort · Site ",
+      "Created — Folder redirect · Site",
+      "Created — Lightbox SVG pan/zoom · Site",
+      "Created — Zoom molette SVG · Site",
+      "Resolve — From space with love - [5/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [4/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [3/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [2/5]  · Chapitre I  · Osintopia",
+      "Resolve — From space with love - [1/5]  · Chapitre I  · Osintopia"
+    ],
+    "stats": {
+      "resolve": 5,
       "retex": 0,
+      "autre": 4
+    }
+  },
+  "2026-08-01": {
+    "count": 10,
+    "activités": [
+      "Created — Homepage stats + CTA · Site",
+      "Created — Coups de cœur (cards) · Site",
+      "Created — Explorer par thématique (HomeExplorer) · Site",
+      "Created — Tags ChallOsint / AutreChall / Toolbox · Site",
+      "Created — Capture graphe Obsidian (homepage) · Site",
+      "Created — Fix liens internes (padding) · Site",
+      "Created — Fix liens CTF (Notes vs Skg-Notes) · Site",
+      "Retex — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
+      "Retex — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 7
+    }
+  },
+  "2026-08-02": {
+    "count": 7,
+    "activités": [
+      "Retex — Le Piège de l'Araignée · Acte 4 · L'appel de la forêt",
+      "Retex — La hiérarchie de la meute · Acte 4 · L'appel de la forêt",
+      "Retex — Noctua · Acte 4 · L'appel de la forêt",
+      "Retex — Tusko · Acte 4 · L'appel de la forêt",
+      "Retex — Panthera · Acte 4 · L'appel de la forêt",
+      "Retex — Scorpiox · Acte 4 · L'appel de la forêt",
+      "Retex — La nuit de la panthère · Acte 4 · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 7,
+      "autre": 0
+    }
+  },
+  "2026-08-03": {
+    "count": 6,
+    "activités": [
+      "Retex — La joie du quokka · Chapitre 2 - Fin · L'appel de la forêt",
+      "Retex — Le Silence des Mouettes · Chapitre 3 · L'appel de la forêt",
+      "Retex — Le festin du vautour · Crime · L'appel de la forêt",
+      "Retex — La Vigile du Hibou · Crime · L'appel de la forêt",
+      "Retex — Le venin du Taïpan · Crime · L'appel de la forêt",
+      "Retex — Le caillou de la loutre · Crime · L'appel de la forêt"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
       "autre": 0
     }
   },
@@ -1257,109 +2174,83 @@
       "autre": 0
     }
   },
-  "2026-04-13": {
-    "count": 1,
+  "2026-08-05": {
+    "count": 9,
     "activités": [
-      "Retex — Missing Person · TryHackMe"
+      "Created — The Other Door 1 · YouArePlayer",
+      "Created — The Other Door 2 · YouArePlayer",
+      "Resolve — La Feta, Athènes · IsFred",
+      "Resolve — L'ourson intraçable ? · IsFred",
+      "Resolve — Voyage Temporel 1 · IsFred",
+      "Resolve — Voyage Temporel 2 · IsFred",
+      "Resolve — Voyage Temporel 3 · IsFred",
+      "Resolve — SOUP · Osint · YouArePlayer",
+      "Resolve — The park's madman · Osint · YouArePlayer"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-07-09": {
-    "count": 2,
-    "activités": [
-      "Resolve — Panthera · Acte 4 · L'appel de la forêt",
-      "Resolve — La nuit de la panthère · Acte 4 · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-29": {
-    "count": 3,
-    "activités": [
-      "Retex — L'Épine de l'Oursin · Acte 3 - Financement · L'appel de la forêt",
-      "Retex — La Pieuvre et ses Tentacules · Acte 3 - Financement · L'appel de la forêt",
-      "Retex — L'astuce du Singe · Acte 3 - Financement · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-08-24": {
-    "count": 1,
-    "activités": [
-      "Resolve — TURBO · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-27": {
-    "count": 2,
-    "activités": [
-      "Created — Cartes de stats · Heatmap · Site",
-      "Created — Section \"Activités récentes\" · Heatmap · Site"
-    ],
-    "stats": {
-      "resolve": 0,
+      "resolve": 7,
       "retex": 0,
       "autre": 2
     }
   },
-  "2026-05-09": {
-    "count": 9,
+  "2026-08-06": {
+    "count": 4,
     "activités": [
-      "Resolve — Alpha ici Bravo · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Plastique et crayons · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Résistant dans l'art · L'art de résister · BleuetV5",
-      "Resolve — Une oreille pour se souvenir · L'art de résister · BleuetV5",
-      "Resolve — Des mots pour contrer les maux · L'art de résister · BleuetV5",
-      "Resolve — Un vers pour la liberté · L'art de résister · BleuetV5",
-      "Resolve — L'art et la résistance · L'art de résister · BleuetV5",
-      "Resolve — La princesse · Un devoir de mémoire · BleuetV5",
-      "Resolve — La Charente outragée · Un devoir de mémoire · BleuetV5"
+      "Resolve — BLACK ROOSTER · Osint · YouArePlayer",
+      "Created — Project Not-SKG · Site",
+      "Created — Not-SKG · Project Not-SKG",
+      "Created — MAJordome · Project Not-SKG"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 1,
+      "retex": 0,
+      "autre": 3
+    }
+  },
+  "2026-08-07": {
+    "count": 5,
+    "activités": [
+      "Resolve — The Case of the Missing Flag Baby · Cyber · YouArePlayer",
+      "Resolve — Oom · Cyber · YouArePlayer",
+      "Resolve — Worm · Osint · YouArePlayer",
+      "Resolve — La demande judiciaire · IsFred",
+      "Resolve — Judan? · IsFred"
+    ],
+    "stats": {
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-06-13": {
-    "count": 4,
+  "2026-08-08": {
+    "count": 6,
     "activités": [
-      "Retex — LA GUERRE DES HASHTAGS · La tempete · Le Caire nid d'espions",
-      "Retex — LA PLUME VENIMEUSE · La tempete · Le Caire nid d'espions",
-      "Retex — PRIDE AND PREJUDICE · La tempete · Le Caire nid d'espions",
-      "Retex — MONSIEUR POULPE · La tempete · Le Caire nid d'espions"
+      "Created — message-intercepté · Beta-Tester · Project Not-SKG",
+      "Created — Project Sentry · Project Not-SKG",
+      "Resolve — Time & book · Osintopia",
+      "Resolve — Spaghettis · Osintopia",
+      "Resolve — Robot Factory · Osintopia",
+      "Resolve — Tempête · Osintopia"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
+      "resolve": 4,
+      "retex": 0,
+      "autre": 2
     }
   },
-  "2026-04-07": {
-    "count": 3,
+  "2026-08-09": {
+    "count": 5,
     "activités": [
-      "Retex (retouche) — 24 jours · Advent of Osint · Osint4Fun",
-      "Retex (retouche) — Tous les challs · Love at First Breach · TryHackMe",
-      "Retex (retouche) — Sakura Room · Sakura Room · TryHackMe"
+      "Created — Badge Challmakers · Site",
+      "Created — MAJ Visu Graph · Site",
+      "Resolve — Des carottes, des lapins et des statues · Osintopia",
+      "Resolve — Mayday · Osintopia",
+      "Resolve — Maritime · Osintopia"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
+      "resolve": 3,
+      "retex": 0,
+      "autre": 2
     }
   },
   "2026-08-10": {
@@ -1381,146 +2272,6 @@
       "autre": 1
     }
   },
-  "2026-02-26": {
-    "count": 3,
-    "activités": [
-      "Resolve — Réduction · Integrity · Osint4Fun",
-      "Resolve — Netteté · Integrity · Osint4Fun",
-      "Resolve — Antériorité · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-28": {
-    "count": 6,
-    "activités": [
-      "Resolve — Étape 1 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 2 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 3 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 4 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 5 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 6 · GNOSINT : Le Défi · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-17": {
-    "count": 7,
-    "activités": [
-      "Created — Heatmap · Site",
-      "Resolve — Sarda-garriga · Hates · Osint4Fun",
-      "Resolve — 138 ans demain · Hates · Osint4Fun",
-      "Resolve — Victor Hugo · Hates · Osint4Fun",
-      "Resolve — 1983 · Hates · Osint4Fun",
-      "Resolve — Somaliland · Hates · Osint4Fun",
-      "Resolve — Début du siècle · Hates · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-06-03": {
-    "count": 3,
-    "activités": [
-      "Retex — Sweet Child o' Mine · Family Affair · Medileak 3",
-      "Retex — Soldier of Fortune · Family Affair · Medileak 3",
-      "Created — Medileak 3 · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 2,
-      "autre": 1
-    }
-  },
-  "2026-05-19": {
-    "count": 2,
-    "activités": [
-      "Resolve — Dans les ordres · Ave maria · Osint-FR",
-      "Resolve — Eglise · Ave maria · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-28": {
-    "count": 2,
-    "activités": [
-      "Retex — Le radar de la chauve-souris · Acte 3 - Organisation · L'appel de la forêt",
-      "Retex — L'énergie du frelon oriental · Acte 3 - Organisation · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 2,
-      "autre": 0
-    }
-  },
-  "2026-08-25": {
-    "count": 1,
-    "activités": [
-      "Resolve — Space Adventure · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-26": {
-    "count": 1,
-    "activités": [
-      "Retex — Enfance gourmande · ROSO · 404CTF26"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-05-08": {
-    "count": 11,
-    "activités": [
-      "Resolve — Alias et acide · L'audace de résister · BleuetV5",
-      "Resolve — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
-      "Resolve — L'équipage · Un devoir de mémoire · BleuetV5",
-      "Resolve — La Charente libérée · Un devoir de mémoire · BleuetV5",
-      "Resolve — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
-      "Resolve — Décryptage en piqué · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — La force du collectif · Nos partenaires · BleuetV5",
-      "Resolve — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
-      "Resolve — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
-      "Resolve — MEDEVAC NEEDED · Nos partenaires · BleuetV5",
-      "Resolve — L'éclosion du souvenir · Nos partenaires · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 11,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-12": {
-    "count": 4,
-    "activités": [
-      "Retex — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
-      "Retex — SALUT LA COMMU  · Good cop · Le Caire nid d'espions",
-      "Retex — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
-      "Retex — LE MESSAGER · Good cop · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
   "2026-08-11": {
     "count": 2,
     "activités": [
@@ -1533,74 +2284,22 @@
       "autre": 0
     }
   },
-  "2026-04-06": {
-    "count": 6,
+  "2026-08-12": {
+    "count": 1,
     "activités": [
-      "Resolve — Étape 37 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 38 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 39 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 40 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 41 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 42 · GNOSINT : Le Défi · Osint4Fun"
+      "Resolve — TH3 VOID · OSINT · YouArePlayer"
     ],
     "stats": {
-      "resolve": 6,
+      "resolve": 1,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-11-01": {
-    "count": 24,
-    "activités": [
-      "Resolve — FINAL CHAPTER: THE WATCHERS · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 6: THE ROOM · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 5: THE DOOR · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 4: THE GUARD · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 3: ALEX'S JOKE · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 2: TRANSMISSION · Sentinel Mission · YouArePlayer",
-      "Resolve — CHAPTER 1: ASSIGNMENT · Sentinel Mission · YouArePlayer",
-      "Resolve — Bingo · The Lost Connection · Osint4Fun",
-      "Resolve — La ligne · The Lost Connection · Osint4Fun",
-      "Resolve — Le lac · The Lost Connection · Osint4Fun",
-      "Resolve — La voie abandonnée · The Lost Connection · Osint4Fun",
-      "Resolve — Sur la route · The Lost Connection · Osint4Fun",
-      "Resolve — Tic tac · The Lost Connection · Osint4Fun",
-      "Resolve — Un détour · The Lost Connection · Osint4Fun",
-      "Resolve — Des universités familières ? · The Lost Connection · Osint4Fun",
-      "Resolve — La petite annonce · The Lost Connection · Osint4Fun",
-      "Resolve — Dring · The Lost Connection · Osint4Fun",
-      "Resolve — Des vacances bien méritées · The Lost Connection · Osint4Fun",
-      "Resolve — Un voyage international · The Lost Connection · Osint4Fun",
-      "Resolve — Un faux départ · The Lost Connection · Osint4Fun",
-      "Resolve — Premier slogan · The Lost Connection · Osint4Fun",
-      "Resolve — Des étudiants heureux · The Lost Connection · Osint4Fun",
-      "Resolve — EU GREEN · The Lost Connection · Osint4Fun",
-      "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 24,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-13": {
-    "count": 3,
-    "activités": [
-      "Resolve — Hidden Deep Into My Heart · Love at First Breach · TryHackMe",
-      "Resolve — CupidBot · Love at First Breach · TryHackMe",
-      "Resolve — Valenfind · Love at First Breach · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-27": {
+  "2026-08-13": {
     "count": 2,
     "activités": [
-      "Resolve — Cigognes · Integrity · Osint4Fun",
-      "Resolve — Viser la lune · Integrity · Osint4Fun"
+      "Resolve — Mexican Mafia Boss · AI EVASION · YouArePlayer",
+      "Resolve — Arnou Leroy · AI EVASION · YouArePlayer"
     ],
     "stats": {
       "resolve": 2,
@@ -1608,125 +2307,14 @@
       "autre": 0
     }
   },
-  "2026-03-29": {
-    "count": 6,
+  "2026-08-14": {
+    "count": 1,
     "activités": [
-      "Resolve — Étape 7 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 8 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 9 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 10 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 11 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 12 · GNOSINT : Le Défi · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-08-01": {
-    "count": 10,
-    "activités": [
-      "Created — Homepage stats + CTA · Site",
-      "Created — Coups de cœur (cards) · Site",
-      "Created — Explorer par thématique (HomeExplorer) · Site",
-      "Created — Tags ChallOsint / AutreChall / Toolbox · Site",
-      "Created — Capture graphe Obsidian (homepage) · Site",
-      "Created — Fix liens internes (padding) · Site",
-      "Created — Fix liens CTF (Notes vs Skg-Notes) · Site",
-      "Retex — La Migration de la Cigogne · Acte 3 - Transport · L'appel de la forêt",
-      "Retex — La nuée de chauves-souris · Acte 3 - Transport · L'appel de la forêt",
-      "Retex — La tanière du lion · Acte 3 - Transport · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 7
-    }
-  },
-  "2026-04-16": {
-    "count": 2,
-    "activités": [
-      "Resolve — Letter · TryHackMe",
-      "Retex — Letter · TryHackMe"
+      "Resolve — OPERATION · MIXED · YouArePlayer"
     ],
     "stats": {
       "resolve": 1,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-06-02": {
-    "count": 6,
-    "activités": [
-      "Retex — Undercover of the night · Hygiaphone · Medileak 3",
-      "Retex — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3",
-      "Retex — Under Pressure · Ya foye · Medileak 3",
-      "Retex — Gold Digger · Ya foye · Medileak 3",
-      "Retex — Around the World · Ya foye · Medileak 3",
-      "Retex — I Can See Clearly Now · Ya foye · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-05-18": {
-    "count": 2,
-    "activités": [
-      "Resolve — Ingles · De l'ombre à la lumière - 1 · Osint-FR",
-      "Resolve — Like · De l'ombre à la lumière - 1 · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 2,
       "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-22": {
-    "count": 2,
-    "activités": [
-      "Resolve — Grep · TryHackMe",
-      "Retex — Grep · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-07-18": {
-    "count": 3,
-    "activités": [
-      "Retex — Chill comme un capybara · Introduction · L'appel de la forêt",
-      "Retex — Sous l'oeil du Sphynx · Introduction · L'appel de la forêt",
-      "Retex — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-04-02": {
-    "count": 11,
-    "activités": [
-      "Retex — Surveillance du réseau social · Bellatrix",
-      "Retex — La piste de l'organisation · Bellatrix",
-      "Retex — Fouiller le site · Bellatrix",
-      "Retex — Nos réalisations... · Bellatrix",
-      "Retex — Découverte de preuves cachées · Bellatrix",
-      "Retex — La piste du financement · Bellatrix",
-      "Retex — Analyse WHOIS des domaines suspects · Bellatrix",
-      "Retex — Les Wordpress d'Hélène Volquoffe · Bellatrix",
-      "Retex — La temporalité de l'attaque · Bellatrix",
-      "Retex — Réutilisation de code sur les domaines · Bellatrix",
-      "Retex — Déclenchement immédiat · Bellatrix"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 11,
       "autre": 0
     }
   },
@@ -1741,32 +2329,60 @@
       "autre": 0
     }
   },
-  "2026-06-16": {
-    "count": 8,
+  "2026-08-16": {
+    "count": 2,
     "activités": [
-      "Resolve — Agree to disagree · MADAME_IRMA · Osint-FR",
-      "Resolve — Vision · MADAME_IRMA · Osint-FR",
-      "Resolve — Trop_longgggg · DETENTE · Osint-FR",
-      "Resolve — Mémoire · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Avatar · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Pivot · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Flux croisés · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Transparence · Novice / Pas à Pas · Osint-FR"
+      "Resolve — Gourmandise · Osintopia",
+      "Resolve — Freedom · Osintopia"
     ],
     "stats": {
-      "resolve": 8,
+      "resolve": 2,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-06-22": {
+  "2026-08-17": {
     "count": 1,
     "activités": [
-      "Retex — Metro OSINT Dodo · ROSO · 404CTF26"
+      "Resolve — The Right Breakdown · CRYPTO · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-18": {
+    "count": 1,
+    "activités": [
+      "Created — MAJ PubLeak · Site"
     ],
     "stats": {
       "resolve": 0,
-      "retex": 1,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-08-19": {
+    "count": 1,
+    "activités": [
+      "Created — MAJ Sentry · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-08-20": {
+    "count": 2,
+    "activités": [
+      "Resolve — FREEDOM101 · CYBER · YouArePlayer",
+      "Resolve — NSUARFWIC · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -1783,67 +2399,104 @@
       "autre": 0
     }
   },
-  "2026-11-05": {
-    "count": 28,
+  "2026-08-22": {
+    "count": 1,
     "activités": [
-      "Resolve — TERRORIST ATTACK · OSINT · OSINT Industries",
-      "Resolve — Sœur Angélique · Caneléa · Osint4Fun",
-      "Resolve — Sanctions · Garenne · Osint4Fun",
-      "Resolve — Manquant · Garenne · Osint4Fun",
-      "Resolve — Défenseur des droits · Garenne · Osint4Fun",
-      "Resolve — 36 15 Recours · Garenne · Osint4Fun",
-      "Resolve — Même pas drôle · Garenne · Osint4Fun",
-      "Resolve — It's personal · Garenne · Osint4Fun",
-      "Resolve — Statut · Garenne · Osint4Fun",
-      "Resolve — Contient des conservateurs · Garenne · Osint4Fun",
-      "Resolve — Outrans · Garenne · Osint4Fun",
-      "Resolve — Camille · Garenne · Osint4Fun",
-      "Resolve — Des bancs, encore des bancs · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Des souvenirs · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Quelques activités · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Le logement · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Une ville mais laquelle ? · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Une destination sympa · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — La date adéquate · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Une inspiration bienvenue · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — La compagne de voyage · Un voyage avec Clara ? · Osint4Fun",
-      "Resolve — Marche forcée · Où est Charly ? · Osint4Fun",
-      "Resolve — Un lieu magique · Où est Charly ? · Osint4Fun",
-      "Resolve — Le dernier ouvrage · Où est Charly ? · Osint4Fun",
-      "Resolve — La BU de Belle-Beille · Où est Charly ? · Osint4Fun",
-      "Resolve — La candidate · Où est Charly ? · Osint4Fun",
-      "Resolve — L'annonce · Où est Charly ? · Osint4Fun",
-      "Resolve — Vengeance · SCENOSINT · Osint4Fun"
+      "Resolve — Phoenix Quote · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 28,
+      "resolve": 1,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-03-19": {
-    "count": 3,
+  "2026-08-23": {
+    "count": 1,
     "activités": [
-      "Retex — Hidden Deep into my Heart · Love at First Breach · TryHackMe",
-      "Retex — Love Letter Locker · Love at First Breach · TryHackMe",
-      "Retex — Signed Messages · Love at First Breach · TryHackMe"
+      "Resolve — LA BAND3 A PICSOU · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 3,
+      "resolve": 1,
+      "retex": 0,
       "autre": 0
     }
   },
-  "2026-04-26": {
-    "count": 3,
+  "2026-08-24": {
+    "count": 1,
     "activités": [
-      "Resolve — DAST · DevSecOps · TryHackMe",
-      "Resolve — Introduction to phishing · SOC Simulator · TryHackMe",
-      "Retex — Introduction to phishing · SOC Simulator · TryHackMe"
+      "Resolve — TURBO · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-25": {
+    "count": 1,
+    "activités": [
+      "Resolve — Space Adventure · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-26": {
+    "count": 1,
+    "activités": [
+      "Resolve — IKnowAdditions · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-27": {
+    "count": 2,
+    "activités": [
+      "Resolve — THE 300 WORD BACKUP · CYBER · YouArePlayer",
+      "Resolve — I wish I was there · Osintopia"
     ],
     "stats": {
       "resolve": 2,
-      "retex": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-28": {
+    "count": 2,
+    "activités": [
+      "Resolve — The Cattle Relay · OSINT · YouArePlayer",
+      "Resolve — YUMMY · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-29": {
+    "count": 1,
+    "activités": [
+      "Resolve — Satellite Hopper · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-08-30": {
+    "count": 1,
+    "activités": [
+      "Resolve — DEPIX · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
       "autre": 0
     }
   },
@@ -1859,70 +2512,50 @@
       "autre": 0
     }
   },
-  "2026-05-28": {
-    "count": 3,
+  "2026-09-01": {
+    "count": 2,
     "activités": [
-      "Retex — Old Friend · Here we go again · Medileak 3",
-      "Retex — Smile ! · Here we go again · Medileak 3",
-      "Retex — Love me tender · Here we go again · Medileak 3"
+      "Resolve — HOLEHE & THE SECRET EMAIL · OSINT · OSINT Industries",
+      "Created — MAJ Toolbox · Site"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-06-06": {
-    "count": 3,
-    "activités": [
-      "Created — MAJ & Publish · Medileak 3 · Site",
-      "Resolve — C'était caché · ROSO · 404CTF26",
-      "Resolve — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 2,
+      "resolve": 1,
       "retex": 0,
       "autre": 1
     }
   },
-  "2026-04-12": {
-    "count": 1,
+  "2026-09-02": {
+    "count": 2,
     "activités": [
-      "Retex — Friday Overtime · TryHackMe"
+      "Resolve — The Benarroch File · INTERPOL · OSINT Industries",
+      "Resolve — The Hadjej File · INTERPOL · OSINT Industries"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-03": {
+    "count": 2,
+    "activités": [
+      "Resolve — Operation LOCKERGOGA · EUROPOL · OSINT Industries",
+      "Retex — Operation LOCKERGOGA · EUROPOL · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
       "retex": 1,
       "autre": 0
     }
   },
-  "2026-08-05": {
-    "count": 9,
-    "activités": [
-      "Created — The Other Door 1 · YouArePlayer",
-      "Created — The Other Door 2 · YouArePlayer",
-      "Resolve — La Feta, Athènes · IsFred",
-      "Resolve — L'ourson intraçable ? · IsFred",
-      "Resolve — Voyage Temporel 1 · IsFred",
-      "Resolve — Voyage Temporel 2 · IsFred",
-      "Resolve — Voyage Temporel 3 · IsFred",
-      "Resolve — SOUP · Osint · YouArePlayer",
-      "Resolve — The park's madman · Osint · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 7,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-07-08": {
+  "2026-09-04": {
     "count": 5,
     "activités": [
-      "Resolve — La traque du faucon · Acte 3 - Organisation · L'appel de la forêt",
-      "Resolve — La colère du dragon · Acte 3 - Organisation · L'appel de la forêt",
-      "Resolve — Le Piège de l'Araignée · Acte 4 · L'appel de la forêt",
-      "Resolve — La hiérarchie de la meute · Acte 4 · L'appel de la forêt",
-      "Resolve — Tusko · Acte 4 · L'appel de la forêt"
+      "Resolve — NEVER DELETED · OSINT · OSINT Industries",
+      "Resolve — COUNTERINTELLIGENCE · OSINT · OSINT Industries",
+      "Resolve — FINANCIAL INTELLIGENCE · OSINT · OSINT Industries",
+      "Resolve — FSB Part 1 · FSB · OSINT Industries",
+      "Resolve — FSB Part 2 · FSB · OSINT Industries"
     ],
     "stats": {
       "resolve": 5,
@@ -1930,25 +2563,331 @@
       "autre": 0
     }
   },
-  "2026-06-25": {
-    "count": 1,
+  "2026-09-05": {
+    "count": 2,
     "activités": [
-      "Retex — Une aiguille dans une ile-de-France · ROSO · 404CTF26"
+      "Resolve — Oops… Wrong Base · GEOINT · OSINT Industries",
+      "Resolve — FSB Part 3 · FSB · OSINT Industries"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 1,
+      "resolve": 2,
+      "retex": 0,
       "autre": 0
     }
   },
-  "2026-08-26": {
+  "2026-09-06": {
+    "count": 5,
+    "activités": [
+      "Resolve — The Suspicious Stop · GEOINT · OSINT Industries",
+      "Resolve — Lost in Transit · GEOINT · OSINT Industries",
+      "Resolve — DAMASCUS · OSINT · OSINT Industries",
+      "Resolve — Secret Location · OSINT · OSINT Industries",
+      "Resolve — FAKE DOCTOR · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-07": {
+    "count": 2,
+    "activités": [
+      "Resolve — Red Carpet · OSINT · OSINT Industries",
+      "Resolve — Operation Masked Dive · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-08": {
     "count": 1,
     "activités": [
-      "Resolve — IKnowAdditions · CYBER · YouArePlayer"
+      "Resolve — Found the HACKER · OSINT · OSINT Industries"
     ],
     "stats": {
       "resolve": 1,
       "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-09": {
+    "count": 1,
+    "activités": [
+      "Resolve — 24/12/24 · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-10": {
+    "count": 9,
+    "activités": [
+      "Resolve — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
+      "Resolve — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats",
+      "Resolve — Un nouvel allié · En eaux troubles · DeepThreats",
+      "Resolve — Un soupçon de soupçon · En eaux troubles · DeepThreats",
+      "Resolve — Président ! · En eaux troubles · DeepThreats",
+      "Resolve — Ordre de mission · A vos marques · DeepThreats",
+      "Resolve — Scoring · A vos marques · DeepThreats",
+      "Resolve — Votre attention s'il vous plait ! · A vos marques · DeepThreats",
+      "Resolve — KNIFE ATTACK · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 9,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-11": {
+    "count": 19,
+    "activités": [
+      "Resolve — A table ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
+      "Resolve — Jardinier anonyme · Une drôle de fleur · DeepThreats",
+      "Resolve — Une belle histoire · Partenaire particulier · DeepThreats",
+      "Resolve — French Touch · L'ile mystérieuse · DeepThreats",
+      "Resolve — The creator · Une drôle de fleur · DeepThreats",
+      "Resolve — Un visage famillier · Une drôle de fleur · DeepThreats",
+      "Resolve — La plume et le pouvoir · Une drôle de fleur · DeepThreats",
+      "Resolve — Tableau de chasse · Une drôle de fleur · DeepThreats",
+      "Resolve — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
+      "Resolve — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
+      "Resolve — Metal hurlant · En eaux troubles · DeepThreats",
+      "Resolve — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
+      "Resolve — Wuan upon a time · En eaux troubles · DeepThreats",
+      "Resolve — Doctor who · What's up doc ? · DeepThreats",
+      "Resolve — Un coin discret · En eaux troubles · DeepThreats",
+      "Resolve — Deal · En eaux troubles · DeepThreats",
+      "Resolve — L'écolo · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 19,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-12": {
+    "count": 7,
+    "activités": [
+      "Resolve — Message Intime · What's up doc ? · DeepThreats",
+      "Resolve — Non négociable · L'ile mystérieuse · DeepThreats",
+      "Resolve — Made in France · L'ile mystérieuse · DeepThreats",
+      "Resolve — Contrôle total · L'ile mystérieuse · DeepThreats",
+      "Resolve — Un homme occupé · L'ile mystérieuse · DeepThreats",
+      "Resolve — Connexion établie · L'ile mystérieuse · DeepThreats",
+      "Resolve — Pas d'ami comme toi · What's up doc ? · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-13": {
+    "count": 6,
+    "activités": [
+      "Resolve — Courrier indésirable 2/2 · En eaux troubles · DeepThreats",
+      "Resolve — Oh la boulette ! · En eaux troubles · DeepThreats",
+      "Resolve — Poupées russes · Partenaire particulier · DeepThreats",
+      "Resolve — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats",
+      "Resolve — Capital risque · Partenaire particulier · DeepThreats",
+      "Resolve — Mon précieux · L'ile mystérieuse · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-09-14": {
+    "count": 1,
+    "activités": [
+      "Created — DeepThreats · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-09-15": {
+    "count": 3,
+    "activités": [
+      "Retex — Ordre de mission · A vos marques · DeepThreats",
+      "Retex — Scoring · A vos marques · DeepThreats",
+      "Retex — Votre attention s'il vous plait ! · A vos marques · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-16": {
+    "count": 3,
+    "activités": [
+      "Retex — Un nouvel allié · En eaux troubles · DeepThreats",
+      "Retex — Un soupçon de soupçon · En eaux troubles · DeepThreats",
+      "Retex — Président ! · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-17": {
+    "count": 3,
+    "activités": [
+      "Retex — Deal · En eaux troubles · DeepThreats",
+      "Retex — L'écolo · En eaux troubles · DeepThreats",
+      "Retex — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-18": {
+    "count": 3,
+    "activités": [
+      "Retex — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
+      "Retex — Metal hurlant · En eaux troubles · DeepThreats",
+      "Retex — Un coin discret · En eaux troubles · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-19": {
+    "count": 3,
+    "activités": [
+      "Retex — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
+      "Retex — Tableau de chasse · Une drôle de fleur · DeepThreats",
+      "Retex — La plume et le pouvoir · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-20": {
+    "count": 3,
+    "activités": [
+      "Retex — Un visage familier · Une drôle de fleur · DeepThreats",
+      "Retex — The creator · Une drôle de fleur · DeepThreats",
+      "Retex — Jardinier anonyme · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-21": {
+    "count": 3,
+    "activités": [
+      "Retex — Y a anguille sous pétale · Une drôle de fleur · DeepThreats",
+      "Retex — Sésame ouvre toi ! · Une drôle de fleur · DeepThreats",
+      "Retex — A table ! · Une drôle de fleur · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 3,
+      "autre": 0
+    }
+  },
+  "2026-09-22": {
+    "count": 2,
+    "activités": [
+      "Created — MAJ responsive \"Journal d'activité\" · Site",
+      "Created — Ajout Boutons \"RETEX\"/\"Resolved\" dernières activités · Site"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-09-23": {
+    "count": 3,
+    "activités": [
+      "Created — MAJ graphe \"Activité par plateforme\" · Site",
+      "Created — MAJ légende \"Activité par plateforme\" · Site",
+      "Resolve — Paste the Keystone · Fun · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 2
+    }
+  },
+  "2026-09-24": {
+    "count": 4,
+    "activités": [
+      "Retex — Doctor who · What's up doc ? · DeepThreats",
+      "Retex — Wuan upon a time · What's up doc ? · DeepThreats",
+      "Retex — Pas d'ami comme toi · What's up doc ? · DeepThreats",
+      "Retex — Message intime · What's up doc ? · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 4,
+      "autre": 0
+    }
+  },
+  "2026-09-25": {
+    "count": 4,
+    "activités": [
+      "Created — À propos · Site",
+      "Created — Job-seeking-callout · Site",
+      "Retex — Un portefeuille bien garni · Partenaire particulier · DeepThreats",
+      "Retex — Une belle histoire · Partenaire particulier · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 2,
+      "autre": 2
+    }
+  },
+  "2026-09-26": {
+    "count": 6,
+    "activités": [
+      "Retex — Capital risque · Partenaire particulier · DeepThreats",
+      "Retex — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats",
+      "Retex — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
+      "Retex — French Touch · L'ile mystérieuse · DeepThreats",
+      "Retex — Connexion établie · L'ile mystérieuse · DeepThreats",
+      "Retex — Un homme occupé · L'ile mystérieuse · DeepThreats"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 6,
+      "autre": 0
+    }
+  },
+  "2026-09-27": {
+    "count": 5,
+    "activités": [
+      "Retex — Contrôle total · L'ile mystérieuse · DeepThreats",
+      "Retex — Made in France· L'ile mystérieuse · DeepThreats",
+      "Retex — Non négociable · L'ile mystérieuse · DeepThreats",
+      "Retex — Mon précieux · L'ile mystérieuse · DeepThreats",
+      "Resolve — Emoji Flag · Fun · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 4,
       "autre": 0
     }
   },
@@ -1967,557 +2906,6 @@
       "autre": 0
     }
   },
-  "2026-08-12": {
-    "count": 1,
-    "activités": [
-      "Resolve — TH3 VOID · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-05": {
-    "count": 6,
-    "activités": [
-      "Resolve — Étape 31 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 32 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 33 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 34 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 35 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 36 · GNOSINT : Le Défi · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-11": {
-    "count": 2,
-    "activités": [
-      "Retex — SCROLL PRE-DODO · Les origines · Le Caire nid d'espions",
-      "Retex — MAAAARRRRRC · Les origines · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 2,
-      "autre": 0
-    }
-  },
-  "2026-11-02": {
-    "count": 14,
-    "activités": [
-      "Resolve — UNDERGROUND SHIPMENT · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — READONLY · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — Trusted Source · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — Postponed Kickoff · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — Ghost Anchor · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — Empreinte carbone · The Lost Connection · Osint4Fun",
-      "Resolve — Quelle gare ! · The Lost Connection · Osint4Fun",
-      "Resolve — Idée de sortie · The Lost Connection · Osint4Fun",
-      "Resolve — Greta · The Lost Connection · Osint4Fun",
-      "Resolve — Température changeante · The Lost Connection · Osint4Fun",
-      "Resolve — Un master adapté · The Lost Connection · Osint4Fun",
-      "Resolve — Une visite au musée · Caneléa · Osint4Fun",
-      "Created — MAJ Heatmap · Site",
-      "Created — MAJ Responsiveness · Site"
-    ],
-    "stats": {
-      "resolve": 12,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-10-28": {
-    "count": 11,
-    "activités": [
-      "Resolve — Many more · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Activités · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Magnétique · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Ombres et lumières · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Computermusik · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Entendre des formes · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Smells · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — Révolutionnaire · L'art de l'immersion numérique · Osint4Fun",
-      "Resolve — La vertu n'est pas si simple · Integrity · Osint4Fun",
-      "Resolve — Libre circulation · Integrity · Osint4Fun",
-      "Resolve — La Papesse · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 11,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-01": {
-    "count": 5,
-    "activités": [
-      "Retex — Je fais mon job à plein temps · L'École du micro d'Argent · Medileak 3",
-      "Retex — The Teacher · L'École du micro d'Argent · Medileak 3",
-      "Retex — Étudiant poil aux dents · L'École du micro d'Argent · Medileak 3",
-      "Retex — Message in a Bottle · Antisocial · Medileak 3",
-      "Retex — Every Breath You Take · Antisocial · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 5,
-      "autre": 0
-    }
-  },
-  "2026-08-02": {
-    "count": 7,
-    "activités": [
-      "Retex — Le Piège de l'Araignée · Acte 4 · L'appel de la forêt",
-      "Retex — La hiérarchie de la meute · Acte 4 · L'appel de la forêt",
-      "Retex — Noctua · Acte 4 · L'appel de la forêt",
-      "Retex — Tusko · Acte 4 · L'appel de la forêt",
-      "Retex — Panthera · Acte 4 · L'appel de la forêt",
-      "Retex — Scorpiox · Acte 4 · L'appel de la forêt",
-      "Retex — La nuit de la panthère · Acte 4 · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 7,
-      "autre": 0
-    }
-  },
-  "2026-04-21": {
-    "count": 1,
-    "activités": [
-      "Retex — Masquerade · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-06-15": {
-    "count": 4,
-    "activités": [
-      "Retex — UN GRAND PHILOSOPHE · Bad Cop · Le Caire nid d'espions",
-      "Retex — BETE D ASTUCE· Bad Cop · Le Caire nid d'espions",
-      "Retex — LE GONG· Bad Cop · Le Caire nid d'espions",
-      "Retex — IL Y A FORT FORT PEU DE TEMPS · Bad Cop · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-04-01": {
-    "count": 12,
-    "activités": [
-      "Retex — Un message d'alerte · Bellatrix",
-      "Retex — La vidéo du sauvetage · Bellatrix",
-      "Retex — Trop Beau pour être vrai · Bellatrix",
-      "Retex — Dé-cridibiliser l'information · Bellatrix",
-      "Retex — Au service d'une cause · Bellatrix",
-      "Retex — Rétablir la véracité des faits · Bellatrix",
-      "Retex — Une metadata vaut mille images · Bellatrix",
-      "Retex — Mesurer l'attaque · Bellatrix",
-      "Retex — Identifier le primo-diffuseur · Bellatrix",
-      "Retex — Cyber-physique ! · Bellatrix",
-      "Retex — Analyser l'attaque · Bellatrix",
-      "Resolve — La ville oubliée 1 · Osintopia"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 11,
-      "autre": 0
-    }
-  },
-  "2026-08-16": {
-    "count": 2,
-    "activités": [
-      "Resolve — Gourmandise · Osintopia",
-      "Resolve — Freedom · Osintopia"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-18": {
-    "count": 3,
-    "activités": [
-      "Retex — Courrier indésirable 1/2 · En eaux troubles · DeepThreats",
-      "Retex — Metal hurlant · En eaux troubles · DeepThreats",
-      "Retex — Un coin discret · En eaux troubles · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-08-22": {
-    "count": 1,
-    "activités": [
-      "Resolve — Phoenix Quote · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-21": {
-    "count": 2,
-    "activités": [
-      "Resolve — C’est l’heure du Du-du-du-du-Duel 1/2 · Osintopia",
-      "Resolve — Mémoire d'un garage oublié 1/3 · Osintopia"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-08": {
-    "count": 13,
-    "activités": [
-      "Resolve — Fin de mission · Les secrets de HSOV · Opération Culot",
-      "Resolve — Sésame, ouvre-toi ! · Les secrets de HSOV · Opération Culot",
-      "Resolve — Coup de filet · Les secrets de HSOV · Opération Culot",
-      "Resolve — L'insoumis · Les secrets de HSOV · Opération Culot",
-      "Resolve — Le corbeau · Les secrets de HSOV · Opération Culot",
-      "Resolve — Kalimera · Les secrets de HSOV · Opération Culot",
-      "Resolve — La safe place · Les secrets de HSOV · Opération Culot",
-      "Resolve — Alias · Les secrets de HSOV · Opération Culot",
-      "Resolve — Les dizygotes · Les secrets de HSOV · Opération Culot",
-      "Resolve — Relation épistolaire · Les secrets de HSOV · Opération Culot",
-      "Resolve — Rejoindre le bon côté de la Force · Les secrets de HSOV · Opération Culot",
-      "Resolve — Métro, Boulot, Culot ! · Les secrets de HSOV · Opération Culot",
-      "Resolve — Th3 Lin3 · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 13,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-11-06": {
-    "count": 12,
-    "activités": [
-      "Resolve — Nommage et gestion des versions · DATA · Osint4Fun",
-      "Resolve — Métadonnées · DATA · Osint4Fun",
-      "Resolve — Référentiels et thésaurus · DATA · Osint4Fun",
-      "Resolve — Client · DATA · Osint4Fun",
-      "Resolve — Voyageur · DATA · Osint4Fun",
-      "Resolve — Conférencier · DATA · Osint4Fun",
-      "Resolve — Prescripteur · DATA · Osint4Fun",
-      "Resolve — Propriété intellectuelle · DATA · Osint4Fun",
-      "Resolve — Influenceur · DATA · Osint4Fun",
-      "Resolve — Documentation · DATA · Osint4Fun",
-      "Resolve — Il était une fois · DATA · Osint4Fun",
-      "Resolve — Introduction · DATA · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 12,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-14": {
-    "count": 3,
-    "activités": [
-      "Resolve — TryHeartMe · Love at First Breach · TryHackMe",
-      "Resolve — SpeedChatting · Love at First Breach · TryHackMe",
-      "Resolve — Love Letter Locker · Love at First Breach · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-18": {
-    "count": 3,
-    "activités": [
-      "Resolve — God is a DJ 3/3 · Osintopia",
-      "Resolve — God is a DJ 2/3 · Osintopia",
-      "Resolve — God is a DJ 1/3 · Osintopia"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-25": {
-    "count": 1,
-    "activités": [
-      "Resolve — SAST · DevSecOps · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-08": {
-    "count": 1,
-    "activités": [
-      "Resolve — Found the HACKER · OSINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-11": {
-    "count": 1,
-    "activités": [
-      "Retex — Digital Footprint · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-08-06": {
-    "count": 4,
-    "activités": [
-      "Resolve — BLACK ROOSTER · Osint · YouArePlayer",
-      "Created — Project Not-SKG · Site",
-      "Created — Not-SKG · Project Not-SKG",
-      "Created — MAJordome · Project Not-SKG"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 3
-    }
-  },
-  "2026-06-05": {
-    "count": 3,
-    "activités": [
-      "Resolve — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
-      "Resolve — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
-      "Resolve — Monsieur C Découverte · ROSO · 404CTF26"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-14": {
-    "count": 3,
-    "activités": [
-      "Retex — LE CABINET DE L'OMBRE · La brume · Le Caire nid d'espions",
-      "Retex — MISSION SECRÈTE · La brume · Le Caire nid d'espions",
-      "Retex — LA VRAIE NATHALIE · La brume · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-08-17": {
-    "count": 1,
-    "activités": [
-      "Resolve — The Right Breakdown · CRYPTO · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-19": {
-    "count": 3,
-    "activités": [
-      "Retex — Ca c'est de la doctrine ! · Une drôle de fleur · DeepThreats",
-      "Retex — Tableau de chasse · Une drôle de fleur · DeepThreats",
-      "Retex — La plume et le pouvoir · Une drôle de fleur · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-08-23": {
-    "count": 1,
-    "activités": [
-      "Resolve — LA BAND3 A PICSOU · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-20": {
-    "count": 5,
-    "activités": [
-      "Retex — C'était caché · ROSO · 404CTF26",
-      "Retex — Doctor Es Langues · ROSO · 404CTF26",
-      "Resolve — Nautilus · Osintopia",
-      "Resolve — Le casse du siècle · Osintopia",
-      "Resolve — Street art · Osintopia"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 2,
-      "autre": 0
-    }
-  },
-  "2026-10-09": {
-    "count": 1,
-    "activités": [
-      "Resolve — Arrête ton char ! · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-15": {
-    "count": 2,
-    "activités": [
-      "Resolve — Cupid's Matchmaker · Love at First Breach · TryHackMe",
-      "Resolve — When Hearts Collide · Love at First Breach · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-19": {
-    "count": 5,
-    "activités": [
-      "Resolve — Fork Fossile · CHALLENGE ADHERENTS · Osint-FR",
-      "Resolve — Cheminée · Château · Osint-FR",
-      "Resolve — Galaxie · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Echo · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Mirage · Novice / Pas à Pas · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-30": {
-    "count": 5,
-    "activités": [
-      "Resolve — Gladiator · Osint · YouArePlayer",
-      "Resolve — Grandpa's souvenir · Osint · YouArePlayer",
-      "Resolve — Battle · fun · YouArePlayer",
-      "Resolve — Pepsi · Osint · YouArePlayer",
-      "Created — Refontes Compteurs globaux · Heatmap · Site"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-04-24": {
-    "count": 2,
-    "activités": [
-      "Resolve — La ville oubliée 2 · Osintopia",
-      "Resolve — Dependency Management · DevSecOps · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-09": {
-    "count": 1,
-    "activités": [
-      "Resolve — 24/12/24 · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-08-07": {
-    "count": 5,
-    "activités": [
-      "Resolve — The Case of the Missing Flag Baby · Cyber · YouArePlayer",
-      "Resolve — Oom · Cyber · YouArePlayer",
-      "Resolve — Worm · Osint · YouArePlayer",
-      "Resolve — La demande judiciaire · IsFred",
-      "Resolve — Judan? · IsFred"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-04-10": {
-    "count": 1,
-    "activités": [
-      "Retex — OhSINT · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-06-04": {
-    "count": 11,
-    "activités": [
-      "Resolve — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions",
-      "Resolve — SCROLL PRE-DODO · Les origines · Le Caire nid d'espions",
-      "Resolve — MAAAARRRRRC · Les origines · Le Caire nid d'espions",
-      "Resolve — DERRIÈRE LE PSEUDO · Good cop · Le Caire nid d'espions",
-      "Resolve — SALUT LA COMMU · Good cop · Le Caire nid d'espions",
-      "Resolve — ARCHITECTE ARCHICHOUETTE · Good cop · Le Caire nid d'espions",
-      "Resolve — LE MESSAGER · Good cop · Le Caire nid d'espions",
-      "Resolve — LA GUERRE DES HASHTAGS · La tempête · Le Caire nid d'espions",
-      "Resolve — LA PLUME VENIMEUSE · La tempête · Le Caire nid d'espions",
-      "Resolve — PRIDE AND PREJUDICE · La tempête · Le Caire nid d'espions",
-      "Resolve — MONSIEUR POULPE · La tempête · Le Caire nid d'espions"
-    ],
-    "stats": {
-      "resolve": 11,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-06-24": {
-    "count": 1,
-    "activités": [
-      "Retex — Canular savant 2 · ROSO · 404CTF26"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-08-27": {
-    "count": 2,
-    "activités": [
-      "Resolve — THE 300 WORD BACKUP · CYBER · YouArePlayer",
-      "Resolve — I wish I was there · Osintopia"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
   "2026-09-29": {
     "count": 3,
     "activités": [
@@ -2531,417 +2919,41 @@
       "autre": 0
     }
   },
-  "2026-04-04": {
-    "count": 7,
+  "2026-09-30": {
+    "count": 8,
     "activités": [
-      "Retex — En chemin pour une partie de pêche · Bellatrix",
-      "Retex — Remonter la piste · Bellatrix",
-      "Retex — On se rapproche · Bellatrix",
-      "Retex — Les archives au secours · Bellatrix",
-      "Retex — Le plein trop cher · Bellatrix",
-      "Retex — Temps incertains · Bellatrix",
-      "Retex — Localisation de \"Lynx\" · Bellatrix"
+      "Resolve —  WINDOWS RELEASE · Oscar Zulu",
+      "Resolve —  WINDOWS UPGRADE · Oscar Zulu",
+      "Resolve —  WINDOWS UPDATE · Oscar Zulu",
+      "Resolve —  Mémoire d'un garage oublié 3/3 · Osintopia",
+      "Resolve — Chasse à l’homme 2/2 · Osintopia",
+      "Resolve — Chasse à l’homme 1/2 · Osintopia",
+      "Resolve — The Black Penny Dossier · OSINT · YouArePlayer",
+      "Resolve — Le monument 2/3 · Osintopia"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 7,
-      "autre": 0
-    }
-  },
-  "2026-08-13": {
-    "count": 2,
-    "activités": [
-      "Resolve — Mexican Mafia Boss · AI EVASION · YouArePlayer",
-      "Resolve — Arnou Leroy · AI EVASION · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 2,
+      "resolve": 8,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-06-10": {
-    "count": 2,
-    "activités": [
-      "Retex — FAMILIA TUA ET MUNDUS TUUS · Les origines · Le Caire nid d'espions",
-      "Created — Le Caire nid d'espions · Le Caire nid d'espions · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 1
-    }
-  },
-  "2026-11-03": {
-    "count": 26,
-    "activités": [
-      "Resolve — Le dossier · Caneléa · Osint4Fun",
-      "Resolve — Tu as ta place ! · MATHILDA · Osint4Fun",
-      "Resolve — The show must go on... · MATHILDA · Osint4Fun",
-      "Resolve — Effet de serre · MATHILDA · Osint4Fun",
-      "Resolve — Cachez ce genre... · MATHILDA · Osint4Fun",
-      "Resolve — Un rêve d'enfant · MATHILDA · Osint4Fun",
-      "Resolve — Médecine · MATHILDA · Osint4Fun",
-      "Resolve — AGC · MATHILDA · Osint4Fun",
-      "Resolve — Actrice et inventrice · MATHILDA · Osint4Fun",
-      "Resolve — USA · MATHILDA · Osint4Fun",
-      "Resolve — ESPCI · MATHILDA · Osint4Fun",
-      "Resolve — Ada Lovelace · MATHILDA · Osint4Fun",
-      "Resolve — Oubliées de la science · MATHILDA · Osint4Fun",
-      "Resolve — La tête dans les étoiles · MATHILDA · Osint4Fun",
-      "Resolve — Européenne en orbite · MATHILDA · Osint4Fun",
-      "Resolve — Ingénieure et actrice · MATHILDA · Osint4Fun",
-      "Resolve — No-Nobel · MATHILDA · Osint4Fun",
-      "Resolve — Wikipédia · MATHILDA · Osint4Fun",
-      "Resolve — Lieu éponyme · MATHILDA · Osint4Fun",
-      "Resolve — Elles bougent · MATHILDA · Osint4Fun",
-      "Resolve — On en apprend un peu plus · Caneléa · Osint4Fun",
-      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
-      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
-      "Resolve — Maths, NSI et Arts plastiques · MATHILDA · Osint4Fun",
-      "Resolve — Des égéries scientifiques · MATHILDA · Osint4Fun",
-      "Resolve — Introduction · MATHILDA · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 26,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-02-25": {
-    "count": 2,
-    "activités": [
-      "Resolve — Précision · Integrity · Osint4Fun",
-      "Resolve — Restriction · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-29": {
-    "count": 4,
-    "activités": [
-      "Created — Challenge Friendly Fire · Site",
-      "Resolve — Who's Calling? · COMMUNITY EDITION · OSINT Industries",
-      "Resolve — OPERATION KILLSWITCH · OSINT · OSINT Industries",
-      "Resolve — On the Traces of the Silk Road Black Market · OSINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-04-14": {
-    "count": 1,
-    "activités": [
-      "Resolve — Ombre & Rigueur · Novice / Pas à Pas · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-08-03": {
-    "count": 6,
-    "activités": [
-      "Retex — La joie du quokka · Chapitre 2 - Fin · L'appel de la forêt",
-      "Retex — Le Silence des Mouettes · Chapitre 3 · L'appel de la forêt",
-      "Retex — Le festin du vautour · Crime · L'appel de la forêt",
-      "Retex — La Vigile du Hibou · Crime · L'appel de la forêt",
-      "Retex — Le venin du Taïpan · Crime · L'appel de la forêt",
-      "Retex — Le caillou de la loutre · Crime · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-04-20": {
-    "count": 2,
-    "activités": [
-      "Resolve — Bamboulas · Hates · Osint4Fun",
-      "Resolve — Masquerade · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-30": {
-    "count": 6,
-    "activités": [
-      "Resolve — Étape 13 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 14 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 15 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 16 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 17 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 18 · GNOSINT : Le Défi · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-04": {
-    "count": 1,
-    "activités": [
-      "Resolve — L'alter Ego · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-06": {
-    "count": 4,
-    "activités": [
-      "Resolve — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
-      "Resolve — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — Une dénomination plus technique · Les femmes dans les armées · Perce le front numérique ! V2",
-      "Resolve — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-22": {
-    "count": 2,
-    "activités": [
-      "Created — MAJ responsive \"Journal d'activité\" · Site",
-      "Created — Ajout Boutons \"RETEX\"/\"Resolved\" dernières activités · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-07-21": {
-    "count": 3,
-    "activités": [
-      "Retex — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
-      "Retex — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
-      "Retex — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-07-15": {
-    "count": 1,
-    "activités": [
-      "Resolve — UK Suspect · GEOINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-16": {
-    "count": 3,
-    "activités": [
-      "Retex — Un nouvel allié · En eaux troubles · DeepThreats",
-      "Retex — Un soupçon de soupçon · En eaux troubles · DeepThreats",
-      "Retex — Président ! · En eaux troubles · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-05-01": {
-    "count": 3,
-    "activités": [
-      "Resolve — Le village · Château · Osint-FR",
-      "Resolve — Mobilier · Château · Osint-FR",
-      "Resolve — Numéro 13 · Château · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 3,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-08-18": {
-    "count": 1,
-    "activités": [
-      "Created — MAJ PubLeak · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-08-08": {
-    "count": 6,
-    "activités": [
-      "Created — message-intercepté · Beta-Tester · Project Not-SKG",
-      "Created — Project Sentry · Project Not-SKG",
-      "Resolve — Time & book · Osintopia",
-      "Resolve — Spaghettis · Osintopia",
-      "Resolve — Robot Factory · Osintopia",
-      "Resolve — Tempête · Osintopia"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-09-06": {
-    "count": 5,
-    "activités": [
-      "Resolve — The Suspicious Stop · GEOINT · OSINT Industries",
-      "Resolve — Lost in Transit · GEOINT · OSINT Industries",
-      "Resolve — DAMASCUS · OSINT · OSINT Industries",
-      "Resolve — Secret Location · OSINT · OSINT Industries",
-      "Resolve — FAKE DOCTOR · OSINT · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-11": {
-    "count": 6,
-    "activités": [
-      "Resolve — Lettre d'un soldat · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Motif aléatoire · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Le repère · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Interception de code · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Les ondes du silence · Dans la peau d'un résistant · BleuetV5",
-      "Resolve — Zone Sud · Dans la peau d'un résistant · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-05": {
+  "2026-10-01": {
     "count": 10,
     "activités": [
-      "Resolve — La Mémoire de l'Éléphant · Acte 2 - Développement · L'appel de la forêt",
-      "Resolve — Le Territoire du Loup · Acte 2 - Droit · L'appel de la forêt",
-      "Resolve — Le Nid douillet · Acte 2 - Développement · L'appel de la forêt",
-      "Resolve — La Fourmilière d'Informations · Acte 2 - Développement · L'appel de la forêt",
-      "Resolve — Les Traces de l'Ours · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — La chasse du guépard · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — Le trésor des corbeaux · Faits divers · L'appel de la forêt",
-      "Resolve — Les Abysses des Lophiiformes · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt",
-      "Resolve — L'Instinct du Pigeon Voyageur · Acte 3 - Communication · L'appel de la forêt"
+      "Resolve — Belles Plaques · Oscar Zulu",
+      "Resolve — Une dizaine de millénaire · Osintopia",
+      "Resolve — Pas de maire, pas de chocolat 2 · Oscar Zulu",
+      "Resolve — Pas de maire, pas de chocolat 1 · Oscar Zulu",
+      "Resolve — Tireur des litres · Oscar Zulu",
+      "Resolve — Petit Boulot · Oscar Zulu",
+      "Resolve — Six petits pieds sous terre · Oscar Zulu",
+      "Resolve — Petit Caillou · Oscar Zulu",
+      "Resolve — BLUE ART · Oscar Zulu",
+      "Resolve — La liste · Oscar Zulu"
     ],
     "stats": {
       "resolve": 10,
       "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-31": {
-    "count": 9,
-    "activités": [
-      "Created — Explorer sort · Site ",
-      "Created — Folder redirect · Site",
-      "Created — Lightbox SVG pan/zoom · Site",
-      "Created — Zoom molette SVG · Site",
-      "Resolve — From space with love - [5/5]  · Chapitre I  · Osintopia",
-      "Resolve — From space with love - [4/5]  · Chapitre I  · Osintopia",
-      "Resolve — From space with love - [3/5]  · Chapitre I  · Osintopia",
-      "Resolve — From space with love - [2/5]  · Chapitre I  · Osintopia",
-      "Resolve — From space with love - [1/5]  · Chapitre I  · Osintopia"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 4
-    }
-  },
-  "2026-05-25": {
-    "count": 2,
-    "activités": [
-      "Resolve — Under Pressure · Ya foye · Medileak 3",
-      "Resolve — Gold Digger · Ya foye · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-16": {
-    "count": 5,
-    "activités": [
-      "Resolve — Vol à vue 3/4 · Osintopia",
-      "Resolve — Vol à vue 2/4 · Osintopia",
-      "Resolve — Another brick on the wall · Osintopia",
-      "Resolve — Opération Galaxy · Osintopia",
-      "Resolve — Nice Garden · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-14": {
-    "count": 6,
-    "activités": [
-      "Retex — 1 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 2 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 3 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 4 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 5 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 6 Decembre · Advent of Osint · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-10-22": {
-    "count": 6,
-    "activités": [
-      "Resolve — Une école prestigieuse · Caneléa · Osint4Fun",
-      "Resolve — Acceptation · Caneléa · Osint4Fun",
-      "Resolve — Autel · Osintopia",
-      "Resolve — FAKE GOFUNDME · OSINT · OSINT Industries",
-      "Resolve — TRIAL OF THE CENTURY · OSINT · YouArePlayer",
-      "Resolve — THIRSTY · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-20": {
-    "count": 3,
-    "activités": [
-      "Retex — Corp Website · Love at First Breach · TryHackMe",
-      "Retex — Cupid's Matchmaker · Love at First Breach · TryHackMe",
-      "Retex — CupidBot · Love at First Breach · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
       "autre": 0
     }
   },
@@ -2989,14 +3001,316 @@
       "autre": 0
     }
   },
-  "2026-05-05": {
+  "2026-10-03": {
+    "count": 2,
+    "activités": [
+      "Resolve — Tous les chemins mènent au BIG · Sur les traces du fonds · Opération Culot",
+      "Resolve — Bis repetitas · Vérifications croisées · Opération Culot"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-04": {
+    "count": 6,
+    "activités": [
+      "Resolve — The Burglar Cat · FUN · YouArePlayer",
+      "Resolve — The Long Baseline IV · MIXED · YouArePlayer",
+      "Resolve — The Long Baseline III · MIXED · YouArePlayer",
+      "Resolve — The Long Baseline II · MIXED · YouArePlayer",
+      "Resolve — The Long Baseline I · MIXED · YouArePlayer",
+      "Resolve — Le monument 3/3 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-05": {
+    "count": 16,
+    "activités": [
+      "Resolve — Ecrire pour faire vivre leur mémoire · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Hommage à un enfant de la Nation · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — « Merlinettes », ces femmes engagées ! · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Un 14 juillet enflammé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve — Le chant du retour · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve — Le train arrive · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Une grande figure contemporaine · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Promenade historique · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Camouflage · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
+      "Resolve — Bienvenue ! · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 16,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-06": {
+    "count": 4,
+    "activités": [
+      "Resolve — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — Une dénomination plus technique · Les femmes dans les armées · Perce le front numérique ! V2",
+      "Resolve — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-07": {
+    "count": 4,
+    "activités": [
+      "Resolve — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
+      "Resolve — BENEATH THE MAP · MIXED · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-08": {
+    "count": 13,
+    "activités": [
+      "Resolve — Fin de mission · Les secrets de HSOV · Opération Culot",
+      "Resolve — Sésame, ouvre-toi ! · Les secrets de HSOV · Opération Culot",
+      "Resolve — Coup de filet · Les secrets de HSOV · Opération Culot",
+      "Resolve — L'insoumis · Les secrets de HSOV · Opération Culot",
+      "Resolve — Le corbeau · Les secrets de HSOV · Opération Culot",
+      "Resolve — Kalimera · Les secrets de HSOV · Opération Culot",
+      "Resolve — La safe place · Les secrets de HSOV · Opération Culot",
+      "Resolve — Alias · Les secrets de HSOV · Opération Culot",
+      "Resolve — Les dizygotes · Les secrets de HSOV · Opération Culot",
+      "Resolve — Relation épistolaire · Les secrets de HSOV · Opération Culot",
+      "Resolve — Rejoindre le bon côté de la Force · Les secrets de HSOV · Opération Culot",
+      "Resolve — Métro, Boulot, Culot ! · Les secrets de HSOV · Opération Culot",
+      "Resolve — Th3 Lin3 · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 13,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-09": {
+    "count": 1,
+    "activités": [
+      "Resolve — Arrête ton char ! · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-10": {
+    "count": 8,
+    "activités": [
+      "Resolve — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Resolve — J'aime la neige, bientôt y'en aura plus. · Oscar Zulu",
+      "Resolve — Vol à vue 1/4 · Osintopia",
+      "Resolve — La ville oubliée 6/6 · Osintopia",
+      "Resolve — La ville oubliée 5/6 · Osintopia",
+      "Resolve — La ville oubliée 4/6 · Osintopia",
+      "Resolve — La ville oubliée 3/6 · Osintopia",
+      "Created — Opération Culot · Site"
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-10-11": {
+    "count": 2,
+    "activités": [
+      "Resolve —  Wanted · Osintopia",
+      "Resolve —  Sécurise le défilé · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-12": {
+    "count": 1,
+    "activités": [
+      "Resolve — GUITOUB2 · Ô fil de l'Ôsint · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-13": {
+    "count": 2,
+    "activités": [
+      "Resolve — No Comment · MADAME_IRMA · Osint-FR",
+      "Resolve — GEOINT · FLAG4ALL · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-14": {
     "count": 5,
     "activités": [
-      "Resolve — ALL_IN · MADAME_IRMA · Osint-FR",
-      "Resolve — Passerelle · MADAME_IRMA · Osint-FR",
-      "Resolve — Divination · MADAME_IRMA · Osint-FR",
-      "Resolve — Read More · MADAME_IRMA · Osint-FR",
-      "Created — Badges · Site"
+      "Resolve —  L'allié oublié · Track Bonus - Le 14 Juillet · Perce le front numérique ! V2",
+      "Resolve —  Mémoire d'un garage oublié 2/3 · Osintopia",
+      "Created — Refonte ToolBox · Site",
+      "Created — Maj Overpass-Turbo · Site",
+      "Created — MAJ Bannière pages · Site"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 3
+    }
+  },
+  "2026-10-15": {
+    "count": 3,
+    "activités": [
+      "Resolve — Desaparicion 4/4 · Osintopia",
+      "Resolve — Desaparicion 3/4 · Osintopia",
+      "Resolve — Desaparicion 2/4 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-16": {
+    "count": 5,
+    "activités": [
+      "Resolve — Vol à vue 3/4 · Osintopia",
+      "Resolve — Vol à vue 2/4 · Osintopia",
+      "Resolve — Another brick on the wall · Osintopia",
+      "Resolve — Opération Galaxy · Osintopia",
+      "Resolve — Nice Garden · OSINT · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-17": {
+    "count": 2,
+    "activités": [
+      "Resolve — C’est l’heure du Du-du-du-du-Duel 2/2 · Osintopia",
+      "Resolve — Vol à vue 4/4 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-18": {
+    "count": 3,
+    "activités": [
+      "Resolve — God is a DJ 3/3 · Osintopia",
+      "Resolve — God is a DJ 2/3 · Osintopia",
+      "Resolve — God is a DJ 1/3 · Osintopia"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-19": {
+    "count": 5,
+    "activités": [
+      "Resolve — Fork Fossile · CHALLENGE ADHERENTS · Osint-FR",
+      "Resolve — Cheminée · Château · Osint-FR",
+      "Resolve — Galaxie · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Echo · Novice / Pas à Pas · Osint-FR",
+      "Resolve — Mirage · Novice / Pas à Pas · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-20": {
+    "count": 6,
+    "activités": [
+      "Resolve — PILOTE · FLAG4ALL · Osint-FR",
+      "Resolve — SCOTT · FLAG4ALL · Osint-FR",
+      "Resolve — GEORGETTE · FLAG4ALL · Osint-FR",
+      "Resolve — Boston · CHALLENGE ADHERENTS · Osint-FR",
+      "Resolve — Welcome · CHALLENGE ADHERENTS · Osint-FR",
+      "Created — Perce le Front Numérique V2 · Site"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-10-21": {
+    "count": 8,
+    "activités": [
+      "Resolve — L’accident · RECON · IsFred",
+      "Resolve — Objet perdu · RECON · IsFred",
+      "Resolve — Famous Fred · SOCINT · IsFred",
+      "Resolve — Artiste en herbe · SOCINT · IsFred",
+      "Created — MAJ \"Mes Plateformes\" · Site",
+      "Resolve — Surveillance lointaine · GEOINT · IsFred",
+      "Resolve — TAPERDU · CHALLENGE ADHERENTS · Osint-FR",
+      "Resolve — CRASH · CHALLENGE ADHERENTS · Osint-FR"
+    ],
+    "stats": {
+      "resolve": 7,
+      "retex": 0,
+      "autre": 1
+    }
+  },
+  "2026-10-22": {
+    "count": 6,
+    "activités": [
+      "Resolve — Une école prestigieuse · Caneléa · Osint4Fun",
+      "Resolve — Acceptation · Caneléa · Osint4Fun",
+      "Resolve — Autel · Osintopia",
+      "Resolve — FAKE GOFUNDME · OSINT · OSINT Industries",
+      "Resolve — TRIAL OF THE CENTURY · OSINT · YouArePlayer",
+      "Resolve — THIRSTY · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-10-23": {
+    "count": 5,
+    "activités": [
+      "Resolve — MURDER ATTEMPT · EUROPOL · OSINT Industries",
+      "Resolve — Criminal Partners · OSINT · OSINT Industries",
+      "Resolve — THE CHINESE SPY · OSINT · OSINT Industries",
+      "Created —Completion of Participant Orientation · Tracelabs",
+      "Resolve — Pourquoi tant de N ? · Caneléa · Osint4Fun"
     ],
     "stats": {
       "resolve": 4,
@@ -3004,141 +3318,44 @@
       "autre": 1
     }
   },
-  "2026-09-12": {
-    "count": 7,
+  "2026-10-24": {
+    "count": 12,
     "activités": [
-      "Resolve — Message Intime · What's up doc ? · DeepThreats",
-      "Resolve — Non négociable · L'ile mystérieuse · DeepThreats",
-      "Resolve — Made in France · L'ile mystérieuse · DeepThreats",
-      "Resolve — Contrôle total · L'ile mystérieuse · DeepThreats",
-      "Resolve — Un homme occupé · L'ile mystérieuse · DeepThreats",
-      "Resolve — Connexion établie · L'ile mystérieuse · DeepThreats",
-      "Resolve — Pas d'ami comme toi · What's up doc ? · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 7,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-11": {
-    "count": 7,
-    "activités": [
-      "Resolve — Le festin du vautour · Crime · L'appel de la forêt",
-      "Resolve — Le venin du Taïpan · Crime · L'appel de la forêt",
-      "Resolve — La protection de la tortue · Péhuson · L'appel de la forêt",
-      "Resolve — Le caillou de la loutre · Crime · L'appel de la forêt",
-      "Resolve — La taupe · Péhuson · L'appel de la forêt",
-      "Resolve — Hors de la Tanière · Péhuson · L'appel de la forêt",
-      "Resolve — La vraie joie du quokka · Chapitre 4 · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 7,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-25": {
-    "count": 1,
-    "activités": [
-      "Retex — La danse des abeilles · Acte 3 - Communication · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-05-31": {
-    "count": 2,
-    "activités": [
-      "Retex — Mon Amie La Rose · Money For Nothing · Medileak 3",
-      "Retex — Magnolia For Ever · Money For Nothing · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 2,
-      "autre": 0
-    }
-  },
-  "2026-09-26": {
-    "count": 6,
-    "activités": [
-      "Retex — Capital risque · Partenaire particulier · DeepThreats",
-      "Retex — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats",
-      "Retex — Geoguessr level 1 · L'ile mystérieuse · DeepThreats",
-      "Retex — French Touch · L'ile mystérieuse · DeepThreats",
-      "Retex — Connexion établie · L'ile mystérieuse · DeepThreats",
-      "Retex — Un homme occupé · L'ile mystérieuse · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-08-28": {
-    "count": 2,
-    "activités": [
-      "Resolve — The Cattle Relay · OSINT · YouArePlayer",
-      "Resolve — YUMMY · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-21": {
-    "count": 1,
-    "activités": [
-      "Resolve — Surnom · De l'ombre à la lumière - 1 · Osint-FR"
+      "Resolve — GRINCHSTEIN · Osintopia",
+      "Created — Participation TraceLabs Search Party · Site",
+      "Retex — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Sur la route de la libération · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Un endroit bien loin · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Un monument particulier · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Honneur, courage et fraternité · Les monuments militaires français · Perce le front numérique ! V2",
+      "Retex — Promenade historique · Learning Track · Perce le front numérique ! V2",
+      "Retex — Camouflage · Learning Track · Perce le front numérique ! V2",
+      "Retex — Que portent-ils ? · Learning Track · Perce le front numérique ! V2",
+      "Retex — Bienvenue ! · Perce le front numérique ! V2"
     ],
     "stats": {
       "resolve": 1,
-      "retex": 0,
-      "autre": 0
+      "retex": 10,
+      "autre": 1
     }
   },
-  "2026-07-01": {
-    "count": 3,
+  "2026-10-25": {
+    "count": 8,
     "activités": [
-      "Created — Fix DA · Heatmap · Site",
-      "Created — Derniers RETEX · Heatmap · Site",
-      "Resolve — Flag Hunt · fun · YouArePlayer"
+      "Resolve — Livraison Internationale · RECON · IsFred",
+      "Created — Retex Premier Trace Labs Search Party · Site",
+      "Retex — Une planification herculéenne · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Réseaux d’après-guerre · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — À la recherche des ateliers de camouflage · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Un objet bien étrange · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
+      "Retex — Sur les traces de Louis Guingot · La Section camouflage · Perce le front numérique ! V2"
     ],
     "stats": {
       "resolve": 1,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-05-15": {
-    "count": 6,
-    "activités": [
-      "Retex — Plus qu'un numéro · Un devoir de mémoire · BleuetV5",
-      "Retex — L'équipage · Un devoir de mémoire · BleuetV5",
-      "Retex — La Charente libérée · Un devoir de mémoire · BleuetV5",
-      "Retex — Les fusillés du Mont-Valérien · Un devoir de mémoire · BleuetV5",
-      "Retex — La Charente outragée · Un devoir de mémoire · BleuetV5",
-      "Retex — La princesse · Un devoir de mémoire · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 0,
       "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-09-02": {
-    "count": 2,
-    "activités": [
-      "Resolve — The Benarroch File · INTERPOL · OSINT Industries",
-      "Resolve — The Hadjej File · INTERPOL · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
+      "autre": 1
     }
   },
   "2026-10-26": {
@@ -3168,198 +3385,6 @@
       "autre": 0
     }
   },
-  "2026-03-24": {
-    "count": 12,
-    "activités": [
-      "Created — Phase 1 · Bellatrix",
-      "Resolve — Un message d'alerte · Bellatrix",
-      "Resolve — La vidéo du sauvetage · Bellatrix",
-      "Resolve — Trop Beau pour être vrai · Bellatrix",
-      "Resolve — Dé-cridibiliser l'information · Bellatrix",
-      "Resolve — Au service d'une cause · Bellatrix",
-      "Resolve — Rétablir la véracité des faits · Bellatrix",
-      "Resolve — Une metadata vaut mille images · Bellatrix",
-      "Resolve — Mesurer l'attaque · Bellatrix",
-      "Resolve — Identifier le primo-diffuseur · Bellatrix",
-      "Resolve — Cyber-physique ! · Bellatrix",
-      "Resolve — Analyser l'attaque · Bellatrix"
-    ],
-    "stats": {
-      "resolve": 11,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-12": {
-    "count": 1,
-    "activités": [
-      "Resolve — GUITOUB2 · Ô fil de l'Ôsint · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-01": {
-    "count": 2,
-    "activités": [
-      "Resolve — Un rêve au début du brouillard · Integrity · Osint4Fun",
-      "Resolve — Dématérialisation · Integrity · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-03": {
-    "count": 2,
-    "activités": [
-      "Resolve — Tous les chemins mènent au BIG · Sur les traces du fonds · Opération Culot",
-      "Resolve — Bis repetitas · Vérifications croisées · Opération Culot"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-13": {
-    "count": 6,
-    "activités": [
-      "Resolve — Courrier indésirable 2/2 · En eaux troubles · DeepThreats",
-      "Resolve — Oh la boulette ! · En eaux troubles · DeepThreats",
-      "Resolve — Poupées russes · Partenaire particulier · DeepThreats",
-      "Resolve — Qui a piqué mes parts ?! · Partenaire particulier · DeepThreats",
-      "Resolve — Capital risque · Partenaire particulier · DeepThreats",
-      "Resolve — Mon précieux · L'ile mystérieuse · DeepThreats"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-04": {
-    "count": 5,
-    "activités": [
-      "Resolve — IDENT · D3z1nT0x · Osint-FR",
-      "Resolve — D3z1nT0x · D3z1nT0x · Osint-FR",
-      "Resolve — Aesalerte · D3z1nT0x · Osint-FR",
-      "Resolve — Plan · Novice / Pas à Pas · Osint-FR",
-      "Resolve — Le moteur · Novice / Pas à Pas · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-10": {
-    "count": 6,
-    "activités": [
-      "Resolve — Noctua · Acte 4 · L'appel de la forêt",
-      "Resolve — Scorpiox · Acte 4 · L'appel de la forêt",
-      "Resolve — La joie du quokka · Chapitre 2 - Fin · L'appel de la forêt",
-      "Resolve — Le Silence des Mouettes · Chapitre 3 · L'appel de la forêt",
-      "Resolve — La Vigile du Hibou · Crime · L'appel de la forêt",
-      "Resolve — Chargé comme une mule · Péhuson · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 6,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-07-24": {
-    "count": 3,
-    "activités": [
-      "Retex — La Mémoire de l'Éléphant · Acte 2 - Développement · L'appel de la forêt",
-      "Retex — Le Nid douillet · Acte 2 - Développement · L'appel de la forêt",
-      "Retex — La Fourmilière d'Informations · Acte 2 - Développement · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-09-27": {
-    "count": 5,
-    "activités": [
-      "Retex — Contrôle total · L'ile mystérieuse · DeepThreats",
-      "Retex — Made in France· L'ile mystérieuse · DeepThreats",
-      "Retex — Non négociable · L'ile mystérieuse · DeepThreats",
-      "Retex — Mon précieux · L'ile mystérieuse · DeepThreats",
-      "Resolve — Emoji Flag · Fun · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-05-30": {
-    "count": 1,
-    "activités": [
-      "Retex — In da club · Money For Nothing · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-08-29": {
-    "count": 1,
-    "activités": [
-      "Resolve — Satellite Hopper · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-05-20": {
-    "count": 1,
-    "activités": [
-      "Resolve — Réponds moi · De l'ombre à la lumière - 1 · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-09-03": {
-    "count": 2,
-    "activités": [
-      "Resolve — Operation LOCKERGOGA · EUROPOL · OSINT Industries",
-      "Retex — Operation LOCKERGOGA · EUROPOL · OSINT Industries"
-    ],
-    "stats": {
-      "resolve": 1,
-      "retex": 1,
-      "autre": 0
-    }
-  },
-  "2026-05-14": {
-    "count": 5,
-    "activités": [
-      "Retex — La force du collectif · Nos partenaires · BleuetV5",
-      "Retex — Le refuge des déchiffreurs · Nos partenaires · BleuetV5",
-      "Retex — L'ingénieur de l'ombre · Nos partenaires · BleuetV5",
-      "Retex — L'éclosion du souvenir · Nos partenaires · BleuetV5",
-      "Retex — MEDEVAC NEEDED · Nos partenaires · BleuetV5"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 5,
-      "autre": 0
-    }
-  },
   "2026-10-27": {
     "count": 9,
     "activités": [
@@ -3379,60 +3404,50 @@
       "autre": 0
     }
   },
-  "2026-03-25": {
-    "count": 12,
+  "2026-10-28": {
+    "count": 11,
     "activités": [
-      "Created — Phase 2 · Bellatrix",
-      "Resolve — Surveillance du réseau social · Bellatrix",
-      "Resolve — La piste de l'organisation · Bellatrix",
-      "Resolve — Fouiller le site · Bellatrix",
-      "Resolve — Nos réalisations... · Bellatrix",
-      "Resolve — Découverte de preuves cachées · Bellatrix",
-      "Resolve — La piste du financement · Bellatrix",
-      "Resolve — Analyse WHOIS des domaines suspects · Bellatrix",
-      "Resolve — Les Wordpress d'Hélène Volquoffe · Bellatrix",
-      "Resolve — La temporalité de l'attaque · Bellatrix",
-      "Resolve — Réutilisation de code sur les domaines · Bellatrix",
-      "Resolve — Déclenchement immédiat · Bellatrix"
+      "Resolve — Many more · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Activités · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Magnétique · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Ombres et lumières · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Computermusik · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Entendre des formes · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Smells · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — Révolutionnaire · L'art de l'immersion numérique · Osint4Fun",
+      "Resolve — La vertu n'est pas si simple · Integrity · Osint4Fun",
+      "Resolve — Libre circulation · Integrity · Osint4Fun",
+      "Resolve — La Papesse · Integrity · Osint4Fun"
     ],
     "stats": {
       "resolve": 11,
       "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-10-13": {
-    "count": 2,
-    "activités": [
-      "Resolve — No Comment · MADAME_IRMA · Osint-FR",
-      "Resolve — GEOINT · FLAG4ALL · Osint-FR"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
       "autre": 0
     }
   },
-  "2026-03-11": {
-    "count": 1,
+  "2026-10-29": {
+    "count": 4,
     "activités": [
-      "Created — Skg Notes · Site"
+      "Created — Challenge Friendly Fire · Site",
+      "Resolve — Who's Calling? · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — OPERATION KILLSWITCH · OSINT · OSINT Industries",
+      "Resolve — On the Traces of the Silk Road Black Market · OSINT · OSINT Industries"
     ],
     "stats": {
-      "resolve": 0,
+      "resolve": 3,
       "retex": 0,
       "autre": 1
     }
   },
-  "2026-03-31": {
+  "2026-10-30": {
     "count": 6,
     "activités": [
-      "Resolve — Étape 19 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 20 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 21 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 22 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 23 · GNOSINT : Le Défi · Osint4Fun",
-      "Resolve — Étape 24 · GNOSINT : Le Défi · Osint4Fun"
+      "Resolve — Halloween · Osintopia",
+      "Resolve — THE LIBER TACENDI · OSINT · YouArePlayer",
+      "Resolve — A TASTE OF INFLUENCE  PART 4 · OSINT · OSINT Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 3 · OSINT · OSINT Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 2 · OSINT · OSINT Industries",
+      "Resolve — A TASTE OF INFLUENCE  PART 1 · OSINT · OSINT Industries"
     ],
     "stats": {
       "resolve": 6,
@@ -3440,227 +3455,216 @@
       "autre": 0
     }
   },
-  "2026-10-07": {
-    "count": 4,
+  "2026-10-31": {
+    "count": 8,
     "activités": [
-      "Resolve — Pour ne pas oublier · Les monuments militaires français · Perce le front numérique ! V2",
-      "Resolve — Bien à l’abri · Les monuments militaires français · Perce le front numérique ! V2",
-      "Resolve — Le camouflage au service de la discrétion · La Section camouflage · Perce le front numérique ! V2",
-      "Resolve — BENEATH THE MAP · MIXED · YouArePlayer"
+      "Resolve — Astronomy Picture of the Day · Phénomènes naturels · Osint4Fun",
+      "Resolve — Aurore boréale · Phénomènes naturels · Osint4Fun",
+      "Resolve — Éclipse de soleil · Phénomènes naturels · Osint4Fun",
+      "Resolve — Gérard Failler · Phénomènes naturels · Osint4Fun",
+      "Resolve — Grande marée · Phénomènes naturels · Osint4Fun",
+      "Resolve — Marée haute · Phénomènes naturels · Osint4Fun",
+      "Resolve — SANCTIONED COMPANY · OSINT · OSINT Industries",
+      "Resolve — The Hidden Sunflowers · COMMUNITY EDITION · OSINT Industries"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 8,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-09-23": {
-    "count": 3,
+  "2026-11-01": {
+    "count": 24,
     "activités": [
-      "Created — MAJ graphe \"Activité par plateforme\" · Site",
-      "Created — MAJ légende \"Activité par plateforme\" · Site",
-      "Resolve — Paste the Keystone · Fun · YouArePlayer"
+      "Resolve — FINAL CHAPTER: THE WATCHERS · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 6: THE ROOM · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 5: THE DOOR · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 4: THE GUARD · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 3: ALEX'S JOKE · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 2: TRANSMISSION · Sentinel Mission · YouArePlayer",
+      "Resolve — CHAPTER 1: ASSIGNMENT · Sentinel Mission · YouArePlayer",
+      "Resolve — Bingo · The Lost Connection · Osint4Fun",
+      "Resolve — La ligne · The Lost Connection · Osint4Fun",
+      "Resolve — Le lac · The Lost Connection · Osint4Fun",
+      "Resolve — La voie abandonnée · The Lost Connection · Osint4Fun",
+      "Resolve — Sur la route · The Lost Connection · Osint4Fun",
+      "Resolve — Tic tac · The Lost Connection · Osint4Fun",
+      "Resolve — Un détour · The Lost Connection · Osint4Fun",
+      "Resolve — Des universités familières ? · The Lost Connection · Osint4Fun",
+      "Resolve — La petite annonce · The Lost Connection · Osint4Fun",
+      "Resolve — Dring · The Lost Connection · Osint4Fun",
+      "Resolve — Des vacances bien méritées · The Lost Connection · Osint4Fun",
+      "Resolve — Un voyage international · The Lost Connection · Osint4Fun",
+      "Resolve — Un faux départ · The Lost Connection · Osint4Fun",
+      "Resolve — Premier slogan · The Lost Connection · Osint4Fun",
+      "Resolve — Des étudiants heureux · The Lost Connection · Osint4Fun",
+      "Resolve — EU GREEN · The Lost Connection · Osint4Fun",
+      "Resolve — Un rendez-vous manqué · The Lost Connection · Osint4Fun"
     ],
     "stats": {
-      "resolve": 1,
-      "retex": 0,
-      "autre": 2
-    }
-  },
-  "2026-07-20": {
-    "count": 4,
-    "activités": [
-      "Retex — La mésange babysitter · Petsitter · L'appel de la forêt",
-      "Retex — Bavard comme une pie · Petsitter · L'appel de la forêt",
-      "Retex — Pris dans la toile · Petsitter · L'appel de la forêt",
-      "Retex — Le terrier du lapin · Petsitter · L'appel de la forêt"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 4,
-      "autre": 0
-    }
-  },
-  "2026-07-14": {
-    "count": 1,
-    "activités": [
-      "Resolve — PGA · OSINT · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 1,
+      "resolve": 24,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-09-17": {
-    "count": 3,
+  "2026-11-02": {
+    "count": 14,
     "activités": [
-      "Retex — Deal · En eaux troubles · DeepThreats",
-      "Retex — L'écolo · En eaux troubles · DeepThreats",
-      "Retex — \"Wesh couz t'es où ?\" · En eaux troubles · DeepThreats"
+      "Resolve — UNDERGROUND SHIPMENT · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — READONLY · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Trusted Source · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Postponed Kickoff · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Ghost Anchor · COMMUNITY EDITION · OSINT Industries",
+      "Resolve — Empreinte carbone · The Lost Connection · Osint4Fun",
+      "Resolve — Quelle gare ! · The Lost Connection · Osint4Fun",
+      "Resolve — Idée de sortie · The Lost Connection · Osint4Fun",
+      "Resolve — Greta · The Lost Connection · Osint4Fun",
+      "Resolve — Température changeante · The Lost Connection · Osint4Fun",
+      "Resolve — Un master adapté · The Lost Connection · Osint4Fun",
+      "Resolve — Une visite au musée · Caneléa · Osint4Fun",
+      "Created — MAJ Heatmap · Site",
+      "Created — MAJ Responsiveness · Site"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 3,
-      "autre": 0
-    }
-  },
-  "2026-08-19": {
-    "count": 1,
-    "activités": [
-      "Created — MAJ Sentry · Site"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-08-09": {
-    "count": 5,
-    "activités": [
-      "Created — Badge Challmakers · Site",
-      "Created — MAJ Visu Graph · Site",
-      "Resolve — Des carottes, des lapins et des statues · Osintopia",
-      "Resolve — Mayday · Osintopia",
-      "Resolve — Maritime · Osintopia"
-    ],
-    "stats": {
-      "resolve": 3,
+      "resolve": 12,
       "retex": 0,
       "autre": 2
     }
   },
-  "2026-05-10": {
-    "count": 3,
+  "2026-11-03": {
+    "count": 26,
     "activités": [
-      "Resolve — Le glacier tenace · L'audace de résister · BleuetV5",
-      "Resolve — Le tract dissident · L'audace de résister · BleuetV5",
-      "Resolve — Plymouth 2 · L'audace de résister · BleuetV5"
+      "Resolve — Le dossier · Caneléa · Osint4Fun",
+      "Resolve — Tu as ta place ! · MATHILDA · Osint4Fun",
+      "Resolve — The show must go on... · MATHILDA · Osint4Fun",
+      "Resolve — Effet de serre · MATHILDA · Osint4Fun",
+      "Resolve — Cachez ce genre... · MATHILDA · Osint4Fun",
+      "Resolve — Un rêve d'enfant · MATHILDA · Osint4Fun",
+      "Resolve — Médecine · MATHILDA · Osint4Fun",
+      "Resolve — AGC · MATHILDA · Osint4Fun",
+      "Resolve — Actrice et inventrice · MATHILDA · Osint4Fun",
+      "Resolve — USA · MATHILDA · Osint4Fun",
+      "Resolve — ESPCI · MATHILDA · Osint4Fun",
+      "Resolve — Ada Lovelace · MATHILDA · Osint4Fun",
+      "Resolve — Oubliées de la science · MATHILDA · Osint4Fun",
+      "Resolve — La tête dans les étoiles · MATHILDA · Osint4Fun",
+      "Resolve — Européenne en orbite · MATHILDA · Osint4Fun",
+      "Resolve — Ingénieure et actrice · MATHILDA · Osint4Fun",
+      "Resolve — No-Nobel · MATHILDA · Osint4Fun",
+      "Resolve — Wikipédia · MATHILDA · Osint4Fun",
+      "Resolve — Lieu éponyme · MATHILDA · Osint4Fun",
+      "Resolve — Elles bougent · MATHILDA · Osint4Fun",
+      "Resolve — On en apprend un peu plus · Caneléa · Osint4Fun",
+      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
+      "Resolve — Des statistiques · MATHILDA · Osint4Fun",
+      "Resolve — Maths, NSI et Arts plastiques · MATHILDA · Osint4Fun",
+      "Resolve — Des égéries scientifiques · MATHILDA · Osint4Fun",
+      "Resolve — Introduction · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 26,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-09-07": {
-    "count": 2,
+  "2026-11-04": {
+    "count": 20,
     "activités": [
-      "Resolve — Red Carpet · OSINT · OSINT Industries",
-      "Resolve — Operation Masked Dive · OSINT · OSINT Industries"
+      "Resolve — Tu ponds ou pondu ? · Autour de Tintin · Osint4Fun",
+      "Resolve — Lapsus en stock · Autour de Tintin · Osint4Fun",
+      "Resolve — Le guide du rossignol · Autour de Tintin · Osint4Fun",
+      "Resolve — Ninetta · Autour de Tintin · Osint4Fun",
+      "Resolve — L'émeraude des garamantes · Autour de Tintin · Osint4Fun",
+      "Resolve — Sous l'eau · Autour de Tintin · Osint4Fun",
+      "Resolve — Ah, jury de me voir... · Autour de Tintin · Osint4Fun",
+      "Resolve — Tête en l'air · Autour de Tintin · Osint4Fun",
+      "Resolve — En VO · Autour de Tintin · Osint4Fun",
+      "Resolve — Le tube · Autour de Tintin · Osint4Fun",
+      "Resolve — Tintin ? · Autour de Tintin · Osint4Fun",
+      "Resolve — La surveillance · Caneléa · Osint4Fun",
+      "Resolve — Sans moi, pas de tour ? · MATHILDA · Osint4Fun",
+      "Resolve — Bis repetita · MATHILDA · Osint4Fun",
+      "Resolve — Industrisité · MATHILDA · Osint4Fun",
+      "Resolve — Pousse, pousse ! · MATHILDA · Osint4Fun",
+      "Resolve — NoMoreMatildas · MATHILDA · Osint4Fun",
+      "Resolve — Hyperboles · MATHILDA · Osint4Fun",
+      "Resolve — Microbiologie · MATHILDA · Osint4Fun",
+      "Resolve — Un jour ce sera moi · MATHILDA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 20,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-07-04": {
-    "count": 10,
+  "2026-11-05": {
+    "count": 28,
     "activités": [
-      "Resolve — Le sens de l'orientation d'un chat · Introduction · L'appel de la forêt",
-      "Resolve — Pris dans la toile · Petsitter · L'appel de la forêt",
-      "Resolve — Le terrier du lapin · Petsitter · L'appel de la forêt",
-      "Resolve — Tapir dans l'ombre · Acte 1 · L'appel de la forêt",
-      "Resolve — Le Caméléon des internet · Acte 1 · L'appel de la forêt",
-      "Resolve — Les piqueboeufs et l'hippopotame · Acte 1 · L'appel de la forêt",
-      "Resolve — La parade du paon · Acte 2 - Activités · L'appel de la forêt",
-      "Resolve — Le loup déguisé · Acte 2 - Droit · L'appel de la forêt",
-      "Resolve — Les commencements de l'oiseau · Acte 2 - Droit · L'appel de la forêt",
-      "Resolve — Les fourberies du renard · Acte 2 - Droit · L'appel de la forêt"
+      "Resolve — TERRORIST ATTACK · OSINT · OSINT Industries",
+      "Resolve — Sœur Angélique · Caneléa · Osint4Fun",
+      "Resolve — Sanctions · Garenne · Osint4Fun",
+      "Resolve — Manquant · Garenne · Osint4Fun",
+      "Resolve — Défenseur des droits · Garenne · Osint4Fun",
+      "Resolve — 36 15 Recours · Garenne · Osint4Fun",
+      "Resolve — Même pas drôle · Garenne · Osint4Fun",
+      "Resolve — It's personal · Garenne · Osint4Fun",
+      "Resolve — Statut · Garenne · Osint4Fun",
+      "Resolve — Contient des conservateurs · Garenne · Osint4Fun",
+      "Resolve — Outrans · Garenne · Osint4Fun",
+      "Resolve — Camille · Garenne · Osint4Fun",
+      "Resolve — Des bancs, encore des bancs · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Des souvenirs · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Quelques activités · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Le logement · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Une ville mais laquelle ? · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Une destination sympa · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — La date adéquate · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Une inspiration bienvenue · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — La compagne de voyage · Un voyage avec Clara ? · Osint4Fun",
+      "Resolve — Marche forcée · Où est Charly ? · Osint4Fun",
+      "Resolve — Un lieu magique · Où est Charly ? · Osint4Fun",
+      "Resolve — Le dernier ouvrage · Où est Charly ? · Osint4Fun",
+      "Resolve — La BU de Belle-Beille · Où est Charly ? · Osint4Fun",
+      "Resolve — La candidate · Où est Charly ? · Osint4Fun",
+      "Resolve — L'annonce · Où est Charly ? · Osint4Fun",
+      "Resolve — Vengeance · SCENOSINT · Osint4Fun"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 28,
       "retex": 0,
       "autre": 0
     }
   },
-  "2026-07-30": {
-    "count": 3,
+  "2026-11-06": {
+    "count": 16,
     "activités": [
-      "Created — not-skg domain · Site",
-      "Retex — Dans le sillage du cachalot · Acte 3 - Transport · L'appel de la forêt",
-      "Retex — La caravane de dromadaires · Acte 3 - Transport · L'appel de la forêt"
+      "Created — Heatmap & Bilan annuel · Site",
+      "Resolve — Pérennité des formats · DATA · Osint4Fun",
+      "Resolve — Data paper · DATA · Osint4Fun",
+      "Resolve — Nettoyage des données · DATA · Osint4Fun",
+      "Resolve — Nommage et gestion des versions · DATA · Osint4Fun",
+      "Resolve — Métadonnées · DATA · Osint4Fun",
+      "Resolve — Référentiels et thésaurus · DATA · Osint4Fun",
+      "Resolve — Client · DATA · Osint4Fun",
+      "Resolve — Voyageur · DATA · Osint4Fun",
+      "Resolve — Conférencier · DATA · Osint4Fun",
+      "Resolve — Prescripteur · DATA · Osint4Fun",
+      "Resolve — Propriété intellectuelle · DATA · Osint4Fun",
+      "Resolve — Influenceur · DATA · Osint4Fun",
+      "Resolve — Documentation · DATA · Osint4Fun",
+      "Resolve — Il était une fois · DATA · Osint4Fun",
+      "Resolve — Introduction · DATA · Osint4Fun"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 2,
+      "resolve": 15,
+      "retex": 0,
       "autre": 1
-    }
-  },
-  "2026-05-24": {
-    "count": 4,
-    "activités": [
-      "Resolve — Étudiant poil aux dents · L'école du micro d'argent · Medileak 3",
-      "Resolve — Message in a Bottle · Antisocial · Medileak 3",
-      "Resolve — Undercover of the night · Hygiaphone · Medileak 3",
-      "Resolve — (I Can't Get No) Satisfaction · Hygiaphone · Medileak 3"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-10-17": {
-    "count": 2,
-    "activités": [
-      "Resolve — C’est l’heure du Du-du-du-du-Duel 2/2 · Osintopia",
-      "Resolve — Vol à vue 4/4 · Osintopia"
-    ],
-    "stats": {
-      "resolve": 2,
-      "retex": 0,
-      "autre": 0
-    }
-  },
-  "2026-03-15": {
-    "count": 6,
-    "activités": [
-      "Retex — 7 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 8 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 9 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 10 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 11 Decembre · Advent of Osint · Osint4Fun",
-      "Retex — 12 Decembre · Advent of Osint · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 6,
-      "autre": 0
-    }
-  },
-  "2026-10-23": {
-    "count": 5,
-    "activités": [
-      "Resolve — MURDER ATTEMPT · EUROPOL · OSINT Industries",
-      "Resolve — Criminal Partners · OSINT · OSINT Industries",
-      "Resolve — THE CHINESE SPY · OSINT · OSINT Industries",
-      "Created —Completion of Participant Orientation · Tracelabs",
-      "Resolve — Pourquoi tant de N ? · Caneléa · Osint4Fun"
-    ],
-    "stats": {
-      "resolve": 4,
-      "retex": 0,
-      "autre": 1
-    }
-  },
-  "2026-03-21": {
-    "count": 1,
-    "activités": [
-      "Retex — Sakura Room · TryHackMe"
-    ],
-    "stats": {
-      "resolve": 0,
-      "retex": 1,
-      "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 825,
+    "resolve": 828,
     "retex": 293,
-    "autre": 80
+    "autre": 81
   },
   "__assets__": {
     "profils": 8,

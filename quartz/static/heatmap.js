@@ -1056,18 +1056,25 @@ const init = async () => {
 
     const today = new Date();
     const todayStr = formatLocalDate(today);
-    const year = today.getFullYear();
+    const currentYear = today.getFullYear();
 
-    const start = new Date(year, 0, 1);
-    const days = [];
-    const cursor = new Date(start);
+    // Séries calculées sur tout l'historique (elles traversent le 31 décembre).
+    const allActiveDates = Object.keys(data)
+        .filter((d) => !isMetaKey(d) && (data[d]?.count || 0) > 0 && d <= todayStr)
+        .sort();
+    const activeDates = new Set(allActiveDates);
 
-    while (formatLocalDate(cursor) <= todayStr) {
-        days.push(formatLocalDate(cursor));
-        cursor.setDate(cursor.getDate() + 1);
-    }
-
-    const activeDates = new Set(days.filter(date => (data[date]?.count || 0) > 0));
+    const longestRun = (dates) => {
+        let best = 0;
+        let run = 0;
+        let prev = null;
+        for (const date of dates) {
+            run = prev && getPreviousDate(date) === prev ? run + 1 : 1;
+            if (run > best) best = run;
+            prev = date;
+        }
+        return best;
+    };
 
     let currentStreak = 0;
     let streakAnchor = todayStr;
@@ -1077,31 +1084,7 @@ const init = async () => {
         streakAnchor = getPreviousDate(streakAnchor);
     }
 
-    let longestStreak = 0;
-    let runLength = 0;
-    let prevActiveDate = null;
-
-    for (const date of days) {
-        if (!activeDates.has(date)) {
-            runLength = 0;
-            prevActiveDate = null;
-            continue;
-        }
-
-        const expectedPrev = prevActiveDate ? getPreviousDate(date) : null;
-
-        if (prevActiveDate && prevActiveDate === expectedPrev) {
-            runLength += 1;
-        } else {
-            runLength = 1;
-        }
-
-        if (runLength > longestStreak) {
-            longestStreak = runLength;
-        }
-
-        prevActiveDate = date;
-    }
+    const longestStreak = longestRun(allActiveDates);
 
     const color = (count) => {
         if (!count) return "var(--hm-empty)";
@@ -1126,76 +1109,188 @@ const init = async () => {
         return (d.getDay() + 6) % 7;
     };
 
-    const firstDow = dayOfWeek(days[0]);
+    // Périodes affichables : 12 derniers mois glissants, ou une année civile.
+    const dataYears = [...new Set(allActiveDates.map((d) => d.slice(0, 4)))];
+    const heatmapYears = [...new Set([...dataYears, String(currentYear)])].sort().reverse();
+    let heatmapView = "roll";
+    let bilanOpen = false;
 
-    let monthOffset = 0;
-    let prevMonth = null;
-
-    const dayInfo = days.map((date, i) => {
-        const pos = i + firstDow;
-        const baseCol = Math.floor(pos / 7);
-        const row = pos % 7;
-
-        const [, m, d] = date.split("-").map(Number);
-        const month = m - 1;
-
-        if (prevMonth !== null && month !== prevMonth && d === 1) {
-            monthOffset += 1;
-        }
-
-        const col = baseCol + monthOffset;
-        prevMonth = month;
-
-        return { date, col, row, month };
-    });
-
-    const colToPx = (c) => c * step;
-
-    const monthBounds = {};
-    dayInfo.forEach(({ month, col }) => {
-        if (!(month in monthBounds)) {
-            monthBounds[month] = { min: col, max: col };
+    const buildHeatmap = (view) => {
+        let start;
+        let end;
+        if (view === "roll") {
+            end = new Date(today);
+            start = new Date(today);
+            start.setFullYear(start.getFullYear() - 1);
+            start.setDate(start.getDate() + 1);
         } else {
-            monthBounds[month].min = Math.min(monthBounds[month].min, col);
-            monthBounds[month].max = Math.max(monthBounds[month].max, col);
+            start = new Date(Number(view), 0, 1);
+            end = new Date(Number(view), 11, 31);
         }
-    });
+        const endStr = formatLocalDate(end) < todayStr ? formatLocalDate(end) : todayStr;
 
-    const maxCol = Math.max(...dayInfo.map(d => d.col));
-    const totalWidth = LABEL_W + colToPx(maxCol) + CELL + 10;
-    const gridH = 7 * step;
+        const days = [];
+        const cursor = new Date(start);
+        while (formatLocalDate(cursor) <= endStr) {
+            days.push(formatLocalDate(cursor));
+            cursor.setDate(cursor.getDate() + 1);
+        }
 
-    const monthHeader = MOIS.map((label, idx) => {
-        if (!(idx in monthBounds)) return "";
-        const { min, max } = monthBounds[idx];
-        const startX = LABEL_W + colToPx(min);
-        const endX = LABEL_W + colToPx(max) + CELL;
-        const centerX = (startX + endX) / 2;
-        return `<div style="position:absolute;left:${centerX}px;transform:translateX(-50%);font-size:10px;color:var(--hm-muted);white-space:nowrap;pointer-events:none">${label}</div>`;
-    }).join("");
+        const firstDow = dayOfWeek(days[0]);
 
-    const cells = dayInfo.map(({ date, col, row }) => {
-        const d = data[date];
-        const count = d?.count || 0;
-        const cx = LABEL_W + colToPx(col);
-        const cy = row * step;
-        const milestone = milestones[date];
-        const ctfPeriod = findCtfPeriod(date);
+        let monthOffset = 0;
+        let prevMonth = null;
 
-        return `<div class="hm-day${milestone ? " hm-day-milestone" : ""}${ctfPeriod ? " hm-day-ctf" : ""}"
+        const dayInfo = days.map((date, i) => {
+            const pos = i + firstDow;
+            const baseCol = Math.floor(pos / 7);
+            const row = pos % 7;
+
+            const [, m, d] = date.split("-").map(Number);
+            const month = m - 1;
+
+            if (prevMonth !== null && month !== prevMonth && d === 1) {
+                monthOffset += 1;
+            }
+
+            const col = baseCol + monthOffset;
+            prevMonth = month;
+
+            return { date, col, row, month, monthKey: date.slice(0, 7) };
+        });
+
+        const colToPx = (c) => c * step;
+
+        const monthBounds = {};
+        dayInfo.forEach(({ monthKey, month, col }) => {
+            if (!(monthKey in monthBounds)) {
+                monthBounds[monthKey] = { min: col, max: col, month };
+            } else {
+                monthBounds[monthKey].min = Math.min(monthBounds[monthKey].min, col);
+                monthBounds[monthKey].max = Math.max(monthBounds[monthKey].max, col);
+            }
+        });
+
+        const maxCol = Math.max(...dayInfo.map((d) => d.col));
+        const totalWidth = LABEL_W + colToPx(maxCol) + CELL + 10;
+        const gridH = 7 * step;
+
+        const monthKeys = Object.keys(monthBounds);
+        const monthHeader = monthKeys.map((key, idx) => {
+            const { min, max, month } = monthBounds[key];
+            const startX = LABEL_W + colToPx(min);
+            const endX = LABEL_W + colToPx(max) + CELL;
+            const centerX = (startX + endX) / 2;
+            // Sur 12 mois glissants, l'année s'ajoute au premier mois et à chaque janvier.
+            const label = MOIS[month] + (view === "roll" && (idx === 0 || month === 0) ? ` ${key.slice(2, 4)}` : "");
+            return `<div style="position:absolute;left:${centerX}px;transform:translateX(-50%);font-size:10px;color:var(--hm-muted);white-space:nowrap;pointer-events:none">${label}</div>`;
+        }).join("");
+
+        const cells = dayInfo.map(({ date, col, row }) => {
+            const d = data[date];
+            const count = d?.count || 0;
+            const cx = LABEL_W + colToPx(col);
+            const cy = row * step;
+            const milestone = milestones[date];
+            const ctfPeriod = findCtfPeriod(date);
+
+            return `<div class="hm-day${milestone ? " hm-day-milestone" : ""}${ctfPeriod ? " hm-day-ctf" : ""}"
             style="position:absolute;left:${cx}px;top:${cy}px;background:${color(count)}"
             data-date="${date}"
             data-count="${count}"
             ${milestone ? `data-marker="${milestone.marker}" data-marker-label="${milestone.label}"` : ""}
             title="${date} — ${count} activité(s)${milestone ? ` — ${milestone.label}` : ""}${ctfPeriod ? ` — CTF : ${ctfPeriod.name}` : ""}"
         ></div>`;
-    }).join("");
+        }).join("");
 
-    const dayLabels = JOURS.map((label, i) => {
-        if (!JOURS_A_AFFICHER.has(i)) return "";
-        const y = i * step + 2;
-        return `<div style="position:absolute;top:${y}px;left:0;width:${LABEL_W - 4}px;font-size:10px;color:var(--hm-muted);text-align:right">${label}</div>`;
-    }).join("");
+        const dayLabels = JOURS.map((label, i) => {
+            if (!JOURS_A_AFFICHER.has(i)) return "";
+            const y = i * step + 2;
+            return `<div style="position:absolute;top:${y}px;left:0;width:${LABEL_W - 4}px;font-size:10px;color:var(--hm-muted);text-align:right">${label}</div>`;
+        }).join("");
+
+        return {
+            totalWidth,
+            html: `
+                  <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">${monthHeader}</div>
+                  <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>`,
+        };
+    };
+
+    const heatmapToolbarHtml = () => `
+              <div class="hm-year-toolbar" role="group" aria-label="Période de la heatmap">
+                <button type="button" class="hm-year-chip" data-hm-view="roll" aria-pressed="${heatmapView === "roll"}">12 derniers mois</button>
+                ${heatmapYears.map((y) => `<button type="button" class="hm-year-chip" data-hm-view="${y}" aria-pressed="${heatmapView === y}">${y}</button>`).join("")}
+              </div>`;
+
+    // Bilan d'une année : caché tant qu'on n'a pas cliqué sur le bouton.
+    const yearSummary = (y) => {
+        let resolve = 0;
+        let retex = 0;
+        const yearDates = allActiveDates.filter((d) => d.startsWith(`${y}-`));
+        yearDates.forEach((d) => {
+            resolve += data[d]?.stats?.resolve || 0;
+            retex += data[d]?.stats?.retex || 0;
+        });
+        const ctfCount = ctfResults.filter((c) => !c.special && String(c.date || "").includes(y)).length;
+        const partyCount = ctfResults.filter((c) => c.special && String(c.date || "").includes(y)).length;
+        return { resolve, retex, activeDays: yearDates.length, bestStreak: longestRun(yearDates), ctfCount, partyCount };
+    };
+
+    const heatmapBilanButtonHtml = () => {
+        if (heatmapView === "roll") return "";
+        const y = heatmapView;
+        return `<button type="button" class="hm-bilan-btn" data-hm-bilan aria-expanded="${bilanOpen}">${bilanOpen ? `Masquer le bilan ${y}` : `Voir le bilan ${y}`}</button>`;
+    };
+
+    const heatmapBilanPanelHtml = () => {
+        if (heatmapView === "roll" || !bilanOpen) return "";
+        const y = heatmapView;
+        const sum = yearSummary(y);
+        const lifetime = data.__totaux__ || { resolve: 0, retex: 0 };
+        const items = [
+            { value: sum.resolve, label: "Résolus", sub: `${lifetime.resolve} au total` },
+            { value: sum.retex, label: "RETEX publiés", sub: `${lifetime.retex} au total` },
+            { value: sum.activeDays, label: "Jours actifs", sub: "" },
+            { value: `${sum.bestStreak} j`, label: "Meilleure série", sub: "" },
+            {
+                value: sum.ctfCount,
+                label: "CTF",
+                sub: sum.partyCount ? `+ ${sum.partyCount} Search Part${sum.partyCount > 1 ? "ies" : "y"}` : "",
+            },
+        ];
+        return `
+              <div class="hm-bilan" role="region" aria-label="Bilan ${y}">
+                <div class="hm-bilan-title">Bilan ${y}</div>
+                <div class="hm-bilan-grid">
+                  ${items.map((it) => `
+                  <div class="hm-bilan-item">
+                    <strong>${it.value}</strong>
+                    <span>${it.label}</span>
+                    ${it.sub ? `<em>${it.sub}</em>` : ""}
+                  </div>`).join("")}
+                </div>
+              </div>`;
+    };
+
+    const initialHeatmap = buildHeatmap(heatmapView);
+
+    const updateHeatmapView = () => {
+        const inner = heatmapRoot?.querySelector("#hm-heatmap-inner");
+        if (!inner) return;
+        const built = buildHeatmap(heatmapView);
+        inner.style.width = `${built.totalWidth}px`;
+        inner.style.minWidth = `${built.totalWidth}px`;
+        inner.innerHTML = built.html;
+        heatmapRoot.querySelector("#hm-year-toolbar-slot").innerHTML = heatmapToolbarHtml();
+        heatmapRoot.querySelector("#hm-bilan-btn-slot").innerHTML = heatmapBilanButtonHtml();
+        heatmapRoot.querySelector("#hm-bilan-slot").innerHTML = heatmapBilanPanelHtml();
+        const scroller = heatmapRoot.querySelector(".hm-heatmap-scroll");
+        if (scroller) {
+            const toEnd = heatmapView === "roll" || heatmapView === String(currentYear);
+            scroller.scrollLeft = toEnd ? Math.max(0, scroller.scrollWidth - scroller.clientWidth) : 0;
+        }
+    };
 
     const colorize = (text) => {
         const keywords = {
@@ -2062,10 +2157,98 @@ const init = async () => {
           background-clip: padding-box;
         }
 
+        .hm-year-toolbar {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.4rem;
+          margin-bottom: 0.7rem;
+        }
+
+        .hm-year-chip,
+        .hm-bilan-btn {
+          cursor: pointer;
+          padding: 0.25rem 0.8rem;
+          border-radius: 999px;
+          border: 1px solid color-mix(in srgb, var(--hm-muted) 35%, transparent);
+          background: transparent;
+          color: var(--hm-muted);
+          font: inherit;
+          font-size: 0.78rem;
+          font-weight: 600;
+        }
+
+        .hm-year-chip:hover,
+        .hm-bilan-btn:hover,
+        .hm-year-chip[aria-pressed="true"],
+        .hm-bilan-btn[aria-expanded="true"] {
+          border-color: #fd8235;
+          color: #fd8235;
+        }
+
+        .hm-bilan-btn {
+          margin-top: 0.8rem;
+        }
+
+        .hm-bilan {
+          container-type: inline-size;
+          margin: 0.8rem 0 1.4rem;
+          padding: 0.9rem 1rem;
+          border: 1px solid var(--hm-border);
+          border-radius: 12px;
+        }
+
+        .hm-bilan-title {
+          font-size: 0.9rem;
+          font-weight: 700;
+          margin-bottom: 0.7rem;
+        }
+
+        .hm-bilan-grid {
+          display: grid;
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          gap: 0.5rem;
+        }
+
+        /* Panneau étroit : 2 colonnes, le cinquième bloc prend toute la largeur (pas d'orphelin). */
+        @container (max-width: 440px) {
+          .hm-bilan-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .hm-bilan-item:last-child {
+            grid-column: 1 / -1;
+          }
+        }
+
+        .hm-bilan-item {
+          display: flex;
+          flex-direction: column;
+          gap: 0.1rem;
+          padding: 0.6rem 0.65rem;
+          min-width: 0;
+          border-radius: 8px;
+          background: color-mix(in srgb, var(--hm-muted) 9%, transparent);
+        }
+
+        .hm-bilan-item strong {
+          font-size: 1.25rem;
+          color: #fd8235;
+          line-height: 1.2;
+        }
+
+        .hm-bilan-item span {
+          font-size: 0.78rem;
+          font-weight: 600;
+        }
+
+        .hm-bilan-item em {
+          font-size: 0.72rem;
+          font-style: normal;
+          color: var(--hm-muted);
+        }
+
         .hm-heatmap-inner {
           display: inline-block;
-          width: ${totalWidth}px;
-          min-width: ${totalWidth}px;
           max-width: none;
           vertical-align: top;
         }
@@ -2129,13 +2312,13 @@ const init = async () => {
             min-width: 0;
             width: 100%;
             max-width: 290px;
-            height: 260px;
-            min-height: 260px;
-            max-height: 260px;
+            height: 0;
+            min-height: max(100%, 220px);
+            max-height: none;
             margin-top: 0;
             padding: 0;
             box-sizing: border-box;
-            align-self: center;
+            align-self: stretch;
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -3099,10 +3282,10 @@ const init = async () => {
         <div class="hm-top-grid">
           <div class="hm-heatmap-panel">
             <div class="hm-heatmap-block">
+              <div id="hm-year-toolbar-slot">${heatmapToolbarHtml()}</div>
               <div class="hm-heatmap-scroll" tabindex="0" aria-label="Heatmap scrollable horizontalement">
-                <div class="hm-heatmap-inner">
-                  <div style="position:relative;height:16px;width:${totalWidth}px;margin-bottom:4px">${monthHeader}</div>
-                  <div style="position:relative;width:${totalWidth}px;height:${gridH}px">${dayLabels}${cells}</div>
+                <div class="hm-heatmap-inner" id="hm-heatmap-inner" style="width:${initialHeatmap.totalWidth}px;min-width:${initialHeatmap.totalWidth}px">
+                  ${initialHeatmap.html}
                 </div>
               </div>
 
@@ -3147,6 +3330,7 @@ const init = async () => {
                   </span>
                 </div>
               </div>
+              <div id="hm-bilan-btn-slot">${heatmapBilanButtonHtml()}</div>
             </div>
           </div>
 
@@ -3159,6 +3343,8 @@ const init = async () => {
             </div>
           </div>
         </div>
+
+        <div id="hm-bilan-slot">${heatmapBilanPanelHtml()}</div>
 
         <div class="hm-below-grid">
           <aside class="hm-recent-panel">
@@ -3400,8 +3586,33 @@ const init = async () => {
     });
 
     if (heatmapRoot) {
-        heatmapRoot.addEventListener("click", (event) => {
-            const group = event.target.closest && event.target.closest(".hm-scatter-point-group");
+        const onRootClick = (event) => {
+            const target = event.target;
+            if (!target || !target.closest) return;
+
+            const viewBtn = target.closest("[data-hm-view]");
+            if (viewBtn && heatmapRoot.contains(viewBtn)) {
+                heatmapView = viewBtn.dataset.hmView;
+                bilanOpen = false;
+                updateHeatmapView();
+                return;
+            }
+
+            const bilanBtn = target.closest("[data-hm-bilan]");
+            if (bilanBtn && heatmapRoot.contains(bilanBtn)) {
+                bilanOpen = !bilanOpen;
+                heatmapRoot.querySelector("#hm-bilan-btn-slot").innerHTML = heatmapBilanButtonHtml();
+                heatmapRoot.querySelector("#hm-bilan-slot").innerHTML = heatmapBilanPanelHtml();
+                return;
+            }
+
+            const dayEl = target.closest(".hm-day");
+            if (dayEl && heatmapRoot.contains(dayEl)) {
+                onDayClick(dayEl);
+                return;
+            }
+
+            const group = target.closest(".hm-scatter-point-group");
             if (group && heatmapRoot.contains(group)) {
                 const platforms = (group.dataset.platforms || "").split("|");
                 const current = platforms.includes(selectedScatterPlatform) ? selectedScatterPlatform : platforms[0];
@@ -3409,14 +3620,18 @@ const init = async () => {
                 return;
             }
             // Clic dans le vide du graphique : on referme la bulle.
-            if (selectedScatterPlatform && event.target.closest && event.target.closest(".hm-scatter-svg")) {
+            if (selectedScatterPlatform && target.closest(".hm-scatter-svg")) {
                 selectScatterPlatform(selectedScatterPlatform);
             }
-        });
+        };
+        // Un seul écouteur actif, même si init est relancé (navigation Quartz).
+        if (heatmapRoot.__hmClick) heatmapRoot.removeEventListener("click", heatmapRoot.__hmClick);
+        heatmapRoot.__hmClick = onRootClick;
+        heatmapRoot.addEventListener("click", onRootClick);
     }
 
-    document.querySelectorAll(".hm-day").forEach(el => {
-        el.addEventListener("click", () => {
+    const onDayClick = (el) => {
+        {
             document.querySelectorAll(".hm-day.active").forEach(a => a.classList.remove("active"));
             el.classList.add("active");
 
@@ -3454,8 +3669,8 @@ const init = async () => {
                     ${milestoneText}
                 </div>
             `;
-        });
-    });
+        }
+    };
 };
 
 document.addEventListener("DOMContentLoaded", init);

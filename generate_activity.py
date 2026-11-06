@@ -57,7 +57,9 @@ def count_images(directory: Path, recursive: bool = False) -> int:
     )
 
 
-for file_path in JOURNAL_PATH.iterdir():
+# Les notes quotidiennes sont rangées par année (journal/2026/2026-02-13.md, ...).
+# rglob lit aussi les éventuels fichiers laissés à la racine du dossier.
+for file_path in sorted(JOURNAL_PATH.rglob("*.md")):
     if file_path.suffix.lower() != ".md":
         continue
 

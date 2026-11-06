@@ -32,4 +32,4 @@ Ci-dessous les améliorations prévues à court/moyen terme :
 
 **Général**
 - [x] Étoffer la Toolbox
-- [ ] Ajout profil : decorated.pro
+- [x] Ajout profil : decorated.pro
