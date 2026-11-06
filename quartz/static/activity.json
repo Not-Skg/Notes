@@ -2201,6 +2201,28 @@
       "autre": 0
     }
   },
+  "2026-11-06": {
+    "count": 12,
+    "activités": [
+      "Resolve — Nommage et gestion des versions · DATA · Osint4Fun",
+      "Resolve — Métadonnées · DATA · Osint4Fun",
+      "Resolve — Référentiels et thésaurus · DATA · Osint4Fun",
+      "Resolve — Client · DATA · Osint4Fun",
+      "Resolve — Voyageur · DATA · Osint4Fun",
+      "Resolve — Conférencier · DATA · Osint4Fun",
+      "Resolve — Prescripteur · DATA · Osint4Fun",
+      "Resolve — Propriété intellectuelle · DATA · Osint4Fun",
+      "Resolve — Influenceur · DATA · Osint4Fun",
+      "Resolve — Documentation · DATA · Osint4Fun",
+      "Resolve — Il était une fois · DATA · Osint4Fun",
+      "Resolve — Introduction · DATA · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 12,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "2026-02-14": {
     "count": 3,
     "activités": [
@@ -3636,7 +3658,7 @@
     }
   },
   "__totaux__": {
-    "resolve": 813,
+    "resolve": 825,
     "retex": 293,
     "autre": 80
   },
