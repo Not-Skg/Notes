@@ -3674,8 +3674,28 @@
       "autre": 1
     }
   },
+  "2026-11-07": {
+    "count": 10,
+    "activités": [
+      "Resolve — Et je dis merci à la vie · Garenne · Osint4Fun",
+      "Resolve — CIA · Garenne · Osint4Fun",
+      "Resolve — Sujétion et expertise · Garenne · Osint4Fun",
+      "Resolve — Réarmement démographique · Garenne · Osint4Fun",
+      "Resolve — Coupvray · Garenne · Osint4Fun",
+      "Resolve — À temps partiel · Garenne · Osint4Fun",
+      "Resolve — Que jeunesse se passe · Garenne · Osint4Fun",
+      "Resolve — Simplifier le millefeuille · Garenne · Osint4Fun",
+      "Resolve — Indirectement · Garenne · Osint4Fun",
+      "Resolve — Do Not Disturb · CYBER · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 10,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 841,
+    "resolve": 851,
     "retex": 293,
     "autre": 81
   },
