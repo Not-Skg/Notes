@@ -3674,23 +3674,8 @@
       "autre": 1
     }
   },
-  "2026-11-07": {
-    "count": 5,
-    "activités": [
-      "Resolve — À temps partiel · Garenne · Osint4Fun",
-      "Resolve — Que jeunesse se passe · Garenne · Osint4Fun",
-      "Resolve — Simplifier le millefeuille · Garenne · Osint4Fun",
-      "Resolve — Indirectement · Garenne · Osint4Fun",
-      "Resolve — Do Not Disturb · CYBER · YouArePlayer"
-    ],
-    "stats": {
-      "resolve": 5,
-      "retex": 0,
-      "autre": 0
-    }
-  },
   "__totaux__": {
-    "resolve": 846,
+    "resolve": 841,
     "retex": 293,
     "autre": 81
   },
