@@ -3675,8 +3675,19 @@
     }
   },
   "2026-11-07": {
-    "count": 10,
+    "count": 21,
     "activités": [
+      "Created — Challenge Hedge of Honor · Site",
+      "Resolve — Un pognon de dingue · Garenne · Osint4Fun",
+      "Resolve — Tout est relatif · Garenne · Osint4Fun",
+      "Resolve — En général · Garenne · Osint4Fun",
+      "Resolve — Contingent · Garenne · Osint4Fun",
+      "Resolve — Examen pro · Garenne · Osint4Fun",
+      "Resolve — Lignes directrices · Garenne · Osint4Fun",
+      "Resolve — VIP · Garenne · Osint4Fun",
+      "Resolve — Trop de fonctionnaires ? · Garenne · Osint4Fun",
+      "Resolve — Dans les temps · Garenne · Osint4Fun",
+      "Resolve — Circulaire · Garenne · Osint4Fun",
       "Resolve — Et je dis merci à la vie · Garenne · Osint4Fun",
       "Resolve — CIA · Garenne · Osint4Fun",
       "Resolve — Sujétion et expertise · Garenne · Osint4Fun",
@@ -3689,15 +3700,15 @@
       "Resolve — Do Not Disturb · CYBER · YouArePlayer"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 20,
       "retex": 0,
-      "autre": 0
+      "autre": 1
     }
   },
   "__totaux__": {
-    "resolve": 851,
+    "resolve": 861,
     "retex": 293,
-    "autre": 81
+    "autre": 82
   },
   "__assets__": {
     "profils": 8,
