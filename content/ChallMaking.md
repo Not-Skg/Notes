@@ -21,6 +21,7 @@ description: Les challenges que j'ai créés pour certaines plateformes. Je donn
 # Sans plateforme (beta-test)
 - Friendly Fire
 - Hedge of Honor
+- Baptism of Fire
 
 > [!Info] Discord
 > Avant de proposer mes challenges aux plateformes, je les fais tester sur [mon serveur Discord](https://discord.gg/3duPWeqCbn). 

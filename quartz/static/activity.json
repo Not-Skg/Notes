@@ -3705,10 +3705,22 @@
       "autre": 1
     }
   },
+  "2026-11-08": {
+    "count": 2,
+    "activités": [
+      "Created — Challenge Baptism of Fire · Site",
+      "Resolve — Masses salariales · Garenne · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 1
+    }
+  },
   "__totaux__": {
-    "resolve": 861,
+    "resolve": 862,
     "retex": 293,
-    "autre": 82
+    "autre": 83
   },
   "__assets__": {
     "profils": 8,
