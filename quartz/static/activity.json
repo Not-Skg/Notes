@@ -3706,19 +3706,23 @@
     }
   },
   "2026-11-08": {
-    "count": 2,
+    "count": 6,
     "activités": [
+      "Resolve — De la qualité · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — De la discipline · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Toute bonne chose a une fin · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Le pivot · Réseaux d'archivistes · Osint4Fun",
       "Created — Challenge Baptism of Fire · Site",
       "Resolve — Masses salariales · Garenne · Osint4Fun"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 5,
       "retex": 0,
       "autre": 1
     }
   },
   "__totaux__": {
-    "resolve": 862,
+    "resolve": 866,
     "retex": 293,
     "autre": 83
   },
