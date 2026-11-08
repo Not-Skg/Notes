@@ -3706,8 +3706,17 @@
     }
   },
   "2026-11-08": {
-    "count": 6,
+    "count": 15,
     "activités": [
+      "Resolve — International · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Une lettre anodine · Osint4Fun",
+      "Resolve — Distinction · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Un tour en ville · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Rhétorique · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — A la source 2 · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — A la source 1 · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Terra incognita · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Pas après pas · Réseaux d'archivistes · Osint4Fun",
       "Resolve — De la qualité · Réseaux d'archivistes · Osint4Fun",
       "Resolve — De la discipline · Réseaux d'archivistes · Osint4Fun",
       "Resolve — Toute bonne chose a une fin · Réseaux d'archivistes · Osint4Fun",
@@ -3716,13 +3725,13 @@
       "Resolve — Masses salariales · Garenne · Osint4Fun"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 14,
       "retex": 0,
       "autre": 1
     }
   },
   "__totaux__": {
-    "resolve": 866,
+    "resolve": 875,
     "retex": 293,
     "autre": 83
   },
