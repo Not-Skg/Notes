@@ -3738,8 +3738,11 @@
     }
   },
   "2026-11-09": {
-    "count": 13,
+    "count": 16,
     "activités": [
+      "Resolve — Inspiration provinciale · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Nouvelle identité · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Identifiant unique · Réseaux d'archivistes · Osint4Fun",
       "Resolve — Perdu.es de vue · Réseaux d'archivistes · Osint4Fun",
       "Resolve — Records continnum · Réseaux d'archivistes · Osint4Fun",
       "Resolve — Choix gagnant · Réseaux d'archivistes · Osint4Fun",
@@ -3755,13 +3758,13 @@
       "Resolve — The Broken Patch · COMMUNITY EDITION · OSINT Industries"
     ],
     "stats": {
-      "resolve": 13,
+      "resolve": 16,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 895,
+    "resolve": 898,
     "retex": 293,
     "autre": 83
   },
