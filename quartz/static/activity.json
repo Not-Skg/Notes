@@ -3738,8 +3738,11 @@
     }
   },
   "2026-11-09": {
-    "count": 10,
+    "count": 13,
     "activités": [
+      "Resolve — Perdu.es de vue · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Records continnum · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Choix gagnant · Réseaux d'archivistes · Osint4Fun",
       "Resolve — FIR3 · OSINT · YouArePlayer",
       "Resolve — Nationalisation · Réseaux d'archivistes · Osint4Fun",
       "Resolve — Revendications · Réseaux d'archivistes · Osint4Fun",
@@ -3752,13 +3755,13 @@
       "Resolve — The Broken Patch · COMMUNITY EDITION · OSINT Industries"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 13,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 892,
+    "resolve": 895,
     "retex": 293,
     "autre": 83
   },
