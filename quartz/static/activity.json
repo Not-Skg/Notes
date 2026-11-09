@@ -3737,8 +3737,22 @@
       "autre": 1
     }
   },
+  "2026-11-09": {
+    "count": 4,
+    "activités": [
+      "Resolve — Union · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Clarté · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — Au nom de la loi · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — The Broken Patch · COMMUNITY EDITION · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 882,
+    "resolve": 886,
     "retex": 293,
     "autre": 83
   },

@@ -17,7 +17,7 @@ PlatformProfiles.afterDOMLoaded = `
           description: "Challenges très intéressants et pédagogiques.",
           url: "https://www.osint4fun.eu/user/89b4eb44c0c38592/#badges-tab",
           logo: "./Logo/osint4fun.png",
-          rank: "10ᵉ",
+          rank: "9ᵉ",
         },
         {
           name: "OSINT-FR",
@@ -65,7 +65,7 @@ PlatformProfiles.afterDOMLoaded = `
         description: "Des challenges très réalistes, dont certains s\u2019appuient directement sur des fiches d\u2019Interpol, du GRU, du FSB et du FBI.",
         url: "https://ctf.osint.industries/users/7238",
         logo: "Logo/osint_industries.png",
-        rank: "18ᵉ",
+        rank: "16ᵉ",
       },
         {
         name: "Oscar Zulu",
