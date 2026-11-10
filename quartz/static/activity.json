@@ -3764,19 +3764,21 @@
     }
   },
   "2026-11-10": {
-    "count": 2,
+    "count": 4,
     "activités": [
+      "Resolve — EXTENSION CONTINUE · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — RENOUVEAU · Réseaux d'archivistes · Osint4Fun",
       "Resolve — ORGANISATION INTERNE · Réseaux d'archivistes · Osint4Fun",
       "Resolve — PRENDRE SON TEMPS · Réseaux d'archivistes · Osint4Fun"
     ],
     "stats": {
-      "resolve": 2,
+      "resolve": 4,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 900,
+    "resolve": 902,
     "retex": 293,
     "autre": 83
   },
