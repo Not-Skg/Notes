@@ -3763,8 +3763,20 @@
       "autre": 0
     }
   },
+  "2026-11-10": {
+    "count": 2,
+    "activités": [
+      "Resolve — ORGANISATION INTERNE · Réseaux d'archivistes · Osint4Fun",
+      "Resolve — PRENDRE SON TEMPS · Réseaux d'archivistes · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 898,
+    "resolve": 900,
     "retex": 293,
     "autre": 83
   },
