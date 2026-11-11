@@ -3778,8 +3778,22 @@
       "autre": 0
     }
   },
+  "2026-11-11": {
+    "count": 4,
+    "activités": [
+      "Resolve — 3 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 2 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 1ER DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — SIÈGES · Réseaux d'archivistes · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 903,
+    "resolve": 907,
     "retex": 293,
     "autre": 83
   },
