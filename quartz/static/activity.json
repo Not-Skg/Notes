@@ -3779,21 +3779,22 @@
     }
   },
   "2026-11-11": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — CANNES 2025 · SCENOSINT · Osint4Fun",
       "Resolve — 3 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 2 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 1ER DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — SIÈGES · Réseaux d'archivistes · Osint4Fun"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 907,
+    "resolve": 908,
     "retex": 293,
     "autre": 83
   },
