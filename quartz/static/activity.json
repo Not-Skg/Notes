@@ -3795,8 +3795,11 @@
     }
   },
   "2026-11-12": {
-    "count": 8,
+    "count": 11,
     "activités": [
+      "Resolve — 12 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 10 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 8 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 24 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 7 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — Vieux PC · Osintopia",
@@ -3807,13 +3810,13 @@
       "Resolve — 4 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 8,
+      "resolve": 11,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 917,
+    "resolve": 920,
     "retex": 293,
     "autre": 83
   },
