@@ -3795,8 +3795,19 @@
     }
   },
   "2026-11-12": {
-    "count": 11,
+    "count": 22,
     "activités": [
+      "Resolve — 23 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 22 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 21 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 20 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 19 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 18 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 17 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 16 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 15 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 14 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
+      "Resolve — 13 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 12 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 10 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 8 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
@@ -3810,13 +3821,13 @@
       "Resolve — 4 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 11,
+      "resolve": 22,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 920,
+    "resolve": 931,
     "retex": 293,
     "autre": 83
   },
