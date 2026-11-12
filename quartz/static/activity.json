@@ -3795,8 +3795,9 @@
     }
   },
   "2026-11-12": {
-    "count": 22,
+    "count": 23,
     "activités": [
+      "Resolve — Le temple · GEOINT · IsFred",
       "Resolve — 23 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 22 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
       "Resolve — 21 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun",
@@ -3821,13 +3822,13 @@
       "Resolve — 4 DÉCEMBRE 2024 · CALENDRIER DE L'AVENT 2024 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 22,
+      "resolve": 23,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 931,
+    "resolve": 932,
     "retex": 293,
     "autre": 83
   },
