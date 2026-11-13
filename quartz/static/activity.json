@@ -3829,8 +3829,19 @@
       "autre": 0
     }
   },
+  "2026-11-13": {
+    "count": 1,
+    "activités": [
+      "Resolve — FORMATION PARALLÈLE · Réseaux d'archivistes · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 934,
+    "resolve": 935,
     "retex": 293,
     "autre": 83
   },
