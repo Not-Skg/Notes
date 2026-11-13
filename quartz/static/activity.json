@@ -3830,8 +3830,11 @@
     }
   },
   "2026-11-13": {
-    "count": 6,
+    "count": 9,
     "activités": [
+      "Resolve — ALCOR · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — ROBERT · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — MELVIL · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — ALLEGRETTO · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — BARBARA · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — 31 ANS · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
@@ -3840,13 +3843,13 @@
       "Resolve — FORMATION PARALLÈLE · Réseaux d'archivistes · Osint4Fun"
     ],
     "stats": {
-      "resolve": 6,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 940,
+    "resolve": 943,
     "retex": 293,
     "autre": 83
   },
