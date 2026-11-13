@@ -65,6 +65,11 @@ const init = async () => {
 
     const badges = [
         {
+            src: "Badges/70f10f7d-7a1a-467b-83b4-79e064a4af6a.png",
+            href: "https://credsverse.com/credentials/70f10f7d-7a1a-467b-83b4-79e064a4af6a",
+            alt: "MALTEGO - 2026 Qualifier B",
+        },
+{
             src: "Badges/TL_ES.png",
             href: "https://factory.cancred.ca/obv3/credentials/249b5350a4dbfa610e76e5fd83b3588a8c865ab0",
             alt: "OSINT: Educational Series",
@@ -438,6 +443,7 @@ const init = async () => {
     const CTF_PLATFORM_ALIASES = {
         "BleuetV5": "Bleuet de France V5",
         "404CTF26": "404 CTF 2026",
+        "MALTEGO 2026 B": "MALTEGO 2026 - Qualifier B",
     };
 
     const ctfPeriodNames = new Set(ctfPeriods.map(p => p.name));

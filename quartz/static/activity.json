@@ -3830,8 +3830,39 @@
     }
   },
   "2026-11-13": {
-    "count": 9,
+    "count": 40,
     "activités": [
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 6 · Maritime · MALTEGO 2026 B",
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 5 · Maritime · MALTEGO 2026 B",
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 4 · Maritime · MALTEGO 2026 B",
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 3 · Maritime · MALTEGO 2026 B",
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 2 · Maritime · MALTEGO 2026 B",
+      "Resolve — Tracing Vessel Identity Across Flag Changes - 1 · Maritime · MALTEGO 2026 B",
+      "Resolve — Vessel Identification · Maritime · MALTEGO 2026 B",
+      "Resolve — Decoding the Satellite Downlink - 2 · Maritime · MALTEGO 2026 B",
+      "Resolve — Decoding the Satellite Downlink - 1 · Maritime · MALTEGO 2026 B",
+      "Resolve — Uncovering the Aircraft's Ownership Trail · Maritime · MALTEGO 2026 B",
+      "Resolve — The Invisible Director - 1 · Due Diligence · MALTEGO 2026 B",
+      "Resolve — Blind Spot - 4 · Threat Intelligence · MALTEGO 2026 B",
+      "Resolve — Instagram Real Identity Hunt · Trust & Safety · MALTEGO 2026 B",
+      "Resolve — Tracing a Dead Domain - 1 · Due Diligence · MALTEGO 2026 B",
+      "Resolve — Blind Spot - 3 · Threat Intelligence · MALTEGO 2026 B",
+      "Resolve — The Fake Financial Advisor · Fraud · MALTEGO 2026 B",
+      "Resolve — Webcam Reconnaissance - 1 · Physical Security · MALTEGO 2026 B",
+      "Resolve — The Hidden Résumé · Due Diligence · MALTEGO 2026 B",
+      "Resolve — Tracing the Corporate Past · Due Diligence · MALTEGO 2026 B",
+      "Resolve — Eyes From Orbit · Chronolocation · MALTEGO 2026 B",
+      "Resolve — Chasing the InfoHash · Dark Web · MALTEGO 2026 B",
+      "Resolve — Behind the Ransom Note - 2 · Dark Web · MALTEGO 2026 B",
+      "Resolve — Behind the Ransom Note - 1 · Dark Web · MALTEGO 2026 B",
+      "Resolve — Blind Spot - 2 · Threat Intelligence · MALTEGO 2026 B",
+      "Resolve — Hidden Stay: The Vagator Mystery - 2· Geolocation · MALTEGO 2026 B",
+      "Resolve — The Brewery Trail - 2· Geolocation · MALTEGO 2026 B",
+      "Resolve — Hidden Stay: The Vagator Mystery - 1 · Geolocation · MALTEGO 2026 B",
+      "Resolve — Blind Spot - 1 · Threat Intelligence · MALTEGO 2026 B",
+      "Resolve — The Brewery Trail - 1 · Geolocation · MALTEGO 2026 B",
+      "Resolve — The Hotel Observer · Geolocation · MALTEGO 2026 B",
+      "Resolve — Gate Of Departure · Geolocation · MALTEGO 2026 B",
       "Resolve — ALCOR · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — ROBERT · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — MELVIL · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
@@ -3843,21 +3874,26 @@
       "Resolve — FORMATION PARALLÈLE · Réseaux d'archivistes · Osint4Fun"
     ],
     "stats": {
-      "resolve": 9,
+      "resolve": 40,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 943,
+    "resolve": 974,
     "retex": 293,
     "autre": 83
   },
   "__assets__": {
     "profils": 8,
-    "badges": 17
+    "badges": 18
   },
   "__ctf_periods__": [
+    {
+      "name": "MALTEGO 2026 - Qualifier B",
+      "start": "2026-11-13",
+      "end": "2026-11-13"
+    },
     {
       "name": "Perce le front numérique ! V2",
       "start": "2026-10-05",
