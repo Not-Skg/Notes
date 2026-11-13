@@ -8,7 +8,7 @@ order: 1
 description: RETEX de ma participation au CTF Perce le Front Numérique V2
 ---
 <div class="toolbox-banner toolbox-banner--stack">
-<img src="./PerceLeFrontNumeriqueV2.jpg" alt="" class="toolbox-banner-img" width="1920" height="1080" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 30%" />
+<img src="./PLFNV2_WP.jpg" alt="" class="toolbox-banner-img" width="1920" height="1080" style="aspect-ratio:2.4/1;object-fit:cover;object-position:center 30%" />
 <div class="toolbox-banner-text" id="toolbox-banner-text">
 <span class="fiches-hero-bar"></span>
 </div>
