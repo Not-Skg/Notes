@@ -3880,18 +3880,22 @@
     }
   },
   "2026-11-14": {
-    "count": 1,
+    "count": 5,
     "activités": [
+      "Resolve — MERCI MARGARET · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — PAS DE BLUFF ICI · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — NOBEL · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — DROITS DE L'HOMME · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — AMEN · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 1,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 975,
+    "resolve": 979,
     "retex": 293,
     "autre": 83
   },
