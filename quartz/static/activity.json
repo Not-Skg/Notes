@@ -3880,8 +3880,9 @@
     }
   },
   "2026-11-14": {
-    "count": 5,
+    "count": 6,
     "activités": [
+      "Resolve — KRAKOW SHOOTER · OSINT · OSINT Industries",
       "Resolve — MERCI MARGARET · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — PAS DE BLUFF ICI · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — NOBEL · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
@@ -3889,13 +3890,13 @@
       "Resolve — AMEN · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 6,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 979,
+    "resolve": 980,
     "retex": 293,
     "autre": 83
   },
