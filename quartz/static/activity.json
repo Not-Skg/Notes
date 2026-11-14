@@ -3879,8 +3879,19 @@
       "autre": 0
     }
   },
+  "2026-11-14": {
+    "count": 1,
+    "activités": [
+      "Resolve — AMEN · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 1,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 974,
+    "resolve": 975,
     "retex": 293,
     "autre": 83
   },
