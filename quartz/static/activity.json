@@ -3895,8 +3895,23 @@
       "autre": 0
     }
   },
+  "2026-11-15": {
+    "count": 5,
+    "activités": [
+      "Resolve — 2008 ·  IAW2025 · Osint4Fun",
+      "Resolve — SYMBOLE ·  IAW2025 · Osint4Fun",
+      "Resolve — FAUX DÉPART ·  IAW2025 · Osint4Fun",
+      "Resolve — CRÉATION ·  IAW2025 · Osint4Fun",
+      "Resolve — JOSHUA · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 980,
+    "resolve": 985,
     "retex": 293,
     "autre": 83
   },
