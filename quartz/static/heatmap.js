@@ -170,7 +170,7 @@ const init = async () => {
             solo: false,
             href: "/Notes/Maltego-Qualifier-B/Maltego-Qualifier-B",
             accent: "#ff6b2b",
-            note: "Duo vs Squad - 4h",
+            note: "Duo vs Trio - 4h",
             logoSrc: "Logo_CTF/M_Q.png"
         },
         {
