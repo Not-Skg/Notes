@@ -3910,8 +3910,20 @@
       "autre": 0
     }
   },
+  "2026-11-16": {
+    "count": 2,
+    "activités": [
+      "Resolve — UNITY · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — TRICOT · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 2,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 985,
+    "resolve": 987,
     "retex": 293,
     "autre": 83
   },
