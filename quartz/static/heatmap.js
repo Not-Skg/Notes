@@ -163,6 +163,17 @@ const init = async () => {
     //   { special: true, name, date, solo, badge, desc, imgSrc, href }
     const ctfResults = [
         {
+            name: "MALTEGO - 2026 Q-B",
+            date: "Novembre 2026",
+            position: 20,
+            total: 217,
+            solo: false,
+            href: "",
+            accent: "#ff6b2b",
+            note: "Duo vs Squad - 4h",
+            logoSrc: "Logo_CTF/M_Q.png"
+        },
+        {
             special: true,
             name: "Trace Labs Search Party",
             date: "Octobre 2026",
