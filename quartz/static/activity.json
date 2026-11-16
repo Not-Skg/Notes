@@ -3911,8 +3911,12 @@
     }
   },
   "2026-11-16": {
-    "count": 5,
+    "count": 9,
     "activités": [
+      "Resolve — OPERATION HILTON 04 · OPERATION HILTON · OSINT Industries",
+      "Resolve — OPERATION HILTON 03 · OPERATION HILTON · OSINT Industries",
+      "Resolve — OPERATION HILTON 02 · OPERATION HILTON · OSINT Industries",
+      "Resolve — OPERATION HILTON 01 · OPERATION HILTON · OSINT Industries",
       "Resolve — 1010 · IAW2025 · Osint4Fun",
       "Resolve — TOUJOURS PLUS · IAW2025 · Osint4Fun",
       "Resolve — FAIRE AVEC LES MOYENS DU BORD · Réseaux d'archivistes · Osint4Fun",
@@ -3920,13 +3924,13 @@
       "Resolve — TRICOT · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 9,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 990,
+    "resolve": 994,
     "retex": 293,
     "autre": 83
   },
