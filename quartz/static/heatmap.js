@@ -168,7 +168,7 @@ const init = async () => {
             position: 20,
             total: 217,
             solo: false,
-            href: "",
+            href: "/Notes/Maltego-Qualifier-B/Maltego-Qualifier-B",
             accent: "#ff6b2b",
             note: "Duo vs Squad - 4h",
             logoSrc: "Logo_CTF/M_Q.png"
