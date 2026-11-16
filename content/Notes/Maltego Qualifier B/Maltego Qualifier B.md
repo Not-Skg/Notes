@@ -6,7 +6,6 @@ tags:
   - MaltegoQualifierB
 order: 1
 description: Ressenti, participation et résultat à ma participation au Qualifier B du Maltego Community OSINT CTF Championship 2026-27
-draft: true
 ---
 <div class="toolbox-banner toolbox-banner--stack">
 <img src="./MaltegoQualifierB.webp" alt="" class="toolbox-banner-img" width="2549" height="1062" style="" />
@@ -40,12 +39,12 @@ L'année prochaine, j'essaierai donc de faire les deux phases, et idéalement av
 ![[70f10f7d-7a1a-467b-83b4-79e064a4af6a.png|300]]
 
 ***Les différentes parties du CTF :***
- · | · [[Geolocation]]
- · | · [[Threat Intelligence]]
- · | · [[Fraud]]
- · | · [[Physical Security]]
- · | · [[Chronolocation]]
- · | · [[Trust & Safety]]
- · | · [[Due Diligence]]
- · | · [[Maritime & Aviation]]
- · | · [[Dark Web]]
+ · | · `[[Geolocation]]`
+ · | · `[[Threat Intelligence]]`
+ · | · `[[Fraud]]`
+ · | · `[[Physical Security]]`
+ · | · `[[Chronolocation]]`
+ · | · `[[Trust & Safety]]`
+ · | · `[[Due Diligence]]`
+ · | · `[[Maritime & Aviation]]`
+ · | · `[[Dark Web]]`
