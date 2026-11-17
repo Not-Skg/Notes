@@ -3929,8 +3929,21 @@
       "autre": 0
     }
   },
+  "2026-11-17": {
+    "count": 3,
+    "activités": [
+      "Resolve — 146097 · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — The Blind Spot · OSINT · YouArePlayer",
+      "Resolve — SO FOX · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 3,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 994,
+    "resolve": 997,
     "retex": 293,
     "autre": 83
   },
