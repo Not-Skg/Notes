@@ -163,7 +163,7 @@ const init = async () => {
     //   { special: true, name, date, solo, badge, desc, imgSrc, href }
     const ctfResults = [
         {
-            name: "MALTEGO - 2026 Q-B",
+            name: "MALTEGO - CTF 2026",
             date: "Novembre 2026",
             position: 20,
             total: 217,
