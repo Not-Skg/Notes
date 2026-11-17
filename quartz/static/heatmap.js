@@ -185,7 +185,18 @@ const init = async () => {
             href: "/Toolbox/TraceLabs"
         },
         {
-            name: "Opération Culot ",
+            name: "Perce le front numérique V2",
+            date: "Octobre 2026",
+            position: 2,
+            total: 134,
+            solo: false,
+            href: "/Notes/PERCE-LE-FRONT-NUMÉRIQUE-V2/PERCE-LE-FRONT-NUMÉRIQUE-V2",
+            accent: "#f5b700",
+            note: "Parmis 12 équipes Finisher",
+            logoSrc: "Logo_CTF/L_PLF.png"
+        },
+        {
+            name: "Opération Culot",
             date: "Octobre 2026",
             position: 10,
             total: 315,
