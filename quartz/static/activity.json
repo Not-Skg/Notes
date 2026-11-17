@@ -3930,21 +3930,22 @@
     }
   },
   "2026-11-17": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — FÈT KAF · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — LA VOIX DE SON MAÎTRE · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — 146097 · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — The Blind Spot · OSINT · YouArePlayer",
       "Resolve — SO FOX · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 998,
+    "resolve": 999,
     "retex": 293,
     "autre": 83
   },
