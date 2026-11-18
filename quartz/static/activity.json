@@ -3944,8 +3944,22 @@
       "autre": 0
     }
   },
+  "2026-11-18": {
+    "count": 4,
+    "activités": [
+      "Resolve — SANTONS ET SETTONS · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — LE COIN · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — LA MÊME CHOSE ! · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
+      "Resolve — LE GENDRE IDÉAL · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 999,
+    "resolve": 1003,
     "retex": 293,
     "autre": 83
   },
