@@ -3945,21 +3945,22 @@
     }
   },
   "2026-11-18": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — SAMEDI 7 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
       "Resolve — SANTONS ET SETTONS · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — LE COIN · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — LA MÊME CHOSE ! · CALENDRIER DE L'AVENT 2023 · Osint4Fun",
       "Resolve — LE GENDRE IDÉAL · CALENDRIER DE L'AVENT 2023 · Osint4Fun"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1003,
+    "resolve": 1004,
     "retex": 293,
     "autre": 83
   },
