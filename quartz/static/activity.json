@@ -3959,8 +3959,30 @@
       "autre": 0
     }
   },
+  "2026-11-19": {
+    "count": 12,
+    "activités": [
+      "Resolve — LUNDI 21 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — VENDREDI 18 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — MARDI 15 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — VENDREDI 11 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 7 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — MERCREDI 2 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — SAMEDI 28 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — MARDI 24 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — VENDREDI 20 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — MARDI 17 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — PROLOGUE · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 2 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 12,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 1004,
+    "resolve": 1016,
     "retex": 293,
     "autre": 83
   },
