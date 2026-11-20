@@ -3981,8 +3981,22 @@
       "autre": 0
     }
   },
+  "2026-11-20": {
+    "count": 4,
+    "activités": [
+      "Resolve — 0910 · IAW2025 · Osint4Fun",
+      "Resolve — PLUS GRAND · IAW2025 · Osint4Fun",
+      "Resolve — 2019 · IAW2025 · Osint4Fun",
+      "Resolve — Logan Circle · OSINT · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 4,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 1016,
+    "resolve": 1020,
     "retex": 293,
     "autre": 83
   },
