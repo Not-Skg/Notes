@@ -3996,21 +3996,22 @@
     }
   },
   "2026-11-21": {
-    "count": 4,
+    "count": 5,
     "activités": [
+      "Resolve — BIEN AVANT ? · IAW2025 · Osint4Fun",
       "Resolve — ARCHIVES AUDIOVISUELLES · IAW2025 · Osint4Fun",
       "Resolve — 2009 · IAW2025 · Osint4Fun",
       "Resolve — MERCREDI 11 SEPTEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
       "Resolve — Spy Hospital · COMMUNITY EDITION · OSINT Industries"
     ],
     "stats": {
-      "resolve": 4,
+      "resolve": 5,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1024,
+    "resolve": 1025,
     "retex": 293,
     "autre": 83
   },
