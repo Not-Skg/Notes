@@ -4012,20 +4012,24 @@
     }
   },
   "2026-11-22": {
-    "count": 3,
+    "count": 7,
     "activités": [
-      "Resolve — DES RÉPONSES AUX QUESTIONS  · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — META-CADRE · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — OPERATION HILTON - 05 · OPERATION HILTON · OSINT Industries",
+      "Resolve — MISE EN FORME · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — META-FORMATION · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — DES RÉPONSES AUX QUESTIONS · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
       "Resolve — 2021 · IAW2025 · Osint4Fun",
       "Resolve — OPERATION HILTON - 07 · OPERATION HILTON · OSINT Industries"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 7,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1029,
+    "resolve": 1033,
     "retex": 293,
     "autre": 83
   },
