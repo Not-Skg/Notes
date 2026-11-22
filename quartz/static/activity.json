@@ -3996,8 +3996,9 @@
     }
   },
   "2026-11-21": {
-    "count": 5,
+    "count": 6,
     "activités": [
+      "Resolve — 2020 · IAW2025 · Osint4Fun",
       "Resolve — BIEN AVANT ? · IAW2025 · Osint4Fun",
       "Resolve — ARCHIVES AUDIOVISUELLES · IAW2025 · Osint4Fun",
       "Resolve — 2009 · IAW2025 · Osint4Fun",
@@ -4005,13 +4006,26 @@
       "Resolve — Spy Hospital · COMMUNITY EDITION · OSINT Industries"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-11-22": {
+    "count": 3,
+    "activités": [
+      "Resolve — DES RÉPONSES AUX QUESTIONS  · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — 2021 · IAW2025 · Osint4Fun",
+      "Resolve — OPERATION HILTON - 07 · OPERATION HILTON · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 3,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1025,
+    "resolve": 1029,
     "retex": 293,
     "autre": 83
   },
