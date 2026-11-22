@@ -4012,8 +4012,11 @@
     }
   },
   "2026-11-22": {
-    "count": 7,
+    "count": 10,
     "activités": [
+      "Resolve — Kayrak · OSINT · YouArePlayer",
+      "Resolve — DE L'ÉDUCATION AU TRAVAIL · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
+      "Resolve — MODÉLISATION ALTERNATIVE · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
       "Resolve — META-CADRE · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
       "Resolve — OPERATION HILTON - 05 · OPERATION HILTON · OSINT Industries",
       "Resolve — MISE EN FORME · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
@@ -4023,13 +4026,13 @@
       "Resolve — OPERATION HILTON - 07 · OPERATION HILTON · OSINT Industries"
     ],
     "stats": {
-      "resolve": 7,
+      "resolve": 10,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1033,
+    "resolve": 1036,
     "retex": 293,
     "autre": 83
   },
