@@ -4012,8 +4012,9 @@
     }
   },
   "2026-11-22": {
-    "count": 10,
+    "count": 11,
     "activités": [
+      "Resolve — No Oxygen · COMMUNITY EDITION · OSINT Industries",
       "Resolve — Kayrak · OSINT · YouArePlayer",
       "Resolve — DE L'ÉDUCATION AU TRAVAIL · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
       "Resolve — MODÉLISATION ALTERNATIVE · RÉSEAUX D'ARCHIVISTES · Osint4Fun",
@@ -4026,13 +4027,24 @@
       "Resolve — OPERATION HILTON - 07 · OPERATION HILTON · OSINT Industries"
     ],
     "stats": {
-      "resolve": 10,
+      "resolve": 11,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-11-23": {
+    "count": 1,
+    "activités": [
+      "Resolve — LUNDI 28 OCTOBRE 2024 · GNOSINT : LE PROJET · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 1,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1036,
+    "resolve": 1038,
     "retex": 293,
     "autre": 83
   },
