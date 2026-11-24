@@ -74,13 +74,13 @@ La photo est prise depuis une fenêtre en hauteur, au-dessus d'une grande avenue
 
 En cherchant "Pavilion Square" sur Google Maps, on trouve le chantier ("Pavilion Square (Actual Site)") au 92 Jalan Raja Chulan, à Kuala Lumpur, juste à côté du carrefour avec Jalan Bukit Bintang.
 ![[MQB_THO_2.png|600]]
-Juste derrière, on trouve l'hôtel Royale Chulan, connu pour ses toits de style malais : c'est le toit du repère 2.
+Juste derrière, on trouve l'hôtel Royale Chulan, dont les bâtiments ont des toits de style malais, comme celui du repère 2.
 
 Ici, la vue satellite de Google est très oblique et les tours penchent, ce qui rend la comparaison difficile. Il vaut mieux descendre dans la rue avec Street View.
 
 En se plaçant [au carrefour](https://www.google.com/maps/@3.1484161,101.7154919,3a,90y,110h,95t/data=!3m4!1e1!3m2!1stSEPTT5VfrI-8LSmoWCk4w!2e0) et en regardant vers l'est, on retrouve les éléments de la photo, vus du sol.
 ![[MQB_THO_3.png|600]]
-On y retrouve le toit du Royale Chulan (2), l'îlot avec son panneau bleu et le passage piéton jaune (3), ainsi que la palissade bleue du chantier (4). La photo a donc été prise depuis un immeuble à l'angle de ce carrefour.
+On y voit un toit de style malais du Royale Chulan (2). Ce n'est pas le même bâtiment que sur la photo de l'énoncé : quand celle-ci a été prise, ce bâtiment-là était encore en construction. Mais il a exactement le même style, ce qui confirme qu'on est au bon endroit. On retrouve aussi l'îlot avec son panneau bleu et le passage piéton jaune (3), ainsi que la palissade bleue du chantier (4). La photo a donc été prise depuis un immeuble à l'angle de ce carrefour.
 
 Il suffit alors de se retourner dans Street View pour voir l'immeuble à l'angle.
 ![[MQB_THO_4.png|600]]
@@ -175,7 +175,7 @@ On y trouve notamment "Urja Resort Casablanca", un appartement avec services à 
 
 En cherchant "Urja Resort" à Vagator sur Google Maps, on trouve l'établissement le long de Vagator Beach Road, et sa photo principale est bien notre piscine.
 ![[MQB_VAG1_2.png|600]]
-En comparant la photo du challenge avec celle de la fiche, on retrouve le petit bassin rond (1), l'échelle (2) et l'immeuble à bandeaux bordeaux (3).
+En comparant la photo du challenge avec celle de la fiche, on retrouve le petit bassin rond (1) et l'échelle (2). L'immeuble à bandeaux (3), lui, n'est pas le même : la position de l'échelle montre que les deux photos sont prises depuis des côtés opposés de la piscine. Sur la photo du challenge, l'échelle est au fond, au pied de l'immeuble, alors que sur celle de la fiche elle est au premier plan. On voit donc l'immeuble juste en face, qui a exactement le même style (façade crème à bandeaux bordeaux) : ça confirme qu'on est bien au même endroit.
 ![[MQB_VAG1_3.png|700]]
 
 Le nom complet de la résidence est donc **==Urja Resort Casablanca==** : "Casablanca" est le nom du complexe dans lequel elle se trouve.
@@ -211,7 +211,7 @@ L'énoncé donne deux autres indices : le café est près de leur logement, et o
 Reste le lapin. Sur les photos de la fiche, le café est un rooftop, et le mur en azulejos bleus porte le logo de l'enseigne : un lapin assis dans un nid (1).
 ![[MQB_VAG2_6.jpg|800]]
 
-On retrouve aussi sur les photos du rooftop les éléments de la photo d'Alice : la même rampe blanche à barres horizontales avec un ruban LED sur la main courante (1), et des plantes en pot le long de la rampe (2).
+Sur une des photos du rooftop, on aperçoit même le haut de l'escalier de la photo d'Alice : la rampe qui descend, avec son ruban LED sur la main courante (1). On retrouve aussi, comme sur sa photo, des plantes en pot le long des rampes (2).
 ![[MQB_VAG2_7.png|700]]
 
 Le café où Alice et Bob se sont retrouvés est donc **==Nest Cafe 1966==**.
