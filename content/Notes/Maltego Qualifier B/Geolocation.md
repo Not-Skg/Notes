@@ -6,7 +6,6 @@ tags:
   - MaltegoQualifierB
 order: 2
 description: RETEX des challenges de la catégorie "Geolocation" du Maltego Community OSINT CTF, Qualifier B
-draft: true
 ---
 ![[MaltegoQualifierB.webp]]
 
