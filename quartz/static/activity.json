@@ -4053,8 +4053,12 @@
     }
   },
   "2026-11-24": {
-    "count": 11,
+    "count": 15,
     "activités": [
+      "Retex — Blind Spot - 4 · Threat Intelligence · MALTEGO 2026 B",
+      "Retex — Blind Spot - 3 · Threat Intelligence · MALTEGO 2026 B",
+      "Retex — Blind Spot - 2 · Threat Intelligence · MALTEGO 2026 B",
+      "Retex — Blind Spot - 1 · Threat Intelligence · MALTEGO 2026 B",
       "Retex — Hidden Stay: The Vagator Mystery - 2 · Geolocation · MALTEGO 2026 B",
       "Retex — Hidden Stay: The Vagator Mystery - 1 · Geolocation · MALTEGO 2026 B",
       "Resolve — JEUDI 19 DÉCEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
@@ -4069,13 +4073,13 @@
     ],
     "stats": {
       "resolve": 5,
-      "retex": 6,
+      "retex": 10,
       "autre": 0
     }
   },
   "__totaux__": {
     "resolve": 1052,
-    "retex": 299,
+    "retex": 303,
     "autre": 83
   },
   "__assets__": {
