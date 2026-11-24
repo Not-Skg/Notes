@@ -39,7 +39,7 @@ L'année prochaine, j'essaierai donc de faire les deux phases, et idéalement av
 ![[70f10f7d-7a1a-467b-83b4-79e064a4af6a.png|300]]
 
 ***Les différentes parties du CTF :***
- · | · `[[Geolocation]]`
+ · | · [[Geolocation]]
  · | · `[[Threat Intelligence]]`
  · | · `[[Fraud]]`
  · | · `[[Physical Security]]`
