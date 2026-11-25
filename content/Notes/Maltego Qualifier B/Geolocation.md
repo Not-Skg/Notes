@@ -15,13 +15,13 @@ description: RETEX des challenges de la catégorie "Geolocation" du Maltego Comm
 ***Les différentes parties du CTF :***
  · | · Geolocation
  · | · [[Threat Intelligence]]
- · | · `[[Fraud]]`
- · | · `[[Physical Security]]`
- · | · `[[Chronolocation]]`
- · | · `[[Trust & Safety]]`
+ · | · [[Fraud]]
+ · | · [[Physical Security]]
+ · | · [[Chronolocation]]
+ · | · [[Trust & Safety]]
  · | · `[[Due Diligence]]`
  · | · `[[Maritime & Aviation]]`
- · | · `[[Dark Web]]`
+ · | · [[Dark Web]]
 
 ---
 ## Gate Of Departure
@@ -220,10 +220,10 @@ Le café où Alice et Bob se sont retrouvés est donc **==Nest Cafe 1966==**.
 ***Les différentes parties du CTF :***
  · | · Geolocation
  · | · [[Threat Intelligence]]
- · | · `[[Fraud]]`
- · | · `[[Physical Security]]`
- · | · `[[Chronolocation]]`
- · | · `[[Trust & Safety]]`
+ · | · [[Fraud]]
+ · | · [[Physical Security]]
+ · | · [[Chronolocation]]
+ · | · [[Trust & Safety]]
  · | · `[[Due Diligence]]`
  · | · `[[Maritime & Aviation]]`
- · | · `[[Dark Web]]`
+ · | · [[Dark Web]]

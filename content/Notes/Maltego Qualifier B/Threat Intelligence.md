@@ -15,13 +15,13 @@ description: RETEX des challenges de la catégorie "Threat Intelligence" du Malt
 ***Les différentes parties du CTF :***
  · | · [[Geolocation]]
  · | · Threat Intelligence
- · | · `[[Fraud]]`
- · | · `[[Physical Security]]`
- · | · `[[Chronolocation]]`
- · | · `[[Trust & Safety]]`
+ · | · [[Fraud]]
+ · | · [[Physical Security]]
+ · | · [[Chronolocation]]
+ · | · [[Trust & Safety]]
  · | · `[[Due Diligence]]`
  · | · `[[Maritime & Aviation]]`
- · | · `[[Dark Web]]`
+ · | · [[Dark Web]]
 
 ---
 ## Blind Spot - 1
@@ -40,7 +40,7 @@ Le seul point de départ est un hash SHA256. Pas besoin de récupérer l'échant
 
 L'énoncé nous oriente vers l'arbre des processus (Processes).
 ![[MQB_BS1_1.png|700]]
-L'échantillon lance, via `cmd.exe`, un faux `OneDrive.exe` placé dans `C:\ProgramData` (1). Ce faux OneDrive appelle ensuite deux fois `MpCmdRun.exe`, l'outil en ligne de commande de Windows Defender, avec l'option `-AddExclusion` (2) : le dossier `C:\ProgramData` est exclu de l'analyse, et le malware peut y déposer ses exécutables sans être détecté.
+L'échantillon lance, via `cmd.exe`, un faux `OneDrive.exe` placé dans `C:\ProgramData`. Ce faux OneDrive appelle ensuite deux fois `MpCmdRun.exe`, l'outil en ligne de commande de Windows Defender, avec l'option `-AddExclusion` : le dossier `C:\ProgramData` est exclu de l'analyse, et le malware peut y déposer ses exécutables sans être détecté.
 
 Le dossier exclu est donc **==C:\Program Data==**.
 
@@ -62,9 +62,9 @@ Le dossier exclu est donc **==C:\Program Data==**.
 >> Example: If the destination IP is x.x.x.x and the port is 0000, the flag should be: flag{x_x_x_x_0000}
 
 ### RETEX
-L'analyse ANY.RUN de la partie 1 ne dure que 70 secondes, et on n'y voit aucune connexion du faux OneDrive vers un serveur de commande. On cherche donc le même hash sur une autre sandbox publique : [Triage](https://tria.ge/s?q=00fb522f8d19a1ee3fa1d23c55d55134454fb9067474d836dfd9019c948d0e9e), de Recorded Future, en a aussi un rapport (1).
+L'analyse ANY.RUN de la partie 1 ne dure que 70 secondes, et on n'y voit aucune connexion du faux OneDrive vers un serveur de commande. On cherche donc le même hash sur une autre sandbox publique : [Triage](https://tria.ge/s?q=00fb522f8d19a1ee3fa1d23c55d55134454fb9067474d836dfd9019c948d0e9e), de Recorded Future, en a aussi un rapport.
 ![[MQB_BS2_1.png|700]]
-Dans la partie Network du [rapport](https://tria.ge/261017-kymwdscw7k/behavioral1), l'onglet TCP liste les connexions ouvertes pendant l'analyse. Une seule vient de `OneDrive.exe`, notre processus imposteur : une connexion TLS vers `31.6.11.228`, sur le port `7777` (1).
+Dans la partie Network du [rapport](https://tria.ge/261017-kymwdscw7k/behavioral1), l'onglet TCP liste les connexions ouvertes pendant l'analyse. Une seule vient de `OneDrive.exe`, notre processus imposteur : une connexion TLS vers `31.6.11.228`, sur le port `7777`.
 ![[MQB_BS2_2.png|550]]
 Le même rapport lève d'ailleurs une alerte Suricata "AsyncRAT Malware Default X.509 Certificate Detected" : le certificat échangé pendant la poignée de main TLS est celui d'AsyncRAT, ce qui confirme que c'est bien le canal du RAT.
 
@@ -83,9 +83,9 @@ Le flag est donc **==31_6_11_228_7777==**.
 >> Flag Format: flag{decoded_ascii_string}
 
 ### RETEX
-Triage extrait automatiquement la configuration des malwares qu'il reconnaît. Dans le même rapport, la partie Malware Config confirme qu'on a affaire à AsyncRAT (1) et donne sa configuration : botnet, mutex, fichier d'installation…
+Triage extrait automatiquement la configuration des malwares qu'il reconnaît. Dans le même rapport, la partie Malware Config confirme qu'on a affaire à AsyncRAT et donne sa configuration : botnet, mutex, fichier d'installation…
 ![[MQB_BS3_1.png|450]]
-AsyncRAT chiffre sa configuration en AES, avec une clé stockée encodée en base64. Triage affiche directement cette clé décodée, dans la ligne `aes.plain` (2).
+AsyncRAT chiffre sa configuration en AES, avec une clé stockée encodée en base64. Triage affiche directement cette clé décodée, dans la ligne `aes.plain`.
 
 La chaîne ASCII décodée est donc **==5i7HJHHAzLmjYv0NAzYvFAhJrIoZXJR2==**.
 
@@ -102,16 +102,16 @@ La chaîne ASCII décodée est donc **==5i7HJHHAzLmjYv0NAzYvFAhJrIoZXJR2==**.
 ### RETEX
 Le flag a deux parties : le nom de la fonction Windows, puis l'identifiant du hook.
 
-Pour intercepter les frappes clavier sur tout le système, un programme Windows installe un "hook" avec la fonction `SetWindowsHookEx`. Dans la partie Signatures du rapport Triage, on trouve justement "Suspicious use of SetWindowsHookEx" (1), attribuée au processus 2176, qui est le faux `OneDrive.exe` dans l'arbre des processus (2).
+Pour intercepter les frappes clavier sur tout le système, un programme Windows installe un "hook" avec la fonction `SetWindowsHookEx`. Dans la partie Signatures du rapport Triage, on trouve justement "Suspicious use of SetWindowsHookEx", attribuée au processus 2176, qui est le faux `OneDrive.exe` dans l'arbre des processus.
 ![[MQB_BS4_1.png|550]]
 
 Le rapport ne montre pas les paramètres de l'appel. Mais on sait depuis la partie 3 que le malware est AsyncRAT, dont le code source est public sur [GitHub](https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/blob/master/AsyncRAT-C%23/Plugin/LimeLogger/LimeLogger/Packet.cs). Dans son module keylogger, on voit que :
-- le hook est installé avec `SetWindowsHookEx(WHKEYBOARDLL, …)` (1) ;
-- `WHKEYBOARDLL` vaut 13 (2) ;
-- la fonction est importée avec `CharSet = CharSet.Auto` (3) : sous Windows, .NET appelle alors la version Unicode de la fonction, `SetWindowsHookExW`, d'où le W.
+- le hook est installé avec `SetWindowsHookEx(WHKEYBOARDLL, …)` ;
+- `WHKEYBOARDLL` vaut 13 ;
+- la fonction est importée avec `CharSet = CharSet.Auto` : sous Windows, .NET appelle alors la version Unicode de la fonction, `SetWindowsHookExW`, d'où le W.
 ![[MQB_BS4_2.png|700]]
 
-Il reste à retrouver le nom de la constante qui vaut 13. La [documentation Microsoft de SetWindowsHookExW](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexw) liste les identifiants possibles : 13 correspond à `WH_KEYBOARD_LL`, le hook qui surveille les frappes clavier "bas niveau" (1).
+Il reste à retrouver le nom de la constante qui vaut 13. La [documentation Microsoft de SetWindowsHookExW](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexw) liste les identifiants possibles : 13 correspond à `WH_KEYBOARD_LL`, le hook qui surveille les frappes clavier "bas niveau".
 ![[MQB_BS4_3.png|600]]
 
 En assemblant la fonction et l'identifiant, on obtient **==SetWindowsHookExW_WH_KEYBOARD_LL==**.
@@ -120,10 +120,10 @@ En assemblant la fonction et l'identifiant, on obtient **==SetWindowsHookExW_WH_
 ***Les différentes parties du CTF :***
  · | · [[Geolocation]]
  · | · Threat Intelligence
- · | · `[[Fraud]]`
- · | · `[[Physical Security]]`
- · | · `[[Chronolocation]]`
- · | · `[[Trust & Safety]]`
+ · | · [[Fraud]]
+ · | · [[Physical Security]]
+ · | · [[Chronolocation]]
+ · | · [[Trust & Safety]]
  · | · `[[Due Diligence]]`
  · | · `[[Maritime & Aviation]]`
- · | · `[[Dark Web]]`
+ · | · [[Dark Web]]

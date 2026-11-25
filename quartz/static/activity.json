@@ -4077,9 +4077,26 @@
       "autre": 0
     }
   },
+  "2026-11-25": {
+    "count": 7,
+    "activités": [
+      "Retex — Chasing the InfoHash · Dark Web · MALTEGO 2026 B",
+      "Retex — Behind the Ransom Note - 2 · Dark Web · MALTEGO 2026 B",
+      "Retex — Behind the Ransom Note - 1 · Dark Web · MALTEGO 2026 B",
+      "Retex — Instagram Real Identity Hunt · Trust & Safety · MALTEGO 2026 B",
+      "Retex — Eyes From Orbit · Chronolocation · MALTEGO 2026 B",
+      "Retex — Webcam Reconnaissance - 1 · Physical Security · MALTEGO 2026 B",
+      "Retex — The Fake Financial Advisor · Fraud · MALTEGO 2026 B"
+    ],
+    "stats": {
+      "resolve": 0,
+      "retex": 7,
+      "autre": 0
+    }
+  },
   "__totaux__": {
     "resolve": 1052,
-    "retex": 303,
+    "retex": 310,
     "autre": 83
   },
   "__assets__": {
