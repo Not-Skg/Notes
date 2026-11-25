@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Threat Intelligence" du Malt
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -124,6 +124,6 @@ En assemblant la fonction et l'identifiant, on obtient **==SetWindowsHookExW_WH_
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

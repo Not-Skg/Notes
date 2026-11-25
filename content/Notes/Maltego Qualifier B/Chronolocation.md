@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Chronolocation" du Maltego C
  · | · [[Physical Security]]
  · | · Chronolocation
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -50,6 +50,6 @@ L'énoncé demande le nom de la société visée. Le flag est donc **==Saudi_Ara
  · | · [[Physical Security]]
  · | · Chronolocation
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

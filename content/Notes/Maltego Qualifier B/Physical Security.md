@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Physical Security" du Malteg
  · | · Physical Security
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -60,6 +60,6 @@ Le flag est donc **==10.10.2003==**.
  · | · Physical Security
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

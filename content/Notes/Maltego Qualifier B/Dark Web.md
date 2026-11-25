@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Dark Web" du Maltego Communi
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · Dark Web
 
 ---
@@ -98,6 +98,6 @@ Le flag est donc **==4d527d1f573c5c50c61d995dff99a3584ee1e5a7==**.
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · Dark Web

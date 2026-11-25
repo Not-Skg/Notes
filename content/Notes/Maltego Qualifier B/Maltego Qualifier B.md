@@ -45,6 +45,6 @@ L'année prochaine, j'essaierai donc de faire les deux phases, et idéalement av
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

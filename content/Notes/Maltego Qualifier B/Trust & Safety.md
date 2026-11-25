@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Trust & Safety" du Maltego C
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · Trust & Safety
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -61,6 +61,6 @@ La photo de profil a été mise en ligne le 22 février 2026 à 15:43 UTC. Le fl
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · Trust & Safety
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

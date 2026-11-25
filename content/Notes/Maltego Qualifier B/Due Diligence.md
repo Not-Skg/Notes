@@ -6,7 +6,6 @@ tags:
   - MaltegoQualifierB
 order: 8
 description: RETEX des challenges de la catégorie "Due Diligence" du Maltego Community OSINT CTF, Qualifier B
-draft: true
 ---
 ![[MaltegoQualifierB.webp]]
 
@@ -21,7 +20,7 @@ draft: true
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
  · | · Due Diligence
- · | · `[[Maritime & Aviation]]`
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -79,9 +78,8 @@ Le flag est donc **==fredlernercv.pdf==**.
 ## Tracing a Dead Domain - 1
 
 ### Énoncé
->
-
-### RETEX
+>[!warning] Énoncé perdu
+> J'ai perdu l'énoncé de ce challenge. Je ferai son retex quand je l'aurai retrouvé.
 
 ---
 ## The Invisible Director - 1
@@ -110,5 +108,5 @@ Le flag est donc **==ian_brennan==**.
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
  · | · Due Diligence
- · | · `[[Maritime & Aviation]]`
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

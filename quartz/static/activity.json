@@ -4078,8 +4078,25 @@
     }
   },
   "2026-11-25": {
-    "count": 7,
+    "count": 24,
     "activités": [
+      "Resolve — VENDREDI 10 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 6 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 30 DÉCEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — JEUDI 26 DÉCEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 23 DÉCEMBRE 2024 · GNOSINT : LE PROJET · Osint4Fun",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 6 · Maritime · MALTEGO 2026 B",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 5 · Maritime · MALTEGO 2026 B",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 4 · Maritime · MALTEGO 2026 B",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 3 · Maritime · MALTEGO 2026 B",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 2 · Maritime · MALTEGO 2026 B",
+      "Retex — Tracing Vessel Identity Across Flag Changes - 1 · Maritime · MALTEGO 2026 B",
+      "Retex — Decoding the Satellite Downlink - 2 · Maritime · MALTEGO 2026 B",
+      "Retex — Decoding the Satellite Downlink - 1 · Maritime · MALTEGO 2026 B",
+      "Retex — Uncovering the Aircraft's Ownership Trail · Maritime · MALTEGO 2026 B",
+      "Retex — The Invisible Director - 1 · Due Diligence · MALTEGO 2026 B",
+      "Retex — The Hidden Résumé · Due Diligence · MALTEGO 2026 B",
+      "Retex — Tracing the Corporate Past · Due Diligence · MALTEGO 2026 B",
       "Retex — Chasing the InfoHash · Dark Web · MALTEGO 2026 B",
       "Retex — Behind the Ransom Note - 2 · Dark Web · MALTEGO 2026 B",
       "Retex — Behind the Ransom Note - 1 · Dark Web · MALTEGO 2026 B",
@@ -4089,14 +4106,14 @@
       "Retex — The Fake Financial Advisor · Fraud · MALTEGO 2026 B"
     ],
     "stats": {
-      "resolve": 0,
-      "retex": 7,
+      "resolve": 5,
+      "retex": 19,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1052,
-    "retex": 310,
+    "resolve": 1057,
+    "retex": 322,
     "autre": 83
   },
   "__assets__": {

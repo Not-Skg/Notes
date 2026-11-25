@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Geolocation" du Maltego Comm
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -224,6 +224,6 @@ Le café où Alice et Bob se sont retrouvés est donc **==Nest Cafe 1966==**.
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

@@ -19,8 +19,8 @@ description: RETEX des challenges de la catégorie "Fraud" du Maltego Community 
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]
 
 ---
@@ -56,6 +56,6 @@ Muzyka Pervogo est la chaîne musicale de Pervy kanal, la première chaîne de t
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
- · | · `[[Maritime & Aviation]]`
+ · | · [[Due Diligence]]
+ · | · [[Maritime & Aviation]]
  · | · [[Dark Web]]

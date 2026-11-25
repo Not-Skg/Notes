@@ -6,7 +6,6 @@ tags:
   - MaltegoQualifierB
 order: 9
 description: RETEX des challenges de la catégorie "Maritime & Aviation" du Maltego Community OSINT CTF, Qualifier B
-draft: true
 ---
 ![[MaltegoQualifierB.webp]]
 
@@ -20,7 +19,7 @@ draft: true
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
+ · | · [[Due Diligence]]
  · | · Maritime & Aviation
  · | · [[Dark Web]]
 
@@ -43,7 +42,8 @@ draft: true
 >> Ensure the spelling matches the information found during your investigation.
 
 ### RETEX
-Le fichier fourni ne contient que des points et des tirets : c'est du morse. Avec CyberChef et l'opération "From Morse Code", on obtient un message répété : "ICAO24: A7AC49 ADS-B DF17, TYPE CODE 4 (AIRCRAFT IDENTIFICATION)", suivi d'une trame ADS-B en hexadécimal. A7AC49 est l'adresse ICAO de l'avion, l'identifiant unique de son transpondeur.
+Le fichier fourni ne contient que des points et des tirets : c'est du morse. Avec CyberChef et l'opération "From Morse Code", on obtient un message répété : "ICAO24: A7AC49 ADS-B DF17, TYPE CODE 4 (AIRCRAFT IDENTIFICATION)", suivi d'une trame ADS-B en hexadécimal. 
+A7AC49 est l'adresse ICAO de l'avion, l'identifiant unique de son transpondeur.
 ![[MQB_AOT_1.png|600]]
 Une simple recherche Google de cette adresse donne l'immatriculation de l'avion : N594AF, un Pilatus PC-24. Le N initial indique un avion immatriculé aux États-Unis.
 ![[MQB_AOT_2.png|500]]
@@ -103,9 +103,8 @@ Le flag est donc **==-104.5_dBm==**.
 ## Vessel Identification
 
 ### Énoncé
->
-
-### RETEX
+>[!warning] Énoncé perdu
+> J'ai perdu l'énoncé de ce challenge. Je ferai son retex quand je l'aurai retrouvé.
 
 ---
 ## Tracing Vessel Identity Across Flag Changes - 1
@@ -124,14 +123,13 @@ Le nom du pétrolier est peint sur sa coque : PELAGOS ONE.
 ![[MQB_TVI_1.png|600]]
 En cherchant ce nom sur un site de suivi des navires comme VesselFinder, on retrouve le navire par son numéro IMO, 9299898, qui le suit quels que soient ses changements de nom. Il s'appelle aujourd'hui PALARA. Sa fiche la plus complète est celle du [registre de la "flotte fantôme"](https://war-sanctions.gur.gov.ua/en/transport/shadow-fleet/409) tenu par le renseignement militaire ukrainien (GUR) : on y trouve le nom actuel, le numéro IMO et le MMSI actuel, 667002277.
 ![[MQB_TVI_2.png|600]]
-La même fiche liste ses anciens noms, dont Range Vale. Pour les pavillons portés sous ce nom, [The Maritime Executive](https://maritime-executive.com/article/madagascar-and-landlocked-zimbabwe-warn-imo-of-false-flags) cite la base Equasis : sous le nom Range Vale, le navire a déclaré successivement les Comores, le Zimbabwe, puis la Sierra Leone, tous marqués comme faux.
+La même fiche liste ses anciens noms, dont Range Vale. Attention : un navire change de MMSI à chaque changement de pavillon, les trois premiers chiffres indiquant le pays (667 pour la Sierra Leone, 620 pour les Comores). L'énoncé parle du MMSI "actuel", mais il a visiblement été écrit quand le navire s'appelait encore Range Vale : c'est le MMSI de cette période qui est attendu. En cherchant "Range Vale" sur Google, MyShipTracking a encore la fiche du navire sous ce nom, avec le MMSI 620999964, sous pavillon des Comores.
+![[MQB_TVI_8.png|500]]
+Pour les pavillons portés sous ce nom, [The Maritime Executive](https://maritime-executive.com/article/madagascar-and-landlocked-zimbabwe-warn-imo-of-false-flags) cite la base Equasis : sous le nom Range Vale, le navire a déclaré successivement les Comores, le Zimbabwe, puis la Sierra Leone, tous marqués comme faux.
 ![[MQB_TVI_3.png|330]]
 Le Zimbabwe, un pays sans accès à la mer et sans registre maritime, a d'ailleurs signalé cette fraude à l'OMI. En ignorant l'annotation "false", comme le demande l'énoncé, et en mettant de côté la Sierra Leone, qui est toujours le pavillon actuel du navire sous le nom PALARA, il reste les Comores et le Zimbabwe.
 
-Le flag est donc **==667002277_Comoros_Zimbabwe==**.
-
->[!warning] À confirmer
-> Flag reconstitué après le CTF à partir des sources : à vérifier avec celui qui a été validé.
+Le flag est donc **==620999964_Comoros_Zimbabwe==**.
 
 
 ---
@@ -143,6 +141,10 @@ Le flag est donc **==667002277_Comoros_Zimbabwe==**.
 > Your task is to investigate the vessel's sanctions records and identify the authority-issued sanctions tracking identifier assigned to it by the UK Foreign, Commonwealth & Development Office (FCDO) under the sanctions program GB-RUS.
 >
 > Correlate the available sanctions information and retrieve the exact identifier assigned to the vessel.
+>
+>> Flag Format: flag{Identifier}
+>>
+>> Note — Submit the flag in uppercase only as mentioned in the resource
 
 ### RETEX
 La [liste officielle des sanctions britanniques](https://search-uk-sanctions-list.service.gov.uk/?searchValue=9299898) se consulte en ligne, et on peut y chercher directement le numéro IMO 9299898. Elle renvoie une seule fiche, au nom de TURBO VOYAGER, l'un des anciens noms du navire, sous le régime "Russia", avec une désignation le 17 octobre 2024. Son identifiant unique est RUS2239.
@@ -157,6 +159,10 @@ Le flag est donc **==RUS2239==**.
 > A tanker built in 2005 was designated by both the European Union and Switzerland in December 2024 for deceptive and irregular shipping practices. Identify the vessel and investigate its sanctions history. Submit the country that first imposed sanctions on the vessel, followed by the IMO General Assembly resolution cited as the legal basis for the EU and Swiss designations.
 >
 >> Write the country name in full (no abbreviations), capitalizing the first letter of each word, with underscores for spaces. Keep the resolution code exactly as written.
+>>
+>> Flag Format: flag{Country_Name_Resolution_Identifier}
+>>
+>> Example: flag{Example_Country_A.1234(56)}
 
 ### RETEX
 La fiche GUR du navire résume tout son historique de sanctions dans la partie "Justification". Le Royaume-Uni est le premier à le sanctionner, le 17 octobre 2024. L'Union européenne et la Suisse suivent en décembre 2024, en citant la résolution A.1192(33) de l'Assemblée générale de l'Organisation maritime internationale, qui décrit les pratiques de navigation irrégulières et à haut risque.
@@ -174,6 +180,10 @@ Le flag est donc **==United_Kingdom_A.1192(33)==**.
 >
 > The entity is identified in the relevant records as a "Person of Interest." Trace the vessel's management changes and uncover the name of the newly appointed commercial management entity.
 >
+>> Flag Format: flag{Entity_Name}
+>>
+>> Example: flag{Example_Company_LLC}
+>>
 >> Note: Write the entity name exactly as it appears in the source, preserving spelling and capitalization. Replace spaces with underscores (_). Do not alter abbreviations or suffixes (for example, keep "Ltd" as written; don't change it to "LTD" or "Limited").
 
 ### RETEX
@@ -191,6 +201,8 @@ Le flag est donc **==Lundavrex_Portalis_Ltd==**.
 > The vessel under investigation has been documented by Ukraine's Defense Intelligence agency (ГУР МО України).
 >
 > Your task is to investigate the agency's maritime shadow fleet registry and identify the internal program code or identifier used for maritime shadow fleet sanctions designations. Examine the relevant registry records and retrieve the exact program identifier.
+>
+>> Flag Format: flag{PROGRAM_ID}
 
 ### RETEX
 Le registre du GUR est repris par [OpenSanctions](https://www.opensanctions.org/entities/NK-cfWFCgJ7etMfnZSJx4xSsb/), qui agrège les listes de sanctions et attribue à chacune un code de programme. Dans les données brutes de la fiche du navire (lien "raw data explorer"), la ligne `programId` de la source `ua_war_sanctions`, c'est-à-dire le registre du GUR, vaut UA-WS-MARE.
@@ -207,6 +219,10 @@ Le flag est donc **==UA-WS-MARE==**.
 > Identify Jurisdiction X from the sanctions records. Then examine the vessel's registration history across all available records and count the distinct flag states it has been registered under, including flags marked false or unverified, and excluding its current flag. Submit the jurisdiction followed by the count.
 >
 > Correlate the sanctions timeline with the vessel's registration history and submit both findings in the required flag format.
+>
+>> Flag Format: flag{Jurisdiction_X_Flag_Count}
+>>
+>> Example: flag{Norway_4}
 
 ### RETEX
 La fiche GUR liste les pays qui ont sanctionné le navire : en plus de ceux cités dans l'énoncé, on y trouve l'Australie, qui l'a sanctionné le 4 décembre 2025.
@@ -217,9 +233,6 @@ L'énoncé demande de compter aussi les pavillons marqués comme faux : il faut 
 
 Le flag est donc **==Australia_8==**.
 
->[!warning] À confirmer
-> Flag reconstitué après le CTF à partir des sources : à vérifier avec celui qui a été validé (sans les faux pavillons, le compte serait de 6).
-
 
 ---
 ***Les différentes parties du CTF :***
@@ -229,6 +242,6 @@ Le flag est donc **==Australia_8==**.
  · | · [[Physical Security]]
  · | · [[Chronolocation]]
  · | · [[Trust & Safety]]
- · | · `[[Due Diligence]]`
+ · | · [[Due Diligence]]
  · | · Maritime & Aviation
  · | · [[Dark Web]]
