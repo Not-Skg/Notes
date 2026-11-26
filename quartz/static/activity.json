@@ -4111,8 +4111,23 @@
       "autre": 0
     }
   },
+  "2026-11-26": {
+    "count": 5,
+    "activités": [
+      "Resolve — LUNDI 27 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — VENDREDI 24 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 20 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — VENDREDI 17 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
+      "Resolve — LUNDI 13 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun"
+    ],
+    "stats": {
+      "resolve": 5,
+      "retex": 0,
+      "autre": 0
+    }
+  },
   "__totaux__": {
-    "resolve": 1057,
+    "resolve": 1062,
     "retex": 322,
     "autre": 83
   },
