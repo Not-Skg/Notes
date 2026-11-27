@@ -4112,8 +4112,9 @@
     }
   },
   "2026-11-26": {
-    "count": 5,
+    "count": 6,
     "activités": [
+      "Resolve — OPERATION GUASAVE · OSINT · OSINT Industries{}",
       "Resolve — LUNDI 27 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
       "Resolve — VENDREDI 24 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
       "Resolve — LUNDI 20 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun",
@@ -4121,13 +4122,26 @@
       "Resolve — LUNDI 13 JANVIER 2025 · GNOSINT : LE PROJET · Osint4Fun"
     ],
     "stats": {
-      "resolve": 5,
+      "resolve": 6,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-11-27": {
+    "count": 3,
+    "activités": [
+      "Resolve — ROAD MOVIE · SCENOSINT · Osint4Fun",
+      "Resolve — The Canary's Last Stand · Cyber · YouArePlayer",
+      "Resolve — The Thieving Magpie · Cyber · YouArePlayer"
+    ],
+    "stats": {
+      "resolve": 3,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1062,
+    "resolve": 1066,
     "retex": 322,
     "autre": 83
   },
