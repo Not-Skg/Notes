@@ -4128,20 +4128,35 @@
     }
   },
   "2026-11-27": {
-    "count": 3,
+    "count": 7,
     "activités": [
+      "Resolve — Football et religion 4/4 · Osintopia",
+      "Resolve — Football et religion 3/4 · Osintopia",
+      "Resolve — Football et religion 2/4 · Osintopia",
+      "Resolve — Football et religion 1/4 · Osintopia",
       "Resolve — ROAD MOVIE · SCENOSINT · Osint4Fun",
       "Resolve — The Canary's Last Stand · Cyber · YouArePlayer",
       "Resolve — The Thieving Magpie · Cyber · YouArePlayer"
     ],
     "stats": {
-      "resolve": 3,
+      "resolve": 7,
+      "retex": 0,
+      "autre": 0
+    }
+  },
+  "2026-11-28": {
+    "count": 1,
+    "activités": [
+      "Resolve — BEHIND TINTED GLASS · COMMUNITY EDITION · OSINT Industries"
+    ],
+    "stats": {
+      "resolve": 1,
       "retex": 0,
       "autre": 0
     }
   },
   "__totaux__": {
-    "resolve": 1066,
+    "resolve": 1071,
     "retex": 322,
     "autre": 83
   },
